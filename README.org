@@ -1,0 +1,4 @@
+#+TITLE: Exercitium (Ejercicios de programación funcional con Haskell)
+
+En este repositorio se encuentran los códigos con las soluciones de los
+ejercicios de programación funcional propuestos en el blog [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]].
