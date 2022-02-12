@@ -2,3 +2,70 @@
 
 En este repositorio se encuentran los códigos con las soluciones de los
 ejercicios de programación funcional propuestos en el blog [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]].
+
+Los objetivos de esta recopilación son:
++ Escribir todos los ejercicios como un proyecto con Stack para evitar los
+  problemas que surgen entre las distintas versiones de las librerías que se
+  usan.
++ Escribir los tests de cada ejercicio (en el directorio [[./test][test]]) de forma que se
+  puedan comprobar con [[http://hspec.github.io/][Hspec]].
++ Organizar los ejercicios por temas siguiendo el orden usado en
+  [[https://www.cs.us.es/~jalonso/publicaciones/Piensa_en_Haskell.pdf][Piensa en Haskell]].
+
+* Introducción a la programación funcional
+
+** Definiciones elementales de funciones
+
+** Definiciones por comprensión
+
+** Definiciones por recursión
+
+** Definiciones por recursión y por comprensión
+
+** Funciones sobre cadenas
+
+** Funciones de orden superior
+
+** Listas infinitas
+
+** Tipos definidos y tipos de datos algebraicos
+
+** Vectores y matrices
+
+** Conjuntos y diccionarios
+
+** Programas interactivos
+
+* Tipos abstractos de datos y algorítmica
+
+** El tipo abstracto de datos de las pilas.
+
+** El tipo abstracto de datos de las colas.
+
+** El tipo abstracto de datos de las colas de prioridad.
+
+** El tipo abstracto de datos de los conjuntos.
+
+** El tipo abstracto de datos de las tablas.
+
+** El tipo abstracto de datos de las árboles binarios de búsqueda.
+
+** El tipo abstracto de datos de los montículos.
+
+** El tipo abstracto de datos de los polinomios.
+
+** Algoritmos sobre grafos.
+
+** Búsqueda en espacios de estados
+
+** Programación dinámica.
+
+* Aplicaciones matemáticas
+
+** Álgebra lineal
+
+** Cálculo numérico
+
+** Estadística
+
+** Combinatoria

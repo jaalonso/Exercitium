@@ -1,48 +1,53 @@
-name:                Exercitium
-version:             0.1.0.0
-github:              "jaalonso/Exercitium"
-license:             BSD3
-author:              "Jose A. Alonso"
-maintainer:          "JoseA.Alonso@gmail.com"
-copyright:           "Jose A. Alonso"
+name: Exercitium
+version: 0.1.0.0
+github: "jaalonso/Exercitium"
+license: BSD3
+author: "Jose A. Alonso"
+maintainer: "JoseA.Alonso@gmail.com"
+copyright: "Jose A. Alonso"
+synopsis: Ejercicios de programación funcional con Haskell
+description: >
+  Solucines de los ejercicios de programación funcional propuestos en el
+  blog Exercitium.
+category: Educational
 
 extra-source-files:
-- README.md
-- ChangeLog.md
-
-# Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Educational
-
-# To avoid duplicated efforts in documentation and dealing with the
-# complications of embedding Haddock markup inside cabal files, it is
-# common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/jaalonso/Exercitium#readme>
+  - README.org
 
 dependencies:
-- base >= 4.7 && < 5
+  - base >= 4.7 && < 5
+  - array
+  - combinat
+  - containers
+  - hspec
+  - hspec-core
+  - matrix
+  - primes
+  - QuickCheck
+  - random
+  - statistics
+  - statistics-linreg
+  - vector
 
 library:
   source-dirs: src
-
-executables:
-  Exercitium-exe:
-    main:                Main.hs
-    source-dirs:         app
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - Exercitium
+  ghc-options: -Wall -fno-warn-type-defaults
+  dependencies:
+  - base >=4.7 && <5
+  - gnuplot
+  - I1M
 
 tests:
   Exercitium-test:
-    main:                Spec.hs
-    source-dirs:         test
+    main: Spec.hs
+    source-dirs: test
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
     - Exercitium
+    - base
+    - hspec
+    - hspec-core
+    - I1M
