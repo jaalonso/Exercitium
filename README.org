@@ -11,7 +11,10 @@ Los objetivos de esta recopilación son:
 + Escribir los tests de cada ejercicio (en el directorio [[./test][test]]) de forma que se
   puedan comprobar con [[http://hspec.github.io/][Hspec]].
 + Organizar los ejercicios por temas siguiendo el orden usado en
-  [[https://www.cs.us.es/~jalonso/publicaciones/Piensa_en_Haskell.pdf][Piensa en Haskell]].
+  [[https://www.cs.us.es/~jalonso/publicaciones/Piensa_en_Haskell.pdf][Piensa en Haskell]]. Como para cada ejercicio se presentan distintas soluciones
+  que corresponden a distintas entradas de la tabla de contenido, se añade un
+  enlace al ejercicio en cada uno de los apartados indicando las soluciones que
+  se corresponden con dicho apartado.
 
 * Introducción a la programación funcional
 
@@ -43,6 +46,11 @@ Los objetivos de esta recopilación son:
 
 ** Mónadas
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (6ª y 7ª solución).
+
+* Librerías
+
+** Data.List
++ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (de la 4ª a la 9ª solución).
 
 * Tipos abstractos de datos y algorítmica
 
