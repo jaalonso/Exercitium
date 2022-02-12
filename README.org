@@ -17,14 +17,18 @@ Los objetivos de esta recopilación son:
 ** Definiciones elementales de funciones
 
 ** Definiciones por comprensión
++ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (1ª y 4ª solución).
 
 ** Definiciones por recursión
++ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (3ª solución).
 
 ** Definiciones por recursión y por comprensión
++ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (2ª solución).
 
 ** Funciones sobre cadenas
 
 ** Funciones de orden superior
++ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (5ª, 8ª y 9ª solución).
 
 ** Listas infinitas
 
@@ -35,6 +39,9 @@ Los objetivos de esta recopilación son:
 ** Conjuntos y diccionarios
 
 ** Programas interactivos
+
+** Mónadas
++ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (6ª y 7ª solución).
 
 * Tipos abstractos de datos y algorítmica
 

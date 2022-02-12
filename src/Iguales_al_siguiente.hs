@@ -87,7 +87,7 @@ igualesAlSiguiente8 xs = concatMap tail (group xs)
 -- ===========
 
 igualesAlSiguiente9 :: Eq a => [a] -> [a]
-igualesAlSiguiente9 = (concatMap tail) . group
+igualesAlSiguiente9 = concatMap tail . group
 
 -- Equivalencia de las definiciones
 -- ================================
@@ -95,7 +95,7 @@ igualesAlSiguiente9 = (concatMap tail) . group
 -- La propiedad es
 prop_igualesAlSiguiente :: [Int] -> Bool
 prop_igualesAlSiguiente xs =
-  all (== (igualesAlSiguiente1 xs))
+  all (== igualesAlSiguiente1 xs)
       [igualesAlSiguiente2 xs,
        igualesAlSiguiente3 xs,
        igualesAlSiguiente4 xs,
