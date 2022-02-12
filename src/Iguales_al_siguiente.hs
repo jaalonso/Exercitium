@@ -16,7 +16,7 @@
 module Iguales_al_siguiente where
 
 import Data.List (group)
-import Test.QuickCheck
+import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
 -- ===========
