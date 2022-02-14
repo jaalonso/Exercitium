@@ -2,7 +2,9 @@
 #+OPTIONS: num:t
 
 En este repositorio se encuentran los códigos con las soluciones de los
-ejercicios de programación funcional propuestos en el blog [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]].
+ejercicios de programación funcional propuestos en el blog [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]] desde el
+curso 2013-14 hasta la actualidad. En este tiempo se han propuesto 1.081
+ejercicios que han recibido 4.913 soluciones.
 
 Los objetivos de esta recopilación son:
 + Escribir todos los ejercicios como un proyecto con Stack para evitar los
@@ -16,72 +18,82 @@ Los objetivos de esta recopilación son:
   enlace al ejercicio en cada uno de los apartados indicando las soluciones que
   se corresponden con dicho apartado.
 
-* Introducción a la programación funcional
+* Índice cronológico (por fecha de publicación en Exercitium)
 
-** Definiciones elementales de funciones
+** Curso 2013-14
 
-** Definiciones por comprensión
+*** Abril de 2014
+
++ 21: [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
+
+* Índice temático
+
+** Introducción a la programación funcional
+
+*** Definiciones elementales de funciones
+
+*** Definiciones por comprensión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (1ª y 4ª solución).
 
-** Definiciones por recursión
+*** Definiciones por recursión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (3ª solución).
 
-** Definiciones por recursión y por comprensión
+*** Definiciones por recursión y por comprensión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (2ª solución).
 
-** Funciones sobre cadenas
+*** Funciones sobre cadenas
 
-** Funciones de orden superior
+*** Funciones de orden superior
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (5ª, 8ª y 9ª solución).
 
-** Listas infinitas
+*** Listas infinitas
 
-** Tipos definidos y tipos de datos algebraicos
+*** Tipos definidos y tipos de datos algebraicos
 
-** Vectores y matrices
+*** Vectores y matrices
 
-** Conjuntos y diccionarios
+*** Conjuntos y diccionarios
 
-** Programas interactivos
+*** Programas interactivos
 
-** Mónadas
+*** Mónadas
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (6ª y 7ª solución).
 
-* Librerías
+** Librerías
 
-** Data.List
+*** Data.List
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (de la 4ª a la 9ª solución).
 
-* Tipos abstractos de datos y algorítmica
+** Tipos abstractos de datos y algorítmica
 
-** El tipo abstracto de datos de las pilas.
+*** El tipo abstracto de datos de las pilas.
 
-** El tipo abstracto de datos de las colas.
+*** El tipo abstracto de datos de las colas.
 
-** El tipo abstracto de datos de las colas de prioridad.
+*** El tipo abstracto de datos de las colas de prioridad.
 
-** El tipo abstracto de datos de los conjuntos.
+*** El tipo abstracto de datos de los conjuntos.
 
-** El tipo abstracto de datos de las tablas.
+*** El tipo abstracto de datos de las tablas.
 
-** El tipo abstracto de datos de las árboles binarios de búsqueda.
+*** El tipo abstracto de datos de las árboles binarios de búsqueda.
 
-** El tipo abstracto de datos de los montículos.
+*** El tipo abstracto de datos de los montículos.
 
-** El tipo abstracto de datos de los polinomios.
+*** El tipo abstracto de datos de los polinomios.
 
-** Algoritmos sobre grafos.
+*** Algoritmos sobre grafos.
 
-** Búsqueda en espacios de estados
+*** Búsqueda en espacios de estados
 
-** Programación dinámica.
+*** Programación dinámica.
 
-* Aplicaciones matemáticas
+** Aplicaciones matemáticas
 
-** Álgebra lineal
+*** Álgebra lineal
 
-** Cálculo numérico
+*** Cálculo numérico
 
-** Estadística
+*** Estadística
 
-** Combinatoria
+*** Combinatoria
