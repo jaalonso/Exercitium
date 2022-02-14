@@ -18,7 +18,9 @@ Los objetivos de esta recopilación son:
   enlace al ejercicio en cada uno de los apartados indicando las soluciones que
   se corresponden con dicho apartado.
 
-* Índice cronológico (por fecha de publicación en Exercitium)
+* Índice cronológico
+
+Índice de los ejercicios por su fecha de publicación en [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]].
 
 ** Curso 2013-14
 
