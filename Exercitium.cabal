@@ -26,6 +26,7 @@ source-repository head
 
 library
   exposed-modules:
+      Bandera_tricolor
       Iguales_al_siguiente
       Ordenados_por_maximo
   other-modules:
@@ -55,6 +56,7 @@ test-suite Exercitium-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Bandera_tricolor_Spec
       Iguales_al_siguiente_Spec
       Ordenados_por_maximo_Spec
       Paths_Exercitium

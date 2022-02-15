@@ -24,10 +24,9 @@ Los objetivos de esta recopilación son:
 
 ** Curso 2013-14
 
-*** Abril de 2014
-
-+ 21: [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
-+ 22: [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]].
++ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
++ [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]].
++ [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 
 * Índice temático
 
@@ -38,9 +37,11 @@ Los objetivos de esta recopilación son:
 *** Definiciones por comprensión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (1ª y 4ª solución).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (2ª solución).
++ [[./src/Bandera_tricolor.hs][La bandera tricolor]] (1ª y 3ª solución).
 
 *** Definiciones por recursión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (3ª solución).
++ [[./src/Bandera_tricolor.hs][La bandera tricolor]] (4ª solución).
 
 *** Definiciones por recursión y por comprensión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (2ª solución).
@@ -50,10 +51,12 @@ Los objetivos de esta recopilación son:
 *** Funciones de orden superior
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (5ª, 8ª y 9ª solución).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (1ª solución).
++ [[./src/Bandera_tricolor.hs][La bandera tricolor]] (2ª solución).
 
 *** Listas infinitas
 
 *** Tipos definidos y tipos de datos algebraicos
++ [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 
 *** Vectores y matrices
 
@@ -69,6 +72,7 @@ Los objetivos de esta recopilación son:
 *** Data.List
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (de la 4ª a la 9ª solución).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (3ª solución).
++ [[./src/Bandera_tricolor.hs][La bandera tricolor]] (5ª solución).
 
 *** GHC.Exts
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (4ª solución).
