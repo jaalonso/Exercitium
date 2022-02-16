@@ -19,11 +19,11 @@ Los objetivos de esta recopilación son:
   se corresponden con dicho apartado.
 
 # * Índice cronológico
-#
+
 # Índice de los ejercicios por su fecha de publicación en [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]].
-#
+
 # ** Curso 2013-14
-#
+
 # + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
 # + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]].
 # + [[./src/Bandera_tricolor.hs][La bandera tricolor]].
@@ -31,9 +31,9 @@ Los objetivos de esta recopilación son:
 
 * Índice temático
 
-# ** Introducción a la programación funcional
+** Introducción a la programación funcional
 
-*** Definiciones elementales de funciones
+# *** Definiciones elementales de funciones
 
 *** Definiciones por comprensión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (1ª y 4ª solución).
