@@ -18,100 +18,87 @@ Los objetivos de esta recopilación son:
   enlace al ejercicio en cada uno de los apartados indicando las soluciones que
   se corresponden con dicho apartado.
 
-# * Índice cronológico
+* Introducción a la programación funcional
 
-# Índice de los ejercicios por su fecha de publicación en [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]].
+# ** Definiciones elementales de funciones
 
-# ** Curso 2013-14
-
-# + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
-# + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]].
-# + [[./src/Bandera_tricolor.hs][La bandera tricolor]].
-# + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
-
-* Índice temático
-
-** Introducción a la programación funcional
-
-# *** Definiciones elementales de funciones
-
-*** Definiciones por comprensión
+** Definiciones por comprensión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (1ª y 4ª solución).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (2ª solución).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (1ª y 3ª solución).
 + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (2ª solución).
 
-*** Definiciones por recursión
+** Definiciones por recursión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (3ª solución).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (4ª solución).
 
-*** Definiciones por recursión y por comprensión
+** Definiciones por recursión y por comprensión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (2ª solución).
 + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (1ª solución).
 
-*** Funciones sobre cadenas
+# ** Funciones sobre cadenas
 
-*** Funciones de orden superior
+** Funciones de orden superior
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (5ª, 8ª y 9ª solución).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (1ª solución).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (2ª solución).
 + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (2ª solución).
 
-*** Listas infinitas
+# ** Listas infinitas
 
-*** Tipos definidos y tipos de datos algebraicos
+** Tipos definidos y tipos de datos algebraicos
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 
-*** Vectores y matrices
+# ** Vectores y matrices
 
-*** Conjuntos y diccionarios
+# ** Conjuntos y diccionarios
 
-*** Programas interactivos
+# ** Programas interactivos
 
-*** Mónadas
+** Mónadas
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (6ª y 7ª solución).
 
-** Librerías
+* Librerías
 
-*** Data.List
+** Data.List
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (de la 4ª a la 9ª solución).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (3ª solución).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (5ª solución).
 + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (1ª solución).
 
-*** GHC.Exts
+** GHC.Exts
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (4ª solución).
 
-** Tipos abstractos de datos y algorítmica
+# * Tipos abstractos de datos y algorítmica
 
-*** El tipo abstracto de datos de las pilas.
+# ** El tipo abstracto de datos de las pilas.
 
-*** El tipo abstracto de datos de las colas.
+# ** El tipo abstracto de datos de las colas.
 
-*** El tipo abstracto de datos de las colas de prioridad.
+# ** El tipo abstracto de datos de las colas de prioridad.
 
-*** El tipo abstracto de datos de los conjuntos.
+# ** El tipo abstracto de datos de los conjuntos.
 
-*** El tipo abstracto de datos de las tablas.
+# ** El tipo abstracto de datos de las tablas.
 
-*** El tipo abstracto de datos de las árboles binarios de búsqueda.
+# ** El tipo abstracto de datos de las árboles binarios de búsqueda.
 
-*** El tipo abstracto de datos de los montículos.
+# ** El tipo abstracto de datos de los montículos.
 
-*** El tipo abstracto de datos de los polinomios.
+# ** El tipo abstracto de datos de los polinomios.
 
-*** Algoritmos sobre grafos.
+# ** Algoritmos sobre grafos.
 
-*** Búsqueda en espacios de estados
+# ** Búsqueda en espacios de estados
 
-*** Programación dinámica.
+# ** Programación dinámica.
 
-** Aplicaciones matemáticas
+# * Aplicaciones matemáticas
 
-*** Álgebra lineal
+# ** Álgebra lineal
 
-*** Cálculo numérico
+# ** Cálculo numérico
 
-*** Estadística
+# ** Estadística
 
-*** Combinatoria
+# ** Combinatoria
