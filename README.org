@@ -18,20 +18,20 @@ Los objetivos de esta recopilación son:
   enlace al ejercicio en cada uno de los apartados indicando las soluciones que
   se corresponden con dicho apartado.
 
-* Índice cronológico
-
-Índice de los ejercicios por su fecha de publicación en [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]].
-
-** Curso 2013-14
-
-+ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
-+ [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]].
-+ [[./src/Bandera_tricolor.hs][La bandera tricolor]].
-+ [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
+# * Índice cronológico
+#
+# Índice de los ejercicios por su fecha de publicación en [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]].
+#
+# ** Curso 2013-14
+#
+# + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
+# + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]].
+# + [[./src/Bandera_tricolor.hs][La bandera tricolor]].
+# + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
 
 * Índice temático
 
-** Introducción a la programación funcional
+# ** Introducción a la programación funcional
 
 *** Definiciones elementales de funciones
 
