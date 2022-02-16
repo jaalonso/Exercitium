@@ -1,7 +1,7 @@
 -- Ordenados_por_maximo.hs
 -- Ordenación por el máximo.
 -- José A. Alonso Jiménez https://jaalonso.github.io
--- Sevilla, 22 de Abril de 2014 (Revisión del 15 de febrero de 2022)
+-- Sevilla, 22-abril-2014 (Revisión 15-febrero-2022)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
