@@ -27,6 +27,7 @@ source-repository head
 library
   exposed-modules:
       Bandera_tricolor
+      Elementos_minimales
       Iguales_al_siguiente
       Ordenados_por_maximo
   other-modules:
@@ -57,6 +58,7 @@ test-suite Exercitium-test
   main-is: Spec.hs
   other-modules:
       Bandera_tricolor_Spec
+      Elementos_minimales_Spec
       Iguales_al_siguiente_Spec
       Ordenados_por_maximo_Spec
       Paths_Exercitium

@@ -27,6 +27,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]].
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]].
++ [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
 
 * Índice temático
 
@@ -38,6 +39,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (1ª y 4ª solución).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (2ª solución).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (1ª y 3ª solución).
++ [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (2ª solución).
 
 *** Definiciones por recursión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (3ª solución).
@@ -45,6 +47,7 @@ Los objetivos de esta recopilación son:
 
 *** Definiciones por recursión y por comprensión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (2ª solución).
++ [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (1ª solución).
 
 *** Funciones sobre cadenas
 
@@ -52,6 +55,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (5ª, 8ª y 9ª solución).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (1ª solución).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (2ª solución).
++ [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (2ª solución).
 
 *** Listas infinitas
 
@@ -73,6 +77,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (de la 4ª a la 9ª solución).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (3ª solución).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (5ª solución).
++ [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (1ª solución).
 
 *** GHC.Exts
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (4ª solución).
