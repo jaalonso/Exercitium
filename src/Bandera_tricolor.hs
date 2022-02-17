@@ -1,7 +1,7 @@
 -- Bandera_tricolor.hs
 -- La bandera tricolor.
--- José A. Alonso Jiménez https://jaalonso.github.io
--- Sevilla, 15-abril-2014 (Revisión 16-febrero-2022)
+-- José A. Alonso Jiménez <https://jaalonso.github.io>
+-- Sevilla, 16-febrero-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
