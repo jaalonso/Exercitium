@@ -29,6 +29,7 @@ library
       Bandera_tricolor
       Elementos_minimales
       Iguales_al_siguiente
+      Mastermind
       Ordenados_por_maximo
   other-modules:
       Paths_Exercitium
@@ -60,6 +61,7 @@ test-suite Exercitium-test
       Bandera_tricolor_Spec
       Elementos_minimales_Spec
       Iguales_al_siguiente_Spec
+      Mastermind_Spec
       Ordenados_por_maximo_Spec
       Paths_Exercitium
   hs-source-dirs:
