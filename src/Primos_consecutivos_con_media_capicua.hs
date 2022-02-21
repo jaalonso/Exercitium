@@ -11,16 +11,19 @@
 -- consecutivos cuya media, z, es capicúa. Por ejemplo,
 --    λ> take 5 primosConsecutivosConMediaCapicua
 --    [(3,5,4),(5,7,6),(7,11,9),(97,101,99),(109,113,111)]
+--    λ> primosConsecutivosConMediaCapicua !! 500
+--    (5687863,5687867,5687865)
 -- ---------------------------------------------------------------------
 
 module Primos_consecutivos_con_media_capicua where
 
+import Data.List (genericTake)
 import Data.Numbers.Primes (primes)
 
 -- 1ª solución
 -- ===========
 
-primosConsecutivosConMediaCapicua :: [(Int,Int,Int)]
+primosConsecutivosConMediaCapicua :: [(Integer,Integer,Integer)]
 primosConsecutivosConMediaCapicua =
   [(x,y,z) | (x,y) <- zip primos (tail primos),
              let z = (x + y) `div` 2,
@@ -29,23 +32,23 @@ primosConsecutivosConMediaCapicua =
 -- (primo x) se verifica si x es primo. Por ejemplo,
 --    primo 7  ==  True
 --    primo 8  ==  False
-primo :: Int -> Bool
+primo :: Integer -> Bool
 primo x = [y | y <- [1..x], x `rem` y == 0] == [1,x]
 
 -- primos es la lista de los números primos mayores que 2. Por ejemplo,
 --    take 10 primos  ==  [3,5,7,11,13,17,19,23,29]
-primos :: [Int]
+primos :: [Integer]
 primos = [x | x <- [3,5..], primo x]
 
 -- (capicua x) se verifica si x es capicúa. Por ejemplo,
-capicua :: Int -> Bool
+capicua :: Integer -> Bool
 capicua x = ys == reverse ys
   where ys = show x
 
 -- 2ª solución
 -- ===========
 
-primosConsecutivosConMediaCapicua2 :: [(Int,Int,Int)]
+primosConsecutivosConMediaCapicua2 :: [(Integer,Integer,Integer)]
 primosConsecutivosConMediaCapicua2 =
   [(x,y,z) | (x,y) <- zip (tail primes) (drop 2 primes),
              let z = (x + y) `div` 2,
@@ -55,10 +58,10 @@ primosConsecutivosConMediaCapicua2 =
 -- ============================
 
 -- La propiedad es
-prop_primosConsecutivosConMediaCapicua :: Int -> Bool
+prop_primosConsecutivosConMediaCapicua :: Integer -> Bool
 prop_primosConsecutivosConMediaCapicua n =
-  take n primosConsecutivosConMediaCapicua ==
-  take n primosConsecutivosConMediaCapicua2
+  genericTake n primosConsecutivosConMediaCapicua ==
+  genericTake n primosConsecutivosConMediaCapicua2
 
 -- La comprobación es
 --    λ> prop_primosConsecutivosConMediaCapicua 25
