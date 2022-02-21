@@ -25,7 +25,7 @@ import Data.Numbers.Primes (primes)
 
 primosConsecutivosConMediaCapicua :: [(Integer,Integer,Integer)]
 primosConsecutivosConMediaCapicua =
-  [(x,y,z) | (x,y) <- zip primos (tail primos),
+  [(x,y,z) | (x,y) <- zip primosImpares (tail primosImpares),
              let z = (x + y) `div` 2,
              capicua z]
 
@@ -35,10 +35,10 @@ primosConsecutivosConMediaCapicua =
 primo :: Integer -> Bool
 primo x = [y | y <- [1..x], x `rem` y == 0] == [1,x]
 
--- primos es la lista de los números primos mayores que 2. Por ejemplo,
---    take 10 primos  ==  [3,5,7,11,13,17,19,23,29]
-primos :: [Integer]
-primos = [x | x <- [3,5..], primo x]
+-- primosImpares es la lista de los números primos impares. Por ejemplo,
+--    take 10 primosImpares  ==  [3,5,7,11,13,17,19,23,29]
+primosImpares :: [Integer]
+primosImpares = [x | x <- [3,5..], primo x]
 
 -- (capicua x) se verifica si x es capicúa. Por ejemplo,
 capicua :: Integer -> Bool
@@ -50,6 +50,36 @@ capicua x = ys == reverse ys
 
 primosConsecutivosConMediaCapicua2 :: [(Integer,Integer,Integer)]
 primosConsecutivosConMediaCapicua2 =
+  [(x,y,z) | (x,y) <- zip primosImpares2 (tail primosImpares2),
+             let z = (x + y) `div` 2,
+             capicua z]
+
+primosImpares2 :: [Integer]
+primosImpares2 = tail (criba [2..])
+  where criba (p:ps) = p : criba [n | n <- ps, mod n p /= 0]
+        criba []     = error "Imposible"
+
+-- 3ª solución
+-- ===========
+
+primosConsecutivosConMediaCapicua3 :: [(Integer,Integer,Integer)]
+primosConsecutivosConMediaCapicua3 =
+  [(x,y,z) | (x,y) <- zip (tail primos3) (drop 2 primos3),
+             let z = (x + y) `div` 2,
+             capicua z]
+
+primos3 :: [Integer]
+primos3 = 2 : 3 : criba3 0 (tail primos3) 3
+  where criba3 k (p:ps) x = [n | n <- [x+2,x+4..p*p-2],
+                                 and [n `rem` q /= 0 | q <- take k (tail primos3)]]
+                            ++ criba3 (k+1) ps (p*p)
+        criba3 _ [] _     = error "Imposible"
+
+-- 4ª solución
+-- ===========
+
+primosConsecutivosConMediaCapicua4 :: [(Integer,Integer,Integer)]
+primosConsecutivosConMediaCapicua4 =
   [(x,y,z) | (x,y) <- zip (tail primes) (drop 2 primes),
              let z = (x + y) `div` 2,
              capicua z]
@@ -60,11 +90,13 @@ primosConsecutivosConMediaCapicua2 =
 -- La propiedad es
 prop_primosConsecutivosConMediaCapicua :: Integer -> Bool
 prop_primosConsecutivosConMediaCapicua n =
-  genericTake n primosConsecutivosConMediaCapicua ==
-  genericTake n primosConsecutivosConMediaCapicua2
+  all (== genericTake n primosConsecutivosConMediaCapicua)
+      [genericTake n primosConsecutivosConMediaCapicua2,
+       genericTake n primosConsecutivosConMediaCapicua3,
+       genericTake n primosConsecutivosConMediaCapicua4]
 
 -- La comprobación es
---    λ> prop_primosConsecutivosConMediaCapicua 25
+--    λ> prop_primosConsecutivosConMediaCapicua 25 {-# SCC "" #-}
 --    True
 
 -- Comparación de eficiencia
@@ -76,4 +108,27 @@ prop_primosConsecutivosConMediaCapicua n =
 --    (4.60 secs, 1,877,064,288 bytes)
 --    λ> primosConsecutivosConMediaCapicua2 !! 30
 --    (12919,12923,12921)
+--    (0.69 secs, 407,055,848 bytes)
+--    λ> primosConsecutivosConMediaCapicua3 !! 30
+--    (12919,12923,12921)
+--    (0.07 secs, 18,597,104 bytes)
+--    λ> primosConsecutivosConMediaCapicua4 !! 30
+--    (12919,12923,12921)
 --    (0.01 secs, 10,065,784 bytes)
+--
+--    λ> primosConsecutivosConMediaCapicua2 !! 40
+--    (29287,29297,29292)
+--    (2.67 secs, 1,775,554,576 bytes)
+--    λ> primosConsecutivosConMediaCapicua3 !! 40
+--    (29287,29297,29292)
+--    (0.09 secs, 32,325,808 bytes)
+--    λ> primosConsecutivosConMediaCapicua4 !! 40
+--    (29287,29297,29292)
+--    (0.01 secs, 22,160,072 bytes)
+--
+--    λ> primosConsecutivosConMediaCapicua3 !! 150
+--    (605503,605509,605506)
+--    (3.68 secs, 2,298,403,864 bytes)
+--    λ> primosConsecutivosConMediaCapicua4 !! 150
+--    (605503,605509,605506)
+--    (0.24 secs, 491,917,240 bytes)
