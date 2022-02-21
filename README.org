@@ -47,7 +47,8 @@ Los objetivos de esta recopilación son:
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (2ª solución).
 + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (2ª solución).
 
-# ** Listas infinitas
+** Listas infinitas
++ [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]] (2ª y 3ª solución)
 
 ** Tipos definidos y tipos de datos algebraicos
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]].
@@ -70,7 +71,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (1ª solución).
 
 ** Data.Numbers.Primes
-+ [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]] (2ª solución)
++ [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]] (4ª solución)
 
 ** GHC.Exts
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (4ª solución).
