@@ -31,6 +31,7 @@ library
       Iguales_al_siguiente
       Mastermind
       Ordenados_por_maximo
+      Primos_consecutivos_con_media_capicua
   other-modules:
       Paths_Exercitium
   hs-source-dirs:
@@ -63,6 +64,7 @@ test-suite Exercitium-test
       Iguales_al_siguiente_Spec
       Mastermind_Spec
       Ordenados_por_maximo_Spec
+      Primos_consecutivos_con_media_capicua_Spec
       Paths_Exercitium
   hs-source-dirs:
       test

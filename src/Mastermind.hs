@@ -6,12 +6,12 @@
 
 -- ---------------------------------------------------------------------
 -- El Mastermind es un juego que consiste en deducir un código
--- numérico formado por una lista de números distintos. Cada vez que se
--- empieza una partida, el programa debe elegir un código, que será lo
--- que el jugador debe adivinar en la menor cantidad de intentos
--- posibles. Cada intento consiste en una propuesta de un código posible
--- que propone el jugador, y una respuesta del programa. Las respuestas
--- le darán pistas al jugador para que pueda deducir el código.
+-- numérico formado por una lista de números. Cada vez que se empieza
+-- una partida, el programa debe elegir un código, que será lo que el
+-- jugador debe adivinar en la menor cantidad de intentos posibles. Cada
+-- intento consiste en una propuesta de un código posible que propone el
+-- jugador, y una respuesta del programa. Las respuestas le darán pistas
+-- al jugador para que pueda deducir el código.
 --
 -- Estas pistas indican lo cerca que estuvo el número propuesto de la
 -- solución a través de dos valores: la cantidad de aciertos es la
@@ -53,21 +53,21 @@ mastermind :: [Int] -> [Int] -> (Int, Int)
 mastermind xs ys =
   (length (aciertos xs ys), length (coincidencias xs ys))
 
--- (aciertos xs ys) es la lista de aciertos entre xs e ys. Por ejemplo,
---    aciertos [1,1,0,7] [1,0,1,7]  ==  [(0,1),(3,7)]
-aciertos :: Eq a => [a] -> [a] -> [(Int,a)]
+-- (aciertos xs ys) es la lista de las posiciones de los aciertos entre
+-- xs e ys. Por ejemplo,
+--    aciertos [1,1,0,7] [1,0,1,7]  ==  [0,3]
+aciertos :: Eq a => [a] -> [a] -> [Int]
 aciertos xs ys =
-  [(n,y) | (n,x,y) <- zip3 [0..] xs ys,
-           x == y]
+  [n | (n,x,y) <- zip3 [0..] xs ys, x == y]
 
--- (coincidencia xs ys) es la lista de coincidencias entre xs e ys. Por
--- ejemplo,
---    coincidencias [1,1,0,7] [1,0,1,7]  ==  [(1,0),(2,1)]
-coincidencias :: Eq a => [a] -> [a] -> [(Int,a)]
+-- (coincidencia xs ys) es la lista de las posiciones de las
+-- coincidencias entre xs e ys. Por ejemplo,
+--    coincidencias [1,1,0,7] [1,0,1,7]  ==  [1,2]
+coincidencias :: Eq a => [a] -> [a] -> [Int]
 coincidencias xs ys =
-  [(n,y) | (n,y) <- zip [0..] ys,
-           y `elem` xs,
-           (n,y) `notElem` aciertos xs ys]
+  [n | (n,y) <- zip [0..] ys,
+       y `elem` xs,
+       n `notElem` aciertos xs ys]
 
 -- 2ª solución
 -- ===========
@@ -76,6 +76,7 @@ mastermind2 :: [Int] -> [Int] -> (Int, Int)
 mastermind2 xs ys =
   (length aciertos2, length coincidencias2)
   where
+    aciertos2, coincidencias2 :: [Int]
     aciertos2      = [n | (n,x,y) <- zip3 [0..] xs ys, x == y]
     coincidencias2 = [n | (n,y) <- zip [0..] ys, y `elem` xs, n `notElem` aciertos2]
 

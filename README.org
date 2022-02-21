@@ -27,10 +27,13 @@ Los objetivos de esta recopilación son:
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (2ª solución).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (1ª y 3ª solución).
 + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (2ª solución).
++ [[./src/Mastermind.hs][Mastermind]]. (1ª y 2ª solución).
++ [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]] (1ª solución)
 
 ** Definiciones por recursión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (3ª solución).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (4ª solución).
++ [[./src/Mastermind.hs][Mastermind]]. (3ª solución).
 
 ** Definiciones por recursión y por comprensión
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (2ª solución).
@@ -65,6 +68,9 @@ Los objetivos de esta recopilación son:
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (3ª solución).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (5ª solución).
 + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (1ª solución).
+
+** Data.Numbers.Primes
++ [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]] (2ª solución)
 
 ** GHC.Exts
 + [[./src/Ordenados_por_maximo.hs][Ordenación por máximos]] (4ª solución).
