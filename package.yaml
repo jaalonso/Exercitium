@@ -19,6 +19,7 @@ dependencies:
   - array
   - combinat
   - containers
+  - data-memocombinators
   - hspec
   - hspec-core
   - matrix

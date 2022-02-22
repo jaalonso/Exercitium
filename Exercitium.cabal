@@ -27,11 +27,29 @@ source-repository head
 library
   exposed-modules:
       Bandera_tricolor
+      Caminos_en_un_triangulo
+      Cuadrado_mas_cercano
+      Duplicacion_de_cada_elemento
       Elementos_minimales
+      Exponente_en_la_factorizacion
       Iguales_al_siguiente
       Mastermind
+      Maxima_suma_de_caminos_en_un_triangulo
+      Mayor_orbita_de_la_sucesion_de_Collatz
+      Numeros_amigos
+      Numeros_de_ocurrencias_de_elementos
       Ordenados_por_maximo
       Primos_consecutivos_con_media_capicua
+      Producto_de_los_elementos_de_la_diagonal_principal
+      Reconocimiento_de_potencias_de_4
+      Reiteracion_de_suma_de_consecutivos
+      Sistema_factoradico_de_numeracion
+      Sucesion_de_numeros_amigos
+      Suma_de_cadenas
+      Suma_de_fila_del_triangulo_de_los_impares
+      Suma_de_multiplos_de_3_o_de_5
+      Suma_de_numeros_amigos_menores_que_n
+      Ternas_pitagoricas_con_suma_dada
   other-modules:
       Paths_Exercitium
   hs-source-dirs:
@@ -44,6 +62,7 @@ library
     , base >=4.7 && <5
     , combinat
     , containers
+    , data-memocombinators
     , gnuplot
     , hspec
     , hspec-core
@@ -60,6 +79,7 @@ test-suite Exercitium-test
   main-is: Spec.hs
   other-modules:
       Bandera_tricolor_Spec
+      Cuadrado_mas_cercano_Spec
       Elementos_minimales_Spec
       Iguales_al_siguiente_Spec
       Mastermind_Spec
@@ -77,6 +97,7 @@ test-suite Exercitium-test
     , base
     , combinat
     , containers
+    , data-memocombinators
     , hspec
     , hspec-core
     , matrix

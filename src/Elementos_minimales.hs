@@ -32,12 +32,11 @@ minimales xss =
 --    subconjuntoPropio [1,3] [3,1,3]    ==  False
 --    subconjuntoPropio [1,3,1] [3,1,2]  ==  True
 subconjuntoPropio :: Ord a => [a] -> [a] -> Bool
-subconjuntoPropio xs ys = subconjuntoPropio' (nub xs) (nub ys)
+subconjuntoPropio xs ys = aux (nub xs) (nub ys)
   where
-    subconjuntoPropio' _       [] = False
-    subconjuntoPropio' []      _   = True
-    subconjuntoPropio' (x:xs') ys' =
-      x `elem` ys' && subconjuntoPropio xs' (delete x ys')
+    aux _       []  = False
+    aux []      _   = True
+    aux (u:us) vs = u `elem` vs && aux us (delete u vs)
 
 -- 2ª solución
 -- ===========
@@ -81,9 +80,9 @@ verifica_minimales =
 -- =========================
 
 -- La comparación es
---    λ> length (minimales [[1..n] | n <- [1..100]])
+--    λ> length (minimales [[1..n] | n <- [1..200]])
 --    1
---    (2.32 secs, 967,128,840 bytes)
---    λ> length (minimales2 [[1..n] | n <- [1..100]])
+--    (2.30 secs, 657,839,560 bytes)
+--    λ> length (minimales2 [[1..n] | n <- [1..200]])
 --    1
---    (0.13 secs, 14,731,872 bytes)
+--    (0.84 secs, 101,962,480 bytes)
