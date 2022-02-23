@@ -54,7 +54,7 @@ library
       Paths_Exercitium
   hs-source-dirs:
       src
-  ghc-options: -Wall
+  ghc-options: -Wall -fno-warn-type-defaults
   build-depends:
       I1M
     , QuickCheck
@@ -86,8 +86,10 @@ test-suite Exercitium-test
       Mastermind_Spec
       Ordenados_por_maximo_Spec
       Primos_consecutivos_con_media_capicua_Spec
+      Reiteracion_de_suma_de_consecutivos_Spec
       Sistema_factoradico_de_numeracion_Spec
       Suma_de_cadenas_Spec
+      Suma_de_fila_del_triangulo_de_los_impares_Spec
       Paths_Exercitium
   hs-source-dirs:
       test

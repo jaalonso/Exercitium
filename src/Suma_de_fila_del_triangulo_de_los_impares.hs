@@ -28,7 +28,6 @@
 module Suma_de_fila_del_triangulo_de_los_impares where
 
 import Test.QuickCheck
-import Test.Hspec
 
 -- 1ª solución
 sumaFilaTrianguloImpares1 :: Integer -> Integer
@@ -61,18 +60,3 @@ prop_sumaFilaTrianguloImpares n =
 --    λ> length (show (sumaFilaTrianguloImpares2 (10^7)))
 --    22
 --    (0.01 secs, 102,584 bytes)
-
--- ---------------------------------------------------------------------
--- § Verificación                                                     --
--- ---------------------------------------------------------------------
-
-verifica :: (Integer -> Integer) -> IO ()
-verifica sumaFilaTrianguloImpares = hspec $ do
-  it "e1" $
-    sumaFilaTrianguloImpares 2 `shouldBe` 8
-  it "e2" $
-    sumaFilaTrianguloImpares 13 `shouldBe` 2197
-  it "e3" $
-    sumaFilaTrianguloImpares 19 `shouldBe` 6859
-  it "e4" $
-    sumaFilaTrianguloImpares 99 `shouldBe` 970299

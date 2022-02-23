@@ -36,7 +36,6 @@
 
 module Reiteracion_de_suma_de_consecutivos where
 
-import Test.Hspec
 import Test.QuickCheck
 
 -- 1ª solución
@@ -192,33 +191,3 @@ prop_sumaReiterada xs =
 --    λ> length (show (sumaReiterada10 [1..4000]))
 --    1208
 --    (6.48 secs, 4,621,303,752 bytes)
-
--- ---------------------------------------------------------------------
--- § Verificación                                                     --
--- ---------------------------------------------------------------------
-
-verifica :: ([Integer] -> Integer) -> IO ()
-verifica sumaReiterada = hspec $  do
-  it "e1" $
-    sumaReiterada [1..5]     `shouldBe` (48)
-  it "e2" $
-    sumaReiterada [5,4..1]   `shouldBe` (48)
-  it "e3" $
-    sumaReiterada [-1,-1,-1] `shouldBe` (-4)
-  it "e4" $
-    sumaReiterada [1,2,3,4]  `shouldBe` (20)
-
-
--- 1 5    3       4               2
---   1+5  5+3     3+4             4+2
---        1+5+5+3 5+3+3+4         3+4+4+2
---                1+5+5+3+5+3+3+4 5+3+3+4+3+4+4+2
---                                1+5+5+3+5+3+3+4+5+3+3+4+3+4+4+2
-
--- 1*1 + 5*4 + 3*6 + 4*4 +  2*1
-
---                 1
---               1   1
---             1   2   1
---           1   3   3   1
---         1   4   6   4   1
