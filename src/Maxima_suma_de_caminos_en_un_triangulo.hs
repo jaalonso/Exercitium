@@ -31,6 +31,8 @@
 --    maximaSuma [[n..n+n] | n <- [0..4000]]    ==  16004000
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+
 module Maxima_suma_de_caminos_en_un_triangulo where
 
 import Test.Hspec
@@ -49,7 +51,6 @@ caminos [[x]] = [[x]]
 caminos ([x]:[y1,y2]:zs) =
   [x:y1:us | (_:us) <- caminos ([y1] : map init zs)] ++
   [x:y2:vs | (_:vs) <- caminos ([y2] : map tail zs)]
-caminos _ = error "Imposible"
 
 -- 2ª solución
 -- ===========
@@ -72,7 +73,6 @@ maximaSuma4 [[x]] = x
 maximaSuma4 ([x]:[y1,y2]:zs) =
   x + max (maximaSuma4 ([y1] : map init zs))
           (maximaSuma4 ([y2] : map tail zs))
-maximaSuma4 _ = error "Imposible"
 
 -- 5ª solución
 -- ===========
@@ -105,7 +105,6 @@ maximaSuma8 = head . foldr1 aux
   where
     aux [] _              = []
     aux (x:xs) (y0:y1:ys) = x + max y0 y1 : aux xs (y1:ys)
-    aux _ _ = error "Imposible"
 
 -- Comparación de eficiencia
 -- =========================

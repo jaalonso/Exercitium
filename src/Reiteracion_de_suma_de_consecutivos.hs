@@ -32,6 +32,8 @@
 --    sumaReiterada [1,5,3,4]  ==  29
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+
 module Reiteracion_de_suma_de_consecutivos where
 
 import Test.Hspec
@@ -76,7 +78,6 @@ sumaReiterada3 xs  = sumaReiterada3 (zipWith (+) xs (tail xs))
 sumaReiterada4 :: Num a => [a] -> a
 sumaReiterada4 [x]    = x
 sumaReiterada4 (x:xs) = sumaReiterada4 (zipWith (+) (x:xs) xs)
-sumaReiterada4 _ = error "Imposible"
 
 -- 5ª solución
 -- ===========
@@ -84,7 +85,6 @@ sumaReiterada4 _ = error "Imposible"
 sumaReiterada5 :: Num a => [a] -> a
 sumaReiterada5 [x]       = x
 sumaReiterada5 xs@(_:ys) = sumaReiterada5 (zipWith (+) xs ys)
-sumaReiterada5 _ = error "Imposible"
 
 -- 6ª solución
 -- ===========

@@ -28,6 +28,8 @@
 --    [[3,7,2,8],[3,7,2,5],[3,7,4,5],[3,7,4,9],[3,4,4,5],[3,4,4,9],[3,4,6,9],[3,4,6,3]]
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+
 module Caminos_en_un_triangulo where
 
 caminos :: [[a]] -> [[a]]
@@ -36,4 +38,3 @@ caminos [[x]] = [[x]]
 caminos ([x]:[y1,y2]:zs) =
   [x:y1:us | (_:us) <- caminos ([y1] : map init zs)] ++
   [x:y2:vs | (_:vs) <- caminos ([y2] : map tail zs)]
-caminos _ = error "Imposible"

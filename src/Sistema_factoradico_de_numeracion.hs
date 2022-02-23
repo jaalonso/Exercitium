@@ -49,17 +49,17 @@
 --      37199332678990121746799944815083519999999
 --
 -- Comprobar con QuickCheck que, para cualquier entero positivo n,
---      factoradicoAdecimal (decimalAfactoradico n) == n
+--    factoradicoAdecimal (decimalAfactoradico n) == n
 -- ---------------------------------------------------------------------
 
 {-# LANGUAGE TupleSections #-}
+{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
 
 module Sistema_factoradico_de_numeracion where
 
 import Data.List (genericIndex, genericLength)
-import qualified Data.Map as M
-import Test.QuickCheck
-import Test.Hspec
+import qualified Data.Map as M ((!), Map, fromList)
+import Test.QuickCheck (Property, (==>), quickCheck)
 
 -- 1ª solución
 -- ===========
@@ -97,7 +97,6 @@ decimalAfactoradico1 :: Integer -> String
 decimalAfactoradico1 n = aux n (reverse (takeWhile (<=n) facts))
   where aux 0 xs     = ['0' | _ <- xs]
         aux m (x:xs) = enteroAcaracter (m `div` x) : aux (m `mod` x) xs
-        aux _ _      = error "Imposible"
 
 -- (enteroAcaracter k) es el k-ésimo elemento de la lista
 -- ['0', '1',..., '9', 'A', 'B',..., 'Z']. . Por ejemplo,
@@ -139,7 +138,6 @@ decimalAfactoradico2 :: Integer -> String
 decimalAfactoradico2 n = aux n (reverse (takeWhile (<=n) facts))
   where aux 0 xs     = ['0' | _ <- xs]
         aux m (x:xs) = enteroAcaracter2 (m `div` x) : aux (m `mod` x) xs
-        aux _ _      = error "Imposible"
 
 -- (enteroAcaracter2 k) es el k-ésimo elemento de la lista
 -- ['0', '1',..., '9', 'A', 'B',..., 'Z']. . Por ejemplo,
@@ -191,7 +189,7 @@ decimalAfactoradico3 n = aux "" 2 (n, 0)
 --    enteroAcaracter3 35  ==  'Z'
 enteroAcaracter3 :: Integer -> Char
 enteroAcaracter3 n =
-  caracteres !! (fromInteger n)
+  caracteres !! fromInteger n
 
 -- 4ª solución
 -- ===========
@@ -239,8 +237,11 @@ prop_factoradico n =
   factoradicoAdecimal3 (decimalAfactoradico3 n) == n &&
   factoradicoAdecimal4 (decimalAfactoradico4 n) == n
 
+verifica_prop_factoradico :: IO ()
+verifica_prop_factoradico = quickCheck prop_factoradico
+
 -- La comprobación es
---    λ> quickCheck prop_factoradico
+--    λ> verifica_prop_factoradico
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
@@ -272,22 +273,3 @@ prop_factoradico n =
 --    λ> length (show (factoradicoAdecimal4 (show (10^50000))))
 --    213237
 --    (0.43 secs, 2,636,996,848 bytes)
-
--- ---------------------------------------------------------------------
--- § Verificación                                                     --
--- ---------------------------------------------------------------------
-
-verifica :: (Integer -> String) -> (String -> Integer) -> IO ()
-verifica decimalAfactoradico factoradicoAdecimal = hspec $ do
-  it "e1" $
-    decimalAfactoradico 463      `shouldBe` "341010"
-  it "e2" $
-    decimalAfactoradico 8999     `shouldBe` "15243210"
-  it "e3" $
-    decimalAfactoradico 2982     `shouldBe` "4041000"
-  it "e4" $
-    decimalAfactoradico 36288000 `shouldBe` "A0000000000"
-  it "e5" $
-    factoradicoAdecimal "341010" `shouldBe` 463
-  it "e6" $
-    factoradicoAdecimal "15243210" `shouldBe` 8999

@@ -15,6 +15,8 @@
 --    (5687863,5687867,5687865)
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+
 module Primos_consecutivos_con_media_capicua where
 
 import Data.List (genericTake)
@@ -57,7 +59,6 @@ primosConsecutivosConMediaCapicua2 =
 primosImpares2 :: [Integer]
 primosImpares2 = tail (criba [2..])
   where criba (p:ps) = p : criba [n | n <- ps, mod n p /= 0]
-        criba []     = error "Imposible"
 
 -- 3ª solución
 -- ===========
@@ -73,7 +74,6 @@ primos3 = 2 : 3 : criba3 0 (tail primos3) 3
   where criba3 k (p:ps) x = [n | n <- [x+2,x+4..p*p-2],
                                  and [n `rem` q /= 0 | q <- take k (tail primos3)]]
                             ++ criba3 (k+1) ps (p*p)
-        criba3 _ [] _     = error "Imposible"
 
 -- 4ª solución
 -- ===========

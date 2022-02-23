@@ -22,6 +22,8 @@
 --    sucesionAmigos6 !! 20 == (185368,203432)
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+
 module Sucesion_de_numeros_amigos where
 
 import Data.List (genericLength, group, inits, nub, sort, subsequences)
@@ -192,7 +194,6 @@ factorizacion = map primeroYlongitud . group . primeFactors
 --    primeroYlongitud [3,2,5,7] == (3,4)
 primeroYlongitud :: [a] -> (a,Integer)
 primeroYlongitud (x:xs) = (x, 1 + genericLength xs)
-primeroYlongitud []     = error "Imposible"
 
 -- Comparación de eficiencia
 -- =========================

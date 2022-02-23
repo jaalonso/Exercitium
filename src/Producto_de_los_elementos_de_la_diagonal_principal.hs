@@ -19,6 +19,8 @@
 --    length (show (productoDiagonal3 (replicate 30000 [1..30000])))  ==  121288
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+
 module Producto_de_los_elementos_de_la_diagonal_principal where
 
 import Data.List (genericReplicate)
@@ -60,7 +62,6 @@ diagonal3 xss = [xs!!k | (xs,k) <- zip xss [0..n]]
 productoDiagonal4 :: Num a => [[a]] -> a
 productoDiagonal4 []          = 1
 productoDiagonal4 ((x:_):xss) = x * productoDiagonal4 (map tail xss)
-productoDiagonal4 _ = error "Imposible"
 
 -- 5ª solución
 -- ===========
