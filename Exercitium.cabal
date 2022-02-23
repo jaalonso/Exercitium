@@ -85,6 +85,7 @@ test-suite Exercitium-test
       Mastermind_Spec
       Ordenados_por_maximo_Spec
       Primos_consecutivos_con_media_capicua_Spec
+      Suma_de_cadenas_Spec
       Paths_Exercitium
   hs-source-dirs:
       test
