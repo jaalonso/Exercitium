@@ -9,13 +9,12 @@
 --    duplicaElementos :: [a] -> [a]
 -- tal que (duplicaElementos xs) es la lista obtenida duplicando cada
 -- elemento de xs. Por ejemplo,
---    duplicaElementos1 [3,2,5]    ==  [3,3,2,2,5,5]
---    duplicaElementos1 "Haskell"  ==  "HHaasskkeellll"
+--    duplicaElementos [3,2,5]    ==  [3,3,2,2,5,5]
+--    duplicaElementos "Haskell"  ==  "HHaasskkeellll"
 -- ---------------------------------------------------------------------
 
 module Duplicacion_de_cada_elemento where
 
-import Test.Hspec
 import Test.QuickCheck
 
 --  1ª solución
@@ -62,22 +61,3 @@ verifica_duplicaElementos = quickCheck prop_duplicaElementos
 -- La comprobación es
 --    λ> verifica_duplicaElementos
 --    +++ OK, passed 100 tests.
-
--- ---------------------------------------------------------------------
--- § Verificación                                                     --
--- ---------------------------------------------------------------------
-
-verifica :: (String -> String) -> IO ()
-verifica duplicaElementos = hspec $ do
-  it "e1" $
-    duplicaElementos "abcd" `shouldBe` "aabbccdd"
-  it "e2" $
-    duplicaElementos "Adidas" `shouldBe` "AAddiiddaass"
-  it "e3" $
-    duplicaElementos "1337" `shouldBe` "11333377"
-  it "e4" $
-    duplicaElementos "illuminati" `shouldBe` "iilllluummiinnaattii"
-  it "e5" $
-    duplicaElementos "123456" `shouldBe` "112233445566"
-  it "e6" $
-    duplicaElementos "%^&*(" `shouldBe` "%%^^&&**(("
