@@ -17,9 +17,6 @@
 
 module Reconocimiento_de_potencias_de_4 where
 
-import Test.Hspec
-import Test.QuickCheck
-
 -- 1ª solución
 -- ===========
 
@@ -110,22 +107,3 @@ esPotenciaDe4_5 n =
 --    λ> esPotenciaDe4_5 (4^(4*10^5))
 --    True
 --    (2.28 secs, 20,659,327,352 bytes)
-
--- ---------------------------------------------------------------------
--- § Verificación                                                     --
--- ---------------------------------------------------------------------
-
-verifica :: (Integer -> Bool) -> IO ()
-verifica esPotenciaDe4 = hspec $ do
-  it "e1" $
-    esPotenciaDe4 1024 `shouldBe` True
-  it "e2" $
-    esPotenciaDe4  102 `shouldBe` False
-  it "e3" $
-    esPotenciaDe4   64 `shouldBe` True
-  it "e4" $ do
-      property $ forAll (arbitrary `suchThat` (>=0)) $ \x ->
-        esPotenciaDe4 (4^(x :: Integer)) `shouldBe` True
-  it "e5" $ do
-      property $ forAll (arbitrary `suchThat` (>=0)) $ \x ->
-        esPotenciaDe4 (4^(x :: Integer) + 1) `shouldBe` False

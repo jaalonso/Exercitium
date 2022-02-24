@@ -24,7 +24,6 @@
 module Producto_de_los_elementos_de_la_diagonal_principal where
 
 import Data.List (genericReplicate)
-import Test.Hspec
 
 -- 1ª solución
 -- ===========
@@ -53,7 +52,7 @@ productoDiagonal3 :: Num a => [[a]] -> a
 productoDiagonal3 = product . diagonal3
 
 diagonal3 :: [[a]] -> [a]
-diagonal3 xss = [xs!!k | (xs,k) <- zip xss [0..n]]
+diagonal3 xss = [xs !! k | (xs,k) <- zip xss [0..n]]
   where n = length (head xss) - 1
 
 -- 4ª solución
@@ -61,13 +60,17 @@ diagonal3 xss = [xs!!k | (xs,k) <- zip xss [0..n]]
 
 productoDiagonal4 :: Num a => [[a]] -> a
 productoDiagonal4 []          = 1
+productoDiagonal4 [[]]        = 1
 productoDiagonal4 ((x:_):xss) = x * productoDiagonal4 (map tail xss)
 
 -- 5ª solución
 -- ===========
 
 productoDiagonal5 :: Num a => [[a]] -> a
-productoDiagonal5 xss = product (zipWith (!!) xss [0..])
+productoDiagonal5 xss = product (zipWith (!!) xss [0..k])
+  where m = length xss
+        n = length (head xss)
+        k = min m n - 1
 
 -- Comparación de eficiencia
 -- =========================
@@ -98,20 +101,3 @@ ejemplo n = genericReplicate n [1..n]
 --    λ> length (show (productoDiagonal5 (ejemplo 70000)))
 --    308760
 --    (9.34 secs, 5,353,035,656 bytes)
-
--- ---------------------------------------------------------------------
--- § Verificación                                                     --
--- ---------------------------------------------------------------------
-
-verifica :: ([[Integer]] -> Integer) -> IO ()
-verifica productoDiagonal = hspec $ do
-  it "e1" $
-    productoDiagonal [[1]]                     `shouldBe` 1
-  it "e2" $
-    productoDiagonal [[1,2,3],[4,5,6],[7,8,9]]  `shouldBe` 1 * 5 * 9
-  it "e3" $
-    productoDiagonal [[3,5,2],[4,7,1],[6,9,0]]  `shouldBe` 3 * 7 * 0
-  it "e4" $
-    productoDiagonal [[3,5],[4,7],[6,9]]        `shouldBe` 3 * 7
-  it "e5" $
-    productoDiagonal [[3,5,2],[4,7,1]]          `shouldBe` 3 * 7

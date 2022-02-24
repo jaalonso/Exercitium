@@ -9,12 +9,12 @@
 -- que a<b<c y a^2+b^2=c^2. Por ejemplo (3,4,5) es una terna pitagórica.
 --
 -- Definir la función
---    ternasPitagoricas :: Integer -> [[Integer]]
+--    ternasPitagoricas :: Integer -> [(Integer,Integer,Integer)]
 -- tal que (ternasPitagoricas x) es la lista de las ternas pitagóricas
 -- cuya suma es x. Por ejemplo,
---    ternasPitagoricas 12      == [(3,4,5)]
---    ternasPitagoricas 60      == [(10,24,26),(15,20,25)]
---    ternasPitagoricas3 (10^6) == [(218750,360000,421250),(200000,375000,425000)]
+--    ternasPitagoricas 12     == [(3,4,5)]
+--    ternasPitagoricas 60     == [(10,24,26),(15,20,25)]
+--    ternasPitagoricas (10^6) == [(218750,360000,421250),(200000,375000,425000)]
 -- ---------------------------------------------------------------------
 
 module Ternas_pitagoricas_con_suma_dada where

@@ -22,6 +22,8 @@
 --    sumaAmigosMenores (10^5) == 852810
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+
 module Suma_de_numeros_amigos_menores_que_n where
 
 import Data.List (genericLength, group, inits, nub, sort, subsequences)

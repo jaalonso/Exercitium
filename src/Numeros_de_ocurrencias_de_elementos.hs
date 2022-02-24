@@ -15,8 +15,6 @@
 
 module Numeros_de_ocurrencias_de_elementos where
 
-import Test.Hspec
-
 import Data.List (group, nub, sort)
 import Data.Maybe (fromJust)
 import qualified Data.Map as M
