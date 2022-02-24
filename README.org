@@ -36,7 +36,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]] (Comprensión, Orden superior, Data.List, Data.Numbers.Primes).
 + [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]] (Comprensión, Orden superior, Listas infinitas, Data.Numbers.Primes, Data.List).
 + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (Comprensión, Recursión, Orden superior, Data.List).
-+ [[./src/Mastermind.hs][Mastermind]] (Comprensión, Recursión).
++ [[./src/Mastermind.hs][Mastermind]] (Comprensión, Recursión, Data.Set).
 + [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]] (Comprensión, Listas infinitas, Data.List, Data.Numbers.Primes)
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (Comprensión, Recursión, Mónadas, Data.List).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]] (Comprensión, Orden superior, Data.List, GHC.Exts).

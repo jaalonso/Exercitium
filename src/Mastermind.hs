@@ -44,6 +44,7 @@
 
 module Mastermind where
 
+import qualified Data.Set as S
 import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
@@ -92,6 +93,18 @@ mastermind3 xs ys = aux xs ys
           where (a,b) = aux us vs
         aux _ _ = (0,0)
 
+-- 4ª solución
+-- ===========
+
+mastermind4 :: [Int] -> [Int] -> (Int, Int)
+mastermind4 xs ys =
+  (length aciertos4, length coincidencias4)
+  where
+    aciertos4, coincidencias4 :: [Int]
+    aciertos4      = [n | (n,x,y) <- zip3 [0..] xs ys, x == y]
+    xs'            = S.fromList xs
+    coincidencias4 = [n | (n,y) <- zip [0..] ys, y `S.member` xs', n `notElem` aciertos4]
+
 -- Equivalencia de las definiciones
 -- ================================
 
@@ -100,7 +113,8 @@ prop_mastermind :: [Int] -> [Int] -> Bool
 prop_mastermind xs ys =
   all (== mastermind xs1 ys1)
       [mastermind2 xs1 ys1,
-       mastermind3 xs1 ys1]
+       mastermind3 xs1 ys1,
+       mastermind4 xs1 ys1]
   where n   = min (length xs) (length ys)
         xs1 = take n xs
         ys1 = take n ys
@@ -115,12 +129,16 @@ verifica_mastermind = quickCheck prop_mastermind
 -- Comparación de eficiencia
 -- =========================
 
---    λ> mastermind [1..10^4] [1..10^4]
---    (10000,0)
---    (13.33 secs, 16,413,026,904 bytes)
---    λ> mastermind2 [1..10^4] [1..10^4]
---    (10000,0)
---    (1.08 secs, 8,187,176 bytes)
---    λ> mastermind3 [1..10^4] [1..10^4]
---    (10000,0)
---    (0.03 secs, 6,437,472 bytes)
+-- La comparación es
+--    λ> mastermind [1..10^4] (map (*2) [1..10^4])
+--    (0,5000)
+--    (14.17 secs, 11,209,750,408 bytes)
+--    λ> mastermind2 [1..10^4] (map (*2) [1..10^4])
+--    (0,5000)
+--    (0.83 secs, 8,190,200 bytes)
+--    λ> mastermind3 [1..10^4] (map (*2) [1..10^4])
+--    (0,5000)
+--    (0.61 secs, 7,339,232 bytes)
+--    λ> mastermind4 [1..10^4] (map (*2) [1..10^4])
+--    (0,5000)
+--    (0.03 secs, 8,910,128 bytes)

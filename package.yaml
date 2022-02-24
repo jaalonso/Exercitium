@@ -16,6 +16,7 @@ extra-source-files:
 
 dependencies:
   - base >= 4.7 && < 5
+  - AlanDeniseEricLauren
   - array
   - combinat
   - containers
@@ -23,6 +24,7 @@ dependencies:
   - hspec
   - hspec-core
   - matrix
+  - MonadRandom
   - primes
   - QuickCheck
   - random

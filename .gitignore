@@ -21,3 +21,4 @@ cabal.project.local
 cabal.project.local~
 .HTF/
 .ghc.environment.*
+/src/Conjuntos_minimales.hs

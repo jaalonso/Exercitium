@@ -7,7 +7,7 @@ cabal-version: 1.12
 name:           Exercitium
 version:        0.1.0.0
 synopsis:       Ejercicios de programación funcional con Haskell
-description:    Solucines de los ejercicios de programación funcional propuestos en el blog Exercitium.
+description:    Soluciones de los ejercicios de programación funcional propuestos en el blog Exercitium.
 category:       Educational
 homepage:       https://github.com/jaalonso/Exercitium#readme
 bug-reports:    https://github.com/jaalonso/Exercitium/issues
@@ -29,6 +29,7 @@ library
       Anagramas
       Bandera_tricolor
       Caminos_en_un_triangulo
+      Conjuntos_minimales
       Cuadrado_mas_cercano
       Duplicacion_de_cada_elemento
       Elementos_minimales
@@ -57,7 +58,9 @@ library
       src
   ghc-options: -Wall -fno-warn-type-defaults
   build-depends:
-      I1M
+      AlanDeniseEricLauren
+    , I1M
+    , MonadRandom
     , QuickCheck
     , array
     , base >=4.7 && <5
@@ -109,8 +112,10 @@ test-suite Exercitium-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      Exercitium
+      AlanDeniseEricLauren
+    , Exercitium
     , I1M
+    , MonadRandom
     , QuickCheck
     , array
     , base

@@ -20,7 +20,7 @@
 
 module Anagramas where
 
-import Data.List (delete, permutations, sort)
+import Data.List (delete, sort)
 import Data.Char (toLower)
 import Data.Function (on)
 
