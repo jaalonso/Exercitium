@@ -26,6 +26,7 @@ source-repository head
 
 library
   exposed-modules:
+      Anagramas
       Bandera_tricolor
       Caminos_en_un_triangulo
       Cuadrado_mas_cercano
@@ -78,6 +79,7 @@ test-suite Exercitium-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Anagramas_Spec
       Bandera_tricolor_Spec
       Caminos_en_un_triangulo_Spec
       Cuadrado_mas_cercano_Spec

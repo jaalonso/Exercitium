@@ -41,6 +41,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (Comprensión, Recursión, Mónadas, Data.List).
 + [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]] (Comprensión, Orden superior, Data.List, GHC.Exts).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (Comprensión, Recursión, Tipos definidos, Data.List).
++ [[./src/Anagramas.hs][Anagramas]] (Recursión, Orden superior, Comprensión, Data.List, Data.Char, Data.Function).
 
 * Etiquetas
 
