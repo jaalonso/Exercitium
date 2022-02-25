@@ -23,3 +23,4 @@ spec = do
   describe "def. 2" $ specG primosEquidistantes2
   describe "def. 3" $ specG primosEquidistantes3
   describe "def. 4" $ specG primosEquidistantes4
+  describe "def. 5" $ specG primosEquidistantes5

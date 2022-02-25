@@ -32,13 +32,6 @@ packages:
       sha256: 8d1978a6497e4fd9c66b0c5f24ea659aa9714f5b7e8b1dcfce7fb7bb8d4dee0e
   original:
     hackage: statistics-linreg-0.3@sha256:95c6efe6c7f6b26bc6e9ada90ab2d18216371cf59a6ef2b517b4a6fd35d9a76f,2544
-- completed:
-    hackage: AlanDeniseEricLauren-0.1.0.1@sha256:af6c44efd897d862d12b16da96869978b46c54c3841a4449cbec553237783a8d,1741
-    pantry-tree:
-      size: 372
-      sha256: 4bea6b0ab8db3e0d91734f482fc4a641de46c7ad9d62063a074d621e8e841f4e
-  original:
-    hackage: AlanDeniseEricLauren-0.1.0.1@sha256:af6c44efd897d862d12b16da96869978b46c54c3841a4449cbec553237783a8d,1741
 snapshots:
 - completed:
     size: 587821

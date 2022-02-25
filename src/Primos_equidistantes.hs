@@ -75,6 +75,14 @@ primosEquidistantes4 k = aux primes
   where aux (x:y:ps) | y - x == k = (x,y) : aux (y:ps)
                      | otherwise  = aux (y:ps)
 
+-- 5ª solución
+-- ===========
+
+primosEquidistantes5 :: Integer -> [(Integer,Integer)]
+primosEquidistantes5 k =
+  [(x,y) | (x,y) <- zip primes (tail primes)
+         , y - x == k]
+
 -- Comparación de eficiencia
 -- =========================
 
@@ -91,6 +99,9 @@ primosEquidistantes4 k = aux primes
 --    λ> primosEquidistantes4 4 !! 200
 --    (9829,9833)
 --    (0.02 secs, 4,012,848 bytes)
+--    λ> primosEquidistantes5 4 !! 200
+--    (9829,9833)
+--    (0.01 secs, 7,085,072 bytes)
 --
 --    λ> primosEquidistantes2 4 !! 600
 --    (41617,41621)
@@ -101,6 +112,9 @@ primosEquidistantes4 k = aux primes
 --    λ> primosEquidistantes4 4 !! 600
 --    (41617,41621)
 --    (0.03 secs, 15,465,824 bytes)
+--    λ> primosEquidistantes5 4 !! 600
+--    (41617,41621)
+--    (0.04 secs, 28,858,232 bytes)
 --
 --    λ> primosEquidistantes3 4 !! 5000
 --    (556819,556823)
@@ -108,3 +122,13 @@ primosEquidistantes4 k = aux primes
 --    λ> primosEquidistantes4 4 !! 5000
 --    (556819,556823)
 --    (0.12 secs, 220,705,192 bytes)
+--    λ> primosEquidistantes5 4 !! 5000
+--    (556819,556823)
+--    (0.16 secs, 424,501,800 bytes)
+--
+--    λ> primosEquidistantes4 4 !! (10^5)
+--    (18467047,18467051)
+--    (3.99 secs, 9,565,715,488 bytes)
+--    λ> primosEquidistantes5 4 !! (10^5)
+--    (18467047,18467051)
+--    (7.95 secs, 18,712,469,144 bytes)

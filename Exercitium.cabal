@@ -29,7 +29,6 @@ library
       Anagramas
       Bandera_tricolor
       Caminos_en_un_triangulo
-      Conjuntos_minimales
       Cuadrado_mas_cercano
       Duplicacion_de_cada_elemento
       Elementos_minimales
@@ -59,9 +58,7 @@ library
       src
   ghc-options: -Wall -fno-warn-type-defaults
   build-depends:
-      AlanDeniseEricLauren
-    , I1M
-    , MonadRandom
+      I1M
     , QuickCheck
     , array
     , base >=4.7 && <5
@@ -114,10 +111,8 @@ test-suite Exercitium-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      AlanDeniseEricLauren
-    , Exercitium
+      Exercitium
     , I1M
-    , MonadRandom
     , QuickCheck
     , array
     , base
