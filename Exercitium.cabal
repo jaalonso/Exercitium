@@ -7,7 +7,7 @@ cabal-version: 1.12
 name:           Exercitium
 version:        0.1.0.0
 synopsis:       Ejercicios de programación funcional con Haskell
-description:    Soluciones de los ejercicios de programación funcional propuestos en el blog Exercitium.
+description:    Solucines de los ejercicios de programación funcional propuestos en el blog Exercitium.
 category:       Educational
 homepage:       https://github.com/jaalonso/Exercitium#readme
 bug-reports:    https://github.com/jaalonso/Exercitium/issues
@@ -42,6 +42,7 @@ library
       Numeros_de_ocurrencias_de_elementos
       Ordenados_por_maximo
       Primos_consecutivos_con_media_capicua
+      Primos_equidistantes
       Producto_de_los_elementos_de_la_diagonal_principal
       Reconocimiento_de_potencias_de_4
       Reiteracion_de_suma_de_consecutivos
@@ -97,6 +98,7 @@ test-suite Exercitium-test
       Numeros_de_ocurrencias_de_elementos_Spec
       Ordenados_por_maximo_Spec
       Primos_consecutivos_con_media_capicua_Spec
+      Primos_equidistantes_Spec
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
       Reconocimiento_de_potencias_de_4_Spec
       Reiteracion_de_suma_de_consecutivos_Spec

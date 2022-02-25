@@ -42,6 +42,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]] (Comprensión, Orden superior, Data.List, GHC.Exts).
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (Comprensión, Recursión, Tipos definidos, Data.List).
 + [[./src/Anagramas.hs][Anagramas]] (Recursión, Orden superior, Comprensión, Data.List, Data.Char, Data.Function).
++ [[./src/Primos_equidistantes.hs][Primos equidistantes]] (Recursión, Listas infinitas, Comprensión, Data.Numbers.Primes).
 
 * Etiquetas
 

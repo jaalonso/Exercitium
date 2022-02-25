@@ -89,6 +89,15 @@ igualesAlSiguiente8 xs = concatMap tail (group xs)
 igualesAlSiguiente9 :: Eq a => [a] -> [a]
 igualesAlSiguiente9 = concatMap tail . group
 
+-- 10ª solución
+-- ===========
+
+igualesAlSiguiente10 :: Eq a => [a] -> [a]
+igualesAlSiguiente10 xs = aux xs (tail xs)
+  where aux (u:us) (v:vs) | u == v    = u : aux us vs
+                          | otherwise = aux us vs
+        aux _ _ = []
+
 -- Equivalencia de las definiciones
 -- ================================
 
@@ -102,7 +111,9 @@ prop_igualesAlSiguiente xs =
        igualesAlSiguiente5 xs,
        igualesAlSiguiente6 xs,
        igualesAlSiguiente7 xs,
-       igualesAlSiguiente8 xs]
+       igualesAlSiguiente8 xs,
+       igualesAlSiguiente9 xs,
+       igualesAlSiguiente10 xs]
 
 verificacion :: IO ()
 verificacion = quickCheck prop_igualesAlSiguiente
@@ -144,3 +155,9 @@ verificacion = quickCheck prop_igualesAlSiguiente
 --    λ> length (show (igualesAlSiguiente8 ej))
 --    588895
 --    (0.33 secs, 1,550,410,024 bytes)
+--    λ> length (show (igualesAlSiguiente9 ej))
+--    588895
+--    (0.33 secs, 1,550,450,968 bytes)
+--    λ> length (show (igualesAlSiguiente10 ej))
+--    588895
+--    (1.54 secs, 754,272,600 bytes)
