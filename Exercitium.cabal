@@ -51,6 +51,7 @@ library
       Suma_de_fila_del_triangulo_de_los_impares
       Suma_de_multiplos_de_3_o_de_5
       Suma_de_numeros_amigos_menores_que_n
+      Suma_si_todos_justos
       Ternas_pitagoricas_con_suma_dada
   other-modules:
       Paths_Exercitium
@@ -105,6 +106,7 @@ test-suite Exercitium-test
       Suma_de_fila_del_triangulo_de_los_impares_Spec
       Suma_de_multiplos_de_3_o_de_5_Spec
       Suma_de_numeros_amigos_menores_que_n_Spec
+      Suma_si_todos_justos_Spec
       Ternas_pitagoricas_con_suma_dada_Spec
       Paths_Exercitium
   hs-source-dirs:
