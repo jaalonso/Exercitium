@@ -43,7 +43,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]] (Comprensión, Recursión, Tipos definidos, Data.List).
 + [[./src/Anagramas.hs][Anagramas]] (Recursión, Orden superior, Comprensión, Data.List, Data.Char, Data.Function).
 + [[./src/Primos_equidistantes.hs][Primos equidistantes]] (Recursión, Listas infinitas, Comprensión, Data.Numbers.Primes).
-+ [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
++ [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]] (Comprensión, Orden superior, Data.Maybe).
 
 * Etiquetas
 
