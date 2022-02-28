@@ -30,16 +30,19 @@ library
       Bandera_tricolor
       Caminos_en_un_triangulo
       Cuadrado_mas_cercano
+      Diagonales_principales
       Duplicacion_de_cada_elemento
       Elementos_minimales
       Exponente_en_la_factorizacion
       Iguales_al_siguiente
       Mastermind
+      Matriz_Toeplitz
       Maxima_suma_de_caminos_en_un_triangulo
       Mayor_orbita_de_la_sucesion_de_Collatz
       Numeros_amigos
       Numeros_de_ocurrencias_de_elementos
       Ordenados_por_maximo
+      Posiciones_diagonales_principales
       Primos_consecutivos_con_media_capicua
       Primos_equidistantes
       Producto_de_los_elementos_de_la_diagonal_principal
@@ -85,16 +88,19 @@ test-suite Exercitium-test
       Bandera_tricolor_Spec
       Caminos_en_un_triangulo_Spec
       Cuadrado_mas_cercano_Spec
+      Diagonales_principales_Spec
       Duplicacion_de_cada_elemento_Spec
       Elementos_minimales_Spec
       Exponente_en_la_factorizacion_Spec
       Iguales_al_siguiente_Spec
       Mastermind_Spec
+      Matriz_Toeplitz_Spec
       Maxima_suma_de_caminos_en_un_triangulo_Spec
       Mayor_orbita_de_la_sucesion_de_Collatz_Spec
       Numeros_amigos_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
       Ordenados_por_maximo_Spec
+      Posiciones_diagonales_principales_Spec
       Primos_consecutivos_con_media_capicua_Spec
       Primos_equidistantes_Spec
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
