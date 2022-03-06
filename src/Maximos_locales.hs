@@ -19,6 +19,8 @@
 --    maximosLocales "adbpmqexyz"         ==  "dpq"
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Maximos_locales where
 
 import Test.QuickCheck

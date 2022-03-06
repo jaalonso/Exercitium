@@ -35,6 +35,7 @@ library
       Elementos_minimales
       Exponente_en_la_factorizacion
       Iguales_al_siguiente
+      Lista_cuadrada
       Mastermind
       Matriz_Toeplitz
       Maxima_suma_de_caminos_en_un_triangulo
@@ -94,6 +95,7 @@ test-suite Exercitium-test
       Elementos_minimales_Spec
       Exponente_en_la_factorizacion_Spec
       Iguales_al_siguiente_Spec
+      Lista_cuadrada_Spec
       Mastermind_Spec
       Matriz_Toeplitz_Spec
       Maxima_suma_de_caminos_en_un_triangulo_Spec
