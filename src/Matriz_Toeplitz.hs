@@ -1,7 +1,7 @@
 -- Matriz_Toeplitz.hs
 -- Matrices de Toepliz
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 4-marzo-2022
+-- Sevilla, 8-marzo-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
