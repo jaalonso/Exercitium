@@ -50,6 +50,7 @@ library
       Producto_de_los_elementos_de_la_diagonal_principal
       Reconocimiento_de_potencias_de_4
       Reiteracion_de_suma_de_consecutivos
+      Segmentos_consecutivos
       Sistema_factoradico_de_numeracion
       Sucesion_de_numeros_amigos
       Suma_de_cadenas
@@ -110,6 +111,7 @@ test-suite Exercitium-test
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
       Reconocimiento_de_potencias_de_4_Spec
       Reiteracion_de_suma_de_consecutivos_Spec
+      Segmentos_consecutivos_Spec
       Sistema_factoradico_de_numeracion_Spec
       Sucesion_de_numeros_amigos_Spec
       Suma_de_cadenas_Spec
