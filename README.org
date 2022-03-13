@@ -53,7 +53,8 @@ Los objetivos de esta recopilación son:
 + [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] (Comprensión, Recursión, Orden superior, Data.Array).
 + [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] (Tipo de dato algebraico, Recursión, Comprensión, Orden superior).
 + [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] (Comprensión, Orden superior, Data.Char).
-+ [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] (Comprensión, Recursión, Orden superior, Lista infinita).
++ [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] (Comprensión, Recursión, Orden superior, Lista infinita, Data.List, Data.Maybe).
++ [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] (Comprensión, Tipo de dato definido).
 
 * Etiquetas
 
