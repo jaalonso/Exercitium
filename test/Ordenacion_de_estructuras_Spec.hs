@@ -35,4 +35,6 @@ spec :: Spec
 spec = do
   describe "def. 1" $ specG ordenadas1
   describe "def. 2" $ specG ordenadas2
+  describe "def. 3" $ specG ordenadas3
+  describe "def. 4" $ specG ordenadas4
   describe "equivalencia" $ it "p1" $ property prop_ordenadas

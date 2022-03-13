@@ -54,7 +54,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] (Tipo de dato algebraico, Recursión, Comprensión, Orden superior).
 + [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] (Comprensión, Orden superior, Data.Char).
 + [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] (Comprensión, Recursión, Orden superior, Lista infinita, Data.List, Data.Maybe).
-+ [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] (Comprensión, Tipo de dato definido).
++ [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] (Comprensión, Orden superior, Tipo de dato definido, Data.List).
 
 * Etiquetas
 

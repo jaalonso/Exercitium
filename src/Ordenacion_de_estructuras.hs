@@ -36,7 +36,7 @@
 
 module Ordenacion_de_estructuras where
 
-import Data.List (sort)
+import Data.List (sort, sortBy)
 import Test.QuickCheck
 
 data Notas = Notas String Int Int
@@ -51,6 +51,21 @@ ordenadas1 ns =
 ordenadas2 :: [Notas] -> [Notas]
 ordenadas2 ns =
   map (\(y,x,n) -> Notas n x y) (sort [(y1,x1,n1) | (Notas n1 x1 y1) <- ns])
+
+-- 3ª solución
+ordenadas3 :: [Notas] -> [Notas]
+ordenadas3 ns = sortBy (\(Notas n1 x1 y1) (Notas n2 x2 y2) ->
+                          compare (y1,x1,n1) (y2,x2,n2))
+                       ns
+
+-- 4ª solución
+-- ===========
+
+instance Ord Notas where
+  Notas n1 x1 y1 <= Notas n2 x2 y2 = (y1,x1,n1) <= (y2,x2,n2)
+
+ordenadas4 :: [Notas] -> [Notas]
+ordenadas4 = sort
 
 -- Comprobación de equivalencia
 -- ============================
@@ -80,9 +95,12 @@ instance Arbitrary Notas where
   arbitrary = notasArbitraria
 
 -- La propiedad es
-prop_ordenadas :: [Notas] -> Property
+prop_ordenadas :: [Notas] -> Bool
 prop_ordenadas ns =
-  ordenadas1 ns === ordenadas2 ns
+  all (== ordenadas1 ns)
+      [f ns | f <- [ordenadas2,
+                    ordenadas3,
+                    ordenadas4]]
 
 -- La comprobación es
 --    λ> quickCheck prop_ordenadas
