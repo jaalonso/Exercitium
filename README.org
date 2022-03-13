@@ -49,7 +49,8 @@ Los objetivos de esta recopilación son:
 + [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]] (Orden superior, Comprensión, Data.Array).
 + [[./src/Maximos_locales.hs][Máximos locales]] (Recursión, Comprensión).
 + [[./src/Lista_cuadrada.hs][Lista cuadrada]] (Recursión, Comprensión, Orden superior, Listas infinitas)
-+ [[./src/Segmentos_consecutivos.hs][Segmentos de elementos consecutivos]] (Recursión, Comprensión, Orden superior).
++ [[./src/Segmentos_consecutivos.hs][Segmentos maximales de elementos consecutivos]] (Recursión, Comprensión, Orden superior).
++ [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] (Comprensión, Orden superior, Data.Array).
 
 * Etiquetas
 
