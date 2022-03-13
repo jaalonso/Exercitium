@@ -26,6 +26,7 @@ source-repository head
 
 library
   exposed-modules:
+      Alfabeto_desde
       Anagramas
       Bandera_tricolor
       Caminos_en_un_triangulo
@@ -48,6 +49,7 @@ library
       Primos_consecutivos_con_media_capicua
       Primos_equidistantes
       Producto_de_los_elementos_de_la_diagonal_principal
+      Ramas_de_un_arbol
       Reconocimiento_de_potencias_de_4
       Reiteracion_de_suma_de_consecutivos
       Segmentos_consecutivos
@@ -88,6 +90,7 @@ test-suite Exercitium-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Alfabeto_desde_Spec
       Anagramas_Spec
       Bandera_tricolor_Spec
       Caminos_en_un_triangulo_Spec

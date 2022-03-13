@@ -50,7 +50,9 @@ Los objetivos de esta recopilación son:
 + [[./src/Maximos_locales.hs][Máximos locales]] (Recursión, Comprensión).
 + [[./src/Lista_cuadrada.hs][Lista cuadrada]] (Recursión, Comprensión, Orden superior, Listas infinitas)
 + [[./src/Segmentos_consecutivos.hs][Segmentos maximales de elementos consecutivos]] (Recursión, Comprensión, Orden superior).
-+ [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] (Comprensión, Orden superior, Data.Array).
++ [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] (Comprensión, Recursión, Orden superior, Data.Array).
++ [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] (Tipo de dato algebraico, Recursión, Comprensión, Orden superior).
++ [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] (Comprensión, Orden superior, Data.Char).
 
 * Etiquetas
 
