@@ -57,15 +57,9 @@ primos2 = criba [2..]
 -- ===========
 
 primosEquidistantes3 :: Integer -> [(Integer,Integer)]
-primosEquidistantes3 k = aux primos3
-  where aux (x:y:ps) | y - x == k = (x,y) : aux (y:ps)
-                     | otherwise  = aux (y:ps)
-
-primos3 :: [Integer]
-primos3 = 2 : 3 : criba3 0 (tail primos3) 3
-  where criba3 k (p:ps) x = [n | n <- [x+2,x+4..p*p-2],
-                                 and [n `rem` q /= 0 | q <- take k (tail primos3)]]
-                            ++ criba3 (k+1) ps (p*p)
+primosEquidistantes3 k =
+  [(x,y) | (x,y) <- zip primos2 (tail primos2)
+         , y - x == k]
 
 -- 4ª solución
 -- ===========
@@ -83,6 +77,22 @@ primosEquidistantes5 k =
   [(x,y) | (x,y) <- zip primes (tail primes)
          , y - x == k]
 
+-- Comprobación de equivalencia
+-- ============================
+
+-- La propiedad es
+prop_primosEquidistantes :: Int -> Integer -> Bool
+prop_primosEquidistantes n k =
+  all (== take n (primosEquidistantes1 k))
+      [take n (f k) | f <- [primosEquidistantes2,
+                            primosEquidistantes3,
+                            primosEquidistantes4,
+                            primosEquidistantes5]]
+
+-- La comprobación es
+--    λ> prop_primosEquidistantes 100 4
+--    True
+
 -- Comparación de eficiencia
 -- =========================
 
@@ -95,7 +105,7 @@ primosEquidistantes5 k =
 --    (0.44 secs, 249,622,048 bytes)
 --    λ> primosEquidistantes3 4 !! 200
 --    (9829,9833)
---    (0.06 secs, 13,352,208 bytes)
+--    (0.36 secs, 207,549,592 bytes)
 --    λ> primosEquidistantes4 4 !! 200
 --    (9829,9833)
 --    (0.02 secs, 4,012,848 bytes)
@@ -108,23 +118,13 @@ primosEquidistantes5 k =
 --    (5.67 secs, 3,340,313,480 bytes)
 --    λ> primosEquidistantes3 4 !! 600
 --    (41617,41621)
---    (0.14 secs, 76,600,968 bytes)
+--    (5.43 secs, 3,090,994,096 bytes)
 --    λ> primosEquidistantes4 4 !! 600
 --    (41617,41621)
 --    (0.03 secs, 15,465,824 bytes)
 --    λ> primosEquidistantes5 4 !! 600
 --    (41617,41621)
 --    (0.04 secs, 28,858,232 bytes)
---
---    λ> primosEquidistantes3 4 !! 5000
---    (556819,556823)
---    (3.58 secs, 2,040,940,144 bytes)
---    λ> primosEquidistantes4 4 !! 5000
---    (556819,556823)
---    (0.12 secs, 220,705,192 bytes)
---    λ> primosEquidistantes5 4 !! 5000
---    (556819,556823)
---    (0.16 secs, 424,501,800 bytes)
 --
 --    λ> primosEquidistantes4 4 !! (10^5)
 --    (18467047,18467051)
