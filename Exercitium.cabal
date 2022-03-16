@@ -83,6 +83,7 @@ library
     , matrix
     , primes
     , random
+    , split
     , statistics
     , statistics-linreg
     , vector
@@ -147,6 +148,7 @@ test-suite Exercitium-test
     , matrix
     , primes
     , random
+    , split
     , statistics
     , statistics-linreg
     , vector

@@ -20,6 +20,7 @@
 
 module Lista_cuadrada where
 
+import Data.List.Split (chunksOf)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -50,6 +51,13 @@ grupos2 _ [] = []
 grupos2 n xs = ys : grupos n zs
   where (ys,zs) = splitAt n xs
 
+-- 2ª solución
+-- ===========
+
+listaCuadrada2' :: Int -> a -> [a] -> [[a]]
+listaCuadrada2' n x xs =
+  take n (chunksOf n (xs ++ repeat x))
+
 -- 3ª solución
 -- ===========
 
@@ -70,7 +78,7 @@ listaCuadrada4 n x =
 -- La propiedad es
 prop_listaCuadrada :: Int ->Int -> [Int] -> Bool
 prop_listaCuadrada n x xs =
-  all (== (listaCuadrada1 n x xs))
+  all (== listaCuadrada1 n x xs)
       [listaCuadrada2 n x xs,
        listaCuadrada3 n x xs,
        listaCuadrada4 n x xs]

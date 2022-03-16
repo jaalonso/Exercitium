@@ -26,6 +26,7 @@ dependencies:
   - primes
   - QuickCheck
   - random
+  - split
   - statistics
   - statistics-linreg
   - vector

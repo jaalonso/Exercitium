@@ -18,9 +18,10 @@
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Alfabeto_desde where
 
-import Data.Char (isLower)
+import Data.Char (isLower, isAscii)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -54,13 +55,15 @@ alfabetoDesde5 c
 -- ============================
 
 -- La propiedad es
-prop_alfabetoDesde :: Char -> Bool
-prop_alfabetoDesde c =
+prop_alfabetoDesde :: Property
+prop_alfabetoDesde =
+  forAll (arbitrary `suchThat` isAscii) $ \c ->
   all (== alfabetoDesde1 c)
       [f c | f <- [alfabetoDesde2,
                    alfabetoDesde3,
                    alfabetoDesde4,
                    alfabetoDesde5]]
+
 
 -- La comprobación es
 --    λ> quickCheck prop_alfabetoDesde
