@@ -51,37 +51,22 @@ grupos2 _ [] = []
 grupos2 n xs = ys : grupos n zs
   where (ys,zs) = splitAt n xs
 
--- 2ª solución
--- ===========
-
-listaCuadrada2' :: Int -> a -> [a] -> [[a]]
-listaCuadrada2' n x xs =
-  take n (chunksOf n (xs ++ repeat x))
-
 -- 3ª solución
 -- ===========
 
 listaCuadrada3 :: Int -> a -> [a] -> [[a]]
 listaCuadrada3 n x xs =
-  take n [take n ys | ys <- iterate (drop n) (xs ++ repeat x)]
-
--- 4ª solución
--- ===========
-
-listaCuadrada4 :: Int -> a -> [a] -> [[a]]
-listaCuadrada4 n x =
-  take n . map (take n) . iterate (drop n) . (++ repeat x)
+  take n (chunksOf n (xs ++ repeat x))
 
 -- Comprobación de la equivalencia
 -- ===============================
 
 -- La propiedad es
-prop_listaCuadrada :: Int ->Int -> [Int] -> Bool
+prop_listaCuadrada :: Int -> Int -> [Int] -> Bool
 prop_listaCuadrada n x xs =
   all (== listaCuadrada1 n x xs)
       [listaCuadrada2 n x xs,
-       listaCuadrada3 n x xs,
-       listaCuadrada4 n x xs]
+       listaCuadrada3 n x xs]
 
 -- La comprobación es
 --    λ> quickCheck prop_listaCuadrada
@@ -91,15 +76,12 @@ prop_listaCuadrada n x xs =
 -- =========================
 
 -- La comparación es
---    λ> last (last (listaCuadrada1 (10^4) 5 [1..]))
---    100000000
---    (2.04 secs, 12,803,749,464 bytes)
---    λ> last (last (listaCuadrada2 (10^4) 5 [1..]))
---    100000000
---    (2.13 secs, 12,805,029,424 bytes)
---    λ> last (last (listaCuadrada3 (10^4) 5 [1..]))
---    100000000
---    (8.94 secs, 12,803,997,328 bytes)
---    λ> last (last (listaCuadrada4 (10^4) 5 [1..]))
---    100000000
---    (8.93 secs, 12,803,677,760 bytes)
+--    λ> length (listaCuadrada1 (10^4) 5 [1..])
+--    10000
+--    (2.02 secs, 12,801,918,616 bytes)
+--    λ> length (listaCuadrada2 (10^4) 5 [1..])
+--    10000
+--    (1.89 secs, 12,803,198,576 bytes)
+--    λ> length (listaCuadrada3 (10^4) 5 [1..])
+--    10000
+--    (1.85 secs, 12,801,518,728 bytes)
