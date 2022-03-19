@@ -55,6 +55,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] (Comprensión, Orden superior, Data.Char).
 + [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] (Comprensión, Recursión, Orden superior, Lista infinita, Data.List, Data.Maybe).
 + [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] (Comprensión, Orden superior, Tipo de dato definido, Data.List).
++ [[./src/Emparejamiento_binario.hs][Emparejamiento binario]] (Recursión, Orden superior, Comprensión).
 
 * Etiquetas
 

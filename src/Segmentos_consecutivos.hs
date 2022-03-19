@@ -25,17 +25,7 @@ import Test.QuickCheck
 
 segmentos1 :: (Enum a, Eq a) => [a] -> [[a]]
 segmentos1 []  = []
-segmentos1 [x] = [[x]]
-segmentos1 (x:xs) | y == succ x = (x:y:ys):zs
-                  | otherwise   = [x] : (y:ys):zs
-  where ((y:ys):zs) = segmentos1 xs
-
--- 2ª solución
--- ===========
-
-segmentos2 :: (Enum a, Eq a) => [a] -> [[a]]
-segmentos2 []  = []
-segmentos2 xs = ys : segmentos2 zs
+segmentos1 xs = ys : segmentos1 zs
   where ys = inicial xs
         n  = length ys
         zs = drop n xs
@@ -45,24 +35,72 @@ segmentos2 xs = ys : segmentos2 zs
 --    inicial [1,2,5,6,4]    ==  [1,2]
 --    inicial "abccddeeebc"  ==  "abc"
 inicial :: (Enum a, Eq a) => [a] -> [a]
-inicial [] = []
-inicial (x:xs) =
-  [y | (y,_) <- takeWhile (\(u,v) -> u == v) (zip (x:xs) [x..])]
+inicial []      = []
+inicial [x]     = [x]
+inicial (x:y:xs)
+  | succ x == y = x : inicial (y:xs)
+  | otherwise   = [x]
+
+-- 2ª solución
+-- ===========
+
+segmentos2 :: (Enum a, Eq a) => [a] -> [[a]]
+segmentos2 []  = []
+segmentos2 xs = ys : segmentos2 zs
+  where (ys,zs) = inicialYresto xs
+
+-- (inicialYresto xs) es par formado por el segmento inicial de xs
+-- con elementos consecutivos junto con los restantes elementos. Por
+-- ejemplo,
+--    inicialYresto [1,2,5,6,4]    ==  ([1,2],[5,6,4])
+--    inicialYresto "abccddeeebc"  ==  ("abc","cddeeebc")
+inicialYresto :: (Enum a, Eq a) => [a] -> ([a],[a])
+inicialYresto []      = ([],[])
+inicialYresto [x]     = ([x],[])
+inicialYresto (x:y:xs)
+  | succ x == y = (x:us,vs)
+  | otherwise   = ([x],y:xs)
+  where (us,vs) = inicialYresto (y:xs)
 
 -- 3ª solución
 -- ===========
 
 segmentos3 :: (Enum a, Eq a) => [a] -> [[a]]
 segmentos3 []  = []
-segmentos3 xs = ys : segmentos3 zs
-  where ys = inicial3 xs
+segmentos3 [x] = [[x]]
+segmentos3 (x:xs) | y == succ x = (x:y:ys):zs
+                  | otherwise   = [x] : (y:ys):zs
+  where ((y:ys):zs) = segmentos3 xs
+
+-- 4ª solución
+-- ===========
+
+segmentos4 :: (Enum a, Eq a) => [a] -> [[a]]
+segmentos4 []  = []
+segmentos4 xs = ys : segmentos4 zs
+  where ys = inicial4 xs
         n  = length ys
         zs = drop n xs
 
-inicial3 :: (Enum a, Eq a) => [a] -> [a]
-inicial3 [] = []
-inicial3 (x:xs) =
-  [y | (y,_) <- takeWhile (uncurry (==)) (zip (x:xs) [x..])]
+inicial4 :: (Enum a, Eq a) => [a] -> [a]
+inicial4 [] = []
+inicial4 (x:xs) =
+  map fst (takeWhile (\(u,v) -> u == v) (zip (x:xs) [x..]))
+
+-- 5ª solución
+-- ===========
+
+segmentos5 :: (Enum a, Eq a) => [a] -> [[a]]
+segmentos5 []  = []
+segmentos5 xs = ys : segmentos5 zs
+  where ys = inicial5 xs
+        n  = length ys
+        zs = drop n xs
+
+inicial5 :: (Enum a, Eq a) => [a] -> [a]
+inicial5 [] = []
+inicial5 (x:xs) =
+  map fst (takeWhile (uncurry (==)) (zip (x:xs) [x..]))
 
 -- Comprobación de equivalencia
 -- ============================
@@ -72,7 +110,9 @@ prop_segmentos :: [Int] -> Bool
 prop_segmentos xs =
   all (== segmentos1 xs)
       [segmentos2 xs,
-       segmentos3 xs]
+       segmentos3 xs,
+       segmentos4 xs,
+       segmentos5 xs]
 
 -- La comprobación es
 --    λ> quickCheck prop_segmentos
@@ -82,13 +122,25 @@ prop_segmentos xs =
 -- =========================
 
 -- La comparación es
---    λ> xs = show (7^(10^6))
---    λ> length (segmentos1 xs)
---    768710
---    (1.94 secs, 823,156,768 bytes)
---    λ> length (segmentos2 xs)
---    768710
---    (1.66 secs, 960,884,224 bytes)
---    λ> length (segmentos3 xs)
---    768710
---    (1.49 secs, 1,009,470,560 bytes)
+--    λ> length (segmentos1 (take (10^6) (cycle [1..10^3])))
+--    1000
+--    (0.69 secs, 416,742,208 bytes)
+--    λ> length (segmentos2 (take (10^6) (cycle [1..10^3])))
+--    1000
+--    (0.66 secs, 528,861,976 bytes)
+--    λ> length (segmentos3 (take (10^6) (cycle [1..10^3])))
+--    1000
+--    (2.35 secs, 1,016,276,896 bytes)
+--    λ> length (segmentos4 (take (10^6) (cycle [1..10^3])))
+--    1000
+--    (0.27 secs, 409,438,368 bytes)
+--    λ> length (segmentos5 (take (10^6) (cycle [1..10^3])))
+--    1000
+--    (0.13 secs, 401,510,360 bytes)
+--
+--    λ> length (segmentos4 (take (10^7) (cycle [1..10^3])))
+--    10000
+--    (2.35 secs, 4,088,926,920 bytes)
+--    λ> length (segmentos5 (take (10^7) (cycle [1..10^3])))
+--    10000
+--    (1.02 secs, 4,009,646,928 bytes)

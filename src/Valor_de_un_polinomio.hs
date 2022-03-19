@@ -11,11 +11,11 @@
 --    type Polinomio a = Array Int a
 -- Como ejemplos, definimos el polinomio
 --    ej_pol1 :: Array Int Int
---    ej_pol1 = array (0,4) [(1,2),(2,-5),(4,7),(0,6),(3,0)]
--- que representa a 2x - 5x^2 + 7x^4 + 6 y el polinomio
+--    ej_pol1 = array (0,4) [(0,6),(1,2),(2,-5),(3,0),(4,7)]
+-- que representa a 6 + 2x - 5x^2 + 7x^4 y el polinomio
 --    ej_pol2 :: Array Int Double
---    ej_pol2 = array (0,4) [(1,2),(2,-5.2),(4,7),(0,6.5),(3,0)]
--- que representa a 2x - 5.2x^2 + 7x^4 + 6.5
+--    ej_pol2 = array (0,4) [(0,6.5),(1,2),(2,-5.2),(3,0),(4,7)]
+-- que representa a 6.5 + 2x - 5.2x^2 + 7x^4
 --
 -- Definir la función
 --    valor :: Num a => Polinomio a -> a -> a
@@ -41,7 +41,7 @@ import Test.QuickCheck
 type Polinomio a = Array Int a
 
 ej_pol1 :: Array Int Int
-ej_pol1 = array (0,4) [(1,2),(2,-5),(4,7),(0,6),(3,0)]
+ej_pol1 = array (0,4) [(0,6),(1,2),(2,-5),(3,0),(4,7)]
 
 ej_pol2 :: Array Int Double
 ej_pol2 = array (0,4) [(1,2),(2,-5.2),(4,7),(0,6.5),(3,0)]
@@ -219,3 +219,6 @@ prop_valor xs b =
 --    λ> length (show (valor12 (listArray (0,10^5) (repeat 1)) 2))
 --    30104
 --    (0.75 secs, 1,309,506,968 bytes)
+--    λ> length (show (valor13 (listArray (0,10^5) (repeat 1)) 2))
+--    30104
+--    (0.22 secs, 1,298,867,128 bytes)

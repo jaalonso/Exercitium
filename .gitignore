@@ -23,4 +23,4 @@ cabal.project.local~
 .ghc.environment.*
 src/zzz.hs
 src/zzz.hs
-/Para_videos/
+/cod/

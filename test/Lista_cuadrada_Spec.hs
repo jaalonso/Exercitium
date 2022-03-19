@@ -18,4 +18,3 @@ spec = do
   describe "def. 1" $ specG listaCuadrada1
   describe "def. 2" $ specG listaCuadrada2
   describe "def. 3" $ specG listaCuadrada3
-  describe "def. 4" $ specG listaCuadrada4
