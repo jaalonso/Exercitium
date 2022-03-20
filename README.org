@@ -56,6 +56,8 @@ Los objetivos de esta recopilación son:
 + [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] (Comprensión, Recursión, Orden superior, Lista infinita, Data.List, Data.Maybe).
 + [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] (Comprensión, Orden superior, Tipo de dato definido, Data.List).
 + [[./src/Emparejamiento_binario.hs][Emparejamiento binario]] (Recursión, Orden superior, Comprensión).
++ [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]] (Comprensión, Test.QuickCheck, Data.Array, Data.Matrix).
++ [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]] (Recursión, Comprensión, Orden superior, Data.List).
 
 * Etiquetas
 
