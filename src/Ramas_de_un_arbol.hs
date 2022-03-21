@@ -107,34 +107,19 @@ prop_arbol a =
 -- =========================
 
 -- La comparación es
---    λ> ej500 <- generate (arbolArbitrario 500 :: Gen (Arbol Int))
---    λ> length (ramas1 ej500)
---    519800
---    (4.15 secs, 3,023,538,664 bytes)
---    λ> length (ramas2 ej500)
---    519800
---    (0.88 secs, 1,033,589,944 bytes)
---    λ> length (ramas3 ej500)
---    519800
---    (0.85 secs, 991,062,176 bytes)
---    λ> length (ramas4 ej500)
---    519800
---    (0.71 secs, 844,677,184 bytes)
---    λ> length (ramas5 ej500)
---    519800
---    (0.69 secs, 853,657,392 bytes)
---
 --    λ> ej600 <- generate (arbolArbitrario 600 :: Gen (Arbol Int))
---    (0.01 secs, 473,216 bytes)
+--    λ> length (ramas1 ej600)
+--    1262732
+--    (1.92 secs, 1,700,238,488 bytes)
 --    λ> length (ramas2 ej600)
---    1248295
---    (9.76 secs, 8,125,198,808 bytes)
+--    1262732
+--    (1.94 secs, 2,549,877,280 bytes)
 --    λ> length (ramas3 ej600)
---    1248295
---    (2.14 secs, 2,411,438,376 bytes)
+--    1262732
+--    (1.99 secs, 2,446,508,472 bytes)
 --    λ> length (ramas4 ej600)
---    1248295
---    (1.81 secs, 2,059,873,944 bytes)
+--    1262732
+--    (1.67 secs, 2,090,469,104 bytes)
 --    λ> length (ramas5 ej600)
---    1248295
---    (1.74 secs, 2,081,435,496 bytes)
+--    1262732
+--    (1.66 secs, 2,112,198,232 bytes)

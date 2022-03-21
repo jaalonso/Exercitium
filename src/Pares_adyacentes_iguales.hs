@@ -26,8 +26,10 @@
 --    numeroParesAdyacentesIguales [[0,0,0],[0,1,0],[0,0,0]]  ==  8
 -- ---------------------------------------------------------------------
 
+module Pares_adyacentes_iguales where
+
 import Data.List (group,transpose)
-import Data.Array
+import Data.Array ((!), listArray)
 import Test.QuickCheck
 
 -- 1ª solución

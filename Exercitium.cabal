@@ -121,6 +121,7 @@ test-suite Exercitium-test
       Numeros_de_ocurrencias_de_elementos_Spec
       Ordenacion_de_estructuras_Spec
       Ordenados_por_maximo_Spec
+      Pares_adyacentes_iguales_Spec
       Posiciones_diagonales_principales_Spec
       Primos_consecutivos_con_media_capicua_Spec
       Primos_equidistantes_Spec
