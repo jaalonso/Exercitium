@@ -51,12 +51,17 @@ ramas2 (N x as) = concat (map (map (x:)) (map ramas2 as))
 -- 3ª solución
 ramas3 :: Arbol b -> [[b]]
 ramas3 (N x []) = [[x]]
-ramas3 (N x as) = concatMap (map (x:)) (map ramas3 as)
+ramas3 (N x as) = concat (map (map (x:) . ramas3) as)
 
 -- 4ª solución
-ramas4 :: Arbol a -> [[a]]
+ramas4 :: Arbol b -> [[b]]
 ramas4 (N x []) = [[x]]
-ramas4 (N x xs) = map ramas4 xs >>= map (x:)
+ramas4 (N x as) = concatMap (map (x:) . ramas4) as
+
+-- 5ª solución
+ramas5 :: Arbol a -> [[a]]
+ramas5 (N x []) = [[x]]
+ramas5 (N x xs) = map ramas5 xs >>= map (x:)
 
 -- Comprobación de la equivalencia de las definiciones
 -- ===================================================
@@ -91,8 +96,45 @@ prop_arbol a =
   all (== ramas1 a)
       [ramas2 a,
        ramas3 a,
-       ramas4 a]
+       ramas4 a,
+       ramas5 a]
 
 -- La comprobación es
 --    λ> quickCheck prop_arbol
 --    +++ OK, passed 100 tests.
+
+-- Comparación de eficiencia
+-- =========================
+
+-- La comparación es
+--    λ> ej500 <- generate (arbolArbitrario 500 :: Gen (Arbol Int))
+--    λ> length (ramas1 ej500)
+--    519800
+--    (4.15 secs, 3,023,538,664 bytes)
+--    λ> length (ramas2 ej500)
+--    519800
+--    (0.88 secs, 1,033,589,944 bytes)
+--    λ> length (ramas3 ej500)
+--    519800
+--    (0.85 secs, 991,062,176 bytes)
+--    λ> length (ramas4 ej500)
+--    519800
+--    (0.71 secs, 844,677,184 bytes)
+--    λ> length (ramas5 ej500)
+--    519800
+--    (0.69 secs, 853,657,392 bytes)
+--
+--    λ> ej600 <- generate (arbolArbitrario 600 :: Gen (Arbol Int))
+--    (0.01 secs, 473,216 bytes)
+--    λ> length (ramas2 ej600)
+--    1248295
+--    (9.76 secs, 8,125,198,808 bytes)
+--    λ> length (ramas3 ej600)
+--    1248295
+--    (2.14 secs, 2,411,438,376 bytes)
+--    λ> length (ramas4 ej600)
+--    1248295
+--    (1.81 secs, 2,059,873,944 bytes)
+--    λ> length (ramas5 ej600)
+--    1248295
+--    (1.74 secs, 2,081,435,496 bytes)
