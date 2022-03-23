@@ -28,6 +28,7 @@
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+
 module Numeracion_de_ternas where
 
 import Data.List (elemIndex)
@@ -38,7 +39,9 @@ import Test.QuickCheck
 -- ===========
 
 posicion1 :: (Int,Int,Int) -> Int
-posicion1 (x,y,z) = length (takeWhile (/= (x,y,z)) ternas)
+posicion1 t = aux 0 ternas
+  where aux n (t':ts) | t' == t   = n
+                      | otherwise = aux (n+1) ts
 
 -- ternas es la lista ordenada de las ternas de números naturales. Por ejemplo,
 --    λ> take 9 ternas
@@ -50,16 +53,19 @@ ternas = [(x,y,n-x-y) | n <- [0..], x <- [0..n], y <- [0..n-x]]
 -- ===========
 
 posicion2 :: (Int,Int,Int) -> Int
-posicion2 t = aux 0 ternas
-  where aux n (t':ts) | t' == t   = n
-                      | otherwise = aux (n+1) ts
+posicion2 t =
+  head [n | (n,t') <- zip [0..] ternas, t' == t]
 
 -- 3ª solución
 -- ===========
 
 posicion3 :: (Int,Int,Int) -> Int
-posicion3 t =
-  head [n | (n,t') <- zip [0..] ternas, t' == t]
+posicion3 t = indice t ternas
+
+-- (indice x ys) es el índice de x en ys. Por ejemplo,
+--    indice 5 [0..]  ==  5
+indice :: Eq a => a -> [a] -> Int
+indice x ys = length (takeWhile (/= x) ys)
 
 -- 4ª solución
 -- ===========
@@ -98,19 +104,19 @@ prop_posicion_equiv (NonNegative x) (NonNegative y) (NonNegative z) =
 -- La comparación es
 --    λ> posicion1 (147,46,116)
 --    5000000
---    (2.12 secs, 1,453,217,856 bytes)
+--    (5.84 secs, 2,621,428,184 bytes)
 --    λ> posicion2 (147,46,116)
 --    5000000
---    (5.57 secs, 2,621,416,080 bytes)
+--    (3.63 secs, 2,173,230,200 bytes)
 --    λ> posicion3 (147,46,116)
 --    5000000
---    (3.21 secs, 2,173,218,096 bytes)
+--    (2.48 secs, 1,453,229,880 bytes)
 --    λ> posicion4 (147,46,116)
 --    5000000
---    (1.68 secs, 1,173,217,736 bytes)
+--    (1.91 secs, 1,173,229,840 bytes)
 --    λ> posicion5 (147,46,116)
 --    5000000
---    (1.67 secs, 1,173,217,856 bytes)
+--    (1.94 secs, 1,173,229,960 bytes)
 
 -- En lo que sigue, usaremos la 5ª definición
 posicion :: (Int,Int,Int) -> Int

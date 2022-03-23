@@ -59,7 +59,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]] (Comprensión, Test.QuickCheck, Data.Array, Data.Matrix).
 + [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]] (Recursión, Comprensión, Orden superior, Data.List).
 + [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]] (Recursión, Comprensión, Orden superior, Data.List, Data.Tuple, Control.Arrow).
-+ [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]] (Comprensión, Orden superior).
++ [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]] (Comprensión, Orden superior, Data.List, Data.Array).
 
 * Etiquetas
 
