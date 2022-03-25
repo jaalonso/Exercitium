@@ -17,49 +17,49 @@ Los objetivos de esta recopilación son:
 
 * Índice de ejercicios (por orden de publicación)
 
-+ [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] (Recursión, Orden superior).
-+ [[./src/Suma_de_cadenas.hs][Suma de cadenas]] (Cadenas, Orden superior).
-+ [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]] (Orden superior, Comprensión, Listas infinitas, Recursión, Data.List, Data.Map).
-+ [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]] (Recursión, Orden superior, Comprensión, Mónadas).
-+ [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]] (Comprensión)
-+ [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]] (Recursión, Comprensión, Orden superior, Listas infinitas).
-+ [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]] (Recursión, Orden superior, Comprensión, Data.List).
-+ [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]] (Recursión, Comprensión, Listas infinitas, Orden superior).
-+ [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]] (Comprensión, Orden superior, Recursión, Data.List, Data.Maybe, Data.Map).
-+ [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]] (Recursión, Comprensión, Orden superior, Listas infinitas, Data.Numbers.Primes).
-+ [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]] (Comprensión, Data.List).
-+ [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]] (Comprensión, Data.List).
-+ [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]] (Comprensión, Recursión, Orden superior, Listas infinitas, Data.List, Data.MemoCombinators)
-+ [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]] (Recursión, Comprensión).
-+ [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]] (Comprensión, Recursión, Orden superior, Data.List).
-+ [[./src/Numeros_amigos.hs][Números amigos]] (Orden superior, Comprensión, Data.List, Data.Numbers.Primes).
-+ [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]] (Comprensión, Orden superior, Data.List, Data.Numbers.Primes).
-+ [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]] (Comprensión, Orden superior, Listas infinitas, Data.Numbers.Primes, Data.List).
-+ [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]] (Comprensión, Recursión, Orden superior, Data.List).
-+ [[./src/Mastermind.hs][Mastermind]] (Comprensión, Recursión, Data.Set).
-+ [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]] (Comprensión, Listas infinitas, Data.List, Data.Numbers.Primes)
-+ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]] (Comprensión, Recursión, Mónadas, Data.List).
-+ [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]] (Comprensión, Orden superior, Data.List, GHC.Exts).
-+ [[./src/Bandera_tricolor.hs][La bandera tricolor]] (Comprensión, Recursión, Tipos definidos, Data.List).
-+ [[./src/Anagramas.hs][Anagramas]] (Recursión, Orden superior, Comprensión, Data.List, Data.Char, Data.Function).
-+ [[./src/Primos_equidistantes.hs][Primos equidistantes]] (Recursión, Listas infinitas, Comprensión, Data.Numbers.Primes).
-+ [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]] (Comprensión, Orden superior, Data.Maybe).
-+ [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]] (Comprensión).
-+ [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]] (Comprensión, Data.Array).
-+ [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]] (Orden superior, Comprensión, Data.Array).
-+ [[./src/Maximos_locales.hs][Máximos locales]] (Recursión, Comprensión).
-+ [[./src/Lista_cuadrada.hs][Lista cuadrada]] (Recursión, Comprensión, Orden superior, Listas infinitas)
-+ [[./src/Segmentos_consecutivos.hs][Segmentos maximales de elementos consecutivos]] (Recursión, Comprensión, Orden superior).
-+ [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] (Comprensión, Recursión, Orden superior, Data.Array).
-+ [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] (Tipo de dato algebraico, Recursión, Comprensión, Orden superior).
-+ [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] (Comprensión, Orden superior, Data.Char).
-+ [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] (Comprensión, Recursión, Orden superior, Lista infinita, Data.List, Data.Maybe).
-+ [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] (Comprensión, Orden superior, Tipo de dato definido, Data.List).
-+ [[./src/Emparejamiento_binario.hs][Emparejamiento binario]] (Recursión, Orden superior, Comprensión).
-+ [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]] (Comprensión, Test.QuickCheck, Data.Array, Data.Matrix).
-+ [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]] (Recursión, Comprensión, Orden superior, Data.List).
-+ [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]] (Recursión, Comprensión, Orden superior, Data.List, Data.Tuple, Control.Arrow).
-+ [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]] (Comprensión, Orden superior, Data.List, Data.Array).
++ [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
++ [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
++ [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
++ [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
++ [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]]
++ [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
++ [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]].
++ [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
++ [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
++ [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
++ [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
++ [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
++ [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]]
++ [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
++ [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
++ [[./src/Numeros_amigos.hs][Números amigos]].
++ [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
++ [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
++ [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
++ [[./src/Mastermind.hs][Mastermind]].
++ [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
++ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
++ [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
++ [[./src/Bandera_tricolor.hs][La bandera tricolor]].
++ [[./src/Anagramas.hs][Anagramas]].
++ [[./src/Primos_equidistantes.hs][Primos equidistantes]].
++ [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
++ [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
++ [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
++ [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
++ [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
++ [[./src/Lista_cuadrada.hs][Lista cuadrada]] ([[https://youtu.be/nJHiCebyZVE][vídeo]])-
++ [[./src/Segmentos_consecutivos.hs][Segmentos maximales de elementos consecutivos]] ([[https://youtu.be/qu11Uf8wF1k][vídeo]]).
++ [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] ([[https://youtu.be/JuCmeb8vV4E][vídeo]]).
++ [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] ([[https://youtu.be/Bj0jTH77k2k][vídeo]])-
++ [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] ([[https://youtu.be/4eBJi5_8qM0][vídeo]]).
++ [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] ([[https://youtu.be/3pbmjjozB6g][vídeo]])
++ [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] ([[https://youtu.be/mlgDbAPStdM][vídeo]]).
++ [[./src/Emparejamiento_binario.hs][Emparejamiento binario]].
++ [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]].
++ [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]].
++ [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]].
++ [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]].
 
 * Etiquetas
 

@@ -32,11 +32,11 @@ import Test.QuickCheck
 
 masRepetido1 :: Ord a => [a] -> (a,Int)
 masRepetido1 [x] = (x,1)
-masRepetido1 (x:y:zs) | m > n     = (x,m)
-                      | m == n    = (max x u,m)
-                      | otherwise = (u,n)
-  where (u,n) = masRepetido1 (y:zs)
-        m     = length (takeWhile (==x) (x:y:zs))
+masRepetido1 (x:y:zs) | m > n      = (x,m)
+                      | m == n     = (max x u,m)
+                      | otherwise  = (u,n)
+  where (u,n)  = masRepetido1 (y:zs)
+        m      = length (takeWhile (==x) (x:y:zs))
 
 -- 2ª solución
 -- ===========
