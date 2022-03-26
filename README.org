@@ -64,40 +64,64 @@ Los objetivos de esta recopilación son:
 * Etiquetas
 
 ** Introducción a la programación funcional
-+ Elemental: Definiciones elementales de funciones.
-+ Comprensión: Definiciones por comprensión.
-+ Recursión: Definiciones por recursión.
-+ Cadenas: Funciones sobre cadenas.
-+ Orden superior: Funciones de orden superior.
-+ Listas infinitas.
-+ Tipos definidos.
-+ Tipos de datos algebraicos.
-+ Vectores.
-+ Matrices.
-+ Conjuntos.
-+ Diccionarios.
-+ Interactivos: Programas interactivos.
-+ Mónadas.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/basico/][Elemental]]: Definiciones elementales de funciones.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/comprension/][Comprensión]]: Definiciones por comprensión.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/recursion/][Recursión]]: Definiciones por recursión.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/cadenas/][Cadenas]]: Funciones sobre cadenas.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/orden-superior/][Orden superior]]: Funciones de orden superior.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/plegado/][Plegado]]: Definiciones por plegado.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/listas-infinitas/][Listas infinitas]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/tipos-definidos/][Tipos definidos]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/tipo-de-dato-algebraico/][Tipos de datos algebraicos]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/arboles/][Árboles]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/vectores/][Vectores]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/matrices/][Matrices]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/conjuntos/][Conjuntos]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/diccionarios/][Diccionarios]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/es][ES]]: Programas interactivos.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/graficas/][Gráficas]]: Representación gráfica de funciones.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/dibujos][Dibujos]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/fractales/][Fractales]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/ficheros/][Ficheros]].
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/aleatorio/][Aleatorio]]: Elementos aleatorios.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/monadas/][Mónadas]].
 
 ** Librerías
-+ Data.List
-+ Data.Maybe
-+ Data.Numbers.Primes
-+ GHC.Exts
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/control-arrow/][Control.Arrow]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-array/][Data.Array]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-function/][Data.Function]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-list/][Data.List]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-list-split/][Data.List.Split]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-map/][Data.Map]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-matrix/][Data.Matrix]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-maybe/][Data.Maybe]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-memocombinators/][Data.MemoCombinators]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-numbers-primes/][Data.Numbers.Primes]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-set/][Data.Set]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-tuple/][Data.Tuple]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/ghc-exts/][GHC.Exts]]
++ [[http://www.glc.us.es/~jalonso/exercitium/tag/gloss/][Graphics.Gloss]]
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/quickcheck/][Test.QuickCheck]].
 
 ** Tipos abstractos de datos y algorítmica
 + Pilas: El TAD de las pilas.
-+ Colas: El TAD de las colas.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/colas/][Colas]]: El TAD de las colas.
 + Colas de prioridad: El TAD de las colas de prioridad.
 + Árboles de búsqueda: El TAD de las árboles binarios de búsqueda.
-+ Montículos: El TAD de los montículos.
-+ Polinomios: El TAD de los polinomios.
-+ Grafos: Algoritmos sobre grafos.
-+ Espacios de estados: Búsqueda en espacios de estados.
-+ Programación dinámica.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/tablas/][Tablas]]: El TAD de las tablas.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/monticulos/][Montículos]]: El TAD de los montículos.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/polinomios/][Polinomios]]: El TAD de los polinomios.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/grafos/][Grafos]]: Algoritmos sobre grafos.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/kruskal/][Kruskal]]: Algoritmo de Kruskal.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/prim/][Prim]]: Algoritmo de Prim.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/busqueda/][Búsqueda]]: Métodos de búsqueda.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/espacio-de-estados][Espacio de estados]]: Problemas de espacios de estado.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/dinamica/][Dinámica]]: Programación dinámica.
 
 ** Aplicaciones matemáticas
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/primos/][Primos]]: Números primos.
 + Álgebra lineal.
 + Cálculo numérico.
 + Estadística.
 + Combinatoria.
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/euler/][Euler]]: Problemas del proyecto Euler.
