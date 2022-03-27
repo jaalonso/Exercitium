@@ -45,6 +45,7 @@ library
       Maxima_suma_de_caminos_en_un_triangulo
       Maximos_locales
       Mayor_orbita_de_la_sucesion_de_Collatz
+      Mayor_producto_de_las_ramas_de_un_arbol
       Numeracion_de_ternas
       Numeros_amigos
       Numeros_de_ocurrencias_de_elementos
@@ -87,6 +88,7 @@ library
     , hspec-core
     , matrix
     , primes
+    , quickcheck-higherorder
     , random
     , split
     , statistics
@@ -116,6 +118,7 @@ test-suite Exercitium-test
       Maxima_suma_de_caminos_en_un_triangulo_Spec
       Maximos_locales_Spec
       Mayor_orbita_de_la_sucesion_de_Collatz_Spec
+      Mayor_producto_de_las_ramas_de_un_arbol_Spec
       Numeracion_de_ternas_Spec
       Numeros_amigos_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
@@ -156,6 +159,7 @@ test-suite Exercitium-test
     , hspec-core
     , matrix
     , primes
+    , quickcheck-higherorder
     , random
     , split
     , statistics
