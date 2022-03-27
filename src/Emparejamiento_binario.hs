@@ -15,8 +15,12 @@
 --    zipBinario [(<), (==), (==)] "coloca" "lobo"  == [True,True,False]
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Emparejamiento_binario where
 
+import Test.QuickCheck
+import Test.QuickCheck.HigherOrder
 import Test.Hspec
 
 -- 1ª solución
@@ -69,6 +73,22 @@ verifica = hspec $ do
 --
 --    Finished in 0.0016 seconds
 --    8 examples, 0 failures
+
+-- Comprobación de equivalencia
+-- ============================
+
+
+-- La propiedad es
+prop_zipBinario :: [Bool -> Bool -> Bool] -> [Bool] -> [Bool] -> Bool
+prop_zipBinario fs xs ys =
+  all (== zipBinario1 fs xs ys)
+      [g fs xs ys | g <- [zipBinario2,
+                          zipBinario3,
+                          zipBinario4]]
+
+-- La comprobación es
+--    λ> quickCheck' prop_zipBinario
+--    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
 -- =========================
