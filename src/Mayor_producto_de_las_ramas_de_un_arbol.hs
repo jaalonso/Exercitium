@@ -110,7 +110,7 @@ menorProducto (N x []) = x
 menorProducto (N x xs)
   | x > 0     = x * minimum (map menorProducto xs)
   | x == 0    = 0
-  | otherwise = x * maximum (map mayorProducto2 xs)
+  | otherwise = x * maximum (map mayorProducto5 xs)
 
 -- 6ª solución
 -- ===========
