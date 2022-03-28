@@ -28,8 +28,8 @@ module Conjunto_de_primos_relativos where
 
 import Test.QuickCheck
 import Data.List (delete, intersect)
-import Data.Numbers.Primes
-import qualified Data.Set as S
+import Data.Numbers.Primes (primeFactors, primes)
+import qualified Data.Set as S (disjoint, fromList)
 
 -- 1ª solución
 -- ===========
