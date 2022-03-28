@@ -77,9 +77,8 @@ verifica = hspec $ do
 -- Comprobación de equivalencia
 -- ============================
 
-
 -- La propiedad es
-prop_zipBinario :: [Bool -> Bool -> Bool] -> [Bool] -> [Bool] -> Bool
+prop_zipBinario :: [Int -> Int -> Int] -> [Int] -> [Int] -> Bool
 prop_zipBinario fs xs ys =
   all (== zipBinario1 fs xs ys)
       [g fs xs ys | g <- [zipBinario2,
