@@ -31,6 +31,7 @@ library
       Anagramas
       Bandera_tricolor
       Caminos_en_un_triangulo
+      Conjunto_de_primos_relativos
       Cuadrado_mas_cercano
       Diagonales_principales
       Diferencia_simetrica
@@ -105,6 +106,7 @@ test-suite Exercitium-test
       Anagramas_Spec
       Bandera_tricolor_Spec
       Caminos_en_un_triangulo_Spec
+      Conjunto_de_primos_relativos_Spec
       Cuadrado_mas_cercano_Spec
       Diagonales_principales_Spec
       Diferencia_simetrica_Spec

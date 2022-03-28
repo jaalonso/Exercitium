@@ -62,6 +62,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]].
 + [[./src/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]].
 + [[./src/Diferencia_simetrica.hs][Diferencia simétrica]].
++ [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
 
 * Etiquetas
 
@@ -121,6 +122,7 @@ Los objetivos de esta recopilación son:
 + [[https://www.glc.us.es/~jalonso/exercitium/tag/dinamica/][Dinámica]]: Programación dinámica.
 
 ** Aplicaciones matemáticas
++ [[https://www.glc.us.es/~jalonso/exercitium/tag/teoria-de-conjuntos/][Teoría de conjuntos]]
 + [[https://www.glc.us.es/~jalonso/exercitium/tag/primos/][Primos]]: Números primos.
 + Álgebra lineal.
 + Cálculo numérico.
