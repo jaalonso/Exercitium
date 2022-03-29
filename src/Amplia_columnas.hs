@@ -59,7 +59,7 @@ ampliaColumnas2 :: Matriz -> Matriz -> Matriz
 ampliaColumnas2 p1 p2 =
   matriz (matrix p1 <|> matrix p2)
 
--- (matrix p) es la matriz p en el formatao de Data.Matrix. Por ejemplo,
+-- (matrix p) es la matriz p en el formato de Data.Matrix. Por ejemplo,
 --    λ> ej1
 --    array ((1,1),(2,2)) [((1,1),0),((1,2),1),((2,1),2),((2,2),3)]
 --    λ> matrix ej1
