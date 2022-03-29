@@ -29,10 +29,8 @@
 
 module Familias_de_numeros_con_algun_digito_en_comun where
 
-import Test.QuickCheck
-import Data.List
-import Control.Monad (liftM2)
-import Data.List (nub)
+import Data.List (intersect, nub)
+import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
 -- ===========

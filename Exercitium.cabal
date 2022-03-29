@@ -115,6 +115,7 @@ test-suite Exercitium-test
       Elementos_minimales_Spec
       Emparejamiento_binario_Spec
       Exponente_en_la_factorizacion_Spec
+      Familias_de_numeros_con_algun_digito_en_comun_Spec
       Iguales_al_siguiente_Spec
       Lista_cuadrada_Spec
       Mas_repetido_Spec
