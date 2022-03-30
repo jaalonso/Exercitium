@@ -42,35 +42,48 @@ masRepetido1 (x:y:zs) | m > n      = (x,m)
 -- ===========
 
 masRepetido2 :: Ord a => [a] -> (a,Int)
-masRepetido2 xs = (n,z)
-  where (z,n) = maximum [(1 + length ys,y) | (y:ys) <- group xs]
+masRepetido2 (x:xs)
+  | null xs'   = (x,length (x:xs))
+  | m > n      = (x,m)
+  | m == n     = (max x u,m)
+  | otherwise  = (u,n)
+  where xs'    = dropWhile (== x) xs
+        m      = length (takeWhile (==x) (x:xs))
+        (u,n)  = masRepetido2 xs'
 
 -- 3ª solución
--- ============
+-- ===========
 
 masRepetido3 :: Ord a => [a] -> (a,Int)
-masRepetido3 xs =
-  swap (maximum [(1 + length ys,y) | (y:ys) <- group xs])
+masRepetido3 xs = (n,z)
+  where (z,n) = maximum [(1 + length ys,y) | (y:ys) <- group xs]
 
 -- 4ª solución
 -- ============
 
 masRepetido4 :: Ord a => [a] -> (a,Int)
 masRepetido4 xs =
-  swap (maximum (map (\ys -> (length ys, head ys)) (group xs)))
+  swap (maximum [(1 + length ys,y) | (y:ys) <- group xs])
 
 -- 5ª solución
 -- ============
 
 masRepetido5 :: Ord a => [a] -> (a,Int)
-masRepetido5 =
-  swap . maximum . map ((,) <$> length <*> head) . group
+masRepetido5 xs =
+  swap (maximum (map (\ys -> (length ys, head ys)) (group xs)))
 
 -- 6ª solución
 -- ============
 
 masRepetido6 :: Ord a => [a] -> (a,Int)
 masRepetido6 =
+  swap . maximum . map ((,) <$> length <*> head) . group
+
+-- 7ª solución
+-- ============
+
+masRepetido7 :: Ord a => [a] -> (a,Int)
+masRepetido7 =
   swap . maximum . map (length &&& head) . group
 
 -- Comprobación de equivalencia
@@ -84,7 +97,8 @@ prop_masRepetido (NonEmpty xs) =
        masRepetido3 xs,
        masRepetido4 xs,
        masRepetido5 xs,
-       masRepetido6 xs]
+       masRepetido6 xs,
+       masRepetido7 xs]
 
 -- La comprobación es
 --    λ> quickCheck prop_masRepetido
@@ -99,32 +113,38 @@ prop_masRepetido (NonEmpty xs) =
 --    (3.72 secs, 2,589,930,952 bytes)
 --    λ> masRepetido2 (show (product [1..3*10^4]))
 --    ('0',7498)
---    (0.85 secs, 945,399,976 bytes)
+--    (1.27 secs, 991,406,232 bytes)
 --    λ> masRepetido3 (show (product [1..3*10^4]))
 --    ('0',7498)
---    (0.86 secs, 945,399,888 bytes)
+--    (0.85 secs, 945,399,976 bytes)
 --    λ> masRepetido4 (show (product [1..3*10^4]))
 --    ('0',7498)
---    (0.80 secs, 943,760,760 bytes)
+--    (0.86 secs, 945,399,888 bytes)
 --    λ> masRepetido5 (show (product [1..3*10^4]))
 --    ('0',7498)
---    (0.78 secs, 945,400,400 bytes)
+--    (0.80 secs, 943,760,760 bytes)
 --    λ> masRepetido6 (show (product [1..3*10^4]))
+--    ('0',7498)
+--    (0.78 secs, 945,400,400 bytes)
+--    λ> masRepetido7 (show (product [1..3*10^4]))
 --    ('0',7498)
 --    (0.78 secs, 942,122,088 bytes)
 --
 --    λ> masRepetido2 (show (product [1..5*10^4]))
 --    ('0',12499)
---    (2.20 secs, 2,716,952,408 bytes)
+--    (3.27 secs, 2,798,156,008 bytes)
 --    λ> masRepetido3 (show (product [1..5*10^4]))
 --    ('0',12499)
---    (2.22 secs, 2,716,952,320 bytes)
+--    (2.20 secs, 2,716,952,408 bytes)
 --    λ> masRepetido4 (show (product [1..5*10^4]))
 --    ('0',12499)
---    (2.18 secs, 2,714,062,328 bytes)
+--    (2.22 secs, 2,716,952,320 bytes)
 --    λ> masRepetido5 (show (product [1..5*10^4]))
 --    ('0',12499)
---    (2.17 secs, 2,716,952,832 bytes)
+--    (2.18 secs, 2,714,062,328 bytes)
 --    λ> masRepetido6 (show (product [1..5*10^4]))
+--    ('0',12499)
+--    (2.17 secs, 2,716,952,832 bytes)
+--    λ> masRepetido7 (show (product [1..5*10^4]))
 --    ('0',12499)
 --    (2.17 secs, 2,711,172,792 bytes)
