@@ -30,6 +30,7 @@ library
       Amplia_columnas
       Anagramas
       Bandera_tricolor
+      Biparticiones_de_una_lista
       Caminos_en_un_triangulo
       Conjunto_de_primos_relativos
       Cuadrado_mas_cercano
@@ -106,6 +107,7 @@ test-suite Exercitium-test
       Alfabeto_desde_Spec
       Anagramas_Spec
       Bandera_tricolor_Spec
+      Biparticiones_de_una_lista_Spec
       Caminos_en_un_triangulo_Spec
       Conjunto_de_primos_relativos_Spec
       Cuadrado_mas_cercano_Spec
