@@ -37,6 +37,17 @@ import Test.QuickCheck
 
 numeroParesAdyacentesIguales1 :: Eq a => [[a]] -> Int
 numeroParesAdyacentesIguales1 xss =
+  length [(i,j) | i <- [1..m-1], j <- [1..n], p!(i,j) == p!(i+1,j)] +
+  length [(i,j) | i <- [1..m], j <- [1..n-1], p!(i,j) == p!(i,j+1)]
+  where m = length xss
+        n = length (head xss)
+        p = listArray ((1,1),(m,n)) (concat xss)
+
+-- 2ª solución
+-- ===========
+
+numeroParesAdyacentesIguales2 :: Eq a => [[a]] -> Int
+numeroParesAdyacentesIguales2 xss =
   numeroParesAdyacentesIgualesFilas xss +
   numeroParesAdyacentesIgualesFilas (transpose xss)
 
@@ -59,7 +70,7 @@ numeroParesAdyacentesIgualesFilas2 xss =
 -- y también se puede definir sin argumentos:
 numeroParesAdyacentesIgualesFilas3 :: Eq a => [[a]] -> Int
 numeroParesAdyacentesIgualesFilas3 =
-  sum . (map numeroParesAdyacentesIgualesFila)
+  sum . map numeroParesAdyacentesIgualesFila
 
 -- (numeroParesAdyacentesIgualesFila xs) es el número de pares de
 -- elementos consecutivos de la lista xs. Por ejemplo,
@@ -67,17 +78,6 @@ numeroParesAdyacentesIgualesFilas3 =
 numeroParesAdyacentesIgualesFila :: Eq a => [a] -> Int
 numeroParesAdyacentesIgualesFila xs =
   length [(x,y) | (x,y) <- zip xs (tail xs), x == y]
-
--- 2ª solución
--- ===========
-
-numeroParesAdyacentesIguales2 :: Eq a => [[a]] -> Int
-numeroParesAdyacentesIguales2 xss =
-  length [(i,j) | i <- [1..m-1], j <- [1..n], p!(i,j) == p!(i+1,j)] +
-  length [(i,j) | i <- [1..m], j <- [1..n-1], p!(i,j) == p!(i,j+1)]
-  where m = length xss
-        n = length (head xss)
-        p = listArray ((1,1),(m,n)) (concat xss)
 
 -- 3ª solución
 -- ===========
@@ -96,7 +96,7 @@ numeroParesAdyacentesIguales4 =
 -- Comprobación de equivalencia
 -- ============================
 
-data Matriz = M [[Int]]
+newtype Matriz = M [[Int]]
   deriving Show
 
 -- Generador de matrices arbitrarias. Por ejemplo,
@@ -108,7 +108,7 @@ matrizArbitraria :: Gen Matriz
 matrizArbitraria = do
   m <- chooseInt (1,10)
   n <- chooseInt (1,10)
-  xss <- vectorOf m ((vectorOf n) arbitrary)
+  xss <- vectorOf m (vectorOf n arbitrary)
   return (M xss)
 
 -- Matriz es una subclase de Arbitrary.
@@ -133,10 +133,10 @@ prop_numeroParesAdyacentesIguales (M xss) =
 -- La comparación es
 --    λ> numeroParesAdyacentesIguales1 (replicate (3*10^3) (replicate (10^3) 0))
 --    5996000
---    (2.62 secs, 1,681,379,960 bytes)
+--    (5.51 secs, 4,751,249,472 bytes)
 --    λ> numeroParesAdyacentesIguales2 (replicate (3*10^3) (replicate (10^3) 0))
 --    5996000
---    (5.51 secs, 4,751,249,472 bytes)
+--    (2.62 secs, 1,681,379,960 bytes)
 --    λ> numeroParesAdyacentesIguales3 (replicate (3*10^3) (replicate (10^3) 0))
 --    5996000
 --    (0.48 secs, 1,393,672,616 bytes)

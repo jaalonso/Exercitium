@@ -151,7 +151,7 @@ instance Arbitrary a => Arbitrary (Arbol a) where
   arbitrary = sized arbolArbitrario
 
 -- La propiedad es
-prop_mayorProducto :: Arbol Int -> Bool
+prop_mayorProducto :: Arbol Integer -> Bool
 prop_mayorProducto a =
   all (== mayorProducto1 a)
       [f a | f <- [ mayorProducto2

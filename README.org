@@ -59,8 +59,8 @@ Los objetivos de esta recopilación son:
 + [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]] ([[https://youtu.be/Jrz5kxuhD9Y][vídeo]]).
 + [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]] ([[https://youtu.be/lLl-jQ1tW-I][vídeo]]).
 + [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]] ([[https://youtu.be/bz-NO5s2XVQ][vídeo]]).
-+ [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]].
-+ [[./src/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]].
++ [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]] ([[https://youtu.be/yt_aRjlA4kQ][vídeo]]).
++ [[./src/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]] ([[https://youtu.be/Q38cb9YlDR0][vídeo]]).
 + [[./src/Diferencia_simetrica.hs][Diferencia simétrica]].
 + [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
 + [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]].
