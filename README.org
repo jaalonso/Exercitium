@@ -17,54 +17,54 @@ Los objetivos de esta recopilación son:
 
 * Índice de ejercicios (por orden de publicación)
 
-+ [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
-+ [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
-+ [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
-+ [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
-+ [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]]
-+ [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
-+ [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]].
-+ [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
-+ [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
-+ [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
-+ [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
-+ [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
-+ [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]]
-+ [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
-+ [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
-+ [[./src/Numeros_amigos.hs][Números amigos]].
-+ [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
-+ [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
-+ [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
-+ [[./src/Mastermind.hs][Mastermind]].
-+ [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
-+ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
-+ [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
-+ [[./src/Bandera_tricolor.hs][La bandera tricolor]].
-+ [[./src/Anagramas.hs][Anagramas]].
-+ [[./src/Primos_equidistantes.hs][Primos equidistantes]].
-+ [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
-+ [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
-+ [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
-+ [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
-+ [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
-+ [[./src/Lista_cuadrada.hs][Lista cuadrada]] ([[https://youtu.be/nJHiCebyZVE][vídeo]])-
-+ [[./src/Segmentos_consecutivos.hs][Segmentos maximales de elementos consecutivos]] ([[https://youtu.be/qu11Uf8wF1k][vídeo]]).
-+ [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] ([[https://youtu.be/JuCmeb8vV4E][vídeo]]).
-+ [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] ([[https://youtu.be/Bj0jTH77k2k][vídeo]])-
-+ [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] ([[https://youtu.be/4eBJi5_8qM0][vídeo]]).
-+ [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] ([[https://youtu.be/3pbmjjozB6g][vídeo]])
-+ [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] ([[https://youtu.be/mlgDbAPStdM][vídeo]]).
-+ [[./src/Emparejamiento_binario.hs][Emparejamiento binario]] ([[https://youtu.be/oQBOs1uPIms][vídeo]]).
-+ [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]] ([[https://youtu.be/Jrz5kxuhD9Y][vídeo]]).
-+ [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]] ([[https://youtu.be/lLl-jQ1tW-I][vídeo]]).
-+ [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]] ([[https://youtu.be/bz-NO5s2XVQ][vídeo]]).
-+ [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]] ([[https://youtu.be/yt_aRjlA4kQ][vídeo]]).
-+ [[./src/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]] ([[https://youtu.be/Q38cb9YlDR0][vídeo]]).
-+ [[./src/Diferencia_simetrica.hs][Diferencia simétrica]].
-+ [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
-+ [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]].
-+ [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]].
++ 220126 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
++ 220127 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
++ 220128 [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
++ 220131 [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
++ 220201 [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]]
++ 220202 [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
++ 220203 [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]].
++ 220204 [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
++ 220207 [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
++ 220208 [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
++ 220209 [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
++ 220210 [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
++ 220211 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]]
++ 220214 [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
++ 220215 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
++ 220216 [[./src/Numeros_amigos.hs][Números amigos]].
++ 220217 [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
++ 220218 [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
++ 220221 [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
++ 220222 [[./src/Mastermind.hs][Mastermind]].
++ 220223 [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
++ 220224 [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
++ 220225 [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
++ 220228 [[./src/Bandera_tricolor.hs][La bandera tricolor]].
++ 220301 [[./src/Anagramas.hs][Anagramas]].
++ 220302 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
++ 220303 [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
++ 220304 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
++ 220307 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
++ 220308 [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
++ 220309 [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
++ 220310 [[./src/Lista_cuadrada.hs][Lista cuadrada]] ([[https://youtu.be/nJHiCebyZVE][vídeo]])-
++ 220311 [[./src/Segmentos_consecutivos.hs][Segmentos maximales de elementos consecutivos]] ([[https://youtu.be/qu11Uf8wF1k][vídeo]]).
++ 220314 [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] ([[https://youtu.be/JuCmeb8vV4E][vídeo]]).
++ 220315 [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] ([[https://youtu.be/Bj0jTH77k2k][vídeo]])-
++ 220316 [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] ([[https://youtu.be/4eBJi5_8qM0][vídeo]]).
++ 220317 [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] ([[https://youtu.be/3pbmjjozB6g][vídeo]])
++ 220318 [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] ([[https://youtu.be/mlgDbAPStdM][vídeo]]).
++ 220321 [[./src/Emparejamiento_binario.hs][Emparejamiento binario]] ([[https://youtu.be/oQBOs1uPIms][vídeo]]).
++ 220322 [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]] ([[https://youtu.be/Jrz5kxuhD9Y][vídeo]]).
++ 220323 [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]] ([[https://youtu.be/lLl-jQ1tW-I][vídeo]]).
++ 220324 [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]] ([[https://youtu.be/bz-NO5s2XVQ][vídeo]]).
++ 220325 [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]] ([[https://youtu.be/yt_aRjlA4kQ][vídeo]]).
++ 220328 [[./src/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]] ([[https://youtu.be/Q38cb9YlDR0][vídeo]]).
++ 220329 [[./src/Diferencia_simetrica.hs][Diferencia simétrica]].
++ 220330 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
++ 220331 [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]].
++ 220401 [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]].
 
 * Etiquetas
 
