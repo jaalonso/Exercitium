@@ -66,6 +66,7 @@ Los objetivos de esta recopilación son:
 + 220331 [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]].
 + 220401 [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]].
 + 220404 [[./src/Trenzado_de_listas.hs][Trenzado de listas]].
++ 220405 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
 
 * Etiquetas
 

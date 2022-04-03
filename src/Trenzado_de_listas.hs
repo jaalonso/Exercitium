@@ -25,28 +25,36 @@ import Test.QuickCheck (quickCheck)
 -- ===========
 
 trenza1 :: [a] -> [a] -> [a]
+trenza1 []     _      = []
+trenza1 _      []     = []
 trenza1 (x:xs) (y:ys) = x : y : trenza1 xs ys
-trenza1 _      _      = []
 
 -- 2ª solución
 -- ===========
 
 trenza2 :: [a] -> [a] -> [a]
-trenza2 xs ys = concat [[x,y] | (x,y) <- zip xs ys]
+trenza2 (x:xs) (y:ys) = x : y : trenza2 xs ys
+trenza2 _      _      = []
 
 -- 3ª solución
 -- ===========
 
 trenza3 :: [a] -> [a] -> [a]
-trenza3 xs ys = concat (zipWith par xs ys)
-
-par :: a -> a -> [a]
-par x y = [x,y]
+trenza3 xs ys = concat [[x,y] | (x,y) <- zip xs ys]
 
 -- 4ª solución
 -- ===========
 
--- Exolicación de eliminación de argumentos en composiciones con varios
+trenza4 :: [a] -> [a] -> [a]
+trenza4 xs ys = concat (zipWith par xs ys)
+
+par :: a -> a -> [a]
+par x y = [x,y]
+
+-- 5ª solución
+-- ===========
+
+-- Explicación de eliminación de argumentos en composiciones con varios
 -- argumentos:
 
 f :: Int -> Int
@@ -78,8 +86,8 @@ prop_composicion x y =
 --    ((f .) .) . g     --> \x y z -> f (g x y z)
 --    (((f .) .) .) . g --> \w x y z -> f (g w x y z)
 
-trenza4 :: [a] -> [a] -> [a]
-trenza4 = (concat .) . zipWith par
+trenza5 :: [a] -> [a] -> [a]
+trenza5 = (concat .) . zipWith par
 
 -- Comprobación de equivalencia
 -- ============================
@@ -90,7 +98,8 @@ prop_trenza xs ys =
   all (== trenza1 xs ys)
       [trenza2 xs ys,
        trenza3 xs ys,
-       trenza4 xs ys]
+       trenza4 xs ys,
+       trenza5 xs ys]
 
 -- La comprobación es
 --    λ> quickCheck prop_trenza
@@ -102,13 +111,16 @@ prop_trenza xs ys =
 -- La comparación es
 --    λ> last (trenza1 [1,1..] [1..4*10^6])
 --    4000000
---    (2.24 secs, 1,376,494,928 bytes)
+--    (2.33 secs, 1,472,494,952 bytes)
 --    λ> last (trenza2 [1,1..] [1..4*10^6])
 --    4000000
---    (1.33 secs, 1,888,495,048 bytes)
+--    (2.24 secs, 1,376,494,928 bytes)
 --    λ> last (trenza3 [1,1..] [1..4*10^6])
 --    4000000
---    (0.76 secs, 1,696,494,968 bytes)
+--    (1.33 secs, 1,888,495,048 bytes)
 --    λ> last (trenza4 [1,1..] [1..4*10^6])
+--    4000000
+--    (0.76 secs, 1,696,494,968 bytes)
+--    λ> last (trenza5 [1,1..] [1..4*10^6])
 --    4000000
 --    (0.76 secs, 1,696,495,064 bytes)
