@@ -65,6 +65,7 @@ Los objetivos de esta recopilación son:
 + 220330 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
 + 220331 [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]].
 + 220401 [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]].
++ 220404 [[./src/Trenzado_de_listas.hs][Trenzado de listas]].
 
 * Etiquetas
 
