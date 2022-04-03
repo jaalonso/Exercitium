@@ -19,8 +19,8 @@
 
 module Trenzado_de_listas where
 
-import Data.List (transpose)
 import Test.QuickCheck (quickCheck)
+
 -- 1ª solución
 -- ===========
 
