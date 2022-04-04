@@ -34,14 +34,16 @@ import qualified Data.Set as S
 
 diferenciaSimetrica1 :: Ord a => [a] -> [a] -> [a]
 diferenciaSimetrica1 xs ys =
-  sort (nub ([x | x <- xs, x `notElem` ys] ++ [y | y <- ys, y `notElem` xs]))
+  sort (nub ([x | x <- xs, x `notElem` ys] ++
+             [y | y <- ys, y `notElem` xs]))
 
 -- 2ª solución
 -- ===========
 
 diferenciaSimetrica2 :: Ord a => [a] -> [a] -> [a]
 diferenciaSimetrica2 xs ys =
-  sort (nub (filter (`notElem` ys) xs ++ filter (`notElem` xs) ys))
+  sort (nub (filter (`notElem` ys) xs ++
+             filter (`notElem` xs) ys))
 
 -- 3ª solución
 -- ===========

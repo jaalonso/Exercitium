@@ -23,6 +23,7 @@ dependencies:
   - hspec
   - hspec-core
   - matrix
+  - mtl
   - primes
   - QuickCheck
   - quickcheck-higherorder

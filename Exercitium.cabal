@@ -39,6 +39,7 @@ library
       Duplicacion_de_cada_elemento
       Elementos_minimales
       Emparejamiento_binario
+      Enumera_arbol
       Exponente_en_la_factorizacion
       Familias_de_numeros_con_algun_digito_en_comun
       Iguales_al_siguiente
@@ -93,6 +94,7 @@ library
     , hspec
     , hspec-core
     , matrix
+    , mtl
     , primes
     , quickcheck-higherorder
     , random
@@ -118,6 +120,7 @@ test-suite Exercitium-test
       Duplicacion_de_cada_elemento_Spec
       Elementos_minimales_Spec
       Emparejamiento_binario_Spec
+      Enumera_arbol_Spec
       Exponente_en_la_factorizacion_Spec
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       Iguales_al_siguiente_Spec
@@ -170,6 +173,7 @@ test-suite Exercitium-test
     , hspec
     , hspec-core
     , matrix
+    , mtl
     , primes
     , quickcheck-higherorder
     , random

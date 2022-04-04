@@ -67,6 +67,7 @@ Los objetivos de esta recopilación son:
 + 220401 [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]].
 + 220404 [[./src/Trenzado_de_listas.hs][Trenzado de listas]].
 + 220405 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
++ 220406 [[./src/Enumera_arbol.hs][Enumeración de árboles binarios]].
 
 * Etiquetas
 
