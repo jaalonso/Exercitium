@@ -7,7 +7,7 @@
 -- ---------------------------------------------------------------------
 -- Dos números enteros positivos son [primos relativos](http://bit.ly/1xgqDTK)
 -- si no tienen ningún factor primo en común; es decit, si 1 es su único
--- divisor común.  Por ejemplo, 6 y 35 son primos entre sí, pero 6 y 27
+-- divisor común. Por ejemplo, 6 y 35 son primos entre sí, pero 6 y 27
 -- no lo son porque ambos son divisibles por 3.
 --
 -- Definir la función
