@@ -27,6 +27,7 @@ source-repository head
 library
   exposed-modules:
       Alfabeto_desde
+      Algun_vecino_menor
       Amplia_columnas
       Anagramas
       Bandera_tricolor
@@ -64,6 +65,7 @@ library
       Ramas_de_un_arbol
       Reconocimiento_de_potencias_de_4
       Regiones
+      Reiteracion_de_funciones
       Reiteracion_de_suma_de_consecutivos
       Segmentos_consecutivos
       Sistema_factoradico_de_numeracion
@@ -109,6 +111,7 @@ test-suite Exercitium-test
   main-is: Spec.hs
   other-modules:
       Alfabeto_desde_Spec
+      Algun_vecino_menor_Spec
       Anagramas_Spec
       Bandera_tricolor_Spec
       Biparticiones_de_una_lista_Spec
@@ -144,6 +147,7 @@ test-suite Exercitium-test
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
       Reconocimiento_de_potencias_de_4_Spec
       Regiones_Spec
+      Reiteracion_de_funciones_Spec
       Reiteracion_de_suma_de_consecutivos_Spec
       Segmentos_consecutivos_Spec
       Sistema_factoradico_de_numeracion_Spec

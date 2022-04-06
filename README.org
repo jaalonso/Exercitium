@@ -61,13 +61,15 @@ Los objetivos de esta recopilación son:
 + 220324 [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]] ([[https://youtu.be/bz-NO5s2XVQ][vídeo]]).
 + 220325 [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]] ([[https://youtu.be/yt_aRjlA4kQ][vídeo]]).
 + 220328 [[./src/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]] ([[https://youtu.be/Q38cb9YlDR0][vídeo]]).
-+ 220329 [[./src/Diferencia_simetrica.hs][Diferencia simétrica]].
-+ 220330 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
-+ 220331 [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]].
++ 220329 [[./src/Diferencia_simetrica.hs][Diferencia simétrica]] ([[https://youtu.be/ebQ_u6xlVfQ][vídeo]]).
++ 220330 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]] ([[https://youtu.be/OCHmRQ4XwbU][vídeo]]).
++ 220331 [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]] ([[https://youtu.be/_uOlyfzppVc][vídeo]]).
 + 220401 [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]].
 + 220404 [[./src/Trenzado_de_listas.hs][Trenzado de listas]].
 + 220405 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
 + 220406 [[./src/Enumera_arbol.hs][Enumeración de árboles binarios]].
++ 220407 [[./src/Algun_vecino_menor.hs][Elementos de una matriz con algún vecino menor]].
++ 220408 [[./src/Reiteracion_de_funciones.hs][Reiteración de una función]].
 
 * Etiquetas
 
