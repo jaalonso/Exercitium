@@ -40,11 +40,12 @@
 
 {-# LANGUAGE DeriveFoldable #-}
 {-# LANGUAGE DeriveTraversable #-}
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
 module Enumera_arbol where
 
-import Test.QuickCheck
-import Control.Monad.State
+import Test.QuickCheck (Arbitrary, Gen, arbitrary, quickCheck, sized)
+import Control.Monad.State (State, evalState, get, modify)
 
 data Arbol a = H a
              | N (Arbol a) a (Arbol a)
