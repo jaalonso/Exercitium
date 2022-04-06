@@ -5,9 +5,9 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Una familia de números es una lista de números tal que todos tienen la
--- misma cantidad de dígitos y, además, dichos números tienen al menos
--- un dígito común.
+-- Una familia de números es una lista de números tal que todos tienen
+-- la misma cantidad de dígitos y, además, dichos números tienen al
+-- menos un dígito común.
 --
 -- Por ejemplo, los números 72, 32, 25 y 22 pertenecen a la misma
 -- familia ya que son números de dos dígitos y todos tienen el dígito 2,
