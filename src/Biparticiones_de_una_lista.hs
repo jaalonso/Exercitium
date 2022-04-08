@@ -29,7 +29,7 @@ import Test.QuickCheck (quickCheck)
 biparticiones1 :: [a] -> [([a],[a])]
 biparticiones1 [] = [([],[])]
 biparticiones1 (x:xs) =
-  ([],(x:xs)) : [(x:ys,zs) | (ys,zs) <- biparticiones1 xs]
+  ([],x:xs) : [(x:ys,zs) | (ys,zs) <- biparticiones1 xs]
 
 -- 2ª solución
 -- ===========
