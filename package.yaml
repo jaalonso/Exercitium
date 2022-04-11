@@ -7,7 +7,7 @@ maintainer: "JoseA.Alonso@gmail.com"
 copyright: "Jose A. Alonso"
 synopsis: Ejercicios de programación funcional con Haskell
 description: >
-  Solucines de los ejercicios de programación funcional propuestos en el
+  Soluciones de los ejercicios de programación funcional propuestos en el
   blog Exercitium.
 category: Educational
 
@@ -20,6 +20,7 @@ dependencies:
   - combinat
   - containers
   - data-memocombinators
+  - data-ordlist
   - hspec
   - hspec-core
   - matrix

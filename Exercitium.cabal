@@ -7,7 +7,7 @@ cabal-version: 1.12
 name:           Exercitium
 version:        0.1.0.0
 synopsis:       Ejercicios de programación funcional con Haskell
-description:    Solucines de los ejercicios de programación funcional propuestos en el blog Exercitium.
+description:    Soluciones de los ejercicios de programación funcional propuestos en el blog Exercitium.
 category:       Educational
 homepage:       https://github.com/jaalonso/Exercitium#readme
 bug-reports:    https://github.com/jaalonso/Exercitium/issues
@@ -26,6 +26,7 @@ source-repository head
 
 library
   exposed-modules:
+      Alergias
       Alfabeto_desde
       Algun_vecino_menor
       Amplia_columnas
@@ -44,6 +45,7 @@ library
       Exponente_en_la_factorizacion
       Familias_de_numeros_con_algun_digito_en_comun
       Iguales_al_siguiente
+      Indices_verdaderos
       Lista_cuadrada
       Mas_repetido
       Mastermind
@@ -92,6 +94,7 @@ library
     , combinat
     , containers
     , data-memocombinators
+    , data-ordlist
     , gnuplot
     , hspec
     , hspec-core
@@ -110,6 +113,7 @@ test-suite Exercitium-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Alergias_Spec
       Alfabeto_desde_Spec
       Algun_vecino_menor_Spec
       Anagramas_Spec
@@ -127,6 +131,7 @@ test-suite Exercitium-test
       Exponente_en_la_factorizacion_Spec
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       Iguales_al_siguiente_Spec
+      Indices_verdaderos_Spec
       Lista_cuadrada_Spec
       Mas_repetido_Spec
       Mastermind_Spec
@@ -174,6 +179,7 @@ test-suite Exercitium-test
     , combinat
     , containers
     , data-memocombinators
+    , data-ordlist
     , hspec
     , hspec-core
     , matrix

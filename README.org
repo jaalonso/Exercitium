@@ -70,6 +70,8 @@ Los objetivos de esta recopilación son:
 + 220406 [[./src/Enumera_arbol.hs][Enumeración de árboles binarios]].
 + 220407 [[./src/Algun_vecino_menor.hs][Elementos de una matriz con algún vecino menor]].
 + 220408 [[./src/Reiteracion_de_funciones.hs][Reiteración de una función]].
++ 220411 [[./src/Alergias.hs][Código de las alergias]].
++ 220412 [[./src/Indices_verdaderos.hs][Índices de valores verdaderos]].
 
 * Etiquetas
 
