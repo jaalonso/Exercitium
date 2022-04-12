@@ -72,7 +72,7 @@ Los objetivos de esta recopilación son:
 + 220408 [[./src/Reiteracion_de_funciones.hs][Reiteración de una función]].
 + 220411 [[./src/Alergias.hs][Código de las alergias]].
 + 220412 [[./src/Indices_verdaderos.hs][Índices de valores verdaderos]].
-
++ 220413 [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
 
 * Etiquetas
 
