@@ -111,9 +111,8 @@ newtype ListaCreciente = LC [Int]
 --    LC []
 --    LC [3,22,25,34,36,51,72,75,89]
 listaCrecienteArbitraria :: Gen ListaCreciente
-listaCrecienteArbitraria = do
-  xs <- arbitrary
-  return (LC (listaCreciente xs))
+listaCrecienteArbitraria =
+  LC . listaCreciente <$> arbitrary
 
 -- (listaCreciente xs) es la lista creciente correspondiente a xs. Por ejemplo,
 --    listaCreciente [-1,3,-4,3,0]   ==  [2,6,11,15,16]

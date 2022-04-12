@@ -73,6 +73,7 @@ Los objetivos de esta recopilación son:
 + 220411 [[./src/Alergias.hs][Código de las alergias]].
 + 220412 [[./src/Indices_verdaderos.hs][Índices de valores verdaderos]].
 
+
 * Etiquetas
 
 ** Introducción a la programación funcional
