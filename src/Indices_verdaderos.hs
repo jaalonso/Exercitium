@@ -91,9 +91,13 @@ indicesVerdaderos6 xs = map (`member` xs) [0..]
 -- Comprobación de equivalencia
 -- ============================
 
+-- ListaCreciente es un tipo de dato para generar lista de enteros
+-- crecientes arbitrarias.
 newtype ListaCreciente = LC [Int]
   deriving Show
 
+-- listaCrecienteArbitraria es un generador de lista de enteros
+-- crecientes arbitrarias. Por ejemplo,
 --    λ> sample listaCrecienteArbitraria
 --    LC []
 --    LC [2,5]
@@ -111,10 +115,13 @@ listaCrecienteArbitraria = do
   xs <- arbitrary
   return (LC (listaCreciente xs))
 
+-- (listaCreciente xs) es la lista creciente correspondiente a xs. Por ejemplo,
+--    listaCreciente [-1,3,-4,3,0]   ==  [2,6,11,15,16]
 listaCreciente :: [Int] -> [Int]
 listaCreciente xs =
   scanl1 (+) (map (succ . abs) xs)
 
+-- ListaCreciente está contenida en Arbitrary
 instance Arbitrary ListaCreciente where
   arbitrary = listaCrecienteArbitraria
 

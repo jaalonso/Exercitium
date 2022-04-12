@@ -65,8 +65,8 @@ Los objetivos de esta recopilación son:
 + 220330 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]] ([[https://youtu.be/OCHmRQ4XwbU][vídeo]]).
 + 220331 [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]] ([[https://youtu.be/_uOlyfzppVc][vídeo]]).
 + 220401 [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]] ([[https://youtu.be/C8P3dYzFHXY][vídeo]]).
-+ 220404 [[./src/Trenzado_de_listas.hs][Trenzado de listas]].
-+ 220405 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
++ 220404 [[./src/Trenzado_de_listas.hs][Trenzado de listas]] ([[https://youtu.be/zAqtMXDBt7A][vídeo]]).
++ 220405 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
 + 220406 [[./src/Enumera_arbol.hs][Enumeración de árboles binarios]].
 + 220407 [[./src/Algun_vecino_menor.hs][Elementos de una matriz con algún vecino menor]].
 + 220408 [[./src/Reiteracion_de_funciones.hs][Reiteración de una función]].
