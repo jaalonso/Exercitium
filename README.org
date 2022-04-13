@@ -73,6 +73,7 @@ Los objetivos de esta recopilación son:
 + 220411 [[./src/Alergias.hs][Código de las alergias]].
 + 220412 [[./src/Indices_verdaderos.hs][Índices de valores verdaderos]].
 + 220413 [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
++ 220414 [[./src/Numero_de_inversiones.hs][Número de inversiones]].
 
 * Etiquetas
 

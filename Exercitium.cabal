@@ -56,6 +56,7 @@ library
       Mayor_orbita_de_la_sucesion_de_Collatz
       Mayor_producto_de_las_ramas_de_un_arbol
       Numeracion_de_ternas
+      Numero_de_inversiones
       Numeros_amigos
       Numeros_de_ocurrencias_de_elementos
       Ordenacion_de_estructuras
@@ -143,6 +144,7 @@ test-suite Exercitium-test
       Mayor_orbita_de_la_sucesion_de_Collatz_Spec
       Mayor_producto_de_las_ramas_de_un_arbol_Spec
       Numeracion_de_ternas_Spec
+      Numero_de_inversiones_Spec
       Numeros_amigos_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
       Ordenacion_de_estructuras_Spec
