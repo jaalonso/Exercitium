@@ -42,113 +42,96 @@ type Matriz = Array (Int,Int) Int
 ej :: Matriz
 ej = listArray ((1,1),(3,4)) [9,4,6,5,8,1,7,3,4,2,5,4]
 
+type Pos = (Int,Int)
+
 -- 1ª solución
 -- ===========
 
 algunoMenor1 :: Matriz -> [Int]
-algunoMenor1 p =
-  [p!(i,j) | (i,j) <- indices p,
-             not (null (vecinosMenores1 p (i,j)))]
+algunoMenor1 a =
+  [a!p| p <- indices a,
+        any (< a!p) (vecinos1 a p)]
 
--- (vecinosMenores1 p (i,j)) es la lista de los vecinos en la matriz p
--- de la posición (i,j) que son menores que el elemento en dicha
--- posición. Por ejemplo,
---    vecinosMenores1 ej (2,3)  ==  [4,6,5,1,3,2,5,4]
---    vecinosMenores1 ej (2,2)  ==  []
-vecinosMenores1 :: Matriz -> (Int,Int) -> [Int]
-vecinosMenores1 p (i,j) =
-  [p!(a,b) | (a,b) <- posicionesVecinos1 m n (i,j),
-             p!(a,b) < x]
-  where (_,(m,n)) = bounds p
-        x         = p!(i,j)
+-- (vecinos q p) es la lista de los vecinos en la matriz a de la
+-- posición p. Por ejemplo,
+--    vecinos1 ej (2,2)  ==  [9,4,6,8,7,4,2,5]
+--    vecinos1 ej (1,1)  ==  [4,8,1]
+vecinos1 :: Matriz -> Pos -> [Int]
+vecinos1 a p =
+  [a!p' | p' <- posicionesVecinos1 a p]
 
--- (vecinos1 p (i,j)) es la lista de los vecinos en la matriz p de la
--- posición (i,j). Por ejemplo,
-vecinos1 :: Matriz -> (Int,Int) -> [Int]
-vecinos1 p (i,j) =
-  [p!(a,b) | (a,b) <- posicionesVecinos1 m n (i,j)]
-  where (_,(m,n)) = bounds p
-
--- (posicionesVecinos5 m n (i,j)) es la lista de las posiciones de los
--- vecino de (i,j) en una matriz con m filas y n columnas. Por ejemplo,
---    λ> posicionesVecinos2 3 3 (2,2)
+-- (posicionesVecinos a p) es la lista de las posiciones de los
+-- vecino de p en la matriz a. Por ejemplo,
+--    λ> posicionesVecinos1 3 3 (2,2)
 --    [(1,1),(1,2),(1,3),(2,1),(2,3),(3,1),(3,2),(3,3)]
---    λ> posicionesVecinos2 3 3 (1,1)
+--    λ> posicionesVecinos1 3 3 (1,1)
 --    [(1,2),(2,1),(2,2)]
-posicionesVecinos1 :: Int -> Int -> (Int,Int) -> [(Int,Int)]
-posicionesVecinos1 m n (i,j) =
-  [(i+a,j+b) | (a,b) <- [(-1,-1),(-1,0),(-1,1),
-                         ( 0,-1),       ( 0,1),
-                         ( 1,-1),( 1,0),( 1,1)],
-               inRange ((1,1),(m,n)) (i+a,j+b)]
+posicionesVecinos1 :: Matriz -> Pos -> [Pos]
+posicionesVecinos1 a (i,j) =
+  [(i+di,j+dj) | (di,dj) <- [(-1,-1),(-1,0),(-1,1),
+                             ( 0,-1),       ( 0,1),
+                             ( 1,-1),( 1,0),( 1,1)],
+                 inRange (bounds a) (i+di,j+dj)]
 
 -- 2ª solución
 -- ===========
 
 algunoMenor2 :: Matriz -> [Int]
-algunoMenor2 p =
-  [p!(i,j) | (i,j) <- indices p,
-             not (null (vecinosMenores2 (i,j)))]
+algunoMenor2 a =
+  [a!p | p <- indices a,
+         any (<a!p) (vecinos2 p)]
   where
-    vecinosMenores2 (i,j) =
-      [p!(a,b) | (a,b) <- posicionesVecinos2 (i,j),
-                  p!(a,b) < x]
-      where x = p!(i,j)
+    vecinos2 p =
+      [a!p' | p' <- posicionesVecinos2 p]
     posicionesVecinos2 (i,j) =
-      [(i+a,j+b) | (a,b) <- [(-1,-1),(-1,0),(-1,1),
-                             ( 0,-1),       ( 0,1),
-                             ( 1,-1),( 1,0),( 1,1)],
-                   inRange (bounds p) (i+a,j+b)]
+      [(i+di,j+dj) | (di,dj) <- [(-1,-1),(-1,0),(-1,1),
+                                 ( 0,-1),       ( 0,1),
+                                 ( 1,-1),( 1,0),( 1,1)],
+                     inRange (bounds a) (i+di,j+dj)]
 
 -- 3ª solución
 -- ===========
 
 algunoMenor3 :: Matriz -> [Int]
-algunoMenor3 p =
-  [p!(i,j) | (i,j) <- indices p,
-             not (null (vecinosMenores3 (i,j)))]
+algunoMenor3 a =
+  [a!p | p <- indices a,
+         any (<a!p) (vecinos3 p)]
   where
-    vecinosMenores3 (i,j) =
-      [p!(a,b) | (a,b) <- posicionesVecinos3 (i,j),
-                  p!(a,b) < x]
-      where x = p!(i,j)
+    vecinos3 p =
+      [a!p' | p' <- posicionesVecinos3 p]
     posicionesVecinos3 (i,j) =
-      [(a,b) | a <- [max 1 (i-1)..min m (i+1)],
-               b <- [max 1 (j-1)..min n (j+1)],
-               (a,b) /= (i,j)]
-      where (_,(m,n)) = bounds p
+      [(i',j') | i' <- [i-1..i+1],
+                 j' <- [j-1..j+1],
+                 (i',j') /= (i,j),
+                 inRange (bounds a) (i',j')]
 
 -- 4ª solución
 -- ===========
 
 algunoMenor4 :: Matriz -> [Int]
-algunoMenor4 p =
-  [p!(i,j) | (i,j) <- indices p,
-             not (null (vecinosMenores4 (i,j)))]
+algunoMenor4 a =
+  [a!p | p <- indices a,
+         any (<a!p) (vecinos4 p)]
   where
-    vecinosMenores4 (i,j) =
-      [p!(a,b) | (a,b) <- posicionesVecinos4 (i,j),
-                  p!(a,b) < x]
-      where x = p!(i,j)
+    vecinos4 p =
+      [a!p' | p' <- posicionesVecinos4 p]
     posicionesVecinos4 (i,j) =
-      [(a,b) | a <- [i-1..i+1],
-               b <- [j-1..j+1],
-               (a,b) /= (i,j),
-               inRange ((1,1),(m,n)) (a,b)]
-      where (_,(m,n)) = bounds p
+      [(i',j') | i' <- [max 1 (i-1)..min m (i+1)],
+                 j' <- [max 1 (j-1)..min n (j+1)],
+                 (i',j') /= (i,j)]
+      where (_,(m,n)) = bounds a
+
 
 -- 5ª solución
 -- ===========
 
 algunoMenor5 :: Matriz -> [Int]
-algunoMenor5 p =
-  [p!(i,j) | (i,j) <- indices p,
-             not (null (vecinosMenores5 (i,j)))]
+algunoMenor5 a =
+  [a!p | p <- indices a,
+         any (<a!p) (vecinos5 p)]
   where
-    vecinosMenores5 (i,j) =
-      [p!(a,b) | (a,b) <- posicionesVecinos5 (i,j),
-                  p!(a,b) < x]
-      where x = p!(i,j)
+    vecinos5 p =
+      [a!p' | p' <- posicionesVecinos5 p]
     posicionesVecinos5 (i,j) =
       [(i-1,j-1) | i > 1, j > 1] ++
       [(i-1,j)   | i > 1]        ++
@@ -158,7 +141,7 @@ algunoMenor5 p =
       [(i+1,j-1) | i < m, j > 1] ++
       [(i+1,j)   | i < m]        ++
       [(i+1,j+1) | i < m, j < n]
-      where (_,(m,n)) = bounds p
+      where (_,(m,n)) = bounds a
 
 -- ---------------------------------------------------------------------
 
@@ -204,16 +187,16 @@ prop_algunoMenor (M p) =
 -- La comparación es
 --    λ> maximum (algunoMenor1 (listArray ((1,1),(600,800)) [0..]))
 --    479999
---    (2.01 secs, 1,749,514,416 bytes)
+--    (2.20 secs, 1,350,075,240 bytes)
 --    λ> maximum (algunoMenor2 (listArray ((1,1),(600,800)) [0..]))
 --    479999
---    (1.71 secs, 1,653,395,008 bytes)
+--    (2.24 secs, 1,373,139,968 bytes)
 --    λ> maximum (algunoMenor3 (listArray ((1,1),(600,800)) [0..]))
 --    479999
---    (2.09 secs, 1,567,908,176 bytes)
+--    (2.08 secs, 1,200,734,112 bytes)
 --    λ> maximum (algunoMenor4 (listArray ((1,1),(600,800)) [0..]))
 --    479999
---    (2.03 secs, 1,604,019,704 bytes)
+--    (2.76 secs, 1,287,653,136 bytes)
 --    λ> maximum (algunoMenor5 (listArray ((1,1),(600,800)) [0..]))
 --    479999
---    (1.39 secs, 1,234,192,640 bytes)
+--    (1.67 secs, 953,937,600 bytes)
