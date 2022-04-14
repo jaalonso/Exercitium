@@ -24,8 +24,8 @@
 
 module Numero_de_inversiones where
 
-import Test.QuickCheck
-import Data.Array
+import Test.QuickCheck (quickCheck)
+import Data.Array ((!), listArray)
 
 -- 1ª solución
 -- ===========

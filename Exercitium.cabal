@@ -160,6 +160,7 @@ test-suite Exercitium-test
       Reiteracion_de_funciones_Spec
       Reiteracion_de_suma_de_consecutivos_Spec
       Segmentos_consecutivos_Spec
+      Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
       Sucesion_de_numeros_amigos_Spec
       Suma_de_cadenas_Spec
