@@ -20,7 +20,7 @@
 module Separacion_por_posicion where
 
 import Data.List (partition)
-import qualified Data.Vector as V
+import qualified Data.Vector as V ((!), fromList, length)
 import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
@@ -31,7 +31,7 @@ particion1 xs = ([x | (n,x) <- nxs, even n],
                  [x | (n,x) <- nxs, odd n])
   where nxs = enumeracion xs
 
---(numeracion xs) es la enumeración de xs. Por ejemplo,
+-- (enumeracion xs) es la enumeración de xs. Por ejemplo,
 --    enumeracion [7,9,6,8]  ==  [(0,7),(1,9),(2,6),(3,8)]
 enumeracion :: [a] -> [(Int,a)]
 enumeracion = zip [0..]

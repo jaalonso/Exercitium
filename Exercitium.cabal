@@ -42,6 +42,8 @@ library
       Duplicacion_de_cada_elemento
       Elementos_minimales
       Emparejamiento_binario
+      Emparejamiento_de_arboles
+      Emparejamiento_de_arboles_1
       Enumera_arbol
       Exponente_en_la_factorizacion
       Familias_de_numeros_con_algun_digito_en_comun

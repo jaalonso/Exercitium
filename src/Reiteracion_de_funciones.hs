@@ -57,7 +57,7 @@ reiteraciones f x = x : reiteraciones f (f x)
 -- ===========
 
 reiteracion5 :: (a -> a) -> Int -> a -> a
-reiteracion5 f n x = (iterate f x) !! n
+reiteracion5 f n x = iterate f x !! n
 
 -- 6ª solución
 -- ===========
