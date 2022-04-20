@@ -7,10 +7,10 @@
 -- ---------------------------------------------------------------------
 -- Definir la función
 --    eliminaAisladas :: Eq a => a -> [a] -> [a]
--- tal que (eliminaAisladas c cs) es la lista obtenida eliminando de la
--- cadena cs las ocurrencias aisladas del carácter c (es decir,
--- aquellas ocurrencias de c tales que su elemento anterior y posterior
--- es distinto de c). Por ejemplo,
+-- tal que (eliminaAisladas x ys) es la lista obtenida eliminando de ys
+-- las ocurrencias aisladas de x (es decir, aquellas ocurrencias de x
+-- tales que su elemento anterior y posterior son distintos de x). Por
+-- ejemplo,
 --    eliminaAisladas 'X' ""                  == ""
 --    eliminaAisladas 'X' "X"                 == ""
 --    eliminaAisladas 'X' "XX"                == "XX"
@@ -36,7 +36,7 @@
 module Elimina_aisladas where
 
 import Data.List (group)
-import Test.QuickCheck
+import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
 -- ===========
