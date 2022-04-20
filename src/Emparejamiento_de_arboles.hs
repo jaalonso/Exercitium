@@ -103,9 +103,15 @@ prop_emparejaArboles x y =
 -- =========================
 
 -- La comparación es
+--    λ> a500 <- generate (arbolArbitrario 500 :: Gen (Arbol Int))
 --    λ> emparejaArboles1 (+) a500 a500 == emparejaArboles1 (+) a500 a500
 --    True
---    (4.88 secs, 3,777,059,712 bytes)
+--    (1.92 secs, 1,115,813,352 bytes)
 --    λ> emparejaArboles2 (+) a500 a500 == emparejaArboles2 (+) a500 a500
 --    True
---    (2.73 secs, 2,315,142,248 bytes)
+--    (3.28 secs, 2,212,257,928 bytes)
+--
+--    λ> b500 = arbolAtree a500
+--    λ> mzipWith (+) b500 b500 == mzipWith (+) b500 b500
+--    True
+--    (0.21 secs, 563,503,112 bytes)
