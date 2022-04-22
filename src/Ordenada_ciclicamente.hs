@@ -8,21 +8,22 @@
 -- Se dice que una sucesión x(1), ..., x(n) está ordenada cíclicamente
 -- si existe un índice i tal que la sucesión
 --    x(i), x(i+1), ..., x(n), x(1), ..., x(i-1)
--- está ordenada crecientemente.
+-- está ordenada creciente de forma estricta.
 --
 -- Definir la función
 --    ordenadaCiclicamente :: Ord a => [a] -> Maybe Int
 -- tal que (ordenadaCiclicamente xs) es el índice a partir del cual está
 -- ordenada, si la lista está ordenado cíclicamente y Nothing en caso
 -- contrario. Por ejemplo,
---    ordenadaCiclicamente1 [1,2,3,4]      ==  Just 0
---    ordenadaCiclicamente1 [5,8,1,3]      ==  Just 2
---    ordenadaCiclicamente1 [4,6,7,5,4,3]  ==  Nothing
---    ordenadaCiclicamente1 [1,0,1,2]      ==  Nothing
---    ordenadaCiclicamente1 [0,1,0]        ==  Just 2
---    ordenadaCiclicamente1 "cdeab"        ==  Just 3
+--    ordenadaCiclicamente [1,2,3,4]      ==  Just 0
+--    ordenadaCiclicamente [5,8,1,3]      ==  Just 2
+--    ordenadaCiclicamente [4,6,7,5,1,3]  ==  Nothing
+--    ordenadaCiclicamente [1,0,3,2]      ==  Nothing
+--    ordenadaCiclicamente [1,2,0]        ==  Just 2
+--    ordenadaCiclicamente "cdeab"        ==  Just 3
 --
--- Nota: Se supone que el argumento es una lista no vacía.
+-- Nota: Se supone que el argumento es una lista no vacía sin elementos
+-- repetidos.
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
@@ -31,7 +32,7 @@ module Ordenada_ciclicamente where
 
 import Test.QuickCheck (Arbitrary, Gen, NonEmptyList (NonEmpty), Property,
                         arbitrary, chooseInt, collect, quickCheck)
-import Data.List       (sort)
+import Data.List       (nub, sort)
 import Data.Maybe      (isJust, listToMaybe)
 
 -- 1ª solución
@@ -51,7 +52,7 @@ ordenadaCiclicamente1 xs = aux 0 xs
 --   ordenada "acdb"  ==  False
 ordenada :: Ord a => [a] -> Bool
 ordenada []     = True
-ordenada (x:xs) = all (x <=) xs && ordenada xs
+ordenada (x:xs) = all (x <) xs && ordenada xs
 
 -- (siguienteCiclo xs) es la lista obtenida añadiendo el primer elemento
 -- de xs al final del resto de xs. Por ejemplo,
@@ -113,7 +114,7 @@ listaArbitraria = do
   xs <- arbitrary
   let ys = x : xs
   k <- chooseInt (0, length ys)
-  let (as,bs) = splitAt k (sort ys)
+  let (as,bs) = splitAt k (sort (nub ys))
   return (L (bs ++ as))
 
 -- Lista es una subclase de Arbitrary.
@@ -141,7 +142,7 @@ listaArbitraria2 = do
   xs <- arbitrary
   let ys = x' : xs
   k <- chooseInt (0, length ys)
-  let (as,bs) = splitAt k (sort ys)
+  let (as,bs) = splitAt k (sort (nub ys))
   n <- chooseInt (0,1)
   return (if even n
           then L2 (bs ++ as)
@@ -178,12 +179,12 @@ prop_ordenadaCiclicamente (L2 xs) =
 -- =========================
 
 -- La comparación es
---    λ> ordenadaCiclicamente1 ([100..4000] ++ [1..100])
+--    λ> ordenadaCiclicamente1 ([100..4000] ++ [1..99])
 --    Just 3901
---    (2.52 secs, 2,139,470,536 bytes)
---    λ> ordenadaCiclicamente2 ([100..4000] ++ [1..100])
+--    (3.27 secs, 2,138,864,568 bytes)
+--    λ> ordenadaCiclicamente2 ([100..4000] ++ [1..99])
 --    Just 3901
---    (2.03 secs, 1,430,296,432 bytes)
---    λ> ordenadaCiclicamente3 ([100..4000] ++ [1..100])
+--    (2.44 secs, 1,430,040,008 bytes)
+--    λ> ordenadaCiclicamente3 ([100..4000] ++ [1..99])
 --    Just 3901
---    (1.02 secs, 515,805,816 bytes)
+--    (1.18 secs, 515,549,200 bytes)
