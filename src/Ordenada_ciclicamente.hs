@@ -16,20 +16,23 @@
 -- ordenada, si la lista está ordenado cíclicamente y Nothing en caso
 -- contrario. Por ejemplo,
 --    ordenadaCiclicamente1 [1,2,3,4]      ==  Just 0
---    ordenadaCiclicamente1 [5,8,2,3]      ==  Just 2
+--    ordenadaCiclicamente1 [5,8,1,3]      ==  Just 2
 --    ordenadaCiclicamente1 [4,6,7,5,4,3]  ==  Nothing
 --    ordenadaCiclicamente1 [1,0,1,2]      ==  Nothing
---    ordenadaCiclicamente1 [0,2,0]        ==  Just 2
+--    ordenadaCiclicamente1 [0,1,0]        ==  Just 2
 --    ordenadaCiclicamente1 "cdeab"        ==  Just 3
 --
 -- Nota: Se supone que el argumento es una lista no vacía.
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Ordenada_ciclicamente where
 
-import Test.QuickCheck
-import Data.List
-import Data.Maybe (listToMaybe, isJust)
+import Test.QuickCheck (Arbitrary, Gen, NonEmptyList (NonEmpty), Property,
+                        arbitrary, chooseInt, collect, quickCheck)
+import Data.List       (sort)
+import Data.Maybe      (isJust, listToMaybe)
 
 -- 1ª solución
 -- ===========
@@ -109,7 +112,7 @@ listaArbitraria = do
   x <- arbitrary
   xs <- arbitrary
   let ys = x : xs
-  k <- choose (0, length ys)
+  k <- chooseInt (0, length ys)
   let (as,bs) = splitAt k (sort ys)
   return (L (bs ++ as))
 
@@ -137,7 +140,7 @@ listaArbitraria2 = do
   x' <- arbitrary
   xs <- arbitrary
   let ys = x' : xs
-  k <- choose (0, length ys)
+  k <- chooseInt (0, length ys)
   let (as,bs) = splitAt k (sort ys)
   n <- chooseInt (0,1)
   return (if even n
