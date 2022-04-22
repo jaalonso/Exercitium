@@ -77,6 +77,7 @@ Los objetivos de esta recopilación son:
 + 220415 [[./src/Separacion_por_posicion.hs][Sepación por posición]].
 + 220418 [[./src/Emparejamiento_de_arboles.hs][Emparejamiento de árboles]] ([[https://youtu.be/RWO2_fadW4g][vídeo]])
 + 220420 [[./src/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]].
++ 220422 [[./src/Ordenada_ciclicamente.hs][Ordenada cíclicamente]].
 
 * Etiquetas
 
