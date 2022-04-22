@@ -39,9 +39,9 @@ import Data.Maybe      (isJust, listToMaybe)
 
 ordenadaCiclicamente1 :: Ord a => [a] -> Maybe Int
 ordenadaCiclicamente1 xs = aux 0 xs
-  where n = length xs - 1
+  where n = length xs
         aux i zs
-          | i > n       = Nothing
+          | i == n      = Nothing
           | ordenada zs = Just i
           | otherwise   = aux (i+1) (siguienteCiclo zs)
 
