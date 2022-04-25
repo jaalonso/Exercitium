@@ -34,11 +34,12 @@
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
 module Representacion_de_Zeckendorf where
 
 import Data.List (subsequences)
-import Test.QuickCheck
+import Test.QuickCheck (Positive (Positive), quickCheck)
 
 -- 1ª solución
 -- ===========
@@ -57,12 +58,17 @@ zeckendorf1Aux n =
 fibs :: [Integer]
 fibs = 1 : scanl (+) 1 fibs
 
+-- (sinFibonacciConsecutivos xs) se verifica si en la sucesión
+-- decreciente de número de Fibonacci xs no hay dos consecutivos. Por
+-- ejemplo,
 --    sinFibonacciConsecutivos [89, 8, 3]      ==  True
 --    sinFibonacciConsecutivos [55, 34, 8, 3]  ==  False
 sinFibonacciConsecutivos :: [Integer] -> Bool
 sinFibonacciConsecutivos xs =
   and [x /= siguienteFibonacci y | (x,y) <- zip xs (tail xs)]
 
+-- (siguienteFibonacci n) es el menor número de Fibonacci mayor que
+-- n. Por ejemplo,
 --    siguienteFibonacci 34  ==  55
 siguienteFibonacci :: Integer -> Integer
 siguienteFibonacci n =
