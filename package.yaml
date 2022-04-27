@@ -19,6 +19,7 @@ dependencies:
   - array
   - combinat
   - containers
+  - criterion
   - data-memocombinators
   - data-ordlist
   - hspec

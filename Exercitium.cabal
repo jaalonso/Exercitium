@@ -69,6 +69,7 @@ library
       Posiciones_diagonales_principales
       Primos_consecutivos_con_media_capicua
       Primos_equidistantes
+      Producto_cartesiano
       Producto_de_los_elementos_de_la_diagonal_principal
       Ramas_de_un_arbol
       Reconocimiento_de_potencias_de_4
@@ -101,6 +102,7 @@ library
     , base >=4.7 && <5
     , combinat
     , containers
+    , criterion
     , data-memocombinators
     , data-ordlist
     , gnuplot
@@ -137,6 +139,7 @@ test-suite Exercitium-test
       Elementos_minimales_Spec
       Elimina_aisladas_Spec
       Emparejamiento_binario_Spec
+      Emparejamiento_de_arboles_Spec
       Enumera_arbol_Spec
       Exponente_en_la_factorizacion_Spec
       Familias_de_numeros_con_algun_digito_en_comun_Spec
@@ -161,6 +164,7 @@ test-suite Exercitium-test
       Posiciones_diagonales_principales_Spec
       Primos_consecutivos_con_media_capicua_Spec
       Primos_equidistantes_Spec
+      Producto_cartesiano_Spec
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
       Reconocimiento_de_potencias_de_4_Spec
       Regiones_Spec
@@ -192,6 +196,7 @@ test-suite Exercitium-test
     , base
     , combinat
     , containers
+    , criterion
     , data-memocombinators
     , data-ordlist
     , hspec
