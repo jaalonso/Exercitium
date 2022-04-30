@@ -9,9 +9,9 @@
 --    producto :: [[a]] -> [[a]]
 -- tal que (producto xss) es el producto cartesiano de los conjuntos xss.
 -- Por ejemplo,
---    λ> producto [[1,3],[2,5]]
---    [[1,2],[1,5],[3,2],[3,5]]
---    λ> producto [[1,3],[2,5],[6,4]]
+--    λ> producto1 [[2,5],[6,4]]
+--    [[2,6],[2,4],[5,6],[5,4]]
+--    λ> producto1 [[1,3],[2,5],[6,4]]
 --    [[1,2,6],[1,2,4],[1,5,6],[1,5,4],[3,2,6],[3,2,4],[3,5,6],[3,5,4]]
 --    λ> producto [[1,3,5],[2,4]]
 --    [[1,2],[1,4],[3,2],[3,4],[5,2],[5,4]]
@@ -66,84 +66,68 @@ inserta3 (x:xs) yss = [x:ys | ys <- yss] ++ inserta3 xs yss
 -- ===========
 
 producto4 :: [[a]] -> [[a]]
-producto4 []       = [[]]
-producto4 (xs:xss) = inserta4 xs (producto4 xss)
+producto4 = foldr inserta4 [[]]
 
 inserta4 :: [a] -> [[a]] -> [[a]]
-inserta4 [] _       = []
+inserta4 []     _   = []
 inserta4 (x:xs) yss = map (x:) yss ++ inserta4 xs yss
 
 -- 5ª solución
 -- ===========
 
 producto5 :: [[a]] -> [[a]]
-producto5 []       = [[]]
-producto5 (xs:xss) = inserta5 xs (producto5 xss)
+producto5 = foldr inserta5 [[]]
 
 inserta5 :: [a] -> [[a]] -> [[a]]
-inserta5 xs xss = [x:ys | x <- xs, ys <- xss]
+inserta5 xs yss = [x:ys | x <- xs, ys <- yss]
 
 -- 6ª solución
 -- ===========
 
 producto6 :: [[a]] -> [[a]]
-producto6 []       = [[]]
-producto6 (xs:xss) = inserta6 xs (producto6 xss)
+producto6 = foldr inserta6 [[]]
 
 inserta6 :: [a] -> [[a]] -> [[a]]
-inserta6 xs xss = concatMap (\x -> map (x:) xss) xs
+inserta6 xs yss = concatMap (\x -> map (x:) yss) xs
 
 -- 7ª solución
 -- ===========
 
 producto7 :: [[a]] -> [[a]]
-producto7 []       = [[]]
-producto7 (xs:xss) = inserta7 xs (producto7 xss)
+producto7 = foldr inserta7 [[]]
 
 inserta7 :: [a] -> [[a]] -> [[a]]
-inserta7 xs xss = xs >>= (\x -> map (x:) xss)
+inserta7 xs yss = xs >>= (\x -> map (x:) yss)
 
 -- 8ª solución
 -- ===========
 
 producto8 :: [[a]] -> [[a]]
-producto8 []       = [[]]
-producto8 (xs:xss) = inserta8 xs (producto8 xss)
+producto8 = foldr inserta8 [[]]
 
 inserta8 :: [a] -> [[a]] -> [[a]]
-inserta8 xs xss = (:) <$> xs <*> xss
+inserta8 xs yss = (:) <$> xs <*> yss
 
 -- 9ª solución
 -- ===========
 
 producto9 :: [[a]] -> [[a]]
-producto9 []       = [[]]
-producto9 (xs:xss) = inserta9 xs (producto9 xss)
+producto9 = foldr inserta9 [[]]
 
 inserta9 :: [a] -> [[a]] -> [[a]]
 inserta9 = liftA2 (:)
 
 -- 10ª solución
--- ===========
+-- ============
 
 producto10 :: [[a]] -> [[a]]
-producto10 []       = [[]]
-producto10 (xs:xss) = inserta10 xs (producto10 xss)
-
-inserta10 :: [a] -> [[a]] -> [[a]]
-inserta10 = liftM2 (:)
+producto10 = foldr (liftM2 (:)) [[]]
 
 -- 11ª solución
--- ===========
+-- ============
 
 producto11 :: [[a]] -> [[a]]
-producto11 = foldr (liftM2 (:)) [[]]
-
--- 12ª solución
--- ===========
-
-producto12 :: [[a]] -> [[a]]
-producto12 = sequence
+producto11 = sequence
 
 -- Comprobación de equivalencia
 -- ============================
@@ -152,20 +136,20 @@ producto12 = sequence
 prop_producto :: [[Int]] -> Bool
 prop_producto xss =
   all (== producto1 xss)
-      [producto2 xss,
-       producto3 xss,
-       producto4 xss,
-       producto5 xss,
-       producto6 xss,
-       producto7 xss,
-       producto8 xss,
-       producto9 xss,
-       producto10 xss,
-       producto11 xss,
-       producto12 xss]
+      [ producto2 xss
+      , producto3 xss
+      , producto4 xss
+      , producto5 xss
+      , producto6 xss
+      , producto7 xss
+      , producto8 xss
+      , producto9 xss
+      , producto10 xss
+      , producto11 xss
+      ]
 
 -- La comprobación es
---    λ> quickCheckWith (stdArgs {maxSize=9}) prop_producto
+--    λ> quickCheckWith (stdArgs {maxSize = 9}) prop_producto
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
@@ -174,110 +158,53 @@ prop_producto xss =
 -- La comparación es
 --    λ> length (producto1 (replicate 7 [0..9]))
 --    10000000
---    (7.82 secs, 10,169,405,464 bytes)
+--    (10.51 secs, 10,169,418,496 bytes)
 --    λ> length (producto2 (replicate 7 [0..9]))
 --    10000000
---    (1.68 secs, 1,333,857,848 bytes)
+--    (2.14 secs, 1,333,870,712 bytes)
 --    λ> length (producto3 (replicate 7 [0..9]))
 --    10000000
---    (2.50 secs, 1,956,089,192 bytes)
+--    (3.33 secs, 1,956,102,056 bytes)
 --    λ> length (producto4 (replicate 7 [0..9]))
 --    10000000
---    (0.81 secs, 1,600,530,312 bytes)
+--    (0.98 secs, 1,600,542,752 bytes)
 --    λ> length (producto5 (replicate 7 [0..9]))
 --    10000000
---    (1.65 secs, 1,333,857,848 bytes)
+--    (2.10 secs, 1,333,870,288 bytes)
 --    λ> length (producto6 (replicate 7 [0..9]))
 --    10000000
---    (0.76 secs, 1,600,522,528 bytes)
+--    (1.17 secs, 1,600,534,632 bytes)
 --    λ> length (producto7 (replicate 7 [0..9]))
 --    10000000
---    (0.27 secs, 1,600,522,248 bytes)
+--    (0.35 secs, 1,600,534,352 bytes)
 --    λ> length (producto8 (replicate 7 [0..9]))
 --    10000000
---    (0.79 secs, 978,305,744 bytes)
+--    (0.87 secs, 978,317,848 bytes)
 --    λ> length (producto9 (replicate 7 [0..9]))
 --    10000000
---    (0.77 secs, 1,067,188,576 bytes)
+--    (1.38 secs, 1,067,201,016 bytes)
 --    λ> length (producto10 (replicate 7 [0..9]))
 --    10000000
---    (0.43 secs, 2,311,632,992 bytes)
+--    (0.54 secs, 2,311,645,392 bytes)
 --    λ> length (producto11 (replicate 7 [0..9]))
 --    10000000
---    (0.44 secs, 2,311,632,528 bytes)
---    λ> length (producto12 (replicate 7 [0..9]))
---    10000000
---    (0.77 secs, 1,067,188,128 bytes)
---
---    λ> length (producto4 (replicate 7 [0..10]))
---    19487171
---    (1.47 secs, 3,087,299,560 bytes)
---    λ> length (producto5 (replicate 7 [0..10]))
---    19487171
---    (3.16 secs, 2,572,831,832 bytes)
---    λ> length (producto6 (replicate 7 [0..10]))
---    19487171
---    (1.51 secs, 3,087,290,936 bytes)
---    λ> length (producto7 (replicate 7 [0..10]))
---    19487171
---    (0.53 secs, 3,087,290,656 bytes)
---    λ> length (producto8 (replicate 7 [0..10]))
---    19487171
---    (1.47 secs, 1,886,887,200 bytes)
---    λ> length (producto9 (replicate 7 [0..10]))
---    19487171
---    (2.64 secs, 2,058,367,688 bytes)
---    λ> length (producto10 (replicate 7 [0..10]))
---    19487171
---    (0.77 secs, 4,459,187,088 bytes)
---    λ> length (producto11 (replicate 7 [0..10]))
---    19487171
---    (0.82 secs, 4,459,186,664 bytes)
---    λ> length (producto12 (replicate 7 [0..10]))
---    19487171
---    (2.62 secs, 2,058,367,240 bytes)
+--    (1.32 secs, 1,067,200,992 bytes)
 --
 --    λ> length (producto7 (replicate 7 [1..14]))
 --    105413504
---    (2.48 secs, 16,347,726,936 bytes)
+--    (3.77 secs, 16,347,739,040 bytes)
 --    λ> length (producto10 (replicate 7 [1..14]))
 --    105413504
---    (3.74 secs, 23,613,149,576 bytes)
---    λ> length (producto11 (replicate 7 [1..14]))
---    105413504
---    (3.76 secs, 23,613,149,152 bytes)
+--    (5.11 secs, 23,613,162,016 bytes)
 
 -- Comprobación de la propiedad
 -- ============================
 
 -- La propiedad es
-prop_length_producto :: [[Int]] -> Bool
-prop_length_producto xss =
+prop_longitud :: [[Int]] -> Bool
+prop_longitud xss =
   length (producto7 xss) == product (map length xss)
 
 -- La comprobación es
---    λ> quickCheckWith (stdArgs {maxSize=9}) prop_length_producto
+--    λ> quickCheckWith (stdArgs {maxSize = 7}) prop_longitud
 --    +++ OK, passed 100 tests.
-
--- ---------------------------------------------------------------------
--- § Verificación                                                     --
--- ---------------------------------------------------------------------
-
--- verificacion :: IO ()
--- verificacion = hspec especificacion
---
--- especificacion :: Spec
--- especificacion =
---   describe "producto" $ do
---     it "e1" $
---       producto [[1,3],[2,5]]
---       `shouldBe `[[1,2],[1,5],[3,2],[3,5]]
---     it "e2" $
---       producto [[1,3],[2,5],[6,4]]
---       `shouldBe` [[1,2,6],[1,2,4],[1,5,6],[1,5,4],[3,2,6],[3,2,4],[3,5,6],[3,5,4]]
---     it "e3" $
---       producto [[1,3,5],[2,4]]
---       `shouldBe` [[1,2],[1,4],[3,2],[3,4],[5,2],[5,4]]
---     it "e4" $
---       producto ([]::[[Int]])
---       `shouldBe` [[]]

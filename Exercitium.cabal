@@ -61,12 +61,14 @@ library
       Numeracion_de_ternas
       Numero_de_inversiones
       Numeros_amigos
+      Numeros_con_digitos_primos
       Numeros_de_ocurrencias_de_elementos
       Ordenacion_de_estructuras
       Ordenada_ciclicamente
       Ordenados_por_maximo
       Pares_adyacentes_iguales
       Posiciones_diagonales_principales
+      Primos_con_digitos_primos
       Primos_consecutivos_con_media_capicua
       Primos_equidistantes
       Producto_cartesiano
@@ -156,6 +158,7 @@ test-suite Exercitium-test
       Numeracion_de_ternas_Spec
       Numero_de_inversiones_Spec
       Numeros_amigos_Spec
+      Numeros_con_digitos_primos_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
       Ordenacion_de_estructuras_Spec
       Ordenada_ciclicamente_Spec
