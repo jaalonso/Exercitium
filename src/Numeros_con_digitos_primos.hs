@@ -15,8 +15,6 @@
 --    322732232572
 -- ---------------------------------------------------------------------
 
-{-# OPTIONS_GHC -fno-warn-unused-imports #-}
-
 module Numeros_con_digitos_primos where
 
 import Test.QuickCheck (NonNegative (NonNegative), quickCheck)
