@@ -80,7 +80,7 @@ Los objetivos de esta recopilación son:
 + 220422 [[./src/Ordenada_ciclicamente.hs][Ordenada cíclicamente]] ([[https://youtu.be/CI090GISHUc][vídeo]]).
 + 220425 [[./src/Representacion_de_Zeckendorf.hs][Representación de Zeckendorf]] ([[https://youtu.be/U-nBf1WnLTw][vídeo]]).
 + 220427 [[./src/Producto_cartesiano.hs][Producto cartesiano de una familia de conjuntos]] ([[https://youtu.be/5L2fbGmoQhU][vídeo]]).
-+ 220429 [[./src/Primos_con_digitos_primos.hs][Números primos con todos sus dígitos primos]].
++ 220429 [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]].
 
 * Etiquetas
 
