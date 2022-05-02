@@ -31,7 +31,6 @@ spec = do
   describe "def. 7" $ specG producto7
   describe "def. 8" $ specG producto8
   describe "def. 9" $ specG producto9
-  describe "def. 9" $ specG producto10
-  describe "def. 9" $ specG producto11
-  describe "def. 9" $ specG producto12
+  describe "def. 10" $ specG producto10
+  describe "def. 11" $ specG producto11
   describe "equivalencia" $ modifyMaxSize (const 7) $ it "p1" $ property prop_producto

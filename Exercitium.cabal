@@ -34,6 +34,7 @@ library
       Bandera_tricolor
       Biparticiones_de_una_lista
       Caminos_en_un_triangulo
+      Clausura
       Conjunto_de_primos_relativos
       Cuadrado_mas_cercano
       Descomposiciones_triangulares
@@ -132,6 +133,7 @@ test-suite Exercitium-test
       Bandera_tricolor_Spec
       Biparticiones_de_una_lista_Spec
       Caminos_en_un_triangulo_Spec
+      Clausura_Spec
       Conjunto_de_primos_relativos_Spec
       Cuadrado_mas_cercano_Spec
       Descomposiciones_triangulares_Spec
