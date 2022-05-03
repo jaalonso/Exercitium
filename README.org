@@ -81,7 +81,6 @@ Los objetivos de esta recopilación son:
 + 25-04-22 [[./src/Representacion_de_Zeckendorf.hs][Representación de Zeckendorf]] ([[https://youtu.be/U-nBf1WnLTw][vídeo]]).
 + 27-04-22 [[./src/Producto_cartesiano.hs][Producto cartesiano de una familia de conjuntos]] ([[https://youtu.be/5L2fbGmoQhU][vídeo]]).
 + 29-04-22 [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]].
-
 + 02-05-22 [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]].
 
 * Etiquetas

@@ -9,7 +9,7 @@
 -- elemento x de A se tiene que f(x) pertenece a A. La clausura de un
 -- conjunto B respecto de una función f es el menor conjunto A que
 -- contiene a B y es cerrado respecto de f. Por ejemplo, la clausura de
--- {0,1,2] respecto del opuesto es {0,1,2,-1,-2}.
+-- {0,1,2] respecto del opuesto es {-1,-2,0,1,2}.
 --
 -- Definir la función
 --    clausura :: Ord a => (a -> a) -> [a] -> [a]
