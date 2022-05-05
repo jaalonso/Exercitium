@@ -74,6 +74,7 @@ library
       Primos_equidistantes
       Producto_cartesiano
       Producto_de_los_elementos_de_la_diagonal_principal
+      Puntos_en_regiones_rectangulares
       Ramas_de_un_arbol
       Reconocimiento_de_potencias_de_4
       Regiones
@@ -171,6 +172,7 @@ test-suite Exercitium-test
       Primos_equidistantes_Spec
       Producto_cartesiano_Spec
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
+      Puntos_en_regiones_rectangulares_Spec
       Reconocimiento_de_potencias_de_4_Spec
       Regiones_Spec
       Reiteracion_de_funciones_Spec
