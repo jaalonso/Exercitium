@@ -82,8 +82,8 @@ Los objetivos de esta recopilación son:
 + 27-04-22 [[./src/Producto_cartesiano.hs][Producto cartesiano de una familia de conjuntos]] ([[https://youtu.be/5L2fbGmoQhU][vídeo]]).
 + 29-04-22 [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]] ([[https://youtu.be/OEAD7fLZiSk][vídeo]]).
 + 02-05-22 [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]] ([[https://youtu.be/UQUzByuY_dQ][vídeo]]).
-
 + 05-05-22 [[./src/Puntos_en_regiones_rectangulares.hs][Puntos en regiones rectangulares]].
++ 09-05-22 [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
 
 * Etiquetas
 
