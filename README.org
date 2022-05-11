@@ -84,6 +84,8 @@ Los objetivos de esta recopilación son:
 + 02-05-22 [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]] ([[https://youtu.be/UQUzByuY_dQ][vídeo]]).
 + 05-05-22 [[./src/Puntos_en_regiones_rectangulares.hs][Puntos en regiones rectangulares]].
 + 09-05-22 [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
++ 10-05-22 [[./src/Particiones_de_enteros_positivos.hs][Particiones de enteros positivos]].
++ 11-05-22 [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].
 
 * Etiquetas
 

@@ -27,7 +27,7 @@
 
 module Minimo_producto_escalar where
 
-import Data.List (sort, permutations)
+import Data.List (permutations, sort, sortOn)
 import Test.QuickCheck (quickCheck)
 
 -- 1ª solución

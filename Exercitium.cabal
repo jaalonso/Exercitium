@@ -69,6 +69,7 @@ library
       Ordenada_ciclicamente
       Ordenados_por_maximo
       Pares_adyacentes_iguales
+      Particiones_de_enteros_positivos
       Posiciones_diagonales_principales
       Primos_con_digitos_primos
       Primos_consecutivos_con_media_capicua
@@ -77,6 +78,7 @@ library
       Producto_de_los_elementos_de_la_diagonal_principal
       Puntos_en_regiones_rectangulares
       Ramas_de_un_arbol
+      Reconocimiento_de_grandes_potencias_de_2
       Reconocimiento_de_potencias_de_4
       Regiones
       Reiteracion_de_funciones
@@ -169,12 +171,14 @@ test-suite Exercitium-test
       Ordenada_ciclicamente_Spec
       Ordenados_por_maximo_Spec
       Pares_adyacentes_iguales_Spec
+      Particiones_de_enteros_positivos_Spec
       Posiciones_diagonales_principales_Spec
       Primos_consecutivos_con_media_capicua_Spec
       Primos_equidistantes_Spec
       Producto_cartesiano_Spec
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
       Puntos_en_regiones_rectangulares_Spec
+      Reconocimiento_de_grandes_potencias_de_2_Spec
       Reconocimiento_de_potencias_de_4_Spec
       Regiones_Spec
       Reiteracion_de_funciones_Spec
