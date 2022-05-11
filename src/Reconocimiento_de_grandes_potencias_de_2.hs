@@ -23,7 +23,6 @@
 module Reconocimiento_de_grandes_potencias_de_2 where
 
 import Data.Bits ((.&.))
--- import Data.List (group)
 import Data.Numbers.Primes (primeFactors)
 import Test.QuickCheck (Positive (Positive), quickCheck)
 
