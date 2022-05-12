@@ -116,3 +116,10 @@ prop_divisores (Positive n) =
 --    λ> length (divisores5 (product [1..14]))
 --    2592
 --    (0.02 secs, 6,636,608 bytes)
+--
+--    λ> length (divisores4 (product [1..25]))
+--    340032
+--    (1.65 secs, 2,055,558,208 bytes)
+--    λ> length (divisores5 (product [1..25]))
+--    340032
+--    (0.88 secs, 1,532,515,304 bytes)
