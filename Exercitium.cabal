@@ -35,6 +35,7 @@ library
       Biparticiones_de_una_lista
       Caminos_en_un_triangulo
       Clausura
+      Conjunto_de_divisores
       Conjunto_de_primos_relativos
       Cuadrado_mas_cercano
       Descomposiciones_triangulares
@@ -93,6 +94,7 @@ library
       Suma_de_multiplos_de_3_o_de_5
       Suma_de_numeros_amigos_menores_que_n
       Suma_si_todos_justos
+      Sumas_de_dos_abundantes
       Ternas_pitagoricas_con_suma_dada
       Trenzado_de_listas
       Triangulares_con_cifras
@@ -138,6 +140,7 @@ test-suite Exercitium-test
       Biparticiones_de_una_lista_Spec
       Caminos_en_un_triangulo_Spec
       Clausura_Spec
+      Conjunto_de_divisores_Spec
       Conjunto_de_primos_relativos_Spec
       Cuadrado_mas_cercano_Spec
       Descomposiciones_triangulares_Spec

@@ -87,6 +87,9 @@ Los objetivos de esta recopilación son:
 + 10-05-22 [[./src/Particiones_de_enteros_positivos.hs][Particiones de enteros positivos]].
 + 11-05-22 [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].
 
++ 12-05-22 [[./src/Conjunto_de_divisores.hs][Conjunto de divisores]].
++ ??-05-22 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
+
 * Etiquetas
 
 ** Introducción a la programación funcional
