@@ -62,6 +62,7 @@ library
       Mayor_producto_de_las_ramas_de_un_arbol
       Minimo_producto_escalar
       Numeracion_de_ternas
+      Numero_de_divisores
       Numero_de_inversiones
       Numeros_amigos
       Numeros_con_digitos_primos
@@ -166,6 +167,7 @@ test-suite Exercitium-test
       Mayor_producto_de_las_ramas_de_un_arbol_Spec
       Minimo_producto_escalar_Spec
       Numeracion_de_ternas_Spec
+      Numero_de_divisores_Spec
       Numero_de_inversiones_Spec
       Numeros_amigos_Spec
       Numeros_con_digitos_primos_Spec

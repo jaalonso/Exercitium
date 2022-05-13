@@ -86,8 +86,10 @@ Los objetivos de esta recopilación son:
 + 09-05-22 [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
 + 10-05-22 [[./src/Particiones_de_enteros_positivos.hs][Particiones de enteros positivos]].
 + 11-05-22 [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].
-
 + 12-05-22 [[./src/Conjunto_de_divisores.hs][Conjunto de divisores]].
++ 13-05-22 [[./src/Numero_de_divisores.hs][Número de divisores]].
+
++ ??-05-22 [[../2019-20/Suma_de_divisores.hs][Suma de divisores]].
 + ??-05-22 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
 
 * Etiquetas
