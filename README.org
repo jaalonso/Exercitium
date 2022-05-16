@@ -89,7 +89,8 @@ Los objetivos de esta recopilación son:
 + 12-05-22 [[./src/Conjunto_de_divisores.hs][Conjunto de divisores]].
 + 13-05-22 [[./src/Numero_de_divisores.hs][Número de divisores]].
 
-+ ??-05-22 [[../2019-20/Suma_de_divisores.hs][Suma de divisores]].
++ 16-05-22 [[./src/Suma_de_divisores.hs][Suma de divisores]].
+
 + ??-05-22 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
 
 * Etiquetas
