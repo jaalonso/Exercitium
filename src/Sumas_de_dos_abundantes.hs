@@ -1,7 +1,7 @@
 -- Sumas_de_dos_abundantes.hs
 -- Sucesión de sumas de dos números abundantes.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 12-mayo-2022
+-- Sevilla, 17-mayo-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -18,7 +18,13 @@
 --    take 10 sumasDeDosAbundantes  ==  [24,30,32,36,38,40,42,44,48,50]
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+
 module Sumas_de_dos_abundantes where
+
+import Data.List (genericLength, group)
+import Data.Numbers.Primes (primeFactors)
+import Test.QuickCheck
 
 -- 1ª solución
 -- ===========
@@ -50,6 +56,50 @@ abundante n = sum (divisores n) > n
 divisores :: Integer -> [Integer]
 divisores n = [x | x <- [1..n `div` 2], n `mod` x == 0]
 
+-- 2ª solución
+-- ===========
+
+sumasDeDosAbundantes2 :: [Integer]
+sumasDeDosAbundantes2 = filter esSumaDeDosAbundantes2 [1..]
+
+esSumaDeDosAbundantes2 :: Integer -> Bool
+esSumaDeDosAbundantes2 n = (not . null) [x | x <- xs, n-x `elem` xs]
+  where xs = takeWhile (<n) abundantes2
+
+abundantes2 :: [Integer]
+abundantes2 = filter abundante2 [2..]
+
+abundante2 :: Integer -> Bool
+abundante2 n = sumaDivisores n > n
+
+sumaDivisores :: Integer -> Integer
+sumaDivisores x =
+  product [(p^(e+1)-1) `div` (p-1) | (p,e) <- factorizacion x] - x
+
+-- (factorizacion x) es la lista de las bases y exponentes de la
+-- descomposición prima de x. Por ejemplo,
+--    factorizacion 600  ==  [(2,3),(3,1),(5,2)]
+factorizacion :: Integer -> [(Integer,Integer)]
+factorizacion = map primeroYlongitud . group . primeFactors
+
+-- (primeroYlongitud xs) es el par formado por el primer elemento de xs
+-- y la longitud de xs. Por ejemplo,
+--    primeroYlongitud [3,2,5,7] == (3,4)
+primeroYlongitud :: [a] -> (a,Integer)
+primeroYlongitud (x:xs) =
+  (x, 1 + genericLength xs)
+
+-- Comprobación de equivalencia
+-- ============================
+
+-- La propiedad es
+prop_sumasDeDosAbundantes :: Positive Int -> Bool
+prop_sumasDeDosAbundantes (Positive n) =
+  sumasDeDosAbundantes1 !! n == sumasDeDosAbundantes2 !! n
+
+-- La comprobación es
+--    λ> quickCheck prop_sumasDeDosAbundantes
+--    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
 -- =========================
@@ -58,6 +108,9 @@ divisores n = [x | x <- [1..n `div` 2], n `mod` x == 0]
 --    λ> sumasDeDosAbundantes1 !! (2*10^3)
 --    2887
 --    (2.54 secs, 516,685,168 bytes)
+--    λ> sumasDeDosAbundantes2 !! (2*10^3)
+--    2887
+--    (1.43 secs, 141,606,136 bytes)
 
 
 

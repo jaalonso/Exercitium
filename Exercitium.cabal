@@ -200,6 +200,7 @@ test-suite Exercitium-test
       Suma_de_multiplos_de_3_o_de_5_Spec
       Suma_de_numeros_amigos_menores_que_n_Spec
       Suma_si_todos_justos_Spec
+      Sumas_de_dos_abundantes_Spec
       Ternas_pitagoricas_con_suma_dada_Spec
       Trenzado_de_listas_Spec
       Triangulares_con_cifras_Spec
