@@ -91,6 +91,8 @@ Los objetivos de esta recopilación son:
 + 16-05-22 [[./src/Suma_de_divisores.hs][Suma de divisores]].
 + 17-05-22 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
 + 18-05-22 [[./src/Sumas_de_4_primos.hs][Sumas de 4 primos]].
++ 19-05-22 [[./src/Parejas_de_numeros_y_divisores.hs][Parejas de números y divisores]].
++ 20-05-22 [[./src/Sumas_de_divisores_propios.hs][Sumas de divisores propios]].
 
 * Etiquetas
 

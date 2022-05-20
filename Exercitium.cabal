@@ -70,6 +70,7 @@ library
       Ordenacion_de_estructuras
       Ordenada_ciclicamente
       Ordenados_por_maximo
+      Parejas_de_numeros_y_divisores
       Pares_adyacentes_iguales
       Particiones_de_enteros_positivos
       Posiciones_diagonales_principales
@@ -97,6 +98,7 @@ library
       Suma_de_numeros_amigos_menores_que_n
       Suma_si_todos_justos
       Sumas_de_4_primos
+      Sumas_de_divisores_propios
       Sumas_de_dos_abundantes
       Ternas_pitagoricas_con_suma_dada
       Trenzado_de_listas
@@ -177,6 +179,7 @@ test-suite Exercitium-test
       Ordenacion_de_estructuras_Spec
       Ordenada_ciclicamente_Spec
       Ordenados_por_maximo_Spec
+      Parejas_de_numeros_y_divisores_Spec
       Pares_adyacentes_iguales_Spec
       Particiones_de_enteros_positivos_Spec
       Posiciones_diagonales_principales_Spec
@@ -202,6 +205,7 @@ test-suite Exercitium-test
       Suma_de_numeros_amigos_menores_que_n_Spec
       Suma_si_todos_justos_Spec
       Sumas_de_4_primos_Spec
+      Sumas_de_divisores_propios_Spec
       Sumas_de_dos_abundantes_Spec
       Ternas_pitagoricas_con_suma_dada_Spec
       Trenzado_de_listas_Spec
