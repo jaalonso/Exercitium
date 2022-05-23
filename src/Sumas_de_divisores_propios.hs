@@ -12,8 +12,8 @@
 -- propios de a. Por ejemplo,
 --    λ> sumaDivisoresHasta 12
 --    [(1,0),(2,1),(3,1),(4,3),(5,1),(6,6),(7,1),(8,7),(9,4),(10,8),(11,1),(12,16)]
---    λ> maximum (map snd (sumaDivisoresHasta 123456))
---    368640
+--    λ> last (sumaDivisoresHasta2 (10^7))
+--    (10000000,14902280)
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
