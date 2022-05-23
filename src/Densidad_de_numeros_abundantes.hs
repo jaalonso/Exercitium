@@ -256,18 +256,3 @@ graficas n =
             , [y | (_,y,_) <- ts]
             , [z | (_,_,z) <- ts]]
   where ts = [densidades5 k | k <- [1..n]]
-
-
-
--- ---------------------------------------------------------------------
--- § Verificación                                                     --
--- ---------------------------------------------------------------------
-
--- verifica :: (Int -> (Double,Double,Double)) -> IO ()
--- verifica densidades' = hspec $ do
---   it "e1" $
---    densidades' 100     `shouldBe`  (0.22, 2.0e-2, 0.76)
---   it "e2" $
---    densidades' 200     `shouldBe`  (0.23, 1.0e-2, 0.76)
---   it "e3" $
---    densidades' 1000    `shouldBe`  (0.246,3.0e-3, 0.751)
