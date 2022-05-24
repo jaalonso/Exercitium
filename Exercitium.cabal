@@ -57,6 +57,7 @@ library
       Mas_repetido
       Mastermind
       Matriz_Toeplitz
+      Matriz_zigzagueante
       Maxima_suma_de_caminos_en_un_triangulo
       Maximos_locales
       Mayor_orbita_de_la_sucesion_de_Collatz
@@ -167,6 +168,7 @@ test-suite Exercitium-test
       Mas_repetido_Spec
       Mastermind_Spec
       Matriz_Toeplitz_Spec
+      Matriz_zigzagueante_Spec
       Maxima_suma_de_caminos_en_un_triangulo_Spec
       Maximos_locales_Spec
       Mayor_orbita_de_la_sucesion_de_Collatz_Spec
