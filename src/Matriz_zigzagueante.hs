@@ -18,7 +18,7 @@
 -- http://bit.ly/1DeO2FI
 --
 -- Definir la función
---    zigZag :: Int -> Matrix Int
+--    zigZag :: oInt -> Matrix Int
 -- tal que (zigZag n) es la matriz zigzagueante de orden n. Por ejemplo,
 --    λ> zigZag1 5
 --    ┌                ┐
@@ -39,11 +39,13 @@
 --    2249999
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Matriz_zigzagueante where
 
 import Data.List (sort, sortBy)
-import Data.Matrix
-import Test.QuickCheck
+import Data.Matrix (Matrix, fromList)
+import Test.QuickCheck (Positive (Positive), quickCheck)
 
 -- 1ª solución
 -- ===========
