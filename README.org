@@ -95,6 +95,7 @@ Los objetivos de esta recopilación son:
 + 20-05-22 [[./src/Sumas_de_divisores_propios.hs][Sumas de divisores propios]].
 + 23-05-22 [[./src/Densidad_de_numeros_abundantes.hs][Densidades de números abundantes, perfectos y deficientes]].
 + 24-05-22 [[./src/Matriz_zigzagueante.hs][Matriz zigzagueante]].
++ 25-05-22 [[./src/Numeracion_con_multiples_base.hs][Numeración con múltiples bases]].
 
 * Etiquetas
 
