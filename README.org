@@ -96,6 +96,7 @@ Los objetivos de esta recopilación son:
 + 23-05-22 [[./src/Densidad_de_numeros_abundantes.hs][Densidades de números abundantes, perfectos y deficientes]].
 + 24-05-22 [[./src/Matriz_zigzagueante.hs][Matriz zigzagueante]].
 + 25-05-22 [[./src/Numeracion_con_multiples_base.hs][Numeración con múltiples bases]].
++ 26-05-22 [[./src/El_triangulo_de_Lloyd.hs][El triángulo de Lloyd]].
 
 * Etiquetas
 
