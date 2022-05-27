@@ -77,6 +77,7 @@ library
       Parejas_de_numeros_y_divisores
       Pares_adyacentes_iguales
       Particiones_de_enteros_positivos
+      Polinomios_cuadraticos_generadores_de_primos
       Posiciones_diagonales_principales
       Primos_con_digitos_primos
       Primos_consecutivos_con_media_capicua
@@ -190,6 +191,7 @@ test-suite Exercitium-test
       Parejas_de_numeros_y_divisores_Spec
       Pares_adyacentes_iguales_Spec
       Particiones_de_enteros_positivos_Spec
+      Polinomios_cuadraticos_generadores_de_primos_Spec
       Posiciones_diagonales_principales_Spec
       Primos_consecutivos_con_media_capicua_Spec
       Primos_equidistantes_Spec
