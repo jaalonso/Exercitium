@@ -72,6 +72,7 @@ library
       Numeros_con_digitos_primos
       Numeros_de_ocurrencias_de_elementos
       Ordenacion_de_estructuras
+      Ordenacion_de_los_racionales
       Ordenada_ciclicamente
       Ordenados_por_maximo
       Parejas_de_numeros_y_divisores
@@ -186,6 +187,7 @@ test-suite Exercitium-test
       Numeros_con_digitos_primos_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
       Ordenacion_de_estructuras_Spec
+      Ordenacion_de_los_racionales_Spec
       Ordenada_ciclicamente_Spec
       Ordenados_por_maximo_Spec
       Parejas_de_numeros_y_divisores_Spec
