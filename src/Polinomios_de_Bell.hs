@@ -37,13 +37,15 @@
 --                    where n = grado p
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Polinomios_de_Bell where
 
-import Test.Hspec -- Para verificación
-
-import Data.List (genericIndex)
-import I1M.PolOperaciones
-import Test.QuickCheck
+import Data.List          (genericIndex)
+import I1M.PolOperaciones (Polinomio, coefLider, consPol, derivada,
+                           grado, multPol, polCero, polUnidad, restoPol,
+                           sumaPol) 
+import Test.QuickCheck    (Positive (Positive), quickCheck)
 
 -- Función auxiliar
 -- ================
@@ -96,14 +98,3 @@ prop_polBell (Positive n) =
 --    λ> length (show (coeficiente 9 (polBell2 2000)))
 --    1903
 --    (4.03 secs, 4,825,094,064 bytes)
-
--- ---------------------------------------------------------------------
--- § Verificación                                                     --
--- ---------------------------------------------------------------------
-
-verifica :: (Integer -> Polinomio Integer) -> IO ()
-verifica polBell' = hspec $ do
-  it "e1" $
-    polBell' 4                    `shouldBe`  polBell2 4 
-  it "e2" $
-    coeficiente 2 (polBell' 12)   `shouldBe`  2047
