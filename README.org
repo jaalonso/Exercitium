@@ -99,6 +99,7 @@ Los objetivos de esta recopilación son:
 + 26-05-22 [[./src/El_triangulo_de_Lloyd.hs][El triángulo de Lloyd]].
 + 27-05-22 [[./src/Polinomios_cuadraticos_generadores_de_primos.hs][Polinomios cuadráticos generadores de primos]].
 + 30-05-22 [[./src/Ordenacion_de_los_racionales.hs][Ordenación de los racionales]].
++ 31-05-22 [[./src/Polinomios_de_Bell.hs][Polinomios de Bell]].
   
 * Etiquetas
 
