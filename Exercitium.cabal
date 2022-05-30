@@ -107,6 +107,7 @@ library
       Sumas_de_4_primos
       Sumas_de_divisores_propios
       Sumas_de_dos_abundantes
+      Termino_ausente_en_una_progresion_aritmetica
       Ternas_pitagoricas_con_suma_dada
       Trenzado_de_listas
       Triangulares_con_cifras
@@ -221,6 +222,7 @@ test-suite Exercitium-test
       Sumas_de_4_primos_Spec
       Sumas_de_divisores_propios_Spec
       Sumas_de_dos_abundantes_Spec
+      Termino_ausente_en_una_progresion_aritmetica_Spec
       Ternas_pitagoricas_con_suma_dada_Spec
       Trenzado_de_listas_Spec
       Triangulares_con_cifras_Spec
