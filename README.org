@@ -98,10 +98,11 @@ Los objetivos de esta recopilación son:
 + 25-05-22 [[./src/Numeracion_con_multiples_base.hs][Numeración con múltiples bases]].
 + 26-05-22 [[./src/El_triangulo_de_Lloyd.hs][El triángulo de Lloyd]].
 + 27-05-22 [[./src/Polinomios_cuadraticos_generadores_de_primos.hs][Polinomios cuadráticos generadores de primos]].
-+ 30-05-22 [[./src/Ordenacion_de_los_racionales.hs][Ordenación de los racionales]].
-+ 31-05-22 [[./src/Polinomios_de_Bell.hs][Polinomios de Bell]].
-+ 01-06-22 [[./src/Termino_ausente_en_una_progresion_aritmetica.hs][Término ausente en una progresión aritmética]].
-+ 02-06-22 [[./src/Suma_de_los_elementos_de_las_diagonales_matrices_espirales.hs][Suma de los elementos de las diagonales de las matrices espirales]].
++ L30-05-22 [[./src/Ordenacion_de_los_racionales.hs][Ordenación de los racionales]].
++ M31-05-22 [[./src/Polinomios_de_Bell.hs][Polinomios de Bell]].
++ X01-06-22 [[./src/Termino_ausente_en_una_progresion_aritmetica.hs][Término ausente en una progresión aritmética]].
++ J02-06-22 [[./src/Suma_de_los_elementos_de_las_diagonales_matrices_espirales.hs][Suma de los elementos de las diagonales de las matrices espirales]].
++ V03-06-22 [[./src/Descomposiciones_con_sumandos_1_o_2.hs][Descomposiciones con sumandos 1 o 2]].
   
 * Etiquetas
 

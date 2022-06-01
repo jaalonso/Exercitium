@@ -39,6 +39,7 @@ library
       Conjunto_de_primos_relativos
       Cuadrado_mas_cercano
       Densidad_de_numeros_abundantes
+      Descomposiciones_con_sumandos_1_o_2
       Descomposiciones_triangulares
       Diagonales_principales
       Diferencia_simetrica
@@ -158,6 +159,7 @@ test-suite Exercitium-test
       Conjunto_de_primos_relativos_Spec
       Cuadrado_mas_cercano_Spec
       Densidad_de_numeros_abundantes_Spec
+      Descomposiciones_con_sumandos_1_o_2_Spec
       Descomposiciones_triangulares_Spec
       Diagonales_principales_Spec
       Diferencia_simetrica_Spec
