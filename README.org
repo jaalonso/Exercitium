@@ -104,6 +104,7 @@ Los objetivos de esta recopilación son:
 + 02-06-22 [[./src/Suma_de_los_elementos_de_las_diagonales_matrices_espirales.hs][Suma de los elementos de las diagonales de las matrices espirales]].
 + V03-06-22 [[./src/Descomposiciones_con_sumandos_1_o_2.hs][Descomposiciones con sumandos 1 o 2]].
 + L06-06-22 [[./src/Diccionario_de_frecuencias.hs][Diccionario de frecuencias]].
++ M07-06-22 [[./src/Primos_circulares.hs][Primos circulares]].
   
 * Etiquetas
 
