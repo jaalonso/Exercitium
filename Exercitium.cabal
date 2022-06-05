@@ -35,6 +35,7 @@ library
       Biparticiones_de_una_lista
       Caminos_en_un_triangulo
       Clausura
+      Codificacion_de_Godel
       Conjunto_de_divisores
       Conjunto_de_primos_relativos
       Cuadrado_mas_cercano
@@ -157,6 +158,7 @@ test-suite Exercitium-test
       Biparticiones_de_una_lista_Spec
       Caminos_en_un_triangulo_Spec
       Clausura_Spec
+      Codificacion_de_Godel_Spec
       Conjunto_de_divisores_Spec
       Conjunto_de_primos_relativos_Spec
       Cuadrado_mas_cercano_Spec

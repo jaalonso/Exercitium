@@ -19,11 +19,12 @@
 
 {-# OPTIONS_GHC -fno-warn-type-defaults #-}
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
 module Primos_circulares where
 
-import Data.Numbers.Primes
-import Test.QuickCheck
+import Data.Numbers.Primes (isPrime, primes)
+import Test.QuickCheck (Positive (Positive), quickCheck)
 
 -- 1ª solución
 -- ===========
