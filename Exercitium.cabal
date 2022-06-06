@@ -98,6 +98,7 @@ library
       Reiteracion_de_funciones
       Reiteracion_de_suma_de_consecutivos
       Representacion_de_Zeckendorf
+      Representacion_matricial_de_relaciones_binarias
       Segmentos_consecutivos
       Separacion_por_posicion
       Sistema_factoradico_de_numeracion
@@ -218,6 +219,7 @@ test-suite Exercitium-test
       Reiteracion_de_funciones_Spec
       Reiteracion_de_suma_de_consecutivos_Spec
       Representacion_de_Zeckendorf_Spec
+      Representacion_matricial_de_relaciones_binarias_Spec
       Segmentos_consecutivos_Spec
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec

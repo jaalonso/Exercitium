@@ -106,6 +106,7 @@ Los objetivos de esta recopilación son:
 + L06-06-22 [[./src/Diccionario_de_frecuencias.hs][Diccionario de frecuencias]].
 + M07-06-22 [[./src/Primos_circulares.hs][Primos circulares]].
 + X08-06-22 [[./src/Codificacion_de_Godel.hs][Codificación de Gödel]].
++ J09-06-22 [[./src/Representacion_matricial_de_relaciones_binarias.hs][Representación matricial de relaciones binarias]].
   
 * Etiquetas
 
