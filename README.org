@@ -107,6 +107,7 @@ Los objetivos de esta recopilación son:
 + M07-06-22 [[./src/Primos_circulares.hs][Primos circulares]].
 + X08-06-22 [[./src/Codificacion_de_Godel.hs][Codificación de Gödel]].
 + J09-06-22 [[./src/Representacion_matricial_de_relaciones_binarias.hs][Representación matricial de relaciones binarias]].
++ V10-06-22 [[./src/Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario.hs][Distancia esperada entre dos puntos de un cuadrado unitario]].
   
 * Etiquetas
 

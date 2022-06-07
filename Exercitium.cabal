@@ -45,6 +45,7 @@ library
       Diagonales_principales
       Diccionario_de_frecuencias
       Diferencia_simetrica
+      Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario
       Duplicacion_de_cada_elemento
       El_triangulo_de_Floyd
       Elementos_minimales
