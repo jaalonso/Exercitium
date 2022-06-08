@@ -102,12 +102,13 @@ Los objetivos de esta recopilación son:
 + 31-05-22 [[./src/Polinomios_de_Bell.hs][Polinomios de Bell]].
 + 01-06-22 [[./src/Termino_ausente_en_una_progresion_aritmetica.hs][Término ausente en una progresión aritmética]].
 + 02-06-22 [[./src/Suma_de_los_elementos_de_las_diagonales_matrices_espirales.hs][Suma de los elementos de las diagonales de las matrices espirales]].
-+ V03-06-22 [[./src/Descomposiciones_con_sumandos_1_o_2.hs][Descomposiciones con sumandos 1 o 2]].
-+ L06-06-22 [[./src/Diccionario_de_frecuencias.hs][Diccionario de frecuencias]].
++ 03-06-22 [[./src/Descomposiciones_con_sumandos_1_o_2.hs][Descomposiciones con sumandos 1 o 2]].
++ 06-06-22 [[./src/Diccionario_de_frecuencias.hs][Diccionario de frecuencias]].
 + M07-06-22 [[./src/Primos_circulares.hs][Primos circulares]].
 + X08-06-22 [[./src/Codificacion_de_Godel.hs][Codificación de Gödel]].
 + J09-06-22 [[./src/Representacion_matricial_de_relaciones_binarias.hs][Representación matricial de relaciones binarias]].
 + V10-06-22 [[./src/Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario.hs][Distancia esperada entre dos puntos de un cuadrado unitario]].
++ L13-06-22 [[./src/Menor_numero_con_una_cantidad_dada_de_divisores.hs][Menor número con una cantidad dada de divisores]].
   
 * Etiquetas
 
