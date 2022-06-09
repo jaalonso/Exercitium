@@ -33,6 +33,7 @@ library
       Anagramas
       Bandera_tricolor
       Biparticiones_de_una_lista
+      Calculo_aproximado_de_integrales_definidas
       Caminos_en_un_triangulo
       Clausura
       Codificacion_de_Godel
@@ -159,6 +160,7 @@ test-suite Exercitium-test
       Anagramas_Spec
       Bandera_tricolor_Spec
       Biparticiones_de_una_lista_Spec
+      Calculo_aproximado_de_integrales_definidas_Spec
       Caminos_en_un_triangulo_Spec
       Clausura_Spec
       Codificacion_de_Godel_Spec
