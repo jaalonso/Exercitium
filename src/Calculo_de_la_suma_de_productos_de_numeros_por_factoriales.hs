@@ -17,9 +17,11 @@
 --    take 9 (show (suma 70000))  ==  "823780458"
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Calculo_de_la_suma_de_productos_de_numeros_por_factoriales where
 
-import Test.QuickCheck
+import Test.QuickCheck (Positive (Positive), quickCheck)
 
 -- 1ª solución
 -- ===========
