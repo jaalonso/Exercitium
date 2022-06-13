@@ -70,6 +70,7 @@ library
       Mayor_orbita_de_la_sucesion_de_Collatz
       Mayor_producto_de_las_ramas_de_un_arbol
       Menor_numero_con_una_cantidad_dada_de_divisores
+      Metodo_de_biseccion_para_aproximar_raices_de_funciones
       Minimo_producto_escalar
       Numeracion_con_multiples_base
       Numeracion_de_ternas
@@ -197,6 +198,7 @@ test-suite Exercitium-test
       Mayor_orbita_de_la_sucesion_de_Collatz_Spec
       Mayor_producto_de_las_ramas_de_un_arbol_Spec
       Menor_numero_con_una_cantidad_dada_de_divisores_Spec
+      Metodo_de_biseccion_para_aproximar_raices_de_funciones_Spec
       Minimo_producto_escalar_Spec
       Numeracion_con_multiples_base_Spec
       Numeracion_de_ternas_Spec
