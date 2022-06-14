@@ -60,6 +60,7 @@ library
       Familias_de_numeros_con_algun_digito_en_comun
       Iguales_al_siguiente
       Indices_verdaderos
+      La_sucesion_del_reloj_astronomico_de_Praga
       Lista_cuadrada
       Mas_repetido
       Mastermind
@@ -188,6 +189,7 @@ test-suite Exercitium-test
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       Iguales_al_siguiente_Spec
       Indices_verdaderos_Spec
+      La_sucesion_del_reloj_astronomico_de_Praga_Spec
       Lista_cuadrada_Spec
       Mas_repetido_Spec
       Mastermind_Spec
