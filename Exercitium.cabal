@@ -37,6 +37,7 @@ library
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales
       Caminos_en_un_triangulo
       Clausura
+      Codificacion_de_Fibonacci
       Codificacion_de_Godel
       Conjunto_de_divisores
       Conjunto_de_primos_relativos
@@ -168,6 +169,7 @@ test-suite Exercitium-test
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales_Spec
       Caminos_en_un_triangulo_Spec
       Clausura_Spec
+      Codificacion_de_Fibonacci_Spec
       Codificacion_de_Godel_Spec
       Conjunto_de_divisores_Spec
       Conjunto_de_primos_relativos_Spec
