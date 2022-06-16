@@ -86,6 +86,7 @@ library
       Ordenacion_de_los_racionales
       Ordenada_ciclicamente
       Ordenados_por_maximo
+      Pandigitales_primos
       Parejas_de_numeros_y_divisores
       Pares_adyacentes_iguales
       Particiones_de_enteros_positivos
@@ -216,6 +217,7 @@ test-suite Exercitium-test
       Ordenacion_de_los_racionales_Spec
       Ordenada_ciclicamente_Spec
       Ordenados_por_maximo_Spec
+      Pandigitales_primos_Spec
       Parejas_de_numeros_y_divisores_Spec
       Pares_adyacentes_iguales_Spec
       Particiones_de_enteros_positivos_Spec
