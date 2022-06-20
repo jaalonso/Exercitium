@@ -31,11 +31,13 @@ library
       Algun_vecino_menor
       Amplia_columnas
       Anagramas
+      Aproximacion_de_numero_pi
       Bandera_tricolor
       Biparticiones_de_una_lista
       Calculo_aproximado_de_integrales_definidas
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales
       Caminos_en_un_triangulo
+      Ceros_finales_del_factorial
       Clausura
       Codificacion_de_Fibonacci
       Codificacion_de_Godel
@@ -79,6 +81,7 @@ library
       Numero_de_divisores
       Numero_de_inversiones
       Numeros_amigos
+      Numeros_autodescriptivos
       Numeros_con_digitos_primos
       Numeros_de_ocurrencias_de_elementos
       Numeros_para_los_que_mcm
@@ -164,11 +167,13 @@ test-suite Exercitium-test
       Alfabeto_desde_Spec
       Algun_vecino_menor_Spec
       Anagramas_Spec
+      Aproximacion_de_numero_pi_Spec
       Bandera_tricolor_Spec
       Biparticiones_de_una_lista_Spec
       Calculo_aproximado_de_integrales_definidas_Spec
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales_Spec
       Caminos_en_un_triangulo_Spec
+      Ceros_finales_del_factorial_Spec
       Clausura_Spec
       Codificacion_de_Fibonacci_Spec
       Codificacion_de_Godel_Spec
@@ -210,6 +215,7 @@ test-suite Exercitium-test
       Numero_de_divisores_Spec
       Numero_de_inversiones_Spec
       Numeros_amigos_Spec
+      Numeros_autodescriptivos_Spec
       Numeros_con_digitos_primos_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
       Numeros_para_los_que_mcm_Spec

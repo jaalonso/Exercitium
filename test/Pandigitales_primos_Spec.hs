@@ -6,7 +6,7 @@ import Test.Hspec
 main :: IO ()
 main = hspec spec
 
-specG :: ([Int]) -> Spec
+specG :: [Int] -> Spec
 specG pandigitalesPrimos = do
   it "e1" $
     take 3 pandigitalesPrimos       `shouldBe`  [7652413,7642513,7641253]
