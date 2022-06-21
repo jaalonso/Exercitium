@@ -1,7 +1,7 @@
 -- La_sucesion_del_reloj_astronomico_de_Praga.hs
 -- La sucesión del reloj astronómico de Praga.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 20-junio-2022
+-- Sevilla, 27-junio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

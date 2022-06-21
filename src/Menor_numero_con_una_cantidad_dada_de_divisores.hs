@@ -1,7 +1,7 @@
 -- Menor_numero_con_una_cantidad_dada_de_divisores.hs
 -- Menor número con una cantidad dada de divisores.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 13-junio-2022
+-- Sevilla, 20-junio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

@@ -1,7 +1,7 @@
 -- Metodo_de_biseccion_para_aproximar_raices_de_funciones.hs
 -- Método de bisección para aproximar raíces de funciones.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 17-junio-2022
+-- Sevilla, 24-junio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

@@ -1,7 +1,7 @@
 -- Numeros_autodescriptivos.hs
 -- Números autodescriptivos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 19-junio-2022
+-- Sevilla, 1-julio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

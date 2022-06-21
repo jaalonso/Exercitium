@@ -1,7 +1,7 @@
 -- Calculo_de_la_suma_de_productos_de_numeros_por_factoriales.hs
 -- Cálculo de la suma 1*1! + 2*2! + 3*3! + ... + n*n!
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 15-junio-2022
+-- Sevilla, 22-junio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

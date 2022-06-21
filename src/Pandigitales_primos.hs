@@ -1,7 +1,7 @@
 -- Pandigitales_primos.hs
 -- Pandigitales primos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 22-junio-2022
+-- Sevilla, 29-junio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

@@ -1,7 +1,7 @@
 -- Ceros_finales_del_factorial.hs
 -- Ceros finales del factorial.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 20-junio-2022
+-- Sevilla, 03-julio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -75,9 +75,6 @@ prop_cerosDelFactorial (Positive n) =
 -- =========================
 
 -- La comparación es
-
-
--- Comparación de la eficiencia
 --    λ> cerosDelFactorial1 (4*10^4)
 --    9998
 --    (1.93 secs, 2,296,317,904 bytes)
@@ -87,17 +84,3 @@ prop_cerosDelFactorial (Positive n) =
 --    λ> cerosDelFactorial3 (4*10^4)
 --    9998
 --    (0.02 secs, 527,584 bytes)
-
--- ---------------------------------------------------------------------
--- § Verificación                                                     --
--- ---------------------------------------------------------------------
-
-verifica :: (Integer -> Integer) -> IO ()
-verifica f = hspec $ do
-  it "e1" $
-    cerosDelFactorial 24 `shouldBe`  4 
-  it "e2" $
-    cerosDelFactorial 25 `shouldBe`  6
-  it "p1" $ property $
-    \x -> x >= 0 ==> cerosDelFactorial x == cerosDelFactorial3 x
-  where cerosDelFactorial = f

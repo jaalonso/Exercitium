@@ -1,7 +1,7 @@
 -- Aproximacion_de_numero_pi.hs
 -- Aproximación del número pi.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 18-junio-2022
+-- Sevilla, 30-junio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

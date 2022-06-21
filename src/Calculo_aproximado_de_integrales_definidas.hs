@@ -1,7 +1,7 @@
 -- Calculo_aproximado_de_integrales_definidas.hs
 -- Cálculo aproximado de integrales definidas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 14-junio-2022
+-- Sevilla, 21-junio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

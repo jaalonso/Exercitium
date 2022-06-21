@@ -1,7 +1,7 @@
 -- Numeros_para_los_que_mcm.hs
 -- Números para los que mcm(1,2,...n-1) = mcm(1,2,...,n).
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 16-junio-2022
+-- Sevilla, 23-junio-2022
 -- ---------------------------------------------------------------------
 
 -- --------------------------------------------------------------------- 

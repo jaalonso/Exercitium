@@ -1,7 +1,7 @@
 -- Codificacion_de_Fibonacci.hs
 -- Codificación de Fibonacci.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 21-junio-2022
+-- Sevilla, 28-junio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
