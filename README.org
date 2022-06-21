@@ -118,9 +118,7 @@ Los objetivos de esta recopilación son:
 + X29-06-22 [[./src/Pandigitales_primos.hs][Pandigitales primos]].
 + J30-06-22 [[./src/Aproximacion_de_numero_pi.hs][Aproximación del número pi]].
 + V01-07-22 [[./src/Numeros_autodescriptivos.hs][Números autodescriptivos]].
-
 + L03-07-22 [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
-+ Pendiente de publicar desde el 15-06-22 (cambiar fechas según giralda).
   
 * Etiquetas
 
