@@ -108,9 +108,9 @@ Los objetivos de esta recopilación son:
 + 08-06-22 [[./src/Codificacion_de_Godel.hs][Codificación de Gödel]].
 + 09-06-22 [[./src/Representacion_matricial_de_relaciones_binarias.hs][Representación matricial de relaciones binarias]].
 + 10-06-22 [[./src/Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario.hs][Distancia esperada entre dos puntos de un cuadrado unitario]].
-+ L20-06-22 [[./src/Menor_numero_con_una_cantidad_dada_de_divisores.hs][Menor número con una cantidad dada de divisores]].
-+ M21-06-22 [[./src/Calculo_aproximado_de_integrales_definidas.hs][Cálculo aproximado de integrales definidas]].
-+ X22-06-22 [[./src/Calculo_de_la_suma_de_productos_de_numeros_por_factoriales.hs][Cálculo de la suma 1*1! + 2*2! + 3*3! + ... + n*n!]].
++ 20-06-22 [[./src/Menor_numero_con_una_cantidad_dada_de_divisores.hs][Menor número con una cantidad dada de divisores]].
++ 21-06-22 [[./src/Calculo_aproximado_de_integrales_definidas.hs][Cálculo aproximado de integrales definidas]].
++ 22-06-22 [[./src/Calculo_de_la_suma_de_productos_de_numeros_por_factoriales.hs][Cálculo de la suma 1*1! + 2*2! + 3*3! + ... + n*n!]].
 + J23-06-22 [[./src/Numeros_para_los_que_mcm.hs][Números para los que mcm(1,2,...n-1) = mcm(1,2,...,n)]].
 + V24-06-22 [[./src/Metodo_de_biseccion_para_aproximar_raices_de_funciones.hs][Método de bisección para aproximar raíces de funciones]].
 + L27-06-22 [[./src/La_sucesion_del_reloj_astronomico_de_Praga.hs][La sucesión del reloj astronómico de Praga]].
@@ -119,6 +119,7 @@ Los objetivos de esta recopilación son:
 + J30-06-22 [[./src/Aproximacion_de_numero_pi.hs][Aproximación del número pi]].
 + V01-07-22 [[./src/Numeros_autodescriptivos.hs][Números autodescriptivos]].
 + L03-07-22 [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
++ M04-07-22 [[./src/Union_e_interseccion_general.hs][Unión e intersección general de conjuntos]].
   
 * Etiquetas
 

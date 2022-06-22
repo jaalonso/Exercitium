@@ -129,6 +129,7 @@ library
       Ternas_pitagoricas_con_suma_dada
       Trenzado_de_listas
       Triangulares_con_cifras
+      Union_e_interseccion_general
       Valor_de_un_polinomio
   other-modules:
       Paths_Exercitium
@@ -261,6 +262,7 @@ test-suite Exercitium-test
       Ternas_pitagoricas_con_suma_dada_Spec
       Trenzado_de_listas_Spec
       Triangulares_con_cifras_Spec
+      Union_e_interseccion_general_Spec
       Valor_de_un_polinomio_Spec
       Paths_Exercitium
   hs-source-dirs:
