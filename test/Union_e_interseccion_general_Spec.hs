@@ -15,8 +15,6 @@ specG1 unionGeneral = do
     unionGeneral [[1]]                 `shouldBe`  [1]
   it "e3" $
     unionGeneral [[1],[1,2],[2,3]]     `shouldBe`  [1,2,3]
-  it "e4" $
-    unionGeneral ([[x] | x <- [1..9]]) `shouldBe`  [1,2,3,4,5,6,7,8,9]
 
 specG2 :: ([[Int]] -> [Int]) -> Spec
 specG2 interseccionGeneral = do
@@ -26,10 +24,6 @@ specG2 interseccionGeneral = do
     interseccionGeneral [[2],[1,2],[2,3]]          `shouldBe`  [2]
   it "e7" $
     interseccionGeneral [[2,7,5],[1,5,2],[5,2,3]]  `shouldBe`  [2,5]
-  it "e8" $
-    interseccionGeneral ([[x] | x <- [1..9]])      `shouldBe`  []
-  it "e9" $
-    interseccionGeneral (replicate (10^6) [1..5])  `shouldBe`  [1,2,3,4,5]
 
 spec :: Spec
 spec = do
