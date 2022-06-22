@@ -14,12 +14,12 @@
 --    length (show (cerosDelFactorial (10^70000))) == 70000
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Ceros_finales_del_factorial where
 
-import Test.Hspec                -- Para verificación
-import Test.QuickCheck           -- Para verificación
-
 import Data.List (genericLength)
+import Test.QuickCheck (Positive (Positive), quickCheck)
 
 -- 1ª solución
 -- ===========
