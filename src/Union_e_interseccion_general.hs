@@ -1,7 +1,7 @@
 -- Union_e_interseccion_general.hs
 -- Unión e intersección general de conjuntos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 7-julio-2022
+-- Sevilla, 4-julio-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
