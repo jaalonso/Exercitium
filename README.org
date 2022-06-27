@@ -112,8 +112,8 @@ Los objetivos de esta recopilación son:
 + 21-06-22 [[./src/Calculo_aproximado_de_integrales_definidas.hs][Cálculo aproximado de integrales definidas]].
 + 22-06-22 [[./src/Calculo_de_la_suma_de_productos_de_numeros_por_factoriales.hs][Cálculo de la suma 1*1! + 2*2! + 3*3! + ... + n*n!]].
 + 23-06-22 [[./src/Numeros_para_los_que_mcm.hs][Números para los que mcm(1,2,...n-1) = mcm(1,2,...,n)]].
-+ V24-06-22 [[./src/Metodo_de_biseccion_para_aproximar_raices_de_funciones.hs][Método de bisección para aproximar raíces de funciones]].
-+ L27-06-22 [[./src/La_sucesion_del_reloj_astronomico_de_Praga.hs][La sucesión del reloj astronómico de Praga]].
++ 24-06-22 [[./src/Metodo_de_biseccion_para_aproximar_raices_de_funciones.hs][Método de bisección para aproximar raíces de funciones]].
++ 27-06-22 [[./src/La_sucesion_del_reloj_astronomico_de_Praga.hs][La sucesión del reloj astronómico de Praga]].
 + M28-06-22 [[./src/Codificacion_de_Fibonacci.hs][Codificación de Fibonacci]].
 + X29-06-22 [[./src/Pandigitales_primos.hs][Pandigitales primos]].
 + J30-06-22 [[./src/Aproximacion_de_numero_pi.hs][Aproximación del número pi]].
