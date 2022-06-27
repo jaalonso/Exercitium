@@ -121,6 +121,7 @@ Los objetivos de esta recopilación son:
 + L03-07-22 [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
 + M04-07-22 [[./src/Union_e_interseccion_general.hs][Unión e intersección general de conjuntos]].
 + X05-07-22 [[./src/Intersecciones_parciales.hs][Intersecciones parciales]].
++ J06-07-22 [[./src/Mayor_semiprimo_menor_que_n.hs][Mayor semiprimo menor que n]].
   
 * Etiquetas
 

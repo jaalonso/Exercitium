@@ -18,7 +18,6 @@
 module Intersecciones_parciales where
 
 import Data.List (foldl', nub, union, sort)
-import qualified Data.Set as S
 import Test.QuickCheck
 
 -- 1ª solución
@@ -60,21 +59,6 @@ interseccionParcial3 n xss =
   [x | x <- sort (nub (concat xss))
      , length [xs | xs <- xss, x `elem` xs] >= n]
 
--- 4ª solución
--- ===========
-
--- interseccionParcial4 :: Ord a => Int -> [[a]] -> [a]
--- interseccionParcial4 n xss = 
---   toList (interseccionParcial4Aux n (fromList (map fromList xss)))
--- 
--- interseccionParcial4 :: Ord a => Int -> S.Set (S.Set a) -> S.Set a
--- interseccionParcial4 n xss = 
---   S.filter  elementos4 xss
---      , length [xs | xs <- xss, x `elem` xs] >= n]
--- 
--- elementos4 :: Ord a => [S.Set a] -> S.Set a
--- elementos4 = S.foldl' S.union S.empty
-  
 -- Comprobación de equivalencia
 -- ============================
 
