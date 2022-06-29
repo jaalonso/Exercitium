@@ -4,14 +4,6 @@
 -- Sevilla, 7-julio-2022
 -- ---------------------------------------------------------------------
 
-{-# OPTIONS_GHC -fno-warn-unused-imports #-}
-
-module Particiones_en_k_subconjuntos where
-
-import Data.List (nub, sort)
-import Data.Array (Array, (!), array, listArray)
-import Test.QuickCheck (Positive (Positive), quickCheckWith)
-
 -- ---------------------------------------------------------------------
 -- Definir la función
 --    particiones :: [a] -> Int -> [[[a]]]
@@ -29,6 +21,14 @@ import Test.QuickCheck (Positive (Positive), quickCheckWith)
 --    λ> particiones [4,2,3,6] 4
 --    [[[4],[2],[3],[6]]]
 -- ---------------------------------------------------------------------
+
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
+module Particiones_en_k_subconjuntos where
+
+import Data.List (nub, sort)
+import Data.Array (Array, (!), array, listArray)
+import Test.QuickCheck (Positive (Positive), quickCheckWith)
 
 -- 1ª solución
 -- ===========
