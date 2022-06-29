@@ -95,6 +95,7 @@ library
       Parejas_de_numeros_y_divisores
       Pares_adyacentes_iguales
       Particiones_de_enteros_positivos
+      Particiones_en_k_subconjuntos
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
       Posiciones_diagonales_principales
@@ -231,6 +232,7 @@ test-suite Exercitium-test
       Parejas_de_numeros_y_divisores_Spec
       Pares_adyacentes_iguales_Spec
       Particiones_de_enteros_positivos_Spec
+      Particiones_en_k_subconjuntos_Spec
       Polinomios_cuadraticos_generadores_de_primos_Spec
       Polinomios_de_Bell_Spec
       Posiciones_diagonales_principales_Spec
