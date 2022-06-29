@@ -4,13 +4,6 @@
 -- Sevilla, 11-julio-2022
 -- ---------------------------------------------------------------------
 
-{-# OPTIONS_GHC -fno-warn-unused-imports #-}
-
-module Numero_de_particiones_en_k_subconjuntos where
-
-import Data.Array (Array, (!), array)
-import Test.QuickCheck (Positive (Positive), quickCheckWith)
-
 -- ---------------------------------------------------------------------
 -- Definir la función
 --    numeroParticiones :: Int -> Int -> Int
@@ -23,6 +16,13 @@ import Test.QuickCheck (Positive (Positive), quickCheckWith)
 --    numeroParticiones 4 4    ==  1
 --    numeroParticiones 91 89  ==  8139495
 -- ---------------------------------------------------------------------
+
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
+module Numero_de_particiones_en_k_subconjuntos where
+
+import Data.Array (Array, (!), array)
+import Test.QuickCheck (Positive (Positive), quickCheckWith)
 
 -- 1ª solución
 -- ===========
