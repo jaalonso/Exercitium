@@ -114,14 +114,15 @@ Los objetivos de esta recopilación son:
 + 23-06-22 [[./src/Numeros_para_los_que_mcm.hs][Números para los que mcm(1,2,...n-1) = mcm(1,2,...,n)]].
 + 24-06-22 [[./src/Metodo_de_biseccion_para_aproximar_raices_de_funciones.hs][Método de bisección para aproximar raíces de funciones]].
 + 27-06-22 [[./src/La_sucesion_del_reloj_astronomico_de_Praga.hs][La sucesión del reloj astronómico de Praga]].
-+ M28-06-22 [[./src/Codificacion_de_Fibonacci.hs][Codificación de Fibonacci]].
-+ X29-06-22 [[./src/Pandigitales_primos.hs][Pandigitales primos]].
++ 28-06-22 [[./src/Codificacion_de_Fibonacci.hs][Codificación de Fibonacci]].
++ 29-06-22 [[./src/Pandigitales_primos.hs][Pandigitales primos]].
 + J30-06-22 [[./src/Aproximacion_de_numero_pi.hs][Aproximación del número pi]].
 + V01-07-22 [[./src/Numeros_autodescriptivos.hs][Números autodescriptivos]].
 + L03-07-22 [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
 + M04-07-22 [[./src/Union_e_interseccion_general.hs][Unión e intersección general de conjuntos]].
 + X05-07-22 [[./src/Intersecciones_parciales.hs][Intersecciones parciales]].
 + J06-07-22 [[./src/Mayor_semiprimo_menor_que_n.hs][Mayor semiprimo menor que n]].
++ V07-07-22 [[./src/Particiones_en_k_subconjuntos.hs][Particiones en k subconjuntos]].
   
 * Etiquetas
 
