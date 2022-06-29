@@ -82,6 +82,7 @@ library
       Numeracion_de_ternas
       Numero_de_divisores
       Numero_de_inversiones
+      Numero_de_particiones_en_k_subconjuntos
       Numeros_amigos
       Numeros_autodescriptivos
       Numeros_con_digitos_primos
@@ -219,6 +220,7 @@ test-suite Exercitium-test
       Numeracion_de_ternas_Spec
       Numero_de_divisores_Spec
       Numero_de_inversiones_Spec
+      Numero_de_particiones_en_k_subconjuntos_Spec
       Numeros_amigos_Spec
       Numeros_autodescriptivos_Spec
       Numeros_con_digitos_primos_Spec
