@@ -17,7 +17,7 @@
 --    mayorSemiprimoMenor 27      ==  26
 --    mayorSemiprimoMenor 50      ==  49
 --    mayorSemiprimoMenor 49      ==  46
---    mayorSemiprimoMenor (10^6)  ==  999997
+--    mayorSemiprimoMenor (10^15) == 999999999999998
 -- ---------------------------------------------------------------------
 
 module Mayor_semiprimo_menor_que_n where
