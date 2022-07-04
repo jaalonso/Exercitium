@@ -41,6 +41,7 @@ library
       Clausura
       Codificacion_de_Fibonacci
       Codificacion_de_Godel
+      Composicion_de_relaciones_binarias
       Conjunto_de_divisores
       Conjunto_de_primos_relativos
       Cuadrado_mas_cercano
@@ -158,6 +159,7 @@ library
     , primes
     , quickcheck-higherorder
     , random
+    , set-monad
     , split
     , statistics
     , statistics-linreg
@@ -182,6 +184,7 @@ test-suite Exercitium-test
       Clausura_Spec
       Codificacion_de_Fibonacci_Spec
       Codificacion_de_Godel_Spec
+      Composicion_de_relaciones_binarias_Spec
       Conjunto_de_divisores_Spec
       Conjunto_de_primos_relativos_Spec
       Cuadrado_mas_cercano_Spec
@@ -293,6 +296,7 @@ test-suite Exercitium-test
     , primes
     , quickcheck-higherorder
     , random
+    , set-monad
     , split
     , statistics
     , statistics-linreg

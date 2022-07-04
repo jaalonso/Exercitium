@@ -26,6 +26,13 @@ packages:
   original:
     hackage: compact-word-vectors-0.2.0.2@sha256:e46c7c3186dafe1ae22434556ddec91af022f2360c57c30a46397758938f3acc,2617
 - completed:
+    hackage: set-monad-0.3.0.0@sha256:8c7a97a5daec64e5846975503cf8b8d8936d96674f375b1adf330dd2db488ff2,4159
+    pantry-tree:
+      size: 212
+      sha256: e43d9a259ccdfeb94a24daf398c92fd77ef024be5ede019f55af775a698de035
+  original:
+    hackage: set-monad-0.3.0.0@sha256:8c7a97a5daec64e5846975503cf8b8d8936d96674f375b1adf330dd2db488ff2,4159
+- completed:
     hackage: statistics-linreg-0.3@sha256:95c6efe6c7f6b26bc6e9ada90ab2d18216371cf59a6ef2b517b4a6fd35d9a76f,2544
     pantry-tree:
       size: 233

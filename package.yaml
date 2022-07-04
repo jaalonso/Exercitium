@@ -30,6 +30,7 @@ dependencies:
   - QuickCheck
   - quickcheck-higherorder
   - random
+  - set-monad
   - split
   - statistics
   - statistics-linreg
