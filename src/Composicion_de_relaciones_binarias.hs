@@ -126,3 +126,15 @@ prop_composicion r s =
 --    λ> length (composicion3 [(n,n+1) | n <- [1..2000]] [(n,n+1) | n <- [1..2000]])
 --    1999
 --    (0.07 secs, 6,960,552 bytes)
+--
+--    λ> r100 = [(n,k) | n <- [1..100], k <- [1..n]]
+--    λ> length (composicion1 r100 r100)
+--    5050
+--    (9.91 secs, 4,946,556,944 bytes)
+--    λ> length (composicion2 r100 r100)
+--    5050
+--    (13.59 secs, 15,241,357,536 bytes)
+--    λ> length (composicion3 r100 r100)
+--    5050
+--    (0.35 secs, 52,015,544 bytes)
+
