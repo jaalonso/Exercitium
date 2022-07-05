@@ -23,4 +23,5 @@ spec :: Spec
 spec = do
   describe "def. 1" $ specG composicion1
   describe "def. 2" $ specG composicion2
+  describe "def. 3" $ specG composicion3
   describe "equivalencia" $ it "p1" $ property prop_composicion
