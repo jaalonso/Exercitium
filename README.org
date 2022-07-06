@@ -118,13 +118,14 @@ Los objetivos de esta recopilación son:
 + 29-06-22 [[./src/Pandigitales_primos.hs][Pandigitales primos]].
 + 30-06-22 [[./src/Aproximacion_de_numero_pi.hs][Aproximación del número pi]].
 + 01-07-22 [[./src/Numeros_autodescriptivos.hs][Números autodescriptivos]].
-+ L04-07-22 [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
-+ M05-07-22 [[./src/Union_e_interseccion_general.hs][Unión e intersección general de conjuntos]].
-+ X06-07-22 [[./src/Intersecciones_parciales.hs][Intersecciones parciales]].
++ 04-07-22 [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
++ 05-07-22 [[./src/Union_e_interseccion_general.hs][Unión e intersección general de conjuntos]].
++ 06-07-22 [[./src/Intersecciones_parciales.hs][Intersecciones parciales]].
 + J07-07-22 [[./src/Mayor_semiprimo_menor_que_n.hs][Mayor semiprimo menor que n]].
 + V08-07-22 [[./src/Particiones_en_k_subconjuntos.hs][Particiones en k subconjuntos]].
 + L11-07-22 [[./src/Numero_de_particiones_en_k_subconjuntos.hs][Número de particiones en k subconjuntos]].
 + M12-07-22 [[./src/Composicion_de_relaciones_binarias.hs][Composición de relaciones binarias]].
++ X13-07-22 [[./src/Transitividad_de_una_relacion.hs][Transitividad de una relación]].
   
 * Etiquetas
 
