@@ -39,6 +39,7 @@ library
       Caminos_en_un_triangulo
       Ceros_finales_del_factorial
       Clausura
+      Clausura_transitiva_de_una_relacion_binaria
       Codificacion_de_Fibonacci
       Codificacion_de_Godel
       Composicion_de_relaciones_binarias
@@ -183,6 +184,7 @@ test-suite Exercitium-test
       Caminos_en_un_triangulo_Spec
       Ceros_finales_del_factorial_Spec
       Clausura_Spec
+      Clausura_transitiva_de_una_relacion_binaria_Spec
       Codificacion_de_Fibonacci_Spec
       Codificacion_de_Godel_Spec
       Composicion_de_relaciones_binarias_Spec
