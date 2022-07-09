@@ -105,6 +105,7 @@ library
       Primos_circulares
       Primos_con_digitos_primos
       Primos_consecutivos_con_media_capicua
+      Primos_cubanos
       Primos_equidistantes
       Producto_cartesiano
       Producto_de_los_elementos_de_la_diagonal_principal
@@ -246,6 +247,7 @@ test-suite Exercitium-test
       Posiciones_diagonales_principales_Spec
       Primos_circulares_Spec
       Primos_consecutivos_con_media_capicua_Spec
+      Primos_cubanos_Spec
       Primos_equidistantes_Spec
       Producto_cartesiano_Spec
       Producto_de_los_elementos_de_la_diagonal_principal_Spec

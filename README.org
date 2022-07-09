@@ -127,6 +127,7 @@ Los objetivos de esta recopilación son:
 + M12-07-22 [[./src/Composicion_de_relaciones_binarias.hs][Composición de relaciones binarias]].
 + X13-07-22 [[./src/Transitividad_de_una_relacion.hs][Transitividad de una relación]].
 + J14-07-22 [[./src/Clausura_transitiva_de_una_relacion_binaria.hs][Clausura transitiva de una relación binaria]].
++ V15-07-22 [[./src/Primos_cubanos.hs][Primos cubanos]].
   
 * Etiquetas
 
