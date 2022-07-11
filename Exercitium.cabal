@@ -103,6 +103,7 @@ library
       Polinomios_de_Bell
       Posiciones_diagonales_principales
       Primos_circulares
+      Primos_con_cubos
       Primos_con_digitos_primos
       Primos_consecutivos_con_media_capicua
       Primos_cubanos
@@ -246,6 +247,7 @@ test-suite Exercitium-test
       Polinomios_de_Bell_Spec
       Posiciones_diagonales_principales_Spec
       Primos_circulares_Spec
+      Primos_con_cubos_Spec
       Primos_consecutivos_con_media_capicua_Spec
       Primos_cubanos_Spec
       Primos_equidistantes_Spec
