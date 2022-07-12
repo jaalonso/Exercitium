@@ -124,11 +124,12 @@ Los objetivos de esta recopilación son:
 + 07-07-22 [[./src/Mayor_semiprimo_menor_que_n.hs][Mayor semiprimo menor que n]].
 + 08-07-22 [[./src/Particiones_en_k_subconjuntos.hs][Particiones en k subconjuntos]].
 + 11-07-22 [[./src/Numero_de_particiones_en_k_subconjuntos.hs][Número de particiones en k subconjuntos]].
-+ M12-07-22 [[./src/Composicion_de_relaciones_binarias.hs][Composición de relaciones binarias]].
++ 12-07-22 [[./src/Composicion_de_relaciones_binarias.hs][Composición de relaciones binarias]].
 + X13-07-22 [[./src/Transitividad_de_una_relacion.hs][Transitividad de una relación]].
 + J14-07-22 [[./src/Clausura_transitiva_de_una_relacion_binaria.hs][Clausura transitiva de una relación binaria]].
 + V15-07-22 [[./src/Primos_cubanos.hs][Primos cubanos]].
 + L18-07-22 [[./src/Primos_con_cubos.hs][Primos con cubos]].
++ M19-07-22 [[./src/Suma_alterna_de_factoriales.hs][Suma alterna de factoriales]].
   
 * Etiquetas
 

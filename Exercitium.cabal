@@ -123,6 +123,7 @@ library
       Separacion_por_posicion
       Sistema_factoradico_de_numeracion
       Sucesion_de_numeros_amigos
+      Suma_alterna_de_factoriales
       Suma_de_cadenas
       Suma_de_divisores
       Suma_de_fila_del_triangulo_de_los_impares
@@ -265,6 +266,7 @@ test-suite Exercitium-test
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
       Sucesion_de_numeros_amigos_Spec
+      Suma_alterna_de_factoriales_Spec
       Suma_de_cadenas_Spec
       Suma_de_divisores_Spec
       Suma_de_fila_del_triangulo_de_los_impares_Spec
