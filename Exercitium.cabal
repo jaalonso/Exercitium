@@ -66,6 +66,7 @@ library
       Iguales_al_siguiente
       Indices_verdaderos
       Intersecciones_parciales
+      La_sucesion_de_Ducci
       La_sucesion_del_reloj_astronomico_de_Praga
       Lista_cuadrada
       Mas_repetido
@@ -102,6 +103,7 @@ library
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
       Posiciones_diagonales_principales
+      Potencias_perfectas
       Primos_circulares
       Primos_con_cubos
       Primos_con_digitos_primos
@@ -247,6 +249,7 @@ test-suite Exercitium-test
       Polinomios_cuadraticos_generadores_de_primos_Spec
       Polinomios_de_Bell_Spec
       Posiciones_diagonales_principales_Spec
+      Potencias_perfectas_Spec
       Primos_circulares_Spec
       Primos_con_cubos_Spec
       Primos_consecutivos_con_media_capicua_Spec
