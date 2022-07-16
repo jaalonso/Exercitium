@@ -125,13 +125,13 @@ Los objetivos de esta recopilación son:
 + 08-07-22 [[./src/Particiones_en_k_subconjuntos.hs][Particiones en k subconjuntos]].
 + 11-07-22 [[./src/Numero_de_particiones_en_k_subconjuntos.hs][Número de particiones en k subconjuntos]].
 + 12-07-22 [[./src/Composicion_de_relaciones_binarias.hs][Composición de relaciones binarias]].
-+ X13-07-22 [[./src/Transitividad_de_una_relacion.hs][Transitividad de una relación]].
-+ J14-07-22 [[./src/Clausura_transitiva_de_una_relacion_binaria.hs][Clausura transitiva de una relación binaria]].
++ 13-07-22 [[./src/Transitividad_de_una_relacion.hs][Transitividad de una relación]].
++ 14-07-22 [[./src/Clausura_transitiva_de_una_relacion_binaria.hs][Clausura transitiva de una relación binaria]].
 + V15-07-22 [[./src/Primos_cubanos.hs][Primos cubanos]].
 + L18-07-22 [[./src/Primos_con_cubos.hs][Primos con cubos]].
 + M19-07-22 [[./src/Suma_alterna_de_factoriales.hs][Suma alterna de factoriales]].
 + X20-07-22 [[./src/Potencias_perfectas.hs][Potencias perfectas]].
-  
++ J21-07-22 [[./src/Sucesion_de_suma_de_cuadrados_de_los_digitos.hs][Sucesión de suma de cuadrados de los dígitos]].  
 
 + ???-??-?? [[./src/La_sucesion_de_Ducci.hs][La sucesión de Ducci]].
 

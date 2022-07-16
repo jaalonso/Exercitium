@@ -125,6 +125,7 @@ library
       Separacion_por_posicion
       Sistema_factoradico_de_numeracion
       Sucesion_de_numeros_amigos
+      Sucesion_de_suma_de_cuadrados_de_los_digitos
       Suma_alterna_de_factoriales
       Suma_de_cadenas
       Suma_de_divisores
@@ -269,6 +270,7 @@ test-suite Exercitium-test
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
       Sucesion_de_numeros_amigos_Spec
+      Sucesion_de_suma_de_cuadrados_de_los_digitos_Spec
       Suma_alterna_de_factoriales_Spec
       Suma_de_cadenas_Spec
       Suma_de_divisores_Spec
