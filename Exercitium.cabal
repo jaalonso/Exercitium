@@ -66,6 +66,7 @@ library
       Iguales_al_siguiente
       Indices_verdaderos
       Intersecciones_parciales
+      La_funcion_indicatriz_de_Euler
       La_sucesion_de_Ducci
       La_sucesion_del_reloj_astronomico_de_Praga
       Lista_cuadrada
@@ -152,6 +153,7 @@ library
   build-depends:
       I1M
     , QuickCheck
+    , arithmoi
     , array
     , base >=4.7 && <5
     , combinat
@@ -214,6 +216,7 @@ test-suite Exercitium-test
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       Iguales_al_siguiente_Spec
       Indices_verdaderos_Spec
+      La_funcion_indicatriz_de_Euler_Spec
       La_sucesion_del_reloj_astronomico_de_Praga_Spec
       Lista_cuadrada_Spec
       Mas_repetido_Spec
@@ -297,6 +300,7 @@ test-suite Exercitium-test
       Exercitium
     , I1M
     , QuickCheck
+    , arithmoi
     , array
     , base
     , combinat
