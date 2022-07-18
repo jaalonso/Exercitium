@@ -133,6 +133,7 @@ Los objetivos de esta recopilación son:
 + X20-07-22 [[./src/Potencias_perfectas.hs][Potencias perfectas]].
 + J21-07-22 [[./src/Sucesion_de_suma_de_cuadrados_de_los_digitos.hs][Sucesión de suma de cuadrados de los dígitos]].  
 + V22-07-22 [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
++ L25-07-22 [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
   
 + ???-??-?? [[./src/La_sucesion_de_Ducci.hs][La sucesión de Ducci]].
 

@@ -63,6 +63,7 @@ library
       Enumera_arbol
       Exponente_en_la_factorizacion
       Familias_de_numeros_con_algun_digito_en_comun
+      Huecos_maximales_entre_primos
       Iguales_al_siguiente
       Indices_verdaderos
       Intersecciones_parciales
@@ -214,6 +215,7 @@ test-suite Exercitium-test
       Enumera_arbol_Spec
       Exponente_en_la_factorizacion_Spec
       Familias_de_numeros_con_algun_digito_en_comun_Spec
+      Huecos_maximales_entre_primos_Spec
       Iguales_al_siguiente_Spec
       Indices_verdaderos_Spec
       La_funcion_indicatriz_de_Euler_Spec
