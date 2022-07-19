@@ -90,6 +90,7 @@ library
       Numero_de_particiones_en_k_subconjuntos
       Numeros_amigos
       Numeros_autodescriptivos
+      Numeros_belgas
       Numeros_con_digitos_primos
       Numeros_de_ocurrencias_de_elementos
       Numeros_para_los_que_mcm
@@ -240,6 +241,7 @@ test-suite Exercitium-test
       Numero_de_particiones_en_k_subconjuntos_Spec
       Numeros_amigos_Spec
       Numeros_autodescriptivos_Spec
+      Numeros_belgas_Spec
       Numeros_con_digitos_primos_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
       Numeros_para_los_que_mcm_Spec

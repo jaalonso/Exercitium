@@ -128,12 +128,13 @@ Los objetivos de esta recopilación son:
 + 13-07-22 [[./src/Transitividad_de_una_relacion.hs][Transitividad de una relación]].
 + 14-07-22 [[./src/Clausura_transitiva_de_una_relacion_binaria.hs][Clausura transitiva de una relación binaria]].
 + 15-07-22 [[./src/Primos_cubanos.hs][Primos cubanos]].
-+ L18-07-22 [[./src/Primos_con_cubos.hs][Primos con cubos]].
-+ M19-07-22 [[./src/Suma_alterna_de_factoriales.hs][Suma alterna de factoriales]].
++ 18-07-22 [[./src/Primos_con_cubos.hs][Primos con cubos]].
++ 19-07-22 [[./src/Suma_alterna_de_factoriales.hs][Suma alterna de factoriales]].
 + X20-07-22 [[./src/Potencias_perfectas.hs][Potencias perfectas]].
 + J21-07-22 [[./src/Sucesion_de_suma_de_cuadrados_de_los_digitos.hs][Sucesión de suma de cuadrados de los dígitos]].  
 + V22-07-22 [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
 + L25-07-22 [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
++ M26-07-22 [[./src/Numeros_belgas.hs][Números belgas]].
   
 + ???-??-?? [[./src/La_sucesion_de_Ducci.hs][La sucesión de Ducci]].
 
