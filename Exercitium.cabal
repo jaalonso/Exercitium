@@ -68,6 +68,8 @@ library
       Indices_verdaderos
       Intersecciones_parciales
       La_funcion_indicatriz_de_Euler
+      La_serie_de_Thue_Morse
+      La_serie_de_Thue_Morse_Spec
       La_sucesion_de_Ducci
       La_sucesion_del_reloj_astronomico_de_Praga
       Lista_cuadrada
