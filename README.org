@@ -135,7 +135,8 @@ Los objetivos de esta recopilación son:
 + V22-07-22 [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
 + L25-07-22 [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
 + M26-07-22 [[./src/Numeros_belgas.hs][Números belgas]].
-+ X27-07-22 [[./src/La_sucesion_de_Thue-Morse.hs][La sucesión de Thue-Morse]].
++ X27-07-22 [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].
++ J28-07-22 [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
   
 + ???-??-?? [[./src/La_sucesion_de_Ducci.hs][La sucesión de Ducci]].
 

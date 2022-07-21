@@ -69,8 +69,8 @@ library
       Intersecciones_parciales
       La_funcion_indicatriz_de_Euler
       La_serie_de_Thue_Morse
-      La_serie_de_Thue_Morse_Spec
       La_sucesion_de_Ducci
+      La_sucesion_de_Thue_Morse
       La_sucesion_del_reloj_astronomico_de_Praga
       Lista_cuadrada
       Mas_repetido
@@ -222,6 +222,8 @@ test-suite Exercitium-test
       Iguales_al_siguiente_Spec
       Indices_verdaderos_Spec
       La_funcion_indicatriz_de_Euler_Spec
+      La_serie_de_Thue_Morse_Spec
+      La_sucesion_de_Thue_Morse_Spec
       La_sucesion_del_reloj_astronomico_de_Praga_Spec
       Lista_cuadrada_Spec
       Mas_repetido_Spec
