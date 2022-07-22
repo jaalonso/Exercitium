@@ -131,12 +131,13 @@ Los objetivos de esta recopilación son:
 + 18-07-22 [[./src/Primos_con_cubos.hs][Primos con cubos]].
 + 19-07-22 [[./src/Suma_alterna_de_factoriales.hs][Suma alterna de factoriales]].
 + 20-07-22 [[./src/Potencias_perfectas.hs][Potencias perfectas]].
-+ J21-07-22 [[./src/Sucesion_de_suma_de_cuadrados_de_los_digitos.hs][Sucesión de suma de cuadrados de los dígitos]].  
-+ V22-07-22 [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
++ 21-07-22 [[./src/Sucesion_de_suma_de_cuadrados_de_los_digitos.hs][Sucesión de suma de cuadrados de los dígitos]].  
++ 22-07-22 [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
 + L25-07-22 [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
 + M26-07-22 [[./src/Numeros_belgas.hs][Números belgas]].
 + X27-07-22 [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].
 + J28-07-22 [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
++ V29-07-22 [[./src/Sumas_de_dos_primos.hs][Sumas de dos primos]].
   
 + ???-??-?? [[./src/La_sucesion_de_Ducci.hs][La sucesión de Ducci]].
 

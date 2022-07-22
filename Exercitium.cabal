@@ -142,6 +142,7 @@ library
       Sumas_de_4_primos
       Sumas_de_divisores_propios
       Sumas_de_dos_abundantes
+      Sumas_de_dos_primos
       Termino_ausente_en_una_progresion_aritmetica
       Ternas_pitagoricas_con_suma_dada
       Transitividad_de_una_relacion
@@ -293,6 +294,7 @@ test-suite Exercitium-test
       Sumas_de_4_primos_Spec
       Sumas_de_divisores_propios_Spec
       Sumas_de_dos_abundantes_Spec
+      Sumas_de_dos_primos_Spec
       Termino_ausente_en_una_progresion_aritmetica_Spec
       Ternas_pitagoricas_con_suma_dada_Spec
       Transitividad_de_una_relacion_Spec
