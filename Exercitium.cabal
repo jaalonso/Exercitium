@@ -62,6 +62,7 @@ library
       Emparejamiento_de_arboles_1
       Enumera_arbol
       Exponente_en_la_factorizacion
+      Factorizaciones_de_numeros_de_Hilbert
       Familias_de_numeros_con_algun_digito_en_comun
       Huecos_maximales_entre_primos
       Iguales_al_siguiente
@@ -219,6 +220,7 @@ test-suite Exercitium-test
       Emparejamiento_de_arboles_Spec
       Enumera_arbol_Spec
       Exponente_en_la_factorizacion_Spec
+      Factorizaciones_de_numeros_de_Hilbert_Spec
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       Huecos_maximales_entre_primos_Spec
       Iguales_al_siguiente_Spec

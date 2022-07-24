@@ -139,6 +139,7 @@ Los objetivos de esta recopilación son:
 + J28-07-22 [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
 + V29-07-22 [[./src/Sumas_de_dos_primos.hs][Sumas de dos primos]].
 + L01-08-22 [[./src/Numeros_primos_de_Hilbert.hs][Números primos de Hilbert]].
++ M02-08-22 [[./src/Factorizaciones_de_numeros_de_Hilbert.hs][Factorizaciones de números de Hilbert]].
   
 + ???-??-?? [[./src/La_sucesion_de_Ducci.hs][La sucesión de Ducci]].
 
