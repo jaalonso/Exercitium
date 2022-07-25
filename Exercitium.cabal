@@ -128,6 +128,7 @@ library
       Reiteracion_de_suma_de_consecutivos
       Representacion_de_Zeckendorf
       Representacion_matricial_de_relaciones_binarias
+      Representaciones_de_un_numero_como_suma_de_dos_cuadrados
       Segmentos_consecutivos
       Separacion_por_posicion
       Sistema_factoradico_de_numeracion
@@ -282,6 +283,7 @@ test-suite Exercitium-test
       Reiteracion_de_suma_de_consecutivos_Spec
       Representacion_de_Zeckendorf_Spec
       Representacion_matricial_de_relaciones_binarias_Spec
+      Representaciones_de_un_numero_como_suma_de_dos_cuadrados_Spec
       Segmentos_consecutivos_Spec
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
