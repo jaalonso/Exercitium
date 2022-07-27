@@ -141,6 +141,7 @@ Los objetivos de esta recopilación son:
 + L01-08-22 [[./src/Numeros_primos_de_Hilbert.hs][Números primos de Hilbert]].
 + M02-08-22 [[./src/Factorizaciones_de_numeros_de_Hilbert.hs][Factorizaciones de números de Hilbert]].
 + X03-08-22 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].  
++ J04-08-22 [[./src/Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados.hs][Número de representaciones de n como suma de dos cuadrados]].
   
 + ???-??-?? [[./src/La_sucesion_de_Ducci.hs][La sucesión de Ducci]].
 

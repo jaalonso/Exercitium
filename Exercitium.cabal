@@ -91,6 +91,7 @@ library
       Numero_de_divisores
       Numero_de_inversiones
       Numero_de_particiones_en_k_subconjuntos
+      Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados
       Numeros_amigos
       Numeros_autodescriptivos
       Numeros_belgas
@@ -248,6 +249,7 @@ test-suite Exercitium-test
       Numero_de_divisores_Spec
       Numero_de_inversiones_Spec
       Numero_de_particiones_en_k_subconjuntos_Spec
+      Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados_Spec
       Numeros_amigos_Spec
       Numeros_autodescriptivos_Spec
       Numeros_belgas_Spec
