@@ -97,6 +97,7 @@ library
       Numeros_belgas
       Numeros_con_digitos_primos
       Numeros_de_ocurrencias_de_elementos
+      Numeros_de_Pentanacci
       Numeros_para_los_que_mcm
       Numeros_primos_de_Hilbert
       Ordenacion_de_estructuras
