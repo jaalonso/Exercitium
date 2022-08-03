@@ -83,6 +83,7 @@ library
       Mayor_orbita_de_la_sucesion_de_Collatz
       Mayor_producto_de_las_ramas_de_un_arbol
       Mayor_semiprimo_menor_que_n
+      Media_aritmetica_de_tres_numeros
       Menor_numero_con_una_cantidad_dada_de_divisores
       Metodo_de_biseccion_para_aproximar_raices_de_funciones
       Minimo_producto_escalar
@@ -242,6 +243,7 @@ test-suite Exercitium-test
       Mayor_orbita_de_la_sucesion_de_Collatz_Spec
       Mayor_producto_de_las_ramas_de_un_arbol_Spec
       Mayor_semiprimo_menor_que_n_Spec
+      Media_aritmetica_de_tres_numeros_Spec
       Menor_numero_con_una_cantidad_dada_de_divisores_Spec
       Metodo_de_biseccion_para_aproximar_raices_de_funciones_Spec
       Minimo_producto_escalar_Spec
@@ -256,6 +258,7 @@ test-suite Exercitium-test
       Numeros_belgas_Spec
       Numeros_con_digitos_primos_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
+      Numeros_de_Pentanacci_Spec
       Numeros_para_los_que_mcm_Spec
       Numeros_primos_de_Hilbert_Spec
       Ordenacion_de_estructuras_Spec
