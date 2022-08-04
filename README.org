@@ -148,6 +148,7 @@ Los objetivos de esta recopilación son:
 
 + L08-08-22 [[./src/Media_aritmetica_de_tres_numeros.hs][Media aritmética de tres números]]
 + M09-08-22 [[./src/Suma_de_monedas.hs][Suma de monedas]].
++ X10-08-22 [[./src/Volumen_de_la_esfera.hs][Volumen de la esfera]].
 
 * Próximos
 

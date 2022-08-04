@@ -157,6 +157,7 @@ library
       Triangulares_con_cifras
       Union_e_interseccion_general
       Valor_de_un_polinomio
+      Volumen_de_la_esfera
   other-modules:
       Paths_Exercitium
   hs-source-dirs:
@@ -316,6 +317,7 @@ test-suite Exercitium-test
       Triangulares_con_cifras_Spec
       Union_e_interseccion_general_Spec
       Valor_de_un_polinomio_Spec
+      Volumen_de_la_esfera_Spec
       Paths_Exercitium
   hs-source-dirs:
       test
