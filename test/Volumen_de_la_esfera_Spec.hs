@@ -9,4 +9,4 @@ main = hspec spec
 spec :: Spec
 spec =
   it "e1" $
-    volumenEsfera 10 `shouldBe` 4188.7905
+    volumenEsfera 10 `shouldBe` 4188.790204786391
