@@ -13,5 +13,7 @@
 --    maxTres 6 7 9  ==  9
 -- ---------------------------------------------------------------------
 
+module Maximo_de_tres_numeros where
+
 maxTres :: Int -> Int -> Int -> Int
 maxTres x y z = max x (max y z)
