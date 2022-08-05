@@ -156,6 +156,7 @@ library
       Transitividad_de_una_relacion
       Trenzado_de_listas
       Triangulares_con_cifras
+      Ultimo_digito
       Union_e_interseccion_general
       Valor_de_un_polinomio
       Volumen_de_la_esfera
@@ -317,6 +318,7 @@ test-suite Exercitium-test
       Transitividad_de_una_relacion_Spec
       Trenzado_de_listas_Spec
       Triangulares_con_cifras_Spec
+      Ultimo_digito_Spec
       Union_e_interseccion_general_Spec
       Valor_de_un_polinomio_Spec
       Volumen_de_la_esfera_Spec
