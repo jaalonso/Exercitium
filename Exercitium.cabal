@@ -80,6 +80,7 @@ library
       Matriz_Toeplitz
       Matriz_zigzagueante
       Maxima_suma_de_caminos_en_un_triangulo
+      Maximo_de_tres_numeros
       Maximos_locales
       Mayor_orbita_de_la_sucesion_de_Collatz
       Mayor_producto_de_las_ramas_de_un_arbol
