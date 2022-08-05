@@ -141,14 +141,15 @@ Los objetivos de esta recopilación son:
 + 01-08-22 [[./src/Numeros_primos_de_Hilbert.hs][Números primos de Hilbert]].
 + 02-08-22 [[./src/Factorizaciones_de_numeros_de_Hilbert.hs][Factorizaciones de números de Hilbert]].
 + 03-08-22 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
-+ J04-08-22 [[./src/Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados.hs][Número de representaciones de n como suma de dos cuadrados]].
-+ V05-08-22 [[./src/Numeros_de_Pentanacci.hs][Números de Pentanacci]].
++ 04-08-22 [[./src/Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados.hs][Número de representaciones de n como suma de dos cuadrados]].
++ 05-08-22 [[./src/Numeros_de_Pentanacci.hs][Números de Pentanacci]].
 
 * Introducción a la programación con Haskell y Python
 
 + L08-08-22 [[./src/Media_aritmetica_de_tres_numeros.hs][Media aritmética de tres números]]
 + M09-08-22 [[./src/Suma_de_monedas.hs][Suma de monedas]].
 + X10-08-22 [[./src/Volumen_de_la_esfera.hs][Volumen de la esfera]].
++ J11-08-22 [[./src/Area_corona_circular.hs][Área de la corona circular]].
 
 * Próximos
 

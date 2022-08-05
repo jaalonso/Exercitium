@@ -32,6 +32,7 @@ library
       Amplia_columnas
       Anagramas
       Aproximacion_de_numero_pi
+      Area_corona_circular
       Bandera_tricolor
       Biparticiones_de_una_lista
       Calculo_aproximado_de_integrales_definidas
@@ -198,6 +199,7 @@ test-suite Exercitium-test
       Algun_vecino_menor_Spec
       Anagramas_Spec
       Aproximacion_de_numero_pi_Spec
+      Area_corona_circular_Spec
       Bandera_tricolor_Spec
       Biparticiones_de_una_lista_Spec
       Calculo_aproximado_de_integrales_definidas_Spec
