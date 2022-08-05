@@ -245,6 +245,7 @@ test-suite Exercitium-test
       Matriz_Toeplitz_Spec
       Matriz_zigzagueante_Spec
       Maxima_suma_de_caminos_en_un_triangulo_Spec
+      Maximo_de_tres_numeros_Spec
       Maximos_locales_Spec
       Mayor_orbita_de_la_sucesion_de_Collatz_Spec
       Mayor_producto_de_las_ramas_de_un_arbol_Spec
