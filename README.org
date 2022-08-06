@@ -153,6 +153,7 @@ Los objetivos de esta recopilación son:
 + V12-08-22 [[./src/Ultimo_digito.hs][Último dígito]].
 + L15-08-22 [[./src/Maximo_de_tres_numeros.hs][Máximo de tres números]].
 + M16-08-22 [[./src/El_primero_al_final.hs][El primero al final]].
++ X17-08-22 [[./src/Los_primeros_al_final.hs][Los primeros al final]].
 
 * Próximos
 

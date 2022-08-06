@@ -76,6 +76,7 @@ library
       La_sucesion_de_Thue_Morse
       La_sucesion_del_reloj_astronomico_de_Praga
       Lista_cuadrada
+      Los_primeros_al_final
       Mas_repetido
       Mastermind
       Matriz_Toeplitz
@@ -242,6 +243,7 @@ test-suite Exercitium-test
       La_sucesion_de_Thue_Morse_Spec
       La_sucesion_del_reloj_astronomico_de_Praga_Spec
       Lista_cuadrada_Spec
+      Los_primeros_al_final_Spec
       Mas_repetido_Spec
       Mastermind_Spec
       Matriz_Toeplitz_Spec
