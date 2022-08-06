@@ -14,5 +14,15 @@
 
 module El_primero_al_final where
 
-rota1 :: [a] -> [a]
-rota1 xs = tail xs ++ [head xs]
+-- 1ª solución
+-- ===========
+
+rota1a :: [a] -> [a]
+rota1a xs = tail xs ++ [head xs]
+
+-- 2ª solución
+-- ===========
+
+rota1b :: [a] -> [a]
+rota1b []     = []
+rota1b (x:xs) = xs ++ [x]
