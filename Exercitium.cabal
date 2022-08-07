@@ -297,6 +297,7 @@ test-suite Exercitium-test
       Puntos_en_regiones_rectangulares_Spec
       Rango_de_una_lista_Spec
       Reconocimiento_de_grandes_potencias_de_2_Spec
+      Reconocimiento_de_palindromos_Spec
       Reconocimiento_de_potencias_de_4_Spec
       Regiones_Spec
       Reiteracion_de_funciones_Spec
