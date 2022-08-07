@@ -4,8 +4,6 @@
 -- Sevilla, 19-agosto-2022
 -- ---------------------------------------------------------------------
 
-module Reconocimiento_de_palindromos where
-
 -- ---------------------------------------------------------------------
 -- Definir la función
 --    palindromo :: Eq a => [a] -> Bool
@@ -15,6 +13,8 @@ module Reconocimiento_de_palindromos where
 --    palindromo [3,2,5,2,3]    ==  True
 --    palindromo [3,2,5,6,2,3]  ==  False
 -- ---------------------------------------------------------------------
+
+module Reconocimiento_de_palindromos where
 
 palindromo :: Eq a => [a] -> Bool
 palindromo xs =
