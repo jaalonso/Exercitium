@@ -154,7 +154,7 @@ Los objetivos de esta recopilación son:
 + L15-08-22 [[./src/Maximo_de_tres_numeros.hs][Máximo de tres números]].
 + M16-08-22 [[./src/El_primero_al_final.hs][El primero al final]].
 + X17-08-22 [[./src/Los_primeros_al_final.hs][Los primeros al final]].
-+ J19-08-22 [[./src/Rango_de_una_lista.hs][Rango de una lista]].
++ J18-08-22 [[./src/Rango_de_una_lista.hs][Rango de una lista]].
 
 * Próximos
 
