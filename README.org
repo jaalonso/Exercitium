@@ -155,6 +155,7 @@ Los objetivos de esta recopilación son:
 + M16-08-22 [[./src/El_primero_al_final.hs][El primero al final]].
 + X17-08-22 [[./src/Los_primeros_al_final.hs][Los primeros al final]].
 + J18-08-22 [[./src/Rango_de_una_lista.hs][Rango de una lista]].
++ V19-08-02 [[./src/Reconocimiento_de_palindromos.hs][Reconocimiento de palíndromos]].
 
 * Próximos
 
