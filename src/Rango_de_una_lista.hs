@@ -11,3 +11,8 @@
 -- de xs.
 --    rango [3,2,7,5]  ==  [2,7]
 -- ---------------------------------------------------------------------
+
+module Rango_de_una_lista where
+
+rango :: [Int] -> [Int]
+rango xs = [minimum xs, maximum xs]
