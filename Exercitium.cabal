@@ -69,6 +69,7 @@ library
       Huecos_maximales_entre_primos
       Iguales_al_siguiente
       Indices_verdaderos
+      Interior_de_una_lista
       Intersecciones_parciales
       La_funcion_indicatriz_de_Euler
       La_serie_de_Thue_Morse
