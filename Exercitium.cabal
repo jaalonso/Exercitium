@@ -241,6 +241,7 @@ test-suite Exercitium-test
       Huecos_maximales_entre_primos_Spec
       Iguales_al_siguiente_Spec
       Indices_verdaderos_Spec
+      Interior_de_una_lista_Spec
       La_funcion_indicatriz_de_Euler_Spec
       La_serie_de_Thue_Morse_Spec
       La_sucesion_de_Thue_Morse_Spec
