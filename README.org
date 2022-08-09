@@ -157,6 +157,7 @@ Los objetivos de esta recopilación son:
 + J18-08-22 [[./src/Rango_de_una_lista.hs][Rango de una lista]].
 + V19-08-02 [[./src/Reconocimiento_de_palindromos.hs][Reconocimiento de palíndromos]].
 + L22-08-22 [[./src/Interior_de_una_lista.hs][Interior de una lista]].
++ M23-08-22 [[./src/Elementos_finales.hs][Elementos finales]].
 
 * Próximos
 
