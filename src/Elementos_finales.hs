@@ -20,4 +20,4 @@ finales1 n xs = drop (length xs - n) xs
 
 -- 2ª definición
 finales2 :: Int -> [a] -> [a]
-finales2 n xs = reverse (drop n (reverse xs))
+finales2 n xs = reverse (take n (reverse xs))
