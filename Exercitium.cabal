@@ -234,6 +234,7 @@ test-suite Exercitium-test
       Duplicacion_de_cada_elemento_Spec
       El_primero_al_final_Spec
       El_triangulo_de_Floyd_Spec
+      Elemento_mediano_Spec
       Elementos_finales_Spec
       Elementos_minimales_Spec
       Elimina_aisladas_Spec
