@@ -158,6 +158,7 @@ Los objetivos de esta recopilación son:
 + V19-08-02 [[./src/Reconocimiento_de_palindromos.hs][Reconocimiento de palíndromos]].
 + L22-08-22 [[./src/Interior_de_una_lista.hs][Interior de una lista]].
 + M23-08-22 [[./src/Elementos_finales.hs][Elementos finales]].
++ X24-08-22 [[./src/Segmento_de_una_lista.hs][Segmento de una lista]].
 
 * Próximos
 
