@@ -310,6 +310,7 @@ test-suite Exercitium-test
       Representacion_de_Zeckendorf_Spec
       Representacion_matricial_de_relaciones_binarias_Spec
       Representaciones_de_un_numero_como_suma_de_dos_cuadrados_Spec
+      Segmento_de_una_lista_Spec
       Segmentos_consecutivos_Spec
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
