@@ -17,7 +17,7 @@
 
 module Reconocimiento_de_subconjunto where
 
-import Data.List (sort)
+import Data.List (nub, sort)
 import Data.Set (fromList, isSubsetOf)
 import Test.QuickCheck
 
@@ -38,7 +38,7 @@ subconjunto3 xs ys =
 
 -- 4ª definición
 subconjunto4 :: Ord a => [a] -> [a] -> Bool
-subconjunto4 xs ys = aux (sort xs) (sort ys)
+subconjunto4 xs ys = aux (sort (nub xs)) (sort (nub ys))
   where
     aux []       _                   = True
     aux _        []                  = False
@@ -81,14 +81,7 @@ prop_subconjunto xs ys =
 --    (1.75 secs, 4,712,304 bytes)
 --    λ> subconjunto4 [1..2*10^4] [1..2*10^4]
 --    True
---    (0.05 secs, 6,152,224 bytes)
+--    (3.97 secs, 11,912,816 bytes)
 --    λ> subconjunto5 [1..2*10^4] [1..2*10^4]
 --    True
 --    (0.04 secs, 6,312,056 bytes)
---
---    λ> subconjunto4 [1..2*10^6] [1..2*10^6]
---    True
---    (1.20 secs, 752,552,736 bytes)
---    λ> subconjunto5 [1..2*10^6] [1..2*10^6]
---    True
---    (1.11 secs, 576,552,136 bytes)
