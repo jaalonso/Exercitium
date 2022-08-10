@@ -339,6 +339,7 @@ test-suite Exercitium-test
       Ternas_pitagoricas_con_suma_dada_Spec
       Transitividad_de_una_relacion_Spec
       Trenzado_de_listas_Spec
+      Tres_diferentes_Spec
       Tres_iguales_Spec
       Triangulares_con_cifras_Spec
       Ultimo_digito_Spec
