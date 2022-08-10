@@ -163,6 +163,7 @@ Los objetivos de esta recopilación son:
 + V26-08-22 [[./src/Elemento_mediano.hs][Elemento mediano]].
 + L29-08-22 [[./src/Tres_iguales.hs][Tres iguales]].
 + M30-08-22 [[./src/Tres_diferentes.hs][Tres diferentes]].
++ X31-08-22 [[./Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 
 * Próximos
 
