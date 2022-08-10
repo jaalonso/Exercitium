@@ -161,6 +161,7 @@ Los objetivos de esta recopilación son:
 + X24-08-22 [[./src/Segmento_de_una_lista.hs][Segmento de una lista]].
 + J25-08-22 [[./src/Primeros_y_ultimos_elementos.hs][Primeros y últimos elementos]].
 + V26-08-22 [[./src/Elemento_mediano.hs][Elemento mediano]].
++ L29-08-22 [[./src/Tres_iguales.hs][Tres iguales]].
 
 * Próximos
 
