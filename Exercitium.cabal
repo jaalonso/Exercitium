@@ -311,6 +311,7 @@ test-suite Exercitium-test
       Reconocimiento_de_grandes_potencias_de_2_Spec
       Reconocimiento_de_palindromos_Spec
       Reconocimiento_de_potencias_de_4_Spec
+      Reconocimiento_de_subconjunto_Spec
       Regiones_Spec
       Reiteracion_de_funciones_Spec
       Reiteracion_de_suma_de_consecutivos_Spec
