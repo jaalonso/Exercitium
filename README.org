@@ -162,6 +162,7 @@ Los objetivos de esta recopilación son:
 + J25-08-22 [[./src/Primeros_y_ultimos_elementos.hs][Primeros y últimos elementos]].
 + V26-08-22 [[./src/Elemento_mediano.hs][Elemento mediano]].
 + L29-08-22 [[./src/Tres_iguales.hs][Tres iguales]].
++ M30-08-22 [[./src/Tres_diferentes.hs][Tres diferentes]].
 
 * Próximos
 
