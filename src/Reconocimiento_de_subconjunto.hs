@@ -34,6 +34,13 @@ subconjunto3 :: Eq a => [a] -> [a] -> Bool
 subconjunto3 xs ys =
   all (`elem` ys) xs
 
+-- 4ª definición
+subconjunto4 :: Eq a => [a] -> [a] -> Bool
+subconjunto4 []       _                   = True
+subconjunto4 _        []                  = False
+subconjunto4 zs@(x:xs) (y:ys) | x == y    = subconjunto4 xs ys
+                              | otherwise = subconjunto4 zs ys
+
 -- Comprobación de equivalencia
 -- ============================
 
@@ -42,7 +49,8 @@ prop_subconjunto :: [Int] -> [Int] -> Bool
 prop_subconjunto xs ys =
   all (== subconjunto1 xs ys)
       [subconjunto2 xs ys,
-       subconjunto3 xs ys]
+       subconjunto3 xs ys,
+       subconjunto4 xs ys]
 
 -- La comprobación es
 --    λ> quickCheck prop_subconjunto
@@ -61,3 +69,6 @@ prop_subconjunto xs ys =
 --    λ> subconjunto3 [1..2*10^4] [1..2*10^4]
 --    True
 --    (1.75 secs, 4,712,304 bytes)
+--    λ> subconjunto4 [1..2*10^4] [1..2*10^4]
+--    True
+--    (0.05 secs, 6,152,224 bytes)
