@@ -6,7 +6,7 @@
 
 -- ---------------------------------------------------------------------
 -- Definir la función
---    subconjunto :: Eq a => [a] -> [a] -> Bool
+--    subconjunto :: Ord a => [a] -> [a] -> Bool
 -- tal que (subconjunto xs ys) se verifica si xs es un subconjunto de
 -- ys. por ejemplo,
 --    subconjunto [3,2,3] [2,5,3,5]  ==  True
@@ -17,29 +17,38 @@
 
 module Reconocimiento_de_subconjunto where
 
+import Data.List (sort)
+import Data.Set (fromList, isSubsetOf)
 import Test.QuickCheck
 
 -- 1ª definición
-subconjunto1 :: Eq a => [a] -> [a] -> Bool
+subconjunto1 :: Ord a => [a] -> [a] -> Bool
 subconjunto1 xs ys =
   [x | x <- xs, x `elem` ys] == xs
 
 -- 2ª definición
-subconjunto2 :: Eq a => [a] -> [a] -> Bool
+subconjunto2 :: Ord a => [a] -> [a] -> Bool
 subconjunto2 []     _  = True
 subconjunto2 (x:xs) ys = x `elem` ys && subconjunto2 xs ys
 
 -- 3ª definición
-subconjunto3 :: Eq a => [a] -> [a] -> Bool
+subconjunto3 :: Ord a => [a] -> [a] -> Bool
 subconjunto3 xs ys =
   all (`elem` ys) xs
 
 -- 4ª definición
-subconjunto4 :: Eq a => [a] -> [a] -> Bool
-subconjunto4 []       _                   = True
-subconjunto4 _        []                  = False
-subconjunto4 zs@(x:xs) (y:ys) | x == y    = subconjunto4 xs ys
-                              | otherwise = subconjunto4 zs ys
+subconjunto4 :: Ord a => [a] -> [a] -> Bool
+subconjunto4 xs ys = aux (sort xs) (sort ys)
+  where
+    aux []       _                   = True
+    aux _        []                  = False
+    aux zs@(x:xs') (y:ys') | x == y    = aux xs' ys'
+                           | otherwise = aux zs ys'
+
+-- 5ª definición
+subconjunto5 :: Ord a => [a] -> [a] -> Bool
+subconjunto5 xs ys =
+  fromList xs `isSubsetOf` fromList ys
 
 -- Comprobación de equivalencia
 -- ============================
@@ -50,7 +59,8 @@ prop_subconjunto xs ys =
   all (== subconjunto1 xs ys)
       [subconjunto2 xs ys,
        subconjunto3 xs ys,
-       subconjunto4 xs ys]
+       subconjunto4 xs ys,
+       subconjunto5 xs ys]
 
 -- La comprobación es
 --    λ> quickCheck prop_subconjunto
@@ -72,3 +82,13 @@ prop_subconjunto xs ys =
 --    λ> subconjunto4 [1..2*10^4] [1..2*10^4]
 --    True
 --    (0.05 secs, 6,152,224 bytes)
+--    λ> subconjunto5 [1..2*10^4] [1..2*10^4]
+--    True
+--    (0.04 secs, 6,312,056 bytes)
+--
+--    λ> subconjunto4 [1..2*10^6] [1..2*10^6]
+--    True
+--    (1.20 secs, 752,552,736 bytes)
+--    λ> subconjunto5 [1..2*10^6] [1..2*10^6]
+--    True
+--    (1.11 secs, 576,552,136 bytes)
