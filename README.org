@@ -165,7 +165,6 @@ Los objetivos de esta recopilación son:
 + M30-08-22 [[./src/Tres_diferentes.hs][Tres diferentes]].
 + X31-08-22 [[./src/Division_segura.hs][División segura]].
 
-
 + ???-??-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 
 * Próximos
