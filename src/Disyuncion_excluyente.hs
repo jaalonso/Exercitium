@@ -17,10 +17,10 @@
 -- Definir la función
 --    xor :: Bool -> Bool -> Bool
 -- tal que (xor x y) es la disyunción excluyente de x e y. Por ejemplo,
---    xor True  True  = False
---    xor True  False = True
---    xor False True  = True
---    xor False False = False
+--    xor True  True  == False
+--    xor True  False == True
+--    xor False True  == True
+--    xor False False == False
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
