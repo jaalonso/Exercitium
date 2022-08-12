@@ -164,6 +164,7 @@ Los objetivos de esta recopilación son:
 + L29-08-22 [[./src/Tres_iguales.hs][Tres iguales]].
 + M30-08-22 [[./src/Tres_diferentes.hs][Tres diferentes]].
 + X31-08-22 [[./src/Division_segura.hs][División segura]].
++ J01-09-22 [[./src/Disyuncion_excluyente.hs][Disyunción excluyente]].
 
 + ???-??-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 
