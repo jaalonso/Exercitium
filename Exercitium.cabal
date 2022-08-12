@@ -54,6 +54,7 @@ library
       Diccionario_de_frecuencias
       Diferencia_simetrica
       Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario
+      Disyuncion_excluyente
       Division_segura
       Duplicacion_de_cada_elemento
       El_primero_al_final
