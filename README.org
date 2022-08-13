@@ -165,6 +165,7 @@ Los objetivos de esta recopilación son:
 + M30-08-22 [[./src/Tres_diferentes.hs][Tres diferentes]].
 + X31-08-22 [[./src/Division_segura.hs][División segura]].
 + J01-09-22 [[./src/Disyuncion_excluyente.hs][Disyunción excluyente]].
++ V02-09-22 [[./src/Mayor_rectangulo.hs][Mayor rectángulo]].
 
 + ???-??-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 
