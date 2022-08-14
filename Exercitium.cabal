@@ -73,6 +73,7 @@ library
       Huecos_maximales_entre_primos
       Iguales_al_siguiente
       Indices_verdaderos
+      Intercambio_de_componentes_de_un_par
       Interior_de_una_lista
       Intersecciones_parciales
       La_funcion_indicatriz_de_Euler
@@ -255,6 +256,7 @@ test-suite Exercitium-test
       Huecos_maximales_entre_primos_Spec
       Iguales_al_siguiente_Spec
       Indices_verdaderos_Spec
+      Intercambio_de_componentes_de_un_par_Spec
       Interior_de_una_lista_Spec
       La_funcion_indicatriz_de_Euler_Spec
       La_serie_de_Thue_Morse_Spec
