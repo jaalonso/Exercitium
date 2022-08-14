@@ -166,6 +166,7 @@ Los objetivos de esta recopilación son:
 + X31-08-22 [[./src/Division_segura.hs][División segura]].
 + J01-09-22 [[./src/Disyuncion_excluyente.hs][Disyunción excluyente]].
 + V02-09-22 [[./src/Mayor_rectangulo.hs][Mayor rectángulo]].
++ L05-06-22 [[./src/Intercambio_de_componentes_de_un_par.hs][Intercambio de componentes de un par]].
 
 + ???-??-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 
