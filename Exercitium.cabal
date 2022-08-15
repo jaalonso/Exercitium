@@ -53,6 +53,7 @@ library
       Diagonales_principales
       Diccionario_de_frecuencias
       Diferencia_simetrica
+      Distancia_entre_dos_puntos
       Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario
       Disyuncion_excluyente
       Division_segura
