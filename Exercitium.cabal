@@ -239,6 +239,7 @@ test-suite Exercitium-test
       Diagonales_principales_Spec
       Diccionario_de_frecuencias_Spec
       Diferencia_simetrica_Spec
+      Distancia_entre_dos_puntos_Spec
       Disyuncion_excluyente_Spec
       Division_segura_Spec
       Duplicacion_de_cada_elemento_Spec
