@@ -29,10 +29,25 @@ distancia (x1,y1) (x2,y2) = sqrt((x1-x2)^2+(y1-y2)^2)
 
 -- La propiedad es
 prop_triangular :: (Double,Double) -> (Double,Double) -> (Double,Double)
-                -> Bool
+                -> Property
 prop_triangular p1 p2 p3 =
+    all acotado [p1, p2, p3] ==>
     distancia p1 p3 <= distancia p1 p2 + distancia p2 p3
+    where acotado (x, y) = abs x < cota && abs y < cota
+          cota = 2^30
 
 -- La comprobación es
 --    ghci> quickCheck prop_triangular
 --    +++ OK, passed 100 tests.
+
+-- Nota: Por problemas de redondeo, la propiedad no se cumple en
+-- general. Por ejemplo,
+--    λ> p1 = (0, 9147936743096483)
+--    λ> p2 = (0, 3)
+--    λ> p3 = (0, 2)
+--    λ> distancia p1 p3 <= distancia p1 p2 + distancia p2 p3
+--    False
+--    λ> distancia p1 p3
+--    9.147936743096482e15
+--    λ> distancia p1 p2 + distancia p2 p3
+--    9.14793674309648e15
