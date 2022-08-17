@@ -13,7 +13,11 @@
 --    divisionSegura 7 0  ==  9999.0
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Division_segura where
+
+import Test.QuickCheck
 
 -- 1ª definición
 divisionSegura1 :: Double -> Double -> Double
@@ -24,3 +28,15 @@ divisionSegura1 x y =
 divisionSegura2 :: Double -> Double -> Double
 divisionSegura2 _ 0 = 9999
 divisionSegura2 x y = x/y
+
+-- Comprobación de equivalencia
+-- ============================
+
+-- La propiedad es
+prop_divisionSegura :: Double -> Double -> Bool
+prop_divisionSegura x y =
+  divisionSegura1 x y == divisionSegura2 x y
+
+-- La comprobación es
+--    λ> quickCheck prop_divisionSegura
+--    +++ OK, passed 100 tests.
