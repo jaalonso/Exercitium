@@ -122,6 +122,7 @@ library
       Pares_adyacentes_iguales
       Particiones_de_enteros_positivos
       Particiones_en_k_subconjuntos
+      Permutacion_ciclica
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
       Posiciones_diagonales_principales
