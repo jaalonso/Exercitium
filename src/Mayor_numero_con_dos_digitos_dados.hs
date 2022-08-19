@@ -15,8 +15,6 @@
 
 module Mayor_numero_con_dos_digitos_dados where
 
-import Test.QuickCheck
-
 -- 1ª definición:
 numeroMayor1 :: Int -> Int -> Int
 numeroMayor1 x y = 10 * max x y + min x y
