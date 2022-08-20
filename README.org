@@ -170,7 +170,7 @@ Los objetivos de esta recopilación son:
 + M06-09-22 [[./src/Distancia_entre_dos_puntos.hs][Distancia entre dos puntos]].
 + X07-09-22 [[./src/Permutacion_ciclica.hs][Permutación cíclica]].
 + J08-09-22 [[./src/Mayor_numero_con_dos_digitos_dados.hs][Mayor número con dos dígitos dados]].
-+ V09-09-22 [[-/src/Numero_de_raices_de_la_ecuacion_de_segundo_grado.hs][Número de raíces de la ecuación de segundo grado]].
++ V09-09-22 [[./src/Numero_de_raices_de_la_ecuacion_de_segundo_grado.hs][Número de raíces de la ecuación de segundo grado]].
 
 + ???-??-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 
