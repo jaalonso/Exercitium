@@ -18,6 +18,7 @@
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-type-defaults #-}
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
 module Raices_de_la_ecuacion_de_segundo_grado where
 
