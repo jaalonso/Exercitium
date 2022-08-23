@@ -146,18 +146,18 @@ Los objetivos de esta recopilación son:
 
 * Introducción a la programación con Haskell y Python
 
-+ L08-08-22 [[./src/Media_aritmetica_de_tres_numeros.hs][Media aritmética de tres números]]
-+ M09-08-22 [[./src/Suma_de_monedas.hs][Suma de monedas]].
-+ X10-08-22 [[./src/Volumen_de_la_esfera.hs][Volumen de la esfera]].
-+ J11-08-22 [[./src/Area_corona_circular.hs][Área de la corona circular]].
-+ V12-08-22 [[./src/Ultimo_digito.hs][Último dígito]].
-+ L15-08-22 [[./src/Maximo_de_tres_numeros.hs][Máximo de tres números]].
-+ M16-08-22 [[./src/El_primero_al_final.hs][El primero al final]].
-+ X17-08-22 [[./src/Los_primeros_al_final.hs][Los primeros al final]].
-+ J18-08-22 [[./src/Rango_de_una_lista.hs][Rango de una lista]].
-+ V19-08-02 [[./src/Reconocimiento_de_palindromos.hs][Reconocimiento de palíndromos]].
-+ L22-08-22 [[./src/Interior_de_una_lista.hs][Interior de una lista]].
-+ M23-08-22 [[./src/Elementos_finales.hs][Elementos finales]].
++ 08-08-22 [[./src/Media_aritmetica_de_tres_numeros.hs][Media aritmética de tres números]]
++ 09-08-22 [[./src/Suma_de_monedas.hs][Suma de monedas]].
++ 10-08-22 [[./src/Volumen_de_la_esfera.hs][Volumen de la esfera]].
++ 11-08-22 [[./src/Area_corona_circular.hs][Área de la corona circular]].
++ 12-08-22 [[./src/Ultimo_digito.hs][Último dígito]].
++ 15-08-22 [[./src/Maximo_de_tres_numeros.hs][Máximo de tres números]].
++ 16-08-22 [[./src/El_primero_al_final.hs][El primero al final]].
++ 17-08-22 [[./src/Los_primeros_al_final.hs][Los primeros al final]].
++ 18-08-22 [[./src/Rango_de_una_lista.hs][Rango de una lista]].
++ 19-08-02 [[./src/Reconocimiento_de_palindromos.hs][Reconocimiento de palíndromos]].
++ 22-08-22 [[./src/Interior_de_una_lista.hs][Interior de una lista]].
++ 23-08-22 [[./src/Elementos_finales.hs][Elementos finales]].
 + X24-08-22 [[./src/Segmento_de_una_lista.hs][Segmento de una lista]].
 + J25-08-22 [[./src/Primeros_y_ultimos_elementos.hs][Primeros y últimos elementos]].
 + V26-08-22 [[./src/Elemento_mediano.hs][Elemento mediano]].
@@ -173,6 +173,7 @@ Los objetivos de esta recopilación son:
 + V09-09-22 [[./src/Numero_de_raices_de_la_ecuacion_de_segundo_grado.hs][Número de raíces de la ecuación de segundo grado]].
 + L12-09-22 [[./src/Raices_de_la_ecuacion_de_segundo_grado.hs][Raíces de la ecuación de segundo grado]].
 + M13-09-22 [[./src/Formula_de_Heron_para_el_area_de_un_triangulo.hs][Fórmula de Herón para el área de un triángulo]].
++ J14-09-22 [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
 
 + ???-??-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 
