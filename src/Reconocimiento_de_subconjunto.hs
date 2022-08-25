@@ -21,22 +21,22 @@ import Data.List (nub, sort)
 import Data.Set (fromList, isSubsetOf)
 import Test.QuickCheck
 
--- 1ª definición
+-- 1ª solución
 subconjunto1 :: Ord a => [a] -> [a] -> Bool
 subconjunto1 xs ys =
   [x | x <- xs, x `elem` ys] == xs
 
--- 2ª definición
+-- 2ª solución
 subconjunto2 :: Ord a => [a] -> [a] -> Bool
 subconjunto2 []     _  = True
 subconjunto2 (x:xs) ys = x `elem` ys && subconjunto2 xs ys
 
--- 3ª definición
+-- 3ª solución
 subconjunto3 :: Ord a => [a] -> [a] -> Bool
 subconjunto3 xs ys =
   all (`elem` ys) xs
 
--- 4ª definición
+-- 4ª solución
 subconjunto4 :: Ord a => [a] -> [a] -> Bool
 subconjunto4 xs ys =
   fromList xs `isSubsetOf` fromList ys
