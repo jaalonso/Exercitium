@@ -159,7 +159,7 @@ Los objetivos de esta recopilación son:
 + 22-08-22 [[./src/Interior_de_una_lista.hs][Interior de una lista]].
 + 23-08-22 [[./src/Elementos_finales.hs][Elementos finales]].
 + 24-08-22 [[./src/Segmento_de_una_lista.hs][Segmento de una lista]].
-+ J25-08-22 [[./src/Primeros_y_ultimos_elementos.hs][Primeros y últimos elementos]].
++ 25-08-22 [[./src/Primeros_y_ultimos_elementos.hs][Primeros y últimos elementos]].
 + V26-08-22 [[./src/Elemento_mediano.hs][Elemento mediano]].
 + L29-08-22 [[./src/Tres_iguales.hs][Tres iguales]].
 + M30-08-22 [[./src/Tres_diferentes.hs][Tres diferentes]].
@@ -173,10 +173,9 @@ Los objetivos de esta recopilación son:
 + V09-09-22 [[./src/Numero_de_raices_de_la_ecuacion_de_segundo_grado.hs][Número de raíces de la ecuación de segundo grado]].
 + L12-09-22 [[./src/Raices_de_la_ecuacion_de_segundo_grado.hs][Raíces de la ecuación de segundo grado]].
 + M13-09-22 [[./src/Formula_de_Heron_para_el_area_de_un_triangulo.hs][Fórmula de Herón para el área de un triángulo]].
-+ J14-09-22 [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
-+ V15-09-22 [[./src/Numeros_racionales.hs][Números racionales]].
-
-+ ???-??-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
++ x14-09-22 [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
++ J15-09-22 [[./src/Numeros_racionales.hs][Números racionales]].
++ V26-09-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 
 * Próximos
 
