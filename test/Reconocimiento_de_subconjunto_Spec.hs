@@ -20,5 +20,4 @@ spec = do
   describe "def. 2" $ specG subconjunto2
   describe "def. 3" $ specG subconjunto3
   describe "def. 4" $ specG subconjunto4
-  describe "def. 4" $ specG subconjunto5
   describe "equivalencia" $ it "p1" $ property prop_subconjunto
