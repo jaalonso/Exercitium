@@ -37,8 +37,8 @@ subconjunto3 xs ys =
   all (`elem` ys) xs
 
 -- 4ª definición
-subconjunto5 :: Ord a => [a] -> [a] -> Bool
-subconjunto5 xs ys =
+subconjunto4 :: Ord a => [a] -> [a] -> Bool
+subconjunto4 xs ys =
   fromList xs `isSubsetOf` fromList ys
 
 -- Comprobación de equivalencia
