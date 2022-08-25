@@ -1,7 +1,7 @@
 -- Reconocimiento_de_subconjunto.hs
 -- Reconocimiento de subconjunto.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 31-agosto-2022
+-- Sevilla, 16-septiembre-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -37,15 +37,6 @@ subconjunto3 xs ys =
   all (`elem` ys) xs
 
 -- 4ª definición
-subconjunto4 :: Ord a => [a] -> [a] -> Bool
-subconjunto4 xs ys = aux (sort (nub xs)) (sort (nub ys))
-  where
-    aux []       _                   = True
-    aux _        []                  = False
-    aux zs@(x:xs') (y:ys') | x == y    = aux xs' ys'
-                           | otherwise = aux zs ys'
-
--- 5ª definición
 subconjunto5 :: Ord a => [a] -> [a] -> Bool
 subconjunto5 xs ys =
   fromList xs `isSubsetOf` fromList ys
@@ -59,8 +50,7 @@ prop_subconjunto xs ys =
   all (== subconjunto1 xs ys)
       [subconjunto2 xs ys,
        subconjunto3 xs ys,
-       subconjunto4 xs ys,
-       subconjunto5 xs ys]
+       subconjunto4 xs ys]
 
 -- La comprobación es
 --    λ> quickCheck prop_subconjunto
@@ -80,8 +70,5 @@ prop_subconjunto xs ys =
 --    True
 --    (1.75 secs, 4,712,304 bytes)
 --    λ> subconjunto4 [1..2*10^4] [1..2*10^4]
---    True
---    (3.97 secs, 11,912,816 bytes)
---    λ> subconjunto5 [1..2*10^4] [1..2*10^4]
 --    True
 --    (0.04 secs, 6,312,056 bytes)
