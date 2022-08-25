@@ -175,7 +175,7 @@ Los objetivos de esta recopilación son:
 + M13-09-22 [[./src/Formula_de_Heron_para_el_area_de_un_triangulo.hs][Fórmula de Herón para el área de un triángulo]].
 + x14-09-22 [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
 + J15-09-22 [[./src/Numeros_racionales.hs][Números racionales]].
-+ V26-09-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
++ V16-09-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 
 * Próximos
 
