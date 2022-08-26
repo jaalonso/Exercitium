@@ -265,6 +265,7 @@ test-suite Exercitium-test
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
       Huecos_maximales_entre_primos_Spec
+      Igualdad_de_conjuntos_Spec
       Iguales_al_siguiente_Spec
       Indices_verdaderos_Spec
       Intercambio_de_componentes_de_un_par_Spec
