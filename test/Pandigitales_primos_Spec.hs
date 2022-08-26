@@ -15,9 +15,8 @@ specG pandigitalesPrimos = do
   it "e3" $
     length pandigitalesPrimos       `shouldBe`  538
 
-
 spec :: Spec
 spec = do
-  describe "def. 1" $ specG pandigitalesPrimos1
+  -- describe "def. 1" $ specG pandigitalesPrimos1
   describe "def. 2" $ specG pandigitalesPrimos2
   describe "def. 3" $ specG pandigitalesPrimos3
