@@ -7,8 +7,8 @@
 -- ---------------------------------------------------------------------
 -- Definir la función
 --    union :: Ord a => [a] -> [a] -> [a]
--- tal que (union xs ys) es la unión de los conjuntos xs e ys. Por
--- ejemplo,
+-- tal que (union xs ys) es la unión de las listas sin elementos
+-- repetidos xs e ys. Por ejemplo,
 --    union [3,2,5] [5,7,3,4]  ==  [3,2,5,7,4]
 --
 -- Comprobar con QuickCheck que la unión es conmutativa.
