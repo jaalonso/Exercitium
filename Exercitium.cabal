@@ -371,6 +371,7 @@ test-suite Exercitium-test
       Tres_iguales_Spec
       Triangulares_con_cifras_Spec
       Ultimo_digito_Spec
+      Union_conjuntista_de_listas_Spec
       Union_e_interseccion_general_Spec
       Valor_de_un_polinomio_Spec
       Volumen_de_la_esfera_Spec
