@@ -177,6 +177,7 @@ Los objetivos de esta recopilación son:
 + J15-09-22 [[./src/Numeros_racionales.hs][Números racionales]].
 + V16-09-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 + L19-09-22 [[./src/Igualdad_de_conjuntos.hs][Igualdad de conjuntos]].
++ M20-09-22 [[./src/Union_conjuntista_de_listas.hs][Unión conjuntista de listas]].
 
 * Próximos
 
