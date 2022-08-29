@@ -96,7 +96,7 @@ prop_union_conmutativa xs ys =
 --    iguales [3,2,3] [2,3]    ==  True
 --    iguales [3,2,3] [2,3,2]  ==  True
 --    iguales [3,2,3] [2,3,4]  ==  False
---    iguales [2,3] [4,5]      ==  Falseiguales :: Ord a => [a] -> [a] -> Bool
+--    iguales [2,3] [4,5]      ==  False
 iguales :: Ord a => [a] -> [a] -> Bool
 iguales xs ys =
   S.fromList xs == S.fromList ys
