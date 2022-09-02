@@ -78,6 +78,7 @@ library
       Indices_verdaderos
       Intercambio_de_componentes_de_un_par
       Interior_de_una_lista
+      Interseccion_conjuntista_de_listas
       Interseccion_de_intervalos_cerrados
       Intersecciones_parciales
       La_funcion_indicatriz_de_Euler
