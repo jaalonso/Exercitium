@@ -249,6 +249,7 @@ test-suite Exercitium-test
       Descomposiciones_triangulares_Spec
       Diagonales_principales_Spec
       Diccionario_de_frecuencias_Spec
+      Diferencia_conjuntista_de_listas_Spec
       Diferencia_simetrica_Spec
       Distancia_entre_dos_puntos_Spec
       Disyuncion_excluyente_Spec
