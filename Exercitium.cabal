@@ -52,6 +52,7 @@ library
       Descomposiciones_triangulares
       Diagonales_principales
       Diccionario_de_frecuencias
+      Diferencia_conjuntista_de_listas
       Diferencia_simetrica
       Distancia_entre_dos_puntos
       Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario
