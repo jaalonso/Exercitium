@@ -160,13 +160,13 @@ Los objetivos de esta recopilación son:
 + 23-08-22 [[./src/Elementos_finales.hs][Elementos finales]].
 + 24-08-22 [[./src/Segmento_de_una_lista.hs][Segmento de una lista]].
 + 25-08-22 [[./src/Primeros_y_ultimos_elementos.hs][Primeros y últimos elementos]].
-+ V26-08-22 [[./src/Elemento_mediano.hs][Elemento mediano]].
-+ L29-08-22 [[./src/Tres_iguales.hs][Tres iguales]].
-+ M30-08-22 [[./src/Tres_diferentes.hs][Tres diferentes]].
-+ X31-08-22 [[./src/Division_segura.hs][División segura]].
-+ J01-09-22 [[./src/Disyuncion_excluyente.hs][Disyunción excluyente]].
-+ V02-09-22 [[./src/Mayor_rectangulo.hs][Mayor rectángulo]].
-+ L05-09-22 [[./src/Intercambio_de_componentes_de_un_par.hs][Intercambio de componentes de un par]].
++ 26-08-22 [[./src/Elemento_mediano.hs][Elemento mediano]].
++ 29-08-22 [[./src/Tres_iguales.hs][Tres iguales]].
++ 30-08-22 [[./src/Tres_diferentes.hs][Tres diferentes]].
++ 31-08-22 [[./src/Division_segura.hs][División segura]].
++ 01-09-22 [[./src/Disyuncion_excluyente.hs][Disyunción excluyente]].
++ 02-09-22 [[./src/Mayor_rectangulo.hs][Mayor rectángulo]].
++ 05-09-22 [[./src/Intercambio_de_componentes_de_un_par.hs][Intercambio de componentes de un par]].
 + M06-09-22 [[./src/Distancia_entre_dos_puntos.hs][Distancia entre dos puntos]].
 + X07-09-22 [[./src/Permutacion_ciclica.hs][Permutación cíclica]].
 + J08-09-22 [[./src/Mayor_numero_con_dos_digitos_dados.hs][Mayor número con dos dígitos dados]].
@@ -180,6 +180,7 @@ Los objetivos de esta recopilación son:
 + M20-09-22 [[./src/Union_conjuntista_de_listas.hs][Unión conjuntista de listas]].
 + X21-09-22 [[./src/Interseccion_conjuntista_de_listas.hs][Intersección conjuntista de listas]].
 + J22-09-22 [[./src/Diferencia_conjuntista_de_listas.hs][Diferencia conjuntista de listas]].
++ V23-09-22 [[./src/Divisores_primos.hs][Divisores primos]].
 
 * Próximos
 
