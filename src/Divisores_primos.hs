@@ -97,8 +97,8 @@ divisoresPrimos4 = nub . primeFactors
 -- ============================
 
 -- La propiedad es
-prop_divisoresPrimo :: Integer -> Property
-prop_divisoresPrimo n =
+prop_divisoresPrimos :: Integer -> Property
+prop_divisoresPrimos n =
   n > 1 ==>
   all (== divisoresPrimos1 n)
       [divisoresPrimos2 n,
@@ -106,7 +106,7 @@ prop_divisoresPrimo n =
        divisoresPrimos4 n]
 
 -- La comprobación es
---    λ> quickCheck prop_divisoresPrimo
+--    λ> quickCheck prop_divisoresPrimos
 --    +++ OK, passed 100 tests; 108 discarded.
 
 -- Comparación de eficiencia
