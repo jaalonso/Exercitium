@@ -87,11 +87,30 @@ primo3 :: Integer -> Bool
 primo3 1 = False
 primo3 n = primerosDivisores3 n == [1]
 
--- 4ª solución
+-- 5ª solución
 -- ===========
 
 divisoresPrimos4 :: Integer -> [Integer]
-divisoresPrimos4 = nub . primeFactors
+divisoresPrimos4 1 = []
+divisoresPrimos4 n
+  | even n = 2 : divisoresPrimos4 (reducido n 2)
+  | otherwise = aux n [3,5..n]
+  where aux _ [] = []
+        aux m (x:xs) | m `mod` x == 0 = x : aux (reducido m x) xs
+                     | otherwise      = aux m xs
+
+-- (reducido m x) es el resultado de dividir repetidamente m por x,
+-- mientras sea divisible. Por ejemplo,
+--    reducido 36 2  ==  9
+reducido :: Integer -> Integer -> Integer
+reducido m x | m `mod` x == 0 = reducido (m `div` x) x
+             | otherwise      = m
+
+-- 5ª solución
+-- ===========
+
+divisoresPrimos5 :: Integer -> [Integer]
+divisoresPrimos5 = nub . primeFactors
 
 -- Comprobación de equivalencia
 -- ============================
@@ -103,7 +122,8 @@ prop_divisoresPrimos n =
   all (== divisoresPrimos1 n)
       [divisoresPrimos2 n,
        divisoresPrimos3 n,
-       divisoresPrimos4 n]
+       divisoresPrimos4 n,
+       divisoresPrimos5 n]
 
 -- La comprobación es
 --    λ> quickCheck prop_divisoresPrimos
@@ -122,6 +142,12 @@ prop_divisoresPrimos n =
 --    λ> divisoresPrimos3 (product [1..11])
 --    [2,3,5,7,11]
 --    (0.02 secs, 2,078,288 bytes)
+--    λ> divisoresPrimos4 (product [1..11])
+--    [2,3,5,7,11]
+--    (0.07 secs, 21,146,816 bytes)
+--    λ> divisoresPrimos5 (product [1..11])
+--    [2,3,5,7,11]
+--    (0.01 secs, 568,000 bytes)
 --
 --    λ> divisoresPrimos2 (product [1..16])
 --    [2,3,5,7,11,13]
@@ -129,6 +155,6 @@ prop_divisoresPrimos n =
 --    λ> divisoresPrimos3 (product [1..16])
 --    [2,3,5,7,11,13]
 --    (0.80 secs, 556,961,088 bytes)
---    λ> divisoresPrimos4 (product [1..16])
+--    λ> divisoresPrimos5 (product [1..16])
 --    [2,3,5,7,11,13]
 --    (0.01 secs, 31,665,896 bytes)
