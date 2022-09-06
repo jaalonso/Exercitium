@@ -181,6 +181,7 @@ Los objetivos de esta recopilación son:
 + X21-09-22 [[./src/Interseccion_conjuntista_de_listas.hs][Intersección conjuntista de listas]].
 + J22-09-22 [[./src/Diferencia_conjuntista_de_listas.hs][Diferencia conjuntista de listas]].
 + V23-09-22 [[./src/Divisores_primos.hs][Divisores primos]].
++ L26-09-22 [[./src/Numeros_libres_de_cuadrados.md][Números libres de cuadrados]].
 
 * Próximos
 
