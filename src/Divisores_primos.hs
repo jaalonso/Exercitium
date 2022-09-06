@@ -10,7 +10,7 @@
 -- tal que (divisoresPrimos x) es la lista de los divisores primos de x.
 -- Por ejemplo,
 --    divisoresPrimos 40 == [2,5]
---    divisoresPrimos 70 == [2,5,7]
+--    divisoresPrimos 70 == [2,5,7]w
 --    length (divisoresPrimos (product [1..20000])) == 2262
 -- ------------------------------------------------------------------------
 
