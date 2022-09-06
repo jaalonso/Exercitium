@@ -87,7 +87,7 @@ primo3 :: Integer -> Bool
 primo3 1 = False
 primo3 n = primerosDivisores3 n == [1]
 
--- 5ª solución
+-- 4ª solución
 -- ===========
 
 divisoresPrimos4 :: Integer -> [Integer]
@@ -95,7 +95,8 @@ divisoresPrimos4 1 = []
 divisoresPrimos4 n
   | even n = 2 : divisoresPrimos4 (reducido n 2)
   | otherwise = aux n [3,5..n]
-  where aux _ [] = []
+  where aux 1 _  = []
+        aux _ [] = []
         aux m (x:xs) | m `mod` x == 0 = x : aux (reducido m x) xs
                      | otherwise      = aux m xs
 
@@ -144,7 +145,7 @@ prop_divisoresPrimos n =
 --    (0.02 secs, 2,078,288 bytes)
 --    λ> divisoresPrimos4 (product [1..11])
 --    [2,3,5,7,11]
---    (0.07 secs, 21,146,816 bytes)
+--    (0.02 secs, 565,992 bytes)
 --    λ> divisoresPrimos5 (product [1..11])
 --    [2,3,5,7,11]
 --    (0.01 secs, 568,000 bytes)
@@ -155,6 +156,16 @@ prop_divisoresPrimos n =
 --    λ> divisoresPrimos3 (product [1..16])
 --    [2,3,5,7,11,13]
 --    (0.80 secs, 556,961,088 bytes)
+--    λ> divisoresPrimos4 (product [1..16])
+--    [2,3,5,7,11,13]
+--    (0.01 secs, 572,368 bytes)
 --    λ> divisoresPrimos5 (product [1..16])
 --    [2,3,5,7,11,13]
 --    (0.01 secs, 31,665,896 bytes)
+--
+--    λ> length (divisoresPrimos4 (product [1..20000]))
+--    2262
+--    (1.20 secs, 1,940,069,976 bytes)
+--    λ> length (divisoresPrimos5 (product [1..20000]))
+--    2262
+--    (1.12 secs, 1,955,921,736 bytes)
