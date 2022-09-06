@@ -91,7 +91,6 @@ primo3 n = primerosDivisores3 n == [1]
 -- ===========
 
 divisoresPrimos4 :: Integer -> [Integer]
-divisoresPrimos4 1 = []
 divisoresPrimos4 n
   | even n = 2 : divisoresPrimos4 (reducido n 2)
   | otherwise = aux n [3,5..n]
