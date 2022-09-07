@@ -364,6 +364,7 @@ test-suite Exercitium-test
       Suma_de_divisores_Spec
       Suma_de_fila_del_triangulo_de_los_impares_Spec
       Suma_de_los_elementos_de_las_diagonales_matrices_espirales_Spec
+      Suma_de_los_primeros_numeros_naturales_Spec
       Suma_de_monedas_Spec
       Suma_de_multiplos_de_3_o_de_5_Spec
       Suma_de_numeros_amigos_menores_que_n_Spec
