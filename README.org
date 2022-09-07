@@ -182,6 +182,7 @@ Los objetivos de esta recopilación son:
 + J22-09-22 [[./src/Diferencia_conjuntista_de_listas.hs][Diferencia conjuntista de listas]].
 + V23-09-22 [[./src/Divisores_primos.hs][Divisores primos]].
 + L26-09-22 [[./src/Numeros_libres_de_cuadrados.hs][Números libres de cuadrados]].
++ M27-09-22 [[./src/Suma_de_los_primeros_numeros_naturales.hs][Suma de los primeros números naturales]].
 
 * Próximos
 
