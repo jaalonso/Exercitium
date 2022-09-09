@@ -167,10 +167,10 @@ Los objetivos de esta recopilación son:
 + 01-09-22 [[./src/Disyuncion_excluyente.hs][Disyunción excluyente]].
 + 02-09-22 [[./src/Mayor_rectangulo.hs][Mayor rectángulo]].
 + 05-09-22 [[./src/Intercambio_de_componentes_de_un_par.hs][Intercambio de componentes de un par]].
-+ M06-09-22 [[./src/Distancia_entre_dos_puntos.hs][Distancia entre dos puntos]].
-+ X07-09-22 [[./src/Permutacion_ciclica.hs][Permutación cíclica]].
-+ J08-09-22 [[./src/Mayor_numero_con_dos_digitos_dados.hs][Mayor número con dos dígitos dados]].
-+ V09-09-22 [[./src/Numero_de_raices_de_la_ecuacion_de_segundo_grado.hs][Número de raíces de la ecuación de segundo grado]].
++ 06-09-22 [[./src/Distancia_entre_dos_puntos.hs][Distancia entre dos puntos]].
++ 07-09-22 [[./src/Permutacion_ciclica.hs][Permutación cíclica]].
++ 08-09-22 [[./src/Mayor_numero_con_dos_digitos_dados.hs][Mayor número con dos dígitos dados]].
++ 09-09-22 [[./src/Numero_de_raices_de_la_ecuacion_de_segundo_grado.hs][Número de raíces de la ecuación de segundo grado]].
 + L12-09-22 [[./src/Raices_de_la_ecuacion_de_segundo_grado.hs][Raíces de la ecuación de segundo grado]].
 + M13-09-22 [[./src/Formula_de_Heron_para_el_area_de_un_triangulo.hs][Fórmula de Herón para el área de un triángulo]].
 + x14-09-22 [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
@@ -184,7 +184,7 @@ Los objetivos de esta recopilación son:
 + L26-09-22 [[./src/Numeros_libres_de_cuadrados.hs][Números libres de cuadrados]].
 + M27-09-22 [[./src/Suma_de_los_primeros_numeros_naturales.hs][Suma de los primeros números naturales]].
 + M28-09-22 [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
-+ X20-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
++ X29-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
 
 * Próximos
 
