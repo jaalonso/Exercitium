@@ -173,7 +173,7 @@ Los objetivos de esta recopilación son:
 + 09-09-22 [[./src/Numero_de_raices_de_la_ecuacion_de_segundo_grado.hs][Número de raíces de la ecuación de segundo grado]].
 + L12-09-22 [[./src/Raices_de_la_ecuacion_de_segundo_grado.hs][Raíces de la ecuación de segundo grado]].
 + M13-09-22 [[./src/Formula_de_Heron_para_el_area_de_un_triangulo.hs][Fórmula de Herón para el área de un triángulo]].
-+ x14-09-22 [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
++ X14-09-22 [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
 + J15-09-22 [[./src/Numeros_racionales.hs][Números racionales]].
 + V16-09-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 + L19-09-22 [[./src/Igualdad_de_conjuntos.hs][Igualdad de conjuntos]].
