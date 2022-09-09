@@ -184,6 +184,7 @@ Los objetivos de esta recopilación son:
 + L26-09-22 [[./src/Numeros_libres_de_cuadrados.hs][Números libres de cuadrados]].
 + M27-09-22 [[./src/Suma_de_los_primeros_numeros_naturales.hs][Suma de los primeros números naturales]].
 + M28-09-22 [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
++ X20-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
 
 * Próximos
 
