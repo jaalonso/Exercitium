@@ -363,6 +363,7 @@ test-suite Exercitium-test
       Sucesion_de_suma_de_cuadrados_de_los_digitos_Spec
       Suma_alterna_de_factoriales_Spec
       Suma_de_cadenas_Spec
+      Suma_de_cuadrados_menos_cuadrado_de_la_suma_Spec
       Suma_de_divisores_Spec
       Suma_de_fila_del_triangulo_de_los_impares_Spec
       Suma_de_los_cuadrados_de_los_primeros_numeros_naturales_Spec
