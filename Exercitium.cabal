@@ -385,6 +385,7 @@ test-suite Exercitium-test
       Tres_diferentes_Spec
       Tres_iguales_Spec
       Triangulares_con_cifras_Spec
+      Triangulo_aritmetico_Spec
       Ultimo_digito_Spec
       Union_conjuntista_de_listas_Spec
       Union_e_interseccion_general_Spec
