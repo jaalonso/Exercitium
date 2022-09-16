@@ -321,6 +321,7 @@ test-suite Exercitium-test
       Numeros_de_Pentanacci_Spec
       Numeros_libres_de_cuadrados_Spec
       Numeros_para_los_que_mcm_Spec
+      Numeros_perfectos_Spec
       Numeros_primos_de_Hilbert_Spec
       Ordenacion_de_estructuras_Spec
       Ordenacion_de_los_racionales_Spec
