@@ -187,6 +187,7 @@ Los objetivos de esta recopilación son:
 + X29-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
 + J30-09-22 [[./src/Triangulo_aritmetico.hs][Triángulo aritmético]].
 + L03-10-22 [[./src/Numeros_perfectos.hs][Números perfectos]].
++ M04-10-22 [[./src/Numeros_abundantes.hs][Números abundantes]].
 
 * Próximos
 
