@@ -263,6 +263,7 @@ test-suite Exercitium-test
       Distancia_entre_dos_puntos_Spec
       Disyuncion_excluyente_Spec
       Division_segura_Spec
+      Divisores_de_un_numero_Spec
       Divisores_primos_Spec
       Duplicacion_de_cada_elemento_Spec
       El_primero_al_final_Spec
