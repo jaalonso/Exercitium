@@ -20,5 +20,6 @@ spec = do
   describe "def. 2" $ specG divisoresPrimos2
   describe "def. 3" $ specG divisoresPrimos3
   describe "def. 4" $ specG divisoresPrimos4
-  describe "def. 4" $ specG divisoresPrimos5
+  describe "def. 5" $ specG divisoresPrimos5
+  describe "def. 6" $ specG divisoresPrimos6
   describe "equivalencia" $ it "p1" $ property prop_divisoresPrimos
