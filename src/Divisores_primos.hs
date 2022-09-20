@@ -19,7 +19,9 @@
 module Divisores_primos where
 
 import Data.List (nub)
+import Data.Set (toList)
 import Data.Numbers.Primes (primeFactors)
+import Math.NumberTheory.ArithmeticFunctions (divisors)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -111,6 +113,12 @@ reducido m x | m `mod` x == 0 = reducido (m `div` x) x
 
 divisoresPrimos5 :: Integer -> [Integer]
 divisoresPrimos5 = nub . primeFactors
+
+-- 6ª solución
+-- ===========
+
+divisoresPrimos6 :: Integer -> [Integer]
+divisoresPrimos6 = filter isPrime (toList . divisors)
 
 -- Comprobación de equivalencia
 -- ============================
