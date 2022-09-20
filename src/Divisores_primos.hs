@@ -20,7 +20,7 @@ module Divisores_primos where
 
 import Data.List (nub)
 import Data.Set (toList)
-import Data.Numbers.Primes (primeFactors)
+import Data.Numbers.Primes (isPrime, primeFactors)
 import Math.NumberTheory.ArithmeticFunctions (divisors)
 import Test.QuickCheck
 
@@ -118,7 +118,7 @@ divisoresPrimos5 = nub . primeFactors
 -- ===========
 
 divisoresPrimos6 :: Integer -> [Integer]
-divisoresPrimos6 = filter isPrime (toList . divisors)
+divisoresPrimos6 = filter isPrime . toList . divisors
 
 -- Comprobación de equivalencia
 -- ============================
@@ -131,7 +131,8 @@ prop_divisoresPrimos n =
       [divisoresPrimos2 n,
        divisoresPrimos3 n,
        divisoresPrimos4 n,
-       divisoresPrimos5 n]
+       divisoresPrimos5 n,
+       divisoresPrimos6 n]
 
 -- La comprobación es
 --    λ> quickCheck prop_divisoresPrimos
@@ -156,6 +157,9 @@ prop_divisoresPrimos n =
 --    λ> divisoresPrimos5 (product [1..11])
 --    [2,3,5,7,11]
 --    (0.01 secs, 568,000 bytes)
+--    λ> divisoresPrimos6 (product [1..11])
+--    [2,3,5,7,11]
+--    (0.00 secs, 2,343,392 bytes)
 --
 --    λ> divisoresPrimos2 (product [1..16])
 --    [2,3,5,7,11,13]
@@ -169,6 +173,19 @@ prop_divisoresPrimos n =
 --    λ> divisoresPrimos5 (product [1..16])
 --    [2,3,5,7,11,13]
 --    (0.01 secs, 31,665,896 bytes)
+--    λ> divisoresPrimos6 (product [1..16])
+--    [2,3,5,7,11,13]
+--    (0.01 secs, 18,580,584 bytes)
+--
+--    λ> length (divisoresPrimos4 (product [1..30]))
+--    10
+--    (0.01 secs, 579,168 bytes)
+--    λ> length (divisoresPrimos5 (product [1..30]))
+--    10
+--    (0.01 secs, 594,976 bytes)
+--    λ> length (divisoresPrimos6 (product [1..30]))
+--    10
+--    (3.38 secs, 8,068,783,408 bytes)
 --
 --    λ> length (divisoresPrimos4 (product [1..20000]))
 --    2262
