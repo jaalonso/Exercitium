@@ -186,7 +186,7 @@ Los objetivos de esta recopilación son:
 + X28-09-22 [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
 + J29-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
 + V30-09-22 [[./src/Triangulo_aritmetico.hs][Triángulo aritmético]].
-+ S01-09-22 [[./src/Suma_de_divisores.hs][Suma de divisores]].
++ S01-10-22 [[./src/Suma_de_divisores.hs][Suma de divisores]].
 + L03-10-22 [[./src/Numeros_perfectos.hs][Números perfectos]].
 + M04-10-22 [[./src/Numeros_abundantes.hs][Números abundantes]].
 
