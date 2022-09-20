@@ -88,7 +88,6 @@ Los objetivos de esta recopilación son:
 + 11-05-22 [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].
 + 12-05-22 [[./src/Conjunto_de_divisores.hs][Conjunto de divisores]].
 + 13-05-22 [[./src/Numero_de_divisores.hs][Número de divisores]].
-+ 16-05-22 [[./src/Suma_de_divisores.hs][Suma de divisores]].
 + 17-05-22 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
 + 18-05-22 [[./src/Sumas_de_4_primos.hs][Sumas de 4 primos]].
 + 19-05-22 [[./src/Parejas_de_numeros_y_divisores.hs][Parejas de números y divisores]].
@@ -184,9 +183,10 @@ Los objetivos de esta recopilación son:
 + V23-09-22 [[./src/Divisores_primos.hs][Divisores primos]].
 + L26-09-22 [[./src/Numeros_libres_de_cuadrados.hs][Números libres de cuadrados]].
 + M27-09-22 [[./src/Suma_de_los_primeros_numeros_naturales.hs][Suma de los primeros números naturales]].
-+ M28-09-22 [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
-+ X29-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
-+ J30-09-22 [[./src/Triangulo_aritmetico.hs][Triángulo aritmético]].
++ X28-09-22 [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
++ J29-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
++ V30-09-22 [[./src/Triangulo_aritmetico.hs][Triángulo aritmético]].
++ S01-09-22 [[./src/Suma_de_divisores.hs][Suma de divisores]].
 + L03-10-22 [[./src/Numeros_perfectos.hs][Números perfectos]].
 + M04-10-22 [[./src/Numeros_abundantes.hs][Números abundantes]].
 
