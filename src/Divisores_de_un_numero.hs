@@ -22,7 +22,6 @@ import Data.List (group, inits, nub, sort, subsequences)
 import Data.Numbers.Primes (primeFactors)
 import Data.Set (toList)
 import Math.NumberTheory.ArithmeticFunctions (divisors)
-
 import Test.QuickCheck
 
 -- 1ª solución
