@@ -70,13 +70,28 @@ esPerfecto2 x =
 sumaDivisores2 :: Integer -> Integer
 sumaDivisores2 = sigma 1
 
+-- 3ª solución
+-- ===========
+
+perfectos3 :: Integer -> [Integer]
+perfectos3 n = filter esPerfecto2 [1..n]
+
+-- 4ª solución
+-- ===========
+
+perfectos4 :: Integer -> [Integer]
+perfectos4 = filter esPerfecto2 . enumFromTo 1
+
 -- Comprobación de equivalencia
 -- ============================
 
 -- La propiedad es
 prop_perfectos :: Positive Integer -> Bool
 prop_perfectos (Positive n) =
-  perfectos1 n == perfectos2 n
+  all (== perfectos1 n)
+      [perfectos2 n,
+       perfectos3 n,
+       perfectos4 n]
 
 -- La comprobación es
 --    λ> quickCheck prop_perfectos
@@ -92,3 +107,13 @@ prop_perfectos (Positive n) =
 --    λ> perfectos2 (4*10^3)
 --    [6,28,496]
 --    (0.02 secs, 9,167,208 bytes)
+--
+--    λ> perfectos2 (2*10^6)
+--    [6,28,496,8128]
+--    (3.32 secs, 5,120,880,728 bytes)
+--    λ> perfectos3 (2*10^6)
+--    [6,28,496,8128]
+--    (2.97 secs, 5,040,880,632 bytes)
+--    λ> perfectos4 (2*10^6)
+--    [6,28,496,8128]
+--    (2.80 secs, 5,040,880,608 bytes)
