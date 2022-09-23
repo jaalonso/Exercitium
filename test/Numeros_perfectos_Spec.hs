@@ -16,4 +16,6 @@ spec :: Spec
 spec = do
   describe "def. 1" $ specG perfectos1
   describe "def. 2" $ specG perfectos2
+  describe "def. 2" $ specG perfectos3
+  describe "def. 2" $ specG perfectos4
   describe "equivalencia" $ it "p1" $ property prop_perfectos
