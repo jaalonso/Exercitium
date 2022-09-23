@@ -18,9 +18,6 @@
 --    perfectos (10^5)  ==  [6,28,496,8128]
 -- ---------------------------------------------------------------------
 
-{-# OPTIONS_GHC -fno-warn-type-defaults #-}
-{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
-
 module Numeros_perfectos where
 
 import Math.NumberTheory.ArithmeticFunctions (sigma)
