@@ -16,6 +16,7 @@
 -- abundantes menores o iguales que n. Por ejemplo,
 --    numerosAbundantesMenores 50  ==  [12,18,20,24,30,36,40,42,48]
 --    numerosAbundantesMenores 48  ==  [12,18,20,24,30,36,40,42,48]
+--    length (numerosAbundantesMenores (10^6)) ==  247545
 -- ---------------------------------------------------------------------
 
 module Numeros_abundantes_menores_o_iguales_que_n where
@@ -112,3 +113,13 @@ prop_numerosAbundantesMenores (Positive n) =
 --    λ> length (numerosAbundantesMenores2 (5*10^3))
 --    1239
 --    (0.01 secs, 11,501,944 bytes)
+
+--    λ> length (numerosAbundantesMenores2 (10^6))
+--    247545
+--    (1.48 secs, 2,543,048,024 bytes)
+--    λ> length (numerosAbundantesMenores3 (10^6))
+--    247545
+--    (1.30 secs, 2,499,087,272 bytes)
+--    λ> length (numerosAbundantesMenores4 (10^6))
+--    247545
+--    (1.30 secs, 2,499,087,248 bytes)
