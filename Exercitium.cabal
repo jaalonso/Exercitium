@@ -317,6 +317,7 @@ test-suite Exercitium-test
       Numero_de_particiones_en_k_subconjuntos_Spec
       Numero_de_raices_de_la_ecuacion_de_segundo_grado_Spec
       Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados_Spec
+      Numeros_abundantes_menores_o_iguales_que_n_Spec
       Numeros_abundantes_Spec
       Numeros_amigos_Spec
       Numeros_autodescriptivos_Spec
