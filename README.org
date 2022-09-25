@@ -189,6 +189,7 @@ Los objetivos de esta recopilación son:
 + S01-10-22 [[./src/Suma_de_divisores.hs][Suma de divisores]].
 + L03-10-22 [[./src/Numeros_perfectos.hs][Números perfectos]].
 + M04-10-22 [[./src/Numeros_abundantes.hs][Números abundantes]].
++ X05-10-22 [[./src/Numeros_abundantes_menores_o_iguales_que_n.hs][Números abundantes menores o iguales que n]].
 
 * Próximos
 
