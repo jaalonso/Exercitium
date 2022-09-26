@@ -191,6 +191,7 @@ Los objetivos de esta recopilación son:
 + M04-10-22 [[./src/Numeros_abundantes.hs][Números abundantes]].
 + X05-10-22 [[./src/Numeros_abundantes_menores_o_iguales_que_n.hs][Números abundantes menores o iguales que n]].
 + J06-10-22 [[./src/Todos_los_abundantes_hasta_n_son_pares.hs][Todos los abundantes hasta n son pares]].
++ V07-10-22 [[./src/Numeros_abundantes_impares.hs][Números abundantes impares]].
 
 * Próximos
 
