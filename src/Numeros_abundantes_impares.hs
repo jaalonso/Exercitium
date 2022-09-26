@@ -8,7 +8,7 @@
 -- Definir la lista
 --   abundantesImpares :: [Integer]
 -- cuyos elementos son los números abundantes impares. Por ejemplo,
---    λ> take 12 abundantesImpares3
+--    λ> take 12 abundantesImpares
 --    [945,1575,2205,2835,3465,4095,4725,5355,5775,5985,6435,6615]
 -- ---------------------------------------------------------------------
 
