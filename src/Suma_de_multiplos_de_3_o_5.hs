@@ -85,9 +85,9 @@ euler1g :: Integer -> Integer
 euler1g n =
   suma 3 n + suma 5 n - suma 15 n
 
--- (suma d x) es la suma de los múltiplos de p menores que x. Por
+-- (suma d x) es la suma de los múltiplos de d menores que x. Por
 -- ejemplo,
-
+--    suma 3 20  ==  63
 suma :: Integer -> Integer -> Integer
 suma d x = (a+b)*n `div` 2
     where a = d
