@@ -170,19 +170,19 @@ Los objetivos de esta recopilación son:
 + 07-09-22 [[./src/Permutacion_ciclica.hs][Permutación cíclica]].
 + 08-09-22 [[./src/Mayor_numero_con_dos_digitos_dados.hs][Mayor número con dos dígitos dados]].
 + 09-09-22 [[./src/Numero_de_raices_de_la_ecuacion_de_segundo_grado.hs][Número de raíces de la ecuación de segundo grado]].
-+ L12-09-22 [[./src/Raices_de_la_ecuacion_de_segundo_grado.hs][Raíces de la ecuación de segundo grado]].
-+ M13-09-22 [[./src/Formula_de_Heron_para_el_area_de_un_triangulo.hs][Fórmula de Herón para el área de un triángulo]].
-+ X14-09-22 [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
-+ J15-09-22 [[./src/Numeros_racionales.hs][Números racionales]].
-+ V16-09-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
-+ L19-09-22 [[./src/Igualdad_de_conjuntos.hs][Igualdad de conjuntos]].
-+ M20-09-22 [[./src/Union_conjuntista_de_listas.hs][Unión conjuntista de listas]].
-+ X21-09-22 [[./src/Interseccion_conjuntista_de_listas.hs][Intersección conjuntista de listas]].
-+ J22-09-22 [[./src/Diferencia_conjuntista_de_listas.hs][Diferencia conjuntista de listas]].
-+ J22-09-22 [[./src/Divisores_de_un_numero.hs][Divisores de un número]].
-+ V23-09-22 [[./src/Divisores_primos.hs][Divisores primos]].
-+ L26-09-22 [[./src/Numeros_libres_de_cuadrados.hs][Números libres de cuadrados]].
-+ M27-09-22 [[./src/Suma_de_los_primeros_numeros_naturales.hs][Suma de los primeros números naturales]].
++ 12-09-22 [[./src/Raices_de_la_ecuacion_de_segundo_grado.hs][Raíces de la ecuación de segundo grado]].
++ 13-09-22 [[./src/Formula_de_Heron_para_el_area_de_un_triangulo.hs][Fórmula de Herón para el área de un triángulo]].
++ 14-09-22 [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
++ 15-09-22 [[./src/Numeros_racionales.hs][Números racionales]].
++ 16-09-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
++ 19-09-22 [[./src/Igualdad_de_conjuntos.hs][Igualdad de conjuntos]].
++ 20-09-22 [[./src/Union_conjuntista_de_listas.hs][Unión conjuntista de listas]].
++ 21-09-22 [[./src/Interseccion_conjuntista_de_listas.hs][Intersección conjuntista de listas]].
++ 22-09-22 [[./src/Diferencia_conjuntista_de_listas.hs][Diferencia conjuntista de listas]].
++ 22-09-22 [[./src/Divisores_de_un_numero.hs][Divisores de un número]].
++ 23-09-22 [[./src/Divisores_primos.hs][Divisores primos]].
++ 26-09-22 [[./src/Numeros_libres_de_cuadrados.hs][Números libres de cuadrados]].
++ 27-09-22 [[./src/Suma_de_los_primeros_numeros_naturales.hs][Suma de los primeros números naturales]].
 + X28-09-22 [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
 + J29-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
 + V30-09-22 [[./src/Triangulo_aritmetico.hs][Triángulo aritmético]].
@@ -192,6 +192,7 @@ Los objetivos de esta recopilación son:
 + X05-10-22 [[./src/Numeros_abundantes_menores_o_iguales_que_n.hs][Números abundantes menores o iguales que n]].
 + J06-10-22 [[./src/Todos_los_abundantes_hasta_n_son_pares.hs][Todos los abundantes hasta n son pares]].
 + V07-10-22 [[./src/Numeros_abundantes_impares.hs][Números abundantes impares]].
++ L10-10-22 [[./src/Suma_de_multiplos_de_3_o_5.hs][Suma de múltiplos de 3 ó 5]].
 
 * Próximos
 
