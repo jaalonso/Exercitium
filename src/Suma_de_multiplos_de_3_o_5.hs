@@ -71,14 +71,14 @@ euler1e :: Integer -> Integer
 euler1e n =
   sum ([3,6..n-1] `union` [5,10..n-1])
 
--- 7ª solución                                                        --
+-- 6ª solución                                                        --
 -- ===========
 
 euler1f :: Integer -> Integer
 euler1f n =
   sum (S.fromAscList [3,6..n-1] `S.union` S.fromAscList [5,10..n-1])
 
--- 6ª solución                                                      --
+-- 7ª solución                                                      --
 -- ===========
 
 euler1g :: Integer -> Integer
