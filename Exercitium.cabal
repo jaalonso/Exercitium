@@ -356,6 +356,7 @@ test-suite Exercitium-test
       Primos_equidistantes_Spec
       Producto_cartesiano_Spec
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
+      Puntos_dentro_del_circulo_Spec
       Puntos_en_regiones_rectangulares_Spec
       Raices_de_la_ecuacion_de_segundo_grado_Spec
       Rango_de_una_lista_Spec
