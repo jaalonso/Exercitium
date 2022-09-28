@@ -183,7 +183,7 @@ Los objetivos de esta recopilación son:
 + 23-09-22 [[./src/Divisores_primos.hs][Divisores primos]].
 + 26-09-22 [[./src/Numeros_libres_de_cuadrados.hs][Números libres de cuadrados]].
 + 27-09-22 [[./src/Suma_de_los_primeros_numeros_naturales.hs][Suma de los primeros números naturales]].
-+ X28-09-22 [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
++ 28-09-22 [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
 + J29-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
 + V30-09-22 [[./src/Triangulo_aritmetico.hs][Triángulo aritmético]].
 + S01-10-22 [[./src/Suma_de_divisores.hs][Suma de divisores]].
