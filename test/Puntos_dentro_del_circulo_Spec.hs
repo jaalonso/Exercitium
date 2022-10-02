@@ -10,13 +10,15 @@ main = hspec spec
 specG :: (Int -> Int) -> Spec
 specG circulo = do
   it "e1" $
-    circulo 3  `shouldBe`  9
+    circulo 1    `shouldBe`  3
   it "e2" $
-    circulo 4  `shouldBe`  15
+    circulo 2    `shouldBe`  6
   it "e3" $
-    circulo 5  `shouldBe`  22
+    circulo 3    `shouldBe`  11
   it "e4" $
-    circulo 100  `shouldBe`  7949
+    circulo 4    `shouldBe`  17
+  it "e5" $
+    circulo 100  `shouldBe`  7955
 
 spec :: Spec
 spec = do
