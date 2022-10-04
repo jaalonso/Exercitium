@@ -138,7 +138,7 @@ errorAproxE2 x = aux 1
 
 errorAproxE3 :: Double -> Int
 errorAproxE3 x =
-  round (head (filter (\ n -> abs (exp 1 - (1+1/n)**n) < x) [1..]))
+  round (head (dropWhile (\ n -> abs (exp 1 - (1+1/n)**n) >= x) [1..]))
 
 -- Comprobación de equivalencia de errorAproxE
 -- ===========================================
@@ -166,4 +166,4 @@ prop_errorAproxE (Positive x) =
 --    (1.79 secs, 739,637,704 bytes)
 --    λ> errorAproxE3 0.000001
 --    1358611
---    (1.44 secs, 609,211,200 bytes)
+--    (1.20 secs, 609,211,144 bytes)
