@@ -196,6 +196,7 @@ Los objetivos de esta recopilación son:
 + M11-10-22 [[./src/Puntos_dentro_del_circulo.hs][Puntos dentro del círculo]].
 + X12-10-22 [[./src/Aproximacion_del_numero_e.hs][Aproximación del número e]].
 + J13-10-22 [[./src/Limite_del_seno.hs][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
++ V14-10-22 [[./src/Calculo_de_pi_mediante_la_formula_de_Leibniz.hs][Cálculo del número π mediante la fórmula de Leibniz]].
 
 * Próximos
 
