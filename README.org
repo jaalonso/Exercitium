@@ -195,6 +195,7 @@ Los objetivos de esta recopilación son:
 + L10-10-22 [[./src/Suma_de_multiplos_de_3_o_5.hs][Suma de múltiplos de 3 ó 5]].
 + M11-10-22 [[./src/Puntos_dentro_del_circulo.hs][Puntos dentro del círculo]].
 + X12-10-22 [[./src/Aproximacion_del_numero_e.hs][Aproximación del número e]].
++ J13-10-22 [[./src/Limite_del_seno.hs][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
 
 * Próximos
 

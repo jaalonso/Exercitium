@@ -90,6 +90,7 @@ library
       La_sucesion_de_Ducci
       La_sucesion_de_Thue_Morse
       La_sucesion_del_reloj_astronomico_de_Praga
+      Limite_del_seno
       Lista_cuadrada
       Los_primeros_al_final
       Mas_repetido
@@ -298,6 +299,7 @@ test-suite Exercitium-test
       La_serie_de_Thue_Morse_Spec
       La_sucesion_de_Thue_Morse_Spec
       La_sucesion_del_reloj_astronomico_de_Praga_Spec
+      Limite_del_seno_Spec
       Lista_cuadrada_Spec
       Los_primeros_al_final_Spec
       Mas_repetido_Spec
