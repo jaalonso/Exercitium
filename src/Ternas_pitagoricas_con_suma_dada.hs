@@ -1,7 +1,7 @@
 -- Ternas_pitagoricas_con_suma_dada.hs
 -- Ternas pitagóricas con suma dada
 -- José A. Alonso Jiménez
--- Sevilla, 10-febrero-2022
+-- Sevilla, 18-octubre-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -55,7 +55,7 @@ ternasPitagoricas3 :: Integer -> [(Integer,Integer,Integer)]
 ternasPitagoricas3 x =
   nub [(d*a,d*b,d*c) | d <- [1..x],
                        x `mod` d == 0,
-                      (a,b,c) <- aux (x `div` d)]
+                       (a,b,c) <- aux (x `div` d)]
   where
     aux y = [(a,b,c) | m <- [2..limite],
                        n <- [1..m-1],
