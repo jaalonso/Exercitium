@@ -185,18 +185,19 @@ Los objetivos de esta recopilación son:
 + 27-09-22 [[./src/Suma_de_los_primeros_numeros_naturales.hs][Suma de los primeros números naturales]].
 + 28-09-22 [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
 + 29-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
-+ V30-09-22 [[./src/Triangulo_aritmetico.hs][Triángulo aritmético]].
++ 30-09-22 [[./src/Triangulo_aritmetico.hs][Triángulo aritmético]].
 + 01-10-22 [[./src/Suma_de_divisores.hs][Suma de divisores]].
-+ L03-10-22 [[./src/Numeros_perfectos.hs][Números perfectos]].
-+ M04-10-22 [[./src/Numeros_abundantes.hs][Números abundantes]].
-+ X05-10-22 [[./src/Numeros_abundantes_menores_o_iguales_que_n.hs][Números abundantes menores o iguales que n]].
-+ J06-10-22 [[./src/Todos_los_abundantes_hasta_n_son_pares.hs][Todos los abundantes hasta n son pares]].
-+ V07-10-22 [[./src/Numeros_abundantes_impares.hs][Números abundantes impares]].
-+ L10-10-22 [[./src/Suma_de_multiplos_de_3_o_5.hs][Suma de múltiplos de 3 ó 5]].
-+ M11-10-22 [[./src/Puntos_dentro_del_circulo.hs][Puntos dentro del círculo]].
-+ X12-10-22 [[./src/Aproximacion_del_numero_e.hs][Aproximación del número e]].
-+ J13-10-22 [[./src/Limite_del_seno.hs][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
++ 03-10-22 [[./src/Numeros_perfectos.hs][Números perfectos]].
++ 04-10-22 [[./src/Numeros_abundantes.hs][Números abundantes]].
++ 05-10-22 [[./src/Numeros_abundantes_menores_o_iguales_que_n.hs][Números abundantes menores o iguales que n]].
++ 06-10-22 [[./src/Todos_los_abundantes_hasta_n_son_pares.hs][Todos los abundantes hasta n son pares]].
++ 07-10-22 [[./src/Numeros_abundantes_impares.hs][Números abundantes impares]].
++ 10-10-22 [[./src/Suma_de_multiplos_de_3_o_5.hs][Suma de múltiplos de 3 ó 5]].
++ 11-10-22 [[./src/Puntos_dentro_del_circulo.hs][Puntos dentro del círculo]].
++ 12-10-22 [[./src/Aproximacion_del_numero_e.hs][Aproximación del número e]].
++ 13-10-22 [[./src/Limite_del_seno.hs][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
 + V14-10-22 [[./src/Calculo_de_pi_mediante_la_formula_de_Leibniz.hs][Cálculo del número π mediante la fórmula de Leibniz]].
++ L17-10-22 [[./src/Ternas_pitagoricas.hs][Ternas pitagóricas]].
 
 * Próximos
 

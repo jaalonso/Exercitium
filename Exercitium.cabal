@@ -193,6 +193,7 @@ library
       Sumas_de_dos_abundantes
       Sumas_de_dos_primos
       Termino_ausente_en_una_progresion_aritmetica
+      Ternas_pitagoricas
       Ternas_pitagoricas_con_suma_dada
       Todos_los_abundantes_hasta_n_son_pares
       Transitividad_de_una_relacion
@@ -401,6 +402,7 @@ test-suite Exercitium-test
       Sumas_de_dos_primos_Spec
       Termino_ausente_en_una_progresion_aritmetica_Spec
       Ternas_pitagoricas_con_suma_dada_Spec
+      Ternas_pitagoricas_Spec
       Transitividad_de_una_relacion_Spec
       Trenzado_de_listas_Spec
       Tres_diferentes_Spec
