@@ -188,6 +188,7 @@ library
       Suma_de_multiplos_de_3_o_5
       Suma_de_multiplos_de_3_o_de_5
       Suma_de_numeros_amigos_menores_que_n
+      Suma_elementos_consecutivos
       Suma_si_todos_justos
       Sumas_de_4_primos
       Sumas_de_divisores_propios
@@ -398,6 +399,7 @@ test-suite Exercitium-test
       Suma_de_multiplos_de_3_o_5_Spec
       Suma_de_multiplos_de_3_o_de_5_Spec
       Suma_de_numeros_amigos_menores_que_n_Spec
+      Suma_elementos_consecutivos_Spec
       Suma_si_todos_justos_Spec
       Sumas_de_4_primos_Spec
       Sumas_de_divisores_propios_Spec

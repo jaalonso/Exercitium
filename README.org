@@ -200,6 +200,7 @@ Los objetivos de esta recopilación son:
 + L17-10-22 [[./src/Ternas_pitagoricas.hs][Ternas pitagóricas]].
 + M18-10-22 [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
 + X19-10-22 [[./src/Producto_escalar.hs][Producto escalar]].
++ J20-10-22 [[./src/Suma_elementos_consecutivos.hs][Suma elementos consecutivos]].
 
 * Próximos
 
