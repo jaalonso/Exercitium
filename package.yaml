@@ -23,6 +23,7 @@ dependencies:
   - criterion
   - data-memocombinators
   - data-ordlist
+  - hmatrix
   - hspec
   - hspec-core
   - matrix
