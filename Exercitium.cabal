@@ -168,6 +168,7 @@ library
       Reiteracion_de_funciones
       Reiteracion_de_suma_de_consecutivos
       Representacion_de_Zeckendorf
+      Representacion_densa_de_polinomios
       Representacion_matricial_de_relaciones_binarias
       Representaciones_de_un_numero_como_suma_de_dos_cuadrados
       Segmento_de_una_lista
@@ -379,6 +380,7 @@ test-suite Exercitium-test
       Reiteracion_de_funciones_Spec
       Reiteracion_de_suma_de_consecutivos_Spec
       Representacion_de_Zeckendorf_Spec
+      Representacion_densa_de_polinomios_Spec
       Representacion_matricial_de_relaciones_binarias_Spec
       Representaciones_de_un_numero_como_suma_de_dos_cuadrados_Spec
       Segmento_de_una_lista_Spec
