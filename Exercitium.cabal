@@ -35,6 +35,7 @@ library
       Aproximacion_del_numero_e
       Area_corona_circular
       Bandera_tricolor
+      Base_de_dato_de_actividades
       Biparticiones_de_una_lista
       Calculo_aproximado_de_integrales_definidas
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales
@@ -254,6 +255,7 @@ test-suite Exercitium-test
       Aproximacion_del_numero_e_Spec
       Area_corona_circular_Spec
       Bandera_tricolor_Spec
+      Base_de_dato_de_actividades_Spec
       Biparticiones_de_una_lista_Spec
       Calculo_aproximado_de_integrales_definidas_Spec
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales_Spec

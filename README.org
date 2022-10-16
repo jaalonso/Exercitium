@@ -202,6 +202,7 @@ Los objetivos de esta recopilación son:
 + X19-10-22 [[./src/Producto_escalar.hs][Producto escalar]].
 + J20-10-22 [[./src/Suma_elementos_consecutivos.hs][Suma elementos consecutivos]].
 + V21-10-22 [[./src/Representacion_densa_de_polinomios.hs][Representación densa de polinomios]].
++ L24-10-22 [[./src/Base_de_dato_de_actividades.hs][Base de dato de actividades.]]
 
 * Próximos
 
