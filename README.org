@@ -12,267 +12,193 @@ Los objetivos de esta recopilación son:
   usan.
 + Escribir los tests de cada ejercicio (en el directorio [[./test][test]]) de forma que se
   puedan comprobar con [[http://hspec.github.io/][Hspec]].
-+ Etiquetar los ejercicios por temas siguiendo el orden usado en
-  [[https://www.cs.us.es/~jalonso/publicaciones/Piensa_en_Haskell.pdf][Piensa en Haskell]].
 
 * Índice de ejercicios (por orden de publicación)
 
-+ 26-01-22 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
-+ 27-01-22 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
-+ 28-01-22 [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
-+ 31-01-22 [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
-+ 01-02-22 [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]]
-+ 02-02-22 [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
-+ 03-02-22 [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]].
-+ 04-02-22 [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
-+ 07-02-22 [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
-+ 08-02-22 [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
-+ 09-02-22 [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
-+ 10-02-22 [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
-+ 11-02-22 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]]
-+ 14-02-22 [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
-+ 15-02-22 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
-+ 16-02-22 [[./src/Numeros_amigos.hs][Números amigos]].
-+ 17-02-22 [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
-+ 18-02-22 [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
-+ 21-02-22 [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
-+ 22-02-22 [[./src/Mastermind.hs][Mastermind]].
-+ 23-02-22 [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
-+ 24-02-22 [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
-+ 25-02-22 [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
-+ 28-02-22 [[./src/Bandera_tricolor.hs][La bandera tricolor]].
-+ 01-03-22 [[./src/Anagramas.hs][Anagramas]].
-+ 02-03-22 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
-+ 03-03-22 [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
-+ 04-03-22 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
-+ 07-03-22 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
-+ 08-03-22 [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
-+ 09-03-22 [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
-+ 10-03-22 [[./src/Lista_cuadrada.hs][Lista cuadrada]] ([[https://youtu.be/nJHiCebyZVE][vídeo]])-
-+ 11-03-22 [[./src/Segmentos_consecutivos.hs][Segmentos maximales de elementos consecutivos]] ([[https://youtu.be/qu11Uf8wF1k][vídeo]]).
-+ 14-03-22 [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] ([[https://youtu.be/JuCmeb8vV4E][vídeo]]).
-+ 15-03-22 [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] ([[https://youtu.be/Bj0jTH77k2k][vídeo]])-
-+ 16-03-22 [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] ([[https://youtu.be/4eBJi5_8qM0][vídeo]]).
-+ 17-03-22 [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] ([[https://youtu.be/3pbmjjozB6g][vídeo]])
-+ 18-03-22 [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] ([[https://youtu.be/mlgDbAPStdM][vídeo]]).
-+ 21-03-22 [[./src/Emparejamiento_binario.hs][Emparejamiento binario]] ([[https://youtu.be/oQBOs1uPIms][vídeo]]).
-+ 22-03-22 [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]] ([[https://youtu.be/Jrz5kxuhD9Y][vídeo]]).
-+ 23-03-22 [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]] ([[https://youtu.be/lLl-jQ1tW-I][vídeo]]).
-+ 24-03-22 [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]] ([[https://youtu.be/bz-NO5s2XVQ][vídeo]]).
-+ 25-03-22 [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]] ([[https://youtu.be/yt_aRjlA4kQ][vídeo]]).
-+ 28-03-22 [[./src/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]] ([[https://youtu.be/Q38cb9YlDR0][vídeo]]).
-+ 29-03-22 [[./src/Diferencia_simetrica.hs][Diferencia simétrica]] ([[https://youtu.be/ebQ_u6xlVfQ][vídeo]]).
-+ 30-03-22 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]] ([[https://youtu.be/OCHmRQ4XwbU][vídeo]]).
-+ 31-03-22 [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]] ([[https://youtu.be/_uOlyfzppVc][vídeo]]).
-+ 01-04-22 [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]] ([[https://youtu.be/C8P3dYzFHXY][vídeo]]).
-+ 04-04-22 [[./src/Trenzado_de_listas.hs][Trenzado de listas]] ([[https://youtu.be/zAqtMXDBt7A][vídeo]]).
-+ 05-04-22 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
-+ 06-04-22 [[./src/Enumera_arbol.hs][Enumeración de árboles binarios]] ([[https://youtu.be/JbLEKUZ2E2M][vídeo]]).
-+ 07-04-22 [[./src/Algun_vecino_menor.hs][Elementos de una matriz con algún vecino menor]] ([[https://youtu.be/ZILfrx75FyM][vídeo]]).
-+ 08-04-22 [[./src/Reiteracion_de_funciones.hs][Reiteración de una función]] ([[https://youtu.be/1Kig_ipFIu0][vídeo]]).
-+ 11-04-22 [[./src/Alergias.hs][Código de las alergias]].
-+ 12-04-22 [[./src/Indices_verdaderos.hs][Índices de valores verdaderos]].
-+ 13-04-22 [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
-+ 14-04-22 [[./src/Numero_de_inversiones.hs][Número de inversiones]].
-+ 15-04-22 [[./src/Separacion_por_posicion.hs][Sepación por posición]].
-+ 18-04-22 [[./src/Emparejamiento_de_arboles.hs][Emparejamiento de árboles]] ([[https://youtu.be/RWO2_fadW4g][vídeo]])
-+ 20-04-22 [[./src/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]] ([[https://youtu.be/7TJAdGjM3Ik][vídeo]]).
-+ 22-04-22 [[./src/Ordenada_ciclicamente.hs][Ordenada cíclicamente]] ([[https://youtu.be/CI090GISHUc][vídeo]]).
-+ 25-04-22 [[./src/Representacion_de_Zeckendorf.hs][Representación de Zeckendorf]] ([[https://youtu.be/U-nBf1WnLTw][vídeo]]).
-+ 27-04-22 [[./src/Producto_cartesiano.hs][Producto cartesiano de una familia de conjuntos]] ([[https://youtu.be/5L2fbGmoQhU][vídeo]]).
-+ 29-04-22 [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]] ([[https://youtu.be/OEAD7fLZiSk][vídeo]]).
-+ 02-05-22 [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]] ([[https://youtu.be/UQUzByuY_dQ][vídeo]]).
-+ 05-05-22 [[./src/Puntos_en_regiones_rectangulares.hs][Puntos en regiones rectangulares]].
-+ 09-05-22 [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
-+ 10-05-22 [[./src/Particiones_de_enteros_positivos.hs][Particiones de enteros positivos]].
-+ 11-05-22 [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].
-+ 12-05-22 [[./src/Conjunto_de_divisores.hs][Conjunto de divisores]].
-+ 13-05-22 [[./src/Numero_de_divisores.hs][Número de divisores]].
-+ 17-05-22 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
-+ 18-05-22 [[./src/Sumas_de_4_primos.hs][Sumas de 4 primos]].
-+ 19-05-22 [[./src/Parejas_de_numeros_y_divisores.hs][Parejas de números y divisores]].
-+ 20-05-22 [[./src/Sumas_de_divisores_propios.hs][Sumas de divisores propios]].
-+ 23-05-22 [[./src/Densidad_de_numeros_abundantes.hs][Densidades de números abundantes, perfectos y deficientes]].
-+ 24-05-22 [[./src/Matriz_zigzagueante.hs][Matriz zigzagueante]].
-+ 25-05-22 [[./src/Numeracion_con_multiples_base.hs][Numeración con múltiples bases]].
-+ 26-05-22 [[./src/El_triangulo_de_Lloyd.hs][El triángulo de Lloyd]].
-+ 27-05-22 [[./src/Polinomios_cuadraticos_generadores_de_primos.hs][Polinomios cuadráticos generadores de primos]].
-+ 30-05-22 [[./src/Ordenacion_de_los_racionales.hs][Ordenación de los racionales]].
-+ 31-05-22 [[./src/Polinomios_de_Bell.hs][Polinomios de Bell]].
-+ 01-06-22 [[./src/Termino_ausente_en_una_progresion_aritmetica.hs][Término ausente en una progresión aritmética]].
-+ 02-06-22 [[./src/Suma_de_los_elementos_de_las_diagonales_matrices_espirales.hs][Suma de los elementos de las diagonales de las matrices espirales]].
-+ 03-06-22 [[./src/Descomposiciones_con_sumandos_1_o_2.hs][Descomposiciones con sumandos 1 o 2]].
-+ 06-06-22 [[./src/Diccionario_de_frecuencias.hs][Diccionario de frecuencias]].
-+ 07-06-22 [[./src/Primos_circulares.hs][Primos circulares]].
-+ 08-06-22 [[./src/Codificacion_de_Godel.hs][Codificación de Gödel]].
-+ 09-06-22 [[./src/Representacion_matricial_de_relaciones_binarias.hs][Representación matricial de relaciones binarias]].
-+ 10-06-22 [[./src/Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario.hs][Distancia esperada entre dos puntos de un cuadrado unitario]].
-+ 20-06-22 [[./src/Menor_numero_con_una_cantidad_dada_de_divisores.hs][Menor número con una cantidad dada de divisores]].
-+ 21-06-22 [[./src/Calculo_aproximado_de_integrales_definidas.hs][Cálculo aproximado de integrales definidas]].
-+ 22-06-22 [[./src/Calculo_de_la_suma_de_productos_de_numeros_por_factoriales.hs][Cálculo de la suma 1*1! + 2*2! + 3*3! + ... + n*n!]].
-+ 23-06-22 [[./src/Numeros_para_los_que_mcm.hs][Números para los que mcm(1,2,...n-1) = mcm(1,2,...,n)]].
-+ 24-06-22 [[./src/Metodo_de_biseccion_para_aproximar_raices_de_funciones.hs][Método de bisección para aproximar raíces de funciones]].
-+ 27-06-22 [[./src/La_sucesion_del_reloj_astronomico_de_Praga.hs][La sucesión del reloj astronómico de Praga]].
-+ 28-06-22 [[./src/Codificacion_de_Fibonacci.hs][Codificación de Fibonacci]].
-+ 29-06-22 [[./src/Pandigitales_primos.hs][Pandigitales primos]].
-+ 30-06-22 [[./src/Aproximacion_de_numero_pi.hs][Aproximación del número pi]].
-+ 01-07-22 [[./src/Numeros_autodescriptivos.hs][Números autodescriptivos]].
-+ 04-07-22 [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
-+ 05-07-22 [[./src/Union_e_interseccion_general.hs][Unión e intersección general de conjuntos]].
-+ 06-07-22 [[./src/Intersecciones_parciales.hs][Intersecciones parciales]].
-+ 07-07-22 [[./src/Mayor_semiprimo_menor_que_n.hs][Mayor semiprimo menor que n]].
-+ 08-07-22 [[./src/Particiones_en_k_subconjuntos.hs][Particiones en k subconjuntos]].
-+ 11-07-22 [[./src/Numero_de_particiones_en_k_subconjuntos.hs][Número de particiones en k subconjuntos]].
-+ 12-07-22 [[./src/Composicion_de_relaciones_binarias.hs][Composición de relaciones binarias]].
-+ 13-07-22 [[./src/Transitividad_de_una_relacion.hs][Transitividad de una relación]].
-+ 14-07-22 [[./src/Clausura_transitiva_de_una_relacion_binaria.hs][Clausura transitiva de una relación binaria]].
-+ 15-07-22 [[./src/Primos_cubanos.hs][Primos cubanos]].
-+ 18-07-22 [[./src/Primos_con_cubos.hs][Primos con cubos]].
-+ 19-07-22 [[./src/Suma_alterna_de_factoriales.hs][Suma alterna de factoriales]].
-+ 20-07-22 [[./src/Potencias_perfectas.hs][Potencias perfectas]].
-+ 21-07-22 [[./src/Sucesion_de_suma_de_cuadrados_de_los_digitos.hs][Sucesión de suma de cuadrados de los dígitos]].
-+ 22-07-22 [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
-+ 25-07-22 [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
-+ 26-07-22 [[./src/Numeros_belgas.hs][Números belgas]].
-+ 27-07-22 [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].
-+ 28-07-22 [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
-+ 29-07-22 [[./src/Sumas_de_dos_primos.hs][Sumas de dos primos]].
-+ 01-08-22 [[./src/Numeros_primos_de_Hilbert.hs][Números primos de Hilbert]].
-+ 02-08-22 [[./src/Factorizaciones_de_numeros_de_Hilbert.hs][Factorizaciones de números de Hilbert]].
-+ 03-08-22 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
-+ 04-08-22 [[./src/Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados.hs][Número de representaciones de n como suma de dos cuadrados]].
-+ 05-08-22 [[./src/Numeros_de_Pentanacci.hs][Números de Pentanacci]].
++ [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
++ [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
++ [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
++ [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
++ [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]]
++ [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
++ [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]].
++ [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
++ [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
++ [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
++ [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
++ [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
++ [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]]
++ [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
++ [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
++ [[./src/Numeros_amigos.hs][Números amigos]].
++ [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
++ [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
++ [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
++ [[./src/Mastermind.hs][Mastermind]].
++ [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
++ [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
++ [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
++ [[./src/Bandera_tricolor.hs][La bandera tricolor]].
++ [[./src/Anagramas.hs][Anagramas]].
++ [[./src/Primos_equidistantes.hs][Primos equidistantes]].
++ [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
++ [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
++ [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
++ [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
++ [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
++ [[./src/Lista_cuadrada.hs][Lista cuadrada]] ([[https://youtu.be/nJHiCebyZVE][vídeo]])-
++ [[./src/Segmentos_consecutivos.hs][Segmentos maximales de elementos consecutivos]] ([[https://youtu.be/qu11Uf8wF1k][vídeo]]).
++ [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] ([[https://youtu.be/JuCmeb8vV4E][vídeo]]).
++ [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] ([[https://youtu.be/Bj0jTH77k2k][vídeo]])-
++ [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] ([[https://youtu.be/4eBJi5_8qM0][vídeo]]).
++ [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] ([[https://youtu.be/3pbmjjozB6g][vídeo]])
++ [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] ([[https://youtu.be/mlgDbAPStdM][vídeo]]).
++ [[./src/Emparejamiento_binario.hs][Emparejamiento binario]] ([[https://youtu.be/oQBOs1uPIms][vídeo]]).
++ [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]] ([[https://youtu.be/Jrz5kxuhD9Y][vídeo]]).
++ [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]] ([[https://youtu.be/lLl-jQ1tW-I][vídeo]]).
++ [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]] ([[https://youtu.be/bz-NO5s2XVQ][vídeo]]).
++ [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]] ([[https://youtu.be/yt_aRjlA4kQ][vídeo]]).
++ [[./src/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]] ([[https://youtu.be/Q38cb9YlDR0][vídeo]]).
++ [[./src/Diferencia_simetrica.hs][Diferencia simétrica]] ([[https://youtu.be/ebQ_u6xlVfQ][vídeo]]).
++ [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]] ([[https://youtu.be/OCHmRQ4XwbU][vídeo]]).
++ [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]] ([[https://youtu.be/_uOlyfzppVc][vídeo]]).
++ [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]] ([[https://youtu.be/C8P3dYzFHXY][vídeo]]).
++ [[./src/Trenzado_de_listas.hs][Trenzado de listas]] ([[https://youtu.be/zAqtMXDBt7A][vídeo]]).
++ [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
++ [[./src/Enumera_arbol.hs][Enumeración de árboles binarios]] ([[https://youtu.be/JbLEKUZ2E2M][vídeo]]).
++ [[./src/Algun_vecino_menor.hs][Elementos de una matriz con algún vecino menor]] ([[https://youtu.be/ZILfrx75FyM][vídeo]]).
++ [[./src/Reiteracion_de_funciones.hs][Reiteración de una función]] ([[https://youtu.be/1Kig_ipFIu0][vídeo]]).
++ [[./src/Alergias.hs][Código de las alergias]].
++ [[./src/Indices_verdaderos.hs][Índices de valores verdaderos]].
++ [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
++ [[./src/Numero_de_inversiones.hs][Número de inversiones]].
++ [[./src/Separacion_por_posicion.hs][Sepación por posición]].
++ [[./src/Emparejamiento_de_arboles.hs][Emparejamiento de árboles]] ([[https://youtu.be/RWO2_fadW4g][vídeo]])
++ [[./src/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]] ([[https://youtu.be/7TJAdGjM3Ik][vídeo]]).
++ [[./src/Ordenada_ciclicamente.hs][Ordenada cíclicamente]] ([[https://youtu.be/CI090GISHUc][vídeo]]).
++ [[./src/Representacion_de_Zeckendorf.hs][Representación de Zeckendorf]] ([[https://youtu.be/U-nBf1WnLTw][vídeo]]).
++ [[./src/Producto_cartesiano.hs][Producto cartesiano de una familia de conjuntos]] ([[https://youtu.be/5L2fbGmoQhU][vídeo]]).
++ [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]] ([[https://youtu.be/OEAD7fLZiSk][vídeo]]).
++ [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]] ([[https://youtu.be/UQUzByuY_dQ][vídeo]]).
++ [[./src/Puntos_en_regiones_rectangulares.hs][Puntos en regiones rectangulares]].
++ [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
++ [[./src/Particiones_de_enteros_positivos.hs][Particiones de enteros positivos]].
++ [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].
++ [[./src/Conjunto_de_divisores.hs][Conjunto de divisores]].
++ [[./src/Numero_de_divisores.hs][Número de divisores]].
++ [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
++ [[./src/Sumas_de_4_primos.hs][Sumas de 4 primos]].
++ [[./src/Parejas_de_numeros_y_divisores.hs][Parejas de números y divisores]].
++ [[./src/Sumas_de_divisores_propios.hs][Sumas de divisores propios]].
++ [[./src/Densidad_de_numeros_abundantes.hs][Densidades de números abundantes, perfectos y deficientes]].
++ [[./src/Matriz_zigzagueante.hs][Matriz zigzagueante]].
++ [[./src/Numeracion_con_multiples_base.hs][Numeración con múltiples bases]].
++ [[./src/El_triangulo_de_Lloyd.hs][El triángulo de Lloyd]].
++ [[./src/Polinomios_cuadraticos_generadores_de_primos.hs][Polinomios cuadráticos generadores de primos]].
++ [[./src/Ordenacion_de_los_racionales.hs][Ordenación de los racionales]].
++ [[./src/Polinomios_de_Bell.hs][Polinomios de Bell]].
++ [[./src/Termino_ausente_en_una_progresion_aritmetica.hs][Término ausente en una progresión aritmética]].
++ [[./src/Suma_de_los_elementos_de_las_diagonales_matrices_espirales.hs][Suma de los elementos de las diagonales de las matrices espirales]].
++ [[./src/Descomposiciones_con_sumandos_1_o_2.hs][Descomposiciones con sumandos 1 o 2]].
++ [[./src/Diccionario_de_frecuencias.hs][Diccionario de frecuencias]].
++ [[./src/Primos_circulares.hs][Primos circulares]].
++ [[./src/Codificacion_de_Godel.hs][Codificación de Gödel]].
++ [[./src/Representacion_matricial_de_relaciones_binarias.hs][Representación matricial de relaciones binarias]].
++ [[./src/Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario.hs][Distancia esperada entre dos puntos de un cuadrado unitario]].
++ [[./src/Menor_numero_con_una_cantidad_dada_de_divisores.hs][Menor número con una cantidad dada de divisores]].
++ [[./src/Calculo_aproximado_de_integrales_definidas.hs][Cálculo aproximado de integrales definidas]].
++ [[./src/Calculo_de_la_suma_de_productos_de_numeros_por_factoriales.hs][Cálculo de la suma 1*1! + 2*2! + 3*3! + ... + n*n!]].
++ [[./src/Numeros_para_los_que_mcm.hs][Números para los que mcm(1,2,...n-1) = mcm(1,2,...,n)]].
++ [[./src/Metodo_de_biseccion_para_aproximar_raices_de_funciones.hs][Método de bisección para aproximar raíces de funciones]].
++ [[./src/La_sucesion_del_reloj_astronomico_de_Praga.hs][La sucesión del reloj astronómico de Praga]].
++ [[./src/Codificacion_de_Fibonacci.hs][Codificación de Fibonacci]].
++ [[./src/Pandigitales_primos.hs][Pandigitales primos]].
++ [[./src/Aproximacion_de_numero_pi.hs][Aproximación del número pi]].
++ [[./src/Numeros_autodescriptivos.hs][Números autodescriptivos]].
++ [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
++ [[./src/Union_e_interseccion_general.hs][Unión e intersección general de conjuntos]].
++ [[./src/Intersecciones_parciales.hs][Intersecciones parciales]].
++ [[./src/Mayor_semiprimo_menor_que_n.hs][Mayor semiprimo menor que n]].
++ [[./src/Particiones_en_k_subconjuntos.hs][Particiones en k subconjuntos]].
++ [[./src/Numero_de_particiones_en_k_subconjuntos.hs][Número de particiones en k subconjuntos]].
++ [[./src/Composicion_de_relaciones_binarias.hs][Composición de relaciones binarias]].
++ [[./src/Transitividad_de_una_relacion.hs][Transitividad de una relación]].
++ [[./src/Clausura_transitiva_de_una_relacion_binaria.hs][Clausura transitiva de una relación binaria]].
++ [[./src/Primos_cubanos.hs][Primos cubanos]].
++ [[./src/Primos_con_cubos.hs][Primos con cubos]].
++ [[./src/Suma_alterna_de_factoriales.hs][Suma alterna de factoriales]].
++ [[./src/Potencias_perfectas.hs][Potencias perfectas]].
++ [[./src/Sucesion_de_suma_de_cuadrados_de_los_digitos.hs][Sucesión de suma de cuadrados de los dígitos]].
++ [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
++ [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
++ [[./src/Numeros_belgas.hs][Números belgas]].
++ [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].
++ [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
++ [[./src/Sumas_de_dos_primos.hs][Sumas de dos primos]].
++ [[./src/Numeros_primos_de_Hilbert.hs][Números primos de Hilbert]].
++ [[./src/Factorizaciones_de_numeros_de_Hilbert.hs][Factorizaciones de números de Hilbert]].
++ [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
++ [[./src/Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados.hs][Número de representaciones de n como suma de dos cuadrados]].
++ [[./src/Numeros_de_Pentanacci.hs][Números de Pentanacci]].
 
 * Introducción a la programación con Haskell y Python
 
-+ 08-08-22 [[./src/Media_aritmetica_de_tres_numeros.hs][Media aritmética de tres números]]
-+ 09-08-22 [[./src/Suma_de_monedas.hs][Suma de monedas]].
-+ 10-08-22 [[./src/Volumen_de_la_esfera.hs][Volumen de la esfera]].
-+ 11-08-22 [[./src/Area_corona_circular.hs][Área de la corona circular]].
-+ 12-08-22 [[./src/Ultimo_digito.hs][Último dígito]].
-+ 15-08-22 [[./src/Maximo_de_tres_numeros.hs][Máximo de tres números]].
-+ 16-08-22 [[./src/El_primero_al_final.hs][El primero al final]].
-+ 17-08-22 [[./src/Los_primeros_al_final.hs][Los primeros al final]].
-+ 18-08-22 [[./src/Rango_de_una_lista.hs][Rango de una lista]].
-+ 19-08-02 [[./src/Reconocimiento_de_palindromos.hs][Reconocimiento de palíndromos]].
-+ 22-08-22 [[./src/Interior_de_una_lista.hs][Interior de una lista]].
-+ 23-08-22 [[./src/Elementos_finales.hs][Elementos finales]].
-+ 24-08-22 [[./src/Segmento_de_una_lista.hs][Segmento de una lista]].
-+ 25-08-22 [[./src/Primeros_y_ultimos_elementos.hs][Primeros y últimos elementos]].
-+ 26-08-22 [[./src/Elemento_mediano.hs][Elemento mediano]].
-+ 29-08-22 [[./src/Tres_iguales.hs][Tres iguales]].
-+ 30-08-22 [[./src/Tres_diferentes.hs][Tres diferentes]].
-+ 31-08-22 [[./src/Division_segura.hs][División segura]].
-+ 01-09-22 [[./src/Disyuncion_excluyente.hs][Disyunción excluyente]].
-+ 02-09-22 [[./src/Mayor_rectangulo.hs][Mayor rectángulo]].
-+ 05-09-22 [[./src/Intercambio_de_componentes_de_un_par.hs][Intercambio de componentes de un par]].
-+ 06-09-22 [[./src/Distancia_entre_dos_puntos.hs][Distancia entre dos puntos]].
-+ 07-09-22 [[./src/Permutacion_ciclica.hs][Permutación cíclica]].
-+ 08-09-22 [[./src/Mayor_numero_con_dos_digitos_dados.hs][Mayor número con dos dígitos dados]].
-+ 09-09-22 [[./src/Numero_de_raices_de_la_ecuacion_de_segundo_grado.hs][Número de raíces de la ecuación de segundo grado]].
-+ 12-09-22 [[./src/Raices_de_la_ecuacion_de_segundo_grado.hs][Raíces de la ecuación de segundo grado]].
-+ 13-09-22 [[./src/Formula_de_Heron_para_el_area_de_un_triangulo.hs][Fórmula de Herón para el área de un triángulo]].
-+ 14-09-22 [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
-+ 15-09-22 [[./src/Numeros_racionales.hs][Números racionales]].
-+ 16-09-22 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
-+ 19-09-22 [[./src/Igualdad_de_conjuntos.hs][Igualdad de conjuntos]].
-+ 20-09-22 [[./src/Union_conjuntista_de_listas.hs][Unión conjuntista de listas]].
-+ 21-09-22 [[./src/Interseccion_conjuntista_de_listas.hs][Intersección conjuntista de listas]].
-+ 22-09-22 [[./src/Diferencia_conjuntista_de_listas.hs][Diferencia conjuntista de listas]].
-+ 22-09-22 [[./src/Divisores_de_un_numero.hs][Divisores de un número]].
-+ 23-09-22 [[./src/Divisores_primos.hs][Divisores primos]].
-+ 26-09-22 [[./src/Numeros_libres_de_cuadrados.hs][Números libres de cuadrados]].
-+ 27-09-22 [[./src/Suma_de_los_primeros_numeros_naturales.hs][Suma de los primeros números naturales]].
-+ 28-09-22 [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
-+ 29-09-22 [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
-+ 30-09-22 [[./src/Triangulo_aritmetico.hs][Triángulo aritmético]].
-+ 01-10-22 [[./src/Suma_de_divisores.hs][Suma de divisores]].
-+ 03-10-22 [[./src/Numeros_perfectos.hs][Números perfectos]].
-+ 04-10-22 [[./src/Numeros_abundantes.hs][Números abundantes]].
-+ 05-10-22 [[./src/Numeros_abundantes_menores_o_iguales_que_n.hs][Números abundantes menores o iguales que n]].
-+ 06-10-22 [[./src/Todos_los_abundantes_hasta_n_son_pares.hs][Todos los abundantes hasta n son pares]].
-+ 07-10-22 [[./src/Numeros_abundantes_impares.hs][Números abundantes impares]].
-+ 10-10-22 [[./src/Suma_de_multiplos_de_3_o_5.hs][Suma de múltiplos de 3 ó 5]].
-+ 11-10-22 [[./src/Puntos_dentro_del_circulo.hs][Puntos dentro del círculo]].
-+ 12-10-22 [[./src/Aproximacion_del_numero_e.hs][Aproximación del número e]].
-+ 13-10-22 [[./src/Limite_del_seno.hs][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
-+ 14-10-22 [[./src/Calculo_de_pi_mediante_la_formula_de_Leibniz.hs][Cálculo del número π mediante la fórmula de Leibniz]].
-+ 17-10-22 [[./src/Ternas_pitagoricas.hs][Ternas pitagóricas]].
++ [[./src/Media_aritmetica_de_tres_numeros.hs][Media aritmética de tres números]]
++ [[./src/Suma_de_monedas.hs][Suma de monedas]].
++ [[./src/Volumen_de_la_esfera.hs][Volumen de la esfera]].
++ [[./src/Area_corona_circular.hs][Área de la corona circular]].
++ [[./src/Ultimo_digito.hs][Último dígito]].
++ [[./src/Maximo_de_tres_numeros.hs][Máximo de tres números]].
++ [[./src/El_primero_al_final.hs][El primero al final]].
++ [[./src/Los_primeros_al_final.hs][Los primeros al final]].
++ [[./src/Rango_de_una_lista.hs][Rango de una lista]].
++ [[./src/Reconocimiento_de_palindromos.hs][Reconocimiento de palíndromos]].
++ [[./src/Interior_de_una_lista.hs][Interior de una lista]].
++ [[./src/Elementos_finales.hs][Elementos finales]].
++ [[./src/Segmento_de_una_lista.hs][Segmento de una lista]].
++ [[./src/Primeros_y_ultimos_elementos.hs][Primeros y últimos elementos]].
++ [[./src/Elemento_mediano.hs][Elemento mediano]].
++ [[./src/Tres_iguales.hs][Tres iguales]].
++ [[./src/Tres_diferentes.hs][Tres diferentes]].
++ [[./src/Division_segura.hs][División segura]].
++ [[./src/Disyuncion_excluyente.hs][Disyunción excluyente]].
++ [[./src/Mayor_rectangulo.hs][Mayor rectángulo]].
++ [[./src/Intercambio_de_componentes_de_un_par.hs][Intercambio de componentes de un par]].
++ [[./src/Distancia_entre_dos_puntos.hs][Distancia entre dos puntos]].
++ [[./src/Permutacion_ciclica.hs][Permutación cíclica]].
++ [[./src/Mayor_numero_con_dos_digitos_dados.hs][Mayor número con dos dígitos dados]].
++ [[./src/Numero_de_raices_de_la_ecuacion_de_segundo_grado.hs][Número de raíces de la ecuación de segundo grado]].
++ [[./src/Raices_de_la_ecuacion_de_segundo_grado.hs][Raíces de la ecuación de segundo grado]].
++ [[./src/Formula_de_Heron_para_el_area_de_un_triangulo.hs][Fórmula de Herón para el área de un triángulo]].
++ [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
++ [[./src/Numeros_racionales.hs][Números racionales]].
++ [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
++ [[./src/Igualdad_de_conjuntos.hs][Igualdad de conjuntos]].
++ [[./src/Union_conjuntista_de_listas.hs][Unión conjuntista de listas]].
++ [[./src/Interseccion_conjuntista_de_listas.hs][Intersección conjuntista de listas]].
++ [[./src/Diferencia_conjuntista_de_listas.hs][Diferencia conjuntista de listas]].
++ [[./src/Divisores_de_un_numero.hs][Divisores de un número]].
++ [[./src/Divisores_primos.hs][Divisores primos]].
++ [[./src/Numeros_libres_de_cuadrados.hs][Números libres de cuadrados]].
++ [[./src/Suma_de_los_primeros_numeros_naturales.hs][Suma de los primeros números naturales]].
++ [[./src/Suma_de_los_cuadrados_de_los_primeros_numeros_naturales.hs][Suma de los cuadrados de los primeros números naturales]].
++ [[./src/Suma_de_cuadrados_menos_cuadrado_de_la_suma.hs][Suma de cuadrados menos cuadrado de la suma]].
++ [[./src/Triangulo_aritmetico.hs][Triángulo aritmético]].
++ [[./src/Suma_de_divisores.hs][Suma de divisores]].
++ [[./src/Numeros_perfectos.hs][Números perfectos]].
++ [[./src/Numeros_abundantes.hs][Números abundantes]].
++ [[./src/Numeros_abundantes_menores_o_iguales_que_n.hs][Números abundantes menores o iguales que n]].
++ [[./src/Todos_los_abundantes_hasta_n_son_pares.hs][Todos los abundantes hasta n son pares]].
++ [[./src/Numeros_abundantes_impares.hs][Números abundantes impares]].
++ [[./src/Suma_de_multiplos_de_3_o_5.hs][Suma de múltiplos de 3 ó 5]].
++ [[./src/Puntos_dentro_del_circulo.hs][Puntos dentro del círculo]].
++ [[./src/Aproximacion_del_numero_e.hs][Aproximación del número e]].
++ [[./src/Limite_del_seno.hs][Aproximación al límite de sen(x)/x cuando x tiende a cero]].
++ [[./src/Calculo_de_pi_mediante_la_formula_de_Leibniz.hs][Cálculo del número π mediante la fórmula de Leibniz]].
++ [[./src/Ternas_pitagoricas.hs][Ternas pitagóricas]].
 + M18-10-22 [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
 + X19-10-22 [[./src/Producto_escalar.hs][Producto escalar]].
 + J20-10-22 [[./src/Suma_elementos_consecutivos.hs][Suma elementos consecutivos]].
 + V21-10-22 [[./src/Representacion_densa_de_polinomios.hs][Representación densa de polinomios]].
 + L24-10-22 [[./src/Base_de_dato_de_actividades.hs][Base de dato de actividades.]]
 + M25-10-22 [[./src/Potencia_entera.hs][Potencia entera]].
-
-* Próximos
-
-+ [[./src/Agrupacion_de_anagramas.py][Agrupación de anagramas]].
-+ [[./src/La_sucesion_de_Ducci.hs][La sucesión de Ducci]].
-
-* Etiquetas
-
-** Introducción a la programación funcional
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/basico/][Elemental]]: Definiciones elementales de funciones.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/comprension/][Comprensión]]: Definiciones por comprensión.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/recursion/][Recursión]]: Definiciones por recursión.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/cadenas/][Cadenas]]: Funciones sobre cadenas.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/orden-superior/][Orden superior]]: Funciones de orden superior.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/plegado/][Plegado]]: Definiciones por plegado.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/listas-infinitas/][Listas infinitas]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/tipos-definidos/][Tipos definidos]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/tipo-de-dato-algebraico/][Tipos de datos algebraicos]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/arboles/][Árboles]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/vectores/][Vectores]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/matrices/][Matrices]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/conjuntos/][Conjuntos]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/diccionarios/][Diccionarios]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/es][ES]]: Programas interactivos.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/graficas/][Gráficas]]: Representación gráfica de funciones.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/dibujos][Dibujos]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/fractales/][Fractales]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/ficheros/][Ficheros]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/aleatorio/][Aleatorio]]: Elementos aleatorios.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/monadas/][Mónadas]].
-
-** Librerías
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/control-arrow/][Control.Arrow]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-array/][Data.Array]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-function/][Data.Function]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-list/][Data.List]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-list-split/][Data.List.Split]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-map/][Data.Map]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-matrix/][Data.Matrix]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-maybe/][Data.Maybe]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-memocombinators/][Data.MemoCombinators]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-numbers-primes/][Data.Numbers.Primes]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-set/][Data.Set]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/data-tuple/][Data.Tuple]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/ghc-exts/][GHC.Exts]]
-+ [[http://www.glc.us.es/~jalonso/exercitium/tag/gloss/][Graphics.Gloss]]
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/quickcheck/][Test.QuickCheck]].
-
-** Tipos abstractos de datos y algorítmica
-+ Pilas: El TAD de las pilas.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/colas/][Colas]]: El TAD de las colas.
-+ Colas de prioridad: El TAD de las colas de prioridad.
-+ Árboles de búsqueda: El TAD de las árboles binarios de búsqueda.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/tablas/][Tablas]]: El TAD de las tablas.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/monticulos/][Montículos]]: El TAD de los montículos.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/polinomios/][Polinomios]]: El TAD de los polinomios.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/grafos/][Grafos]]: Algoritmos sobre grafos.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/kruskal/][Kruskal]]: Algoritmo de Kruskal.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/prim/][Prim]]: Algoritmo de Prim.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/busqueda/][Búsqueda]]: Métodos de búsqueda.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/espacio-de-estados][Espacio de estados]]: Problemas de espacios de estado.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/dinamica/][Dinámica]]: Programación dinámica.
-
-** Aplicaciones matemáticas
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/teoria-de-conjuntos/][Teoría de conjuntos]]
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/teoria-de-numeros/][Teoría de números]].
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/primos/][Primos]]: Números primos.
-+ Álgebra lineal.
-+ Cálculo numérico.
-+ Estadística.
-+ Combinatoria.
-+ [[https://www.glc.us.es/~jalonso/exercitium/tag/euler/][Euler]]: Problemas del proyecto Euler.
