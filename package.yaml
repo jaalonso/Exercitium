@@ -23,6 +23,8 @@ dependencies:
   - criterion
   - data-memocombinators
   - data-ordlist
+  - digits
+  - fast-digits
   - hmatrix
   - hspec
   - hspec-core

@@ -58,6 +58,7 @@ library
       Diccionario_de_frecuencias
       Diferencia_conjuntista_de_listas
       Diferencia_simetrica
+      Digitos_de_un_numero
       Distancia_entre_dos_puntos
       Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario
       Disyuncion_excluyente
@@ -229,6 +230,8 @@ library
     , criterion
     , data-memocombinators
     , data-ordlist
+    , digits
+    , fast-digits
     , gnuplot
     , hmatrix
     , hspec
@@ -280,6 +283,7 @@ test-suite Exercitium-test
       Diccionario_de_frecuencias_Spec
       Diferencia_conjuntista_de_listas_Spec
       Diferencia_simetrica_Spec
+      Digitos_de_un_numero_Spec
       Distancia_entre_dos_puntos_Spec
       Disyuncion_excluyente_Spec
       Division_segura_Spec
@@ -443,6 +447,8 @@ test-suite Exercitium-test
     , criterion
     , data-memocombinators
     , data-ordlist
+    , digits
+    , fast-digits
     , hmatrix
     , hspec
     , hspec-core
