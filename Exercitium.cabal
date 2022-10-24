@@ -115,6 +115,7 @@ library
       Minimo_producto_escalar
       Numeracion_con_multiples_base
       Numeracion_de_ternas
+      Numero_a_partir_de_sus_digitos
       Numero_de_divisores
       Numero_de_inversiones
       Numero_de_particiones_en_k_subconjuntos
@@ -187,6 +188,7 @@ library
       Suma_de_divisores
       Suma_de_fila_del_triangulo_de_los_impares
       Suma_de_los_cuadrados_de_los_primeros_numeros_naturales
+      Suma_de_los_digitos_de_un_numero
       Suma_de_los_elementos_de_las_diagonales_matrices_espirales
       Suma_de_los_primeros_numeros_naturales
       Suma_de_monedas
@@ -336,6 +338,7 @@ test-suite Exercitium-test
       Minimo_producto_escalar_Spec
       Numeracion_con_multiples_base_Spec
       Numeracion_de_ternas_Spec
+      Numero_a_partir_de_sus_digitos_Spec
       Numero_de_divisores_Spec
       Numero_de_inversiones_Spec
       Numero_de_particiones_en_k_subconjuntos_Spec

@@ -198,9 +198,10 @@ Los objetivos de esta recopilación son:
 + [[./src/Ternas_pitagoricas.hs][Ternas pitagóricas]].
 + [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
 + [[./src/Producto_escalar.hs][Producto escalar]].
-+ J20-10-22 [[./src/Suma_elementos_consecutivos.hs][Suma elementos consecutivos]].
-+ V21-10-22 [[./src/Representacion_densa_de_polinomios.hs][Representación densa de polinomios]].
-+ L24-10-22 [[./src/Base_de_dato_de_actividades.hs][Base de dato de actividades.]]
++ [[./src/Representacion_densa_de_polinomios.hs][Representación densa de polinomios]].
++ [[./src/Base_de_dato_de_actividades.hs][Base de datos de actividades.]]
 + M25-10-22 [[./src/Potencia_entera.hs][Potencia entera]].
 + X26-10-22 [[./src/Algoritmo_de_Euclides_del_mcd.hs][Algoritmo de Euclides del mcd]].
 + J27-10-22 [[./src/Digitos_de_un_numero.hs][Dígitos de un número]].
++ V28-10-22 [[./src/Suma_de_los_digitos_de_un_numero.hs][Suma de los digitos de un número]].
++ L31-10-22 [[./src/Numero_a_partir_de_sus_digitos.hs][Número a partir de sus dígitos]].
