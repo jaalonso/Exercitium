@@ -25,4 +25,5 @@ spec = do
   describe "def. 5" $ specG listaNumero5
   describe "def. 6" $ specG listaNumero6
   describe "def. 7" $ specG listaNumero7
+  describe "def. 7" $ specG listaNumero8
   describe "equivalencia" $ it "p1" $ property prop_listaNumero
