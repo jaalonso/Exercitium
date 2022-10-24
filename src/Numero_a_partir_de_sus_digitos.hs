@@ -76,19 +76,27 @@ listaNumero6 xs = sum (zipWith (\ y n -> y*10^n) (reverse xs) [0..])
 listaNumero7 :: [Integer] -> Integer
 listaNumero7 = unDigits 10
 
+-- 7ª solución
+-- ===========
+
+listaNumero8 :: [Integer] -> Integer
+listaNumero8 = read . concatMap show
+
 -- Comprobación de equivalencia
 -- ============================
 
 -- La propiedad es
-prop_listaNumero :: [Integer] -> Bool
-prop_listaNumero xs =
-  all (== listaNumero1 xs)
-      [listaNumero2 xs,
-       listaNumero3 xs,
-       listaNumero4 xs,
-       listaNumero5 xs,
-       listaNumero6 xs,
-       listaNumero7 xs]
+prop_listaNumero :: NonEmptyList Integer -> Bool
+prop_listaNumero (NonEmpty xs) =
+  all (== listaNumero1 ys)
+      [listaNumero2 ys,
+       listaNumero3 ys,
+       listaNumero4 ys,
+       listaNumero5 ys,
+       listaNumero6 ys,
+       listaNumero7 ys,
+       listaNumero8 ys]
+  where ys = map (`mod` 10) xs
 
 -- La comprobación es
 --    λ> quickCheck prop_listaNumero
@@ -122,3 +130,6 @@ prop_listaNumero xs =
 --    λ> length (show (listaNumero7 (replicate (10^5) 9)))
 --    100000
 --    (4.33 secs, 4,297,499,344 bytes)
+--    λ> length (show (listaNumero8 (replicate (10^5) 9)))
+--    100000
+--    (0.03 secs, 60,760,360 bytes)
