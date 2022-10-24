@@ -1,20 +1,21 @@
 -- Suma_de_los_digitos_de_un_numero.hs
--- Suma de los digitos de un número
+-- Suma de los digitos de un número.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 28-octubre-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
 -- Definir la función
---    sumaDigitosR :: Integer -> Integer
--- tal que (sumaDigitosR n) es la suma de los dígitos de n. Por ejemplo,
---    sumaDigitosR 3     ==  3
---    sumaDigitosR 2454  == 15
---    sumaDigitosR 20045 == 11
+--    sumaDigitos :: Integer -> Integer
+-- tal que (sumaDigitos n) es la suma de los dígitos de n. Por ejemplo,
+--    sumaDigitos 3     ==  3
+--    sumaDigitos 2454  == 15
+--    sumaDigitos 20045 == 11
 -- ---------------------------------------------------------------------
 
 module Suma_de_los_digitos_de_un_numero where
 
+import Data.List (foldl')
 import Test.QuickCheck
 
 -- 1ª solución
@@ -35,15 +36,21 @@ digitos n = [read [x] | x <- show n]
 -- ===========
 
 sumaDigitos2 :: Integer -> Integer
-sumaDigitos2 n
-  | n < 10    = n
-  | otherwise = n `rem` 10 + sumaDigitos2 (n `div` 10)
+sumaDigitos2 n = foldl' (+) 0 (digitos n)
 
 -- 3ª solución
 -- ===========
 
 sumaDigitos3 :: Integer -> Integer
-sumaDigitos3 = aux 0
+sumaDigitos3 n
+  | n < 10    = n
+  | otherwise = n `rem` 10 + sumaDigitos2 (n `div` 10)
+
+-- 4ª solución
+-- ===========
+
+sumaDigitos4 :: Integer -> Integer
+sumaDigitos4 = aux 0
   where aux r n
           | n < 10    = r + n
           | otherwise = aux (r + n `rem` 10) (n `div` 10)
@@ -56,7 +63,8 @@ prop_sumaDigitos :: NonNegative Integer -> Bool
 prop_sumaDigitos (NonNegative n) =
   all (== sumaDigitos1 n)
       [sumaDigitos2 n,
-       sumaDigitos3 n]
+       sumaDigitos3 n,
+       sumaDigitos4 n]
 
 -- La comprobación es
 --    λ> quickCheck prop_sumaDigitos
@@ -71,7 +79,17 @@ prop_sumaDigitos (NonNegative n) =
 --    (0.64 secs, 665,965,832 bytes)
 --    λ> sumaDigitos2 (product [1..2*10^4])
 --    325494
---    (1.76 secs, 1,647,082,224 bytes)
+--    (0.41 secs, 660,579,064 bytes)
 --    λ> sumaDigitos3 (product [1..2*10^4])
 --    325494
+--    (1.76 secs, 1,647,082,224 bytes)
+--    λ> sumaDigitos4 (product [1..2*10^4])
+--    325494
 --    (1.72 secs, 1,662,177,792 bytes)
+--
+--    λ> sumaDigitos1 (product [1..5*10^4])
+--    903555
+--    (2.51 secs, 3,411,722,136 bytes)
+--    λ> sumaDigitos2 (product [1..5*10^4])
+--    903555
+--    (2.30 secs, 3,396,802,856 bytes)
