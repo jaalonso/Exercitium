@@ -44,7 +44,7 @@ sumaDigitos2 n = foldl' (+) 0 (digitos n)
 sumaDigitos3 :: Integer -> Integer
 sumaDigitos3 n
   | n < 10    = n
-  | otherwise = n `rem` 10 + sumaDigitos2 (n `div` 10)
+  | otherwise = n `rem` 10 + sumaDigitos3 (n `div` 10)
 
 -- 4ª solución
 -- ===========
@@ -82,7 +82,7 @@ prop_sumaDigitos (NonNegative n) =
 --    (0.41 secs, 660,579,064 bytes)
 --    λ> sumaDigitos3 (product [1..2*10^4])
 --    325494
---    (1.76 secs, 1,647,082,224 bytes)
+--    (1.58 secs, 1,647,082,224 bytes)
 --    λ> sumaDigitos4 (product [1..2*10^4])
 --    325494
 --    (1.72 secs, 1,662,177,792 bytes)
