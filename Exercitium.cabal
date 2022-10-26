@@ -77,6 +77,7 @@ library
       Emparejamiento_de_arboles_1
       Enumera_arbol
       Exponente_en_la_factorizacion
+      Exponente_mayor
       Factorizaciones_de_numeros_de_Hilbert
       Familias_de_numeros_con_algun_digito_en_comun
       Formula_de_Heron_para_el_area_de_un_triangulo
@@ -302,6 +303,7 @@ test-suite Exercitium-test
       Emparejamiento_de_arboles_Spec
       Enumera_arbol_Spec
       Exponente_en_la_factorizacion_Spec
+      Exponente_mayor_Spec
       Factorizaciones_de_numeros_de_Hilbert_Spec
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
