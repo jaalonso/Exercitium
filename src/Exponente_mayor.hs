@@ -1,7 +1,7 @@
 -- Exponente_mayor.hs
 -- Exponente_de la mayor potencia de x que divide a y.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 26-octubre-2022
+-- Sevilla, 1-noviembre-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
