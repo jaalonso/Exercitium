@@ -159,6 +159,7 @@ library
       Primos_cubanos
       Primos_equidistantes
       Producto_cartesiano
+      Producto_cartesiano_de_dos_conjuntos
       Producto_de_los_elementos_de_la_diagonal_principal
       Producto_escalar
       Puntos_dentro_del_circulo
@@ -380,6 +381,7 @@ test-suite Exercitium-test
       Primos_consecutivos_con_media_capicua_Spec
       Primos_cubanos_Spec
       Primos_equidistantes_Spec
+      Producto_cartesiano_de_dos_conjuntos_Spec
       Producto_cartesiano_Spec
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
       Producto_escalar_Spec
