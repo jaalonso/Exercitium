@@ -182,6 +182,7 @@ library
       Segmentos_consecutivos
       Separacion_por_posicion
       Sistema_factoradico_de_numeracion
+      Subconjuntos_de_un_conjunto
       Sucesion_de_numeros_amigos
       Sucesion_de_suma_de_cuadrados_de_los_digitos
       Suma_alterna_de_factoriales
@@ -404,6 +405,7 @@ test-suite Exercitium-test
       Segmentos_consecutivos_Spec
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
+      Subconjuntos_de_un_conjunto_Spec
       Sucesion_de_numeros_amigos_Spec
       Sucesion_de_suma_de_cuadrados_de_los_digitos_Spec
       Suma_alterna_de_factoriales_Spec

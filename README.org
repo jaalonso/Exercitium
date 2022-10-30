@@ -207,3 +207,4 @@ Los objetivos de esta recopilación son:
 + L31-10-22 [[./src/Numero_a_partir_de_sus_digitos.hs][Número a partir de sus dígitos]].
 + M01-11-22 [[./src/Exponente_mayor.hs][Exponente_de la mayor potencia de x que divide a y]].
 + X02-11-22 [[./src/Producto_cartesiano_de_dos_conjuntos.hs][Producto cartesiano de dos conjuntos]].
++ J03-11-22 [[./src/Subconjuntos_de_un_conjunto.hs][Subconjuntos_de_un_conjunto]].
