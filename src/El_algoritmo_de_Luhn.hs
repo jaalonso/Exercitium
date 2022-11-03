@@ -59,7 +59,7 @@ module El_algoritmo_de_Luhn where
 digitosInv :: Integer -> [Integer]
 digitosInv n = [read [x] | x <- reverse (show n)]
 
--- Nota: El el ejercicio "Dígitos de un número" https://bit.ly/3Tkhc2T
+-- Nota: En el ejercicio "Dígitos de un número" https://bit.ly/3Tkhc2T
 -- se presentan otras definiciones.
 
 -- Definiciones de doblePosImpar
