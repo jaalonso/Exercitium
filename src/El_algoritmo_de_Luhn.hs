@@ -36,7 +36,6 @@ module El_algoritmo_de_Luhn where
 -- + (digitosInv n) es la lista de los dígitos del número n. en orden
 --   inverso. Por ejemplo,
 --      digitosInv 320274  ==  [4,7,2,0,2,3]
---      doblePosImpar :: [Integer] -> [Integer]
 -- + (doblePosImpar ns) es la lista obtenida doblando los elementos en
 --   las posiciones impares (empezando a contar en cero y dejando igual
 --   a los que están en posiciones pares. Por ejemplo,
