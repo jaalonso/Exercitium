@@ -202,9 +202,10 @@ Los objetivos de esta recopilación son:
 + [[./src/Base_de_dato_de_actividades.hs][Base de datos de actividades.]]
 + [[./src/Potencia_entera.hs][Potencia entera]].
 + [[./src/Algoritmo_de_Euclides_del_mcd.hs][Algoritmo de Euclides del mcd]].
-+ J27-10-22 [[./src/Digitos_de_un_numero.hs][Dígitos de un número]].
-+ V28-10-22 [[./src/Suma_de_los_digitos_de_un_numero.hs][Suma de los digitos de un número]].
-+ L31-10-22 [[./src/Numero_a_partir_de_sus_digitos.hs][Número a partir de sus dígitos]].
-+ M01-11-22 [[./src/Exponente_mayor.hs][Exponente_de la mayor potencia de x que divide a y]].
-+ X02-11-22 [[./src/Producto_cartesiano_de_dos_conjuntos.hs][Producto cartesiano de dos conjuntos]].
-+ J03-11-22 [[./src/Subconjuntos_de_un_conjunto.hs][Subconjuntos_de_un_conjunto]].
++ [[./src/Digitos_de_un_numero.hs][Dígitos de un número]].
++ [[./src/Suma_de_los_digitos_de_un_numero.hs][Suma de los digitos de un número]].
++ [[./src/Numero_a_partir_de_sus_digitos.hs][Número a partir de sus dígitos]].
++ [[./src/Exponente_mayor.hs][Exponente_de la mayor potencia de x que divide a y]].
++ [[./src/Producto_cartesiano_de_dos_conjuntos.hs][Producto cartesiano de dos conjuntos]].
++ [[./src/Subconjuntos_de_un_conjunto.hs][Subconjuntos_de_un_conjunto]].
++ V04-11-22 [[./src/El_algoritmo_de_Luhn.hs][El algoritmo de Luhn]].
