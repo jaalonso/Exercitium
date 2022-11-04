@@ -17,16 +17,18 @@
 -- + 89, ya que en 24 pasos se obtiene un capicúa.
 -- En esta serie de ejercicios vamos a buscar el primer número de
 -- Lychrel.
---
+-- ---------------------------------------------------------------------
+
+module Numeros_de_Lychrel where
+import Test.QuickCheck
+
+-- ---------------------------------------------------------------------
 -- Ejercicio 1. Definir la función
 --    esCapicua :: Integer -> Bool
 -- tal que (esCapicua x) se verifica si x es capicúa. Por ejemplo,
 --    esCapicua 252  ==  True
 --    esCapicua 253  ==  False
 -- ---------------------------------------------------------------------
-
-module Numeros_de_Lychrel where
-import Test.QuickCheck
 
 esCapicua :: Integer -> Bool
 esCapicua x = x' == reverse x'
