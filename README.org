@@ -208,4 +208,5 @@ Los objetivos de esta recopilación son:
 + [[./src/Exponente_mayor.hs][Exponente_de la mayor potencia de x que divide a y]].
 + [[./src/Producto_cartesiano_de_dos_conjuntos.hs][Producto cartesiano de dos conjuntos]].
 + [[./src/Subconjuntos_de_un_conjunto.hs][Subconjuntos_de_un_conjunto]].
-+ V04-11-22 [[./src/El_algoritmo_de_Luhn.hs][El algoritmo de Luhn]].
++ [[./src/El_algoritmo_de_Luhn.hs][El algoritmo de Luhn]].
++ L07-11-22 [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]]

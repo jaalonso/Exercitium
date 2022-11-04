@@ -130,6 +130,7 @@ library
       Numeros_autodescriptivos
       Numeros_belgas
       Numeros_con_digitos_primos
+      Numeros_de_Lychrel
       Numeros_de_ocurrencias_de_elementos
       Numeros_de_Pentanacci
       Numeros_libres_de_cuadrados
@@ -357,6 +358,7 @@ test-suite Exercitium-test
       Numeros_autodescriptivos_Spec
       Numeros_belgas_Spec
       Numeros_con_digitos_primos_Spec
+      Numeros_de_Lychrel_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
       Numeros_de_Pentanacci_Spec
       Numeros_libres_de_cuadrados_Spec
