@@ -190,6 +190,7 @@ library
       Suma_alterna_de_factoriales
       Suma_de_cadenas
       Suma_de_cuadrados_menos_cuadrado_de_la_suma
+      Suma_de_digitos_de_cadena
       Suma_de_divisores
       Suma_de_fila_del_triangulo_de_los_impares
       Suma_de_los_cuadrados_de_los_primeros_numeros_naturales
@@ -415,6 +416,7 @@ test-suite Exercitium-test
       Suma_alterna_de_factoriales_Spec
       Suma_de_cadenas_Spec
       Suma_de_cuadrados_menos_cuadrado_de_la_suma_Spec
+      Suma_de_digitos_de_cadena_Spec
       Suma_de_divisores_Spec
       Suma_de_fila_del_triangulo_de_los_impares_Spec
       Suma_de_los_cuadrados_de_los_primeros_numeros_naturales_Spec

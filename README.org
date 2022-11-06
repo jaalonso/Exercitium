@@ -210,3 +210,4 @@ Los objetivos de esta recopilación son:
 + [[./src/Subconjuntos_de_un_conjunto.hs][Subconjuntos_de_un_conjunto]].
 + [[./src/El_algoritmo_de_Luhn.hs][El algoritmo de Luhn]].
 + L07-11-22 [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]]
++ M08-11-22 [[./src/Suma_de_digitos_de_cadena.hs][Suma de los dígitos de una cadena]].
