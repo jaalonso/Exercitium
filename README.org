@@ -209,5 +209,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Producto_cartesiano_de_dos_conjuntos.hs][Producto cartesiano de dos conjuntos]].
 + [[./src/Subconjuntos_de_un_conjunto.hs][Subconjuntos_de_un_conjunto]].
 + [[./src/El_algoritmo_de_Luhn.hs][El algoritmo de Luhn]].
-+ L07-11-22 [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]]
++ [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]]
 + M08-11-22 [[./src/Suma_de_digitos_de_cadena.hs][Suma de los dígitos de una cadena]].
++ X09-11-22 [[./src/Mayuscula_inicial.hs][Poner en mayúscula la primera letra y las restantes en minúsculas]].

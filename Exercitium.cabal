@@ -111,6 +111,7 @@ library
       Mayor_producto_de_las_ramas_de_un_arbol
       Mayor_rectangulo
       Mayor_semiprimo_menor_que_n
+      Mayuscula_inicial
       Media_aritmetica_de_tres_numeros
       Menor_numero_con_una_cantidad_dada_de_divisores
       Metodo_de_biseccion_para_aproximar_raices_de_funciones
@@ -340,6 +341,7 @@ test-suite Exercitium-test
       Mayor_producto_de_las_ramas_de_un_arbol_Spec
       Mayor_rectangulo_Spec
       Mayor_semiprimo_menor_que_n_Spec
+      Mayuscula_inicial_Spec
       Media_aritmetica_de_tres_numeros_Spec
       Menor_numero_con_una_cantidad_dada_de_divisores_Spec
       Metodo_de_biseccion_para_aproximar_raices_de_funciones_Spec
