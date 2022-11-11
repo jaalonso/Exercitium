@@ -67,10 +67,8 @@ esSubcadena5 = (. tails) . any . isPrefixOf
 esSubcadena6 :: String -> String -> Bool
 esSubcadena6 = isInfixOf
 
--- ---------------------------------------------------------------------
--- Ejercicio 5.3. Comprobar con QuickCheck que ambas definiciones son
--- equivalentes.
--- ---------------------------------------------------------------------
+-- Comprobación de equivalencia
+-- ============================
 
 -- La propiedad es
 prop_esSubcadena :: String -> String -> Bool
