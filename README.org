@@ -212,4 +212,5 @@ Los objetivos de esta recopilación son:
 + [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]]
 + [[./src/Suma_de_digitos_de_cadena.hs][Suma de los dígitos de una cadena]].
 + [[./src/Mayuscula_inicial.hs][Poner en mayúscula la primera letra y las restantes en minúsculas]].
-+ Pdte. [[./src/Mayusculas_iniciales.hs][Mayúsculas iniciales]].
++ [[./src/Mayusculas_iniciales.hs][Mayúsculas iniciales]].
++ [[./src/Posiciones_de_un_caracter_en_una_cadena.hs][Posiciones de un carácter en una cadena]].

@@ -152,6 +152,7 @@ library
       Permutacion_ciclica
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
+      Posiciones_de_un_caracter_en_una_cadena
       Posiciones_diagonales_principales
       Potencia_entera
       Potencias_perfectas
@@ -382,6 +383,7 @@ test-suite Exercitium-test
       Permutacion_ciclica_Spec
       Polinomios_cuadraticos_generadores_de_primos_Spec
       Polinomios_de_Bell_Spec
+      Posiciones_de_un_caracter_en_una_cadena_Spec
       Posiciones_diagonales_principales_Spec
       Potencia_entera_Spec
       Potencias_perfectas_Spec
