@@ -214,3 +214,4 @@ Los objetivos de esta recopilación son:
 + [[./src/Mayuscula_inicial.hs][Poner en mayúscula la primera letra y las restantes en minúsculas]].
 + [[./src/Mayusculas_iniciales.hs][Mayúsculas iniciales]].
 + [[./src/Posiciones_de_un_caracter_en_una_cadena.hs][Posiciones de un carácter en una cadena]].
++ L14-11-22 [[./src/Reconocimiento_de_subcadenas.hs][Reconocimiento de subcadenas]].
