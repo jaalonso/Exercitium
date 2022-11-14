@@ -186,6 +186,7 @@ library
       Representaciones_de_un_numero_como_suma_de_dos_cuadrados
       Segmento_de_una_lista
       Segmentos_consecutivos
+      Segmentos_cuyos_elementos_cumple_una_propiedad
       Separacion_por_posicion
       Sistema_factoradico_de_numeracion
       Subconjuntos_de_un_conjunto
@@ -416,6 +417,7 @@ test-suite Exercitium-test
       Representaciones_de_un_numero_como_suma_de_dos_cuadrados_Spec
       Segmento_de_una_lista_Spec
       Segmentos_consecutivos_Spec
+      Segmentos_cuyos_elementos_cumple_una_propiedad_Spec
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
       Subconjuntos_de_un_conjunto_Spec
