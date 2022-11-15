@@ -70,6 +70,7 @@ library
       El_primero_al_final
       El_triangulo_de_Floyd
       Elemento_mediano
+      Elementos_consecutivos_relacionados
       Elementos_finales
       Elementos_minimales
       Elimina_aisladas
@@ -307,6 +308,7 @@ test-suite Exercitium-test
       El_primero_al_final_Spec
       El_triangulo_de_Floyd_Spec
       Elemento_mediano_Spec
+      Elementos_consecutivos_relacionados_Spec
       Elementos_finales_Spec
       Elementos_minimales_Spec
       Elimina_aisladas_Spec
