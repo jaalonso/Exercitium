@@ -26,6 +26,7 @@ source-repository head
 
 library
   exposed-modules:
+      Agrupacion_de_elementos_por_posicion
       Alergias
       Alfabeto_desde
       Algoritmo_de_Euclides_del_mcd
@@ -266,6 +267,7 @@ test-suite Exercitium-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Agrupacion_de_elementos_por_posicion_Spec
       Alergias_Spec
       Alfabeto_desde_Spec
       Algoritmo_de_Euclides_del_mcd_Spec
