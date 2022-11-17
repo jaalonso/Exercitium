@@ -217,4 +217,5 @@ Los objetivos de esta recopilación son:
 + [[./src/Reconocimiento_de_subcadenas.hs][Reconocimiento de subcadenas]].
 + [[./src/Segmentos_cuyos_elementos_cumple_una_propiedad.hs][Segmentos cuyos elementos cumplen una propiedad]].
 + [[./src/Elementos_consecutivos_relacionados.hs][Elementos consecutivos relacionados]].
-+ J17-11-22 [[./src/Agrupacion_de_elementos_por_posicion.hs][Agrupación de elementos por posición]].
++ [[./src/Agrupacion_de_elementos_por_posicion.hs][Agrupación de elementos por posición]].
++ V18-11-22 [[./src/Contenacion_de_una_lista_de_listas.hs][Contenación de una lista de listas]].

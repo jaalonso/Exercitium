@@ -51,6 +51,7 @@ library
       Composicion_de_relaciones_binarias
       Conjunto_de_divisores
       Conjunto_de_primos_relativos
+      Contenacion_de_una_lista_de_listas
       Cuadrado_mas_cercano
       Densidad_de_numeros_abundantes
       Descomposiciones_con_sumandos_1_o_2
@@ -291,6 +292,7 @@ test-suite Exercitium-test
       Composicion_de_relaciones_binarias_Spec
       Conjunto_de_divisores_Spec
       Conjunto_de_primos_relativos_Spec
+      Contenacion_de_una_lista_de_listas_Spec
       Cuadrado_mas_cercano_Spec
       Densidad_de_numeros_abundantes_Spec
       Descomposiciones_con_sumandos_1_o_2_Spec
