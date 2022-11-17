@@ -1,5 +1,5 @@
--- Contenacion_de_una_lista_de_listas.hs
--- Contenación de una lista de listas.
+-- Concatenacion_de_una_lista_de_listas.hs
+-- Concatenación de una lista de listas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 18-noviembre-2022
 -- ---------------------------------------------------------------------
