@@ -218,4 +218,5 @@ Los objetivos de esta recopilación son:
 + [[./src/Segmentos_cuyos_elementos_cumple_una_propiedad.hs][Segmentos cuyos elementos cumplen una propiedad]].
 + [[./src/Elementos_consecutivos_relacionados.hs][Elementos consecutivos relacionados]].
 + [[./src/Agrupacion_de_elementos_por_posicion.hs][Agrupación de elementos por posición]].
-+ V18-11-22 [[./src/Contenacion_de_una_lista_de_listas.hs][Contenación de una lista de listas]].
++ [[./src/Contenacion_de_una_lista_de_listas.hs][Contenación de una lista de listas]].
++ L21-12-22 [[./src/Aplica_segun_propiedad.hs][Aplica según propiedad]].
