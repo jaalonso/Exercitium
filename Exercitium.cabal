@@ -109,6 +109,7 @@ library
       Matriz_zigzagueante
       Maxima_suma_de_caminos_en_un_triangulo
       Maximo_de_tres_numeros
+      Maximo_de_una_lista
       Maximos_locales
       Mayor_numero_con_dos_digitos_dados
       Mayor_orbita_de_la_sucesion_de_Collatz
@@ -347,6 +348,7 @@ test-suite Exercitium-test
       Matriz_zigzagueante_Spec
       Maxima_suma_de_caminos_en_un_triangulo_Spec
       Maximo_de_tres_numeros_Spec
+      Maximo_de_una_lista_Spec
       Maximos_locales_Spec
       Mayor_numero_con_dos_digitos_dados_Spec
       Mayor_orbita_de_la_sucesion_de_Collatz_Spec
