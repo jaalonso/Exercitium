@@ -221,3 +221,4 @@ Los objetivos de esta recopilación son:
 + [[./src/Contenacion_de_una_lista_de_listas.hs][Contenación de una lista de listas]].
 + L21-nov [[./src/Aplica_segun_propiedad.hs][Aplica según propiedad]].
 + M22-nov [[./src/Maximo_de_una_lista.hs][Máximo de una lista]].
++ X23-nov [[./src/Movimientos_en_el_plano.hs][Movimientos en el plano]].

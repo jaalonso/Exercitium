@@ -1,5 +1,5 @@
 -- Maximo_de_una_lista.hs
--- Máximo de una lista.
+-- Máximo de una lista
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 22-noviembre-2022
 -- ---------------------------------------------------------------------
