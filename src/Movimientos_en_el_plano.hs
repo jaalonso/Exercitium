@@ -22,8 +22,8 @@
 --   posición p, un paso en la dirección d . Por ejemplo,
 --      movimiento (2,5) Arriba          == (2,6)
 --      movimiento (2,5) (opuesta Abajo) == (2,6)
--- + (movimientos p ms) es la posición obtenida aplicando la lista de
---   movimientos ms a la posición p. Por ejemplo,
+-- + (movimientos p ds) es la posición obtenida aplicando la lista de
+--   movimientos según las direcciones de ds a la posición p. Por ejemplo,
 --      movimientos (2,5)  [Arriba, Izquierda] == (1,6)
 -- ---------------------------------------------------------------------
 
@@ -68,7 +68,7 @@ movimiento2 (x,y) d =
 
 movimientos1 :: Posicion -> [Direccion] -> Posicion
 movimientos1 p []     = p
-movimientos1 p (m:ms) = movimientos1 (movimiento1 p m) ms
+movimientos1 p (d:ds) = movimientos1 (movimiento1 p d) ds
 
 -- 2ª definición de movimientos
 -- ============================
