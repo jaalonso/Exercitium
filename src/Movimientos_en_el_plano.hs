@@ -27,7 +27,7 @@
 --      movimientos (2,5)  [Arriba, Izquierda] == (1,6)
 -- ---------------------------------------------------------------------
 
-module El_tipo_de_los_movimientos where
+module Movimientos_en_el_plano where
 
 type Posicion = (Int,Int)
 

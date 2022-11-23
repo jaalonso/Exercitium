@@ -219,6 +219,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Elementos_consecutivos_relacionados.hs][Elementos consecutivos relacionados]].
 + [[./src/Agrupacion_de_elementos_por_posicion.hs][Agrupación de elementos por posición]].
 + [[./src/Contenacion_de_una_lista_de_listas.hs][Contenación de una lista de listas]].
-+ L21-nov [[./src/Aplica_segun_propiedad.hs][Aplica según propiedad]].
-+ M22-nov [[./src/Maximo_de_una_lista.hs][Máximo de una lista]].
-+ X23-nov [[./src/Movimientos_en_el_plano.hs][Movimientos en el plano]].
++ [[./src/Aplica_segun_propiedad.hs][Aplica según propiedad]].
++ [[./src/Maximo_de_una_lista.hs][Máximo de una lista]].
++ [[./src/Movimientos_en_el_plano.hs][Movimientos en el plano]].
++ J24 [[./src/El_tipo_de_figuras_geometricas.hs][El tipo de figuras geométricas]].
