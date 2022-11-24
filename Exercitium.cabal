@@ -72,6 +72,7 @@ library
       El_algoritmo_de_Luhn
       El_primero_al_final
       El_tipo_de_figuras_geometricas
+      El_tipo_de_los_numeros_naturales
       El_triangulo_de_Floyd
       Elemento_mediano
       Elementos_consecutivos_relacionados
@@ -316,6 +317,7 @@ test-suite Exercitium-test
       El_algoritmo_de_Luhn_Spec
       El_primero_al_final_Spec
       El_tipo_de_figuras_geometricas_Spec
+      El_tipo_de_los_numeros_naturales_Spec
       El_triangulo_de_Floyd_Spec
       Elemento_mediano_Spec
       Elementos_consecutivos_relacionados_Spec

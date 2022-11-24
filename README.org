@@ -222,4 +222,5 @@ Los objetivos de esta recopilación son:
 + [[./src/Aplica_segun_propiedad.hs][Aplica según propiedad]].
 + [[./src/Maximo_de_una_lista.hs][Máximo de una lista]].
 + [[./src/Movimientos_en_el_plano.hs][Movimientos en el plano]].
-+ J24 [[./src/El_tipo_de_figuras_geometricas.hs][El tipo de figuras geométricas]].
++ [[./src/El_tipo_de_figuras_geometricas.hs][El tipo de figuras geométricas]].
++ [[./src/El_tipo_de_los_numeros_naturales.hs][El tipo de los números naturales]].
