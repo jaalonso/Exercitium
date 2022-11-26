@@ -224,3 +224,4 @@ Los objetivos de esta recopilación son:
 + [[./src/Movimientos_en_el_plano.hs][Movimientos en el plano]].
 + [[./src/El_tipo_de_figuras_geometricas.hs][El tipo de figuras geométricas]].
 + [[./src/El_tipo_de_los_numeros_naturales.hs][El tipo de los números naturales]].
++ L28 [[./src/El_tipo_de_las_listas.hs][El tipo de las listas]].
