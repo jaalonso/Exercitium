@@ -13,7 +13,7 @@
 -- Definir la función
 --    longitud :: Lista a -> Int
 -- tal que  (longitud xs) es la longitud de la lista xs. Por ejemplo,
---    longitud (Cons 24 (Cons 2 (Cons 5 Nil)))  ==  3
+--    longitud (Cons 4 (Cons 2 (Cons 5 Nil)))  ==  3
 -- ---------------------------------------------------------------------
 
 module El_tipo_de_las_listas where
