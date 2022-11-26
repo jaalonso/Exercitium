@@ -73,6 +73,7 @@ library
       El_primero_al_final
       El_tipo_de_figuras_geometricas
       El_tipo_de_las_listas
+      El_tipo_de_los_arboles_binarios
       El_tipo_de_los_numeros_naturales
       El_triangulo_de_Floyd
       Elemento_mediano
@@ -319,6 +320,7 @@ test-suite Exercitium-test
       El_primero_al_final_Spec
       El_tipo_de_figuras_geometricas_Spec
       El_tipo_de_las_listas_Spec
+      El_tipo_de_los_arboles_binarios_Spec
       El_tipo_de_los_numeros_naturales_Spec
       El_triangulo_de_Floyd_Spec
       Elemento_mediano_Spec
