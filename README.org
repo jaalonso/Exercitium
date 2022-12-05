@@ -224,5 +224,10 @@ Los objetivos de esta recopilación son:
 + [[./src/Movimientos_en_el_plano.hs][Movimientos en el plano]].
 + [[./src/El_tipo_de_figuras_geometricas.hs][El tipo de figuras geométricas]].
 + [[./src/El_tipo_de_los_numeros_naturales.hs][El tipo de los números naturales]].
-+ L28 [[./src/El_tipo_de_las_listas.hs][El tipo de las listas]].
-+ M29 [[./src/El_tipo_de_los_arboles_binarios.hs][El tipo de_los árboles binarios]].
++ [[./src/El_tipo_de_las_listas.hs][El tipo de las listas]].
++ [[./src/El_tipo_de_los_arboles_binarios.hs][El tipo de_los árboles binarios]].
++ [[./src/Variables_de_una_formula.hs][El tipo de las fórmulas proposicionales: Variables de una fórmula]].
++ [[./src/Valor_de_una_formula.hs][El tipo de las fórmulas proposicionales: Valor de una fórmula]].
++ [[./src/Interpretaciones_de_una_formula.hs][El tipo de las fórmulas proposicionales: Interpretaciones de una fórmula]].
++ [[./src/Validez_de_una_formula.hs][El tipo de las fórmulas proposicionales: Reconocedor de tautologías]].
++ M06 [[./src/Altura_de_un_arbol_binario.hs][Altura de un árbol binario]].

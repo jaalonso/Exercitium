@@ -31,6 +31,7 @@ library
       Alfabeto_desde
       Algoritmo_de_Euclides_del_mcd
       Algun_vecino_menor
+      Altura_de_un_arbol_binario
       Amplia_columnas
       Anagramas
       Aplica_segun_propiedad
@@ -96,6 +97,7 @@ library
       Indices_verdaderos
       Intercambio_de_componentes_de_un_par
       Interior_de_una_lista
+      Interpretaciones_de_una_formula
       Interseccion_conjuntista_de_listas
       Interseccion_de_intervalos_cerrados
       Intersecciones_parciales
@@ -235,7 +237,10 @@ library
       Ultimo_digito
       Union_conjuntista_de_listas
       Union_e_interseccion_general
+      Validez_de_una_formula
       Valor_de_un_polinomio
+      Valor_de_una_formula
+      Variables_de_una_formula
       Volumen_de_la_esfera
   other-modules:
       Paths_Exercitium
@@ -280,6 +285,7 @@ test-suite Exercitium-test
       Alfabeto_desde_Spec
       Algoritmo_de_Euclides_del_mcd_Spec
       Algun_vecino_menor_Spec
+      Altura_de_un_arbol_binario_Spec
       Anagramas_Spec
       Aplica_segun_propiedad_Spec
       Aproximacion_de_numero_pi_Spec
