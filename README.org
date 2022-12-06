@@ -230,4 +230,4 @@ Los objetivos de esta recopilación son:
 + [[./src/Valor_de_una_formula.hs][El tipo de las fórmulas proposicionales: Valor de una fórmula]].
 + [[./src/Interpretaciones_de_una_formula.hs][El tipo de las fórmulas proposicionales: Interpretaciones de una fórmula]].
 + [[./src/Validez_de_una_formula.hs][El tipo de las fórmulas proposicionales: Reconocedor de tautologías]].
-+ M06 [[./src/Altura_de_un_arbol_binario.hs][Altura de un árbol binario]].
++ [[./src/Altura_de_un_arbol_binario.hs][Altura de un árbol binario]].
