@@ -35,6 +35,7 @@ library
       Amplia_columnas
       Anagramas
       Aplica_segun_propiedad
+      Aplicacion_de_una_funcion_a_un_arbol
       Aproximacion_de_numero_pi
       Aproximacion_del_numero_e
       Area_corona_circular
@@ -288,6 +289,7 @@ test-suite Exercitium-test
       Altura_de_un_arbol_binario_Spec
       Anagramas_Spec
       Aplica_segun_propiedad_Spec
+      Aplicacion_de_una_funcion_a_un_arbol_Spec
       Aproximacion_de_numero_pi_Spec
       Aproximacion_del_numero_e_Spec
       Area_corona_circular_Spec
