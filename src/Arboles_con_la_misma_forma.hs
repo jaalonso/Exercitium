@@ -27,13 +27,13 @@
 -- estructura. Por ejemplo,
 --    λ> arbol1 = Hoja 5
 --    λ> arbol2 = Hoja 3
---    λ> mismaForma1 arbol1 arbol2
+--    λ> mismaForma arbol1 arbol2
 --    True
 --    λ> arbol3 = Nodo (Hoja 6) (Hoja 7)
---    λ> mismaForma1 arbol1 arbol3
+--    λ> mismaForma arbol1 arbol3
 --    False
 --    λ> arbol4 = Nodo (Hoja 9) (Hoja 5)
---    λ> mismaForma1 arbol3 arbol4
+--    λ> mismaForma arbol3 arbol4
 --    True
 -- ---------------------------------------------------------------------
 
