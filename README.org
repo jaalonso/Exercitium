@@ -233,3 +233,4 @@ Los objetivos de esta recopilación son:
 + [[./src/Altura_de_un_arbol_binario.hs][Altura de un árbol binario]].
 + [[./src/Aplicacion_de_una_funcion_a_un_arbol.hs][Aplicación de una función a un árbol]].
 + [[./src/Arboles_con_la_misma_forma.hs][Árboles con la misma forma]].
++ [[./src/Arbol_con_las_hojas_en_la_profundidad_dada.hs][Árbol con las hojas en la profundidad dada]].

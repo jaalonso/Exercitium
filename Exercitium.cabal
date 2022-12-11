@@ -38,6 +38,7 @@ library
       Aplicacion_de_una_funcion_a_un_arbol
       Aproximacion_de_numero_pi
       Aproximacion_del_numero_e
+      Arbol_con_las_hojas_en_la_profundidad_dada
       Arboles_con_la_misma_forma
       Area_corona_circular
       Bandera_tricolor
@@ -293,6 +294,7 @@ test-suite Exercitium-test
       Aplicacion_de_una_funcion_a_un_arbol_Spec
       Aproximacion_de_numero_pi_Spec
       Aproximacion_del_numero_e_Spec
+      Arbol_con_las_hojas_en_la_profundidad_dada_Spec
       Area_corona_circular_Spec
       Bandera_tricolor_Spec
       Base_de_dato_de_actividades_Spec
