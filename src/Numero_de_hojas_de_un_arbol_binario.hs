@@ -5,18 +5,19 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Se consideran los árboles binarios definidos como sigue
---    data Arbol a = H
---                 | N a (Arbol a) (Arbol a)
--- Por ejemplo, el árbol
+-- El árbol binario
 --         9
 --        / \
 --       /   \
 --      3     7
 --     / \
 --    2   4
--- se representa por
+-- se puede representar por
 --    N 9 (N 3 (H 2) (H 4)) (H 7)
+--
+-- El tipo de los árboles binarios se puede definir por
+--    data Arbol a = H a
+--                 | N a (Arbol a) (Arbol a)
 --
 -- Definir la función
 --    nHojas :: Arbol a -> Int
