@@ -136,6 +136,7 @@ library
       Numeracion_de_ternas
       Numero_a_partir_de_sus_digitos
       Numero_de_divisores
+      Numero_de_hojas_de_un_arbol_binario
       Numero_de_inversiones
       Numero_de_operaciones_en_una_expresion
       Numero_de_particiones_en_k_subconjuntos
@@ -388,6 +389,7 @@ test-suite Exercitium-test
       Numeracion_de_ternas_Spec
       Numero_a_partir_de_sus_digitos_Spec
       Numero_de_divisores_Spec
+      Numero_de_hojas_de_un_arbol_binario_Spec
       Numero_de_inversiones_Spec
       Numero_de_operaciones_en_una_expresion_Spec
       Numero_de_particiones_en_k_subconjuntos_Spec
