@@ -195,6 +195,7 @@ library
       Reconocimiento_de_potencias_de_4
       Reconocimiento_de_subcadenas
       Reconocimiento_de_subconjunto
+      Recorrido_de_árboles_binarios
       Regiones
       Reiteracion_de_funciones
       Reiteracion_de_suma_de_consecutivos
@@ -446,6 +447,7 @@ test-suite Exercitium-test
       Reconocimiento_de_potencias_de_4_Spec
       Reconocimiento_de_subcadenas_Spec
       Reconocimiento_de_subconjunto_Spec
+      Recorrido_de_árboles_binarios_Spec
       Regiones_Spec
       Reiteracion_de_funciones_Spec
       Reiteracion_de_suma_de_consecutivos_Spec

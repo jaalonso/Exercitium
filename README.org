@@ -218,7 +218,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Segmentos_cuyos_elementos_cumple_una_propiedad.hs][Segmentos cuyos elementos cumplen una propiedad]].
 + [[./src/Elementos_consecutivos_relacionados.hs][Elementos consecutivos relacionados]].
 + [[./src/Agrupacion_de_elementos_por_posicion.hs][Agrupación de elementos por posición]].
-+ [[./src/Contenacion_de_una_lista_de_listas.hs][Contenación de una lista de listas]].
++ [[./src/Contenacion_de_una_lista_de_listas.hs][Concatenación de una lista de listas]].
 + [[./src/Aplica_segun_propiedad.hs][Aplica según propiedad]].
 + [[./src/Maximo_de_una_lista.hs][Máximo de una lista]].
 + [[./src/Movimientos_en_el_plano.hs][Movimientos en el plano]].
@@ -238,4 +238,5 @@ Los objetivos de esta recopilación son:
 + [[./src/Valor_de_la_resta.hs][El tipo de las expresiones aritméticas: Valor de la resta]].
 + [[./src/Numero_de_operaciones_en_una_expresion.hs][El tipo de las expresiones aritméticas: Número de operaciones en una expresión]].
 + [[./src/Numero_de_hojas_de_un_arbol_binario.hs][Número de hojas de un árbol binario]].
-+ V16 [[./src/Profundidad_de_un_arbol_binario.hs][Profundidad de un árbol binario]].
++ [[./src/Profundidad_de_un_arbol_binario.hs][Profundidad de un árbol binario]].
++ L19 [[./src/Recorrido_de_árboles_binarios.hs][Recorrido de árboles binarios]].
