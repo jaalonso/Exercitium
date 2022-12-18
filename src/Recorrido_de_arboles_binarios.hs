@@ -1,4 +1,4 @@
--- Recorrido_de_árboles_binarios.hs
+-- Recorrido_de_arboles_binarios.hs
 -- Recorrido de árboles binarios.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 19-diciembre-2022
@@ -42,7 +42,7 @@
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module Recorrido_de_árboles_binarios where
+module Recorrido_de_arboles_binarios where
 
 import Test.QuickCheck
 
@@ -50,23 +50,16 @@ data Arbol a = H a
              | N a (Arbol a) (Arbol a)
   deriving (Show, Eq)
 
--- 1ª definición de preorden
--- =========================
+preorden :: Arbol a -> [a]
+preorden (H x)     = [x]
+preorden (N x i d) = x : preorden i ++ preorden d
 
-preorden1 :: Arbol a -> [a]
-preorden1 (H x)     = [x]
-preorden1 (N x i d) = x : preorden1 i ++ preorden1 d
+postorden :: Arbol a -> [a]
+postorden (H x)     = [x]
+postorden (N x i d) = postorden i ++ postorden d ++ [x]
 
--- 2ª definición de preorden
--- =========================
-
-preorden2 :: Arbol a -> [a]
-preorden2 = aux []
-  where aux xs (H x)     = x : xs
-        aux xs (N x i d) = x : aux (aux xs d) i
-
--- Comprobación de equivalencia de preorden
--- ========================================
+-- Comprobación de la propiedad
+-- ============================
 
 -- (arbolArbitrario n) es un árbol aleatorio de altura n. Por ejemplo,
 --    λ> sample (arbolArbitrario 3 :: Gen (Arbol Int))
@@ -92,79 +85,10 @@ instance Arbitrary a => Arbitrary (Arbol a) where
   arbitrary = sized arbolArbitrario
 
 -- La propiedad es
-prop_preorden :: Arbol Int -> Bool
-prop_preorden x =
-  preorden1 x == preorden2 x
-
--- La comprobación es
---    λ> quickCheck prop_preorden
---    OK, passed 100 tests.
-
--- Comparación de eficiencia
--- =========================
-
--- (arbol n) es el arbol de profundidad n con sus valores iguales a
--- 1. Por ejemplo,
---    arbol 2  ==  N 1 (N 1 (H 1) (H 1)) (N 1 (H 1) (H 1))
-arbol :: Int -> Arbol Int
-arbol 0 = H 1
-arbol n = N 1 a a
-  where a = arbol (n-1)
-
--- La comparación es
---    λ> length (preorden1 (arbol 22))
---    8388607
---    (3.40 secs, 6,073,946,816 bytes)
---    λ> length (preorden2 (arbol 22))
---    8388607
---    (1.81 secs, 1,107,890,872 bytes)
-
--- 1ª definición de postorden
--- ==========================
-
-postorden1 :: Arbol a -> [a]
-postorden1 (H x)     = [x]
-postorden1 (N x i d) = postorden1 i ++ postorden1 d ++ [x]
-
--- 2ª definición de postorden
--- ==========================
-
-postorden2 :: Arbol a -> [a]
-postorden2 b = reverse (aux [] b)
-  where aux xs (H x)     = x : xs
-        aux xs (N x i d) = x : aux (aux xs i) d
-
--- Comprobación de equivalencia de postorden
--- =========================================
-
--- La propiedad es
-prop_postorden :: Arbol Int -> Bool
-prop_postorden x =
-  postorden1 x == postorden2 x
-
--- La comprobación es
---    λ> quickCheck prop_postorden
---    OK, passed 100 tests.
-
--- Comparación de eficiencia
--- =========================
-
--- La comparación es
---    λ> length (postorden1 (arbol 22))
---    8388607
---    (4.60 secs, 11,006,448,376 bytes)
---    λ> length (postorden2 (arbol 22))
---    8388607
---    (2.70 secs, 1,409,880,808 bytes)
-
--- Comprobación de la propiedad
--- ============================
-
--- La propiedad es
 prop_longitud_recorrido :: Arbol Int -> Bool
 prop_longitud_recorrido x =
-   length (preorden1 x)  == n &&
-   length (postorden1 x) == n
+   length (preorden x)  == n &&
+   length (postorden x) == n
    where n = nNodos x + nHojas x
 
 -- (nNodos x) es el número de nodos del árbol x. Por ejemplo,
