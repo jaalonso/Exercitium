@@ -92,7 +92,7 @@ prop_longitud_recorrido x =
    where n = nNodos x + nHojas x
 
 -- (nNodos x) es el número de nodos del árbol x. Por ejemplo,
---      nNodos (N 9 (N 3 (H 2) (H 4)) (H 7))  ==  2
+--    nNodos (N 9 (N 3 (H 2) (H 4)) (H 7))  ==  2
 nNodos :: Arbol a -> Int
 nNodos (H _)     = 0
 nNodos (N _ i d) = 1 + nNodos i + nNodos d
