@@ -96,29 +96,13 @@ postorden (N x i d) = postorden i ++ postorden d ++ [x]
 -- Comprobación de las propiedades
 -- ===============================
 
--- La 1ª propiedad es
-prop_espejo_espejo :: Arbol Int -> Bool
-prop_espejo_espejo x =
-  espejo (espejo x) == x
-
--- La comprobación es
---    λ> quickCheck prop_espejo_espejo
---    +++ OK, passed 100 tests.
-
--- La 2ª  propiedad es
-prop_reverse_preorden_espejo :: Arbol Int -> Bool
-prop_reverse_preorden_espejo x =
-  reverse (preorden (espejo x)) == postorden x
-
--- La comprobación es
---    λ> quickCheck prop_reverse_preorden_espejo
---    OK, passed 100 tests.
-
--- La 3ª propiedad es
-prop_postorden_espejo :: Arbol Int -> Bool
-prop_postorden_espejo x =
+-- Las propiedades son
+prop_espejo :: Arbol Int -> Bool
+prop_espejo x =
+  espejo (espejo x) == x &&
+  reverse (preorden (espejo x)) == postorden x &&
   postorden (espejo x) == reverse (preorden x)
 
 -- La comprobación es
---    λ> quickCheck prop_postorden_espejo
+--    λ> quickCheck prop_espejo
 --    OK, passed 100 tests.
