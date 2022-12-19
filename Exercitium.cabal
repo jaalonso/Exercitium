@@ -97,6 +97,7 @@ library
       Huecos_maximales_entre_primos
       Igualdad_de_conjuntos
       Iguales_al_siguiente
+      Imagen_especular_de_un_arbol_binario
       Indices_verdaderos
       Intercambio_de_componentes_de_un_par
       Interior_de_una_lista
@@ -356,6 +357,7 @@ test-suite Exercitium-test
       Huecos_maximales_entre_primos_Spec
       Igualdad_de_conjuntos_Spec
       Iguales_al_siguiente_Spec
+      Imagen_especular_de_un_arbol_binario_Spec
       Indices_verdaderos_Spec
       Intercambio_de_componentes_de_un_par_Spec
       Interior_de_una_lista_Spec
