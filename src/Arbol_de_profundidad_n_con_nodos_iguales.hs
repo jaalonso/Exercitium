@@ -39,8 +39,6 @@
 
 module Arbol_de_profundidad_n_con_nodos_iguales where
 
-{-# OPTIONS_GHC -fno-warn-unused-imports #-}
-
 import Test.QuickCheck
 
 data Arbol a = H a
