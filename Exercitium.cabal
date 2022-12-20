@@ -209,6 +209,7 @@ library
       Segmentos_cuyos_elementos_cumple_una_propiedad
       Separacion_por_posicion
       Sistema_factoradico_de_numeracion
+      Subarbol_de_profundidad_dada
       Subconjuntos_de_un_conjunto
       Sucesion_de_numeros_amigos
       Sucesion_de_suma_de_cuadrados_de_los_digitos
@@ -462,6 +463,7 @@ test-suite Exercitium-test
       Segmentos_cuyos_elementos_cumple_una_propiedad_Spec
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
+      Subarbol_de_profundidad_dada_Spec
       Subconjuntos_de_un_conjunto_Spec
       Sucesion_de_numeros_amigos_Spec
       Sucesion_de_suma_de_cuadrados_de_los_digitos_Spec
