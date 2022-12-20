@@ -242,3 +242,4 @@ Los objetivos de esta recopilación son:
 + [[./src/Recorrido_de_arboles_binarios.hs][Recorrido de árboles binarios]].
 + [[./src/Imagen_especular_de_un_arbol_binario.hs][Imagen especular de un árbol binario]].
 + X21 [[./src/Subarbol_de_profundidad_dada.hs][Subárbol de profundidad dada]].
++ J22 [[./src/Arbol_de_profundidad_n_con_nodos_iguales.hs][Árbol de profundidad n con nodos iguales]].
