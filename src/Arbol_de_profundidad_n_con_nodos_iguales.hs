@@ -19,6 +19,7 @@
 --    data Arbol a = H a
 --                 | N a (Arbol a) (Arbol a)
 --      deriving (Show, Eq)
+--
 -- Definir las funciones
 --    repeatArbol    :: a -> Arbol a
 --    replicateArbol :: Int -> a -> Arbol a
