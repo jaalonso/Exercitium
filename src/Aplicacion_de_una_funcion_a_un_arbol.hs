@@ -23,7 +23,7 @@
 --
 -- Definir la función
 --    mapArbol :: (a -> b) -> Arbol a -> Arbol b
--- tal que (mapArbol f t) es el árbolo obtenido aplicando la función f a
+-- tal que (mapArbol f t) es el árbol obtenido aplicando la función f a
 -- los elementos del árbol t. Por ejemplo,
 --    λ> mapArbol (+ 1) (Nodo (Hoja 2) (Hoja 4))
 --    Nodo (Hoja 3) (Hoja 5)
