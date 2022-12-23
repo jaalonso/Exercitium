@@ -190,6 +190,7 @@ library
       Puntos_dentro_del_circulo
       Puntos_en_regiones_rectangulares
       Raices_de_la_ecuacion_de_segundo_grado
+      Rama_izquierda_de_un_arbol_binario
       Ramas_de_un_arbol
       Rango_de_una_lista
       Reconocimiento_de_grandes_potencias_de_2
@@ -447,6 +448,7 @@ test-suite Exercitium-test
       Puntos_dentro_del_circulo_Spec
       Puntos_en_regiones_rectangulares_Spec
       Raices_de_la_ecuacion_de_segundo_grado_Spec
+      Rama_izquierda_de_un_arbol_binario_Spec
       Rango_de_una_lista_Spec
       Reconocimiento_de_grandes_potencias_de_2_Spec
       Reconocimiento_de_palindromos_Spec
