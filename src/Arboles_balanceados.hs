@@ -7,7 +7,7 @@
 -- ---------------------------------------------------------------------
 -- Los árboles binarios con valores en los nodos se pueden definir por
 --    data Arbol a = H
---                 | N a (Arbol1 a) (Arbol1 a)
+--                 | N a (Arbol a) (Arbol a)
 --      deriving (Show, Eq)
 -- Por ejemplo, el árbol
 --         9
