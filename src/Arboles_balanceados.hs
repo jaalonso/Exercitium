@@ -27,8 +27,10 @@
 --    balanceado :: Arbol a -> Bool
 -- tal que (balanceado a) se verifica si el árbol a está balanceado. Por
 -- ejemplo,
---    balanceado (N 5 H (N 3 H H))         == True
---    balanceado (N 5 H (N 3 (N 4 H H) H)) == False
+--    λ> balanceado (N 5 H (N 3 H H))
+--    True
+--    λ> balanceado (N 4 (N 3 (N 2 H H) H) (N 5 H (N 6 H (N 7 H H))))
+--    False
 -- ---------------------------------------------------------------------
 
 module Arboles_balanceados where
@@ -40,6 +42,8 @@ data Arbol a = H
 balanceado :: Arbol a -> Bool
 balanceado H         = True
 balanceado (N _ i d) = abs (numeroNodos i - numeroNodos d) <= 1
+                       && balanceado i
+                       && balanceado d
 
 -- (numeroNodos a) es el número de nodos del árbol a. Por ejemplo,
 --    numeroNodos (N 5 H (N 3 H H)) ==  2
