@@ -26,7 +26,7 @@
 --
 -- Definir la función
 --    igualEstructura :: Arbol -> Arbol -> Bool
--- tal que (igualEstructura a1 a1) se verifica si los árboles a1 y a2
+-- tal que (igualEstructura a1 a2) se verifica si los árboles a1 y a2
 -- tienen la misma estructura. Por ejemplo,
 --    igualEstructura ej3arbol1 ej3arbol2 == True
 --    igualEstructura ej3arbol1 ej3arbol3 == False
