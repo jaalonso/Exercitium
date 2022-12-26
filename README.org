@@ -244,5 +244,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Subarbol_de_profundidad_dada.hs][Subárbol de profundidad dada]].
 + [[./src/Arbol_de_profundidad_n_con_nodos_iguales.hs][Árbol de profundidad n con nodos iguales]].
 + [[./src/Suma_de_un_arbol.hs][Suma de un árbol]].
-+ L26 [[./src/Rama_izquierda_de_un_arbol_binario.hs][Rama izquierda de un árbol binario]].
++ [[./src/Rama_izquierda_de_un_arbol_binario.hs][Rama izquierda de un árbol binario]].
 + M27 [[./src/Arboles_balanceados.hs][Árboles balanceados]].
++ X28 [[./src/Arboles_con_bordes_iguales.hs][Árboles con bordes iguales]].

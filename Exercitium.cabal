@@ -41,6 +41,7 @@ library
       Arbol_con_las_hojas_en_la_profundidad_dada
       Arbol_de_profundidad_n_con_nodos_iguales
       Arboles_balanceados
+      Arboles_con_bordes_iguales
       Arboles_con_la_misma_forma
       Area_corona_circular
       Bandera_tricolor
@@ -309,6 +310,7 @@ test-suite Exercitium-test
       Arbol_con_las_hojas_en_la_profundidad_dada_Spec
       Arbol_de_profundidad_n_con_nodos_iguales_Spec
       Arboles_balanceados_Spec
+      Arboles_con_bordes_iguales_Spec
       Area_corona_circular_Spec
       Bandera_tricolor_Spec
       Base_de_dato_de_actividades_Spec
