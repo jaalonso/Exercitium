@@ -248,3 +248,4 @@ Los objetivos de esta recopilación son:
 + M27 [[./src/Arboles_balanceados.hs][Árboles balanceados]].
 + X28 [[./src/Arboles_con_bordes_iguales.hs][Árboles con bordes iguales]].
 + J29 [[./src/Arboles_con_igual_estructura.hs][Árboles con igual estructura]].
++ V30 [[./src/Existencia_de_elemento_del_arbol_con_propiedad.hs][Existencia de elementos del árbol que verifican una propiedad]].

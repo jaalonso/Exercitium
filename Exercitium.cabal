@@ -93,6 +93,7 @@ library
       Emparejamiento_de_arboles
       Emparejamiento_de_arboles_1
       Enumera_arbol
+      Existencia_de_elemento_del_arbol_con_propiedad
       Exponente_en_la_factorizacion
       Exponente_mayor
       Factorizaciones_de_numeros_de_Hilbert
@@ -360,6 +361,7 @@ test-suite Exercitium-test
       Emparejamiento_binario_Spec
       Emparejamiento_de_arboles_Spec
       Enumera_arbol_Spec
+      Existencia_de_elemento_del_arbol_con_propiedad_Spec
       Exponente_en_la_factorizacion_Spec
       Exponente_mayor_Spec
       Factorizaciones_de_numeros_de_Hilbert_Spec
