@@ -17,7 +17,7 @@
 --      3     2
 --     / \
 --    1   4
--- se pueden representar por
+-- se representa por
 --    N 5 (N 3 (H 1) (H 4)) (H 2)
 --
 -- Definir la función
