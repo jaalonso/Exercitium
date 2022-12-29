@@ -36,6 +36,7 @@ library
       Anagramas
       Aplica_segun_propiedad
       Aplicacion_de_una_funcion_a_un_arbol
+      Aplicacion_de_una_funcion_a_una_expresion_aritmetica
       Aproximacion_de_numero_pi
       Aproximacion_del_numero_e
       Arbol_con_las_hojas_en_la_profundidad_dada
@@ -311,6 +312,7 @@ test-suite Exercitium-test
       Anagramas_Spec
       Aplica_segun_propiedad_Spec
       Aplicacion_de_una_funcion_a_un_arbol_Spec
+      Aplicacion_de_una_funcion_a_una_expresion_aritmetica_Spec
       Aproximacion_de_numero_pi_Spec
       Aproximacion_del_numero_e_Spec
       Arbol_con_las_hojas_en_la_profundidad_dada_Spec
