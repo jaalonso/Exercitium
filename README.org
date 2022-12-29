@@ -247,7 +247,8 @@ Los objetivos de esta recopilación son:
 + [[./src/Rama_izquierda_de_un_arbol_binario.hs][Rama izquierda de un árbol binario]].
 + [[./src/Arboles_balanceados.hs][Árboles balanceados]].
 + [[./src/Arboles_con_bordes_iguales.hs][Árboles con bordes iguales]].
-+ J29 [[./src/Arboles_con_igual_estructura.hs][Árboles con igual estructura]].
++ [[./src/Arboles_con_igual_estructura.hs][Árboles con igual estructura]].
 + V30 [[./src/Existencia_de_elemento_del_arbol_con_propiedad.hs][Existencia de elementos del árbol que verifican una propiedad]].
 + L02 [[./src/Elementos_del_nivel_k_de_un_arbol.hs][Elementos del nivel k de un árbol]].
 + M03 [[./src/Arbol_de_factorizacion.hs][Árbol de factorización]].
++ X04 [[./src/Valor_de_un_arbol_booleano.hs][Valor de un árbol booleano]].
