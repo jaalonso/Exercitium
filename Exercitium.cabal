@@ -245,6 +245,7 @@ library
       Sumas_de_divisores_propios
       Sumas_de_dos_abundantes
       Sumas_de_dos_primos
+      Sustitucion_en_una_expresion_aritmetica
       Termino_ausente_en_una_progresion_aritmetica
       Ternas_pitagoricas
       Ternas_pitagoricas_con_suma_dada
@@ -515,6 +516,7 @@ test-suite Exercitium-test
       Sumas_de_divisores_propios_Spec
       Sumas_de_dos_abundantes_Spec
       Sumas_de_dos_primos_Spec
+      Sustitucion_en_una_expresion_aritmetica_Spec
       Termino_ausente_en_una_progresion_aritmetica_Spec
       Ternas_pitagoricas_con_suma_dada_Spec
       Ternas_pitagoricas_Spec
