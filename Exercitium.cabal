@@ -99,6 +99,7 @@ library
       Existencia_de_elemento_del_arbol_con_propiedad
       Exponente_en_la_factorizacion
       Exponente_mayor
+      Expresiones_aritmeticas_reducibles
       Factorizaciones_de_numeros_de_Hilbert
       Familias_de_numeros_con_algun_digito_en_comun
       Formula_de_Heron_para_el_area_de_un_triangulo
@@ -377,6 +378,7 @@ test-suite Exercitium-test
       Existencia_de_elemento_del_arbol_con_propiedad_Spec
       Exponente_en_la_factorizacion_Spec
       Exponente_mayor_Spec
+      Expresiones_aritmeticas_reducibles_Spec
       Factorizaciones_de_numeros_de_Hilbert_Spec
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
