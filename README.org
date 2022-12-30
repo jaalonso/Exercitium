@@ -248,10 +248,11 @@ Los objetivos de esta recopilación son:
 + [[./src/Arboles_balanceados.hs][Árboles balanceados]].
 + [[./src/Arboles_con_bordes_iguales.hs][Árboles con bordes iguales]].
 + [[./src/Arboles_con_igual_estructura.hs][Árboles con igual estructura]].
-+ V30 [[./src/Existencia_de_elemento_del_arbol_con_propiedad.hs][Existencia de elementos del árbol que verifican una propiedad]].
++ [[./src/Existencia_de_elemento_del_arbol_con_propiedad.hs][Existencia de elementos del árbol que verifican una propiedad]].
 + L02 [[./src/Elementos_del_nivel_k_de_un_arbol.hs][Elementos del nivel k de un árbol]].
 + M03 [[./src/Arbol_de_factorizacion.hs][Árbol de factorización]].
 + X04 [[./src/Valor_de_un_arbol_booleano.hs][Valor de un árbol booleano]].
 + J05 [[./src/Valor_de_una_expresion_aritmetica_basica.hs][Valor de una expresión aritmética básica]].
 + V06 [[./src/Aplicacion_de_una_funcion_a_una_expresion_aritmetica.hs][Aplicación de una función a una expresión aritmética]].
 + L09 [[./src/Valor_de_una_expresion_aritmetica_con_una_variable.hs][Valor de una expresión aritmética con una variable]].
++ M10 [[./src/Numero_de_variables_de_una_expresion_aritmetica.hs][Número de variables de una expresión aritmética]].
