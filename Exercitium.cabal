@@ -151,6 +151,7 @@ library
       Numero_de_particiones_en_k_subconjuntos
       Numero_de_raices_de_la_ecuacion_de_segundo_grado
       Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados
+      Numero_de_sumas_en_una_expresion_aritmetica
       Numero_de_variables_de_una_expresion_aritmetica
       Numeros_abundantes
       Numeros_abundantes_impares
@@ -423,6 +424,7 @@ test-suite Exercitium-test
       Numero_de_particiones_en_k_subconjuntos_Spec
       Numero_de_raices_de_la_ecuacion_de_segundo_grado_Spec
       Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados_Spec
+      Numero_de_sumas_en_una_expresion_aritmetica_Spec
       Numero_de_variables_de_una_expresion_aritmetica_Spec
       Numeros_abundantes_impares_Spec
       Numeros_abundantes_menores_o_iguales_que_n_Spec
