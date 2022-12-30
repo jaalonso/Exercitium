@@ -264,6 +264,7 @@ library
       Valor_de_una_expresion_aritmetica
       Valor_de_una_expresion_aritmetica_basica
       Valor_de_una_expresion_aritmetica_con_una_variable
+      Valor_de_una_expresion_aritmetica_con_variables
       Valor_de_una_formula
       Variables_de_una_formula
       Volumen_de_la_esfera
@@ -529,6 +530,7 @@ test-suite Exercitium-test
       Valor_de_un_polinomio_Spec
       Valor_de_una_expresion_aritmetica_basica_Spec
       Valor_de_una_expresion_aritmetica_con_una_variable_Spec
+      Valor_de_una_expresion_aritmetica_con_variables_Spec
       Valor_de_una_expresion_aritmetica_Spec
       Volumen_de_la_esfera_Spec
       Paths_Exercitium
