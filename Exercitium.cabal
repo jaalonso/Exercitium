@@ -130,6 +130,7 @@ library
       Maximo_de_tres_numeros
       Maximo_de_una_lista
       Maximos_locales
+      Maximos_valores_de_una_expresion_aritmetica
       Mayor_numero_con_dos_digitos_dados
       Mayor_orbita_de_la_sucesion_de_Collatz
       Mayor_producto_de_las_ramas_de_un_arbol
@@ -406,6 +407,7 @@ test-suite Exercitium-test
       Maximo_de_tres_numeros_Spec
       Maximo_de_una_lista_Spec
       Maximos_locales_Spec
+      Maximos_valores_de_una_expresion_aritmetica_Spec
       Mayor_numero_con_dos_digitos_dados_Spec
       Mayor_orbita_de_la_sucesion_de_Collatz_Spec
       Mayor_producto_de_las_ramas_de_un_arbol_Spec
