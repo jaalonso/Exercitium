@@ -8,11 +8,11 @@
 -- Las expresiones aritméticas generales se pueden definir usando el
 -- siguiente tipo de datos
 --    data Expr = C Int
---               | X
---               | S Expr Expr
---               | R Expr Expr
---               | P Expr Expr
---               | E Expr Int
+--              | X
+--              | S Expr Expr
+--              | R Expr Expr
+--              | P Expr Expr
+--              | E Expr Int
 --      deriving (Eq, Show)
 -- Por ejemplo, la expresión
 --    3*x - (x+2)^7
@@ -31,11 +31,11 @@
 module Maximos_valores_de_una_expresion_aritmetica where
 
 data Expr = C Int
-           | X
-           | S Expr Expr
-           | R Expr Expr
-           | P Expr Expr
-           | E Expr Int
+          | X
+          | S Expr Expr
+          | R Expr Expr
+          | P Expr Expr
+          | E Expr Int
   deriving (Eq, Show)
 
 maximo :: Expr -> [Int] -> (Int,[Int])
