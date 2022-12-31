@@ -262,6 +262,7 @@ library
       Union_conjuntista_de_listas
       Union_e_interseccion_general
       Validez_de_una_formula
+      Valor_de_expresiones_aritmeticas_generales
       Valor_de_la_resta
       Valor_de_un_arbol_booleano
       Valor_de_un_polinomio
@@ -533,6 +534,7 @@ test-suite Exercitium-test
       Ultimo_digito_Spec
       Union_conjuntista_de_listas_Spec
       Union_e_interseccion_general_Spec
+      Valor_de_expresiones_aritmeticas_generales_Spec
       Valor_de_la_resta_Spec
       Valor_de_un_arbol_booleano_Spec
       Valor_de_un_polinomio_Spec
