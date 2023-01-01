@@ -36,11 +36,11 @@ data Expr = C Int
 
 valor :: Expr -> Int
 valor (C x)      = x
-valor (A o e1 e2) = aplica2 o (valor e1) (valor e2)
-  where aplica2 :: Op -> Int -> Int -> Int
-        aplica2 S x y = x+y
-        aplica2 R x y = x-y
-        aplica2 M x y = x*y
+valor (A o e1 e2) = aplica o (valor e1) (valor e2)
+  where aplica :: Op -> Int -> Int -> Int
+        aplica S x y = x+y
+        aplica R x y = x-y
+        aplica M x y = x*y
 
 -- 2ª solución
 -- ===========
