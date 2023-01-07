@@ -102,6 +102,7 @@ library
       Expresiones_aritmeticas_reducibles
       Factorizaciones_de_numeros_de_Hilbert
       Familias_de_numeros_con_algun_digito_en_comun
+      FiltraPila
       Formula_de_Heron_para_el_area_de_un_triangulo
       Huecos_maximales_entre_primos
       Igualdad_de_conjuntos
@@ -387,6 +388,7 @@ test-suite Exercitium-test
       Expresiones_aritmeticas_reducibles_Spec
       Factorizaciones_de_numeros_de_Hilbert_Spec
       Familias_de_numeros_con_algun_digito_en_comun_Spec
+      FiltraPila_Spec
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
       Huecos_maximales_entre_primos_Spec
       Igualdad_de_conjuntos_Spec

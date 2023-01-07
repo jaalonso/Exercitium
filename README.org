@@ -265,4 +265,4 @@ Los objetivos de esta recopilación son:
 + J19 [[./src/Valor_de_una_expresion_vectorial.hs][Valor de una expresión vectorial]].
 + ??? [[./src/PilaConListas.hs][El tipo de las pilas mediante listas]].
 + ??? [[./src/Transformacion_de_listas_en_pilas.hs][Transformación de listas en pilas]].
-+ ??? [[./src/FiltraPila.hs][Filtrar pilas según una propiedad]].
++ ??? [[./src/FiltraPila.hs][Filtrado de pilas según una propiedad]].
