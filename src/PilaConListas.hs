@@ -4,6 +4,7 @@
 -- Sevilla, ??-enero-2023
 -- ---------------------------------------------------------------------
 
+-- ---------------------------------------------------------------------
 -- Una pila es una estructura de datos, caracterizada por ser una
 -- secuencia de elementos en la que las operaciones de inserción y
 -- extracción se realizan por el mismo extremo.
@@ -61,6 +62,8 @@
 -- + esVacia vacia
 -- + not (esVacia (apila x p))
 -- ---------------------------------------------------------------------
+
+module PilaConListas where
 
 import Test.QuickCheck
 

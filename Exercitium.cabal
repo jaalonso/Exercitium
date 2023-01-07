@@ -249,7 +249,6 @@ library
       Sumas_de_dos_abundantes
       Sumas_de_dos_primos
       Sustitucion_en_una_expresion_aritmetica
-      TAD.GenPilaConListas
       TAD.PilaConListas
       Termino_ausente_en_una_progresion_aritmetica
       Ternas_pitagoricas
@@ -461,6 +460,7 @@ test-suite Exercitium-test
       Particiones_de_enteros_positivos_Spec
       Particiones_en_k_subconjuntos_Spec
       Permutacion_ciclica_Spec
+      PilaConListas_Spec
       Polinomios_cuadraticos_generadores_de_primos_Spec
       Polinomios_de_Bell_Spec
       Posiciones_de_un_caracter_en_una_cadena_Spec

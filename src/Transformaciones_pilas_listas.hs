@@ -6,7 +6,8 @@
 
 -- ---------------------------------------------------------------------
 -- Utilizando el tipo de las listas (del ejercicio anterior cuyo
--- código se encuentra en [PilaConListas.hs]()) definir las funciones
+-- código se encuentra en [PilaConListas.hs](https://bit.ly/3vL41xD))
+-- definir las funciones
 --    listaApila :: [a] -> Pila a
 --    pilaALista :: Pila a -> [a]
 -- tales que
