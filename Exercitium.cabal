@@ -180,6 +180,7 @@ library
       Particiones_de_enteros_positivos
       Particiones_en_k_subconjuntos
       Permutacion_ciclica
+      PilaConListas
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
       Posiciones_de_un_caracter_en_una_cadena
@@ -248,10 +249,13 @@ library
       Sumas_de_dos_abundantes
       Sumas_de_dos_primos
       Sustitucion_en_una_expresion_aritmetica
+      TAD.GenPilaConListas
+      TAD.PilaConListas
       Termino_ausente_en_una_progresion_aritmetica
       Ternas_pitagoricas
       Ternas_pitagoricas_con_suma_dada
       Todos_los_abundantes_hasta_n_son_pares
+      Transformaciones_pilas_listas
       Transitividad_de_una_relacion
       Trenzado_de_listas
       Tres_diferentes

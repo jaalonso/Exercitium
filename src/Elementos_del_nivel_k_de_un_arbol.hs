@@ -26,6 +26,8 @@
 --    nivel :: Int -> Arbol a -> [a]
 -- tal que (nivel k a) es la lista de los elementos de nivel k del árbol
 -- a. Por ejemplo,
+--    nivel 0 (H 5)                          ==  [5]
+--    nivel 1 (H 5)                          ==  []
 --    nivel 0 (N 7 (N 2 (H 5) (H 4)) (H 9))  ==  [7]
 --    nivel 1 (N 7 (N 2 (H 5) (H 4)) (H 9))  ==  [2,9]
 --    nivel 2 (N 7 (N 2 (H 5) (H 4)) (H 9))  ==  [5,4]
