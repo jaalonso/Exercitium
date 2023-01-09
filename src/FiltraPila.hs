@@ -1,7 +1,7 @@
 -- FiltraPila.hs
 -- Filtrado de pilas según una propiedad.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, ??-enero-2023
+-- Sevilla, 24-enero-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
