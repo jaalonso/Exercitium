@@ -263,6 +263,6 @@ Los objetivos de esta recopilación son:
 + M17 [[./src/Maximos_valores_de_una_expresion_aritmetica.hs][Máximos valores de una expresión aritmética]].
 + X18 [[./src/Valor_de_expresiones_aritmeticas_generales.hs][Valor de expresiones aritméticas generales]].
 + J19 [[./src/Valor_de_una_expresion_vectorial.hs][Valor de una expresión vectorial]].
-+ ??? [[./src/PilaConListas.hs][El tipo de las pilas mediante listas]].
-+ ??? [[./src/Transformacion_de_listas_en_pilas.hs][Transformación de listas en pilas]].
-+ ??? [[./src/FiltraPila.hs][Filtrado de pilas según una propiedad]].
++ V20 [[./src/PilaConListas.hs][El tipo de las pilas mediante listas]].
++ L23 [[./src/Transformaciones_pilas_listas.hs][Transformaciones entre pilas y listas]].
++ M24 [[./src/FiltraPila.hs][Filtrado de pilas según una propiedad]].
