@@ -1,7 +1,7 @@
 -- PilaConListas.hs
 -- El tipo de las pilas mediante listas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, ??-enero-2023
+-- Sevilla, 20-enero-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -36,31 +36,58 @@
 --    λ> esVacia vacia
 --    True
 --
--- Una forma de representar las pilas es usando listas.
+-- Las operaciones tienen que verificar las siguientes propiedades:
+-- + cima(apila(x, p) == x
+-- + desapila(apila(x, p)) == p
+-- + esVacia(vacia)
+-- + not esVacia(apila(x, p))
+--
+-- El esquema de la definición del tipo de las pilas representadas
+-- mediante listas es el siguiente:
+--    module PilaConListas where
+--
+--    import Test.QuickCheck
+--
 --    newtype Pila a = P [a]
 --      deriving Eq
--- Las pilas se representarán con sus elementos separados por una barra
--- vertical; por ejemplo, "3 | 2 | 5". para ello se define la función
+--
 --    escribePila :: Show a => Pila a -> String
 --    escribePila (P [])     = "-"
 --    escribePila (P [x])    = show x
 --    escribePila (P (x:xs)) = show x ++ " | " ++ escribePila (P xs)
--- tal que (escribePila p) es la cadena correspondiente a la pila p. Por
--- ejemplo,
---    escribe Pila
---    escribePila (apila 3 (apila 2 (apila 5 vacia))) == "3 | 2 | 5"
--- y se usa como función de escritura
+--
 --    instance Show a => Show (Pila a) where
 --      show = escribePila
 --
--- Para completar la implementación, definir las 5 operaciones de las
--- pilas y comprobas con QuickCheck que verifican las siguientes
--- propiedades:
--- Las operaciones tienen que verificar las siguientes propiedades:
--- + cima (apila x p) == x
--- + desapila (apila x p) == p
--- + esVacia vacia
--- + not (esVacia (apila x p))
+--    vacia   :: Pila a
+--    vacia = undefined
+--
+--    apila :: a -> Pila a -> Pila a
+--    apila = undefined
+--
+--    cima :: Pila a -> a
+--    cima = undefined
+--
+--    desapila :: Pila a -> Pila a
+--    desapila = undefined
+--
+--    esVacia :: Pila a -> Bool
+--    esVacia = undefined
+--
+--    genPila :: (Arbitrary a, Num a) => Gen (Pila a)
+--    genPila = do
+--      xs <- listOf arbitrary
+--      return (foldr apila vacia xs)
+--
+--    instance (Arbitrary a, Num a) => Arbitrary (Pila a) where
+--      arbitrary = genPila
+--
+--    prop_pilas :: Int -> Pila Int -> Bool
+--    prop_pilas x p = undefined
+--
+-- Completar el código anterior definiendo
+-- + Las funciones sobre pila: vacia, apila, esVacia, cima y apila.
+-- + La función prop_pila para comprobar las propiedades de las pilas.
 -- ---------------------------------------------------------------------
 
 module PilaConListas where
