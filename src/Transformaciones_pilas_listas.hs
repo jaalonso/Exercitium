@@ -1,7 +1,7 @@
 -- Transformaciones_pilas_listas.hs
 -- Transformaciones entre pilas y listas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, ??-enero-2023
+-- Sevilla, 23-enero-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -37,7 +37,7 @@ import Test.QuickCheck
 
 listaApila1 :: [a] -> Pila a
 listaApila1 ys = aux (reverse ys)
-  where aux [] = vacia
+  where aux []     = vacia
         aux (x:xs) = apila x (aux xs)
 
 -- 2ª definición de listaApila
