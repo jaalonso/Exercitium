@@ -123,6 +123,7 @@ library
       Limite_del_seno
       Lista_cuadrada
       Los_primeros_al_final
+      MapPila
       Mas_repetido
       Mastermind
       Matriz_Toeplitz
@@ -406,6 +407,7 @@ test-suite Exercitium-test
       Limite_del_seno_Spec
       Lista_cuadrada_Spec
       Los_primeros_al_final_Spec
+      MapPila_Spec
       Mas_repetido_Spec
       Mastermind_Spec
       Matriz_Toeplitz_Spec

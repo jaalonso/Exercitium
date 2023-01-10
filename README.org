@@ -250,12 +250,12 @@ Los objetivos de esta recopilación son:
 + [[./src/Arboles_con_igual_estructura.hs][Árboles con igual estructura]].
 + [[./src/Existencia_de_elemento_del_arbol_con_propiedad.hs][Existencia de elementos del árbol que verifican una propiedad]].
 + [[./src/Elementos_del_nivel_k_de_un_arbol.hs][Elementos del nivel k de un árbol]].
-+ M03 [[./src/Arbol_de_factorizacion.hs][Árbol de factorización]].
-+ X04 [[./src/Valor_de_un_arbol_booleano.hs][Valor de un árbol booleano]].
-+ J05 [[./src/Valor_de_una_expresion_aritmetica_basica.hs][Valor de una expresión aritmética básica]].
-+ V06 [[./src/Aplicacion_de_una_funcion_a_una_expresion_aritmetica.hs][Aplicación de una función a una expresión aritmética]].
-+ L09 [[./src/Valor_de_una_expresion_aritmetica_con_una_variable.hs][Valor de una expresión aritmética con una variable]].
-+ M10 [[./src/Numero_de_variables_de_una_expresion_aritmetica.hs][Número de variables de una expresión aritmética]].
++ [[./src/Arbol_de_factorizacion.hs][Árbol de factorización]].
++ [[./src/Valor_de_un_arbol_booleano.hs][Valor de un árbol booleano]].
++ [[./src/Valor_de_una_expresion_aritmetica_basica.hs][Valor de una expresión aritmética básica]].
++ [[./src/Aplicacion_de_una_funcion_a_una_expresion_aritmetica.hs][Aplicación de una función a una expresión aritmética]].
++ [[./src/Valor_de_una_expresion_aritmetica_con_una_variable.hs][Valor de una expresión aritmética con una variable]].
++ [[./src/Numero_de_variables_de_una_expresion_aritmetica.hs][Número de variables de una expresión aritmética]].
 + X11 [[./src/Valor_de_una_expresion_aritmetica_con_variables.hs][Valor de una expresión aritmética con variables]].
 + J12 [[./src/Numero_de_sumas_en_una_expresion_aritmetica.hs][Número de sumas en una expresión aritmética]].
 + V13 [[./src/Sustitucion_en_una_expresion_aritmetica.hs][Sustitución en una expresión aritmética]].
@@ -266,3 +266,4 @@ Los objetivos de esta recopilación son:
 + V20 [[./src/PilaConListas.hs][El tipo de las pilas mediante listas]].
 + L23 [[./src/Transformaciones_pilas_listas.hs][Transformaciones entre pilas y listas]].
 + M24 [[./src/FiltraPila.hs][Filtrado de pilas según una propiedad]].
++ X25 [[./src/MapPila.hs][Aplicación de una función a los elementos de una pila]].
