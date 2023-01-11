@@ -256,7 +256,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Aplicacion_de_una_funcion_a_una_expresion_aritmetica.hs][Aplicación de una función a una expresión aritmética]].
 + [[./src/Valor_de_una_expresion_aritmetica_con_una_variable.hs][Valor de una expresión aritmética con una variable]].
 + [[./src/Numero_de_variables_de_una_expresion_aritmetica.hs][Número de variables de una expresión aritmética]].
-+ X11 [[./src/Valor_de_una_expresion_aritmetica_con_variables.hs][Valor de una expresión aritmética con variables]].
++ [[./src/Valor_de_una_expresion_aritmetica_con_variables.hs][Valor de una expresión aritmética con variables]].
 + J12 [[./src/Numero_de_sumas_en_una_expresion_aritmetica.hs][Número de sumas en una expresión aritmética]].
 + V13 [[./src/Sustitucion_en_una_expresion_aritmetica.hs][Sustitución en una expresión aritmética]].
 + L16 [[./src/Expresiones_aritmeticas_reducibles.hs][Expresiones aritméticas reducibles]].
@@ -268,3 +268,4 @@ Los objetivos de esta recopilación son:
 + M24 [[./src/FiltraPila.hs][Filtrado de pilas según una propiedad]].
 + X25 [[./src/MapPila.hs][Aplicación de una función a los elementos de una pila]].
 + J26 [[./src/PertenecePila.hs][Pertenencia a una pila]].
++ V27 [[./src/ContenidaPila.hs][Inclusión de pilas]].
