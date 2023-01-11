@@ -267,3 +267,4 @@ Los objetivos de esta recopilación son:
 + L23 [[./src/Transformaciones_pilas_listas.hs][Transformaciones entre pilas y listas]].
 + M24 [[./src/FiltraPila.hs][Filtrado de pilas según una propiedad]].
 + X25 [[./src/MapPila.hs][Aplicación de una función a los elementos de una pila]].
++ J26 [[./src/PertenecePila.hs][Pertenencia a una pila]].

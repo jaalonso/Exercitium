@@ -182,6 +182,7 @@ library
       Particiones_de_enteros_positivos
       Particiones_en_k_subconjuntos
       Permutacion_ciclica
+      PertenecePila
       PilaConListas
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
@@ -464,6 +465,7 @@ test-suite Exercitium-test
       Particiones_de_enteros_positivos_Spec
       Particiones_en_k_subconjuntos_Spec
       Permutacion_ciclica_Spec
+      PertenecePila_Spec
       PilaConListas_Spec
       Polinomios_cuadraticos_generadores_de_primos_Spec
       Polinomios_de_Bell_Spec

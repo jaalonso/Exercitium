@@ -11,7 +11,7 @@
 --    mapPila :: (a -> a) -> Pila a -> Pila a
 -- tal que (mapPila f p) es la pila formada con las imágenes por f de
 -- los elementos de pila p, en el mismo orden. Por ejemplo,
---    λ> mapPila1 (+1) (apila 5 (apila 2 (apila 7 vacia)))
+--    λ> mapPila (+1) (apila 5 (apila 2 (apila 7 vacia)))
 --    6 | 3 | 8
 -- ---------------------------------------------------------------------
 
