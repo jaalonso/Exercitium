@@ -5,7 +5,7 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Utilizando el [tipo dato de las pilas](https://bit.ly/3GTToyK)
+-- Utilizando el [tipo de dato de las pilas](https://bit.ly/3GTToyK)
 -- (cuyo código se encuentra en [PilaConListas.hs](https://bit.ly/3vL41xD))
 -- definir la función
 --    pertenecePila :: Eq a => a -> Pila a -> Bool

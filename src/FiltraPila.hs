@@ -5,8 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Utilizando el tipo de las listas (del un ejercicio anterior cuyo
--- código se encuentra en [PilaConListas.hs](https://bit.ly/3vL41xD))
+-- Utilizando el [tipo de dato de las pilas](https://bit.ly/3GTToyK)
+-- (cuyo código se encuentra en [PilaConListas.hs](https://bit.ly/3vL41xD))
 -- definir la función
 --    filtraPila :: (a -> Bool) -> Pila a -> Pila a
 -- tal que (filtraPila p q) es la pila obtenida con los elementos de

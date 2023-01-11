@@ -5,7 +5,9 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Definir la función
+-- Utilizando el [tipo de dato de las pilas](https://bit.ly/3GTToyK)
+-- (cuyo código se encuentra en [PilaConListas.hs](https://bit.ly/3vL41xD))
+-- definir la función
 --    contenidaPila :: Eq a => Pila a -> Pila a -> Bool
 -- tal que (contenidaPila p1 p2) se verifica si todos los elementos de
 -- de la pila p1 son elementos de la pila p2. Por ejemplo,

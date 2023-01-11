@@ -5,9 +5,9 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Utilizando el tipo de las listas (del ejercicio anterior cuyo
--- código se encuentra en [PilaConListas.hs](https://bit.ly/3vL41xD))
--- definir las funciones
+-- Utilizando el [tipo de dato de las pilas](https://bit.ly/3GTToyK)
+-- (cuyo código se encuentra en [PilaConListas.hs](https://bit.ly/3vL41xD))
+-- definir la función
 --    listaApila :: [a] -> Pila a
 --    pilaALista :: Pila a -> [a]
 -- tales que
