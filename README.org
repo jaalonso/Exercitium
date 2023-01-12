@@ -271,3 +271,4 @@ Los objetivos de esta recopilación son:
 + V27 [[./src/ContenidaPila.hs][Inclusión de pilas]].
 + L30 [[./src/PrefijoPila.hs][Reconocimiento de prefijos de pilas]].
 + M31 [[./src/SubPila.hs][Reconocimiento de subpilas]].
++ X01 [[./src/OrdenadaPila.hs][Reconocimiento de ordenación de pilas]].

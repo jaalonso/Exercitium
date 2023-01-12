@@ -176,6 +176,7 @@ library
       Ordenacion_de_estructuras
       Ordenacion_de_los_racionales
       Ordenada_ciclicamente
+      OrdenadaPila
       Ordenados_por_maximo
       Pandigitales_primos
       Parejas_de_numeros_y_divisores
@@ -462,6 +463,7 @@ test-suite Exercitium-test
       Ordenacion_de_estructuras_Spec
       Ordenacion_de_los_racionales_Spec
       Ordenada_ciclicamente_Spec
+      OrdenadaPila_Spec
       Ordenados_por_maximo_Spec
       Pandigitales_primos_Spec
       Parejas_de_numeros_y_divisores_Spec
