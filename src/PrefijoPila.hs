@@ -1,7 +1,7 @@
 -- PrefijoPila.hs
 -- Reconocimiento de prefijos de pilas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 12-enero-2023
+-- Sevilla, 30-enero-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -46,7 +46,7 @@ prefijoPila1 p1 p2
 
 prefijoPila2 :: Eq a => Pila a -> Pila a -> Bool
 prefijoPila2 p1 p2 =
-    pilaAlista p1 `isSuffixOf` pilaAlista p2
+  pilaAlista p1 `isSuffixOf` pilaAlista p2
 
 -- (pilaALista p) es la lista formada por los elementos de la
 -- lista p. Por ejemplo,
