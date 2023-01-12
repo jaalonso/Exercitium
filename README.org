@@ -269,3 +269,4 @@ Los objetivos de esta recopilación son:
 + X25 [[./src/MapPila.hs][Aplicación de una función a los elementos de una pila]].
 + J26 [[./src/PertenecePila.hs][Pertenencia a una pila]].
 + V27 [[./src/ContenidaPila.hs][Inclusión de pilas]].
++ L30 [[./src/PrefijoPila.hs][Reconocimiento de prefijos de pilas]].
