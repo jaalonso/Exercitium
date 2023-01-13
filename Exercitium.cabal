@@ -178,6 +178,7 @@ library
       Ordenada_ciclicamente
       OrdenadaPila
       Ordenados_por_maximo
+      OrdenaInserPila
       Pandigitales_primos
       Parejas_de_numeros_y_divisores
       Pares_adyacentes_iguales
@@ -465,6 +466,7 @@ test-suite Exercitium-test
       Ordenada_ciclicamente_Spec
       OrdenadaPila_Spec
       Ordenados_por_maximo_Spec
+      OrdenaInserPila_Spec
       Pandigitales_primos_Spec
       Parejas_de_numeros_y_divisores_Spec
       Pares_adyacentes_iguales_Spec
