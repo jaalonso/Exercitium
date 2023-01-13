@@ -86,8 +86,8 @@ prop_ordenaInserPila p =
   ordenaInserPila1 p == ordenaInserPila2 p
 
 -- La comprobación es
-
-
+--    λ> quickCheck prop_ordenaInserPila
+--    +++ OK, passed 100 tests.
 
 -- Comprobación de la propiedad
 -- ============================
