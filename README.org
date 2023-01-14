@@ -274,3 +274,4 @@ Los objetivos de esta recopilación son:
 + X01 [[./src/OrdenadaPila.hs][Reconocimiento de ordenación de pilas]].
 + J02 [[./src/OrdenaInserPila.hs][Ordenación de pilas por inserción]].
 + V03 [[./src/NubPila.hs][Eliminación de repeticiones en una pila]].
++ L06 [[./src/MaxPila.hs][Máximo elemento de una pila]].

@@ -66,7 +66,7 @@ insertaLista x (y:ys) | x < y = x : y : ys
 listaApila :: [a] -> Pila a
 listaApila = foldr apila vacia . reverse
 
--- (pilaALista p) es la lista formada por los elementos de la
+-- (pilaAlista p) es la lista formada por los elementos de la
 -- lista p. Por ejemplo,
 --    λ> pilaAlista (apila 5 (apila 2 (apila 3 vacia)))
 --    [3, 2, 5]
