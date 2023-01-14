@@ -11,7 +11,7 @@
 --    maxPila :: Ord a => Pila a -> a
 -- tal que (maxPila p) sea el mayor de los elementos de la pila p. Por
 -- ejemplo,
---    λ> maxPila1 (apila 3 (apila 5 (apila 1 vacia)))
+--    λ> maxPila (apila 3 (apila 5 (apila 1 vacia)))
 --    5
 -- ---------------------------------------------------------------------
 
