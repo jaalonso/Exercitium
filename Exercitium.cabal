@@ -146,6 +146,7 @@ library
       Metodo_de_biseccion_para_aproximar_raices_de_funciones
       Minimo_producto_escalar
       Movimientos_en_el_plano
+      NubPila
       Numeracion_con_multiples_base
       Numeracion_de_ternas
       Numero_a_partir_de_sus_digitos
@@ -435,6 +436,7 @@ test-suite Exercitium-test
       Menor_numero_con_una_cantidad_dada_de_divisores_Spec
       Metodo_de_biseccion_para_aproximar_raices_de_funciones_Spec
       Minimo_producto_escalar_Spec
+      NubPila_Spec
       Numeracion_con_multiples_base_Spec
       Numeracion_de_ternas_Spec
       Numero_a_partir_de_sus_digitos_Spec
