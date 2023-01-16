@@ -35,8 +35,8 @@ import Test.QuickCheck
 -- 1ª definición de listaApila
 -- ===========================
 
-listaApila1 :: [a] -> Pila a
-listaApila1 ys = aux (reverse ys)
+listaApila :: [a] -> Pila a
+listaApila ys = aux (reverse ys)
   where aux []     = vacia
         aux (x:xs) = apila x (aux xs)
 
@@ -73,7 +73,7 @@ listaApila5 = foldr apila vacia . reverse
 -- La propiedad es
 prop_listaApila :: [Int] -> Bool
 prop_listaApila xs =
-  all (== listaApila1 xs)
+  all (== listaApila xs)
       [listaApila2 xs,
        listaApila3 xs,
        listaApila4 xs,
@@ -86,10 +86,10 @@ prop_listaApila xs =
 -- 1ª definición de pilaAlista
 -- ===========================
 
-pilaAlista1 :: Pila a -> [a]
-pilaAlista1 p
+pilaAlista :: Pila a -> [a]
+pilaAlista p
   | esVacia p = []
-  | otherwise = pilaAlista1 dp ++ [cp]
+  | otherwise = pilaAlista dp ++ [cp]
   where cp = cima p
         dp = desapila p
 
@@ -109,7 +109,7 @@ pilaAlista2 = reverse . aux
 -- La propiedad es
 prop_pilaAlista :: Pila Int -> Bool
 prop_pilaAlista p =
-  pilaAlista1 p == pilaAlista2 p
+  pilaAlista p == pilaAlista2 p
 
 -- La comprobación es
 --    λ> quickCheck prop_pilaAlista
@@ -121,7 +121,7 @@ prop_pilaAlista p =
 -- La primera propiedad es
 prop_1_listaApila :: [Int] -> Bool
 prop_1_listaApila xs =
-  pilaAlista1 (listaApila1 xs) == xs
+  pilaAlista (listaApila xs) == xs
 
 -- La comprobación es
 --    λ> quickCheck prop_1_listaApila
@@ -130,7 +130,7 @@ prop_1_listaApila xs =
 -- La segunda propiedad es
 prop_2_listaApila :: Pila Int -> Bool
 prop_2_listaApila p =
-  listaApila1 (pilaAlista1 p) == p
+  listaApila (pilaAlista p) == p
 
 -- La comprobación es
 --    λ> quickCheck prop_2_listaApila
