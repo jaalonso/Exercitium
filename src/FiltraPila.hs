@@ -25,6 +25,7 @@
 module FiltraPila where
 
 import TAD.PilaConListas
+import Transformaciones_pilas_listas (listaApila, pilaAlista)
 import Test.QuickCheck.HigherOrder
 
 -- 1ª solución
@@ -41,27 +42,13 @@ filtraPila1 p q
 -- 2ª solución
 -- ===========
 
+-- Se usarán las funciones listaApila y pilaAlista del ejercicio
+-- "Transformaciones entre pilas y listas" que se encuentra en
+-- https://bit.ly/3ZHewQ8
+
 filtraPila2 :: (a -> Bool) -> Pila a -> Pila a
 filtraPila2 p q =
   listaApila (filter p (pilaAlista q))
-
--- (listaApila xs) es la pila formada por los elementos de xs.
--- Por ejemplo,
---    λ> listaApila [3, 2, 5]
---    5 | 2 | 3
-listaApila :: [a] -> Pila a
-listaApila = foldr apila vacia . reverse
-
--- (pilaALista p) es la lista formada por los elementos de la
--- lista p. Por ejemplo,
---    λ> pilaAlista (apila 5 (apila 2 (apila 3 vacia)))
---    [3, 2, 5]
-pilaAlista :: Pila a -> [a]
-pilaAlista = reverse . aux
-  where aux p | esVacia p = []
-              | otherwise = cp : aux dp
-          where cp = cima p
-                dp = desapila p
 
 -- Comprobación de equivalencia
 -- ============================
