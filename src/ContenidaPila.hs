@@ -24,11 +24,16 @@
 
 module ContenidaPila where
 
-import TAD.PilaConListas
+import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import PertenecePila (pertenecePila)
 import Test.QuickCheck
 
 -- 1ª solución
 -- ===========
+
+-- Se usará la función pertenecePila del ejercicio
+-- "Pertenencia a una pila" que se encuentra en
+-- https://bit.ly/3WdM9GC
 
 contenidaPila1 :: Eq a => Pila a -> Pila a -> Bool
 contenidaPila1 p1 p2
@@ -36,17 +41,6 @@ contenidaPila1 p1 p2
   | otherwise  = pertenecePila cp1 p2 && contenidaPila1 dp1 p2
   where cp1 = cima p1
         dp1 = desapila p1
-
--- (pertenecePila y p) se verifica si y es un elemento de la pila p. Por
--- ejemplo,
---    pertenecePila 2 (apila 5 (apila 2 (apila 3 vacia))) == True
---    pertenecePila 4 (apila 5 (apila 2 (apila 3 vacia))) == False
-pertenecePila :: Eq a => a -> Pila a -> Bool
-pertenecePila x p
-  | esVacia p  = False
-  | otherwise  = x == cp || pertenecePila x dp
-  where cp = cima p
-        dp = desapila p
 
 -- 2ª solución
 -- ===========

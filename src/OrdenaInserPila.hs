@@ -22,7 +22,9 @@
 
 module OrdenaInserPila where
 
-import TAD.PilaConListas
+import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import Transformaciones_pilas_listas (listaApila, pilaAlista)
+import OrdenadaPila (ordenadaPila)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -59,23 +61,9 @@ insertaLista x [] = [x]
 insertaLista x (y:ys) | x < y = x : y : ys
                       | otherwise = y : insertaLista x ys
 
--- (listaApila xs) es la pila formada por los elementos de xs.
--- Por ejemplo,
---    λ> listaApila [3, 2, 5]
---    5 | 2 | 3
-listaApila :: [a] -> Pila a
-listaApila = foldr apila vacia . reverse
-
--- (pilaAlista p) es la lista formada por los elementos de la
--- lista p. Por ejemplo,
---    λ> pilaAlista (apila 5 (apila 2 (apila 3 vacia)))
---    [3, 2, 5]
-pilaAlista :: Pila a -> [a]
-pilaAlista = reverse . aux
-  where aux p | esVacia p = []
-              | otherwise = cp : aux dp
-          where cp = cima p
-                dp = desapila p
+-- Se usarán las funciones listaApila y pilaAlista del ejercicio
+-- "Transformaciones entre pilas y listas" que se encuentra en
+-- https://bit.ly/3ZHewQ8
 
 -- Comprobación de equivalencia
 -- ============================
@@ -92,19 +80,14 @@ prop_ordenaInserPila p =
 -- Comprobación de la propiedad
 -- ============================
 
+-- Se usará la función ordenadaPila del ejercicio
+-- "Reconocimiento de ordenación de pilas" que se encuentra en
+-- https://bit.ly/3COqRbK
+
 -- La propiedad es
 prop_ordenadaOrdenaInserPila :: Pila Int -> Bool
 prop_ordenadaOrdenaInserPila p =
   ordenadaPila (ordenaInserPila1 p)
-
-ordenadaPila :: Ord a => Pila a -> Bool
-ordenadaPila p
-  | esVacia p  = True
-  | esVacia dp = True
-  | otherwise  = cp <= cdp && ordenadaPila dp
-  where cp  = cima p
-        dp  = desapila p
-        cdp = cima dp
 
 -- La comprobación es
 --    λ> quickCheck prop_ordenadaOrdenaInserPila

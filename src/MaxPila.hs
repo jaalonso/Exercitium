@@ -19,7 +19,8 @@
 
 module MaxPila where
 
-import TAD.PilaConListas
+import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import Transformaciones_pilas_listas (pilaAlista)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -35,20 +36,13 @@ maxPila1 p
 -- 2ª solución
 -- ===========
 
+-- Se usará la función pilaAlista del ejercicio
+-- "Transformaciones entre pilas y listas" que se encuentra en
+-- https://bit.ly/3ZHewQ8
+
 maxPila2 :: Ord a => Pila a -> a
 maxPila2 =
   maximum . pilaAlista
-
--- (pilaAlista p) es la lista formada por los elementos de la
--- lista p. Por ejemplo,
---    λ> pilaAlista (apila 5 (apila 2 (apila 3 vacia)))
---    [3, 2, 5]
-pilaAlista :: Pila a -> [a]
-pilaAlista = reverse . aux
-  where aux p | esVacia p = []
-              | otherwise = cp : aux dp
-          where cp = cima p
-                dp = desapila p
 
 -- Comprobación de equivalencia
 -- ============================

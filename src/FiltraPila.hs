@@ -24,7 +24,7 @@
 
 module FiltraPila where
 
-import TAD.PilaConListas
+import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
 import Transformaciones_pilas_listas (listaApila, pilaAlista)
 import Test.QuickCheck.HigherOrder
 

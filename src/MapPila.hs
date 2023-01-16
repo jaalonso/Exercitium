@@ -19,7 +19,8 @@
 
 module MapPila where
 
-import TAD.PilaConListas
+import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import Transformaciones_pilas_listas (listaApila, pilaAlista)
 import Test.QuickCheck.HigherOrder
 
 -- 1ª solución
@@ -35,27 +36,13 @@ mapPila1 f p
 -- 2ª solución
 -- ===========
 
+-- Se usarán las funciones listaApila y pilaAlista del ejercicio
+-- "Transformaciones entre pilas y listas" que se encuentra en
+-- https://bit.ly/3ZHewQ8
+
 mapPila2 :: (a -> a) -> Pila a -> Pila a
 mapPila2 f p =
   listaApila (map f (pilaAlista p))
-
--- (listaApila xs) es la pila formada por los elementos de xs.
--- Por ejemplo,
---    λ> listaApila [3, 2, 5]
---    5 | 2 | 3
-listaApila :: [a] -> Pila a
-listaApila = foldr apila vacia . reverse
-
--- (pilaALista p) es la lista formada por los elementos de la
--- lista p. Por ejemplo,
---    λ> pilaAlista (apila 5 (apila 2 (apila 3 vacia)))
---    [3, 2, 5]
-pilaAlista :: Pila a -> [a]
-pilaAlista = reverse . aux
-  where aux p | esVacia p = []
-              | otherwise = cp : aux dp
-          where cp = cima p
-                dp = desapila p
 
 -- Comprobación de equivalencia
 -- ============================

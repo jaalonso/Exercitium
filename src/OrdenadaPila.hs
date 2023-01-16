@@ -19,17 +19,18 @@
 
 module OrdenadaPila where
 
-import TAD.PilaConListas
+import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import Transformaciones_pilas_listas (pilaAlista)
 import Test.QuickCheck
 
 -- 1ª solución
 -- ===========
 
-ordenadaPila1 :: Ord a => Pila a -> Bool
-ordenadaPila1 p
+ordenadaPila :: Ord a => Pila a -> Bool
+ordenadaPila p
   | esVacia p  = True
   | esVacia dp = True
-  | otherwise  = cp <= cdp && ordenadaPila1 dp
+  | otherwise  = cp <= cdp && ordenadaPila dp
   where cp  = cima p
         dp  = desapila p
         cdp = cima dp
@@ -47,16 +48,9 @@ ordenadaLista :: Ord a => [a] -> Bool
 ordenadaLista xs =
   and [x <= y | (x,y) <- zip xs (tail xs)]
 
--- (pilaALista p) es la lista formada por los elementos de la
--- lista p. Por ejemplo,
---    λ> pilaAlista (apila 5 (apila 2 (apila 3 vacia)))
---    [3, 2, 5]
-pilaAlista :: Pila a -> [a]
-pilaAlista = reverse . aux
-  where aux p | esVacia p = []
-              | otherwise = cp : aux dp
-          where cp = cima p
-                dp = desapila p
+-- Se usará la función pilaAlista del ejercicio
+-- "Transformaciones entre pilas y listas" que se encuentra en
+-- https://bit.ly/3ZHewQ8
 
 -- Comprobación de equivalencia
 -- ============================
@@ -64,7 +58,7 @@ pilaAlista = reverse . aux
 -- La propiedad es
 prop_ordenadaPila :: Pila Int -> Bool
 prop_ordenadaPila p =
-  ordenadaPila1 p == ordenadaPila2 p
+  ordenadaPila p == ordenadaPila2 p
 
 -- La comprobación es
 --    λ> quickCheck prop_ordenadaPila

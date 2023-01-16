@@ -19,12 +19,18 @@
 
 module NubPila where
 
-import TAD.PilaConListas
+import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import Transformaciones_pilas_listas (listaApila, pilaAlista)
+import PertenecePila (pertenecePila)
 import Data.List (nub)
 import Test.QuickCheck
 
 -- 1ª solución
 -- ===========
+
+-- Se usará la función pertenecePila del ejercicio
+-- "Pertenencia a una pila" que se encuentra en
+-- https://bit.ly/3WdM9GC
 
 nubPila1 :: Eq a => Pila a -> Pila a
 nubPila1 p
@@ -34,43 +40,16 @@ nubPila1 p
   where cp = cima p
         dp = desapila p
 
--- (pertenecePila y p) se verifica si y es un elemento de la pila p. Por
--- ejemplo,
---    pertenecePila 2 (apila 5 (apila 2 (apila 3 vacia))) == True
---    pertenecePila 4 (apila 5 (apila 2 (apila 3 vacia))) == False
-pertenecePila :: Eq a => a -> Pila a -> Bool
-pertenecePila x p
-  | esVacia p  = False
-  | otherwise  = x == cp || pertenecePila x dp
-  where cp = cima p
-        dp = desapila p
-
 -- 2ª solución
 -- ===========
+
+-- Se usarán las funciones listaApila y pilaAlista del ejercicio
+-- "Transformaciones entre pilas y listas" que se encuentra en
+-- https://bit.ly/3ZHewQ8
 
 nubPila2 :: Eq a => Pila a -> Pila a
 nubPila2 =
   listaApila . nub . pilaAlista
-
--- (listaApila xs) es la pila formada por los elementos de xs.
--- Por ejemplo,
---    λ> listaApila [3, 2, 5]
---    5 | 2 | 3
-listaApila :: [a] -> Pila a
-listaApila ys = aux (reverse ys)
-  where aux []     = vacia
-        aux (x:xs) = apila x (aux xs)
-
--- (pilaALista p) es la lista formada por los elementos de la
--- lista p. Por ejemplo,
---    λ> pilaAlista (apila 5 (apila 2 (apila 3 vacia)))
---    [3, 2, 5]
-pilaAlista :: Pila a -> [a]
-pilaAlista p
-  | esVacia p = []
-  | otherwise = pilaAlista dp ++ [cp]
-  where cp = cima p
-        dp = desapila p
 
 -- Comprobación de equivalencia
 -- ============================

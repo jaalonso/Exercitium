@@ -24,12 +24,18 @@
 
 module SubPila where
 
-import TAD.PilaConListas
+import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import Transformaciones_pilas_listas (pilaAlista)
+import PrefijoPila (prefijoPila)
 import Data.List (isPrefixOf, tails)
 import Test.QuickCheck
 
 -- 1ª solución
 -- ===========
+
+-- Se usará la función PrefijoPila del ejercicio
+-- "Reconocimiento de prefijos de pilas" que se encuentra en
+-- https://bit.ly/3Xqu7lo
 
 subPila1 :: Eq a => Pila a -> Pila a -> Bool
 subPila1 p1 p2
@@ -42,27 +48,13 @@ subPila1 p1 p2
           cp2 = cima p2
           dp2 = desapila p2
 
--- (prefijoPila p1 p2) se verifica si la pila p1 es justamente un
--- prefijo de la pila p2. Por ejemplo,
---    λ> ej1 = apila 4 (apila 2 vacia)
---    λ> ej2 = apila 4 (apila 2 (apila 5 vacia))
---    λ> ej3 = apila 5 (apila 4 (apila 2 vacia))
---    λ> prefijoPila ej1 ej2
---    True
---    λ> prefijoPila ej1 ej3
---    False
-prefijoPila :: Eq a => Pila a -> Pila a -> Bool
-prefijoPila p1 p2
-  | esVacia p1 = True
-  | esVacia p2 = False
-  | otherwise  = cp1 == cp2 && prefijoPila dp1 dp2
-  where cp1 = cima p1
-        dp1 = desapila p1
-        cp2 = cima p2
-        dp2 = desapila p2
 
 -- 2ª solución
 -- ===========
+
+-- Se usará la función pilaAlista del ejercicio
+-- "Transformaciones entre pilas y listas" que se encuentra en
+-- https://bit.ly/3ZHewQ8
 
 subPila2 :: Eq a => Pila a -> Pila a -> Bool
 subPila2 p1 p2 =
@@ -75,17 +67,6 @@ subPila2 p1 p2 =
 sublista :: Eq a => [a] -> [a] -> Bool
 sublista xs ys =
   any (xs `isPrefixOf`) (tails ys)
-
--- (pilaALista p) es la lista formada por los elementos de la
--- lista p. Por ejemplo,
---    λ> pilaAlista (apila 5 (apila 2 (apila 3 vacia)))
---    [3, 2, 5]
-pilaAlista :: Pila a -> [a]
-pilaAlista = reverse . aux
-  where aux p | esVacia p = []
-              | otherwise = cp : aux dp
-          where cp = cima p
-                dp = desapila p
 
 -- Comprobación de equivalencia
 -- ============================
