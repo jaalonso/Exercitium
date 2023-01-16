@@ -259,6 +259,7 @@ library
       Sumas_de_dos_abundantes
       Sumas_de_dos_primos
       Sustitucion_en_una_expresion_aritmetica
+      TAD.ColaConListas
       TAD.PilaConListas
       Termino_ausente_en_una_progresion_aritmetica
       Ternas_pitagoricas
@@ -356,6 +357,7 @@ test-suite Exercitium-test
       Clausura_transitiva_de_una_relacion_binaria_Spec
       Codificacion_de_Fibonacci_Spec
       Codificacion_de_Godel_Spec
+      ColaConListas_Spec
       Composicion_de_relaciones_binarias_Spec
       Conjunto_de_divisores_Spec
       Conjunto_de_primos_relativos_Spec
