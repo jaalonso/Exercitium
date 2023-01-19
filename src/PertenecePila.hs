@@ -5,8 +5,7 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Utilizando el [tipo de dato de las pilas](https://bit.ly/3GTToyK)
--- (cuyo código se encuentra en [PilaConListas.hs](https://bit.ly/3vL41xD))
+-- Utilizando el [tipo abstracto de datos de las pilas](https://bit.ly/3GTToyK),
 -- definir la función
 --    pertenecePila :: Eq a => a -> Pila a -> Bool
 -- tal que (pertenecePila y p) se verifica si y es un elemento de la

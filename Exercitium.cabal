@@ -188,7 +188,6 @@ library
       Particiones_en_k_subconjuntos
       Permutacion_ciclica
       PertenecePila
-      PilaConListas
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
       Posiciones_de_un_caracter_en_una_cadena
@@ -483,6 +482,7 @@ test-suite Exercitium-test
       Permutacion_ciclica_Spec
       PertenecePila_Spec
       PilaConListas_Spec
+      PilaConSucesiones_Spec
       Polinomios_cuadraticos_generadores_de_primos_Spec
       Polinomios_de_Bell_Spec
       Posiciones_de_un_caracter_en_una_cadena_Spec

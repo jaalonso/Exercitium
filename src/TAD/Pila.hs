@@ -45,5 +45,5 @@ module TAD.Pila
    escribePila -- Show a => Pila a -> String
   ) where
 
-import TAD.PilaConListas
--- import TAD.PilaConSucesiones
+-- import TAD.PilaConListas
+import TAD.PilaConSucesiones

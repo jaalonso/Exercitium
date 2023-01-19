@@ -5,8 +5,7 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Utilizando el [tipo de dato de las pilas](https://bit.ly/3GTToyK)
--- (cuyo código se encuentra en [PilaConListas.hs](https://bit.ly/3vL41xD))
+-- Utilizando el [tipo abstracto de datos de las pilas](https://bit.ly/3GTToyK),
 -- definir la función
 --    prefijoPila :: Eq a => Pila a -> Pila a -> Bool
 -- tal que (prefijoPila p1 p2) se verifica si la pila p1 es justamente

@@ -1,6 +1,6 @@
-module PilaConListas_Spec (main, spec) where
+module PilaConSucesiones_Spec (main, spec) where
 
-import TAD.PilaConListas
+import TAD.PilaConSucesiones
 import Test.Hspec
 
 main :: IO ()
