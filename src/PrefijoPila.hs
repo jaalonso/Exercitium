@@ -24,7 +24,7 @@
 
 module PrefijoPila where
 
-import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import TAD.Pila (Pila, vacia, apila, esVacia, cima, desapila)
 import Transformaciones_pilas_listas (pilaAlista)
 import Data.List (isSuffixOf)
 import Test.QuickCheck

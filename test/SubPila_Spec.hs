@@ -1,7 +1,7 @@
 module SubPila_Spec (main, spec) where
 
 import SubPila
-import TAD.PilaConListas
+import TAD.Pila
 import Test.Hspec
 import Test.QuickCheck
 

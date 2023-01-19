@@ -1,7 +1,7 @@
 module PertenecePila_Spec (main, spec) where
 
 import PertenecePila
-import TAD.PilaConListas
+import TAD.Pila
 import Test.Hspec
 
 main :: IO ()

@@ -1,7 +1,7 @@
 module ContenidaPila_Spec (main, spec) where
 
 import ContenidaPila
-import TAD.PilaConListas
+import TAD.Pila
 import Test.Hspec
 
 main :: IO ()

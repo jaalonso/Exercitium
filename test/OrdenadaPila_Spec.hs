@@ -1,7 +1,7 @@
 module OrdenadaPila_Spec (main, spec) where
 
 import OrdenadaPila
-import TAD.PilaConListas
+import TAD.Pila
 import Test.Hspec
 import Test.QuickCheck
 

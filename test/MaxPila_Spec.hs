@@ -1,7 +1,7 @@
 module MaxPila_Spec (main, spec) where
 
 import MaxPila
-import TAD.PilaConListas
+import TAD.Pila
 import Test.Hspec
 import Test.QuickCheck
 

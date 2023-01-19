@@ -1,7 +1,7 @@
 module MapPila_Spec (main, spec) where
 
 import MapPila
-import TAD.PilaConListas
+import TAD.Pila
 import Test.Hspec
 
 main :: IO ()

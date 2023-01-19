@@ -260,7 +260,9 @@ library
       Sumas_de_dos_primos
       Sustitucion_en_una_expresion_aritmetica
       TAD.ColaConListas
+      TAD.Pila
       TAD.PilaConListas
+      TAD.PilaConSucesiones
       Termino_ausente_en_una_progresion_aritmetica
       Ternas_pitagoricas
       Ternas_pitagoricas_con_suma_dada

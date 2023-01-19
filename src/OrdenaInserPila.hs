@@ -22,7 +22,7 @@
 
 module OrdenaInserPila where
 
-import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import TAD.Pila (Pila, vacia, apila, esVacia, cima, desapila)
 import Transformaciones_pilas_listas (listaApila, pilaAlista)
 import OrdenadaPila (ordenadaPila)
 import Test.QuickCheck

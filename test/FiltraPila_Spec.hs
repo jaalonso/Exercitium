@@ -1,7 +1,7 @@
 module FiltraPila_Spec (main, spec) where
 
 import FiltraPila
-import TAD.PilaConListas
+import TAD.Pila
 import Test.Hspec
 
 main :: IO ()

@@ -1,7 +1,7 @@
 module Transformaciones_pilas_listas_Spec (main, spec) where
 
 import Transformaciones_pilas_listas
-import TAD.PilaConListas
+import TAD.Pila
 import Test.Hspec
 import Test.QuickCheck
 

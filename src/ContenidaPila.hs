@@ -24,7 +24,7 @@
 
 module ContenidaPila where
 
-import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import TAD.Pila (Pila, vacia, apila, esVacia, cima, desapila)
 import PertenecePila (pertenecePila)
 import Test.QuickCheck
 

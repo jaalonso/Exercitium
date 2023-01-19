@@ -29,7 +29,7 @@
 
 module Transformaciones_pilas_listas where
 
-import TAD.PilaConListas (Pila, vacia, apila, esVacia, cima, desapila)
+import TAD.Pila (Pila, vacia, apila, esVacia, cima, desapila)
 import Test.QuickCheck
 
 -- 1ª definición de listaApila
