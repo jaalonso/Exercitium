@@ -108,6 +108,6 @@ prop_pilas x p =
   esVacia vacia &&
   not (esVacia (apila x p))
 
--- La comprobación e:
+-- La comprobación es:
 --    λ> quickCheck prop_pilas
 --    +++ OK, passed 100 tests.

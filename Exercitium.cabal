@@ -258,7 +258,9 @@ library
       Sumas_de_dos_abundantes
       Sumas_de_dos_primos
       Sustitucion_en_una_expresion_aritmetica
+      TAD.Cola
       TAD.ColaConListas
+      TAD.ColaConSucesiones
       TAD.Pila
       TAD.PilaConListas
       TAD.PilaConSucesiones

@@ -1,14 +1,13 @@
--- ColaConListas.hs
--- Implementación de las colas mediante listas.
+-- ColaConSucesiones.hs
+-- Implementación de las colas mediante sucesiones.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 16-enero-2023
+-- Sevilla, 20-enero-2023
 -- ---------------------------------------------------------------------
 
-{-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE FlexibleInstances #-}
 {-# OPTIONS_GHC -fno-warn-unused-top-binds #-}
 
-module TAD.ColaConListas
+module TAD.ColaConSucesiones
   (Cola,
    vacia,   -- Cola a
    inserta, -- a -> Cola a -> Cola a
@@ -17,64 +16,52 @@ module TAD.ColaConListas
    esVacia, -- Cola a -> Bool
   ) where
 
+import Data.Sequence as S
 import Test.QuickCheck
 
 -- Colas como listas:
-newtype Cola a = C [a]
-  deriving Eq
+newtype Cola a = C (Seq a)
+  deriving (Show, Eq)
 
--- (escribeCola c) es la cadena correspondiente a la cola c. Por
--- ejemplo,
---    escribeCola (inserta 5 (inserta 2 (inserta 3 vacia))) == "3 | 2 | 5"
-escribeCola :: Show a => Cola a -> String
-escribeCola (C [])     = "-"
-escribeCola (C [x])    = show x
-escribeCola (C (x:xs)) = show x ++ " | " ++ escribeCola (C xs)
-
--- Procedimiento de escritura de colas.
-instance Show a => Show (Cola a) where
-  show = escribeCola
-
--- Ejemplo de cola:
---    λ> inserta 5 (inserta 2 (inserta 3 vacia))
---    3 | 2 | 5
+-- Ejemplo de cola: La cola obtenida añadiéndole a la cola vacía los
+-- números del 1 al 10 es
+--    λ> foldr inserta vacia [1..10]
+--    C [10,9,8,7,6,5,4,3,2,1]
 
 -- vacia es la cola vacía. Por ejemplo,
 --    λ> vacia
---    -
+--    C []
 vacia :: Cola a
-vacia = C []
+vacia = C empty
 
 -- (inserta x c) es la cola obtenida añadiendo x al final de la cola
 -- c. Por ejemplo,
---    λ> ej = inserta 2 (inserta 3 vacia)
---    λ> ej
---    3 | 2
---    λ> inserta 5 ej
---    3 | 2 | 5
+--    λ> inserta 12 (foldr inserta vacia [1..10])
+--    C [10,9,8,7,6,5,4,3,2,1,12]
 inserta :: a -> Cola a -> Cola a
-inserta x (C c) = C (c ++ [x])
+inserta x (C xs) = C (xs |> x )
 
 -- (primero c) es el primer elemento de la cola c. Por ejemplo,
---    λ> primero (inserta 5 (inserta 2 (inserta 3 vacia)))
---    3
+--    primero (foldr inserta vacia [1..10])  ==  10
 primero :: Cola a -> a
-primero (C [])    = error "primero: cola vacia"
-primero (C (x:_)) = x
+primero (C xs) = case viewl xs of
+  EmptyL -> error "primero de la pila vacia"
+  x :< _ -> x
 
 -- (resto c) es la cola obtenida eliminando el primer elemento de la
 -- cola c. Por ejemplo,
---    λ> resto (inserta 5 (inserta 2 (inserta 3 vacia)))
---    2 | 5
+--    λ> resto (foldr inserta vacia [1..10])
+--    C [9,8,7,6,5,4,3,2,1]
 resto :: Cola a -> Cola a
-resto (C (_:xs)) = C xs
-resto (C [])     = error "resto: cola vacia"
+resto (C xs) = case viewl xs of
+  EmptyL   -> error "resto la pila vacia"
+  _ :< xs' -> C xs'
 
 -- (esVacia c) se verifica si c es la cola vacía. Por ejemplo,
---    esVacia (inserta 5 (inserta 2 (inserta 3 vacia))) == False
+--    esVacia (foldr inserta vacia [1..10]) == False
 --    esVacia vacia  == True
 esVacia :: Cola a -> Bool
-esVacia (C xs)  = null xs
+esVacia (C xs)  = S.null xs
 
 -- Generador de colas                                          --
 -- ==================

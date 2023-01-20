@@ -263,9 +263,9 @@ Los objetivos de esta recopilación son:
 + [[./src/Maximos_valores_de_una_expresion_aritmetica.hs][Máximos valores de una expresión aritmética]].
 + [[./src/Valor_de_expresiones_aritmeticas_generales.hs][Valor de expresiones aritméticas generales]].
 + [[./src/Valor_de_una_expresion_vectorial.hs][Valor de una expresión vectorial]].
-+ V20 [[./src/TAD/Pila.hs][El tipo abstracto de datos de las pilas]].
-+ V20 [[./src/TAD/PilaConListas.hs][El tipo de datos de las pilas mediante listas]].
-+ V20 [[./src/TAD/PilaConSucesiones.hs][El tipo de datos de las pilas mediante sucesiones]].
++ [[./src/TAD/Pila.hs][El tipo abstracto de datos de las pilas]].
++ [[./src/TAD/PilaConListas.hs][El tipo de datos de las pilas mediante listas]].
++ [[./src/TAD/PilaConSucesiones.hs][El tipo de datos de las pilas mediante sucesiones]].
 + L23 [[./src/Transformaciones_pilas_listas.hs][Transformaciones entre pilas y listas]].
 + M24 [[./src/FiltraPila.hs][Filtrado de pilas según una propiedad]].
 + X25 [[./src/MapPila.hs][Aplicación de una función a los elementos de una pila]].

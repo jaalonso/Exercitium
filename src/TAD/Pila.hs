@@ -42,7 +42,6 @@ module TAD.Pila
    cima,       -- Pila a -> a
    desapila,   -- Pila a -> Pila a
    esVacia,    -- Pila a -> Bool
-   escribePila -- Show a => Pila a -> String
   ) where
 
 -- import TAD.PilaConListas
