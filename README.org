@@ -277,3 +277,6 @@ Los objetivos de esta recopilación son:
 + J02 [[./src/OrdenaInserPila.hs][Ordenación de pilas por inserción]].
 + V03 [[./src/NubPila.hs][Eliminación de repeticiones en una pila]].
 + L06 [[./src/MaxPila.hs][Máximo elemento de una pila]].
++ M07 [[./src/TAD/Cola.hs][El tipo abstracto de datos de las colas]].
++ M07 [[./src/TAD/ColaConListas.hs][El tipo de datos de las colas mediante listas]].
++ M07 [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].

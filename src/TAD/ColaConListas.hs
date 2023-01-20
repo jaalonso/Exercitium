@@ -1,10 +1,9 @@
 -- ColaConListas.hs
 -- Implementación de las colas mediante listas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 16-enero-2023
+-- Sevilla, 20-enero-2023
 -- ---------------------------------------------------------------------
 
-{-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE FlexibleInstances #-}
 {-# OPTIONS_GHC -fno-warn-unused-top-binds #-}
 
