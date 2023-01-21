@@ -1,6 +1,6 @@
-module ColaConListas_Spec (main, spec) where
+module ColaConDosListas_Spec (main, spec) where
 
-import TAD.ColaConListas
+import TAD.ColaConDosListas
 import Test.Hspec
 
 main :: IO ()

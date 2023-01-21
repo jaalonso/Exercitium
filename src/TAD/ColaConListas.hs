@@ -80,42 +80,45 @@ esVacia (C xs)  = null xs
 
 -- genCola es un generador de colas de enteros. Por ejemplo,
 --    λ> sample genCola
---    C ([],[])
---    C ([],[])
---    C ([],[])
---    C ([],[])
---    C ([7,8,4,3,7],[5,3,3])
---    C ([],[])
---    C ([1],[13])
---    C ([18,28],[12,21,28,28,3,18,14])
---    C ([47],[64,45,7])
---    C ([8],[])
---    C ([42,112,178,175,107],[])
-genCola :: Gen (Cola Int)
-genCola = frequency [(1, return vacia),
-                     (30, do n <- choose (10,100)
-                             xs <- vectorOf n arbitrary
-                             return (creaCola xs))]
-  where creaCola = foldr inserta vacia
+--    -
+--    -
+--    -3 | 2
+--    6 | 0 | 1
+--    -5 | 0 | -5 | 0 | -4
+--    2 | 9 | -6 | 9 | 0 | -1
+--    -
+--    11 | -5 | 5
+--    -
+--    16 | 6 | 15 | -3 | -9
+--    11 | 6 | 15 | 13 | 20 | -7 | 11 | -5 | 13
+genCola :: (Arbitrary a, Num a) => Gen (Cola a)
+genCola = do
+  xs <- listOf arbitrary
+  return (foldr inserta vacia xs)
 
 -- El tipo pila es una instancia del arbitrario.
-instance Arbitrary (Cola Int) where
+instance (Arbitrary a, Num a) => Arbitrary (Cola a) where
   arbitrary = genCola
 
 -- Propiedades de las colas
 -- ========================
 
 -- Las propiedades son
-prop_colas :: Int -> Int -> Cola Int -> Bool
-prop_colas x y c =
+prop_colas1 :: Int -> Cola Int -> Bool
+prop_colas1 x c =
   primero (inserta x vacia) == x &&
-  primero (inserta x c') == primero c' &&
   resto (inserta x vacia) == vacia &&
-  resto (inserta x c') == inserta x (resto c') &&
   esVacia vacia &&
   not (esVacia (inserta x c))
-  where c' = inserta y c
+
+prop_colas2 :: Int -> Cola Int -> Property
+prop_colas2 x c =
+  not (esVacia c) ==>
+  primero (inserta x c) == primero c &&
+  resto (inserta x c) == inserta x (resto c)
 
 -- La comprobación es:
---    λ> quickCheck prop_colas
+--    λ> quickCheck prop_colas1
 --    +++ OK, passed 100 tests.
+--    λ> quickCheck prop_colas2
+--    +++ OK, passed 100 tests; 3 discarded.

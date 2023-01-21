@@ -8,7 +8,7 @@
 -- secuencia de elementos en la que la operación de inserción se realiza
 -- por un extremo (el posterior o final) y la operación de extracción
 -- por el otro (el anterior o frente).
-
+--
 -- Las operaciones que definen a tipo abstracto de datos (TAD) de las
 -- colas (cuyos elementos son del tipo a) son las siguientes:
 --    vacia   :: Cola a
@@ -48,4 +48,5 @@ module TAD.Cola
   ) where
 
 -- import TAD.ColaConListas
-import TAD.ColaConSucesiones
+import TAD.ColaConDosListas
+-- import TAD.ColaConSucesiones

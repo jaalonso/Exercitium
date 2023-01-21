@@ -259,6 +259,7 @@ library
       Sumas_de_dos_primos
       Sustitucion_en_una_expresion_aritmetica
       TAD.Cola
+      TAD.ColaConDosListas
       TAD.ColaConListas
       TAD.ColaConSucesiones
       TAD.Pila
@@ -360,7 +361,9 @@ test-suite Exercitium-test
       Clausura_transitiva_de_una_relacion_binaria_Spec
       Codificacion_de_Fibonacci_Spec
       Codificacion_de_Godel_Spec
+      ColaConDosListas_Spec
       ColaConListas_Spec
+      ColaConSucesiones_Spec
       Composicion_de_relaciones_binarias_Spec
       Conjunto_de_divisores_Spec
       Conjunto_de_primos_relativos_Spec
