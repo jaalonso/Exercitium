@@ -8,14 +8,14 @@
 -- Utilizando el [tipo abstracto de datos de las pilas](https://bit.ly/3GTToyK),
 -- definir la función
 --    listaApila :: [a] -> Pila a
---    pilaALista :: Pila a -> [a]
+--    pilaAlista :: Pila a -> [a]
 -- tales que
 -- + (listaApila xs) es la pila formada por los elementos de xs.
 --   Por ejemplo,
 --      λ> listaApila [3, 2, 5]
 --      5 | 2 | 3
--- + (pilaALista p) es la lista formada por los elementos de la
---   lista p. Por ejemplo,
+-- + (pilaAlista p) es la lista formada por los elementos de la
+--   pila p. Por ejemplo,
 --      λ> pilaAlista (apila 5 (apila 2 (apila 3 vacia)))
 --      [3, 2, 5]
 --
