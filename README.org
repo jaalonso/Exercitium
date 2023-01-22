@@ -280,3 +280,4 @@ Los objetivos de esta recopilación son:
 + M07 [[./src/TAD/Cola.hs][El tipo abstracto de datos de las colas]].
 + M07 [[./src/TAD/ColaConListas.hs][El tipo de datos de las colas mediante listas]].
 + M07 [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].
++ M07 [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].

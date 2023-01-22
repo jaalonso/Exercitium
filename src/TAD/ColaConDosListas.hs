@@ -75,7 +75,7 @@ normaliza p        = p
 --    3
 primero  :: Cola a -> a
 primero (C (x:_,_)) = x
-primero _          = error "primero: cola vacia"
+primero _           = error "primero: cola vacia"
 
 -- (resto c) es la cola obtenida eliminando el primer elemento de la
 -- cola c. Por ejemplo,
