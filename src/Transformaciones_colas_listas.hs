@@ -8,14 +8,14 @@
 -- Utilizando el [tipo abstracto de datos de las colas](https://bit.ly/3QWTsRL),
 -- definir las funciones
 --    listaAcola :: [a] -> Cola a
---    colaALista :: Cola a -> [a]
+--    colaAlista :: Cola a -> [a]
 -- tales que
 -- + (listaAcola xs) es la cola formada por los elementos de xs.
 --   Por ejemplo,
 --      λ> listaAcola [3, 2, 5]
 --      3 | 2 | 5
--- + (colaALista c) es la lista formada por los elementos de la
---   lista c. Por ejemplo,
+-- + (colaAlista c) es la lista formada por los elementos de la
+--   cola c. Por ejemplo,
 --      λ> colaAlista (inserta 5 (inserta 2 (inserta 3 vacia)))
 --      [3, 2, 5]
 --
