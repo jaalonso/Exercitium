@@ -266,18 +266,20 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD/Pila.hs][El tipo abstracto de datos de las pilas]].
 + [[./src/TAD/PilaConListas.hs][El tipo de datos de las pilas mediante listas]].
 + [[./src/TAD/PilaConSucesiones.hs][El tipo de datos de las pilas mediante sucesiones]].
-+ L23 [[./src/Transformaciones_pilas_listas.hs][Transformaciones entre pilas y listas]].
-+ M24 [[./src/FiltraPila.hs][Filtrado de pilas según una propiedad]].
-+ X25 [[./src/MapPila.hs][Aplicación de una función a los elementos de una pila]].
-+ J26 [[./src/PertenecePila.hs][Pertenencia a una pila]].
-+ V27 [[./src/ContenidaPila.hs][Inclusión de pilas]].
-+ L30 [[./src/PrefijoPila.hs][Reconocimiento de prefijos de pilas]].
-+ M31 [[./src/SubPila.hs][Reconocimiento de subpilas]].
-+ X01 [[./src/OrdenadaPila.hs][Reconocimiento de ordenación de pilas]].
-+ J02 [[./src/OrdenaInserPila.hs][Ordenación de pilas por inserción]].
-+ V03 [[./src/NubPila.hs][Eliminación de repeticiones en una pila]].
-+ L06 [[./src/MaxPila.hs][Máximo elemento de una pila]].
++ L23 [[./src/Transformaciones_pilas_listas.hs][TAD de las pilas: Transformaciones entre pilas y listas]].
++ M24 [[./src/FiltraPila.hs][TAD de las pilas: Filtrado de pilas según una propiedad]].
++ X25 [[./src/MapPila.hs][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
++ J26 [[./src/PertenecePila.hs][TAD de las pilas: Pertenencia a una pila]].
++ V27 [[./src/ContenidaPila.hs][TAD de las pilas: Inclusión de pilas]].
++ L30 [[./src/PrefijoPila.hs][TAD de las pilas: Reconocimiento de prefijos de pilas]].
++ M31 [[./src/SubPila.hs][TAD de las pilas: Reconocimiento de subpilas]].
++ X01 [[./src/OrdenadaPila.hs][TAD de las pilas: Reconocimiento de ordenación de pilas]].
++ J02 [[./src/OrdenaInserPila.hs][TAD de las pilas: Ordenación de pilas por inserción]].
++ V03 [[./src/NubPila.hs][TAD de las pilas: Eliminación de repeticiones en una pila]].
++ L06 [[./src/MaxPila.hs][TAD de las pilas: Máximo elemento de una pila]].
 + M07 [[./src/TAD/Cola.hs][El tipo abstracto de datos de las colas]].
 + M07 [[./src/TAD/ColaConListas.hs][El tipo de datos de las colas mediante listas]].
 + M07 [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].
 + M07 [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].
++ X08 [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
++ J09 [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].

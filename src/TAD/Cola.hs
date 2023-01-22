@@ -47,6 +47,6 @@ module TAD.Cola
    esVacia,    -- Cola a -> Bool
   ) where
 
--- import TAD.ColaConListas
-import TAD.ColaConDosListas
+import TAD.ColaConListas
+-- import TAD.ColaConDosListas
 -- import TAD.ColaConSucesiones

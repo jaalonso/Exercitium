@@ -44,5 +44,5 @@ module TAD.Pila
    esVacia,    -- Pila a -> Bool
   ) where
 
--- import TAD.PilaConListas
-import TAD.PilaConSucesiones
+import TAD.PilaConListas
+-- import TAD.PilaConSucesiones

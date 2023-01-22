@@ -269,6 +269,7 @@ library
       Ternas_pitagoricas
       Ternas_pitagoricas_con_suma_dada
       Todos_los_abundantes_hasta_n_son_pares
+      Transformaciones_colas_listas
       Transformaciones_pilas_listas
       Transitividad_de_una_relacion
       Trenzado_de_listas
@@ -277,6 +278,7 @@ library
       Triangulares_con_cifras
       Triangulo_aritmetico
       Ultimo_digito
+      UltimoCola
       Union_conjuntista_de_listas
       Union_e_interseccion_general
       Validez_de_una_formula
@@ -559,6 +561,7 @@ test-suite Exercitium-test
       Termino_ausente_en_una_progresion_aritmetica_Spec
       Ternas_pitagoricas_con_suma_dada_Spec
       Ternas_pitagoricas_Spec
+      Transformaciones_colas_listas_Spec
       Transformaciones_pilas_listas_Spec
       Transitividad_de_una_relacion_Spec
       Trenzado_de_listas_Spec
