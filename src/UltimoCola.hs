@@ -1,5 +1,5 @@
 -- UltimoCola.hs
--- TAD de las colas: Último elemento
+-- TAD de las colas: Último elemento.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 9-febrero-2023
 -- ---------------------------------------------------------------------
@@ -10,13 +10,20 @@
 --    ultimoCola :: Cola a -> a
 -- tal que (ultimoCola c) es el último elemento de la cola c. Por
 -- ejemplo:
---    ultimoCola ejCola4 == 4
---    ultimoCola ejCola5 == 15
+--    ultimoCola (inserta 3 (inserta 5 (inserta 2 vacia))) == 3
+--    ultimoCola (inserta 2 vacia)                         == 2
 -- ---------------------------------------------------------------------
+
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
 module UltimoCola where
 
-import TAD.Cola
+import TAD.Cola (Cola, vacia, inserta, primero, resto, esVacia)
+import Transformaciones_colas_listas (colaAlista)
+import Test.QuickCheck
+
+-- 1ª solución
+-- ===========
 
 ultimoCola :: Cola a -> a
 ultimoCola c
@@ -25,3 +32,27 @@ ultimoCola c
   | otherwise  = ultimoCola rc
   where pc = primero c
         rc = resto c
+
+-- 2ª solución
+-- ===========
+
+-- Se usarán la función colaAlista del ejercicio
+-- "Transformaciones entre colas y listas" que se encuentra en
+-- https://bit.ly/3Xv0oIt
+
+ultimoCola2 :: Cola a -> a
+ultimoCola2 c
+  | esVacia c  = error "cola vacia"
+  | otherwise  = last (colaAlista c)
+
+-- Comprobación de equivalencia
+-- ============================
+
+-- La propiedad es
+prop_ultimoCola :: Cola Int -> Property
+prop_ultimoCola c =
+  not (esVacia c) ==> ultimoCola c == ultimoCola2 c
+
+-- La comprobación es
+--    λ> quickCheck prop_ultimoCola
+--    +++ OK, passed 100 tests; 16 discarded.

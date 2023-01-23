@@ -570,6 +570,7 @@ test-suite Exercitium-test
       Triangulares_con_cifras_Spec
       Triangulo_aritmetico_Spec
       Ultimo_digito_Spec
+      UltimoCola_Spec
       Union_conjuntista_de_listas_Spec
       Union_e_interseccion_general_Spec
       Valor_de_expresiones_aritmeticas_generales_Spec
