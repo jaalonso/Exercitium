@@ -266,7 +266,7 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD/Pila.hs][El tipo abstracto de datos de las pilas]].
 + [[./src/TAD/PilaConListas.hs][El tipo de datos de las pilas mediante listas]].
 + [[./src/TAD/PilaConSucesiones.hs][El tipo de datos de las pilas mediante sucesiones]].
-+ L23 [[./src/Transformaciones_pilas_listas.hs][TAD de las pilas: Transformaciones entre pilas y listas]].
++ [[./src/Transformaciones_pilas_listas.hs][TAD de las pilas: Transformaciones entre pilas y listas]].
 + M24 [[./src/FiltraPila.hs][TAD de las pilas: Filtrado de pilas según una propiedad]].
 + X25 [[./src/MapPila.hs][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
 + J26 [[./src/PertenecePila.hs][TAD de las pilas: Pertenencia a una pila]].
@@ -283,3 +283,4 @@ Los objetivos de esta recopilación son:
 + M07 [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].
 + X08 [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
 + J09 [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
++ V10 [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
