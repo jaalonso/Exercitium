@@ -32,7 +32,7 @@ todosVerifican1 p c
   where pc = primero c
         rc = resto c
 
--- 1ª solución
+-- 2ª solución
 -- ===========
 
 todosVerifican2 :: (a -> Bool) -> Cola a -> Bool
