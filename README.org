@@ -284,3 +284,4 @@ Los objetivos de esta recopilación son:
 + X08 [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
 + J09 [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
 + V10 [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
++ L13 [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].

@@ -36,6 +36,10 @@ longitudCola1 c
 longitudCola2 :: Cola a -> Int
 longitudCola2 = length . colaAlista
 
+-- La función colaAlista está definida en el ejercicio
+-- "Transformaciones entre colas y listas" que se encuentra en
+-- https://bit.ly/3Xv0oIt
+
 -- Comprobación de equivalencia
 -- ============================
 
