@@ -285,3 +285,4 @@ Los objetivos de esta recopilación son:
 + J09 [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
 + V10 [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
 + L13 [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
++ M14 [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].

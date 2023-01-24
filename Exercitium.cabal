@@ -31,6 +31,7 @@ library
       Alfabeto_desde
       Algoritmo_de_Euclides_del_mcd
       Algun_vecino_menor
+      AlgunoVerifica
       Altura_de_un_arbol_binario
       Amplia_columnas
       Anagramas
@@ -339,6 +340,7 @@ test-suite Exercitium-test
       Alfabeto_desde_Spec
       Algoritmo_de_Euclides_del_mcd_Spec
       Algun_vecino_menor_Spec
+      AlgunoVerifica_Spec
       Altura_de_un_arbol_binario_Spec
       Anagramas_Spec
       Aplica_segun_propiedad_Spec
