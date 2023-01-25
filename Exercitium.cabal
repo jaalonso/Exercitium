@@ -102,6 +102,7 @@ library
       Exponente_en_la_factorizacion
       Exponente_mayor
       Expresiones_aritmeticas_reducibles
+      ExtiendeCola
       Factorizaciones_de_numeros_de_Hilbert
       Familias_de_numeros_con_algun_digito_en_comun
       FiltraPila
@@ -410,6 +411,7 @@ test-suite Exercitium-test
       Exponente_en_la_factorizacion_Spec
       Exponente_mayor_Spec
       Expresiones_aritmeticas_reducibles_Spec
+      ExtiendeCola_Spec
       Factorizaciones_de_numeros_de_Hilbert_Spec
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       FiltraPila_Spec
