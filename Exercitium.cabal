@@ -112,6 +112,7 @@ library
       Iguales_al_siguiente
       Imagen_especular_de_un_arbol_binario
       Indices_verdaderos
+      IntercalaColas
       Intercambio_de_componentes_de_un_par
       Interior_de_una_lista
       Interpretaciones_de_una_formula
@@ -421,6 +422,7 @@ test-suite Exercitium-test
       Iguales_al_siguiente_Spec
       Imagen_especular_de_un_arbol_binario_Spec
       Indices_verdaderos_Spec
+      IntercalaColas_Spec
       Intercambio_de_componentes_de_un_par_Spec
       Interior_de_una_lista_Spec
       Interseccion_conjuntista_de_listas_Spec

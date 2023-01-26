@@ -287,3 +287,4 @@ Los objetivos de esta recopilación son:
 + L13 [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
 + M14 [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
 + X15 [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
++ J16 [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
