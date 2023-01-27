@@ -269,8 +269,8 @@ Los objetivos de esta recopilación son:
 + [[./src/Transformaciones_pilas_listas.hs][TAD de las pilas: Transformaciones entre pilas y listas]].
 + [[./src/FiltraPila.hs][TAD de las pilas: Filtrado de pilas según una propiedad]].
 + [[./src/MapPila.hs][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
-+ J26 [[./src/PertenecePila.hs][TAD de las pilas: Pertenencia a una pila]].
-+ V27 [[./src/ContenidaPila.hs][TAD de las pilas: Inclusión de pilas]].
++ [[./src/PertenecePila.hs][TAD de las pilas: Pertenencia a una pila]].
++ [[./src/ContenidaPila.hs][TAD de las pilas: Inclusión de pilas]].
 + L30 [[./src/PrefijoPila.hs][TAD de las pilas: Reconocimiento de prefijos de pilas]].
 + M31 [[./src/SubPila.hs][TAD de las pilas: Reconocimiento de subpilas]].
 + X01 [[./src/OrdenadaPila.hs][TAD de las pilas: Reconocimiento de ordenación de pilas]].
@@ -288,3 +288,4 @@ Los objetivos de esta recopilación son:
 + M14 [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
 + X15 [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
 + J16 [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
++ V17 [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].

@@ -27,6 +27,7 @@ source-repository head
 library
   exposed-modules:
       Agrupacion_de_elementos_por_posicion
+      AgrupaColas
       Alergias
       Alfabeto_desde
       Algoritmo_de_Euclides_del_mcd
@@ -338,6 +339,7 @@ test-suite Exercitium-test
   main-is: Spec.hs
   other-modules:
       Agrupacion_de_elementos_por_posicion_Spec
+      AgrupaColas_Spec
       Alergias_Spec
       Alfabeto_desde_Spec
       Algoritmo_de_Euclides_del_mcd_Spec
