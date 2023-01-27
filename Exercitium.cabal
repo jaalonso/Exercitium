@@ -65,6 +65,7 @@ library
       Conjunto_de_divisores
       Conjunto_de_primos_relativos
       Contenacion_de_una_lista_de_listas
+      ContenidaCola
       ContenidaPila
       Cuadrado_mas_cercano
       Densidad_de_numeros_abundantes
@@ -379,6 +380,7 @@ test-suite Exercitium-test
       Conjunto_de_divisores_Spec
       Conjunto_de_primos_relativos_Spec
       Contenacion_de_una_lista_de_listas_Spec
+      ContenidaCola_Spec
       ContenidaPila_Spec
       Cuadrado_mas_cercano_Spec
       Densidad_de_numeros_abundantes_Spec
