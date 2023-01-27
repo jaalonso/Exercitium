@@ -8,7 +8,7 @@
 -- Utilizando el [tipo abstracto de datos de las colas](https://bit.ly/3QWTsRL),
 -- definir la función
 --    ordenadaCola :: Ord a => Cola a -> Bool
--- tal que (ordenadaCola p) se verifica si los elementos de la cola p
+-- tal que (ordenadaCola c) se verifica si los elementos de la cola c
 -- están ordenados en orden creciente. Por ejemplo,
 --    ordenadaCola (inserta 6 (inserta 5 (inserta 1 vacia))) == True
 --    ordenadaCola (inserta 1 (inserta 0 (inserta 6 vacia))) == False
