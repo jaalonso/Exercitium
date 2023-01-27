@@ -201,6 +201,7 @@ library
       Posiciones_diagonales_principales
       Potencia_entera
       Potencias_perfectas
+      PrefijoCola
       PrefijoPila
       Primeros_y_ultimos_elementos
       Primos_circulares
@@ -511,6 +512,7 @@ test-suite Exercitium-test
       Posiciones_diagonales_principales_Spec
       Potencia_entera_Spec
       Potencias_perfectas_Spec
+      PrefijoCola_Spec
       PrefijoPila_Spec
       Primeros_y_ultimos_elementos_Spec
       Primos_circulares_Spec

@@ -291,3 +291,4 @@ Los objetivos de esta recopilación son:
 + V17 [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
 + L20 [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
 + M21 [[./src/ContenidaCola.hs][TAD de las colas: Inclusión de colas]].
++ X22 [[./src/PrefijoCola.hs][TAD de las colas: Reconocimiento de prefijos de colas]].
