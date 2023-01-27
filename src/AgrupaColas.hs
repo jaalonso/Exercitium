@@ -5,7 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Ejercicio 7: Definir la función
+-- Utilizando el [tipo abstracto de datos de las colas](https://bit.ly/3QWTsRL),
+-- definir la función
 --    agrupaColas :: [Cola a] -> Cola a
 -- tal que (agrupaColas [c1,c2,c3,...,cn]) es la cola formada mezclando
 -- las colas de la lista como sigue: mezcla c1 con c2, el resultado con
