@@ -7,16 +7,16 @@
 -- ---------------------------------------------------------------------
 -- Utilizando el [tipo abstracto de datos de las colas](https://bit.ly/3QWTsRL),
 -- definir la función
---    pertenecePila :: Eq a => a -> Pila a -> Bool
--- tal que (pertenecePila y p) se verifica si y es un elemento de la
--- pila p. Por ejemplo,
---    pertenecePila 2 (apila 5 (apila 2 (apila 3 vacia))) == True
---    pertenecePila 4 (apila 5 (apila 2 (apila 3 vacia))) == False
+--    perteneceCola :: Eq a => a -> Cola a -> Bool
+-- tal que (perteneceCola x c) se verifica si x es un elemento de la
+-- cola c. Por ejemplo,
+--    perteneceCola 2 (inserta 5 (inserta 2 (inserta 3 vacia))) == True
+--    perteneceCola 4 (inserta 5 (inserta 2 (inserta 3 vacia))) == False
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module PertenecePila where
+module PerteneceCola where
 
 import TAD.Cola (Cola, vacia, inserta, primero, resto, esVacia)
 import Transformaciones_colas_listas (colaAlista, listaAcola)

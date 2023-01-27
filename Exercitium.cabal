@@ -499,6 +499,7 @@ test-suite Exercitium-test
       Particiones_de_enteros_positivos_Spec
       Particiones_en_k_subconjuntos_Spec
       Permutacion_ciclica_Spec
+      PerteneceCola_Spec
       PertenecePila_Spec
       PilaConListas_Spec
       PilaConSucesiones_Spec
