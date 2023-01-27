@@ -192,6 +192,7 @@ library
       Particiones_de_enteros_positivos
       Particiones_en_k_subconjuntos
       Permutacion_ciclica
+      PerteneceCola
       PertenecePila
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell

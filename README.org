@@ -289,3 +289,4 @@ Los objetivos de esta recopilación son:
 + X15 [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
 + J16 [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
 + V17 [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
++ L20 [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
