@@ -240,6 +240,7 @@ library
       Separacion_por_posicion
       Sistema_factoradico_de_numeracion
       Subarbol_de_profundidad_dada
+      SubCola
       Subconjuntos_de_un_conjunto
       SubPila
       Sucesion_de_numeros_amigos
@@ -549,6 +550,7 @@ test-suite Exercitium-test
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
       Subarbol_de_profundidad_dada_Spec
+      SubCola_Spec
       Subconjuntos_de_un_conjunto_Spec
       SubPila_Spec
       Sucesion_de_numeros_amigos_Spec
