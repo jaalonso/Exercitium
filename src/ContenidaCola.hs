@@ -9,7 +9,7 @@
 -- definir la función
 --    contenidaCola :: Eq a => Cola a -> Cola a -> Bool
 -- tal que (contenidaCola c1 c2) se verifica si todos los elementos de
--- de la cola c1 son elementos de la cola c2. Por ejemplo,
+-- la cola c1 son elementos de la cola c2. Por ejemplo,
 --    λ> ej1 = inserta 3 (inserta 2 vacia)
 --    λ> ej2 = inserta 3 (inserta 4 vacia)
 --    λ> ej3 = inserta 5 (inserta 2 (inserta 3 vacia))
