@@ -5,6 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
+-- Utilizando el [tipo abstracto de datos de las colas](https://bit.ly/3QWTsRL),
+-- definir la función
 --    perteneceCola :: Eq a => a -> Cola a -> Bool
 -- tal que (perteneceCola x c) se verifica si x es un elemento de la
 -- cola c. Por ejemplo,
