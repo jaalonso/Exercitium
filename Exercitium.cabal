@@ -184,6 +184,7 @@ library
       Ordenacion_de_estructuras
       Ordenacion_de_los_racionales
       Ordenada_ciclicamente
+      OrdenadaCola
       OrdenadaPila
       Ordenados_por_maximo
       OrdenaInserPila
@@ -494,6 +495,7 @@ test-suite Exercitium-test
       Ordenacion_de_estructuras_Spec
       Ordenacion_de_los_racionales_Spec
       Ordenada_ciclicamente_Spec
+      OrdenadaCola_Spec
       OrdenadaPila_Spec
       Ordenados_por_maximo_Spec
       OrdenaInserPila_Spec
