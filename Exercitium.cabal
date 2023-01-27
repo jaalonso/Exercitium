@@ -135,6 +135,7 @@ library
       Mastermind
       Matriz_Toeplitz
       Matriz_zigzagueante
+      MaxCola
       Maxima_suma_de_caminos_en_un_triangulo
       Maximo_de_tres_numeros
       Maximo_de_una_lista
@@ -448,6 +449,7 @@ test-suite Exercitium-test
       Mastermind_Spec
       Matriz_Toeplitz_Spec
       Matriz_zigzagueante_Spec
+      MaxCola_Spec
       Maxima_suma_de_caminos_en_un_triangulo_Spec
       Maximo_de_tres_numeros_Spec
       Maximo_de_una_lista_Spec

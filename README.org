@@ -294,3 +294,4 @@ Los objetivos de esta recopilación son:
 + X22 [[./src/PrefijoCola.hs][TAD de las colas: Reconocimiento de prefijos de colas]].
 + J23 [[./src/SubCola.hs][TAD de las colas: Reconocimiento de subcolas]].
 + V24 [[./src/OrdenadaCola.hs][TAD de las colas: Reconocimiento de ordenación de colas]].
++ L27 [[./src/MaxCola.hs][TAD de las colas: Máximo elemento de una cola]].

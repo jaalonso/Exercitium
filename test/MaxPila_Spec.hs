@@ -11,7 +11,7 @@ main = hspec spec
 specG :: (Pila Int -> Int) -> Spec
 specG maxPila =
   it "e1" $
-    maxPila1 (apila 3 (apila 5 (apila 1 vacia))) `shouldBe` 5
+    maxPila (apila 3 (apila 5 (apila 1 vacia))) `shouldBe` 5
 
 spec :: Spec
 spec = do
