@@ -271,32 +271,33 @@ Los objetivos de esta recopilación son:
 + [[./src/MapPila.hs][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
 + [[./src/PertenecePila.hs][TAD de las pilas: Pertenencia a una pila]].
 + [[./src/ContenidaPila.hs][TAD de las pilas: Inclusión de pilas]].
-+ L30 [[./src/PrefijoPila.hs][TAD de las pilas: Reconocimiento de prefijos de pilas]].
-+ M31 [[./src/SubPila.hs][TAD de las pilas: Reconocimiento de subpilas]].
-+ X01 [[./src/OrdenadaPila.hs][TAD de las pilas: Reconocimiento de ordenación de pilas]].
-+ J02 [[./src/OrdenaInserPila.hs][TAD de las pilas: Ordenación de pilas por inserción]].
-+ V03 [[./src/NubPila.hs][TAD de las pilas: Eliminación de repeticiones en una pila]].
-+ L06 [[./src/MaxPila.hs][TAD de las pilas: Máximo elemento de una pila]].
-+ M07 [[./src/TAD/Cola.hs][El tipo abstracto de datos de las colas]].
-+ M07 [[./src/TAD/ColaConListas.hs][El tipo de datos de las colas mediante listas]].
-+ M07 [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].
-+ M07 [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].
-+ X08 [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
-+ J09 [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
-+ V10 [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
-+ L13 [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
-+ M14 [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
-+ X15 [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
-+ J16 [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
-+ V17 [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
-+ L20 [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
-+ M21 [[./src/ContenidaCola.hs][TAD de las colas: Inclusión de colas]].
-+ X22 [[./src/PrefijoCola.hs][TAD de las colas: Reconocimiento de prefijos de colas]].
-+ J23 [[./src/SubCola.hs][TAD de las colas: Reconocimiento de subcolas]].
-+ V24 [[./src/OrdenadaCola.hs][TAD de las colas: Reconocimiento de ordenación de colas]].
-+ L27 [[./src/MaxCola.hs][TAD de las colas: Máximo elemento de una cola]].
-+ M28 [[./src/TAD/Conjunto.hs][El tipo abstracto de datos de los conjuntos]].
-+ M28 [[./src/TAD/ConjuntoConListasNoOrdenadasConDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
-+ M28 [[./src/TAD/ConjuntoConListasNoOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
-+ M28 [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
-+ M28 [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
++ L30-Ene [[./src/PrefijoPila.hs][TAD de las pilas: Reconocimiento de prefijos de pilas]].
++ M31-Ene [[./src/SubPila.hs][TAD de las pilas: Reconocimiento de subpilas]].
++ X01-Feb [[./src/OrdenadaPila.hs][TAD de las pilas: Reconocimiento de ordenación de pilas]].
++ J02-Feb [[./src/OrdenaInserPila.hs][TAD de las pilas: Ordenación de pilas por inserción]].
++ V03-Feb [[./src/NubPila.hs][TAD de las pilas: Eliminación de repeticiones en una pila]].
++ L06-Feb [[./src/MaxPila.hs][TAD de las pilas: Máximo elemento de una pila]].
++ M07-Feb [[./src/TAD/Cola.hs][El tipo abstracto de datos de las colas]].
++ M07-Feb [[./src/TAD/ColaConListas.hs][El tipo de datos de las colas mediante listas]].
++ M07-Feb [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].
++ M07-Feb [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].
++ X08-Feb [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
++ J09-Feb [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
++ V10-Feb [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
++ L13-Feb [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
++ M14-Feb [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
++ X15-Feb [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
++ J16-Feb [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
++ V17-Feb [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
++ L20-Feb [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
++ M21-Feb [[./src/ContenidaCola.hs][TAD de las colas: Inclusión de colas]].
++ X22-Feb [[./src/PrefijoCola.hs][TAD de las colas: Reconocimiento de prefijos de colas]].
++ J23-Feb [[./src/SubCola.hs][TAD de las colas: Reconocimiento de subcolas]].
++ V24-Feb [[./src/OrdenadaCola.hs][TAD de las colas: Reconocimiento de ordenación de colas]].
++ L27-Feb [[./src/MaxCola.hs][TAD de las colas: Máximo elemento de una cola]].
++ M28-Feb [[./src/TAD/Conjunto.hs][El tipo abstracto de datos de los conjuntos]].
++ M28-Feb [[./src/TAD/ConjuntoConListasNoOrdenadasConDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
++ M28-Feb [[./src/TAD/ConjuntoConListasNoOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
++ M28-Feb [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
++ M28-Feb [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
++ X01-Mar [[./src/Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].

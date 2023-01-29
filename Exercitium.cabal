@@ -287,6 +287,7 @@ library
       Todos_los_abundantes_hasta_n_son_pares
       TodosVerifican
       Transformaciones_colas_listas
+      Transformaciones_conjuntos_listas
       Transformaciones_pilas_listas
       Transitividad_de_una_relacion
       Trenzado_de_listas
@@ -595,6 +596,7 @@ test-suite Exercitium-test
       Ternas_pitagoricas_Spec
       TodosVerifican_Spec
       Transformaciones_colas_listas_Spec
+      Transformaciones_conjuntos_listas_Spec
       Transformaciones_pilas_listas_Spec
       Transitividad_de_una_relacion_Spec
       Trenzado_de_listas_Spec
