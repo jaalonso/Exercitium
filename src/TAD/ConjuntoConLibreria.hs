@@ -1,5 +1,5 @@
 -- ConjuntoConLibreria.hs
--- Implementación de conjuntos mediante librería.
+-- Implementación de los conjuntos mediante librería.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 28-enero-2023
 -- ---------------------------------------------------------------------
