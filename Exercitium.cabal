@@ -273,6 +273,11 @@ library
       TAD.ColaConDosListas
       TAD.ColaConListas
       TAD.ColaConSucesiones
+      TAD.Conjunto
+      TAD.ConjuntoConLibreria
+      TAD.ConjuntoConListasNoOrdenadasConDuplicados
+      TAD.ConjuntoConListasNoOrdenadasSinDuplicados
+      TAD.ConjuntoConListasOrdenadasSinDuplicados
       TAD.Pila
       TAD.PilaConListas
       TAD.PilaConSucesiones
@@ -383,6 +388,10 @@ test-suite Exercitium-test
       Composicion_de_relaciones_binarias_Spec
       Conjunto_de_divisores_Spec
       Conjunto_de_primos_relativos_Spec
+      ConjuntoConLibreria_Spec
+      ConjuntoConListasNoOrdenadasConDuplicados_Spec
+      ConjuntoConListasNoOrdenadasSinDuplicados_Spec
+      ConjuntoConListasOrdenadasSinDuplicados_Spec
       Contenacion_de_una_lista_de_listas_Spec
       ContenidaCola_Spec
       ContenidaPila_Spec

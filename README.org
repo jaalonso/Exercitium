@@ -295,3 +295,8 @@ Los objetivos de esta recopilación son:
 + J23 [[./src/SubCola.hs][TAD de las colas: Reconocimiento de subcolas]].
 + V24 [[./src/OrdenadaCola.hs][TAD de las colas: Reconocimiento de ordenación de colas]].
 + L27 [[./src/MaxCola.hs][TAD de las colas: Máximo elemento de una cola]].
++ M28 [[./src/TAD/Conjunto.hs][El tipo abstracto de datos de los conjuntos]].
++ M28 [[./src/TAD/ConjuntoConListasNoOrdenadasConDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
++ M28 [[./src/TAD/ConjuntoConListasNoOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
++ M28 [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
++ M28 [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
