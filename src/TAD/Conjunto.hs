@@ -62,5 +62,5 @@ module TAD.Conjunto
 
 -- import TAD.ConjuntoConListasNoOrdenadasConDuplicados
 -- import TAD.ConjuntoConListasNoOrdenadasSinDuplicados
-import TAD.ConjuntoConListasOrdenadasSinDuplicados
--- import TAD.ConjuntosConLibreria
+-- import TAD.ConjuntoConListasOrdenadasSinDuplicados
+import TAD.ConjuntoConLibreria

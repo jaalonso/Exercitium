@@ -271,7 +271,7 @@ Los objetivos de esta recopilación son:
 + [[./src/MapPila.hs][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
 + [[./src/PertenecePila.hs][TAD de las pilas: Pertenencia a una pila]].
 + [[./src/ContenidaPila.hs][TAD de las pilas: Inclusión de pilas]].
-+ L30-Ene [[./src/PrefijoPila.hs][TAD de las pilas: Reconocimiento de prefijos de pilas]].
++ [[./src/PrefijoPila.hs][TAD de las pilas: Reconocimiento de prefijos de pilas]].
 + M31-Ene [[./src/SubPila.hs][TAD de las pilas: Reconocimiento de subpilas]].
 + X01-Feb [[./src/OrdenadaPila.hs][TAD de las pilas: Reconocimiento de ordenación de pilas]].
 + J02-Feb [[./src/OrdenaInserPila.hs][TAD de las pilas: Ordenación de pilas por inserción]].
@@ -301,3 +301,4 @@ Los objetivos de esta recopilación son:
 + M28-Feb [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
 + M28-Feb [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
 + X01-Mar [[./src/Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
++ J02-Mar [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
