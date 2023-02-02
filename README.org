@@ -303,3 +303,4 @@ Los objetivos de esta recopilación son:
 + X01-Mar [[./src/TAD_Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
 + J02-Mar [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
 + V03-Mar [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
++ L06-Mar [[./src/TAD_Conjunto_unitario.hs][TAD de los conjuntos: Conjunto unitario]].
