@@ -305,3 +305,4 @@ Los objetivos de esta recopilación son:
 + V03-Mar [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
 + L06-Mar [[./src/TAD_Conjunto_unitario.hs][TAD de los conjuntos: Conjunto unitario]].
 + M07-Mar [[./src/TAD_Numero_de_elementos_de_un_conjunto.hs][TAD de los conjuntos: Número de elementos de un conjunto]].
++ X08-Mar [[./src/TAD_Union_de_dos_conjuntos.hs][TAD de los conjuntos: Unión de dos conjuntos]].
