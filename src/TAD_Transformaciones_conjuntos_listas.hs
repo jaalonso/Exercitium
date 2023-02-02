@@ -1,4 +1,4 @@
--- Transformaciones_conjuntos_listas.hs
+-- TAD_Transformaciones_conjuntos_listas.hs
 -- TAD de los conjuntos: Transformaciones entre conjuntos y listas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 1-marzo-2023
@@ -26,7 +26,7 @@
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module Transformaciones_conjuntos_listas where
+module TAD_Transformaciones_conjuntos_listas where
 
 import TAD.Conjunto (Conj, vacio, inserta, menor, elimina, pertenece, esVacio)
 import Data.List (sort, nub)

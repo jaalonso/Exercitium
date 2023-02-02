@@ -24,7 +24,7 @@
 module TAD_subconjunto where
 
 import TAD.Conjunto (Conj, vacio, inserta, menor, elimina, pertenece, esVacio)
-import Transformaciones_conjuntos_listas (conjuntoAlista)
+import TAD_Transformaciones_conjuntos_listas (conjuntoAlista)
 import Test.QuickCheck
 
 -- 1ª solución

@@ -1,6 +1,6 @@
-module Transformaciones_conjuntos_listas_Spec (main, spec) where
+module TAD_Transformaciones_conjuntos_listas_Spec (main, spec) where
 
-import Transformaciones_conjuntos_listas
+import TAD_Transformaciones_conjuntos_listas
 import TAD.Conjunto
 import Test.Hspec
 

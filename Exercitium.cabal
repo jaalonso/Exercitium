@@ -282,13 +282,14 @@ library
       TAD.PilaConListas
       TAD.PilaConSucesiones
       TAD_subconjunto
+      TAD_subconjuntoPropio
+      TAD_Transformaciones_conjuntos_listas
       Termino_ausente_en_una_progresion_aritmetica
       Ternas_pitagoricas
       Ternas_pitagoricas_con_suma_dada
       Todos_los_abundantes_hasta_n_son_pares
       TodosVerifican
       Transformaciones_colas_listas
-      Transformaciones_conjuntos_listas
       Transformaciones_pilas_listas
       Transitividad_de_una_relacion
       Trenzado_de_listas
@@ -593,12 +594,13 @@ test-suite Exercitium-test
       Sumas_de_dos_primos_Spec
       Sustitucion_en_una_expresion_aritmetica_Spec
       TAD_subconjunto_Spec
+      TAD_subconjuntoPropio_Spec
+      TAD_Transformaciones_conjuntos_listas_Spec
       Termino_ausente_en_una_progresion_aritmetica_Spec
       Ternas_pitagoricas_con_suma_dada_Spec
       Ternas_pitagoricas_Spec
       TodosVerifican_Spec
       Transformaciones_colas_listas_Spec
-      Transformaciones_conjuntos_listas_Spec
       Transformaciones_pilas_listas_Spec
       Transitividad_de_una_relacion_Spec
       Trenzado_de_listas_Spec

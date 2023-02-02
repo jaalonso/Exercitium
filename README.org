@@ -272,9 +272,9 @@ Los objetivos de esta recopilación son:
 + [[./src/PertenecePila.hs][TAD de las pilas: Pertenencia a una pila]].
 + [[./src/ContenidaPila.hs][TAD de las pilas: Inclusión de pilas]].
 + [[./src/PrefijoPila.hs][TAD de las pilas: Reconocimiento de prefijos de pilas]].
-+ M31-Ene [[./src/SubPila.hs][TAD de las pilas: Reconocimiento de subpilas]].
-+ X01-Feb [[./src/OrdenadaPila.hs][TAD de las pilas: Reconocimiento de ordenación de pilas]].
-+ J02-Feb [[./src/OrdenaInserPila.hs][TAD de las pilas: Ordenación de pilas por inserción]].
++ [[./src/SubPila.hs][TAD de las pilas: Reconocimiento de subpilas]].
++ [[./src/OrdenadaPila.hs][TAD de las pilas: Reconocimiento de ordenación de pilas]].
++ [[./src/OrdenaInserPila.hs][TAD de las pilas: Ordenación de pilas por inserción]].
 + V03-Feb [[./src/NubPila.hs][TAD de las pilas: Eliminación de repeticiones en una pila]].
 + L06-Feb [[./src/MaxPila.hs][TAD de las pilas: Máximo elemento de una pila]].
 + M07-Feb [[./src/TAD/Cola.hs][El tipo abstracto de datos de las colas]].
@@ -300,5 +300,6 @@ Los objetivos de esta recopilación son:
 + M28-Feb [[./src/TAD/ConjuntoConListasNoOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
 + M28-Feb [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
 + M28-Feb [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
-+ X01-Mar [[./src/Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
++ X01-Mar [[./src/TAD_Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
 + J02-Mar [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
++ V03-Mar [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
