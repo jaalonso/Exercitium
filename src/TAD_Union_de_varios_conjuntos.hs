@@ -32,6 +32,10 @@ unionG :: Ord a => [Conj a] -> Conj a
 unionG []          = vacio
 unionG (c:cs) = c `union` unionG cs
 
+-- La función union está definida en el ejercicio
+-- "Unión de dos conjuntos" que se encuentra en
+-- https://bit.ly/3Y1jBl8
+
 -- 2ª solución
 -- ===========
 
