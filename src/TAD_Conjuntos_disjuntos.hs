@@ -34,6 +34,10 @@ import Test.QuickCheck
 disjuntos :: Ord a => Conj a -> Conj a -> Bool
 disjuntos c1 c2 = esVacio (interseccion c1 c2)
 
+-- La función interseccion está definida en el ejercicio
+-- "Intersección de dos conjuntos" que se encuentra en
+-- https://bit.ly/3jDL9xZ
+
 -- 2ª solución
 -- ===========
 

@@ -33,6 +33,10 @@ interseccionG :: Ord a => [Conj a] -> Conj a
 interseccionG [c]      = c
 interseccionG (cs:css) = interseccion cs (interseccionG css)
 
+-- La función interseccion está definida en el ejercicio
+-- "Intersección de dos conjuntos" que se encuentra en
+-- https://bit.ly/3jDL9xZ
+
 -- 2ª solución
 -- ===========
 
