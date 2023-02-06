@@ -5,7 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Ejercicio 10. Definir la función
+-- Utilizando el tipo abstracto de datos de los conjuntos
+-- (https://bit.ly/3HbB7fo) definir la función
 --    diferencia :: Ord a => Conj a -> Conj a -> Conj a
 -- tal que (diferencia c1 c2) es el conjunto de los elementos de c1 que
 -- no son elementos de c2. Por ejemplo,
