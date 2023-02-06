@@ -282,6 +282,7 @@ library
       TAD.PilaConListas
       TAD.PilaConSucesiones
       TAD_Conjunto_unitario
+      TAD_Conjuntos_disjuntos
       TAD_Interseccion_de_dos_conjuntos
       TAD_Interseccion_de_varios_conjuntos
       TAD_Numero_de_elementos_de_un_conjunto
@@ -600,6 +601,7 @@ test-suite Exercitium-test
       Sumas_de_dos_primos_Spec
       Sustitucion_en_una_expresion_aritmetica_Spec
       TAD_Conjunto_unitario_Spec
+      TAD_Conjuntos_disjuntos_Spec
       TAD_Interseccion_de_dos_conjuntos_Spec
       TAD_Interseccion_de_varios_conjuntos_Spec
       TAD_Numero_de_elementos_de_un_conjunto_Spec

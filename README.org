@@ -275,8 +275,8 @@ Los objetivos de esta recopilación son:
 + [[./src/SubPila.hs][TAD de las pilas: Reconocimiento de subpilas]].
 + [[./src/OrdenadaPila.hs][TAD de las pilas: Reconocimiento de ordenación de pilas]].
 + [[./src/OrdenaInserPila.hs][TAD de las pilas: Ordenación de pilas por inserción]].
-+ V03-Feb [[./src/NubPila.hs][TAD de las pilas: Eliminación de repeticiones en una pila]].
-+ L06-Feb [[./src/MaxPila.hs][TAD de las pilas: Máximo elemento de una pila]].
++ [[./src/NubPila.hs][TAD de las pilas: Eliminación de repeticiones en una pila]].
++ [[./src/MaxPila.hs][TAD de las pilas: Máximo elemento de una pila]].
 + M07-Feb [[./src/TAD/Cola.hs][El tipo abstracto de datos de las colas]].
 + M07-Feb [[./src/TAD/ColaConListas.hs][El tipo de datos de las colas mediante listas]].
 + M07-Feb [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].
@@ -309,3 +309,4 @@ Los objetivos de esta recopilación son:
 + J09-Mar [[./src/TAD_Union_de_varios_conjuntos.hs][TAD de los conjuntos: Unión de varios conjuntos]].
 + V10-Mar [[./src/TAD_Interseccion_de_dos_conjuntos.hs][TAD de los conjuntos: Intersección de dos conjuntos]].
 + L13-Mar [[./src/TAD_Interseccion_de_varios_conjuntos.hs][TAD de los conjuntos: Intersección de varios conjuntos]].
++ M14-Mar [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
