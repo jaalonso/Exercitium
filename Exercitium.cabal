@@ -289,6 +289,7 @@ library
       TAD_Interseccion_de_varios_conjuntos
       TAD_Numero_de_elementos_de_un_conjunto
       TAD_subconjunto
+      TAD_Subconjunto_por_propiedad
       TAD_subconjuntoPropio
       TAD_Transformaciones_conjuntos_listas
       TAD_Union_de_dos_conjuntos
@@ -609,6 +610,7 @@ test-suite Exercitium-test
       TAD_Interseccion_de_dos_conjuntos_Spec
       TAD_Interseccion_de_varios_conjuntos_Spec
       TAD_Numero_de_elementos_de_un_conjunto_Spec
+      TAD_Subconjunto_por_propiedad_Spec
       TAD_subconjunto_Spec
       TAD_subconjuntoPropio_Spec
       TAD_Transformaciones_conjuntos_listas_Spec

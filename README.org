@@ -277,11 +277,11 @@ Los objetivos de esta recopilación son:
 + [[./src/OrdenaInserPila.hs][TAD de las pilas: Ordenación de pilas por inserción]].
 + [[./src/NubPila.hs][TAD de las pilas: Eliminación de repeticiones en una pila]].
 + [[./src/MaxPila.hs][TAD de las pilas: Máximo elemento de una pila]].
-+ M07-Feb [[./src/TAD/Cola.hs][El tipo abstracto de datos de las colas]].
-+ M07-Feb [[./src/TAD/ColaConListas.hs][El tipo de datos de las colas mediante listas]].
-+ M07-Feb [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].
-+ M07-Feb [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].
-+ X08-Feb [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
++ [[./src/TAD/Cola.hs][El tipo abstracto de datos de las colas]].
++ [[./src/TAD/ColaConListas.hs][El tipo de datos de las colas mediante listas]].
++ [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].
++ [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].
++ [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
 + J09-Feb [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
 + V10-Feb [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
 + L13-Feb [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
@@ -312,3 +312,4 @@ Los objetivos de esta recopilación son:
 + M14-Mar [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
 + X15-Mar [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
 + J16-Mar [[./src/TAD_Diferencia_simetrica.hs][TAD de los conjuntos: Diferencia simétrica]].
++ V17-Mar [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
