@@ -313,3 +313,4 @@ Los objetivos de esta recopilación son:
 + X15-Mar [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
 + J16-Mar [[./src/TAD_Diferencia_simetrica.hs][TAD de los conjuntos: Diferencia simétrica]].
 + V17-Mar [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
++ L20-Mar [[./src/TAD_Particion_por_una_propiedad.hs][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
