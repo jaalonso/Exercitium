@@ -282,35 +282,40 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].
 + [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].
 + [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
-+ J09-Feb [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
-+ V10-Feb [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
-+ L13-Feb [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
-+ M14-Feb [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
-+ X15-Feb [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
-+ J16-Feb [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
-+ V17-Feb [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
-+ L20-Feb [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
-+ M21-Feb [[./src/ContenidaCola.hs][TAD de las colas: Inclusión de colas]].
-+ X22-Feb [[./src/PrefijoCola.hs][TAD de las colas: Reconocimiento de prefijos de colas]].
-+ J23-Feb [[./src/SubCola.hs][TAD de las colas: Reconocimiento de subcolas]].
-+ V24-Feb [[./src/OrdenadaCola.hs][TAD de las colas: Reconocimiento de ordenación de colas]].
-+ L27-Feb [[./src/MaxCola.hs][TAD de las colas: Máximo elemento de una cola]].
-+ M28-Feb [[./src/TAD/Conjunto.hs][El tipo abstracto de datos de los conjuntos]].
-+ M28-Feb [[./src/TAD/ConjuntoConListasNoOrdenadasConDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
-+ M28-Feb [[./src/TAD/ConjuntoConListasNoOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
-+ M28-Feb [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
-+ M28-Feb [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
-+ X01-Mar [[./src/TAD_Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
-+ J02-Mar [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
-+ V03-Mar [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
-+ L06-Mar [[./src/TAD_Conjunto_unitario.hs][TAD de los conjuntos: Conjunto unitario]].
-+ M07-Mar [[./src/TAD_Numero_de_elementos_de_un_conjunto.hs][TAD de los conjuntos: Número de elementos de un conjunto]].
-+ X08-Mar [[./src/TAD_Union_de_dos_conjuntos.hs][TAD de los conjuntos: Unión de dos conjuntos]].
-+ J09-Mar [[./src/TAD_Union_de_varios_conjuntos.hs][TAD de los conjuntos: Unión de varios conjuntos]].
-+ V10-Mar [[./src/TAD_Interseccion_de_dos_conjuntos.hs][TAD de los conjuntos: Intersección de dos conjuntos]].
-+ L13-Mar [[./src/TAD_Interseccion_de_varios_conjuntos.hs][TAD de los conjuntos: Intersección de varios conjuntos]].
-+ M14-Mar [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
-+ X15-Mar [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
-+ J16-Mar [[./src/TAD_Diferencia_simetrica.hs][TAD de los conjuntos: Diferencia simétrica]].
-+ V17-Mar [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
-+ L20-Mar [[./src/TAD_Particion_por_una_propiedad.hs][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
++ [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
+
+** Para Febrero
++ [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
++ L13 [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
++ M14 [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
++ X15 [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
++ J16 [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
++ V17 [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
++ L20 [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
++ M21 [[./src/ContenidaCola.hs][TAD de las colas: Inclusión de colas]].
++ X22 [[./src/PrefijoCola.hs][TAD de las colas: Reconocimiento de prefijos de colas]].
++ J23 [[./src/SubCola.hs][TAD de las colas: Reconocimiento de subcolas]].
++ V24 [[./src/OrdenadaCola.hs][TAD de las colas: Reconocimiento de ordenación de colas]].
++ L27 [[./src/MaxCola.hs][TAD de las colas: Máximo elemento de una cola]].
++ M28 [[./src/TAD/Conjunto.hs][El tipo abstracto de datos de los conjuntos]].
++ M28 [[./src/TAD/ConjuntoConListasNoOrdenadasConDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
++ M28 [[./src/TAD/ConjuntoConListasNoOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
++ M28 [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
++ M28 [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
+
+** Para marzo
++ X01 [[./src/TAD_Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
++ J02 [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
++ V03 [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
++ L06 [[./src/TAD_Conjunto_unitario.hs][TAD de los conjuntos: Conjunto unitario]].
++ M07 [[./src/TAD_Numero_de_elementos_de_un_conjunto.hs][TAD de los conjuntos: Número de elementos de un conjunto]].
++ X08 [[./src/TAD_Union_de_dos_conjuntos.hs][TAD de los conjuntos: Unión de dos conjuntos]].
++ J09 [[./src/TAD_Union_de_varios_conjuntos.hs][TAD de los conjuntos: Unión de varios conjuntos]].
++ V10 [[./src/TAD_Interseccion_de_dos_conjuntos.hs][TAD de los conjuntos: Intersección de dos conjuntos]].
++ L13 [[./src/TAD_Interseccion_de_varios_conjuntos.hs][TAD de los conjuntos: Intersección de varios conjuntos]].
++ M14 [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
++ X15 [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
++ J16 [[./src/TAD_Diferencia_simetrica.hs][TAD de los conjuntos: Diferencia simétrica]].
++ V17 [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
++ L20 [[./src/TAD_Particion_por_una_propiedad.hs][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
++ M21 [[./src/TAD_Particion_segun_un_numero.hs][TAD de los conjuntos: Partición según un número]].
