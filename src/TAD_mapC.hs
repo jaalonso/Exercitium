@@ -38,6 +38,10 @@ mapC f c
 mapC2 :: (Ord a, Ord b) => (a -> b) -> Conj a -> Conj b
 mapC2 f c = listaAconjunto (map f (conjuntoAlista c))
 
+-- Las funciones conjuntoAlista y listaAconjunto está definida en el
+-- ejercicio Transformaciones entre conjuntos y listas" que se encuentra
+-- en https://bit.ly/3RexzxH
+
 -- Comprobación de equivalencia
 -- ============================
 
