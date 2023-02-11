@@ -319,3 +319,4 @@ Los objetivos de esta recopilación son:
 + V17 [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
 + L20 [[./src/TAD_Particion_por_una_propiedad.hs][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
 + M21 [[./src/TAD_Particion_segun_un_numero.hs][TAD de los conjuntos: Partición según un número]].
++ X22 [[./src/TAD_mapC.hs][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].

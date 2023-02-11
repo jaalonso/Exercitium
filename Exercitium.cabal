@@ -287,6 +287,7 @@ library
       TAD_Diferencia_simetrica
       TAD_Interseccion_de_dos_conjuntos
       TAD_Interseccion_de_varios_conjuntos
+      TAD_mapC
       TAD_Numero_de_elementos_de_un_conjunto
       TAD_Particion_por_una_propiedad
       TAD_Particion_segun_un_numero
@@ -611,6 +612,7 @@ test-suite Exercitium-test
       TAD_Diferencia_simetrica_Spec
       TAD_Interseccion_de_dos_conjuntos_Spec
       TAD_Interseccion_de_varios_conjuntos_Spec
+      TAD_mapC_Spec
       TAD_Numero_de_elementos_de_un_conjunto_Spec
       TAD_Particion_por_una_propiedad_Spec
       TAD_Particion_segun_un_numero_Spec
