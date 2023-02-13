@@ -38,6 +38,10 @@ todos p c
 todos2 :: Ord a => (a -> Bool) -> Conj a -> Bool
 todos2 p c = all p (conjuntoAlista c)
 
+-- La función conjuntoAlista está definida en el ejercicio
+-- "Transformaciones entre conjuntos y listas" que se encuentra
+-- en https://bit.ly/3RexzxH
+
 -- Comprobación de equivalencia
 -- ============================
 
