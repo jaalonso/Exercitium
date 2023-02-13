@@ -283,10 +283,10 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].
 + [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
 + [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
++ [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
++ [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
 
 ** Para Febrero
-+ [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
-+ L13 [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
 + M14 [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
 + X15 [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
 + J16 [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
@@ -320,3 +320,4 @@ Los objetivos de esta recopilación son:
 + L20 [[./src/TAD_Particion_por_una_propiedad.hs][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
 + M21 [[./src/TAD_Particion_segun_un_numero.hs][TAD de los conjuntos: Partición según un número]].
 + X22 [[./src/TAD_mapC.hs][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
++ J23 [[./src/TodosVerificanConj.hs][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
