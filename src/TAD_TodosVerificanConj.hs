@@ -1,4 +1,4 @@
--- TodosVerificanConj.hs
+-- TAD_TodosVerificanConj.hs
 -- TAD de los conjuntos: Todos los elementos verifican una propiedad.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 23-marzo-2023

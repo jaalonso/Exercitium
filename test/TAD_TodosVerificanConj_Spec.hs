@@ -1,6 +1,6 @@
 module TodosVerificanConj_Spec (main, spec) where
 
-import TodosVerificanConj
+import TAD_TodosVerificanConj
 import TAD.Conjunto
 import Test.Hspec
 

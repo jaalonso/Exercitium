@@ -294,6 +294,7 @@ library
       TAD_subconjunto
       TAD_Subconjunto_por_propiedad
       TAD_subconjuntoPropio
+      TAD_TodosVerificanConj
       TAD_Transformaciones_conjuntos_listas
       TAD_Union_de_dos_conjuntos
       TAD_Union_de_varios_conjuntos
@@ -302,7 +303,6 @@ library
       Ternas_pitagoricas_con_suma_dada
       Todos_los_abundantes_hasta_n_son_pares
       TodosVerifican
-      TodosVerificanConj
       Transformaciones_colas_listas
       Transformaciones_pilas_listas
       Transitividad_de_una_relacion
@@ -620,6 +620,7 @@ test-suite Exercitium-test
       TAD_Subconjunto_por_propiedad_Spec
       TAD_subconjunto_Spec
       TAD_subconjuntoPropio_Spec
+      TAD_TodosVerificanConj_Spec
       TAD_Transformaciones_conjuntos_listas_Spec
       TAD_Union_de_dos_conjuntos_Spec
       TAD_Union_de_varios_conjuntos_Spec
@@ -627,7 +628,6 @@ test-suite Exercitium-test
       Ternas_pitagoricas_con_suma_dada_Spec
       Ternas_pitagoricas_Spec
       TodosVerifican_Spec
-      TodosVerificanConj_Spec
       Transformaciones_colas_listas_Spec
       Transformaciones_pilas_listas_Spec
       Transitividad_de_una_relacion_Spec
