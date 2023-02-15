@@ -281,6 +281,7 @@ library
       TAD.Pila
       TAD.PilaConListas
       TAD.PilaConSucesiones
+      TAD_AlgunosVerificanConj
       TAD_Conjunto_unitario
       TAD_Conjuntos_disjuntos
       TAD_Diferencia_de_conjuntos
@@ -607,6 +608,7 @@ test-suite Exercitium-test
       Sumas_de_dos_abundantes_Spec
       Sumas_de_dos_primos_Spec
       Sustitucion_en_una_expresion_aritmetica_Spec
+      TAD_AlgunosVerificanConj_Spec
       TAD_Conjunto_unitario_Spec
       TAD_Conjuntos_disjuntos_Spec
       TAD_Diferencia_de_conjuntos_Spec

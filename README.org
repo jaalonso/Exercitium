@@ -285,9 +285,9 @@ Los objetivos de esta recopilación son:
 + [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
 + [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
 + [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
++ [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
 
 ** Para Febrero
-+ M14 [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
 + X15 [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
 + J16 [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
 + V17 [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
@@ -303,7 +303,7 @@ Los objetivos de esta recopilación son:
 + M28 [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
 + M28 [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
 
-** TODO Para marzo
+** Para marzo
 + X01 [[./src/TAD_Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
 + J02 [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
 + V03 [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
@@ -321,4 +321,4 @@ Los objetivos de esta recopilación son:
 + M21 [[./src/TAD_Particion_segun_un_numero.hs][TAD de los conjuntos: Partición según un número]].
 + X22 [[./src/TAD_mapC.hs][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
 + J23 [[./src/TAD_TodosVerificanConj.hs][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
-+ V24 [[./src/TAD_AlgunosVerificanConj.md][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
++ V24 [[./src/TAD_AlgunosVerificanConj.hs][TAD de los conjuntos: Algunos elementos verifican una propiedad]].

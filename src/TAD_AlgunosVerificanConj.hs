@@ -1,22 +1,22 @@
--- TAD_TodosVerificanConj.hs
--- TAD de los conjuntos: Todos los elementos verifican una propiedad.
+-- TAD_AlgunosVerificanConj.hs
+-- TAD de los conjuntos: Algunos elementos verifican una propiedad.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 23-marzo-2023
+-- Sevilla, 24-marzo-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
 -- Utilizando el tipo abstracto de datos de los conjuntos
 -- (https://bit.ly/3HbB7fo) definir la función
---    todos :: Ord a => (a -> Bool) -> Conj a -> Bool
--- tal que (todos p c) se verifica si todos los elemsntos de c
--- verifican el predicado p.  Por ejemplo,
---    todos even (inserta 4 (inserta 6 vacio))  ==  True
---    todos even (inserta 4 (inserta 7 vacio))  ==  False
+--    algunos :: Ord a => (a -> Bool) -> Conj a -> Bool
+-- tal que (algunos p c) se verifica si algún elemento de c verifica el
+-- predicado p. Por ejemplo,
+--    algunos even (inserta 4 (inserta 7 vacio))  ==  True
+--    algunos even (inserta 3 (inserta 7 vacio))  ==  False
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module TAD_TodosVerificanConj where
+module TAD_AlgunosVerificanConj where
 
 import TAD.Conjunto (Conj, vacio, inserta, esVacio, menor, elimina)
 import TAD_Transformaciones_conjuntos_listas (conjuntoAlista, listaAconjunto)
@@ -25,18 +25,18 @@ import Test.QuickCheck.HigherOrder
 -- 1ª solución
 -- ===========
 
-todos :: Ord a => (a -> Bool) -> Conj a -> Bool
-todos p c
-  | esVacio c = True
-  | otherwise = p mc && todos p rc
+algunos :: Ord a => (a -> Bool) -> Conj a -> Bool
+algunos p c
+  | esVacio c = False
+  | otherwise = p mc || algunos p rc
   where mc = menor c
         rc = elimina mc c
 
 -- 2ª solución
 -- ===========
 
-todos2 :: Ord a => (a -> Bool) -> Conj a -> Bool
-todos2 p c = all p (conjuntoAlista c)
+algunos2 :: Ord a => (a -> Bool) -> Conj a -> Bool
+algunos2 p c = any p (conjuntoAlista c)
 
 -- La función conjuntoAlista está definida en el ejercicio
 -- "Transformaciones entre conjuntos y listas" que se encuentra
@@ -46,11 +46,11 @@ todos2 p c = all p (conjuntoAlista c)
 -- ============================
 
 -- La propiedad es
-prop_todos :: (Int -> Bool) -> [Int] -> Bool
-prop_todos p xs =
-  todos p c == todos2 p c
+prop_algunos :: (Int -> Bool) -> [Int] -> Bool
+prop_algunos p xs =
+  algunos p c == algunos2 p c
   where c = listaAconjunto xs
 
 -- La comprobación es
---    λ> quickCheck' prop_todos
+--    λ> quickCheck' prop_algunos
 --    +++ OK, passed 100 tests.

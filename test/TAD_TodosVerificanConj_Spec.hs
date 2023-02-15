@@ -1,4 +1,4 @@
-module TodosVerificanConj_Spec (main, spec) where
+module TAD_TodosVerificanConj_Spec (main, spec) where
 
 import TAD_TodosVerificanConj
 import TAD.Conjunto
