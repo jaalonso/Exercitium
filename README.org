@@ -286,10 +286,10 @@ Los objetivos de esta recopilación son:
 + [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
 + [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
 + [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
++ [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
++ [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
 
 ** Para Febrero
-+ X15 [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
-+ J16 [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
 + V17 [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
 + L20 [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
 + M21 [[./src/ContenidaCola.hs][TAD de las colas: Inclusión de colas]].
@@ -322,3 +322,4 @@ Los objetivos de esta recopilación son:
 + X22 [[./src/TAD_mapC.hs][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
 + J23 [[./src/TAD_TodosVerificanConj.hs][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
 + V24 [[./src/TAD_AlgunosVerificanConj.hs][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
++ L27 [[./src/TAD_Producto_cartesiano.hs][TAD de los conjuntos: TAD_Producto_cartesiano]].
