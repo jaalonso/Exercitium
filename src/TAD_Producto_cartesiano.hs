@@ -35,12 +35,20 @@ productoC c1 c2
   where mc1 = menor c1
         rc1 = elimina mc1 c1
 
+-- (agrega x c) es el conjunto de los pares de x con los elementos de
+-- c. Por ejemplo,
+--    λ> agrega 2 (inserta 9 (inserta 4 (inserta 3 vacio)))
+--    {(2,3), (2,4), (2,9)}
 agrega :: (Ord a, Ord b) => a -> Conj b -> Conj (a,b)
 agrega x c
   | esVacio c = vacio
   | otherwise = inserta (x, mc) (agrega x rc)
   where mc = menor c
         rc = elimina mc c
+
+-- La función union está definida en el ejercicio
+-- "Unión de dos conjuntos" que se encuentra en
+-- https://bit.ly/3Y1jBl8
 
 -- 2ª solución
 -- ===========
