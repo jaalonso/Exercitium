@@ -20,7 +20,6 @@
 
 module Producto_escalar where
 
-import Numeric.LinearAlgebra ((<.>), vector)
 import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
@@ -56,15 +55,6 @@ productoEscalar5 :: [Integer] -> [Integer] -> Integer
 productoEscalar5 (x:xs) (y:ys) = x*y + productoEscalar5 xs ys
 productoEscalar5 _ _           = 0
 
--- 6ª solución
--- ===========
-
-productoEscalar6 :: [Integer] -> [Integer] -> Integer
-productoEscalar6 xs ys =
-  round (vector xs' <.> vector ys')
-  where xs' = map fromIntegral xs
-        ys' = map fromIntegral ys
-
 -- Comprobación de equivalencia
 -- ============================
 
@@ -75,11 +65,7 @@ prop_productoEscalar xs ys =
       [productoEscalar2 xs ys,
        productoEscalar3 xs ys,
        productoEscalar4 xs ys,
-       productoEscalar5 xs ys,
-       productoEscalar6 xs' ys']
-  where n = min (length xs) (length ys)
-        xs' = take n xs
-        ys' = take n ys
+       productoEscalar5 xs ys]
 
 -- La comprobación es
 --    λ> quickCheck prop_productoEscalar

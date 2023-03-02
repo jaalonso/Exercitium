@@ -19,5 +19,4 @@ spec = do
   describe "def. 3" $ specG productoEscalar3
   describe "def. 4" $ specG productoEscalar4
   describe "def. 5" $ specG productoEscalar5
-  describe "def. 5" $ specG productoEscalar6
   describe "equivalencia" $ it "p1" $ property prop_productoEscalar

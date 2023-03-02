@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.4.
+-- This file has been generated from package.yaml by hpack version 0.35.1.
 --
 -- see: https://github.com/sol/hpack
 
@@ -296,6 +296,7 @@ library
       TAD_subconjunto
       TAD_Subconjunto_por_propiedad
       TAD_subconjuntoPropio
+      TAD_Subconjuntos_de_un_conjunto
       TAD_TodosVerificanConj
       TAD_Transformaciones_conjuntos_listas
       TAD_Union_de_dos_conjuntos
@@ -343,13 +344,11 @@ library
     , base >=4.7 && <5
     , combinat
     , containers
-    , criterion
     , data-memocombinators
     , data-ordlist
     , digits
     , fast-digits
     , gnuplot
-    , hmatrix
     , hspec
     , hspec-core
     , matrix
@@ -624,6 +623,7 @@ test-suite Exercitium-test
       TAD_Subconjunto_por_propiedad_Spec
       TAD_subconjunto_Spec
       TAD_subconjuntoPropio_Spec
+      TAD_Subconjuntos_de_un_conjunto_Spec
       TAD_TodosVerificanConj_Spec
       TAD_Transformaciones_conjuntos_listas_Spec
       TAD_Union_de_dos_conjuntos_Spec
@@ -667,12 +667,10 @@ test-suite Exercitium-test
     , base
     , combinat
     , containers
-    , criterion
     , data-memocombinators
     , data-ordlist
     , digits
     , fast-digits
-    , hmatrix
     , hspec
     , hspec-core
     , matrix
