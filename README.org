@@ -289,24 +289,22 @@ Los objetivos de esta recopilación son:
 + [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
 + [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
 + [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
-
-** Para Febrero
-+ L20 [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
-+ M21 [[./src/ContenidaCola.hs][TAD de las colas: Inclusión de colas]].
-+ X22 [[./src/PrefijoCola.hs][TAD de las colas: Reconocimiento de prefijos de colas]].
-+ J23 [[./src/SubCola.hs][TAD de las colas: Reconocimiento de subcolas]].
-+ V24 [[./src/OrdenadaCola.hs][TAD de las colas: Reconocimiento de ordenación de colas]].
-+ L27 [[./src/MaxCola.hs][TAD de las colas: Máximo elemento de una cola]].
-+ M28 [[./src/TAD/Conjunto.hs][El tipo abstracto de datos de los conjuntos]].
-+ M28 [[./src/TAD/ConjuntoConListasNoOrdenadasConDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
-+ M28 [[./src/TAD/ConjuntoConListasNoOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
-+ M28 [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
-+ M28 [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
++ [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
++ [[./src/ContenidaCola.hs][TAD de las colas: Inclusión de colas]].
++ [[./src/PrefijoCola.hs][TAD de las colas: Reconocimiento de prefijos de colas]].
++ [[./src/SubCola.hs][TAD de las colas: Reconocimiento de subcolas]].
++ [[./src/OrdenadaCola.hs][TAD de las colas: Reconocimiento de ordenación de colas]].
++ [[./src/MaxCola.hs][TAD de las colas: Máximo elemento de una cola]].
++ [[./src/TAD/Conjunto.hs][El tipo abstracto de datos de los conjuntos]].
++ [[./src/TAD/ConjuntoConListasNoOrdenadasConDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
++ [[./src/TAD/ConjuntoConListasNoOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
++ [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
++ [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
++ [[./src/TAD_Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
++ [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
++ [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
 
 ** Para marzo
-+ X01 [[./src/TAD_Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
-+ J02 [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
-+ V03 [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
 + L06 [[./src/TAD_Conjunto_unitario.hs][TAD de los conjuntos: Conjunto unitario]].
 + M07 [[./src/TAD_Numero_de_elementos_de_un_conjunto.hs][TAD de los conjuntos: Número de elementos de un conjunto]].
 + X08 [[./src/TAD_Union_de_dos_conjuntos.hs][TAD de los conjuntos: Unión de dos conjuntos]].
@@ -323,4 +321,4 @@ Los objetivos de esta recopilación son:
 + J23 [[./src/TAD_TodosVerificanConj.hs][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
 + V24 [[./src/TAD_AlgunosVerificanConj.hs][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
 + L27 [[./src/TAD_Producto_cartesiano.hs][TAD de los conjuntos: TAD_Producto_cartesiano]].
-+ M28 [[./src/TAD_Subconjuntos_de_un_conjunto.hs][TAD de los conjuntos: Subconjuntos de un conjunto]].
++ M28 [[./src/Universo_y_grafo_de_una_relacion_binaria.hs][Universo y grafo de una relación binaria]].

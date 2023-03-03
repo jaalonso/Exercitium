@@ -318,6 +318,7 @@ library
       UltimoCola
       Union_conjuntista_de_listas
       Union_e_interseccion_general
+      Universo_y_grafo_de_una_relacion_binaria
       Validez_de_una_formula
       Valor_de_expresiones_aritmeticas_generales
       Valor_de_la_resta
@@ -644,6 +645,7 @@ test-suite Exercitium-test
       UltimoCola_Spec
       Union_conjuntista_de_listas_Spec
       Union_e_interseccion_general_Spec
+      Universo_y_grafo_de_una_relacion_binaria_Spec
       Valor_de_expresiones_aritmeticas_generales_Spec
       Valor_de_la_resta_Spec
       Valor_de_un_arbol_booleano_Spec
