@@ -11,9 +11,9 @@ main = hspec spec
 specG :: (Rel Int -> Bool) -> Spec
 specG reflexiva' = do
   it "e1" $
-    reflexiva' (R ([1,3],[(1,1),(1,3),(3,3)])) `shouldBe`  True
+    reflexiva' (R ([1,3],[(1,1),(1,3),(3,3)]))    `shouldBe`  True
   it "e2" $
-    reflexiva' (R ([1,2,3],[(1,1),(1,3),(3,3)])) `shouldBe`  False
+    reflexiva' (R ([1,2,3],[(1,1),(1,3),(3,3)]))  `shouldBe`  False
 
 spec :: Spec
 spec = do
