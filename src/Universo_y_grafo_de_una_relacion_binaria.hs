@@ -21,7 +21,7 @@
 
 module Universo_y_grafo_de_una_relacion_binaria where
 
-import Relaciones_binarias
+import Relaciones_binarias (Rel(R))
 
 universo :: Eq a => Rel a -> [a]
 universo (R (u,_)) = u
