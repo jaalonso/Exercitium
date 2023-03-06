@@ -232,6 +232,7 @@ library
       Regiones
       Reiteracion_de_funciones
       Reiteracion_de_suma_de_consecutivos
+      Relaciones_binarias
       Relaciones_reflexivas
       Representacion_de_Zeckendorf
       Representacion_densa_de_polinomios
@@ -573,6 +574,7 @@ test-suite Exercitium-test
       Regiones_Spec
       Reiteracion_de_funciones_Spec
       Reiteracion_de_suma_de_consecutivos_Spec
+      Relaciones_binarias_Spec
       Relaciones_reflexivas_Spec
       Representacion_de_Zeckendorf_Spec
       Representacion_densa_de_polinomios_Spec
