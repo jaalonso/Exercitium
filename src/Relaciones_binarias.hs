@@ -6,8 +6,8 @@
 
 -- ---------------------------------------------------------------------
 -- Una relación binaria R sobre un conjunto A se puede representar
--- mediante un par (xs,ps) donde xs es la lista de los elementos de A
--- (el universo de R) y ps es la lista de pares de elementos de xs (el
+-- mediante un par (u,g) donde u es la lista de los elementos de tipo A
+-- (el universo de R) y g es la lista de pares de elementos de u (el
 -- grafo de R).
 --
 -- Definir el tipo de dato (Rel a), para representar las relaciones
@@ -19,6 +19,8 @@
 --    True
 --    λ> esRelacionBinaria (R ([1, 3], [(3, 1), (3, 2)]))
 --    False
+-- Además, definir un generador de relaciones binarias y comprobar que
+-- las relaciones que genera son relaciones binarias.
 -- ---------------------------------------------------------------------
 
 module Relaciones_binarias where
