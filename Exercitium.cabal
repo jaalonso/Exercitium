@@ -234,7 +234,7 @@ library
       Reiteracion_de_suma_de_consecutivos
       Relaciones_binarias
       Relaciones_reflexivas
-      Relaciones_reflexivas_Spec
+      Relaciones_simetricas
       Representacion_de_Zeckendorf
       Representacion_densa_de_polinomios
       Representacion_matricial_de_relaciones_binarias
@@ -577,6 +577,7 @@ test-suite Exercitium-test
       Reiteracion_de_suma_de_consecutivos_Spec
       Relaciones_binarias_Spec
       Relaciones_reflexivas_Spec
+      Relaciones_simetricas_Spec
       Representacion_de_Zeckendorf_Spec
       Representacion_densa_de_polinomios_Spec
       Representacion_matricial_de_relaciones_binarias_Spec
