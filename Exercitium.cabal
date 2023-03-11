@@ -62,6 +62,7 @@ library
       Codificacion_de_Fibonacci
       Codificacion_de_Godel
       Composicion_de_relaciones_binarias
+      Composicion_de_relaciones_binarias_v2
       Conjunto_de_divisores
       Conjunto_de_primos_relativos
       Contenacion_de_una_lista_de_listas
@@ -408,6 +409,7 @@ test-suite Exercitium-test
       ColaConListas_Spec
       ColaConSucesiones_Spec
       Composicion_de_relaciones_binarias_Spec
+      Composicion_de_relaciones_binarias_v2_Spec
       Conjunto_de_divisores_Spec
       Conjunto_de_primos_relativos_Spec
       ConjuntoConLibreria_Spec

@@ -303,13 +303,13 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD_Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
 + [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
 + [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
++ [[./src/TAD_Conjunto_unitario.hs][TAD de los conjuntos: Conjunto unitario]].
++ [[./src/TAD_Numero_de_elementos_de_un_conjunto.hs][TAD de los conjuntos: Número de elementos de un conjunto]].
++ [[./src/TAD_Union_de_dos_conjuntos.hs][TAD de los conjuntos: Unión de dos conjuntos]].
++ [[./src/TAD_Union_de_varios_conjuntos.hs][TAD de los conjuntos: Unión de varios conjuntos]].
++ [[./src/TAD_Interseccion_de_dos_conjuntos.hs][TAD de los conjuntos: Intersección de dos conjuntos]].
 
 ** Para marzo
-+ L06 [[./src/TAD_Conjunto_unitario.hs][TAD de los conjuntos: Conjunto unitario]].
-+ M07 [[./src/TAD_Numero_de_elementos_de_un_conjunto.hs][TAD de los conjuntos: Número de elementos de un conjunto]].
-+ X08 [[./src/TAD_Union_de_dos_conjuntos.hs][TAD de los conjuntos: Unión de dos conjuntos]].
-+ J09 [[./src/TAD_Union_de_varios_conjuntos.hs][TAD de los conjuntos: Unión de varios conjuntos]].
-+ V10 [[./src/TAD_Interseccion_de_dos_conjuntos.hs][TAD de los conjuntos: Intersección de dos conjuntos]].
 + L13 [[./src/TAD_Interseccion_de_varios_conjuntos.hs][TAD de los conjuntos: Intersección de varios conjuntos]].
 + M14 [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
 + X15 [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
@@ -325,3 +325,6 @@ Los objetivos de esta recopilación son:
 + M29 [[./src/Universo_y_grafo_de_una_relacion_binaria.hs][Universo y grafo de una relación binaria]].
 + X30 [[./src/Relaciones_reflexivas.hs][Relaciones reflexivas]].
 + J31 [[./src/Relaciones_simetricas.hs][Relaciones simétricas]].
+
+** Para abril
++ L03 [[./src/Composicion_de_relaciones_binarias_v2.hs][Composición de relaciones binarias]].

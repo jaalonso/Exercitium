@@ -29,7 +29,7 @@ import Data.List (nub)
 import Test.QuickCheck
 
 newtype Rel a = R ([a], [(a,a)])
-  deriving Show
+  deriving (Eq, Show)
 
 -- 1ª solución
 -- ===========

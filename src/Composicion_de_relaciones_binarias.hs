@@ -13,7 +13,7 @@
 -- La composición de dos relaciones binarias R y S en el conjunto A es
 -- la relación binaria formada por los pares (x,y) para los que existe
 -- un z tal que (x,z) ∈ R y (z,y) ∈ S.
--- 
+--
 -- Definir la función
 --    composicion :: Ord a => [(a,a)] -> [(a,a)] -> [(a,a)]
 -- tal que (composicion r s) es la composición de las relaciones
@@ -26,7 +26,7 @@
 --    [(1,3)]
 --
 -- Nota: Se supone que las relaciones binarias son listas sin
--- elementos repetidos. 
+-- elementos repetidos.
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
@@ -45,7 +45,7 @@ import Test.QuickCheck (quickCheck)
 
 composicion1 :: Ord a => [(a,a)] -> [(a,a)] -> [(a,a)]
 composicion1 r s =
-  nub [(x,y) | (x,u) <- r, (v,y) <- s, u == v] 
+  nub [(x,y) | (x,u) <- r, (v,y) <- s, u == v]
 
 -- 2ª solución
 -- ===========
@@ -55,8 +55,8 @@ composicion2 r s =
   S.toList (composicionS (S.fromList r) (S.fromList s))
 
 composicionS :: Ord a => S.Set (a,a) -> S.Set (a,a) -> S.Set (a,a)
-composicionS r s =  
-  [(x,y) | (x,u) <- r, (v,y) <- s, u == v] 
+composicionS r s =
+  [(x,y) | (x,u) <- r, (v,y) <- s, u == v]
 
 -- 3ª solución
 -- ===========
@@ -86,7 +86,7 @@ listaArel ((x,y):xys) = M.insertWith (++) x [y] (listaArel xys)
 --    fromList [(1,[3,4]),(5,[3,4])]
 composicionRel :: Ord a => Rel a -> Rel a -> Rel a
 composicionRel r s =
-  M.map f r 
+  M.map f r
   where f xs = concat (mapMaybe (`M.lookup` s) xs)
 
 -- (relAlista r) es la lista de pares correspondientes a la relación
@@ -95,7 +95,7 @@ composicionRel r s =
 --    [(1,3),(1,4),(5,3),(5,4)]
 relAlista :: Ord a => Rel a -> [(a,a)]
 relAlista r =
-  nub [(x,y) | (x,ys) <- M.assocs r, y <- ys] 
+  nub [(x,y) | (x,ys) <- M.assocs r, y <- ys]
 
 -- Comprobación de equivalencia
 -- ============================
@@ -137,4 +137,3 @@ prop_composicion r s =
 --    λ> length (composicion3 r100 r100)
 --    5050
 --    (0.35 secs, 52,015,544 bytes)
-
