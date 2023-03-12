@@ -1,7 +1,7 @@
 -- Composicion_de_relaciones_binarias_v2.hs
 -- Composición de relaciones binarias.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 11-marzo-2023
+-- Sevilla, 03-abril-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

@@ -328,3 +328,5 @@ Los objetivos de esta recopilación son:
 
 ** Para abril
 + L03 [[./src/Composicion_de_relaciones_binarias_v2.hs][Composición de relaciones binarias]].
++ M04 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
++ X05 [[./src/Relaciones_transitivas.hs][Relaciones transitivas]].

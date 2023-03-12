@@ -581,6 +581,7 @@ test-suite Exercitium-test
       Relaciones_binarias_Spec
       Relaciones_reflexivas_Spec
       Relaciones_simetricas_Spec
+      Relaciones_transitivas_Spec
       Representacion_de_Zeckendorf_Spec
       Representacion_densa_de_polinomios_Spec
       Representacion_matricial_de_relaciones_binarias_Spec
