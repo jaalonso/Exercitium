@@ -236,6 +236,7 @@ library
       Relaciones_binarias
       Relaciones_reflexivas
       Relaciones_simetricas
+      Relaciones_transitivas
       Representacion_de_Zeckendorf
       Representacion_densa_de_polinomios
       Representacion_matricial_de_relaciones_binarias

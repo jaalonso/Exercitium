@@ -8,11 +8,11 @@ main :: IO ()
 main = hspec spec
 
 specG :: ([Int] -> [Int] -> Bool) -> Spec
-specG subconjunto = do
+specG subconjunto' = do
   it "e1" $
-    subconjunto [3,2,3] [2,5,3,5]  `shouldBe`  True
+    subconjunto' [3,2,3] [2,5,3,5]  `shouldBe`  True
   it "e2" $
-    subconjunto [3,2,3] [2,5,6,5]  `shouldBe`  False
+    subconjunto' [3,2,3] [2,5,6,5]  `shouldBe`  False
 
 spec :: Spec
 spec = do
