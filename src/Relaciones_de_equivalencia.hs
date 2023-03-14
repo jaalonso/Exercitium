@@ -1,7 +1,7 @@
 -- Relaciones_de_equivalencia.hs
 -- Relaciones de equivalencia.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 06-abril-2023
+-- Sevilla,  06-abril-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
