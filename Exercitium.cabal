@@ -234,6 +234,7 @@ library
       Reiteracion_de_funciones
       Reiteracion_de_suma_de_consecutivos
       Relaciones_binarias
+      Relaciones_de_equivalencia
       Relaciones_reflexivas
       Relaciones_simetricas
       Relaciones_transitivas
@@ -579,6 +580,7 @@ test-suite Exercitium-test
       Reiteracion_de_funciones_Spec
       Reiteracion_de_suma_de_consecutivos_Spec
       Relaciones_binarias_Spec
+      Relaciones_de_equivalencia_Spec
       Relaciones_reflexivas_Spec
       Relaciones_simetricas_Spec
       Relaciones_transitivas_Spec

@@ -308,10 +308,10 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD_Union_de_dos_conjuntos.hs][TAD de los conjuntos: Unión de dos conjuntos]].
 + [[./src/TAD_Union_de_varios_conjuntos.hs][TAD de los conjuntos: Unión de varios conjuntos]].
 + [[./src/TAD_Interseccion_de_dos_conjuntos.hs][TAD de los conjuntos: Intersección de dos conjuntos]].
++ [[./src/TAD_Interseccion_de_varios_conjuntos.hs][TAD de los conjuntos: Intersección de varios conjuntos]].
++ [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
 
 ** Para marzo
-+ L13 [[./src/TAD_Interseccion_de_varios_conjuntos.hs][TAD de los conjuntos: Intersección de varios conjuntos]].
-+ M14 [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
 + X15 [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
 + J16 [[./src/TAD_Diferencia_simetrica.hs][TAD de los conjuntos: Diferencia simétrica]].
 + V17 [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
@@ -330,3 +330,4 @@ Los objetivos de esta recopilación son:
 + L03 [[./src/Composicion_de_relaciones_binarias_v2.hs][Composición de relaciones binarias]].
 + M04 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 + X05 [[./src/Relaciones_transitivas.hs][Relaciones transitivas]].
++ J06 [[./src/Relaciones_de_equivalencia.hs][Relaciones de equivalencia]].
