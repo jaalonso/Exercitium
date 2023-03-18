@@ -310,10 +310,10 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD_Interseccion_de_dos_conjuntos.hs][TAD de los conjuntos: Intersección de dos conjuntos]].
 + [[./src/TAD_Interseccion_de_varios_conjuntos.hs][TAD de los conjuntos: Intersección de varios conjuntos]].
 + [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
++ [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
++ [[./src/TAD_Diferencia_simetrica.hs][TAD de los conjuntos: Diferencia simétrica]].
 
 ** Para marzo
-+ X15 [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
-+ J16 [[./src/TAD_Diferencia_simetrica.hs][TAD de los conjuntos: Diferencia simétrica]].
 + V17 [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
 + L20 [[./src/TAD_Particion_por_una_propiedad.hs][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
 + M21 [[./src/TAD_Particion_segun_un_numero.hs][TAD de los conjuntos: Partición según un número]].
@@ -331,3 +331,4 @@ Los objetivos de esta recopilación son:
 + M04 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 + X05 [[./src/Relaciones_transitivas.hs][Relaciones transitivas]].
 + J06 [[./src/Relaciones_de_equivalencia.hs][Relaciones de equivalencia]].
++ V07 [[./src/Relaciones_irreflexivas.hs][Relaciones irreflexivas]].
