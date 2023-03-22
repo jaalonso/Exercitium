@@ -332,3 +332,4 @@ Los objetivos de esta recopilación son:
 + X05 [[./src/Relaciones_transitivas.hs][Relaciones transitivas]].
 + J06 [[./src/Relaciones_de_equivalencia.hs][Relaciones de equivalencia]].
 + V07 [[./src/Relaciones_irreflexivas.hs][Relaciones irreflexivas]].
++ L10 [[./src/Relaciones_antisimetricas.hs][Relaciones antisimétricas]].

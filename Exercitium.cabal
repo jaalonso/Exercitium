@@ -233,6 +233,7 @@ library
       Regiones
       Reiteracion_de_funciones
       Reiteracion_de_suma_de_consecutivos
+      Relaciones_antisimetricas
       Relaciones_binarias
       Relaciones_de_equivalencia
       Relaciones_irreflexivas
@@ -580,6 +581,7 @@ test-suite Exercitium-test
       Regiones_Spec
       Reiteracion_de_funciones_Spec
       Reiteracion_de_suma_de_consecutivos_Spec
+      Relaciones_antisimetricas_Spec
       Relaciones_binarias_Spec
       Relaciones_de_equivalencia_Spec
       Relaciones_irreflexivas_Spec
