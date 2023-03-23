@@ -312,13 +312,13 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
 + [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
 + [[./src/TAD_Diferencia_simetrica.hs][TAD de los conjuntos: Diferencia simétrica]].
++ [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
++ [[./src/TAD_Particion_por_una_propiedad.hs][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
++ [[./src/TAD_Particion_segun_un_numero.hs][TAD de los conjuntos: Partición según un número]].
++ [[./src/TAD_mapC.hs][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
++ [[./src/TAD_TodosVerificanConj.hs][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
 
 ** Para marzo
-+ V17 [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
-+ L20 [[./src/TAD_Particion_por_una_propiedad.hs][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
-+ M21 [[./src/TAD_Particion_segun_un_numero.hs][TAD de los conjuntos: Partición según un número]].
-+ X22 [[./src/TAD_mapC.hs][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
-+ J23 [[./src/TAD_TodosVerificanConj.hs][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
 + V24 [[./src/TAD_AlgunosVerificanConj.hs][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
 + L27 [[./src/TAD_Producto_cartesiano.hs][TAD de los conjuntos: TAD_Producto_cartesiano]].
 + M28 [[./src/Relaciones_binarias.hs][Relaciones binarias]].
@@ -333,3 +333,4 @@ Los objetivos de esta recopilación son:
 + J06 [[./src/Relaciones_de_equivalencia.hs][Relaciones de equivalencia]].
 + V07 [[./src/Relaciones_irreflexivas.hs][Relaciones irreflexivas]].
 + L10 [[./src/Relaciones_antisimetricas.hs][Relaciones antisimétricas]].
++ M11 [[./src/Relaciones_totales.hs][Relaciones totales]].
