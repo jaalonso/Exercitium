@@ -317,12 +317,12 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD_Particion_segun_un_numero.hs][TAD de los conjuntos: Partición según un número]].
 + [[./src/TAD_mapC.hs][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
 + [[./src/TAD_TodosVerificanConj.hs][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
++ [[./src/TAD_AlgunosVerificanConj.hs][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
++ [[./src/TAD_Producto_cartesiano.hs][TAD de los conjuntos: TAD_Producto_cartesiano]].
++ [[./src/Relaciones_binarias.hs][Relaciones binarias]].
++ [[./src/Universo_y_grafo_de_una_relacion_binaria.hs][Universo y grafo de una relación binaria]].
 
 ** Para marzo
-+ V24 [[./src/TAD_AlgunosVerificanConj.hs][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
-+ L27 [[./src/TAD_Producto_cartesiano.hs][TAD de los conjuntos: TAD_Producto_cartesiano]].
-+ M28 [[./src/Relaciones_binarias.hs][Relaciones binarias]].
-+ M29 [[./src/Universo_y_grafo_de_una_relacion_binaria.hs][Universo y grafo de una relación binaria]].
 + X30 [[./src/Relaciones_reflexivas.hs][Relaciones reflexivas]].
 + J31 [[./src/Relaciones_simetricas.hs][Relaciones simétricas]].
 
@@ -334,3 +334,4 @@ Los objetivos de esta recopilación son:
 + V07 [[./src/Relaciones_irreflexivas.hs][Relaciones irreflexivas]].
 + L10 [[./src/Relaciones_antisimetricas.hs][Relaciones antisimétricas]].
 + M11 [[./src/Relaciones_totales.hs][Relaciones totales]].
++ X12 [[./src/Clausura_reflexiva.hs][Clausura reflexiva]].

@@ -58,6 +58,7 @@ library
       Caminos_en_un_triangulo
       Ceros_finales_del_factorial
       Clausura
+      Clausura_reflexiva
       Clausura_transitiva_de_una_relacion_binaria
       Codificacion_de_Fibonacci
       Codificacion_de_Godel
@@ -406,6 +407,7 @@ test-suite Exercitium-test
       Calculo_de_pi_mediante_la_formula_de_Leibniz_Spec
       Caminos_en_un_triangulo_Spec
       Ceros_finales_del_factorial_Spec
+      Clausura_reflexiva_Spec
       Clausura_Spec
       Clausura_transitiva_de_una_relacion_binaria_Spec
       Codificacion_de_Fibonacci_Spec
