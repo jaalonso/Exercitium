@@ -34,6 +34,10 @@ prop_ClausuraSimetrica :: Rel Int -> Bool
 prop_ClausuraSimetrica r =
   simetrica (clausuraSimetrica r)
 
+-- La función simetrica está definida en el ejercicio
+-- "Relaciones simétricas" que se encuentra en
+-- https://bit.ly/3zlO2rH
+
 -- La comprobación es
 --    λ> quickCheck prop_ClausuraSimetrica
 --    +++ OK, passed 100 tests.
