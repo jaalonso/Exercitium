@@ -321,10 +321,10 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD_Producto_cartesiano.hs][TAD de los conjuntos: TAD_Producto_cartesiano]].
 + [[./src/Relaciones_binarias.hs][Relaciones binarias]].
 + [[./src/Universo_y_grafo_de_una_relacion_binaria.hs][Universo y grafo de una relación binaria]].
++ [[./src/Relaciones_reflexivas.hs][Relaciones reflexivas]].
 
 ** Para marzo
-+ X30 [[./src/Relaciones_reflexivas.hs][Relaciones reflexivas]].
-+ J31 [[./src/Relaciones_simetricas.hs][Relaciones simétricas]].
++ V31 [[./src/Relaciones_simetricas.hs][Relaciones simétricas]].
 
 ** Para abril
 + L03 [[./src/Composicion_de_relaciones_binarias_v2.hs][Composición de relaciones binarias]].
