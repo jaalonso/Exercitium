@@ -20,7 +20,6 @@ module Clausura_reflexiva where
 
 import Relaciones_binarias (Rel(R))
 import Data.List (union)
-import Test.QuickCheck (quickCheck)
 
 clausuraReflexiva :: Eq a => Rel a -> Rel a
 clausuraReflexiva (R (u,g)) =

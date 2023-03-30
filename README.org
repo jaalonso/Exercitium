@@ -335,3 +335,4 @@ Los objetivos de esta recopilación son:
 + L10 [[./src/Relaciones_antisimetricas.hs][Relaciones antisimétricas]].
 + M11 [[./src/Relaciones_totales.hs][Relaciones totales]].
 + X12 [[./src/Clausura_reflexiva.hs][Clausura reflexiva]].
++ J13 [[./src/Clausura_simetrica.hs][Clausura simétrica]].
