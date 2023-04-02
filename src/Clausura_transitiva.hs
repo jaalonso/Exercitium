@@ -30,11 +30,12 @@ import Test.QuickCheck
 
 clausuraTransitiva :: Ord a => Rel a -> Rel a
 clausuraTransitiva (R (u,g)) = R (u, aux g)
-  where aux u' | cerradoTr u' = u'
-               | otherwise    = aux (u' `union` comp u' u')
-        cerradoTr r       = subconjunto (comp r r) r
-        comp r s          = [(x,z) | (x,y) <- r, (y',z) <- s, y == y']
-        subconjunto xs ys = all (`elem` ys) xs
+  where
+    aux u' | cerradoTr u' = u'
+           | otherwise    = aux (u' `union` comp u' u')
+    cerradoTr r       = subconjunto (comp r r) r
+    comp r s          = [(x,z) | (x,y) <- r, (y',z) <- s, y == y']
+    subconjunto xs ys = all (`elem` ys) xs
 
 -- 2ª solución
 -- ===========
