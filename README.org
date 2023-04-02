@@ -322,9 +322,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Relaciones_binarias.hs][Relaciones binarias]].
 + [[./src/Universo_y_grafo_de_una_relacion_binaria.hs][Universo y grafo de una relación binaria]].
 + [[./src/Relaciones_reflexivas.hs][Relaciones reflexivas]].
-
-** Para marzo
-+ V31 [[./src/Relaciones_simetricas.hs][Relaciones simétricas]].
++ [[./src/Relaciones_simetricas.hs][Relaciones simétricas]].
 
 ** Para abril
 + L03 [[./src/Composicion_de_relaciones_binarias_v2.hs][Composición de relaciones binarias]].
@@ -336,3 +334,4 @@ Los objetivos de esta recopilación son:
 + M11 [[./src/Relaciones_totales.hs][Relaciones totales]].
 + X12 [[./src/Clausura_reflexiva.hs][Clausura reflexiva]].
 + J13 [[./src/Clausura_simetrica.hs][Clausura simétrica]].
++ V14 [[./src/Clausura_transitiva.hs][Clausura transitiva]].

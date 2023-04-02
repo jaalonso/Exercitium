@@ -60,6 +60,7 @@ library
       Clausura
       Clausura_reflexiva
       Clausura_simetrica
+      Clausura_transitiva
       Clausura_transitiva_de_una_relacion_binaria
       Codificacion_de_Fibonacci
       Codificacion_de_Godel
@@ -412,6 +413,7 @@ test-suite Exercitium-test
       Clausura_simetrica_Spec
       Clausura_Spec
       Clausura_transitiva_de_una_relacion_binaria_Spec
+      Clausura_transitiva_Spec
       Codificacion_de_Fibonacci_Spec
       Codificacion_de_Godel_Spec
       ColaConDosListas_Spec
