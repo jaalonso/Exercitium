@@ -25,6 +25,9 @@ import Relaciones_transitivas (transitiva)
 import Data.List (union)
 import Test.QuickCheck
 
+--  1ª solución
+--  ===========
+
 clausuraTransitiva :: Ord a => Rel a -> Rel a
 clausuraTransitiva (R (u,g)) = R (u, aux g)
   where aux u' | cerradoTr u' = u'
