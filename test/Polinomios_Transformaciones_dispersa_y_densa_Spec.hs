@@ -1,6 +1,6 @@
-module TAD_polinomios_Transformaciones_entre_las_representaciones_dispersa_y_densa_Spec (main, spec) where
+module Polinomios_Transformaciones_dispersa_y_densa_Spec (main, spec) where
 
-import TAD_polinomios_Transformaciones_entre_las_representaciones_dispersa_y_densa
+import Polinomios_Transformaciones_dispersa_y_densa
 import Test.Hspec
 
 main :: IO ()

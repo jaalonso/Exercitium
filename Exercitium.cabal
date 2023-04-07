@@ -203,6 +203,9 @@ library
       PertenecePila
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
+      Polinomios_Transformaciones_dispersa_y_densa
+      Polinomios_Transformaciones_polinomios_densas
+      Polinomios_Transformaciones_polinomios_dispersas
       Posiciones_de_un_caracter_en_una_cadena
       Posiciones_diagonales_principales
       Potencia_entera
@@ -308,9 +311,6 @@ library
       TAD_Numero_de_elementos_de_un_conjunto
       TAD_Particion_por_una_propiedad
       TAD_Particion_segun_un_numero
-      TAD_polinomios_Transformaciones_entre_las_representaciones_dispersa_y_densa
-      TAD_polinomios_Transformaciones_polinomios_dispersas
-      TAD_polinomios_Transformaciones_polinomios_listas
       TAD_Producto_cartesiano
       TAD_subconjunto
       TAD_Subconjunto_por_propiedad
@@ -564,6 +564,9 @@ test-suite Exercitium-test
       PilaConSucesiones_Spec
       Polinomios_cuadraticos_generadores_de_primos_Spec
       Polinomios_de_Bell_Spec
+      Polinomios_Transformaciones_dispersa_y_densa_Spec
+      Polinomios_Transformaciones_polinomios_densas_Spec
+      Polinomios_Transformaciones_polinomios_dispersas_Spec
       Posiciones_de_un_caracter_en_una_cadena_Spec
       Posiciones_diagonales_principales_Spec
       Potencia_entera_Spec
@@ -651,8 +654,6 @@ test-suite Exercitium-test
       TAD_Numero_de_elementos_de_un_conjunto_Spec
       TAD_Particion_por_una_propiedad_Spec
       TAD_Particion_segun_un_numero_Spec
-      TAD_polinomios_Transformaciones_entre_las_representaciones_dispersa_y_densa_Spec
-      TAD_polinomios_Transformaciones_polinomios_dispersas_Spec
       TAD_Producto_cartesiano_Spec
       TAD_Subconjunto_por_propiedad_Spec
       TAD_subconjunto_Spec

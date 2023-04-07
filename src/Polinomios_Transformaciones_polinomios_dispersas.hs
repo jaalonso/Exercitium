@@ -1,4 +1,4 @@
--- TAD_polinomios_Transformaciones_polinomios_dispersas.hs
+-- Polinomios_Transformaciones_polinomios_dispersas.hs
 -- TAD de los polinomios: Transformaciones entre polinomios y listas dispersas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 19-abril-2023
@@ -27,7 +27,7 @@
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module TAD_polinomios_Transformaciones_polinomios_dispersas where
+module Polinomios_Transformaciones_polinomios_dispersas where
 
 import TAD.Polinomio (Polinomio, polCero, esPolCero, consPol, grado,
                       coefLider, restoPol)
