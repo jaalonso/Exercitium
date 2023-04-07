@@ -24,6 +24,9 @@ import Test.QuickCheck
 --    6x^4 -5x^2 + 4x -7
 -- se representa por
 --    [6,0,-2,4,-7].
+--
+-- En la representación se supone que, si la lista no es vacía, su
+-- primer elemento es distinto de cero.
 
 newtype Polinomio a = Pol [a]
   deriving Eq

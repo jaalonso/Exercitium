@@ -25,6 +25,10 @@ import Test.QuickCheck
 --    6x^4 -5x^2 + 4x -7
 -- se representa por
 --    [(4,6),(2,-5),(1,4),(0,-7)].
+--
+-- En la representación se supone que los primeros elementos de los
+-- pares forman una sucesión estrictamente decreciente y que los
+-- segundos elementos son distintos de cero.
 
 newtype Polinomio a = Pol [(Int,a)]
   deriving Eq

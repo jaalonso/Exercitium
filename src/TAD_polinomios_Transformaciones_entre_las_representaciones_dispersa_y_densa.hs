@@ -98,39 +98,39 @@ coeficiente ((m,a):ps) n | n > m     = 0
 -- Comprobación de equivalencia de dispersaAdensa
 -- ==============================================
 
--- Tipo de las representaciones densas de polinomios.
-newtype Densa = Den [(Int,Int)]
+-- Tipo de las representaciones dispersas de polinomios.
+newtype Dispersa = Dis [(Int,Int)]
   deriving Show
 
--- densaArbitraria es un generador de representaciones densas de
+-- dispersaArbitraria es un generador de representaciones dispersas de
 -- polinomios. Por ejemplo,
---    λ> sample densaArbitraria
---    Den []
---    Den []
---    Den [(3,-2),(2,0),(0,3)]
---    Den [(6,1),(4,-2),(3,4),(2,-4)]
---    Den []
---    Den [(5,-7)]
---    Den [(12,5),(11,-8),(10,3),(8,-10),(7,-5),(4,12),(3,6),(2,-8),(1,11)]
---    Den [(7,-2),(2,-8)]
---    Den [(14,-15)]
---    Den [(17,5),(16,1),(15,-1),(14,10),(13,5),(12,-15),(9,12),(6,14)]
---    Den [(19,17),(12,7),(8,-3),(7,13),(5,-2),(4,7)]
-densaArbitraria :: Gen Densa
-densaArbitraria = do
+--    λ> sample dispersaArbitraria
+--    Dis []
+--    Dis []
+--    Dis [(3,-2),(2,0),(0,3)]
+--    Dis [(6,1),(4,-2),(3,4),(2,-4)]
+--    Dis []
+--    Dis [(5,-7)]
+--    Dis [(12,5),(11,-8),(10,3),(8,-10),(7,-5),(4,12),(3,6),(2,-8),(1,11)]
+--    Dis [(7,-2),(2,-8)]
+--    Dis [(14,-15)]
+--    Dis [(17,5),(16,1),(15,-1),(14,10),(13,5),(12,-15),(9,12),(6,14)]
+--    Dis [(19,17),(12,7),(8,-3),(7,13),(5,-2),(4,7)]
+dispersaArbitraria :: Gen Dispersa
+dispersaArbitraria = do
   (xs, ys) <- arbitrary
   let xs' = nub (reverse (sort (map abs xs)))
       ys' = filter (/= 0) ys
-  return (Den (zip xs' ys'))
+  return (Dis (zip xs' ys'))
 
--- Densa está contenida en Arbitrary
-instance Arbitrary Densa where
-  arbitrary = densaArbitraria
+-- Dispersa está contenida en Arbitrary
+instance Arbitrary Dispersa where
+  arbitrary = dispersaArbitraria
 
 -- La propiedad es
-prop_dispersaAdensa :: Densa -> Bool
-prop_dispersaAdensa (Den ps) =
-  dispersaAdensa ps == dispersaAdensa2 ps
+prop_dispersaAdensa :: Dispersa -> Bool
+prop_dispersaAdensa (Dis xs) =
+  dispersaAdensa xs == dispersaAdensa2 xs
 
 -- La comprobación es
 --    λ> quickCheck prop_dispersaAdensa
@@ -150,37 +150,37 @@ prop_dispersaAdensa (Den ps) =
 -- Propiedad
 -- =========
 
--- Tipo de las representaciones dispersas de polinomios.
-newtype Dispersa = Dis [Int]
+-- Tipo de las representaciones densas de polinomios.
+newtype Densa = Den [Int]
   deriving Show
 
--- dispersaArbitraria es un generador de representaciones dispersas de
+-- densaArbitraria es un generador de representaciones dispersas de
 -- polinomios. Por ejemplo,
---    λ> sample dispersaArbitraria
---    Dis []
---    Dis []
---    Dis []
---    Dis [-6,6,5,-3]
---    Dis []
---    Dis [8,-7,-10,8,-10,-4,10,6,10]
---    Dis [-6,2,11,-4,-9,-5,9,2,2,9]
---    Dis [-6,9,-2]
---    Dis [-1,-7,15,1,5,-2,13,16,8,7,2,16,-2,16,-7,4]
---    Dis [8,13,-4,-2,-10,3,5,-4,-6,13,-9,-12,8,11,9,-18,12,10]
---    Dis [-1,-2,11,17,-7,13,-12,-19,16,-10,-18,-19,1,-4,-17,10,1,10]
-dispersaArbitraria :: Gen Dispersa
-dispersaArbitraria = do
+--    λ> sample densaArbitraria
+--    Den []
+--    Den []
+--    Den []
+--    Den [-6,6,5,-3]
+--    Den []
+--    Den [8,-7,-10,8,-10,-4,10,6,10]
+--    Den [-6,2,11,-4,-9,-5,9,2,2,9]
+--    Den [-6,9,-2]
+--    Den [-1,-7,15,1,5,-2,13,16,8,7,2,16,-2,16,-7,4]
+--    Den [8,13,-4,-2,-10,3,5,-4,-6,13,-9,-12,8,11,9,-18,12,10]
+--    Den [-1,-2,11,17,-7,13,-12,-19,16,-10,-18,-19,1,-4,-17,10,1,10]
+densaArbitraria :: Gen Densa
+densaArbitraria = do
   ys <- arbitrary
   let ys' = dropWhile (== 0) ys
-  return (Dis ys')
+  return (Den ys')
 
 -- Dispersa está contenida en Arbitrary
-instance Arbitrary Dispersa where
-  arbitrary = dispersaArbitraria
+instance Arbitrary Densa where
+  arbitrary = densaArbitraria
 
 -- La primera propiedad es
-prop_dispersaAdensa_densaAdispersa :: Dispersa -> Bool
-prop_dispersaAdensa_densaAdispersa (Dis xs) =
+prop_dispersaAdensa_densaAdispersa :: Densa -> Bool
+prop_dispersaAdensa_densaAdispersa (Den xs) =
   dispersaAdensa (densaAdispersa xs) == xs
 
 -- La comprobación es
@@ -188,8 +188,8 @@ prop_dispersaAdensa_densaAdispersa (Dis xs) =
 --    +++ OK, passed 100 tests.
 
 -- La segunda propiedad es
-prop_densaAdispersa_dispersaAdensa :: Densa -> Bool
-prop_densaAdispersa_dispersaAdensa (Den ps) =
+prop_densaAdispersa_dispersaAdensa :: Dispersa -> Bool
+prop_densaAdispersa_dispersaAdensa (Dis ps) =
   densaAdispersa (dispersaAdensa ps) == ps
 
 -- La comprobación es
