@@ -24,7 +24,7 @@
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module TAD_Transformaciones_polinomios_listas where
+module TAD_polinomios_Transformaciones_polinomios_listas where
 
 import TAD.Polinomio (Polinomio, polCero, esPolCero, consPol, grado,
                       coefLider, restoPol)
