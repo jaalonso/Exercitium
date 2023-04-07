@@ -335,3 +335,9 @@ Los objetivos de esta recopilación son:
 + X12 [[./src/Clausura_reflexiva.hs][Clausura reflexiva]].
 + J13 [[./src/Clausura_simetrica.hs][Clausura simétrica]].
 + V14 [[./src/Clausura_transitiva.hs][Clausura transitiva]].
++ L17 [[./src/TAD/Polinomio.hs][El tipo abstracto de datos de los polinomios]].
++ L17 [[./src/TAD/PolRepTDA.hs][El TAD de los polinomios mediante tipos algebraicos]].
++ L17 [[./src/TAD/PolRepDensa.hs][El TAD de los polinomios mediante listas densas]].
++ L17 [[./src/TAD/PolRepDispersa.hs][El TAD de los polinomios mediante listas dispersas]].
++ M18 [[./src/TAD_polinomios_Transformaciones_entre_las_representaciones_dispersa_y_densa.hs][TAD de los polinomios: Transformaciones entre las representaciones dispersa y densa]].
++ ??? [[./src/TAD_polinomios_Transformaciones_polinomios_listas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas]].

@@ -293,6 +293,10 @@ library
       TAD.Pila
       TAD.PilaConListas
       TAD.PilaConSucesiones
+      TAD.Polinomio
+      TAD.PolRepDensa
+      TAD.PolRepDispersa
+      TAD.PolRepTDA
       TAD_AlgunosVerificanConj
       TAD_Conjunto_unitario
       TAD_Conjuntos_disjuntos
@@ -304,6 +308,8 @@ library
       TAD_Numero_de_elementos_de_un_conjunto
       TAD_Particion_por_una_propiedad
       TAD_Particion_segun_un_numero
+      TAD_polinomios_Transformaciones_entre_las_representaciones_dispersa_y_densa
+      TAD_polinomios_Transformaciones_polinomios_listas
       TAD_Producto_cartesiano
       TAD_subconjunto
       TAD_Subconjunto_por_propiedad
@@ -644,6 +650,7 @@ test-suite Exercitium-test
       TAD_Numero_de_elementos_de_un_conjunto_Spec
       TAD_Particion_por_una_propiedad_Spec
       TAD_Particion_segun_un_numero_Spec
+      TAD_polinomios_Transformaciones_entre_las_representaciones_dispersa_y_densa_Spec
       TAD_Producto_cartesiano_Spec
       TAD_Subconjunto_por_propiedad_Spec
       TAD_subconjunto_Spec
