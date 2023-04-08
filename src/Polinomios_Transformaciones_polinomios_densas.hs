@@ -1,7 +1,7 @@
 -- Polinomios_Transformaciones_polinomios_densas.hs
 -- TAD de los polinomios: Transformaciones entre polinomios y listas densas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 20-abril-2023
+-- Sevilla, 21-abril-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -35,6 +35,7 @@ import Polinomios_Transformaciones_dispersa_y_densa (densaAdispersa,
                                                      dispersaAdensa)
 import Polinomios_Transformaciones_polinomios_dispersas (dispersaApolinomio,
                                                          polinomioAdispersa)
+import Polinomios_Coeficiente (coeficiente)
 import Data.List (sort, nub)
 import Test.QuickCheck
 
@@ -72,20 +73,9 @@ polinomioAdensa p
   | otherwise   = [coeficiente k p | k <- [n,n-1..0]]
   where n = grado p
 
--- (coeficiente k p) es el coeficiente del término de grado k del
--- polinomio p. Por ejemplo,
---    λ> ejPol = consPol 5 1 (consPol 2 5 (consPol 1 4 polCero))
---    λ> ejPol
---    x^5 + 5*x^2 + 4*x
---    λ> coeficiente 2 ejPol
---    5
---    λ> coeficiente 3 ejPol
---    0
-coeficiente :: (Num a, Eq a) => Int -> Polinomio a -> a
-coeficiente k p | k == n                 = coefLider p
-                | k > grado (restoPol p) = 0
-                | otherwise              = coeficiente k (restoPol p)
-  where n = grado p
+-- La función coeficiente está definida en el ejercicio
+-- "Coeficiente del término de grado k" que se encuentra en
+-- ???
 
 -- 2ª definición de polinomioAdensa
 -- ================================

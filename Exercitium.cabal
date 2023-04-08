@@ -201,6 +201,7 @@ library
       Permutacion_ciclica
       PerteneceCola
       PertenecePila
+      Polinomios_Coeficiente
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
       Polinomios_Transformaciones_dispersa_y_densa
@@ -562,6 +563,7 @@ test-suite Exercitium-test
       PertenecePila_Spec
       PilaConListas_Spec
       PilaConSucesiones_Spec
+      Polinomios_Coeficiente_Spec
       Polinomios_cuadraticos_generadores_de_primos_Spec
       Polinomios_de_Bell_Spec
       Polinomios_Transformaciones_dispersa_y_densa_Spec

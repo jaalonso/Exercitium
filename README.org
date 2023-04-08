@@ -341,4 +341,5 @@ Los objetivos de esta recopilación son:
 + L17 [[./src/TAD/PolRepDispersa.hs][El TAD de los polinomios mediante listas dispersas]].
 + M18 [[./src/Polinomios_Transformaciones_dispersa_y_densa.hs][TAD de los polinomios: Transformaciones entre las representaciones dispersa y densa]].
 + X19 [[./src/Polinomios_Transformaciones_polinomios_dispersas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas dispersas]].
-+ J20 [[./src/Polinomios_Transformaciones_polinomios_densas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas densas]].
++ J20 [[./src/Polinomios_Coeficiente.hs][TAD de los polinomios: Coeficiente del término de grado k]].
++ V21 [[./src/Polinomios_Transformaciones_polinomios_densas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas densas]].
