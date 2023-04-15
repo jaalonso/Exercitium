@@ -5,17 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- El tipo de las fórmulas proposicionales se puede definir por
---    data FProp = Const Bool
---               | Var Char
---               | Neg FProp
---               | Conj FProp FProp
---               | Impl FProp FProp
---      deriving Show
--- de modo que la fórmula A → ⊥ ∧ ¬B se representa por
---    Impl (Var 'A') (Conj (Const False) (Neg (Var 'B')))
---
--- Definir la función
+-- Usando el tipo de las fórmulas proposicionales definido en el
+-- [ejercicio anterior](https://bit.ly/3L3G2SX), definir la función
 --    variables :: FProp -> [Char]
 -- tal que (variables p) es la lista de las variables de la fórmula
 -- p. Por ejemplo,
@@ -27,12 +18,7 @@
 
 module Variables_de_una_formula where
 
-data FProp = Const Bool
-           | Var Char
-           | Neg FProp
-           | Conj FProp FProp
-           | Impl FProp FProp
-  deriving Show
+import Tipo_de_formulas (FProp(..))
 
 variables :: FProp -> [Char]
 variables (Const _)  = []

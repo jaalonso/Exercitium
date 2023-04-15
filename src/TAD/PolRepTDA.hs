@@ -1,7 +1,7 @@
 -- PolRepTDA.hs
 -- Implementación de los polinomios mediante tipos de datos algebraicos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 3-abril-2023
+-- Sevilla, 17-abril-2023
 -- ---------------------------------------------------------------------
 
 {-# LANGUAGE TemplateHaskell #-}

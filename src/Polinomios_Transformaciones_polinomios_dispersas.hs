@@ -5,7 +5,7 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Utilizando el [tipo abstracto de datos de los polinomios](???)
+-- Utilizando el [tipo abstracto de datos de los polinomios](https://bit.ly/3KwqXYu)
 -- definir las funciones
 --    dispersaApolinomio :: (Num a, Eq a) => [(Int,a)] -> Polinomio a
 --    polinomioAdispersa :: (Num a, Eq a) => Polinomio a -> [(Int,a)]

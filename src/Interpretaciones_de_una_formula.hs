@@ -5,25 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- El tipo de las fórmulas proposicionales se puede definir por
---    data FProp = Const Bool
---               | Var Char
---               | Neg FProp
---               | Conj FProp FProp
---               | Impl FProp FProp
---      deriving Show
--- de modo que la fórmula A → ⊥ ∧ ¬B se representa por
---    Impl (Var 'A') (Conj (Const False) (Neg (Var 'B')))
---
--- Una interpretación de una fórmula es una función de sus variables en
--- los booleanos. Por ejemplo, la interpretación que a la variable A le
--- asigna verdadero y a la B falso se puede representar por
---    [('A', True), ('B', False)]
---
--- El tipo de las intepretaciones de puede definir por
---    type Interpretacion = [(Char, Bool)]
---
--- Definir la función
+-- Usando el tipo de las fórmulas proposicionales definido en el
+-- [ejercicio anterior](https://bit.ly/3L3G2SX), definir la función
 --    interpretaciones :: FProp -> [Interpretacion]
 -- tal que (interpretaciones p) es la lista de las interpretaciones de
 -- la fórmula p. Por ejemplo,
@@ -36,16 +19,10 @@
 
 module Interpretaciones_de_una_formula where
 
+import Tipo_de_formulas (FProp(..))
+import Variables_de_una_formula (variables)
+import Valor_de_una_formula (Interpretacion)
 import Data.List (nub)
-
-data FProp = Const Bool
-           | Var Char
-           | Neg FProp
-           | Conj FProp FProp
-           | Impl FProp FProp
-  deriving Show
-
-type Interpretacion = [(Char, Bool)]
 
 interpretaciones :: FProp -> [Interpretacion]
 interpretaciones p =
@@ -63,16 +40,3 @@ interpretacionesVar :: Int -> [[Bool]]
 interpretacionesVar 0 = [[]]
 interpretacionesVar n = map (False:) bss ++ map (True:) bss
   where bss = interpretacionesVar (n-1)
-
--- (variables p) es la lista de las variables de la fórmula p. Por
--- ejemplo,
---    λ> variables (Impl (Var 'A') (Conj (Const False) (Neg (Var 'B'))))
---    "AB"
---    λ> variables (Impl (Var 'A') (Conj (Var 'A') (Neg (Var 'B'))))
---    "AAB"
-variables :: FProp -> [Char]
-variables (Const _)  = []
-variables (Var x)    = [x]
-variables (Neg p)    = variables p
-variables (Conj p q) = variables p ++ variables q
-variables (Impl p q) = variables p ++ variables q

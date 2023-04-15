@@ -1,7 +1,7 @@
 -- Polinomio.hs
 -- El tipo abstracto de datos de los polinomios.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 3-abril-2023
+-- Sevilla, 17-abril-2023
 -- ---------------------------------------------------------------------
 
 -- Un polinomio es una expresión matemática compuesta por una suma de

@@ -226,6 +226,7 @@ Los objetivos de esta recopilación son:
 + [[./src/El_tipo_de_los_numeros_naturales.hs][El tipo de los números naturales]].
 + [[./src/El_tipo_de_las_listas.hs][El tipo de las listas]].
 + [[./src/El_tipo_de_los_arboles_binarios.hs][El tipo de_los árboles binarios]].
++ [[./src/tipo_de_formulas.hs][El tipo de las fórmulas proposicionales]].
 + [[./src/Variables_de_una_formula.hs][El tipo de las fórmulas proposicionales: Variables de una fórmula]].
 + [[./src/Valor_de_una_formula.hs][El tipo de las fórmulas proposicionales: Valor de una fórmula]].
 + [[./src/Interpretaciones_de_una_formula.hs][El tipo de las fórmulas proposicionales: Interpretaciones de una fórmula]].

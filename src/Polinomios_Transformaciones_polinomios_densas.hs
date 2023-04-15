@@ -5,8 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Utilizando el [tipo abstracto de datos de los polinomios](???)
--- definir las funciones
+-- Utilizando el [tipo abstracto de datos de los polinomios]
+-- (https://bit.ly/3KwqXYu) definir las funciones
 --    densaApolinomio :: (Num a, Eq a) => [a] -> Polinomio a
 --    polinomioAdensa :: (Num a, Eq a) => Polinomio a -> [a]
 -- tales que
@@ -75,7 +75,7 @@ polinomioAdensa p
 
 -- La función coeficiente está definida en el ejercicio
 -- "Coeficiente del término de grado k" que se encuentra en
--- ???
+-- https://bit.ly/413l3oQ
 
 -- 2ª definición de polinomioAdensa
 -- ================================

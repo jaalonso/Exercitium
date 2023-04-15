@@ -1,7 +1,7 @@
 -- PolRepDispersa.hs
 -- Implementación de polinomios mediante listas dispersas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 3-abril-2023
+-- Sevilla, 17-abril-2023
 -- ---------------------------------------------------------------------
 
 {-# LANGUAGE TemplateHaskell #-}
@@ -105,7 +105,7 @@ consPol n b p@(Pol xs)
 -- (grado p) es el grado del polinomio p. Por ejemplo,
 --    ejPol3        ==  6*x^4 + 2*x
 --    grado ejPol3  ==  4
-grado:: Polinomio a -> Int
+grado :: Polinomio a -> Int
 grado (Pol [])        = 0
 grado (Pol ((n,_):_)) = n
 
