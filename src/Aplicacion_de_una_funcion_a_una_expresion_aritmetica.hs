@@ -5,16 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Las expresiones aritméticas básicas pueden representarse usando el
--- siguiente tipo de datos
---    data Expr = C Int
---              | S Expr Expr
---              | P Expr Expr
---      deriving (Show, Eq)
--- Por ejemplo, la expresión 2*(3+7) se representa por
---    P (C 2) (S (C 3) (C 7))
---
--- Definir la función
+-- Usando el [tipo de las expresiones aritméticas básicas]
+-- (https://bit.ly/43EuWL4), definir la función
 --    aplica :: (Int -> Int) -> Expr -> Expr
 -- tal que (aplica f e) es la expresión obtenida aplicando la función f
 -- a cada uno de los números de la expresión e. Por ejemplo,
@@ -26,10 +18,7 @@
 
 module Aplicacion_de_una_funcion_a_una_expresion_aritmetica where
 
-data Expr = C Int
-          | S Expr Expr
-          | P Expr Expr
-  deriving (Show, Eq)
+import Expresion_aritmetica_basica (Expr(..))
 
 aplica :: (Int -> Int) -> Expr -> Expr
 aplica f (C x)     = C (f x)

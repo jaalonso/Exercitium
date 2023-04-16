@@ -253,6 +253,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Elementos_del_nivel_k_de_un_arbol.hs][Elementos del nivel k de un árbol]].
 + [[./src/Arbol_de_factorizacion.hs][Árbol de factorización]].
 + [[./src/Valor_de_un_arbol_booleano.hs][Valor de un árbol booleano]].
++ [[./src/expresion_aritmetica_basica.hs][Expresiones aritméticas básicas]].
 + [[./src/Valor_de_una_expresion_aritmetica_basica.hs][Valor de una expresión aritmética básica]].
 + [[./src/Aplicacion_de_una_funcion_a_una_expresion_aritmetica.hs][Aplicación de una función a una expresión aritmética]].
 + [[./src/Valor_de_una_expresion_aritmetica_con_una_variable.hs][Valor de una expresión aritmética con una variable]].
@@ -324,18 +325,18 @@ Los objetivos de esta recopilación son:
 + [[./src/Universo_y_grafo_de_una_relacion_binaria.hs][Universo y grafo de una relación binaria]].
 + [[./src/Relaciones_reflexivas.hs][Relaciones reflexivas]].
 + [[./src/Relaciones_simetricas.hs][Relaciones simétricas]].
++ [[./src/Composicion_de_relaciones_binarias_v2.hs][Composición de relaciones binarias]].
++ [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
++ [[./src/Relaciones_transitivas.hs][Relaciones transitivas]].
++ [[./src/Relaciones_de_equivalencia.hs][Relaciones de equivalencia]].
++ [[./src/Relaciones_irreflexivas.hs][Relaciones irreflexivas]].
++ [[./src/Relaciones_antisimetricas.hs][Relaciones antisimétricas]].
++ [[./src/Relaciones_totales.hs][Relaciones totales]].
++ [[./src/Clausura_reflexiva.hs][Clausura reflexiva]].
++ [[./src/Clausura_simetrica.hs][Clausura simétrica]].
++ [[./src/Clausura_transitiva.hs][Clausura transitiva]].
 
 ** Para abril
-+ L03 [[./src/Composicion_de_relaciones_binarias_v2.hs][Composición de relaciones binarias]].
-+ M04 [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
-+ X05 [[./src/Relaciones_transitivas.hs][Relaciones transitivas]].
-+ J06 [[./src/Relaciones_de_equivalencia.hs][Relaciones de equivalencia]].
-+ V07 [[./src/Relaciones_irreflexivas.hs][Relaciones irreflexivas]].
-+ L10 [[./src/Relaciones_antisimetricas.hs][Relaciones antisimétricas]].
-+ M11 [[./src/Relaciones_totales.hs][Relaciones totales]].
-+ X12 [[./src/Clausura_reflexiva.hs][Clausura reflexiva]].
-+ J13 [[./src/Clausura_simetrica.hs][Clausura simétrica]].
-+ V14 [[./src/Clausura_transitiva.hs][Clausura transitiva]].
 + L17 [[./src/TAD/Polinomio.hs][El tipo abstracto de datos de los polinomios]].
 + L17 [[./src/TAD/PolRepTDA.hs][El TAD de los polinomios mediante tipos algebraicos]].
 + L17 [[./src/TAD/PolRepDensa.hs][El TAD de los polinomios mediante listas densas]].

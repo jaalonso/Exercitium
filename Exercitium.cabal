@@ -107,6 +107,7 @@ library
       Existencia_de_elemento_del_arbol_con_propiedad
       Exponente_en_la_factorizacion
       Exponente_mayor
+      Expresion_aritmetica_basica
       Expresiones_aritmeticas_reducibles
       ExtiendeCola
       Factorizaciones_de_numeros_de_Hilbert
