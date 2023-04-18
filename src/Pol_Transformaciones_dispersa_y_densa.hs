@@ -1,4 +1,4 @@
--- Polinomios_Transformaciones_dispersa_y_densa.hs
+-- Pol_Transformaciones_dispersa_y_densa.hs
 -- TAD de los polinomios: Transformaciones entre las representaciones dispersa y densa.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 18-abril-2023
@@ -24,7 +24,7 @@
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module Polinomios_Transformaciones_dispersa_y_densa where
+module Pol_Transformaciones_dispersa_y_densa where
 
 import Data.List (nub, sort)
 import Test.QuickCheck

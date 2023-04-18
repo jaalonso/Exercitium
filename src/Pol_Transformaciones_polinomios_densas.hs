@@ -1,4 +1,4 @@
--- Polinomios_Transformaciones_polinomios_densas.hs
+-- Pol_Transformaciones_polinomios_densas.hs
 -- TAD de los polinomios: Transformaciones entre polinomios y listas densas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 21-abril-2023
@@ -27,15 +27,15 @@
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module Polinomios_Transformaciones_polinomios_densas where
+module Pol_Transformaciones_polinomios_densas where
 
 import TAD.Polinomio (Polinomio, polCero, esPolCero, consPol, grado,
                       coefLider, restoPol)
-import Polinomios_Transformaciones_dispersa_y_densa (densaAdispersa,
-                                                     dispersaAdensa)
-import Polinomios_Transformaciones_polinomios_dispersas (dispersaApolinomio,
-                                                         polinomioAdispersa)
-import Polinomios_Coeficiente (coeficiente)
+import Pol_Transformaciones_dispersa_y_densa (densaAdispersa,
+                                              dispersaAdensa)
+import Pol_Transformaciones_polinomios_dispersas (dispersaApolinomio,
+                                                  polinomioAdispersa)
+import Pol_Coeficiente (coeficiente)
 import Data.List (sort, nub)
 import Test.QuickCheck
 

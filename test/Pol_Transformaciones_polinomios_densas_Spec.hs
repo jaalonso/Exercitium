@@ -1,6 +1,6 @@
-module Polinomios_Transformaciones_polinomios_densas_Spec (main, spec) where
+module Pol_Transformaciones_polinomios_densas_Spec (main, spec) where
 
-import Polinomios_Transformaciones_polinomios_densas
+import Pol_Transformaciones_polinomios_densas
 import TAD.Polinomio
 import Test.Hspec
 

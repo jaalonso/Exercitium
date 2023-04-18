@@ -1,4 +1,4 @@
--- Polinomios_Coeficiente.hs
+-- Pol_Coeficiente.hs
 -- TAD de los polinomios: Coeficiente del término de grado k.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 20-abril-2023
@@ -21,7 +21,7 @@
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module Polinomios_Coeficiente where
+module Pol_Coeficiente where
 
 import TAD.Polinomio (Polinomio, coefLider, grado, restoPol,
                       consPol, polCero)

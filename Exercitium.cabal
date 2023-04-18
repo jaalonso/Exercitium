@@ -202,12 +202,13 @@ library
       Permutacion_ciclica
       PerteneceCola
       PertenecePila
-      Polinomios_Coeficiente
+      Pol_Coeficiente
+      Pol_Crea_termino
+      Pol_Transformaciones_dispersa_y_densa
+      Pol_Transformaciones_polinomios_densas
+      Pol_Transformaciones_polinomios_dispersas
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
-      Polinomios_Transformaciones_dispersa_y_densa
-      Polinomios_Transformaciones_polinomios_densas
-      Polinomios_Transformaciones_polinomios_dispersas
       Posiciones_de_un_caracter_en_una_cadena
       Posiciones_diagonales_principales
       Potencia_entera
@@ -565,12 +566,13 @@ test-suite Exercitium-test
       PertenecePila_Spec
       PilaConListas_Spec
       PilaConSucesiones_Spec
-      Polinomios_Coeficiente_Spec
+      Pol_Coeficiente_Spec
+      Pol_Crea_termino_Spec
+      Pol_Transformaciones_dispersa_y_densa_Spec
+      Pol_Transformaciones_polinomios_densas_Spec
+      Pol_Transformaciones_polinomios_dispersas_Spec
       Polinomios_cuadraticos_generadores_de_primos_Spec
       Polinomios_de_Bell_Spec
-      Polinomios_Transformaciones_dispersa_y_densa_Spec
-      Polinomios_Transformaciones_polinomios_densas_Spec
-      Polinomios_Transformaciones_polinomios_dispersas_Spec
       Posiciones_de_un_caracter_en_una_cadena_Spec
       Posiciones_diagonales_principales_Spec
       Potencia_entera_Spec

@@ -1,6 +1,6 @@
-module Polinomios_Transformaciones_polinomios_dispersas_Spec (main, spec) where
+module Pol_Transformaciones_polinomios_dispersas_Spec (main, spec) where
 
-import Polinomios_Transformaciones_polinomios_dispersas
+import Pol_Transformaciones_polinomios_dispersas
 import TAD.Polinomio
 import Test.Hspec
 

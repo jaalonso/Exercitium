@@ -1,11 +1,11 @@
--- Polinomios_Transformaciones_polinomios_dispersas.hs
+-- Pol_Transformaciones_polinomios_dispersas.hs
 -- TAD de los polinomios: Transformaciones entre polinomios y listas dispersas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 19-abril-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Utilizando el [tipo abstracto de datos de los polinomios](https://bit.ly/3KwqXYu)
+-- Usando el [tipo abstracto de datos de los polinomios](https://bit.ly/3KwqXYu)
 -- definir las funciones
 --    dispersaApolinomio :: (Num a, Eq a) => [(Int,a)] -> Polinomio a
 --    polinomioAdispersa :: (Num a, Eq a) => Polinomio a -> [(Int,a)]
@@ -27,7 +27,7 @@
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module Polinomios_Transformaciones_polinomios_dispersas where
+module Pol_Transformaciones_polinomios_dispersas where
 
 import TAD.Polinomio (Polinomio, polCero, esPolCero, consPol, grado,
                       coefLider, restoPol)

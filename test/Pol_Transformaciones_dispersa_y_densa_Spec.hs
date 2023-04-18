@@ -1,6 +1,6 @@
-module Polinomios_Transformaciones_dispersa_y_densa_Spec (main, spec) where
+module Pol_Transformaciones_dispersa_y_densa_Spec (main, spec) where
 
-import Polinomios_Transformaciones_dispersa_y_densa
+import Pol_Transformaciones_dispersa_y_densa
 import Test.Hspec
 
 main :: IO ()

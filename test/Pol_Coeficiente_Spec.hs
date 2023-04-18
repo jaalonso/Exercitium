@@ -1,6 +1,6 @@
-module Polinomios_Coeficiente_Spec (main, spec) where
+module Pol_Coeficiente_Spec (main, spec) where
 
-import Polinomios_Coeficiente
+import Pol_Coeficiente
 import TAD.Polinomio
 import Test.Hspec
 
