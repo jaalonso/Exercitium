@@ -91,6 +91,14 @@ polinomioAdensa p
 polinomioAdensa2 :: (Num a, Eq a) => Polinomio a -> [a]
 polinomioAdensa2 = dispersaAdensa . polinomioAdispersa
 
+-- La función dispersaAdensa está definida en el ejercicio
+-- "Transformaciones entre las representaciones dispersa y densa" que se
+-- encuentra en https://bit.ly/3GTyIqe
+
+-- La función polinomioAdispersa se encuentra en el ejercicio
+-- "Transformaciones entre polinomios y listas dispersas" que se
+-- encuentra en https://bit.ly/41GgQaB
+
 -- Comprobación de equivalencia de polinomioAdensa
 -- ===============================================
 
