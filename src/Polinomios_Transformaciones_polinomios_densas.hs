@@ -52,6 +52,14 @@ densaApolinomio (x:xs) = consPol (length xs) x (densaApolinomio xs)
 densaApolinomio2 :: (Num a, Eq a) => [a] -> Polinomio a
 densaApolinomio2 = dispersaApolinomio . densaAdispersa
 
+-- La función densaAdispersa está definida en el ejercicio
+-- "Transformaciones entre las representaciones dispersa y densa" que se
+-- encuentra en https://bit.ly/3GTyIqe
+
+-- La función dispersaApolinomio se encuentra en el ejercicio
+-- "Transformaciones entre polinomios y listas dispersas" que se
+-- encuentra en https://bit.ly/41GgQaB
+
 -- Comprobación de equivalencia de densaApolinomio
 -- ===============================================
 
