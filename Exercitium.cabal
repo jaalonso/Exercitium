@@ -204,6 +204,7 @@ library
       PertenecePila
       Pol_Coeficiente
       Pol_Crea_termino
+      Pol_Suma_de_polinomios
       Pol_Termino_lider
       Pol_Transformaciones_dispersa_y_densa
       Pol_Transformaciones_polinomios_densas
@@ -569,6 +570,7 @@ test-suite Exercitium-test
       PilaConSucesiones_Spec
       Pol_Coeficiente_Spec
       Pol_Crea_termino_Spec
+      Pol_Suma_de_polinomios_Spec
       Pol_Termino_lider_Spec
       Pol_Transformaciones_dispersa_y_densa_Spec
       Pol_Transformaciones_polinomios_densas_Spec
