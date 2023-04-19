@@ -37,12 +37,8 @@ sumaPol p q
   | n1 > n2      = consPol n1 a1 (sumaPol r1 q)
   | n1 < n2      = consPol n2 a2 (sumaPol p r2)
   | otherwise    = consPol n1 (a1+a2) (sumaPol r1 r2)
-  where n1 = grado p
-        a1 = coefLider p
-        r1 = restoPol p
-        n2 = grado q
-        a2 = coefLider q
-        r2 = restoPol q
+  where (n1, a1, r1) = (grado p, coefLider p, restoPol p)
+        (n2, a2, r2) = (grado q, coefLider q, restoPol q)
 
 -- Propiedad. El polinomio cero es el elemento neutro de la suma.
 prop_neutroSumaPol :: Polinomio Int -> Bool
