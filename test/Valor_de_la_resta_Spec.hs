@@ -1,6 +1,7 @@
 module Valor_de_la_resta_Spec (main, spec) where
 
 import Valor_de_la_resta
+import Tipo_expresion_aritmetica
 import Test.Hspec
 import Test.QuickCheck
 

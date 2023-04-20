@@ -330,6 +330,7 @@ library
       Ternas_pitagoricas
       Ternas_pitagoricas_con_suma_dada
       Tipo_de_formulas
+      Tipo_expresion_aritmetica
       Todos_los_abundantes_hasta_n_son_pares
       TodosVerifican
       Transformaciones_colas_listas

@@ -1,6 +1,7 @@
 module Numero_de_operaciones_en_una_expresion_Spec (main, spec) where
 
 import Numero_de_operaciones_en_una_expresion
+import Tipo_expresion_aritmetica
 import Test.Hspec
 
 main :: IO ()

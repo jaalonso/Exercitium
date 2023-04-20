@@ -5,27 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Se considera el tipo de las expresiones aritméticas definido por
---    data Expr = Lit Int
---              | Suma Expr Expr
---              | Op Expr
---              | SiCero Expr Expr Expr
---      deriving (Eq, Show)
--- formado por
--- + literales (p.e. Lit 7),
--- + sumas (p.e. Suma (Lit 7) (Suma (Lit 3) (Lit 5)))
--- + opuestos (p.e. Op (Suma (Op (Lit 7)) (Suma (Lit 3) (Lit 5))))
--- + expresiones condicionales (p.e. (SiCero (Lit 3) (Lit 4) (Lit 5))
---
--- La función para calcular el valor de una expresión es
---    valor :: Expr -> Int
---    valor (Lit n)        = n
---    valor (Suma x y)     = valor x + valor y
---    valor (Op x)         = - valor x
---    valor (SiCero x y z) | valor x == 0 = valor y
---                         | otherwise    = valor z
---
--- Definir la función
+-- Usando el [tipo de las expresiones aritméticas](https://bit.ly/40vCQUh),
+-- definir la función
 --    resta :: Expr -> Expr -> Expr
 -- tal que (resta e1 e2) es la expresión correspondiente a la diferencia
 -- de e1 y e2. Por ejemplo,
@@ -35,22 +16,13 @@
 --    valor (resta x y) == valor x - valor y
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-orphans #-}
+
 module Valor_de_la_resta where
 
+import Tipo_expresion_aritmetica (Expr (..))
+import Valor_de_una_expresion_aritmetica (valor)
 import Test.QuickCheck
-
-data Expr = Lit Int
-          | Suma Expr Expr
-          | Op Expr
-          | SiCero Expr Expr Expr
-  deriving (Eq, Show)
-
-valor :: Expr -> Int
-valor (Lit n)        = n
-valor (Suma x y)     = valor x + valor y
-valor (Op x)         = - valor x
-valor (SiCero x y z) | valor x == 0 = valor y
-                     | otherwise    = valor z
 
 resta :: Expr -> Expr -> Expr
 resta x y = Suma x (Op y)

@@ -235,6 +235,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Aplicacion_de_una_funcion_a_un_arbol.hs][Aplicación de una función a un árbol]].
 + [[./src/Arboles_con_la_misma_forma.hs][Árboles con la misma forma]].
 + [[./src/Arbol_con_las_hojas_en_la_profundidad_dada.hs][Árbol con las hojas en la profundidad dada]].
++ [[./src/Tipo_expresion_aritmetica.hs][El tipo de las expresiones aritméticas]].
 + [[./src/Valor_de_una_expresion_aritmetica.hs][El tipo de las expresiones aritméticas: Valor_de_una_expresión]].
 + [[./src/Valor_de_la_resta.hs][El tipo de las expresiones aritméticas: Valor de la resta]].
 + [[./src/Numero_de_operaciones_en_una_expresion.hs][El tipo de las expresiones aritméticas: Número de operaciones en una expresión]].

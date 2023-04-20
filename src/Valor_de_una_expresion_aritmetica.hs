@@ -5,20 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Se considera el tipo de las expresiones aritméticas definido por
---    data Expr =
---        Lit Int
---      | Suma Expr Expr
---      | Op Expr
---      | SiCero Expr Expr Expr
---      deriving (Eq, Show)
--- formado por
--- + literales (p.e. Lit 7),
--- + sumas (p.e. Suma (Lit 7) (Suma (Lit 3) (Lit 5)))
--- + opuestos (p.e. Op (Suma (Op (Lit 7)) (Suma (Lit 3) (Lit 5))))
--- + expresiones condicionales (p.e. (SiCero (Lit 3) (Lit 4) (Lit 5))
---
--- Definir la función
+-- Usando el [tipo de las expresiones aritméticas](https://bit.ly/40vCQUh),
+-- definir la función
 --    valor :: Expr -> Int
 -- tal que (valor e) es el valor de la expresión e (donde el valor de
 -- (SiCero e e1 e2) es el valor de e1 si el valor de e es cero y el es
@@ -30,12 +18,7 @@
 
 module Valor_de_una_expresion_aritmetica where
 
-data Expr =
-    Lit Int
-  | Suma Expr Expr
-  | Op Expr
-  | SiCero Expr Expr Expr
-  deriving (Eq, Show)
+import Tipo_expresion_aritmetica (Expr (..))
 
 valor :: Expr -> Int
 valor (Lit n)        = n
