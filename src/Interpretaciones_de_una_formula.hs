@@ -5,8 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Usando el tipo de las fórmulas proposicionales definido en el
--- [ejercicio anterior](https://bit.ly/3L3G2SX), definir la función
+-- Usando el [tipo de las fórmulas proposicionales](https://bit.ly/3L3G2SX),
+-- definir la función
 --    interpretaciones :: FProp -> [Interpretacion]
 -- tal que (interpretaciones p) es la lista de las interpretaciones de
 -- la fórmula p. Por ejemplo,

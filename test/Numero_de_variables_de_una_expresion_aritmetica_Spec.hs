@@ -1,6 +1,7 @@
 module Numero_de_variables_de_una_expresion_aritmetica_Spec (main, spec) where
 
 import Numero_de_variables_de_una_expresion_aritmetica
+import Expresion_aritmetica_con_una_variable
 import Test.Hspec
 
 main :: IO ()

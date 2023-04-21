@@ -108,6 +108,7 @@ library
       Exponente_en_la_factorizacion
       Exponente_mayor
       Expresion_aritmetica_basica
+      Expresion_aritmetica_con_una_variable
       Expresiones_aritmeticas_reducibles
       ExtiendeCola
       Factorizaciones_de_numeros_de_Hilbert

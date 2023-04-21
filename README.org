@@ -257,6 +257,7 @@ Los objetivos de esta recopilación son:
 + [[./src/expresion_aritmetica_basica.hs][Expresiones aritméticas básicas]].
 + [[./src/Valor_de_una_expresion_aritmetica_basica.hs][Valor de una expresión aritmética básica]].
 + [[./src/Aplicacion_de_una_funcion_a_una_expresion_aritmetica.hs][Aplicación de una función a una expresión aritmética]].
++ [[./src/Expresion_aritmetica_con_una_variable.hs][Tipo de expresiones aritméticas con una variable]].
 + [[./src/Valor_de_una_expresion_aritmetica_con_una_variable.hs][Valor de una expresión aritmética con una variable]].
 + [[./src/Numero_de_variables_de_una_expresion_aritmetica.hs][Número de variables de una expresión aritmética]].
 + [[./src/Valor_de_una_expresion_aritmetica_con_variables.hs][Valor de una expresión aritmética con variables]].

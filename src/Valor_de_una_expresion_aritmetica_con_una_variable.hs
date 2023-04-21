@@ -5,17 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Las expresiones aritméticas construidas con una variable (denotada
--- por X), los números enteros y las operaciones de sumar y multiplicar
--- se pueden representar mediante el tipo de datos Expr definido por
---    data Expr = X
---              | C Int
---              | S Expr Expr
---              | P Expr Expr
--- Por ejemplo, la expresión X*(13+X) se representa por
---    P X (S (C 13) X)
---
--- Definir la función
+-- Usando el [tipo de las expresiones aritméticas con una variable](https://bit.ly/40mwjeF),
+-- definir la función
 --    valor :: Expr -> Int -> Int
 -- tal que (valor e n) es el valor de la expresión e cuando se
 -- sustituye su variable por n. Por ejemplo,
@@ -24,10 +15,7 @@
 
 module Valor_de_una_expresion_aritmetica_con_una_variable where
 
-data Expr = X
-          | C Int
-          | S Expr Expr
-          | P Expr Expr
+import Expresion_aritmetica_con_una_variable (Expr (..))
 
 valor :: Expr -> Int -> Int
 valor X         n = n

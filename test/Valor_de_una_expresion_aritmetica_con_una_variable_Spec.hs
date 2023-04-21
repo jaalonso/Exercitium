@@ -1,6 +1,7 @@
 module Valor_de_una_expresion_aritmetica_con_una_variable_Spec (main, spec) where
 
 import Valor_de_una_expresion_aritmetica_con_una_variable
+import Expresion_aritmetica_con_una_variable
 import Test.Hspec
 
 main :: IO ()
