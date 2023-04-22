@@ -1,6 +1,7 @@
 module Numero_de_hojas_de_un_arbol_binario_Spec (main, spec) where
 
 import Numero_de_hojas_de_un_arbol_binario
+import Arboles_binarios
 import Test.Hspec
 
 main :: IO ()

@@ -1,6 +1,7 @@
 module Profundidad_de_un_arbol_binario_Spec (main, spec) where
 
 import Profundidad_de_un_arbol_binario
+import Arboles_binarios
 import Test.Hspec
 
 main :: IO ()

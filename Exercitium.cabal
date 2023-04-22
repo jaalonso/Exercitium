@@ -45,6 +45,7 @@ library
       Arbol_de_factorizacion
       Arbol_de_profundidad_n_con_nodos_iguales
       Arboles_balanceados
+      Arboles_binarios
       Arboles_con_bordes_iguales
       Arboles_con_igual_estructura
       Arboles_con_la_misma_forma

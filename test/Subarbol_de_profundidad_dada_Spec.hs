@@ -1,6 +1,7 @@
 module Subarbol_de_profundidad_dada_Spec (main, spec) where
 
 import Subarbol_de_profundidad_dada
+import Arboles_binarios
 import Test.Hspec
 
 main :: IO ()

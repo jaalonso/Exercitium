@@ -1,6 +1,7 @@
 module Arbol_de_profundidad_n_con_nodos_iguales_Spec (main, spec) where
 
 import Arbol_de_profundidad_n_con_nodos_iguales
+import Arboles_binarios
 import Test.Hspec
 
 main :: IO ()

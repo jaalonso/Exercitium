@@ -1,6 +1,7 @@
 module Recorrido_de_arboles_binarios_Spec (main, spec) where
 
 import Recorrido_de_arboles_binarios
+import Arboles_binarios
 import Test.Hspec
 
 main :: IO ()

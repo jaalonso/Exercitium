@@ -1,6 +1,7 @@
 module Imagen_especular_de_un_arbol_binario_Spec (main, spec) where
 
 import Imagen_especular_de_un_arbol_binario
+import Arboles_binarios
 import Test.Hspec
 
 main :: IO ()
