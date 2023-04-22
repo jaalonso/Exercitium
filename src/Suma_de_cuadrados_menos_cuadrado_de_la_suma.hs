@@ -21,6 +21,8 @@
 
 module Suma_de_cuadrados_menos_cuadrado_de_la_suma where
 
+import Suma_de_los_cuadrados_de_los_primeros_numeros_naturales
+  (sumaDeCuadrados1, sumaDeCuadrados2, sumaDeCuadrados3, sumaDeCuadrados4, sumaDeCuadrados5)
 import Data.List (foldl')
 import Test.QuickCheck
 
@@ -28,70 +30,49 @@ import Test.QuickCheck
 -- ===========
 
 euler6a :: Integer -> Integer
-euler6a n = (suma1 n)^2 - sumaDeCuadrados1 n
+euler6a n = suma1 n ^ 2 - sumaDeCuadrados1 n
 
 -- (suma n) es la suma de los n primeros números. Por ejemplo,
 --    suma 3  ==  6
 suma1 :: Integer -> Integer
 suma1 n = sum [1..n]
 
--- (sumaDeCuadrados n) es la suma de los cuadrados de los
--- primeros n números; es decir, 1^2 + 2^2 + ... + n^2. Por ejemplo,
---    sumaDeCuadrados 3    ==  14
---    sumaDeCuadrados 100  ==  338350
-
-sumaDeCuadrados1 :: Integer -> Integer
-sumaDeCuadrados1 n = sum [x^2 | x <- [1..n]]
-
 -- 2ª solución
 -- ===========
 
 euler6b :: Integer -> Integer
-euler6b n = (suma2 n)^ 2 - sumaDeCuadrados2 n
+euler6b n = suma2 n ^ 2 - sumaDeCuadrados2 n
 
 suma2 :: Integer -> Integer
 suma2 n = (1+n)*n `div` 2
-
-sumaDeCuadrados2 :: Integer -> Integer
-sumaDeCuadrados2 n = n*(n+1)*(2*n+1) `div` 6
 
 -- 3ª solución
 -- ===========
 
 euler6c :: Integer -> Integer
-euler6c n = (suma3 n)^ 2 - sumaDeCuadrados3 n
+euler6c n = suma3 n ^ 2 - sumaDeCuadrados3 n
 
 suma3 :: Integer -> Integer
 suma3 1 = 1
 suma3 n = n + suma3 (n-1)
 
-sumaDeCuadrados3 :: Integer -> Integer
-sumaDeCuadrados3 1 = 1
-sumaDeCuadrados3 n = n^2 + sumaDeCuadrados3 (n-1)
-
 -- 4ª solución
 -- ===========
 
 euler6d :: Integer -> Integer
-euler6d n = (suma4 n)^ 2 - sumaDeCuadrados4 n
+euler6d n = suma4 n ^ 2 - sumaDeCuadrados4 n
 
 suma4 :: Integer -> Integer
 suma4 n = foldl (+) 0 [0..n]
-
-sumaDeCuadrados4 :: Integer -> Integer
-sumaDeCuadrados4 n = foldl (+) 0 (map (^2) [0..n])
 
 -- 5ª solución
 -- ===========
 
 euler6e :: Integer -> Integer
-euler6e n = (suma5 n)^ 2 - sumaDeCuadrados5 n
+euler6e n = suma5 n ^ 2 - sumaDeCuadrados5 n
 
 suma5 :: Integer -> Integer
 suma5 n = foldl' (+) 0 [0..n]
-
-sumaDeCuadrados5 :: Integer -> Integer
-sumaDeCuadrados5 n = foldl' (+) 0 (map (^2) [0..n])
 
 -- Comprobación de equivalencia
 -- ============================
