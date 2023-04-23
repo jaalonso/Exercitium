@@ -5,7 +5,7 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Utilizando el [tipo abstracto de datos de los polinomios](https://bit.ly/3KwqXYu)
+-- Usando el [tipo abstracto de datos de los polinomios](https://bit.ly/3KwqXYu)
 -- definir la función
 --    coeficiente :: (Num a, Eq a) => Int -> Polinomio a -> a
 -- tal que (coeficiente k p) es el coeficiente del término de grado k

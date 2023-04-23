@@ -345,10 +345,11 @@ Los objetivos de esta recopilación son:
 + [[./src/Pol_Transformaciones_dispersa_y_densa.hs][TAD de los polinomios: Transformaciones entre las representaciones dispersa y densa]].
 + [[./src/Pol_Transformaciones_polinomios_dispersas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas dispersas]].
 + [[./src/Pol_Coeficiente.hs][TAD de los polinomios: Coeficiente del término de grado k]].
++ [[./src/Pol_Transformaciones_polinomios_densas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas densas]].
 
 ** Para abril
-+ V21 [[./src/Pol_Transformaciones_polinomios_densas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas densas]].
 + L24 [[./src/Pol_Crea_termino.hs][TAD de los polinomios: Construcción de términos]].
 + M25 [[./src/Pol_Termino_lider.hs][TAD de los polinomios: Término líder de un polinomio]].
 + X26 [[./src/Pol_Suma_de_polinomios.hs][TAD de los polinomios: Suma de polinomios]].
 + J27 [[./src/Pol_Producto_polinomios.hs][TAD de los polinomios: Producto de polinomios]].
++ V28 [[./src/Pol_Valor_de_un_polinomio_en_un_punto.hs][TAD de los polinomios: Valor de un polinomio en un punto]].
