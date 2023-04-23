@@ -5,23 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- El árbol binario
---         ·
---        / \
---       /   \
---      ·     ·
---     / \   / \
---    1   4 6   9
--- se puede representar por
---    ejArbol = Nodo (Nodo (Hoja 1) (Hoja 4))
---                   (Nodo (Hoja 6) (Hoja 9))
---
--- El tipo de los árboles binarios se puede definir por
---    data Arbol a = Hoja a
---                 | Nodo (Arbol a) (Arbol a)
---      deriving (Show, Eq)
---
--- Definir la función
+-- Usando el [tipo de los árboles binarios con los valores en las hojas]
+-- (https://bit.ly/3N5RuyE), definir la función
 --    creaArbol :: Int -> Arbol ()
 -- tal que (creaArbol n) es el árbol cuyas hoyas están en la profundidad
 -- n. Por ejemplo,
@@ -31,9 +16,7 @@
 
 module Arbol_con_las_hojas_en_la_profundidad_dada where
 
-data Arbol a = Hoja a
-             | Nodo (Arbol a) (Arbol a)
-  deriving (Show, Eq)
+import Arbol_binario_valores_en_hojas (Arbol (..))
 
 creaArbol :: Int -> Arbol ()
 creaArbol h

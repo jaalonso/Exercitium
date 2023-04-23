@@ -1,6 +1,7 @@
 module Altura_de_un_arbol_binario_Spec (main, spec) where
 
 import Altura_de_un_arbol_binario
+import Arbol_binario_valores_en_hojas
 import Test.Hspec
 
 main :: IO ()

@@ -5,23 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- El árbol binario
---         ·
---        / \
---       /   \
---      ·     ·
---     / \   / \
---    1   4 6   9
--- se puede representar por
---    ejArbol = Nodo (Nodo (Hoja 1) (Hoja 4))
---                   (Nodo (Hoja 6) (Hoja 9))
---
--- El tipo de los árboles binarios se puede definir por
---    data Arbol a = Hoja a
---                 | Nodo (Arbol a) (Arbol a)
---      deriving (Show, Eq)
---
--- Definir la función
+-- Usando el [tipo de los árboles binarios con los valores en las hojas]
+-- (https://bit.ly/3N5RuyE), definir la función
 --    mapArbol :: (a -> b) -> Arbol a -> Arbol b
 -- tal que (mapArbol f t) es el árbol obtenido aplicando la función f a
 -- los elementos del árbol t. Por ejemplo,
@@ -31,9 +16,7 @@
 
 module Aplicacion_de_una_funcion_a_un_arbol where
 
-data Arbol a = Hoja a
-             | Nodo (Arbol a) (Arbol a)
-  deriving (Show, Eq)
+import Arbol_binario_valores_en_hojas (Arbol (..))
 
 mapArbol :: (a -> b) -> Arbol a -> Arbol b
 mapArbol f (Hoja a)   = Hoja (f a)

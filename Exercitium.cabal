@@ -41,6 +41,7 @@ library
       Aplicacion_de_una_funcion_a_una_expresion_aritmetica
       Aproximacion_de_numero_pi
       Aproximacion_del_numero_e
+      Arbol_binario_valores_en_hojas
       Arbol_con_las_hojas_en_la_profundidad_dada
       Arbol_de_factorizacion
       Arbol_de_profundidad_n_con_nodos_iguales
@@ -418,6 +419,7 @@ test-suite Exercitium-test
       Arboles_balanceados_Spec
       Arboles_con_bordes_iguales_Spec
       Arboles_con_igual_estructura_Spec
+      Arboles_con_la_misma_forma_Spec
       Area_corona_circular_Spec
       Bandera_tricolor_Spec
       Base_de_dato_de_actividades_Spec
