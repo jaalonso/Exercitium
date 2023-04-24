@@ -354,3 +354,7 @@ Los objetivos de esta recopilación son:
 + X26 [[./src/Pol_Suma_de_polinomios.hs][TAD de los polinomios: Suma de polinomios]].
 + J27 [[./src/Pol_Producto_polinomios.hs][TAD de los polinomios: Producto de polinomios]].
 + V28 [[./src/Pol_Valor_de_un_polinomio_en_un_punto.hs][TAD de los polinomios: Valor de un polinomio en un punto]].
+
+** Mayo 2023
+
++ L01 [[./src/Pol_Comprobacion_de_raices_de_polinomios.hs][TAD de los polinomios: Comprobación de raíces de polinomios]]
