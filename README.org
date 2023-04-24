@@ -225,7 +225,6 @@ Los objetivos de esta recopilación son:
 + [[./src/El_tipo_de_figuras_geometricas.hs][El tipo de figuras geométricas]].
 + [[./src/El_tipo_de_los_numeros_naturales.hs][El tipo de los números naturales]].
 + [[./src/El_tipo_de_las_listas.hs][El tipo de las listas]].
-+ [[./src/El_tipo_de_los_arboles_binarios.hs][El tipo de_los árboles binarios]].
 + [[./src/tipo_de_formulas.hs][El tipo de las fórmulas proposicionales]].
 + [[./src/Variables_de_una_formula.hs][El tipo de las fórmulas proposicionales: Variables de una fórmula]].
 + [[./src/Valor_de_una_formula.hs][El tipo de las fórmulas proposicionales: Valor de una fórmula]].
@@ -240,7 +239,10 @@ Los objetivos de esta recopilación son:
 + [[./src/Valor_de_una_expresion_aritmetica.hs][El tipo de las expresiones aritméticas: Valor_de_una_expresión]].
 + [[./src/Valor_de_la_resta.hs][El tipo de las expresiones aritméticas: Valor de la resta]].
 + [[./src/Numero_de_operaciones_en_una_expresion.hs][El tipo de las expresiones aritméticas: Número de operaciones en una expresión]].
-+ [[./src/Arboles_binarios.hs][Árboles binarios]].
++ + [[./src/Arboles_binarios.hs][El tipo de_los árboles binarios con valores en los nodos y en las hojas]].
++ + [[./src/Pertenencia_de_un_elemento_a_un_arbol.hs][Pertenencia de un elemento a un árbol]].
++ + [[./src/Aplanamiento_de_un_arbol.hs][Aplanamiento de un árbol]].
++ + [[./src/El_tipo_de_los_arboles_binarios.hs][El tipo de_los árboles binarios con valores en los nodos y en las hojas]]. (para borrar)
 + [[./src/Numero_de_hojas_de_un_arbol_binario.hs][Número de hojas de un árbol binario]].
 + [[./src/Profundidad_de_un_arbol_binario.hs][Profundidad de un árbol binario]].
 + [[./src/Recorrido_de_arboles_binarios.hs][Recorrido de árboles binarios]].
@@ -259,7 +261,7 @@ Los objetivos de esta recopilación son:
 + [[./src/expresion_aritmetica_basica.hs][Expresiones aritméticas básicas]].
 + [[./src/Valor_de_una_expresion_aritmetica_basica.hs][Valor de una expresión aritmética básica]].
 + [[./src/Aplicacion_de_una_funcion_a_una_expresion_aritmetica.hs][Aplicación de una función a una expresión aritmética]].
-+ [[./src/Expresion_aritmetica_con_una_variable.hs][Tipo de expresiones aritméticas con una variable]].
++ [[./src/Expresion_aritmetica_con_una_variable.hs][El tipo de expresiones aritméticas con una variable]].
 + [[./src/Valor_de_una_expresion_aritmetica_con_una_variable.hs][Valor de una expresión aritmética con una variable]].
 + [[./src/Numero_de_variables_de_una_expresion_aritmetica.hs][Número de variables de una expresión aritmética]].
 + [[./src/Valor_de_una_expresion_aritmetica_con_variables.hs][Valor de una expresión aritmética con variables]].

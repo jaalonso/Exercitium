@@ -36,6 +36,7 @@ library
       Altura_de_un_arbol_binario
       Amplia_columnas
       Anagramas
+      Aplanamiento_de_un_arbol
       Aplica_segun_propiedad
       Aplicacion_de_una_funcion_a_un_arbol
       Aplicacion_de_una_funcion_a_una_expresion_aritmetica
@@ -205,6 +206,7 @@ library
       Permutacion_ciclica
       PerteneceCola
       PertenecePila
+      Pertenencia_de_un_elemento_a_un_arbol
       Pol_Coeficiente
       Pol_Comprobacion_de_raices_de_polinomios
       Pol_Crea_termino
@@ -409,6 +411,7 @@ test-suite Exercitium-test
       AlgunoVerifica_Spec
       Altura_de_un_arbol_binario_Spec
       Anagramas_Spec
+      Aplanamiento_de_un_arbol_Spec
       Aplica_segun_propiedad_Spec
       Aplicacion_de_una_funcion_a_un_arbol_Spec
       Aplicacion_de_una_funcion_a_una_expresion_aritmetica_Spec
@@ -574,6 +577,7 @@ test-suite Exercitium-test
       Permutacion_ciclica_Spec
       PerteneceCola_Spec
       PertenecePila_Spec
+      Pertenencia_de_un_elemento_a_un_arbol_Spec
       PilaConListas_Spec
       PilaConSucesiones_Spec
       Pol_Coeficiente_Spec
