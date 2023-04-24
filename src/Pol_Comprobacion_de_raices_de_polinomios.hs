@@ -7,8 +7,9 @@
 -- ---------------------------------------------------------------------
 -- Usando el [tipo abstracto de los polinomios](https://bit.ly/3KwqXYu),
 -- definir la función
--- (esRaiz c p) se verifica si c es una raiz del polinomio p. por
--- ejemplo,
+--    esRaiz :: (Num a, Eq a) => a -> Polinomio a -> Bool
+-- tal que (esRaiz c p) se verifica si c es una raiz del polinomio p.
+-- Por ejemplo,
 --    λ> ejPol = consPol 4 6 (consPol 1 2 polCero)
 --    λ> ejPol
 --    6*x^4 + 2*x
