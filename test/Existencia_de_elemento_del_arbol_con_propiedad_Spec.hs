@@ -1,6 +1,7 @@
 module Existencia_de_elemento_del_arbol_con_propiedad_Spec (main, spec) where
 
 import Existencia_de_elemento_del_arbol_con_propiedad
+import Arboles_binarios (Arbol (H, N))
 import Test.Hspec
 
 main :: IO ()

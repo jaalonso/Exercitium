@@ -5,21 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Los árboles binarios con valores en los nodos se pueden definir por
---    data Arbol a = H
---                 | N a (Arbol a) (Arbol a)
---      deriving (Show, Eq)
--- Por ejemplo, el árbol
---         9
---        / \
---       /   \
---      8     6
---     / \   / \
---    3   2 4   5
--- se puede representar por
---    N 9 (N 8 (N 3 H H) (N 2 H H)) (N 6 (N 4 H H) (N 5 H H))
---
--- Definir la función
+-- Usando el [tipo de los árboles binarios con valores en los nodos]
+-- (https://bit.ly/40Pplzj), definir la función
 --    ramaIzquierda :: Arbol a -> [a]
 -- tal que (ramaIzquierda a) es la lista de los valores de los nodos de
 -- la rama izquierda del árbol a. Por ejemplo,
@@ -29,9 +16,7 @@
 
 module Rama_izquierda_de_un_arbol_binario where
 
-data Arbol a = H
-             | N a (Arbol a) (Arbol a)
-  deriving (Show, Eq)
+import Arbol_binario_valores_en_nodos (Arbol (H, N))
 
 ramaIzquierda :: Arbol a -> [a]
 ramaIzquierda H         = []

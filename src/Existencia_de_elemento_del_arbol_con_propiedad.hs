@@ -5,22 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Los árboles binarios con valores en las hojas y en los nodos se
--- definen por
---    data Arbol a = H a
---                 | N a (Arbol a) (Arbol a)
---      deriving Show
--- Por ejemplo, el árbol
---         5
---        / \
---       /   \
---      3     2
---     / \
---    1   4
--- se representa por
---    N 5 (N 3 (H 1) (H 4)) (H 2)
---
--- Definir la función
+-- Usando el [tipo de los árboles binarios con valores en los nodos y
+-- en las hojas](https://bit.ly/3H53exA), definir la función
 --    algunoArbol :: Arbol t -> (t -> Bool) -> Bool
 -- tal que (algunoArbol a p) se verifica si algún elemento del árbol a
 -- cumple la propiedad p. Por ejemplo,
@@ -30,9 +16,7 @@
 
 module Existencia_de_elemento_del_arbol_con_propiedad where
 
-data Arbol a = H a
-             | N a (Arbol a) (Arbol a)
-  deriving Show
+import Arboles_binarios (Arbol (H, N))
 
 algunoArbol :: Arbol a -> (a -> Bool) -> Bool
 algunoArbol (H x) p     = p x

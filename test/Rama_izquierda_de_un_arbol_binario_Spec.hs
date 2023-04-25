@@ -1,8 +1,8 @@
 module Rama_izquierda_de_un_arbol_binario_Spec (main, spec) where
 
 import Rama_izquierda_de_un_arbol_binario
+import Arbol_binario_valores_en_nodos (Arbol (H, N))
 import Test.Hspec
-import Test.QuickCheck
 
 main :: IO ()
 main = hspec spec

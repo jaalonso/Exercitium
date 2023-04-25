@@ -1,6 +1,7 @@
 module Suma_de_un_arbol_Spec (main, spec) where
 
 import Suma_de_un_arbol
+import Arbol_binario_valores_en_nodos (Arbol (H, N))
 import Test.Hspec
 
 main :: IO ()

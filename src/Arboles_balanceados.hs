@@ -5,25 +5,12 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Los árboles binarios con valores en los nodos se pueden definir por
---    data Arbol a = H
---                 | N a (Arbol a) (Arbol a)
---      deriving (Show, Eq)
--- Por ejemplo, el árbol
---         9
---        / \
---       /   \
---      8     6
---     / \   / \
---    3   2 4   5
--- se puede representar por
---    N 9 (N 8 (N 3 H H) (N 2 H H)) (N 6 (N 4 H H) (N 5 H H))
---
 -- Diremos que un árbol está balanceado si para cada nodo la diferencia
 -- entre el número de nodos de sus subárboles izquierdo y derecho es
 -- menor o igual que uno.
 --
--- Definir la función
+-- Usando el [tipo de los árboles binarios con valores en los nodos]
+-- (https://bit.ly/40Pplzj), definir la función
 --    balanceado :: Arbol a -> Bool
 -- tal que (balanceado a) se verifica si el árbol a está balanceado. Por
 -- ejemplo,
@@ -35,9 +22,7 @@
 
 module Arboles_balanceados where
 
-data Arbol a = H
-             | N a (Arbol a) (Arbol a)
-  deriving (Show, Eq)
+import Arbol_binario_valores_en_nodos (Arbol (H, N))
 
 balanceado :: Arbol a -> Bool
 balanceado H         = True

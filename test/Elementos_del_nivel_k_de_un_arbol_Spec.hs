@@ -1,6 +1,7 @@
 module Elementos_del_nivel_k_de_un_arbol_Spec (main, spec) where
 
 import Elementos_del_nivel_k_de_un_arbol
+import Arboles_binarios (Arbol (H, N))
 import Test.Hspec
 
 main :: IO ()

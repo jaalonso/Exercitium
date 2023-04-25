@@ -1,6 +1,7 @@
 module Arboles_balanceados_Spec (main, spec) where
 
 import Arboles_balanceados
+import Arbol_binario_valores_en_nodos (Arbol (H, N))
 import Test.Hspec
 
 main :: IO ()

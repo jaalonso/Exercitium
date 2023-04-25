@@ -5,11 +5,9 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Los árboles binarios con valores en las hojas y en los nodos se
--- definen por
---    data Arbol a = H a
---                 | N a (Arbol a) (Arbol a)
---      deriving Show
+-- Usaremos el [tipo de los árboles binarios con valores en los nodos y
+-- en las hojas](https://bit.ly/3H53exA).
+--
 -- Por ejemplo, los árboles
 --         5              8             5           5
 --        / \            / \           / \         / \
@@ -35,9 +33,7 @@
 
 module Arboles_con_igual_estructura where
 
-data Arbol a = H a
-             | N a (Arbol a) (Arbol a)
-  deriving (Show, Eq)
+import Arboles_binarios (Arbol (H, N))
 
 ej3arbol1, ej3arbol2, ej3arbol3, ej3arbol4 :: Arbol Int
 ej3arbol1 = N 5 (N 9 (H 1) (H 4)) (N 7 (H 6) (H 8))

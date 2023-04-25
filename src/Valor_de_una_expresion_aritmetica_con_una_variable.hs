@@ -5,8 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Usando el [tipo de las expresiones aritméticas con una variable](https://bit.ly/40mwjeF),
--- definir la función
+-- Usando el [tipo de las expresiones aritméticas con una variable]
+-- (https://bit.ly/40mwjeF), definir la función
 --    valor :: Expr -> Int -> Int
 -- tal que (valor e n) es el valor de la expresión e cuando se
 -- sustituye su variable por n. Por ejemplo,

@@ -5,24 +5,11 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Los árboles binarios con valores en las hojas y en los nodos se
--- definen por
---    data Arbol a = H a
---                 | N a (Arbol a) (Arbol a)
--- Por ejemplo, el árbol
---         7
---        / \
---       /   \
---      2     9
---     / \
---    5   4
--- se representa por
---    N 7 (N 2 (H 5) (H 4)) (H 9)
---
 -- Un elemento de un árbol se dirá de nivel k si aparece en el árbol a
 -- distancia k  de la raíz.
 --
--- Definir la función
+-- Usando el [tipo de los árboles binarios con valores en los nodos y
+-- en las hojas](https://bit.ly/3H53exA), definir la función
 --    nivel :: Int -> Arbol a -> [a]
 -- tal que (nivel k a) es la lista de los elementos de nivel k del árbol
 -- a. Por ejemplo,
@@ -36,8 +23,7 @@
 
 module Elementos_del_nivel_k_de_un_arbol where
 
-data Arbol a = H a
-             | N a (Arbol a) (Arbol a)
+import Arboles_binarios (Arbol (H, N))
 
 nivel :: Int -> Arbol a -> [a]
 nivel 0 (H x)      = [x]

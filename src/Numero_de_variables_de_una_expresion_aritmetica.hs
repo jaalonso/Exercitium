@@ -5,8 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Usando el [tipo de las expresiones aritméticas con una variable](https://bit.ly/40mwjeF),
--- definir la función
+-- Usando el [tipo de las expresiones aritméticas con una variable]
+-- (https://bit.ly/40mwjeF), definir la función
 --    numVars :: Expr -> Int
 -- tal que (numVars e) es el número de variables en la expresión e. Por
 -- ejemplo,
