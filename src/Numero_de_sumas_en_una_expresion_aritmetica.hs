@@ -5,16 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Las expresiones aritméticas con variables pueden representarse usando
--- el siguiente tipo de datos
---    data Expr = C Int
---              | V Char
---              | S Expr Expr
---              | P Expr Expr
--- Por ejemplo, la expresión 2*(a+5) se representa por
---    P (C 2) (S (V 'a') (C 5))
---
--- Definir la función
+-- Usando el [tipo de las expresiones aritméticas con variables]
+-- (https://bit.ly/3HfB0QO), definir la función
 --    sumas :: Expr -> Int
 -- tal que (sumas e) es el número de sumas en la expresión e. Por
 -- ejemplo,
@@ -25,10 +17,7 @@
 
 module Numero_de_sumas_en_una_expresion_aritmetica where
 
-data Expr = C Int
-          | V Char
-          | S Expr Expr
-          | P Expr Expr
+import Expresion_aritmetica_con_variables (Expr (C, V, S, P))
 
 sumas :: Expr -> Int
 sumas (V _)   = 0

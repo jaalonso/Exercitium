@@ -5,16 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Las expresiones aritméticas con variables pueden representarse usando
--- el siguiente tipo de datos
---    data Expr = C Int
---              | V Char
---              | S Expr Expr
---              | P Expr Expr
--- Por ejemplo, la expresión 2*(a+5) se representa por
---    P (C 2) (S (V 'a') (C 5))
---
--- Definir la función
+-- Usando el [tipo de las expresiones aritméticas con variables]
+-- (https://bit.ly/3HfB0QO), definir la función
 --    valor :: Expr -> [(Char,Int)] -> Int
 -- tal que (valor x e) es el valor de la expresión x en el entorno e (es
 -- decir, el valor de la expresión donde las variables de x se sustituyen
@@ -25,10 +17,7 @@
 
 module Valor_de_una_expresion_aritmetica_con_variables where
 
-data Expr = C Int
-          | V Char
-          | S Expr Expr
-          | P Expr Expr
+import Expresion_aritmetica_con_variables (Expr (C, V, S, P))
 
 valor :: Expr -> [(Char,Int)] -> Int
 valor (C x)   _ = x

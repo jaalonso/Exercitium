@@ -1,6 +1,7 @@
 module Sustitucion_en_una_expresion_aritmetica_Spec (main, spec) where
 
 import Sustitucion_en_una_expresion_aritmetica
+import Expresion_aritmetica_con_variables (Expr (C, V, S, P))
 import Test.Hspec
 
 main :: IO ()

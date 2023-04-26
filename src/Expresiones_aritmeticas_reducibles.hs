@@ -5,16 +5,8 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Las expresiones aritméticas con variables pueden representarse usando
--- el siguiente tipo de datos
---    data Expr = C Int
---              | V Char
---              | S Expr Expr
---              | P Expr Expr
--- Por ejemplo, la expresión 2*(a+5) se representa por
---    P (C 2) (S (V 'a') (C 5))
---
--- Definir la función
+-- Usando el [tipo de las expresiones aritméticas con variables]
+-- (https://bit.ly/3HfB0QO), definir la función
 --    reducible :: Expr -> Bool
 -- tal que (reducible a) se verifica si a es una expresión reducible; es
 -- decir, contiene una operación en la que los dos operandos son números.
@@ -30,10 +22,7 @@
 
 module Expresiones_aritmeticas_reducibles where
 
-data Expr = C Int
-          | V Char
-          | S Expr Expr
-          | P Expr Expr
+import Expresion_aritmetica_con_variables (Expr (C, V, S, P))
 
 reducible :: Expr -> Bool
 reducible (C _)           = False

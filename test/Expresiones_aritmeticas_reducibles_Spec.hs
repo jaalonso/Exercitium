@@ -1,6 +1,7 @@
 module Expresiones_aritmeticas_reducibles_Spec (main, spec) where
 
 import Expresiones_aritmeticas_reducibles
+import Expresion_aritmetica_con_variables (Expr (C, V, S, P))
 import Test.Hspec
 
 main :: IO ()

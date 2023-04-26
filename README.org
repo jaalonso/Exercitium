@@ -264,11 +264,12 @@ Los objetivos de esta recopilación son:
 + [[./src/Expresion_aritmetica_con_una_variable.hs][El tipo de expresiones aritméticas con una variable]].
   + [[./src/Valor_de_una_expresion_aritmetica_con_una_variable.hs][Valor de una expresión aritmética con una variable]].
   + [[./src/Numero_de_variables_de_una_expresion_aritmetica.hs][Número de variables de una expresión aritmética]].
-+ [[./src/Valor_de_una_expresion_aritmetica_con_variables.hs][Valor de una expresión aritmética con variables]].
-+ [[./src/Numero_de_sumas_en_una_expresion_aritmetica.hs][Número de sumas en una expresión aritmética]].
-+ [[./src/Sustitucion_en_una_expresion_aritmetica.hs][Sustitución en una expresión aritmética]].
-+ [[./src/Expresiones_aritmeticas_reducibles.hs][Expresiones aritméticas reducibles]].
-+ [[./src/Maximos_valores_de_una_expresion_aritmetica.hs][Máximos valores de una expresión aritmética]].
++ [[./src/Expresion_aritmetica_con_variables.hs][El tipo de las expresiones aritméticas con variables]].
+  + [[./src/Valor_de_una_expresion_aritmetica_con_variables.hs][Valor de una expresión aritmética con variables]].
+  + [[./src/Numero_de_sumas_en_una_expresion_aritmetica.hs][Número de sumas en una expresión aritmética]].
+  + [[./src/Sustitucion_en_una_expresion_aritmetica.hs][Sustitución en una expresión aritmética]].
+  + [[./src/Expresiones_aritmeticas_reducibles.hs][Expresiones aritméticas reducibles]].
+  + [[./src/Maximos_valores_de_una_expresion_aritmetica.hs][Máximos valores de una expresión aritmética]].
 + [[./src/Valor_de_expresiones_aritmeticas_generales.hs][Valor de expresiones aritméticas generales]].
 + [[./src/Valor_de_una_expresion_vectorial.hs][Valor de una expresión vectorial]].
 + [[./src/TAD/Pila.hs][El tipo abstracto de datos de las pilas]].
