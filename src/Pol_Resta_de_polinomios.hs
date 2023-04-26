@@ -8,7 +8,7 @@
 -- Usando el [tipo abstracto de los polinomios](https://bit.ly/3KwqXYu),
 -- definir la función
 --    restaPol :: (Num a, Eq a) => Polinomio a -> Polinomio a -> Polinomio a
--- tal que (restaPol p q) es la el polinomio obtenido restándole a p el
+-- tal que (restaPol p q) es el polinomio obtenido restándole a p el
 -- q. Por ejemplo,
 --    λ> ejPol1 = consPol 5 1 (consPol 4 5 (consPol 2 5 (consPol 0 9 polCero)))
 --    λ> ejPol2 = consPol 4 3 (consPol 2 5 (consPol 0 3 polCero))
