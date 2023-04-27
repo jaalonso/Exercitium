@@ -362,3 +362,4 @@ Los objetivos de esta recopilación son:
 + L01 [[./src/Pol_Comprobacion_de_raices_de_polinomios.hs][TAD de los polinomios: Comprobación de raíces de polinomios]]
 + M02 [[./src/Pol_Derivada_de_un_polinomio.hs][TAD de los polinomios: Derivada de un polinomio]].
 + X03 [[./src/Pol_Resta_de_polinomios.hs][TAD de los polinomios: Resta de polinomios]].
++ J04 [[./src/Pol_Potencia_de_un_polinomio.hs][TAD de los polinomios: Potencia de un polinomio]].
