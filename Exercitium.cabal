@@ -214,6 +214,7 @@ library
       Pol_Crea_termino
       Pol_Derivada_de_un_polinomio
       Pol_Integral_de_un_polinomio
+      Pol_Integral_definida_de_un_polinomio
       Pol_Potencia_de_un_polinomio
       Pol_Producto_polinomios
       Pol_Resta_de_polinomios
@@ -591,6 +592,7 @@ test-suite Exercitium-test
       Pol_Crea_termino_Spec
       Pol_Derivada_de_un_polinomio_Spec
       Pol_Integral_de_un_polinomio_Spec
+      Pol_Integral_definida_de_un_polinomio_Spec
       Pol_Potencia_de_un_polinomio_Spec
       Pol_Producto_polinomios_Spec
       Pol_Resta_de_polinomios_Spec

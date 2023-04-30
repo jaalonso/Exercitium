@@ -364,3 +364,4 @@ Los objetivos de esta recopilación son:
 + X03 [[./src/Pol_Resta_de_polinomios.hs][TAD de los polinomios: Resta de polinomios]].
 + J04 [[./src/Pol_Potencia_de_un_polinomio.hs][TAD de los polinomios: Potencia de un polinomio]].
 + V05 [[./src/Pol_Integral_de_un_polinomio.hs][TAD de los polinomios: Integral de un polinomio]].
++ L08 [[./src/Pol_Integral_definida_de_un_polinomio.hs][TAD de los polinomios: Integral definida de un polinomio]].
