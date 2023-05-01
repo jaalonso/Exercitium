@@ -9,7 +9,7 @@
 -- definir la función
 --    integralDef :: (Fractional t, Eq t) => Polinomio t -> t -> t -> t
 -- tal que (integralDef p a b) es la integral definida del polinomio p
--- cuyos coefientes son números racionales. Por ejemplo,
+-- entre a y b. Por ejemplo,
 --    λ> ejPol = consPol 7 2 (consPol 4 5 (consPol 2 5 polCero))
 --    λ> ejPol
 --    2*x^7 + 5*x^4 + 5*x^2

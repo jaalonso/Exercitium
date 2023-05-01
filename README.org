@@ -353,10 +353,8 @@ Los objetivos de esta recopilación son:
   + [[./src/Pol_Crea_termino.hs][TAD de los polinomios: Construcción de términos]].
   + [[./src/Pol_Termino_lider.hs][TAD de los polinomios: Término líder de un polinomio]].
   + [[./src/Pol_Suma_de_polinomios.hs][TAD de los polinomios: Suma de polinomios]].
-
-** Para abril
-+ J27 [[./src/Pol_Producto_polinomios.hs][TAD de los polinomios: Producto de polinomios]].
-+ V28 [[./src/Pol_Valor_de_un_polinomio_en_un_punto.hs][TAD de los polinomios: Valor de un polinomio en un punto]].
+  + [[./src/Pol_Producto_polinomios.hs][TAD de los polinomios: Producto de polinomios]].
+  + [[./src/Pol_Valor_de_un_polinomio_en_un_punto.hs][TAD de los polinomios: Valor de un polinomio en un punto]].
 
 ** Mayo 2023
 + L01 [[./src/Pol_Comprobacion_de_raices_de_polinomios.hs][TAD de los polinomios: Comprobación de raíces de polinomios]]
@@ -365,3 +363,4 @@ Los objetivos de esta recopilación son:
 + J04 [[./src/Pol_Potencia_de_un_polinomio.hs][TAD de los polinomios: Potencia de un polinomio]].
 + V05 [[./src/Pol_Integral_de_un_polinomio.hs][TAD de los polinomios: Integral de un polinomio]].
 + L08 [[./src/Pol_Integral_definida_de_un_polinomio.hs][TAD de los polinomios: Integral definida de un polinomio]].
++ M09 [[./src/Pol_Multiplicacion_de_un_polinomio_por_un_numero.hs][TAD de los polinomios: Multiplicación de un polinomio por un número]].
