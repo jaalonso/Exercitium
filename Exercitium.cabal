@@ -213,6 +213,7 @@ library
       Pol_Comprobacion_de_raices_de_polinomios
       Pol_Crea_termino
       Pol_Derivada_de_un_polinomio
+      Pol_Division_de_polinomios
       Pol_Integral_de_un_polinomio
       Pol_Integral_definida_de_un_polinomio
       Pol_Multiplicacion_de_un_polinomio_por_un_numero
@@ -592,6 +593,7 @@ test-suite Exercitium-test
       Pol_Comprobacion_de_raices_de_polinomios_Spec
       Pol_Crea_termino_Spec
       Pol_Derivada_de_un_polinomio_Spec
+      Pol_Division_de_polinomios_Spec
       Pol_Integral_de_un_polinomio_Spec
       Pol_Integral_definida_de_un_polinomio_Spec
       Pol_Multiplicacion_de_un_polinomio_por_un_numero_Spec
