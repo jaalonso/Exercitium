@@ -365,3 +365,4 @@ Los objetivos de esta recopilación son:
 + L08 [[./src/Pol_Integral_definida_de_un_polinomio.hs][TAD de los polinomios: Integral definida de un polinomio]].
 + M09 [[./src/Pol_Multiplicacion_de_un_polinomio_por_un_numero.hs][TAD de los polinomios: Multiplicación de un polinomio por un número]].
 + X10 [[./src/Pol_Division_de_polinomios.hs][TAD de los polinomios: División de polinomios]].
++ J11 [[./src/Pol_Divisibilidad_de_polinomios.hs][TAD de los polinomios: Divisibilidad de polinomios]].

@@ -11,7 +11,7 @@
 --                Polinomio a -> Polinomio a -> Polinomio a
 --    resto    :: (Fractional a, Eq a) =>
 --                Polinomio a -> Polinomio a -> Polinomio a
--- tale que
+-- tales que
 -- + (cociente p q) es el cociente de la división de p entre q. Por
 --   ejemplo,
 --      λ> pol1 = consPol 3 2 (consPol 2 9 (consPol 1 10 (consPol 0 4 polCero)))
@@ -34,7 +34,6 @@ import Pol_Crea_termino (creaTermino)
 import Pol_Producto_polinomios (multPol, multPorTerm)
 import Pol_Resta_de_polinomios (restaPol)
 import Pol_Multiplicacion_de_un_polinomio_por_un_numero (multEscalar)
--- import Data.Ratio
 
 cociente :: (Fractional a, Eq a) =>
             Polinomio a -> Polinomio a -> Polinomio a
