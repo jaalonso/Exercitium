@@ -217,6 +217,7 @@ library
       Pol_Division_de_polinomios
       Pol_Integral_de_un_polinomio
       Pol_Integral_definida_de_un_polinomio
+      Pol_Metodo_de_Horner_del_valor_de_un_polinomio
       Pol_Multiplicacion_de_un_polinomio_por_un_numero
       Pol_Potencia_de_un_polinomio
       Pol_Producto_polinomios
@@ -598,6 +599,7 @@ test-suite Exercitium-test
       Pol_Division_de_polinomios_Spec
       Pol_Integral_de_un_polinomio_Spec
       Pol_Integral_definida_de_un_polinomio_Spec
+      Pol_Metodo_de_Horner_del_valor_de_un_polinomio_Spec
       Pol_Multiplicacion_de_un_polinomio_por_un_numero_Spec
       Pol_Potencia_de_un_polinomio_Spec
       Pol_Producto_polinomios_Spec
