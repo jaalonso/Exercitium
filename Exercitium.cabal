@@ -215,6 +215,7 @@ library
       Pol_Derivada_de_un_polinomio
       Pol_Divisibilidad_de_polinomios
       Pol_Division_de_polinomios
+      Pol_Division_de_Ruffini_con_representacion_densa
       Pol_Integral_de_un_polinomio
       Pol_Integral_definida_de_un_polinomio
       Pol_Metodo_de_Horner_del_valor_de_un_polinomio
@@ -598,6 +599,7 @@ test-suite Exercitium-test
       Pol_Derivada_de_un_polinomio_Spec
       Pol_Divisibilidad_de_polinomios_Spec
       Pol_Division_de_polinomios_Spec
+      Pol_Division_de_Ruffini_con_representacion_densa_Spec
       Pol_Integral_de_un_polinomio_Spec
       Pol_Integral_definida_de_un_polinomio_Spec
       Pol_Metodo_de_Horner_del_valor_de_un_polinomio_Spec

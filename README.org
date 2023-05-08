@@ -368,3 +368,4 @@ Los objetivos de esta recopilación son:
 + J11 [[./src/Pol_Divisibilidad_de_polinomios.hs][TAD de los polinomios: Divisibilidad de polinomios]].
 + V12 [[./src/Pol_Metodo_de_Horner_del_valor_de_un_polinomio.hs][TAD de los polinomios: Método de Horner del valor de un polinomio]].
 + L15 [[./src/Pol_Termino_independiente_de_un_polinomio.hs][TAD de los polinomios: Término independiente de un polinomio]].
++ M16 [[./src/Pol_Division_de_Ruffini_con_representacion_densa.hs][TAD de los polinomios: Regla de Ruffini con representación densa]].
