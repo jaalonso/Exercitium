@@ -222,6 +222,7 @@ library
       Pol_Multiplicacion_de_un_polinomio_por_un_numero
       Pol_Potencia_de_un_polinomio
       Pol_Producto_polinomios
+      Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini
       Pol_Regla_de_Ruffini
       Pol_Resta_de_polinomios
       Pol_Suma_de_polinomios
@@ -607,6 +608,7 @@ test-suite Exercitium-test
       Pol_Multiplicacion_de_un_polinomio_por_un_numero_Spec
       Pol_Potencia_de_un_polinomio_Spec
       Pol_Producto_polinomios_Spec
+      Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini_Spec
       Pol_Regla_de_Ruffini_Spec
       Pol_Resta_de_polinomios_Spec
       Pol_Suma_de_polinomios_Spec

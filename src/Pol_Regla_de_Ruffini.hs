@@ -1,5 +1,5 @@
 -- Pol_Regla_de_Ruffini.hs
--- TAD de los polinomios: Regla de Ruffini
+-- TAD de los polinomios: Regla de Ruffini.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 17-mayo-2023
 -- ---------------------------------------------------------------------
