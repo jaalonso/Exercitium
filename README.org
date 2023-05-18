@@ -373,3 +373,6 @@ Los objetivos de esta recopilación son:
 + J18 [[./src/Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini.hs][TAD de los polinomios: Reconocimiento de raíces por la regla de Ruffini]].
 + V19 [[./src/Pol_Raices_enteras_de_un_polinomio.hs][TAD de los polinomios: Raíces enteras de un polinomio]].
 + L22 [[./src/Pol_Factorizacion_de_un_polinomio.hs][TAD de los polinomios: Factorización de un polinomio]].
++ M23 [[./src/TAD/Grafo.hs][El tipo abstracto de datos de los grafos]].
++ M23 [[./src/TAD/GrafoConListaDeAdyacencia.hs][El TAD de los grafos mediante listas de adyacencia]].
++ X24 [[./src/Grafo_Grafos_completos.hs][TAD de los grafos: Grafos_completos]].
