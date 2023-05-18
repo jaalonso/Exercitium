@@ -120,6 +120,7 @@ library
       Familias_de_numeros_con_algun_digito_en_comun
       FiltraPila
       Formula_de_Heron_para_el_area_de_un_triangulo
+      Grafo_Grafos_completos
       Huecos_maximales_entre_primos
       Igualdad_de_conjuntos
       Iguales_al_siguiente
@@ -323,6 +324,10 @@ library
       TAD.ConjuntoConListasNoOrdenadasConDuplicados
       TAD.ConjuntoConListasNoOrdenadasSinDuplicados
       TAD.ConjuntoConListasOrdenadasSinDuplicados
+      TAD.Grafo
+      TAD.GrafoConListaDeAdyacencia
+      TAD.GrafoConMatrizDeAdyacencia
+      TAD.GrafoConVectorDeAdyacencia
       TAD.Pila
       TAD.PilaConListas
       TAD.PilaConSucesiones
@@ -511,6 +516,7 @@ test-suite Exercitium-test
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       FiltraPila_Spec
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
+      GrafoConListaDeAdyacencia_Spec
       Huecos_maximales_entre_primos_Spec
       Igualdad_de_conjuntos_Spec
       Iguales_al_siguiente_Spec
