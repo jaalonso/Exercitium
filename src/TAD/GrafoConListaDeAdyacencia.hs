@@ -24,7 +24,6 @@ module TAD.GrafoConListaDeAdyacencia
 -- Librerías auxiliares                                               --
 import Data.Array
 import Data.List
--- import Test.QuickCheck
 
 -- Orientacion es D (dirigida) ó ND (no dirigida).
 data Orientacion = D | ND
@@ -32,7 +31,37 @@ data Orientacion = D | ND
 
 -- (Grafo v p) es un grafo con vértices de tipo v y pesos de tipo p.
 data Grafo v p = G Orientacion ([v],[((v,v),p)])
-  deriving (Eq, Show)
+  deriving Eq
+
+-- (escribeGrafo g) es la cadena correspondiente al grafo g. Por
+-- ejemplo,
+--    λ> escribeGrafo (creaGrafo ND (1,3) [(1,2,0),(2,3,5),(2,2,0)])
+--    "G ND [1,2,3] [((1,2),0),((2,2),0),((2,3),5)]"
+--    λ> escribeGrafo (creaGrafo D (1,3) [(1,2,0),(2,3,5),(2,2,0)])
+--    "G D [1,2,3] [((1,2),0),((2,2),0),((2,3),5)]"
+--    λ> escribeGrafo (creaGrafo ND (1,3) [(1,2,0),(2,3,0),(2,2,0)])
+--    "G ND [1,2,3] [(1,2),(2,2),(2,3)]"
+--    λ> escribeGrafo (creaGrafo D (1,3) [(1,2,0),(2,3,0),(2,2,0)])
+--    "G D [1,2,3] [(1,2),(2,2),(2,3)]"
+--    λ> escribeGrafo (creaGrafo D (1,3) [(1,2,0),(3,2,0),(2,2,0)])
+--    "G D [1,2,3] [(1,2),(2,2),(3,2)]"
+--    λ> escribeGrafo (creaGrafo ND (1,3) [(1,2,0),(3,2,0),(2,2,0)])
+--    "G ND [1,2,3] [(1,2),(2,2),(2,3)]"
+escribeGrafo :: (Ix v,Num p,Eq p,Show v,Show p) => Grafo v p -> String
+escribeGrafo (G o (vs,as)) =
+  "G " ++ show o ++ " " ++ show vs ++ " " ++ escribeAristas
+  where
+    aristasReducidas
+      | o == D    = as
+      | otherwise = [((x,y),p) | ((x,y),p) <- as, x <= y]
+    escribeAristas
+      | ponderado = show aristasReducidas
+      | otherwise = show [a | (a,_) <- aristasReducidas]
+    ponderado = any (\((_,_),p) -> p /= 0) as
+
+-- Procedimiento de escritura de grafos
+instance (Ix v,Num p,Eq p,Show v,Show p) => Show (Grafo v p) where
+  show = escribeGrafo
 
 -- (creaGrafo o cs as) es un grafo (dirigido o no, según el valor de o),
 -- con el par de cotas cs y listas de aristas as (cada arista es un trío

@@ -120,6 +120,7 @@ library
       Familias_de_numeros_con_algun_digito_en_comun
       FiltraPila
       Formula_de_Heron_para_el_area_de_un_triangulo
+      Grafo_Grafos_ciclos
       Grafo_Grafos_completos
       Huecos_maximales_entre_primos
       Igualdad_de_conjuntos
@@ -516,6 +517,7 @@ test-suite Exercitium-test
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       FiltraPila_Spec
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
+      Grafo_Grafos_ciclos_Spec
       Grafo_Grafos_completos_Spec
       GrafoConListaDeAdyacencia_Spec
       Huecos_maximales_entre_primos_Spec

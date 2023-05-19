@@ -376,3 +376,4 @@ Los objetivos de esta recopilación son:
 + M23 [[./src/TAD/Grafo.hs][El tipo abstracto de datos de los grafos]].
 + M23 [[./src/TAD/GrafoConListaDeAdyacencia.hs][El TAD de los grafos mediante listas de adyacencia]].
 + X24 [[./src/Grafo_Grafos_completos.hs][TAD de los grafos: Grafos_completos]].
++ J25 [[./src/Grafo_Grafos_ciclos.hs][TAD de los grafos: Grafos ciclos]].
