@@ -19,8 +19,8 @@
 
 module Grafo_Grafos_completos where
 
-import TAD.Grafo (Grafo, Orientacion (ND), creaGrafo)
+import TAD.Grafo (Grafo, Orientacion (ND), creaGrafo')
 
 completo :: Int -> Grafo Int Int
 completo n =
-  creaGrafo ND (1,n) [(x,y,0) | x <- [1..n], y <- [x+1..n]]
+  creaGrafo' ND (1,n) [(x,y) | x <- [1..n], y <- [x+1..n]]

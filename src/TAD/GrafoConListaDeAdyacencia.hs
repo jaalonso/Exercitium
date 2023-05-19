@@ -11,16 +11,14 @@
 module TAD.GrafoConListaDeAdyacencia
     (Orientacion (..),
      Grafo,
-     creaGrafo,  -- (Ix v, Num p, Ord v, Ord p) =>
-                 -- Orientacion -> (v,v) -> [(v,v,p)] -> Grafo v p
-     creaGrafo', -- (Ix v, Num p, Ord v, Ord p) =>
-                 -- Orientacion -> (v,v) -> [(v,v)] -> Grafo v p
-     dirigido,   -- (Ix v,Num p) => (Grafo v p) -> Bool
-     adyacentes, -- (Ix v,Num p) => (Grafo v p) -> v -> [v]
-     nodos,      -- (Ix v,Num p) => (Grafo v p) -> [v]
-     aristas,    -- (Ix v,Num p) => (Grafo v p) -> [((v,v),p)]
-     aristaEn,   -- (Ix v,Num p) => (Grafo v p) -> (v,v) -> Bool
-     peso        -- (Ix v,Num p) => v -> v -> (Grafo v p) -> p
+     creaGrafo,
+     creaGrafo',
+     dirigido,
+     adyacentes,
+     nodos,
+     aristas,
+     aristaEn,
+     peso
     ) where
 
 -- Librerías auxiliares                                               --
