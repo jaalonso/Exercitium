@@ -19,8 +19,8 @@
 
 module Grafo_Grafos_ciclos where
 
-import TAD.Grafo (Grafo, Orientacion (ND), creaGrafo)
+import TAD.Grafo (Grafo, Orientacion (ND), creaGrafo')
 
 grafoCiclo :: Int -> Grafo Int Int
 grafoCiclo n =
-  creaGrafo ND (1,n) ((n,1,0):[(x,x+1,0) | x <- [1..n-1]])
+  creaGrafo' ND (1,n) ((n,1):[(x,x+1) | x <- [1..n-1]])
