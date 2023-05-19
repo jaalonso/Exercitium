@@ -45,18 +45,21 @@
 -- + El vértice 4 está conectado con el vértice 5 (peso 93).
 --
 -- Las operaciones del tipo abstracto de datos (TAD) de los grafos son
---    creaGrafo   :: (Ix v,Num p) => Orientacion -> (v,v) -> [(v,v,p)] -> Grafo v p
---    dirigido    :: (Ix v,Num p) => (Grafo v p) -> Bool
---    adyacentes  :: (Ix v,Num p) => (Grafo v p) -> v -> [v]
---    nodos       :: (Ix v,Num p) => (Grafo v p) -> [v]
---    aristas     :: (Ix v,Num p) => (Grafo v p) -> [(v,v,p)]
---    aristaEn    :: (Ix v,Num p) => (Grafo v p) -> (v,v) -> Bool
---    peso        :: (Ix v,Num p) => v -> v -> (Grafo v p) -> p
+--    creaGrafo  :: (Ix v, Num p, Ord v, Ord p) =>
+--                   Orientacion -> (v,v) -> [(v,v,p)] -> Grafo v p
+--    creaGrafo' :: (Ix v, Num p, Ord v, Ord p) =>
+--                   Orientacion -> (v,v) -> [(v,v)] -> Grafo v p
+--    dirigido   :: (Ix v,Num p) => (Grafo v p) -> Bool
+--    adyacentes :: (Ix v,Num p) => (Grafo v p) -> v -> [v]
+--    nodos      :: (Ix v,Num p) => (Grafo v p) -> [v]
+--    aristas    :: (Ix v,Num p) => (Grafo v p) -> [(v,v,p)]
+--    aristaEn   :: (Ix v,Num p) => (Grafo v p) -> (v,v) -> Bool
+--    peso       :: (Ix v,Num p) => v -> v -> (Grafo v p) -> p
 -- tales que
 --    + (creaGrafo o cs as) es un grafo (dirigido o no, según el valor
 --       de o), con el par de cotas cs y listas de aristas as (cada
---       arista es un trío formado por los dos vértices y su peso). Ver
---       un ejemplo en el siguiente apartado.
+--       arista es un trío formado por los dos vértices y su peso).
+--    + creaGrafo' es la versión de creaGrafo para los grafos sin pesos.
 --    + (dirigido g) se verifica si g es dirigido.
 --    + (nodos g) es la lista de todos los nodos del grafo g.
 --    + (aristas g) es la lista de las aristas del grafo g.
@@ -96,14 +99,14 @@
 module TAD.Grafo
   (Orientacion (..),
    Grafo,
-   creaGrafo,  -- (Ix v,Num p) => Orientacion -> (v,v) -> [(v,v,p)] ->
-               --                 Grafo v p
-   dirigido,   -- (Ix v,Num p) => (Grafo v p) -> Bool
-   adyacentes, -- (Ix v,Num p) => (Grafo v p) -> v -> [v]
-   nodos,      -- (Ix v,Num p) => (Grafo v p) -> [v]
-   aristas,    -- (Ix v,Num p) => (Grafo v p) -> [(v,v,p)]
-   aristaEn,   -- (Ix v,Num p) => (Grafo v p) -> (v,v) -> Bool
-   peso        -- (Ix v,Num p) => v -> v -> (Grafo v p) -> p
+   creaGrafo,
+   creaGrafo',
+   dirigido,
+   adyacentes,
+   nodos,
+   aristas,
+   aristaEn,
+   peso
   ) where
 
 import TAD.GrafoConListaDeAdyacencia

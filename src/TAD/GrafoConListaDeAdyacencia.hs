@@ -11,8 +11,10 @@
 module TAD.GrafoConListaDeAdyacencia
     (Orientacion (..),
      Grafo,
-     creaGrafo,  -- (Ix v,Num p) => Orientacion -> (v,v) -> [(v,v,p)] ->
-                 --                 Grafo v p
+     creaGrafo,  -- (Ix v, Num p, Ord v, Ord p) =>
+                 -- Orientacion -> (v,v) -> [(v,v,p)] -> Grafo v p
+     creaGrafo', -- (Ix v, Num p, Ord v, Ord p) =>
+                 -- Orientacion -> (v,v) -> [(v,v)] -> Grafo v p
      dirigido,   -- (Ix v,Num p) => (Grafo v p) -> Bool
      adyacentes, -- (Ix v,Num p) => (Grafo v p) -> v -> [v]
      nodos,      -- (Ix v,Num p) => (Grafo v p) -> [v]
@@ -76,9 +78,21 @@ creaGrafo :: (Ix v, Num p, Ord v, Ord p) =>
              Orientacion -> (v,v) -> [(v,v,p)] -> Grafo v p
 creaGrafo o cs as =
   G o (range cs,
-       sort ([((x1,x2),w) | (x1,x2,w) <- as] ++
+       sort ([((x1,x2),p) | (x1,x2,p) <- as] ++
              if o == D then []
-             else [((x2,x1),w) | (x1,x2,w) <- as, x1 /= x2]))
+             else [((x2,x1),p) | (x1,x2,p) <- as, x1 /= x2]))
+
+-- (creaGrafo' o cs as) es un grafo (dirigido o no, según el valor de o),
+-- con el par de cotas cs y listas de aristas as (cada arista es un par
+-- de vértices y se supone que su peso es 0). Por ejemplo,
+--    λ> creaGrafo' ND (1,3) [(2,1),(1,3)]
+--    G ND ([1,2,3],[(1,2),(1,3)])
+--    λ> creaGrafo' D (1,3) [(2,1),(1,3)]
+--    G D ([1,2,3],[(1,3),(2,1)])
+creaGrafo' :: (Ix v, Num p, Ord v, Ord p) =>
+              Orientacion -> (v,v) -> [(v,v)] -> Grafo v p
+creaGrafo' o cs as =
+  creaGrafo o cs [(v1,v2,0) | (v1,v2) <- as]
 
 -- ejGrafoND es el grafo
 --             12
