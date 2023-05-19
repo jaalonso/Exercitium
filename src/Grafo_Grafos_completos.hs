@@ -14,7 +14,7 @@
 --    completo :: Int -> Grafo Int Int
 -- tal que (completo n) es el grafo completo de orden n. Por ejemplo,
 --    λ> completo 4
---    G ND [1,2,3,4] [(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)]
+--    G ND ([1,2,3,4],[(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)])
 -- ---------------------------------------------------------------------
 
 module Grafo_Grafos_completos where

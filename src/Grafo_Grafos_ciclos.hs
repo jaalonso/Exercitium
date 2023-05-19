@@ -14,7 +14,7 @@
 --    grafoCiclo :: Int -> Grafo Int Int
 -- tal que (grafoCiclo n) es el grafo ciclo de orden n. Por ejemplo,
 --    λ> grafoCiclo 3
---    G ND [1,2,3] [(1,2),(1,3),(2,3)]
+--    G ND ([1,2,3],[(1,2),(1,3),(2,3)])
 -- ---------------------------------------------------------------------
 
 module Grafo_Grafos_ciclos where

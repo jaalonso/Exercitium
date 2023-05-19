@@ -36,20 +36,20 @@ data Grafo v p = G Orientacion ([v],[((v,v),p)])
 -- (escribeGrafo g) es la cadena correspondiente al grafo g. Por
 -- ejemplo,
 --    λ> escribeGrafo (creaGrafo ND (1,3) [(1,2,0),(2,3,5),(2,2,0)])
---    "G ND [1,2,3] [((1,2),0),((2,2),0),((2,3),5)]"
+--    "G ND ([1,2,3],[((1,2),0),((2,2),0),((2,3),5)])"
 --    λ> escribeGrafo (creaGrafo D (1,3) [(1,2,0),(2,3,5),(2,2,0)])
---    "G D [1,2,3] [((1,2),0),((2,2),0),((2,3),5)]"
+--    "G D ([1,2,3],[((1,2),0),((2,2),0),((2,3),5)])"
 --    λ> escribeGrafo (creaGrafo ND (1,3) [(1,2,0),(2,3,0),(2,2,0)])
---    "G ND [1,2,3] [(1,2),(2,2),(2,3)]"
+--    "G ND ([1,2,3],[(1,2),(2,2),(2,3)])"
 --    λ> escribeGrafo (creaGrafo D (1,3) [(1,2,0),(2,3,0),(2,2,0)])
---    "G D [1,2,3] [(1,2),(2,2),(2,3)]"
+--    "G D ([1,2,3],[(1,2),(2,2),(2,3)])"
 --    λ> escribeGrafo (creaGrafo D (1,3) [(1,2,0),(3,2,0),(2,2,0)])
---    "G D [1,2,3] [(1,2),(2,2),(3,2)]"
+--    "G D ([1,2,3],[(1,2),(2,2),(3,2)])"
 --    λ> escribeGrafo (creaGrafo ND (1,3) [(1,2,0),(3,2,0),(2,2,0)])
---    "G ND [1,2,3] [(1,2),(2,2),(2,3)]"
+--    "G ND ([1,2,3],[(1,2),(2,2),(2,3)])"
 escribeGrafo :: (Ix v,Num p,Eq p,Show v,Show p) => Grafo v p -> String
 escribeGrafo (G o (vs,as)) =
-  "G " ++ show o ++ " " ++ show vs ++ " " ++ escribeAristas
+  "G " ++ show o ++ " (" ++ show vs ++ "," ++ escribeAristas ++ ")"
   where
     aristasReducidas
       | o == D    = as
@@ -98,27 +98,12 @@ ejGrafoND = creaGrafo ND (1,5) [(1,2,12),(1,3,34),(1,5,78),
                                 (2,4,55),(2,5,32),
                                 (3,4,61),(3,5,44),
                                 (4,5,93)]
--- y su valor es
---    λ> ejGrafoND
---    G ND ([1,2,3,4,5],[((1,2),12),((1,3),34),((1,5),78),
---                       ((2,1),12),((2,4),55),((2,5),32),
---                       ((3,1),34),((3,4),61),((3,5),44),
---                       ((4,2),55),((4,3),61),((4,5),93),
---                       ((5,1),78),((5,2),32),((5,3),44),((5,4),93)])
 
--- ejGrafoD es el mismo grafo que ejGrafoND pero orientando las aristas;
--- es decir,
 ejGrafoD :: Grafo Int Int
 ejGrafoD = creaGrafo D (1,5) [(1,2,12),(1,3,34),(1,5,78),
                               (2,4,55),(2,5,32),
                               (3,4,61),(3,5,44),
                               (4,5,93)]
--- Su valor es
---    λ> ejGrafoD
---    G D ([1,2,3,4,5],[((1,2),12),((1,3),34),((1,5),78),
---                      ((2,4),55),((2,5),32),
---                      ((3,4),61),((3,5),44),
---                      ((4,5),93)])
 
 -- (dirigido g) se verifica si g es dirigido. Por ejemplo,
 --    dirigido ejGrafoD   ==  True
