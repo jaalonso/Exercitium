@@ -522,6 +522,8 @@ test-suite Exercitium-test
       Grafo_Grafos_completos_Spec
       Grafo_Numero_de_vertices_Spec
       GrafoConListaDeAdyacencia_Spec
+      GrafoConMatrizDeAdyacencia_Spec
+      GrafoConVectorDeAdyacencia_Spec
       Huecos_maximales_entre_primos_Spec
       Igualdad_de_conjuntos_Spec
       Iguales_al_siguiente_Spec

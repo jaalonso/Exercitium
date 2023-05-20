@@ -11,7 +11,7 @@
 -- tal que (nVertices g) es el número de vértices del grafo g. Por
 -- ejemplo,
 --    nVertices (creaGrafo' D (1,5) [(1,2),(3,1)])   ==  5
---    nVertices (creaGrafo' ND (2,4) [(1,2),(3,1)])  ==  3
+--    nVertices (creaGrafo' ND (0,5) [(1,2),(3,1)])  ==  6
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}

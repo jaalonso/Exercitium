@@ -12,4 +12,4 @@ spec = do
   it "e1" $
     nVertices (creaGrafo' D (1,5) [(1,2),(3,1)])  `shouldBe` 5
   it "e2" $
-    nVertices (creaGrafo' ND (2,4) [(1,2),(3,1)]) `shouldBe` 3
+    nVertices (creaGrafo' ND (0,5) [(1,2),(3,1)]) `shouldBe` 6
