@@ -1,0 +1,25 @@
+-- Grafo_Numero_de_vertices.hs
+-- TAD de los grafos: Número de vértices.
+-- José A. Alonso Jiménez <https://jaalonso.github.io>
+-- Sevilla, 26-mayo-2023
+-- ---------------------------------------------------------------------
+
+-- ---------------------------------------------------------------------
+-- Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
+-- definir la función,
+--    nVertices :: (Ix v, Num p) => Grafo v p ->  Int
+-- tal que (nVertices g) es el número de vértices del grafo g. Por
+-- ejemplo,
+--    nVertices (creaGrafo' D (1,5) [(1,2),(3,1)])   ==  5
+--    nVertices (creaGrafo' ND (2,4) [(1,2),(3,1)])  ==  3
+-- ---------------------------------------------------------------------
+
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
+module Grafo_Numero_de_vertices where
+
+import TAD.Grafo (Grafo, Orientacion (D, ND), nodos, creaGrafo')
+import Data.Ix
+
+nVertices :: (Ix v, Num p) => Grafo v p ->  Int
+nVertices = length . nodos

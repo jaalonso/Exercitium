@@ -122,6 +122,7 @@ library
       Formula_de_Heron_para_el_area_de_un_triangulo
       Grafo_Grafos_ciclos
       Grafo_Grafos_completos
+      Grafo_Numero_de_vertices
       Huecos_maximales_entre_primos
       Igualdad_de_conjuntos
       Iguales_al_siguiente
@@ -519,6 +520,7 @@ test-suite Exercitium-test
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
       Grafo_Grafos_ciclos_Spec
       Grafo_Grafos_completos_Spec
+      Grafo_Numero_de_vertices_Spec
       GrafoConListaDeAdyacencia_Spec
       Huecos_maximales_entre_primos_Spec
       Igualdad_de_conjuntos_Spec

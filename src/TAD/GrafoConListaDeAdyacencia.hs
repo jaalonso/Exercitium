@@ -22,8 +22,8 @@ module TAD.GrafoConListaDeAdyacencia
     ) where
 
 -- Librerías auxiliares                                               --
-import Data.Array
-import Data.List
+import Data.Ix (Ix, range)
+import Data.List (sort, nub)
 
 -- Orientacion es D (dirigida) ó ND (no dirigida).
 data Orientacion = D | ND
