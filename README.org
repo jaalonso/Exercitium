@@ -378,3 +378,4 @@ Los objetivos de esta recopilación son:
 + X24 [[./src/Grafo_Grafos_completos.hs][TAD de los grafos: Grafos_completos]].
 + J25 [[./src/Grafo_Grafos_ciclos.hs][TAD de los grafos: Grafos ciclos]].
 + V26 [[./src/Grafo_Numero_de_vertices.hs][TAD de los grafos: Número de vértices]].
++ L29 [[./src/Grafo_Incidentes_de_un_vertice.hs][TAD de los grafos: Incidentes de un vértice]].
