@@ -20,7 +20,28 @@
 module Grafo_Grafos_ciclos where
 
 import TAD.Grafo (Grafo, Orientacion (ND), creaGrafo')
+import Test.Hspec (Spec, hspec, it, shouldBe)
 
 grafoCiclo :: Int -> Grafo Int Int
 grafoCiclo n =
   creaGrafo' ND (1,n) ((n,1):[(x,x+1) | x <- [1..n-1]])
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+spec :: Spec
+spec = do
+  it "e1" $
+    show (grafoCiclo 3) `shouldBe`
+    "G ND ([1,2,3],[(1,2),(1,3),(2,3)])"
+
+-- La verificación es
+--    λ> verifica
+--
+--    e1
+--
+--    Finished in 0.0006 seconds
+--    1 example, 0 failures
