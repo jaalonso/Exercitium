@@ -360,18 +360,18 @@ Los objetivos de esta recopilación son:
   + [[./src/Pol_Resta_de_polinomios.hs][TAD de los polinomios: Resta de polinomios]].
   + [[./src/Pol_Potencia_de_un_polinomio.hs][TAD de los polinomios: Potencia de un polinomio]].
   + [[./src/Pol_Integral_de_un_polinomio.hs][TAD de los polinomios: Integral de un polinomio]].
+  + [[./src/Pol_Integral_definida_de_un_polinomio.hs][TAD de los polinomios: Integral definida de un polinomio]].
+  + [[./src/Pol_Multiplicacion_de_un_polinomio_por_un_numero.hs][TAD de los polinomios: Multiplicación de un polinomio por un número]].
+  + [[./src/Pol_Division_de_polinomios.hs][TAD de los polinomios: División de polinomios]].
+  + [[./src/Pol_Divisibilidad_de_polinomios.hs][TAD de los polinomios: Divisibilidad de polinomios]].
+  + [[./src/Pol_Metodo_de_Horner_del_valor_de_un_polinomio.hs][TAD de los polinomios: Método de Horner del valor de un polinomio]].
+  + [[./src/Pol_Termino_independiente_de_un_polinomio.hs][TAD de los polinomios: Término independiente de un polinomio]].
+  + [[./src/Pol_Division_de_Ruffini_con_representacion_densa.hs][TAD de los polinomios: Regla de Ruffini con representación densa]].
+  + [[./src/Pol_Regla_de_Ruffini.hs][TAD de los polinomios: Regla de Ruffini]].
+  + [[./src/Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini.hs][TAD de los polinomios: Reconocimiento de raíces por la regla de Ruffini]].
+  + [[./src/Pol_Raices_enteras_de_un_polinomio.hs][TAD de los polinomios: Raíces enteras de un polinomio]].
 
 ** Mayo 2023
-+ L08 [[./src/Pol_Integral_definida_de_un_polinomio.hs][TAD de los polinomios: Integral definida de un polinomio]].
-+ M09 [[./src/Pol_Multiplicacion_de_un_polinomio_por_un_numero.hs][TAD de los polinomios: Multiplicación de un polinomio por un número]].
-+ X10 [[./src/Pol_Division_de_polinomios.hs][TAD de los polinomios: División de polinomios]].
-+ J11 [[./src/Pol_Divisibilidad_de_polinomios.hs][TAD de los polinomios: Divisibilidad de polinomios]].
-+ V12 [[./src/Pol_Metodo_de_Horner_del_valor_de_un_polinomio.hs][TAD de los polinomios: Método de Horner del valor de un polinomio]].
-+ L15 [[./src/Pol_Termino_independiente_de_un_polinomio.hs][TAD de los polinomios: Término independiente de un polinomio]].
-+ M16 [[./src/Pol_Division_de_Ruffini_con_representacion_densa.hs][TAD de los polinomios: Regla de Ruffini con representación densa]].
-+ X17 [[./src/Pol_Regla_de_Ruffini.hs][TAD de los polinomios: Regla de Ruffini]].
-+ J18 [[./src/Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini.hs][TAD de los polinomios: Reconocimiento de raíces por la regla de Ruffini]].
-+ V19 [[./src/Pol_Raices_enteras_de_un_polinomio.hs][TAD de los polinomios: Raíces enteras de un polinomio]].
 + L22 [[./src/Pol_Factorizacion_de_un_polinomio.hs][TAD de los polinomios: Factorización de un polinomio]].
 + M23 [[./src/TAD/Grafo.hs][El tipo abstracto de datos de los grafos]].
 + M23 [[./src/TAD/GrafoConListaDeAdyacencia.hs][El TAD de los grafos mediante listas de adyacencia]].

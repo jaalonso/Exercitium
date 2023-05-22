@@ -32,14 +32,13 @@
 --     [1,-1,-2]
 -- ---------------------------------------------------------------------
 
-{-# OPTIONS_GHC -fno-warn-unused-imports #-}
-
 module Pol_Raices_enteras_de_un_polinomio where
 
 import TAD.Polinomio (Polinomio, consPol, polCero, esPolCero)
 import Pol_Termino_independiente_de_un_polinomio (terminoIndep)
 import Pol_Regla_de_Ruffini (cocienteRuffini)
 import Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini (esRaizRuffini)
+import Test.Hspec (Spec, hspec, it, shouldBe)
 
 raicesRuffini :: Polinomio Int -> [Int]
 raicesRuffini p
@@ -56,3 +55,36 @@ raicesRuffini p
 --    divisores (-6)  ==  [1,-1,2,-2,3,-3,6,-6]
 divisores :: Int -> [Int]
 divisores n = concat [[x,-x] | x <- [1..abs n], rem n x == 0]
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+spec :: Spec
+spec = do
+  it "e1" $
+    raicesRuffini ejPol1 `shouldBe` []
+  it "e2" $
+    raicesRuffini ejPol2 `shouldBe` [0,-1]
+  it "e3" $
+    raicesRuffini ejPol3 `shouldBe` [0]
+  it "e4" $
+    raicesRuffini ejPol4 `shouldBe` [1,-1,-2]
+  where
+    ejPol1 = consPol 4 3 (consPol 2 (-5) (consPol 0 3 polCero))
+    ejPol2 = consPol 5 1 (consPol 2 5 (consPol 1 4 polCero))
+    ejPol3 = consPol 4 6 (consPol 1 2 polCero)
+    ejPol4 = consPol 3 1 (consPol 2 2 (consPol 1 (-1) (consPol 0 (-2) polCero)))
+
+-- La verificación es
+--    λ> verifica
+--
+--    e1
+--    e2
+--    e3
+--    e4
+--
+--    Finished in 0.0013 seconds
+--    4 examples, 0 failures
