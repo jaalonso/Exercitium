@@ -14,12 +14,33 @@
 --    nVertices (creaGrafo' ND (0,5) [(1,2),(3,1)])  ==  6
 -- ---------------------------------------------------------------------
 
-{-# OPTIONS_GHC -fno-warn-unused-imports #-}
-
 module Grafo_Numero_de_vertices where
 
 import TAD.Grafo (Grafo, Orientacion (D, ND), nodos, creaGrafo')
-import Data.Ix
+import Data.Ix (Ix)
+import Test.Hspec (Spec, hspec, it, shouldBe)
 
 nVertices :: (Ix v, Num p) => Grafo v p ->  Int
 nVertices = length . nodos
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+spec :: Spec
+spec = do
+  it "e1" $
+    nVertices (creaGrafo' D (1,5) [(1,2),(3,1)] :: Grafo Int Int)  `shouldBe` 5
+  it "e2" $
+    nVertices (creaGrafo' ND (0,5) [(1,2),(3,1)] :: Grafo Int Int) `shouldBe` 6
+
+-- La verificación es
+--    λ> verifica
+--
+--    e1
+--    e2
+--
+--    Finished in 0.0002 seconds
+--    2 examples, 0 failures
