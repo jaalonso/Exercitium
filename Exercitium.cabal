@@ -120,6 +120,7 @@ library
       Familias_de_numeros_con_algun_digito_en_comun
       FiltraPila
       Formula_de_Heron_para_el_area_de_un_triangulo
+      Grafo_Contiguos_de_un_vertice
       Grafo_Grafos_ciclos
       Grafo_Grafos_completos
       Grafo_Incidentes_de_un_vertice
@@ -519,6 +520,7 @@ test-suite Exercitium-test
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       FiltraPila_Spec
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
+      Grafo_Contiguos_de_un_vertice_Spec
       Grafo_Grafos_ciclos_Spec
       Grafo_Grafos_completos_Spec
       Grafo_Incidentes_de_un_vertice_Spec

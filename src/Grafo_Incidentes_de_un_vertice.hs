@@ -61,7 +61,7 @@ spec = do
     incidentes g2 3 `shouldBe` [1,2]
   where
     g1, g2 :: Grafo Int Int
-    g1  = creaGrafo' D (1,3) [(1,2),(2,2),(3,1),(3,2)]
+    g1 = creaGrafo' D (1,3) [(1,2),(2,2),(3,1),(3,2)]
     g2 = creaGrafo' ND (1,3) [(1,2),(2,2),(3,1),(3,2)]
 
 -- La verificación es
