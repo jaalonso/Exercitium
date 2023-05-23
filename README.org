@@ -369,6 +369,7 @@ Los objetivos de esta recopilación son:
   + [[./src/Pol_Division_de_Ruffini_con_representacion_densa.hs][TAD de los polinomios: Regla de Ruffini con representación densa]].
   + [[./src/Pol_Regla_de_Ruffini.hs][TAD de los polinomios: Regla de Ruffini]].
   + [[./src/Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini.hs][TAD de los polinomios: Reconocimiento de raíces por la regla de Ruffini]].
+(desde aquí, con verificación)
   + [[./src/Pol_Raices_enteras_de_un_polinomio.hs][TAD de los polinomios: Raíces enteras de un polinomio]].
 
 ** Mayo 2023
@@ -380,3 +381,4 @@ Los objetivos de esta recopilación son:
 + V26 [[./src/Grafo_Numero_de_vertices.hs][TAD de los grafos: Número de vértices]].
 + L29 [[./src/Grafo_Incidentes_de_un_vertice.hs][TAD de los grafos: Incidentes de un vértice]].
 + M30 [[./src/Grafo_Contiguos_de_un_vertice.hs][TAD de los grafos: Contiguos de un vértice]].
++ X31 [[./src/Grafo_Lazos_de_un_grafo.hs][TAD de los grafos: Lazos de un grafo]].
