@@ -125,6 +125,7 @@ library
       Grafo_Grafos_completos
       Grafo_Incidentes_de_un_vertice
       Grafo_Lazos_de_un_grafo
+      Grafo_Numero_de_aristas_de_un_grafo
       Grafo_Numero_de_vertices
       Huecos_maximales_entre_primos
       Igualdad_de_conjuntos
@@ -526,6 +527,7 @@ test-suite Exercitium-test
       Grafo_Grafos_completos_Spec
       Grafo_Incidentes_de_un_vertice_Spec
       Grafo_Lazos_de_un_grafo_Spec
+      Grafo_Numero_de_aristas_de_un_grafo_Spec
       Grafo_Numero_de_vertices_Spec
       GrafoConListaDeAdyacencia_Spec
       GrafoConMatrizDeAdyacencia_Spec

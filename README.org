@@ -382,3 +382,6 @@ Los objetivos de esta recopilación son:
 + L29 [[./src/Grafo_Incidentes_de_un_vertice.hs][TAD de los grafos: Incidentes de un vértice]].
 + M30 [[./src/Grafo_Contiguos_de_un_vertice.hs][TAD de los grafos: Contiguos de un vértice]].
 + X31 [[./src/Grafo_Lazos_de_un_grafo.hs][TAD de los grafos: Lazos de un grafo]].
+
+** Junio 2023
++ J01 [[./src/Grafo_Numero_de_aristas_de_un_grafo.hs][TAD de los grafos: Número de aristas de un grafo]].
