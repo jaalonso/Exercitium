@@ -128,6 +128,7 @@ library
       Grafo_Lazos_de_un_grafo
       Grafo_Numero_de_aristas_de_un_grafo
       Grafo_Numero_de_vertices
+      Grafo_Propiedades_de_grados_positivos_y_negativos
       Huecos_maximales_entre_primos
       Igualdad_de_conjuntos
       Iguales_al_siguiente
@@ -335,6 +336,7 @@ library
       TAD.GrafoConListaDeAdyacencia
       TAD.GrafoConMatrizDeAdyacencia
       TAD.GrafoConVectorDeAdyacencia
+      TAD.GrafoGenerador
       TAD.Pila
       TAD.PilaConListas
       TAD.PilaConSucesiones
