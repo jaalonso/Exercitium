@@ -385,3 +385,4 @@ Los objetivos de esta recopilación son:
 
 ** Junio 2023
 + J01 [[./src/Grafo_Numero_de_aristas_de_un_grafo.hs][TAD de los grafos: Número de aristas de un grafo]].
++ V02 [[./src/Grafo_Grados_positivos_y_negativos.hs][TAD de los grafos: Grados_positivos_y_negativos]].
