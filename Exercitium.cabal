@@ -121,6 +121,7 @@ library
       FiltraPila
       Formula_de_Heron_para_el_area_de_un_triangulo
       Grafo_Contiguos_de_un_vertice
+      Grafo_Grado_de_un_vertice
       Grafo_Grados_positivos_y_negativos
       Grafo_Grafos_ciclos
       Grafo_Grafos_completos
@@ -526,6 +527,7 @@ test-suite Exercitium-test
       FiltraPila_Spec
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
       Grafo_Contiguos_de_un_vertice_Spec
+      Grafo_Grado_de_un_vertice_Spec
       Grafo_Grados_positivos_y_negativos_Spec
       Grafo_Grafos_ciclos_Spec
       Grafo_Grafos_completos_Spec

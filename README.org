@@ -388,3 +388,4 @@ Los objetivos de esta recopilación son:
 + V02 [[./src/Grafo_Grados_positivos_y_negativos.hs][TAD de los grafos: Grados positivos y negativos]].
 + L05 [[./src/TAD/GrafoGenerador.hs][TAD de los grafos: Generadores de grafos arbitrarios]].
 + L05 [[./src/Grafo_Propiedades_de_grados_positivos_y_negativos.hs][TAD de los grafos: Propiedades de grados positivos y negativos]].
++ M06 [[./src/Grafo_Grado_de_un_vertice.hs][TAD de los grafos: Grado de un vértice]].
