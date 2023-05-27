@@ -15,15 +15,21 @@
 --    grado :: (Ix v,Num p) => Grafo v p -> v -> Int
 -- tal que (grado g v) es el grado del vértice v en el grafo g. Por
 -- ejemplo,
---    grado g1 5  ==  4
---    grado g2 5  ==  3
---    grado g2 1  ==  3
---    grado g3 2  ==  4
---    grado g3 1  ==  2
---    grado g3 3  ==  2
---    grado g5 1  ==  2
---    grado g10 3 ==  4
---    grado g11 3 ==  4
+--    g1 = creaGrafo' ND (1,5) [(1,2),(1,3),(1,5),(2,4),(2,5),(3,4),(3,5),(4,5)]
+--    g2 = creaGrafo' D  (1,5) [(1,2),(1,3),(1,5),(2,4),(2,5),(4,3),(4,5)]
+--    g3 = creaGrafo' D  (1,3) [(1,2),(2,2),(3,1),(3,2)]
+--    g4 = creaGrafo' D  (1,1) [(1,1)]
+--    g5 = creaGrafo' ND (1,3) [(1,2),(1,3),(2,3),(3,3)]
+--    g6 = creaGrafo' D  (1,3) [(1,2),(1,3),(2,3),(3,3)]
+--    grado g1 5 ==  4
+--    grado g2 5 ==  3
+--    grado g2 1 ==  3
+--    grado g3 2 ==  4
+--    grado g3 1 ==  2
+--    grado g3 3 ==  2
+--    grado g4 1 ==  2
+--    grado g6 3 ==  4
+--    grado g6 3 ==  4
 --
 -- Comprobar con QuickCheck que en todo grafo, el número de nodos de
 -- grado impar es par.
