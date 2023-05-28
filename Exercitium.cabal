@@ -127,6 +127,7 @@ library
       Grafo_Grafos_completos
       Grafo_Incidentes_de_un_vertice
       Grafo_Lazos_de_un_grafo
+      Grafo_Lema_del_apreton_de_manos
       Grafo_Numero_de_aristas_de_un_grafo
       Grafo_Numero_de_vertices
       Grafo_Propiedades_de_grados_positivos_y_negativos
