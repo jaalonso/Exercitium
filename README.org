@@ -390,3 +390,4 @@ Los objetivos de esta recopilación son:
 + L05 [[./src/Grafo_Propiedades_de_grados_positivos_y_negativos.hs][TAD de los grafos: Propiedades de grados positivos y negativos]].
 + M06 [[./src/Grafo_Grado_de_un_vertice.hs][TAD de los grafos: Grado de un vértice]].
 + X07 [[./src/Grafo_Lema_del_apreton_de_manos.hs][TAD de los grafos: Lema del apretón de manos]].
++ J08 [[./src/Grafo_Grafos_regulares.hs][TAD de los grafos: Grafos regulares]].
