@@ -18,8 +18,8 @@
 --    regularidad (grafoCiclo 5)                      == Just 2
 --
 -- Comprobar que el grafo completo de orden n es (n-1)-regular (para
--- n de 1 a 20) y el grafo rafos ciclo de orden n (para n de 3 a 20) es
--- 2-regular.
+-- n de 1 a 20) y el grafo ciclo de orden n es 2-regular (para n de 3 a
+-- 20).
 -- ---------------------------------------------------------------------
 
 module Grafo_Grafos_k_regulares where

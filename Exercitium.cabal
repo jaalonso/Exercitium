@@ -133,6 +133,7 @@ library
       Grafo_Numero_de_aristas_de_un_grafo
       Grafo_Numero_de_vertices
       Grafo_Propiedades_de_grados_positivos_y_negativos
+      Grafo_Recorridos_en_un_grafo_completo
       Huecos_maximales_entre_primos
       Igualdad_de_conjuntos
       Iguales_al_siguiente
@@ -540,6 +541,7 @@ test-suite Exercitium-test
       Grafo_Lazos_de_un_grafo_Spec
       Grafo_Numero_de_aristas_de_un_grafo_Spec
       Grafo_Numero_de_vertices_Spec
+      Grafo_Recorridos_en_un_grafo_completo_Spec
       GrafoConListaDeAdyacencia_Spec
       GrafoConMatrizDeAdyacencia_Spec
       GrafoConVectorDeAdyacencia_Spec
