@@ -9,7 +9,7 @@
 -- vértices x de g para los que hay un arco (o una arista) de x a v; es
 -- decir, que v es adyacente a x.
 --
--- Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
+-- Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 -- definir la función,
 --    incidentes :: (Ix v,Num p) => (Grafo v p) -> v -> [v]
 -- tal que (incidentes g v) es la lista de los vértices incidentes en el

@@ -8,7 +8,7 @@
 -- En un un grafo g, los contiguos de un vértice v es el conjuntos de
 -- vértices x de g tales que x es adyacente o incidente con v.
 --
--- Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
+-- Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 -- definir la función,
 --    contiguos :: (Ix v,Num p) => Grafo v p -> v -> [v]
 -- tal que (contiguos g v) es el conjunto de los vértices de g contiguos

@@ -393,3 +393,4 @@ Los objetivos de esta recopilación son:
 + J08 [[./src/Grafo_Grafos_regulares.hs][TAD de los grafos: Grafos regulares]].
 + V09 [[./src/Grafo_Grafos_k_regulares.hs][TAD de los grafos: Grafos k-regulares]].
 + L12 [[./src/Grafo_Recorridos_en_un_grafo_completo.hs][TAD de los grafos: Recorridos en un grafo completo]].
++ M13 [[./src/Grafo_Anchura_de_un_grafo.hs][TAD de los grafos: Anchura de un grafo]].

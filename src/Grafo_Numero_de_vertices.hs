@@ -5,7 +5,7 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
+-- Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 -- definir la función,
 --    nVertices :: (Ix v, Num p) => Grafo v p ->  Int
 -- tal que (nVertices g) es el número de vértices del grafo g. Por

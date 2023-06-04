@@ -8,7 +8,7 @@
 -- Un grafo es regular si todos sus vértices tienen el mismo
 -- grado.
 --
--- Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
+-- Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 -- definir la función,
 --    regular :: (Ix v,Num p) => Grafo v p -> Bool
 -- tal que (regular g) se verifica si el grafo g es regular. Por ejemplo,

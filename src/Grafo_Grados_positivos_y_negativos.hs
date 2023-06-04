@@ -9,7 +9,7 @@
 -- vértices de g adyacentes con v y su grado negativo es el número de
 -- vértices de g incidentes con v.
 --
--- Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
+-- Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 -- definir las funciones,
 --    gradoPos :: (Ix v,Num p) => Grafo v p -> v -> Int
 --    gradoNeg :: (Ix v,Num p) => Grafo v p -> v -> Int

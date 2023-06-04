@@ -6,7 +6,7 @@
 
 -- ---------------------------------------------------------------------
 -- Un grafo es k-regular si todos sus vértices son de grado k.
--- Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
+-- Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 -- definir la función,
 --    regularidad :: (Ix v,Num p) => Grafo v p -> Maybe Int
 -- tal que (regularidad g) es la regularidad de g. Por ejemplo,

@@ -9,7 +9,7 @@
 -- vértices es {1,...,n} y las aristas son
 --    (1,2), (2,3), ..., (n-1,n), (n,1)
 --
--- Usando el [tipo abstrado de datos de los grafos](https://bit.ly/45cQ3Fo),
+-- Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
 -- definir la función,
 --    grafoCiclo :: Int -> Grafo Int Int
 -- tal que (grafoCiclo n) es el grafo ciclo de orden n. Por ejemplo,
