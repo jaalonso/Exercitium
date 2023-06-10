@@ -27,6 +27,7 @@
 -- -----------------------------------------------------------
 
 module Grafo_Recorrido_en_anchura where
+
 import TAD.Grafo (Grafo, Orientacion (D, ND), adyacentes,
                   creaGrafo')
 import Data.Ix (Ix)

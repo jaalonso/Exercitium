@@ -1,7 +1,13 @@
 -- GrafoGenerador.hs
--- eneradores de grafos arbitrarios.
+-- TAD de los grafos: Generadores de grafos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 03-junio-2023
+-- Sevilla, 5-junio-2023
+-- ======================================================================
+
+-- ---------------------------------------------------------------------
+-- Definir un generador de grafos para comprobar propiedades de grafos
+-- con QuickCheck y hacer el tipo de los Grafos un subtipo de
+-- Arbitrary.
 -- ---------------------------------------------------------------------
 
 {-# LANGUAGE FlexibleInstances #-}
