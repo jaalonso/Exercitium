@@ -537,6 +537,7 @@ test-suite Exercitium-test
       FiltraPila_Spec
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
       Grafo_Anchura_de_un_grafo_Spec
+      Grafo_Coloreado_correcto_de_un_mapa_Spec
       Grafo_Contiguos_de_un_vertice_Spec
       Grafo_Grado_de_un_vertice_Spec
       Grafo_Grados_positivos_y_negativos_Spec
