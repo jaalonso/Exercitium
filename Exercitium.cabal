@@ -121,6 +121,7 @@ library
       FiltraPila
       Formula_de_Heron_para_el_area_de_un_triangulo
       Grafo_Anchura_de_un_grafo
+      Grafo_Coloreado_correcto_de_un_mapa
       Grafo_Contiguos_de_un_vertice
       Grafo_Grado_de_un_vertice
       Grafo_Grados_positivos_y_negativos
@@ -132,6 +133,7 @@ library
       Grafo_Incidentes_de_un_vertice
       Grafo_Lazos_de_un_grafo
       Grafo_Lema_del_apreton_de_manos
+      Grafo_Nodos_aislados_de_un_grafo
       Grafo_Numero_de_aristas_de_un_grafo
       Grafo_Numero_de_vertices
       Grafo_Propiedades_de_grados_positivos_y_negativos
@@ -545,6 +547,7 @@ test-suite Exercitium-test
       Grafo_Grafos_regulares_Spec
       Grafo_Incidentes_de_un_vertice_Spec
       Grafo_Lazos_de_un_grafo_Spec
+      Grafo_Nodos_aislados_de_un_grafo_Spec
       Grafo_Numero_de_aristas_de_un_grafo_Spec
       Grafo_Numero_de_vertices_Spec
       Grafo_Recorrido_en_anchura_Spec
