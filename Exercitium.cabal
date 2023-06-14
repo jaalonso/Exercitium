@@ -134,6 +134,7 @@ library
       Grafo_Lazos_de_un_grafo
       Grafo_Lema_del_apreton_de_manos
       Grafo_Nodos_aislados_de_un_grafo
+      Grafo_Nodos_conectados_en_un_grafo
       Grafo_Numero_de_aristas_de_un_grafo
       Grafo_Numero_de_vertices
       Grafo_Propiedades_de_grados_positivos_y_negativos
@@ -549,6 +550,7 @@ test-suite Exercitium-test
       Grafo_Incidentes_de_un_vertice_Spec
       Grafo_Lazos_de_un_grafo_Spec
       Grafo_Nodos_aislados_de_un_grafo_Spec
+      Grafo_Nodos_conectados_en_un_grafo_Spec
       Grafo_Numero_de_aristas_de_un_grafo_Spec
       Grafo_Numero_de_vertices_Spec
       Grafo_Recorrido_en_anchura_Spec

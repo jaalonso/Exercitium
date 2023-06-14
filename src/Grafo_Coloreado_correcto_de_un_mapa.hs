@@ -8,15 +8,15 @@
 --  Un mapa se puede representar mediante un grafo donde los vértices
 --  son las regiones del mapa y hay una arista entre dos vértices si las
 --  correspondientes regiones son vecinas. Por ejemplo, el mapa siguiente
---        +----------+----------+
---        |    1     |     2    |
---        +----+-----+-----+----+
---        |    |           |    |
---        | 3  |     4     | 5  |
---        |    |           |    |
---        +----+-----+-----+----+
---        |    6     |     7    |
---        +----------+----------+
+--    +----------+----------+
+--    |    1     |     2    |
+--    +----+-----+-----+----+
+--    |    |           |    |
+--    | 3  |     4     | 5  |
+--    |    |           |    |
+--    +----+-----+-----+----+
+--    |    6     |     7    |
+--    +----------+----------+
 -- se pueden representar por
 --    mapa :: Grafo Int Int
 --    mapa = creaGrafo' ND (1,7)
@@ -27,7 +27,8 @@
 --    data Color = A | B | C | D
 --      deriving (Eq, Show)
 --
--- Definir la función
+-- Usando el [tipo abstracto de datos de los grafos](https://bit.ly/45cQ3Fo),
+-- definir la función,
 --    correcta :: [(Int,Color)] -> Grafo Int Int -> Bool
 -- tal que (correcta ncs m) se verifica si ncs es una coloración del
 -- mapa m tal que todos las regiones vecinas tienen colores distintos.

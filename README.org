@@ -397,3 +397,4 @@ Los objetivos de esta recopilación son:
 + V16 [[./src/Grafo_Grafos_conexos.hs][TAD de los grafos: Grafos conexos]].
 + L19 [[./src/Grafo_Coloreado_correcto_de_un_mapa.hs][TAD de los grafos: Coloreado correcto de un mapa]].
 + M20 [[./src/Grafo_Nodos_aislados_de_un_grafo.hs][TAD de los grafos: Nodos aislados de un grafo]].
++ X21 [[./src/Grafo_Nodos_conectados_en_un_grafo.hs][TAD de los grafos: Nodos conectados en un grafo]].
