@@ -5,7 +5,7 @@
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- El [algoritmo de Kruskal]()https://bit.ly/3N8bOOg) calcula un árbol
+-- El [algoritmo de Kruskal](https://bit.ly/3N8bOOg) calcula un árbol
 -- recubridor mínimo en un grafo conexo y ponderado. Es decir, busca un
 -- subconjunto de aristas que, formando un árbol, incluyen todos los
 -- vértices y donde el valor de la suma de todas las aristas del árbol
@@ -58,10 +58,10 @@
 -- ---------------------------------------------------------------------
 
 module Grafo_Algoritmo_de_Kruskal where
-import TAD.Grafo
-import Data.Ix
-import qualified Data.Map as M
-import Data.List
+import TAD.Grafo (Grafo, Orientacion (ND), aristas, creaGrafo, nodos)
+import Data.Ix (Ix)
+import qualified Data.Map as M (Map, (!), fromList, keys, update)
+import Data.List (sort)
 import Test.Hspec (Spec, hspec, it, shouldBe)
 
 g1, g2, g3, g4 :: Grafo Int Int

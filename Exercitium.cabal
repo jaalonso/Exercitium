@@ -121,6 +121,7 @@ library
       FiltraPila
       Formula_de_Heron_para_el_area_de_un_triangulo
       Grafo_Algoritmo_de_Kruskal
+      Grafo_Algoritmo_de_Prim
       Grafo_Anchura_de_un_grafo
       Grafo_Coloreado_correcto_de_un_mapa
       Grafo_Contiguos_de_un_vertice
