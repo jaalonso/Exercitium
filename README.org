@@ -400,3 +400,4 @@ Los objetivos de esta recopilación son:
 + X21 [[./src/Grafo_Nodos_conectados_en_un_grafo.hs][TAD de los grafos: Nodos conectados en un grafo]].
 + J22 [[./src/grafo_algoritmo_de_kruskal.hs][TAD de los grafos: Algoritmo de Kruskal]].
 + V23 [[./src/Grafo_Algoritmo_de_Prim.hs][TAD de los grafos: Algoritmo de Prim]].
++ L26 [[./src/Algoritmo_divide_y_venceras.hs][Algoritmo divide y vencerás]].
