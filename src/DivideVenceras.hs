@@ -1,4 +1,4 @@
--- Algoritmo_divide_y_venceras.hs
+-- DivideVenceras.hs
 -- Algoritmo divide y vencerás
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 26-junio-2023
@@ -47,7 +47,7 @@
 {-# OPTIONS_GHC -fno-warn-unused-top-binds #-}
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
 
-module Algoritmo_divide_y_venceras (divideVenceras) where
+module DivideVenceras (divideVenceras) where
 
 import Test.Hspec (Spec, hspec, it, shouldBe)
 

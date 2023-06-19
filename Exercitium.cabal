@@ -31,7 +31,6 @@ library
       Alergias
       Alfabeto_desde
       Algoritmo_de_Euclides_del_mcd
-      Algoritmo_divide_y_venceras
       Algun_vecino_menor
       AlgunoVerifica
       Altura_de_un_arbol_binario
@@ -88,6 +87,7 @@ library
       Distancia_entre_dos_puntos
       Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario
       Disyuncion_excluyente
+      DivideVenceras
       Division_segura
       Divisores_de_un_numero
       Divisores_primos
