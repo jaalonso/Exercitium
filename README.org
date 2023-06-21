@@ -388,16 +388,17 @@ Los objetivos de esta recopilación son:
   + [[./src/Grafo_Lema_del_apreton_de_manos.hs][TAD de los grafos: Lema del apretón de manos]].
   + [[./src/Grafo_Grafos_regulares.hs][TAD de los grafos: Grafos regulares]].
   + [[./src/Grafo_Grafos_k_regulares.hs][TAD de los grafos: Grafos k-regulares]].
+  + [[./src/Grafo_Recorridos_en_un_grafo_completo.hs][TAD de los grafos: Recorridos en un grafo completo]].
+  + [[./src/Grafo_Anchura_de_un_grafo.hs][TAD de los grafos: Anchura de un grafo]].
+  + [[./src/Grafo_Recorrido_en_profundidad.hs][TAD de los grafos: Recorrido en profundidad]].
+  + [[./src/Grafo_Recorrido_en_anchura.hs][TAD de los grafos: Recorrido en anchura]].
+  + [[./src/Grafo_Grafos_conexos.hs][TAD de los grafos: Grafos conexos]].
 
 ** Junio 2023
-+ L12 [[./src/Grafo_Recorridos_en_un_grafo_completo.hs][TAD de los grafos: Recorridos en un grafo completo]].
-+ M13 [[./src/Grafo_Anchura_de_un_grafo.hs][TAD de los grafos: Anchura de un grafo]].
-+ X14 [[./src/Grafo_Recorrido_en_profundidad.hs][TAD de los grafos: Recorrido en profundidad]].
-+ J15 [[./src/Grafo_Recorrido_en_anchura.hs][TAD de los grafos: Recorrido en anchura]].
-+ V16 [[./src/Grafo_Grafos_conexos.hs][TAD de los grafos: Grafos conexos]].
 + L19 [[./src/Grafo_Coloreado_correcto_de_un_mapa.hs][TAD de los grafos: Coloreado correcto de un mapa]].
 + M20 [[./src/Grafo_Nodos_aislados_de_un_grafo.hs][TAD de los grafos: Nodos aislados de un grafo]].
 + X21 [[./src/Grafo_Nodos_conectados_en_un_grafo.hs][TAD de los grafos: Nodos conectados en un grafo]].
 + J22 [[./src/grafo_algoritmo_de_kruskal.hs][TAD de los grafos: Algoritmo de Kruskal]].
 + V23 [[./src/Grafo_Algoritmo_de_Prim.hs][TAD de los grafos: Algoritmo de Prim]].
 + L26 [[./src/DivideVenceras.hs][Algoritmo divide y vencerás]].
++ M27 [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.hs][Rompecabeza del triominó_mediante divide y vencerás]].
