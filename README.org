@@ -402,3 +402,6 @@ Los objetivos de esta recopilación son:
 + V23 [[./src/Grafo_Algoritmo_de_Prim.hs][TAD de los grafos: Algoritmo de Prim]].
 + L26 [[./src/DivideVenceras.hs][Algoritmo divide y vencerás]].
 + M27 [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.hs][Rompecabeza del triominó_mediante divide y vencerás]].
++ X28 [[./src/BusquedaEnProfundidad.hs][Búsqueda en espacios de estados por profundidad]].
++ J29 [[./src/BusquedaEnAnchura.hs][Búsqueda en espacios de estados por anchura]].
++ V30 [[./src/BEE_Reinas.hs][El problema de las n reinas (mediante espacios de estados)]].
