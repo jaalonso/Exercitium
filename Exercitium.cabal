@@ -55,7 +55,8 @@ library
       Area_corona_circular
       Bandera_tricolor
       Base_de_dato_de_actividades
-      BEE_Reinas
+      BEE_Reinas_Anchura
+      BEE_Reinas_Profundidad
       Biparticiones_de_una_lista
       BusquedaEnAnchura
       BusquedaEnProfundidad
@@ -477,7 +478,8 @@ test-suite Exercitium-test
       Area_corona_circular_Spec
       Bandera_tricolor_Spec
       Base_de_dato_de_actividades_Spec
-      BEE_Reinas_Spec
+      BEE_Reinas_Anchura_Spec
+      BEE_Reinas_Profundidad_Spec
       Biparticiones_de_una_lista_Spec
       Calculo_aproximado_de_integrales_definidas_Spec
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales_Spec

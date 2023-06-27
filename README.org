@@ -393,15 +393,18 @@ Los objetivos de esta recopilación son:
   + [[./src/Grafo_Recorrido_en_profundidad.hs][TAD de los grafos: Recorrido en profundidad]].
   + [[./src/Grafo_Recorrido_en_anchura.hs][TAD de los grafos: Recorrido en anchura]].
   + [[./src/Grafo_Grafos_conexos.hs][TAD de los grafos: Grafos conexos]].
+  + [[./src/Grafo_Coloreado_correcto_de_un_mapa.hs][TAD de los grafos: Coloreado correcto de un mapa]].
+  + [[./src/Grafo_Nodos_aislados_de_un_grafo.hs][TAD de los grafos: Nodos aislados de un grafo]].
+  + [[./src/Grafo_Nodos_conectados_en_un_grafo.hs][TAD de los grafos: Nodos conectados en un grafo]].
+  + [[./src/grafo_algoritmo_de_kruskal.hs][TAD de los grafos: Algoritmo de Kruskal]].
+  + [[./src/Grafo_Algoritmo_de_Prim.hs][TAD de los grafos: Algoritmo de Prim]].
 
 ** Junio 2023
-+ L19 [[./src/Grafo_Coloreado_correcto_de_un_mapa.hs][TAD de los grafos: Coloreado correcto de un mapa]].
-+ M20 [[./src/Grafo_Nodos_aislados_de_un_grafo.hs][TAD de los grafos: Nodos aislados de un grafo]].
-+ X21 [[./src/Grafo_Nodos_conectados_en_un_grafo.hs][TAD de los grafos: Nodos conectados en un grafo]].
-+ J22 [[./src/grafo_algoritmo_de_kruskal.hs][TAD de los grafos: Algoritmo de Kruskal]].
-+ V23 [[./src/Grafo_Algoritmo_de_Prim.hs][TAD de los grafos: Algoritmo de Prim]].
 + L26 [[./src/DivideVenceras.hs][Algoritmo divide y vencerás]].
 + M27 [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.hs][Rompecabeza del triominó_mediante divide y vencerás]].
 + X28 [[./src/BusquedaEnProfundidad.hs][Búsqueda en espacios de estados por profundidad]].
-+ J29 [[./src/BusquedaEnAnchura.hs][Búsqueda en espacios de estados por anchura]].
-+ V30 [[./src/BEE_Reinas.hs][El problema de las n reinas (mediante espacios de estados)]].
++ J29 [[./src/BEE_Reinas_Profundidad.hs][El problema de las n reinas (mediante búsqueda en espacios de estados por profundidad)]].
++ V30 [[./src/BusquedaEnAnchura.hs][Búsqueda en espacios de estados por anchura]].
+
+** Julio 2023
++ L03 [[./src/BEE_Reinas_Anchura.hs][El problema de las n reinas (mediante búsqueda en espacios de estados por anchura)]].

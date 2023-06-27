@@ -25,7 +25,7 @@
 
 module BusquedaEnProfundidad (buscaProfundidad) where
 
-import TAD.Pila
+import TAD.Pila (apila, cima, desapila, esVacia, vacia)
 
 buscaProfundidad :: Eq nodo => (nodo -> [nodo]) -> (nodo -> Bool)
                                -> nodo -> [nodo]

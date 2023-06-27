@@ -25,7 +25,7 @@
 
 module BusquedaEnAnchura (buscaAnchura) where
 
-import TAD.Cola
+import TAD.Cola (esVacia, inserta, primero, resto, vacia)
 
 buscaAnchura :: Eq nodo => (nodo -> [nodo]) -> (nodo -> Bool)
                                -> nodo -> [nodo]
