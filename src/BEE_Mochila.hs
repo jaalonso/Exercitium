@@ -43,6 +43,8 @@
 --    ([(3,4.4),(3,4.4),(2,2.8),(2,2.8)],14.4)
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+
 module BEE_Mochila where
 
 import BusquedaEnProfundidad (buscaProfundidad)
@@ -86,7 +88,6 @@ sucesoresMoch (v,p,l,os,solp) =
 -- la mochila para la lista de objetos os y el límite de capacidad l .
 esObjetivoMoch :: NodoMoch -> Bool
 esObjetivoMoch (_,p,l,(p',_):_,_) = p+p'>l
-esObjetivoMoch _ = error "Imposible"
 
 -- Verificación
 -- ============
