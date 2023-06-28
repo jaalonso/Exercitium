@@ -408,3 +408,4 @@ Los objetivos de esta recopilación son:
 
 ** Julio 2023
 + L03 [[./src/BEE_Reinas_Anchura.hs][El problema de las n reinas (mediante búsqueda en espacios de estados por anchura)]].
++ M04 [[./src/BEE_Mochila.hs][El problema de la mochila (mediante espacio de estados)]].

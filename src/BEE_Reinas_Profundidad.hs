@@ -110,3 +110,9 @@ spec = do
 
 -- La verificación es
 --    λ> verifica
+--
+--    e1
+--    e2
+--
+--    Finished in 0.1173 seconds
+--    2 examples, 0 failures
