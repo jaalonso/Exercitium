@@ -398,14 +398,16 @@ Los objetivos de esta recopilación son:
   + [[./src/Grafo_Nodos_conectados_en_un_grafo.hs][TAD de los grafos: Nodos conectados en un grafo]].
   + [[./src/grafo_algoritmo_de_kruskal.hs][TAD de los grafos: Algoritmo de Kruskal]].
   + [[./src/Grafo_Algoritmo_de_Prim.hs][TAD de los grafos: Algoritmo de Prim]].
-
-** Junio 2023
-+ L26 [[./src/DivideVenceras.hs][Algoritmo divide y vencerás]].
-+ M27 [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.hs][Rompecabeza del triominó_mediante divide y vencerás]].
-+ X28 [[./src/BusquedaEnProfundidad.hs][Búsqueda en espacios de estados por profundidad]].
-+ J29 [[./src/BEE_Reinas_Profundidad.hs][El problema de las n reinas (mediante búsqueda en espacios de estados por profundidad)]].
-+ V30 [[./src/BusquedaEnAnchura.hs][Búsqueda en espacios de estados por anchura]].
++ [[./src/DivideVenceras.hs][Algoritmo divide y vencerás]].
++ [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.hs][Rompecabeza del triominó_mediante divide y vencerás]].
++ [[./src/BusquedaEnProfundidad.hs][Búsqueda en espacios de estados por profundidad]].
++ [[./src/BEE_Reinas_Profundidad.hs][El problema de las n reinas (mediante búsqueda en espacios de estados por profundidad)]].
++ [[./src/BusquedaEnAnchura.hs][Búsqueda en espacios de estados por anchura]].
 
 ** Julio 2023
 + L03 [[./src/BEE_Reinas_Anchura.hs][El problema de las n reinas (mediante búsqueda en espacios de estados por anchura)]].
 + M04 [[./src/BEE_Mochila.hs][El problema de la mochila (mediante espacio de estados)]].
++ X05 [[./src/TAD/ColaDePrioridad.hs][El tipo abstracto de datos de las colas de prioridad]].
++ X05 [[./src/TAD/ColaDePrioridadConListas.hs][El tipo de datos de las colas de prioridad mediante listas]].
++ J06 [[./src/BusquedaPrimeroElMejor.hs][Búsqueda por primero el mejor]].
++ V07 [[./src/BPM_8Puzzle.hs][El problema del 8 puzzle]].

@@ -58,14 +58,14 @@ type SolMoch  = [Objeto]
 type NodoMoch = (Valor,Peso,Peso,[Objeto],SolMoch)
 
 mochila :: [Objeto] -> Peso -> (SolMoch,Valor)
-mochila os limite = (sol,v)
+mochila os l = (sol,v)
   where
     (v,_,_,_,sol) =
       maximum (buscaProfundidad sucesoresMoch
                                 esObjetivoMoch
-                                (inicial os limite))
+                                (inicial os l))
 
--- (inicial os limite) es el estado inicial del problema de la mochila
+-- (inicial os l) es el estado inicial del problema de la mochila
 -- para la lista de objetos os y el límite de capacidad l
 inicial :: [Objeto] -> Peso -> NodoMoch
 inicial os l =

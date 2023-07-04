@@ -75,7 +75,7 @@ resto (C [])     = error "resto: cola vacia"
 esVacia :: Cola a -> Bool
 esVacia (C xs)  = null xs
 
--- Generador de colas                                          --
+-- Generador de colas
 -- ==================
 
 -- genCola es un generador de colas de enteros. Por ejemplo,
@@ -96,7 +96,7 @@ genCola = do
   xs <- listOf arbitrary
   return (foldr inserta vacia xs)
 
--- El tipo pila es una instancia del arbitrario.
+-- El tipo cola es una instancia del arbitrario.
 instance (Arbitrary a, Num a) => Arbitrary (Cola a) where
   arbitrary = genCola
 
