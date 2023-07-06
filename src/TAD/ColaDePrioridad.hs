@@ -16,14 +16,12 @@
 --    primero :: Ord a => CPrioridad a -> a
 --    resto   :: Ord a => CPrioridad a -> CPrioridad a
 --    esVacia :: Ord a => CPrioridad a -> Bool
---    valida  :: Ord a => CPrioridad a -> Bool
 -- tales que
 -- + vacia es la cola de prioridad vacía.
 -- + (inserta x c) añade el elemento x a la cola de prioridad c.
 -- + (primero c) es el primer elemento de la cola de prioridad c.
 -- + (resto c) es el resto de la cola de prioridad c.
 -- + (esVacia c) se verifica si la cola de prioridad c es vacía.
--- + (valida c) se verifica si c es una cola de prioridad válida.
 --
 -- Las operaciones tienen que verificar las siguientes propiedades:
 -- + inserta x (inserta y c) == inserta y (inserta x c)
@@ -46,7 +44,6 @@ module TAD.ColaDePrioridad
    primero, -- Ord a => CPrioridad a -> a
    resto,   -- Ord a => CPrioridad a -> CPrioridad a
    esVacia, -- Ord a => CPrioridad a -> Bool
-   valida   -- Ord a => CPrioridad a -> Bool
   ) where
 
 import TAD.ColaDePrioridadConListas

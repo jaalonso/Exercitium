@@ -1,11 +1,11 @@
 -- BusquedaPrimeroElMejor.hs
 -- Búsqueda por primero el mejor.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 5-julio-2023
+-- Sevilla, 6-julio-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- En la búsqueda por primero el mejos se supone que los estados están
+-- En la búsqueda por primero el mejor se supone que los estados están
 -- ordenados mediante una función, la heurística, que es una rstimación
 -- de su coste para llegar a un estado final.
 --
@@ -18,7 +18,7 @@
 
 module BusquedaPrimeroElMejor (buscaPM)  where
 
-import TAD.ColaDePrioridad
+import TAD.ColaDePrioridad (esVacia, inserta, primero, resto, vacia)
 
 buscaPM :: Ord n => (n -> [n]) -> (n -> Bool) -> n -> [n]
 buscaPM sucesores esFinal x = busca' (inserta x vacia) where

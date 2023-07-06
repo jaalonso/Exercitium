@@ -14,7 +14,6 @@ module TAD.ColaDePrioridadConListas
    primero, -- Ord a => CPrioridad a -> a
    resto,   -- Ord a => CPrioridad a -> CPrioridad a
    esVacia, -- Ord a => CPrioridad a -> Bool
-   valida   -- Ord a => CPrioridad a -> Bool
   ) where
 
 import Test.QuickCheck
@@ -39,15 +38,6 @@ instance Show a => Show (CPrioridad a) where
 -- Ejemplo de cola de prioridad
 --    λ> inserta 5 (inserta 2 (inserta 3 vacia))
 --    2 | 3 | 5
-
--- (valida c) se verifica si c es una cola de prioridad válida. Por
--- ejemplo,
---    valida (CP [1,3,5])  ==  True
---    valida (CP [1,5,3])  ==  False
-valida :: Ord a => CPrioridad a -> Bool
-valida (CP xs) = ordenada xs
-  where ordenada (x:y:zs) = x <= y && ordenada (y:zs)
-        ordenada _        = True
 
 -- vacia es la cola de prioridad vacía. Por ejemplo,
 --    λ> vacia
@@ -111,15 +101,6 @@ genCPrioridad = do
 -- El tipo cola de prioridad es una instancia del arbitrario.
 instance (Arbitrary a, Num a, Ord a) => Arbitrary (CPrioridad a) where
   arbitrary = genCPrioridad
-
--- Prop.: Las colas de prioridad producidas por genCPrioridad son
--- válidas.
-prop_genCPrioridad_correcto ::  CPrioridad Int -> Bool
-prop_genCPrioridad_correcto = valida
-
--- Comprobación.
---    λ> quickCheck prop_genCPrioridad_correcto
---    +++ OK, passed 100 tests.
 
 -- Propiedades de las colas de prioridad
 -- =====================================

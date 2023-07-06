@@ -115,7 +115,7 @@ sucesores (Est e@(t:_)) =
   [Est (t':e) | t' <- tablerosSucesores t,
                 t' `notElem` e]
 
--- (tablerosSucesores t) es la lista de los tablrtos sucesores del
+-- (tablerosSucesores t) es la lista de los tableros sucesores del
 -- tablero t. Por ejemplo,
 --    λ> tablerosSucesores (fromLists [[2,1,3],[8,0,4],[7,6,5]])
 --    [┌       ┐  ┌       ┐  ┌       ┐  ┌       ┐
@@ -131,6 +131,9 @@ tablerosSucesores t =
 -- Una posición es un par de enteros.
 type Posicion = (Int,Int)
 
+-- (posicionesVecinas p) son las posiciones de la matriz cuadrada de
+-- dimensión 3 que se encuentran encima, abajo, a la izquierda y a la
+-- derecha de los posición p. Por ejemplo,
 --    λ> posicionesVecinas (2,2)
 --    [(1,2),(3,2),(2,1),(2,3)]
 --    λ> posicionesVecinas (1,2)
