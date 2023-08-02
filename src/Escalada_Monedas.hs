@@ -26,7 +26,7 @@
 
 module Escalada_Monedas where
 
-import BusquedaEnEscalada
+import BusquedaEnEscalada (buscaEscalada)
 import Test.Hspec (Spec, hspec, it, shouldBe)
 
 -- Las monedas son números enteros.

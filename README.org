@@ -411,3 +411,4 @@ Los objetivos de esta recopilación son:
 + [[./src/BPM_8Puzzle.hs][El problema del 8 puzzle]].
 + [[./src/BusquedaEnEscalada.hs][Búsqueda en escalada]].
 + [[./src/Escalada_Monedas.hs][El problema del cambio de monedas por escalada]].
++ 9 [[./src/Escalada_Prim.hs][El algoritmo de Prim del árbol de expansión mínimo por escalada]].
