@@ -61,6 +61,7 @@ library
       Biparticiones_de_una_lista
       BPM_8Puzzle
       BusquedaEnAnchura
+      BusquedaEnEscalada
       BusquedaEnProfundidad
       BusquedaPrimeroElMejor
       Calculo_aproximado_de_integrales_definidas
@@ -116,6 +117,7 @@ library
       Emparejamiento_de_arboles
       Emparejamiento_de_arboles_1
       Enumera_arbol
+      Escalada_Monedas
       Existencia_de_elemento_del_arbol_con_propiedad
       Exponente_en_la_factorizacion
       Exponente_mayor
@@ -545,6 +547,7 @@ test-suite Exercitium-test
       Emparejamiento_binario_Spec
       Emparejamiento_de_arboles_Spec
       Enumera_arbol_Spec
+      Escalada_Monedas_Spec
       Existencia_de_elemento_del_arbol_con_propiedad_Spec
       Exponente_en_la_factorizacion_Spec
       Exponente_mayor_Spec

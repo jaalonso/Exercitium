@@ -6,7 +6,7 @@
 
 -- ---------------------------------------------------------------------
 -- En la búsqueda por primero el mejor se supone que los estados están
--- ordenados mediante una función, la heurística, que es una rstimación
+-- ordenados mediante una función, la heurística, que es una estimación
 -- de su coste para llegar a un estado final.
 --
 -- Definir la función

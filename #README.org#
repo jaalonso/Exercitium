@@ -409,5 +409,7 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD/ColaDePrioridadConListas.hs][El tipo de datos de las colas de prioridad mediante listas]].
 + [[./src/BusquedaPrimeroElMejor.hs][Búsqueda por primero el mejor]].
 + [[./src/BPM_8Puzzle.hs][El problema del 8 puzzle]].
-+ [[./src/BusquedaEnEscalada.hs][Búsqueda en escalada]].
-+ [[./src/Escalada_Monedas.hs][El problema del cambio de monedas por escalada]].
+
+*** Agosto 2023
++ 04 [[./src/BusquedaEnEscalada.hs][Búsqueda en escalada]].
++ 04 [[./src/Escalada_Monedas.hs][El problema del cambio de monedas por escalada]].
