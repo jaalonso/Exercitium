@@ -27,7 +27,7 @@
 --    prim :: (Ix v, Num p, Ord p) => Grafo v p -> [(p,v,v)]
 -- tal que (prim g) es el árbol de expansión mínimo del grafo g
 -- calculado mediante el algoritmo de Prim con bñusqueda en
--- esxcalada. Por ejemplo, si g1, g2, g3 y g4 son los grafos definidos
+-- escalada. Por ejemplo, si g1, g2, g3 y g4 son los grafos definidos
 -- por
 --    g1, g2, g3, g4 :: Grafo Int Int
 --    g1 = creaGrafo ND (1,5) [(1,2,12),(1,3,34),(1,5,78),
@@ -87,11 +87,11 @@ g4 = creaGrafo ND (1,7) [(1,2,5),(1,3,9),(1,5,15),(1,6,6),
                          (5,6,3),(5,7,9),
                          (6,7,11)]
 
--- Una arista esta formada dos nodos junto con su peso.
+-- Una arista esta formada por dos vértices junto con su peso.
 type Arista a b = (a,a,b)
 
--- Un nodo (Estado (p,t,r,aem)) está formado por el peso p de la última
--- arista añadida el árbol de expansión mínimo (aem), la lista t
+-- Un estado (Estado (p,t,r,aem)) está formado por el peso p de la
+-- última arista añadida el árbol de expansión mínimo (aem), la lista t
 -- de nodos del grafo que están en el aem, la lista r de nodos del
 -- grafo que no están en el aem y el aem.
 type Estado a b = (b,[a],[a],[Arista a b])
@@ -101,14 +101,14 @@ inicial :: (Ix a, Num b, Ord b) => Grafo a b -> Estado a b
 inicial g = (0,[n],ns,[])
   where (n:ns) = nodos g
 
--- (esFinal n) se verifica si n es un estado final; es decir, si no
+-- (esFinal e) se verifica si e es un estado final; es decir, si no
 -- queda ningún elemento en la lista de nodos sin colocar en el árbol de
 -- expansión mínimo.
 esFinal :: Estado a b -> Bool
 esFinal (_,_,[],_) = True
 esFinal _          = False
 
--- (sucesores g n) es la lista de los sucesores del nodo n en el
+-- (sucesores g e) es la lista de los sucesores del estado e en el
 -- grafo g. Por ejemplo,
 --    λ> sucesores g1 (0,[1],[2..5],[])
 --    [(12,[2,1],[3,4,5],[(1,2,12)]),

@@ -55,6 +55,7 @@ library
       Area_corona_circular
       Bandera_tricolor
       Base_de_dato_de_actividades
+      BEE_El_problema_del_granjero
       BEE_Mochila
       BEE_Reinas_Anchura
       BEE_Reinas_Profundidad
@@ -486,6 +487,7 @@ test-suite Exercitium-test
       Area_corona_circular_Spec
       Bandera_tricolor_Spec
       Base_de_dato_de_actividades_Spec
+      BEE_El_problema_del_granjero_Spec
       BEE_Mochila_Spec
       BEE_Reinas_Anchura_Spec
       BEE_Reinas_Profundidad_Spec
