@@ -143,6 +143,8 @@ Los objetivos de esta recopilación son:
 
 * Introducción a la programación con Haskell y Python
 
+** Definiciones elementales de funciones
+
 + [[./src/Media_aritmetica_de_tres_numeros.hs][Media aritmética de tres números]]
 + [[./src/Suma_de_monedas.hs][Suma de monedas]].
 + [[./src/Volumen_de_la_esfera.hs][Volumen de la esfera]].
@@ -172,6 +174,9 @@ Los objetivos de esta recopilación son:
 + [[./src/Formula_de_Heron_para_el_area_de_un_triangulo.hs][Fórmula de Herón para el área de un triángulo]].
 + [[./src/Interseccion_de_intervalos_cerrados.hs][Intersección de intervalos cerrados]].
 + [[./src/Numeros_racionales.hs][Números racionales]].
+
+** Definiciones por comprensión
+
 + [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
 + [[./src/Igualdad_de_conjuntos.hs][Igualdad de conjuntos]].
 + [[./src/Union_conjuntista_de_listas.hs][Unión conjuntista de listas]].
@@ -200,6 +205,9 @@ Los objetivos de esta recopilación son:
 + [[./src/Producto_escalar.hs][Producto escalar]].
 + [[./src/Representacion_densa_de_polinomios.hs][Representación densa de polinomios]].
 + [[./src/Base_de_dato_de_actividades.hs][Base de datos de actividades.]]
+
+** Definiciones por recursión
+
 + [[./src/Potencia_entera.hs][Potencia entera]].
 + [[./src/Algoritmo_de_Euclides_del_mcd.hs][Algoritmo de Euclides del mcd]].
 + [[./src/Digitos_de_un_numero.hs][Dígitos de un número]].
@@ -215,12 +223,18 @@ Los objetivos de esta recopilación son:
 + [[./src/Mayusculas_iniciales.hs][Mayúsculas iniciales]].
 + [[./src/Posiciones_de_un_caracter_en_una_cadena.hs][Posiciones de un carácter en una cadena]].
 + [[./src/Reconocimiento_de_subcadenas.hs][Reconocimiento de subcadenas]].
+
+** Funciones de orden superior
+
 + [[./src/Segmentos_cuyos_elementos_cumple_una_propiedad.hs][Segmentos cuyos elementos cumplen una propiedad]].
 + [[./src/Elementos_consecutivos_relacionados.hs][Elementos consecutivos relacionados]].
 + [[./src/Agrupacion_de_elementos_por_posicion.hs][Agrupación de elementos por posición]].
 + [[./src/Contenacion_de_una_lista_de_listas.hs][Concatenación de una lista de listas]].
 + [[./src/Aplica_segun_propiedad.hs][Aplica según propiedad]].
 + [[./src/Maximo_de_una_lista.hs][Máximo de una lista]].
+
+** Tipos definidos y tipos de datos algebraicos
+
 + [[./src/Movimientos_en_el_plano.hs][Movimientos en el plano]].
 + [[./src/El_tipo_de_figuras_geometricas.hs][El tipo de figuras geométricas]].
 + [[./src/El_tipo_de_los_numeros_naturales.hs][El tipo de los números naturales]].
@@ -272,134 +286,157 @@ Los objetivos de esta recopilación son:
   + [[./src/Maximos_valores_de_una_expresion_aritmetica.hs][Máximos valores de una expresión aritmética]].
 + [[./src/Valor_de_expresiones_aritmeticas_generales.hs][Valor de expresiones aritméticas generales]].
 + [[./src/Valor_de_una_expresion_vectorial.hs][Valor de una expresión vectorial]].
+
+** El tipo abstracto de datos de las pilas
+
 + [[./src/TAD/Pila.hs][El tipo abstracto de datos de las pilas]].
-  + [[./src/TAD/PilaConListas.hs][El tipo de datos de las pilas mediante listas]].
-  + [[./src/TAD/PilaConSucesiones.hs][El tipo de datos de las pilas mediante sucesiones]].
-  + [[./src/Transformaciones_pilas_listas.hs][TAD de las pilas: Transformaciones entre pilas y listas]].
-  + [[./src/FiltraPila.hs][TAD de las pilas: Filtrado de pilas según una propiedad]].
-  + [[./src/MapPila.hs][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
-  + [[./src/PertenecePila.hs][TAD de las pilas: Pertenencia a una pila]].
-  + [[./src/ContenidaPila.hs][TAD de las pilas: Inclusión de pilas]].
-  + [[./src/PrefijoPila.hs][TAD de las pilas: Reconocimiento de prefijos de pilas]].
-  + [[./src/SubPila.hs][TAD de las pilas: Reconocimiento de subpilas]].
-  + [[./src/OrdenadaPila.hs][TAD de las pilas: Reconocimiento de ordenación de pilas]].
-  + [[./src/OrdenaInserPila.hs][TAD de las pilas: Ordenación de pilas por inserción]].
-  + [[./src/NubPila.hs][TAD de las pilas: Eliminación de repeticiones en una pila]].
-  + [[./src/MaxPila.hs][TAD de las pilas: Máximo elemento de una pila]].
++ [[./src/TAD/PilaConListas.hs][El tipo de datos de las pilas mediante listas]].
++ [[./src/TAD/PilaConSucesiones.hs][El tipo de datos de las pilas mediante sucesiones]].
++ [[./src/Transformaciones_pilas_listas.hs][TAD de las pilas: Transformaciones entre pilas y listas]].
++ [[./src/FiltraPila.hs][TAD de las pilas: Filtrado de pilas según una propiedad]].
++ [[./src/MapPila.hs][TAD de las pilas: Aplicación de una función a los elementos de una pila]].
++ [[./src/PertenecePila.hs][TAD de las pilas: Pertenencia a una pila]].
++ [[./src/ContenidaPila.hs][TAD de las pilas: Inclusión de pilas]].
++ [[./src/PrefijoPila.hs][TAD de las pilas: Reconocimiento de prefijos de pilas]].
++ [[./src/SubPila.hs][TAD de las pilas: Reconocimiento de subpilas]].
++ [[./src/OrdenadaPila.hs][TAD de las pilas: Reconocimiento de ordenación de pilas]].
++ [[./src/OrdenaInserPila.hs][TAD de las pilas: Ordenación de pilas por inserción]].
++ [[./src/NubPila.hs][TAD de las pilas: Eliminación de repeticiones en una pila]].
++ [[./src/MaxPila.hs][TAD de las pilas: Máximo elemento de una pila]].
+
+** El tipo abstracto de datos de las colas
+
 + [[./src/TAD/Cola.hs][El tipo abstracto de datos de las colas]].
-  + [[./src/TAD/ColaConListas.hs][El tipo de datos de las colas mediante listas]].
-  + [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].
-  + [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].
-  + [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
-  + [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
-  + [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
-  + [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
-  + [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
-  + [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
-  + [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
-  + [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
-  + [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
-  + [[./src/ContenidaCola.hs][TAD de las colas: Inclusión de colas]].
-  + [[./src/PrefijoCola.hs][TAD de las colas: Reconocimiento de prefijos de colas]].
-  + [[./src/SubCola.hs][TAD de las colas: Reconocimiento de subcolas]].
-  + [[./src/OrdenadaCola.hs][TAD de las colas: Reconocimiento de ordenación de colas]].
-  + [[./src/MaxCola.hs][TAD de las colas: Máximo elemento de una cola]].
++ [[./src/TAD/ColaConListas.hs][El tipo de datos de las colas mediante listas]].
++ [[./src/TAD/ColaConSucesiones.hs][El tipo de datos de las colas mediante sucesiones]].
++ [[./src/TAD/ColaConDosListas.hs][El tipo de datos de las colas mediante dos listas]].
++ [[./src/Transformaciones_colas_listas.hs][TAD de las colas: Transformaciones entre colas y listas]].
++ [[./src/UltimoCola.hs][TAD de las colas: Último elemento]].
++ [[./src/LongitudCola.hs][TAD de las colas: Longitud de una cola]].
++ [[./src/TodosVerifican.hs][TAD de las colas: Todos los elementos verifican una propiedad]].
++ [[./src/AlgunoVerifica.hs][TAD de las colas: Alguno de los elementos verifican una propiedad]].
++ [[./src/ExtiendeCola.hs][TAD de las colas: Extensión de colas]].
++ [[./src/IntercalaColas.hs][TAD de las colas: Intercalado de dos colas]].
++ [[./src/AgrupaColas.hs][TAD de las colas: Agrupación de colas]].
++ [[./src/PerteneceCola.hs][TAD de las colas: Pertenencia a una cola]].
++ [[./src/ContenidaCola.hs][TAD de las colas: Inclusión de colas]].
++ [[./src/PrefijoCola.hs][TAD de las colas: Reconocimiento de prefijos de colas]].
++ [[./src/SubCola.hs][TAD de las colas: Reconocimiento de subcolas]].
++ [[./src/OrdenadaCola.hs][TAD de las colas: Reconocimiento de ordenación de colas]].
++ [[./src/MaxCola.hs][TAD de las colas: Máximo elemento de una cola]].
+
+** El tipo abstracto de datos de los conjuntos
+
 + [[./src/TAD/Conjunto.hs][El tipo abstracto de datos de los conjuntos]].
-  + [[./src/TAD/ConjuntoConListasNoOrdenadasConDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
-  + [[./src/TAD/ConjuntoConListasNoOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
-  + [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
-  + [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
-  + [[./src/TAD_Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
-  + [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
-  + [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
-  + [[./src/TAD_Conjunto_unitario.hs][TAD de los conjuntos: Conjunto unitario]].
-  + [[./src/TAD_Numero_de_elementos_de_un_conjunto.hs][TAD de los conjuntos: Número de elementos de un conjunto]].
-  + [[./src/TAD_Union_de_dos_conjuntos.hs][TAD de los conjuntos: Unión de dos conjuntos]].
-  + [[./src/TAD_Union_de_varios_conjuntos.hs][TAD de los conjuntos: Unión de varios conjuntos]].
-  + [[./src/TAD_Interseccion_de_dos_conjuntos.hs][TAD de los conjuntos: Intersección de dos conjuntos]].
-  + [[./src/TAD_Interseccion_de_varios_conjuntos.hs][TAD de los conjuntos: Intersección de varios conjuntos]].
-  + [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
-  + [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
-  + [[./src/TAD_Diferencia_simetrica.hs][TAD de los conjuntos: Diferencia simétrica]].
-  + [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
-  + [[./src/TAD_Particion_por_una_propiedad.hs][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
-  + [[./src/TAD_Particion_segun_un_numero.hs][TAD de los conjuntos: Partición según un número]].
-  + [[./src/TAD_mapC.hs][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
-  + [[./src/TAD_TodosVerificanConj.hs][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
-  + [[./src/TAD_AlgunosVerificanConj.hs][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
-  + [[./src/TAD_Producto_cartesiano.hs][TAD de los conjuntos: TAD_Producto_cartesiano]].
++ [[./src/TAD/ConjuntoConListasNoOrdenadasConDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas con duplicados]].
++ [[./src/TAD/ConjuntoConListasNoOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas no ordenadas sin duplicados]].
++ [[./src/TAD/ConjuntoConListasOrdenadasSinDuplicados.hs][El tipo de datos de los conjuntos mediante listas ordenadas sin duplicados]].
++ [[./src/TAD/ConjuntoConLibreria.hs][El tipo de datos de los conjuntos mediante librería]].
++ [[./src/TAD_Transformaciones_conjuntos_listas.hs][TAD de los conjuntos: Transformaciones entre conjuntos y listas]].
++ [[./src/TAD_subconjunto.hs][TAD de los conjuntos: Reconocimiento de subconjunto]].
++ [[./src/TAD_subconjuntoPropio.hs][TAD de los conjuntos: Reconocimiento de_subconjunto propio]].
++ [[./src/TAD_Conjunto_unitario.hs][TAD de los conjuntos: Conjunto unitario]].
++ [[./src/TAD_Numero_de_elementos_de_un_conjunto.hs][TAD de los conjuntos: Número de elementos de un conjunto]].
++ [[./src/TAD_Union_de_dos_conjuntos.hs][TAD de los conjuntos: Unión de dos conjuntos]].
++ [[./src/TAD_Union_de_varios_conjuntos.hs][TAD de los conjuntos: Unión de varios conjuntos]].
++ [[./src/TAD_Interseccion_de_dos_conjuntos.hs][TAD de los conjuntos: Intersección de dos conjuntos]].
++ [[./src/TAD_Interseccion_de_varios_conjuntos.hs][TAD de los conjuntos: Intersección de varios conjuntos]].
++ [[./src/TAD_Conjuntos_disjuntos.hs][TAD de los conjuntos: Conjuntos disjuntos]].
++ [[./src/TAD_Diferencia_de_conjuntos.hs][TAD de los conjuntos: Diferencia de conjuntos]].
++ [[./src/TAD_Diferencia_simetrica.hs][TAD de los conjuntos: Diferencia simétrica]].
++ [[./src/TAD_Subconjunto_por_propiedad.hs][TAD de los conjuntos: Subconjunto determinado por una propiedad]].
++ [[./src/TAD_Particion_por_una_propiedad.hs][TAD de los conjuntos: Partición de un conjunto según una propiedad]].
++ [[./src/TAD_Particion_segun_un_numero.hs][TAD de los conjuntos: Partición según un número]].
++ [[./src/TAD_mapC.hs][TAD de los conjuntos: Aplicación de una función a los elementos de un conjunto]].
++ [[./src/TAD_TodosVerificanConj.hs][TAD de los conjuntos: Todos los elementos verifican una propiedad]].
++ [[./src/TAD_AlgunosVerificanConj.hs][TAD de los conjuntos: Algunos elementos verifican una propiedad]].
++ [[./src/TAD_Producto_cartesiano.hs][TAD de los conjuntos: TAD_Producto_cartesiano]].
+
+** Relaciones binarias
+
 + [[./src/Relaciones_binarias.hs][Relaciones binarias]].
-  + [[./src/Universo_y_grafo_de_una_relacion_binaria.hs][Universo y grafo de una relación binaria]].
-  + [[./src/Relaciones_reflexivas.hs][Relaciones reflexivas]].
-  + [[./src/Relaciones_simetricas.hs][Relaciones simétricas]].
-  + [[./src/Composicion_de_relaciones_binarias_v2.hs][Composición de relaciones binarias]].
-  + [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
-  + [[./src/Relaciones_transitivas.hs][Relaciones transitivas]].
-  + [[./src/Relaciones_de_equivalencia.hs][Relaciones de equivalencia]].
-  + [[./src/Relaciones_irreflexivas.hs][Relaciones irreflexivas]].
-  + [[./src/Relaciones_antisimetricas.hs][Relaciones antisimétricas]].
-  + [[./src/Relaciones_totales.hs][Relaciones totales]].
-  + [[./src/Clausura_reflexiva.hs][Clausura reflexiva]].
-  + [[./src/Clausura_simetrica.hs][Clausura simétrica]].
-  + [[./src/Clausura_transitiva.hs][Clausura transitiva]].
++ [[./src/Universo_y_grafo_de_una_relacion_binaria.hs][Universo y grafo de una relación binaria]].
++ [[./src/Relaciones_reflexivas.hs][Relaciones reflexivas]].
++ [[./src/Relaciones_simetricas.hs][Relaciones simétricas]].
++ [[./src/Composicion_de_relaciones_binarias_v2.hs][Composición de relaciones binarias]].
++ [[./src/Reconocimiento_de_subconjunto.hs][Reconocimiento de subconjunto]].
++ [[./src/Relaciones_transitivas.hs][Relaciones transitivas]].
++ [[./src/Relaciones_de_equivalencia.hs][Relaciones de equivalencia]].
++ [[./src/Relaciones_irreflexivas.hs][Relaciones irreflexivas]].
++ [[./src/Relaciones_antisimetricas.hs][Relaciones antisimétricas]].
++ [[./src/Relaciones_totales.hs][Relaciones totales]].
++ [[./src/Clausura_reflexiva.hs][Clausura reflexiva]].
++ [[./src/Clausura_simetrica.hs][Clausura simétrica]].
++ [[./src/Clausura_transitiva.hs][Clausura transitiva]].
+
+** El tipo abstracto de datos de los polinomios
+
 + [[./src/TAD/Polinomio.hs][El tipo abstracto de datos de los polinomios]].
-  + [[./src/TAD/PolRepTDA.hs][El TAD de los polinomios mediante tipos algebraicos]].
-  + [[./src/TAD/PolRepDensa.hs][El TAD de los polinomios mediante listas densas]].
-  + [[./src/TAD/PolRepDispersa.hs][El TAD de los polinomios mediante listas dispersas]].
-  + [[./src/Pol_Transformaciones_dispersa_y_densa.hs][TAD de los polinomios: Transformaciones entre las representaciones dispersa y densa]].
-  + [[./src/Pol_Transformaciones_polinomios_dispersas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas dispersas]].
-  + [[./src/Pol_Coeficiente.hs][TAD de los polinomios: Coeficiente del término de grado k]].
-  + [[./src/Pol_Transformaciones_polinomios_densas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas densas]].
-  + [[./src/Pol_Crea_termino.hs][TAD de los polinomios: Construcción de términos]].
-  + [[./src/Pol_Termino_lider.hs][TAD de los polinomios: Término líder de un polinomio]].
-  + [[./src/Pol_Suma_de_polinomios.hs][TAD de los polinomios: Suma de polinomios]].
-  + [[./src/Pol_Producto_polinomios.hs][TAD de los polinomios: Producto de polinomios]].
-  + [[./src/Pol_Valor_de_un_polinomio_en_un_punto.hs][TAD de los polinomios: Valor de un polinomio en un punto]].
-  + [[./src/Pol_Comprobacion_de_raices_de_polinomios.hs][TAD de los polinomios: Comprobación de raíces de polinomios]]
-  + [[./src/Pol_Derivada_de_un_polinomio.hs][TAD de los polinomios: Derivada de un polinomio]].
-  + [[./src/Pol_Resta_de_polinomios.hs][TAD de los polinomios: Resta de polinomios]].
-  + [[./src/Pol_Potencia_de_un_polinomio.hs][TAD de los polinomios: Potencia de un polinomio]].
-  + [[./src/Pol_Integral_de_un_polinomio.hs][TAD de los polinomios: Integral de un polinomio]].
-  + [[./src/Pol_Integral_definida_de_un_polinomio.hs][TAD de los polinomios: Integral definida de un polinomio]].
-  + [[./src/Pol_Multiplicacion_de_un_polinomio_por_un_numero.hs][TAD de los polinomios: Multiplicación de un polinomio por un número]].
-  + [[./src/Pol_Division_de_polinomios.hs][TAD de los polinomios: División de polinomios]].
-  + [[./src/Pol_Divisibilidad_de_polinomios.hs][TAD de los polinomios: Divisibilidad de polinomios]].
-  + [[./src/Pol_Metodo_de_Horner_del_valor_de_un_polinomio.hs][TAD de los polinomios: Método de Horner del valor de un polinomio]].
-  + [[./src/Pol_Termino_independiente_de_un_polinomio.hs][TAD de los polinomios: Término independiente de un polinomio]].
-  + [[./src/Pol_Division_de_Ruffini_con_representacion_densa.hs][TAD de los polinomios: Regla de Ruffini con representación densa]].
-  + [[./src/Pol_Regla_de_Ruffini.hs][TAD de los polinomios: Regla de Ruffini]].
-  + [[./src/Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini.hs][TAD de los polinomios: Reconocimiento de raíces por la regla de Ruffini]].
-(desde aquí, con verificación)
-  + [[./src/Pol_Raices_enteras_de_un_polinomio.hs][TAD de los polinomios: Raíces enteras de un polinomio]].
-  + [[./src/Pol_Factorizacion_de_un_polinomio.hs][TAD de los polinomios: Factorización de un polinomio]].
++ [[./src/TAD/PolRepTDA.hs][El TAD de los polinomios mediante tipos algebraicos]].
++ [[./src/TAD/PolRepDensa.hs][El TAD de los polinomios mediante listas densas]].
++ [[./src/TAD/PolRepDispersa.hs][El TAD de los polinomios mediante listas dispersas]].
++ [[./src/Pol_Transformaciones_dispersa_y_densa.hs][TAD de los polinomios: Transformaciones entre las representaciones dispersa y densa]].
++ [[./src/Pol_Transformaciones_polinomios_dispersas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas dispersas]].
++ [[./src/Pol_Coeficiente.hs][TAD de los polinomios: Coeficiente del término de grado k]].
++ [[./src/Pol_Transformaciones_polinomios_densas.hs][TAD de los polinomios: Transformaciones entre polinomios y listas densas]].
++ [[./src/Pol_Crea_termino.hs][TAD de los polinomios: Construcción de términos]].
++ [[./src/Pol_Termino_lider.hs][TAD de los polinomios: Término líder de un polinomio]].
++ [[./src/Pol_Suma_de_polinomios.hs][TAD de los polinomios: Suma de polinomios]].
++ [[./src/Pol_Producto_polinomios.hs][TAD de los polinomios: Producto de polinomios]].
++ [[./src/Pol_Valor_de_un_polinomio_en_un_punto.hs][TAD de los polinomios: Valor de un polinomio en un punto]].
++ [[./src/Pol_Comprobacion_de_raices_de_polinomios.hs][TAD de los polinomios: Comprobación de raíces de polinomios]]
++ [[./src/Pol_Derivada_de_un_polinomio.hs][TAD de los polinomios: Derivada de un polinomio]].
++ [[./src/Pol_Resta_de_polinomios.hs][TAD de los polinomios: Resta de polinomios]].
++ [[./src/Pol_Potencia_de_un_polinomio.hs][TAD de los polinomios: Potencia de un polinomio]].
++ [[./src/Pol_Integral_de_un_polinomio.hs][TAD de los polinomios: Integral de un polinomio]].
++ [[./src/Pol_Integral_definida_de_un_polinomio.hs][TAD de los polinomios: Integral definida de un polinomio]].
++ [[./src/Pol_Multiplicacion_de_un_polinomio_por_un_numero.hs][TAD de los polinomios: Multiplicación de un polinomio por un número]].
++ [[./src/Pol_Division_de_polinomios.hs][TAD de los polinomios: División de polinomios]].
++ [[./src/Pol_Divisibilidad_de_polinomios.hs][TAD de los polinomios: Divisibilidad de polinomios]].
++ [[./src/Pol_Metodo_de_Horner_del_valor_de_un_polinomio.hs][TAD de los polinomios: Método de Horner del valor de un polinomio]].
++ [[./src/Pol_Termino_independiente_de_un_polinomio.hs][TAD de los polinomios: Término independiente de un polinomio]].
++ [[./src/Pol_Division_de_Ruffini_con_representacion_densa.hs][TAD de los polinomios: Regla de Ruffini con representación densa]].
++ [[./src/Pol_Regla_de_Ruffini.hs][TAD de los polinomios: Regla de Ruffini]].
++ [[./src/Pol_Reconocimiento_de_raices_por_la_regla_de_Ruffini.hs][TAD de los polinomios: Reconocimiento de raíces por la regla de Ruffini]].
++ [[./src/Pol_Raices_enteras_de_un_polinomio.hs][TAD de los polinomios: Raíces enteras de un polinomio]].
++ [[./src/Pol_Factorizacion_de_un_polinomio.hs][TAD de los polinomios: Factorización de un polinomio]].
+
+** El tipo abstracto de datos de los grafos
+
 + [[./src/TAD/Grafo.hs][El tipo abstracto de datos de los grafos]].
-  + [[./src/TAD/GrafoConListaDeAdyacencia.hs][El TAD de los grafos mediante listas de adyacencia]].
-  + [[./src/Grafo_Grafos_completos.hs][TAD de los grafos: Grafos_completos]].
-  + [[./src/Grafo_Grafos_ciclos.hs][TAD de los grafos: Grafos ciclos]].
-  + [[./src/Grafo_Numero_de_vertices.hs][TAD de los grafos: Número de vértices]].
-  + [[./src/Grafo_Incidentes_de_un_vertice.hs][TAD de los grafos: Incidentes de un vértice]].
-  + [[./src/Grafo_Contiguos_de_un_vertice.hs][TAD de los grafos: Contiguos de un vértice]].
-  + [[./src/Grafo_Lazos_de_un_grafo.hs][TAD de los grafos: Lazos de un grafo]].
-  + [[./src/Grafo_Numero_de_aristas_de_un_grafo.hs][TAD de los grafos: Número de aristas de un grafo]].
-  + [[./src/Grafo_Grados_positivos_y_negativos.hs][TAD de los grafos: Grados positivos y negativos]].
-  + [[./src/TAD/GrafoGenerador.hs][TAD de los grafos: Generadores de grafos arbitrarios]].
-  + [[./src/Grafo_Propiedades_de_grados_positivos_y_negativos.hs][TAD de los grafos: Propiedades de grados positivos y negativos]].
-  + [[./src/Grafo_Grado_de_un_vertice.hs][TAD de los grafos: Grado de un vértice]].
-  + [[./src/Grafo_Lema_del_apreton_de_manos.hs][TAD de los grafos: Lema del apretón de manos]].
-  + [[./src/Grafo_Grafos_regulares.hs][TAD de los grafos: Grafos regulares]].
-  + [[./src/Grafo_Grafos_k_regulares.hs][TAD de los grafos: Grafos k-regulares]].
-  + [[./src/Grafo_Recorridos_en_un_grafo_completo.hs][TAD de los grafos: Recorridos en un grafo completo]].
-  + [[./src/Grafo_Anchura_de_un_grafo.hs][TAD de los grafos: Anchura de un grafo]].
-  + [[./src/Grafo_Recorrido_en_profundidad.hs][TAD de los grafos: Recorrido en profundidad]].
-  + [[./src/Grafo_Recorrido_en_anchura.hs][TAD de los grafos: Recorrido en anchura]].
-  + [[./src/Grafo_Grafos_conexos.hs][TAD de los grafos: Grafos conexos]].
-  + [[./src/Grafo_Coloreado_correcto_de_un_mapa.hs][TAD de los grafos: Coloreado correcto de un mapa]].
-  + [[./src/Grafo_Nodos_aislados_de_un_grafo.hs][TAD de los grafos: Nodos aislados de un grafo]].
-  + [[./src/Grafo_Nodos_conectados_en_un_grafo.hs][TAD de los grafos: Nodos conectados en un grafo]].
-  + [[./src/grafo_algoritmo_de_kruskal.hs][TAD de los grafos: Algoritmo de Kruskal]].
-  + [[./src/Grafo_Algoritmo_de_Prim.hs][TAD de los grafos: Algoritmo de Prim]].
++ [[./src/TAD/GrafoConListaDeAdyacencia.hs][El TAD de los grafos mediante listas de adyacencia]].
++ [[./src/Grafo_Grafos_completos.hs][TAD de los grafos: Grafos_completos]].
++ [[./src/Grafo_Grafos_ciclos.hs][TAD de los grafos: Grafos ciclos]].
++ [[./src/Grafo_Numero_de_vertices.hs][TAD de los grafos: Número de vértices]].
++ [[./src/Grafo_Incidentes_de_un_vertice.hs][TAD de los grafos: Incidentes de un vértice]].
++ [[./src/Grafo_Contiguos_de_un_vertice.hs][TAD de los grafos: Contiguos de un vértice]].
++ [[./src/Grafo_Lazos_de_un_grafo.hs][TAD de los grafos: Lazos de un grafo]].
++ [[./src/Grafo_Numero_de_aristas_de_un_grafo.hs][TAD de los grafos: Número de aristas de un grafo]].
++ [[./src/Grafo_Grados_positivos_y_negativos.hs][TAD de los grafos: Grados positivos y negativos]].
++ [[./src/TAD/GrafoGenerador.hs][TAD de los grafos: Generadores de grafos arbitrarios]].
++ [[./src/Grafo_Propiedades_de_grados_positivos_y_negativos.hs][TAD de los grafos: Propiedades de grados positivos y negativos]].
++ [[./src/Grafo_Grado_de_un_vertice.hs][TAD de los grafos: Grado de un vértice]].
++ [[./src/Grafo_Lema_del_apreton_de_manos.hs][TAD de los grafos: Lema del apretón de manos]].
++ [[./src/Grafo_Grafos_regulares.hs][TAD de los grafos: Grafos regulares]].
++ [[./src/Grafo_Grafos_k_regulares.hs][TAD de los grafos: Grafos k-regulares]].
++ [[./src/Grafo_Recorridos_en_un_grafo_completo.hs][TAD de los grafos: Recorridos en un grafo completo]].
++ [[./src/Grafo_Anchura_de_un_grafo.hs][TAD de los grafos: Anchura de un grafo]].
++ [[./src/Grafo_Recorrido_en_profundidad.hs][TAD de los grafos: Recorrido en profundidad]].
++ [[./src/Grafo_Recorrido_en_anchura.hs][TAD de los grafos: Recorrido en anchura]].
++ [[./src/Grafo_Grafos_conexos.hs][TAD de los grafos: Grafos conexos]].
++ [[./src/Grafo_Coloreado_correcto_de_un_mapa.hs][TAD de los grafos: Coloreado correcto de un mapa]].
++ [[./src/Grafo_Nodos_aislados_de_un_grafo.hs][TAD de los grafos: Nodos aislados de un grafo]].
++ [[./src/Grafo_Nodos_conectados_en_un_grafo.hs][TAD de los grafos: Nodos conectados en un grafo]].
++ [[./src/grafo_algoritmo_de_kruskal.hs][TAD de los grafos: Algoritmo de Kruskal]].
++ [[./src/Grafo_Algoritmo_de_Prim.hs][TAD de los grafos: Algoritmo de Prim]].
+
+** Divide y vencerás
+
 + [[./src/DivideVenceras.hs][Algoritmo divide y vencerás]].
 + [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.hs][Rompecabeza del triominó_mediante divide y vencerás]].
+
+** Búsqueda en espacios de estados
+
 + [[./src/BusquedaEnProfundidad.hs][Búsqueda en espacios de estados por profundidad]].
 + [[./src/BEE_Reinas_Profundidad.hs][El problema de las n reinas (mediante búsqueda en espacios de estados por profundidad)]].
 + [[./src/BusquedaEnAnchura.hs][Búsqueda en espacios de estados por anchura]].
@@ -409,6 +446,7 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD/ColaDePrioridadConListas.hs][El tipo de datos de las colas de prioridad mediante listas]].
 + [[./src/BusquedaPrimeroElMejor.hs][Búsqueda por primero el mejor]].
 + [[./src/BPM_8Puzzle.hs][El problema del 8 puzzle]].
-+ [[./src/BusquedaEnEscalada.hs][Búsqueda en escalada]].
-+ [[./src/Escalada_Monedas.hs][El problema del cambio de monedas por escalada]].
-+ 9 [[./src/Escalada_Prim.hs][El algoritmo de Prim del árbol de expansión mínimo por escalada]].
++ 04 [[./src/BusquedaEnEscalada.hs][Búsqueda en escalada]].
++ 04 [[./src/Escalada_Monedas.hs][El problema del cambio de monedas por escalada]].
++ 09 [[./src/Escalada_Prim.hs][El algoritmo de Prim del árbol de expansión mínimo por escalada]].
++ 13 [[./src/BEE_El_problema_del_granjero.hs][El problema del granjero mediante búsqueda en espacio de estado]].
