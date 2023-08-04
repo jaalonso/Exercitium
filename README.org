@@ -450,3 +450,4 @@ Los objetivos de esta recopilación son:
 + 04 [[./src/Escalada_Monedas.hs][El problema del cambio de monedas por escalada]].
 + 09 [[./src/Escalada_Prim.hs][El algoritmo de Prim del árbol de expansión mínimo por escalada]].
 + 14 [[./src/BEE_El_problema_del_granjero.hs][El problema del granjero mediante búsqueda en espacio de estado]].
++ 19 [[./src/BEE_El_problema_de_las_fichas.hs][El problema de las fichas mediante búsqueda en espacio de estado]].
