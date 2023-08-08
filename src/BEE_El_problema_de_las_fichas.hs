@@ -68,13 +68,14 @@
 --     [B,H,V,V,B],[H,B,V,V,B],[V,B,H,V,B],[V,H,B,V,B],[H,V,B,V,B],[B,V,H,V,B],
 --     [B,V,V,H,B],[H,V,V,B,B],[V,H,V,B,B],[V,V,H,B,B]]
 --    λ> head (fichas buscaAnchura 2 2)
---    [[B,B,H,V,V],[B,B,V,V,H],[B,H,V,V,B],[B,V,V,H,B],[H,V,V,B,B],[V,V,H,B,B]]
+--    [[B,B,H,V,V],[B,B,V,V,H],[B,H,V,V,B],[B,V,V,H,B],[H,V,V,B,B],
+--     [V,V,H,B,B]]
 --    λ> head (fichas buscaPM 2 2)
---    [[B,B,H,V,V],[B,H,B,V,V],[B,V,B,H,V],[H,V,B,B,V],[V,H,B,B,V],[V,V,B,B,H],
---     [V,V,B,H,B],[V,V,H,B,B]]
+--    [[B,B,H,V,V],[B,H,B,V,V],[B,V,B,H,V],[H,V,B,B,V],[V,H,B,B,V],
+--     [V,V,B,B,H],[V,V,B,H,B],[V,V,H,B,B]]
 --    λ> head (fichas buscaEscalada 2 2)
---    [[B,B,H,V,V],[B,H,B,V,V],[B,V,B,H,V],[H,V,B,B,V],[V,H,B,B,V],[V,V,B,B,H],
---     [V,V,B,H,B],[V,V,H,B,B]]
+--    [[B,B,H,V,V],[B,H,B,V,V],[B,V,B,H,V],[H,V,B,B,V],[V,H,B,B,V],
+--     [V,V,B,B,H],[V,V,B,H,B],[V,V,H,B,B]]
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
@@ -109,7 +110,7 @@ tableroInicial m n = replicate m B ++ [H] ++ replicate n V
 tableroFinal ::  Int -> Int -> Tablero
 tableroFinal m n = replicate n V ++ [H] ++ replicate m B
 
--- (tablerosSucesores e) es la lista de los sucesores del tablero e. Por
+-- (tablerosSucesores t) es la lista de los sucesores del tablero t. Por
 -- ejemplo,
 --    λ> tablerosSucesores [V,B,H,V,V,B]
 --    [[V,H,B,V,V,B],[H,B,V,V,V,B],[V,B,V,H,V,B],[V,B,V,V,H,B],
@@ -118,15 +119,15 @@ tableroFinal m n = replicate n V ++ [H] ++ replicate m B
 --    [[B,B,H,B,V,V,V],[B,H,B,B,V,V,V],[H,B,B,B,V,V,V],
 --     [B,B,B,V,H,V,V],[B,B,B,V,V,H,V],[B,B,B,V,V,V,H]]
 tablerosSucesores :: Tablero -> [Tablero]
-tablerosSucesores e =
-  [intercambia i j e | i <- [j-1,j-2,j-3,j+1,j+2,j+3]
+tablerosSucesores t =
+  [intercambia i j t | i <- [j-1,j-2,j-3,j+1,j+2,j+3]
                      , 0 <= i, i < n]
-  where j = posicionHueco e
-        n = length e
+  where j = posicionHueco t
+        n = length t
 
 -- (posicionHueco t) es la posición del hueco en el tablero t. Por
 -- ejemplo,
---    posicionHueco tableroInicial  ==  3
+--    posicionHueco (tableroInicial 3 2)  ==  3
 posicionHueco :: Tablero -> Int
 posicionHueco t = length (takeWhile (/=H) t)
 
@@ -160,7 +161,7 @@ newtype Estado = E [Tablero]
 inicial :: Int -> Int -> Estado
 inicial m n = E [tableroInicial m n]
 
--- (esFinal m n) se verifica si N es un estado final del problema de las
+-- (esFinal m n e) se verifica si e es un estado final del problema de las
 -- fichas de orden (m,n). Por ejemplo,
 --    λ> esFinal 2 1 (E [[V,H,B,B],[V,B,B,H],[H,B,B,V],[B,B,H,V]])
 --    True
@@ -176,9 +177,9 @@ esFinal m n (E (e:_)) = e == tableroFinal m n
 --    λ> sucesores (E [[B,H,B,V],[H,B,B,V],[B,B,H,V]])
 --    [E [[B,V,B,H],[B,H,B,V],[H,B,B,V],[B,B,H,V]]]
 sucesores :: Estado -> [Estado]
-sucesores (E n@(e:es)) =
-  [E (e':n) | e' <- tablerosSucesores e,
-              e' `notElem` es]
+sucesores (E e@(t:ts)) =
+  [E (t':e) | t' <- tablerosSucesores t,
+              t' `notElem` ts]
 
 -- Heurística
 -- ==========
