@@ -40,14 +40,32 @@ type Problema = [Ficha]
 -- colocadas.
 type Estado = ([Ficha],[Ficha])
 
--- (inicial p) es el estado inicial del problema p.
+-- (inicial p) es el estado inicial del problema p. Por ejemplo,
+--    λ> inicial [(1,2),(2,3),(1,4)]
+--    ([(1,2),(2,3),(1,4)],[])
 inicial :: Problema -> Estado
 inicial p = (p,[])
 
--- (esFinal e) se verifica si e es un estado final.
+-- (esFinal e) se verifica si e es un estado final. Por ejemplo,
+--    λ> esFinal ([], [(4,1),(1,2),(2,3)])
+--    True
+--    λ> esFinal ([(2,3)], [(4,1),(1,2)])
+--    False
 esFinal :: Estado -> Bool
 esFinal = null . fst
 
+-- (sucesores e) es la lista de los sucesores del estado e. Por ejemplo,
+--    λ> sucesores ([(1,2),(2,3),(1,4)],[])
+--    [([(2,3),(1,4)],[(1,2)]),
+--     ([(1,2),(1,4)],[(2,3)]),
+--     ([(1,2),(2,3)],[(1,4)]),
+--     ([(2,3),(1,4)],[(2,1)]),
+--     ([(1,2),(1,4)],[(3,2)]),
+--     ([(1,2),(2,3)],[(4,1)])]
+--    λ> sucesores ([(2,3),(1,4)],[(1,2)])
+--    [([(2,3)],[(4,1),(1,2)])]
+--    λ> sucesores ([(2,3),(1,4)],[(2,1)])
+--    [([(1,4)],[(3,2),(2,1)])]
 sucesores :: Estado -> [Estado]
 sucesores (fs,[]) =
   [(delete (a,b) fs, [(a,b)]) | (a,b) <- fs, a /= b] ++
@@ -57,6 +75,10 @@ sucesores (fs,e@((x,_):_)) =
   [(delete (u,v) fs,(v,u):e) | (u,v) <- fs, u /= v, u == x] ++
   [(delete (u,v) fs,(u,v):e) | (u,v) <- fs, u == v, u == x]
 
+-- (soluciones p) es la lista de las soluciones del problema p. Por
+-- ejemplo,
+--    λ> soluciones [(1,2),(2,3),(1,4)]
+--    [([],[(4,1),(1,2),(2,3)]),([],[(3,2),(2,1),(1,4)])]
 soluciones :: Problema -> [Estado]
 soluciones p = buscaProfundidad sucesores esFinal (inicial p)
 
