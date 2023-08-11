@@ -452,3 +452,4 @@ Los objetivos de esta recopilación son:
 + 14 [[./src/BEE_El_problema_del_granjero.hs][El problema del granjero mediante búsqueda en espacio de estado]].
 + 19 [[./src/BEE_El_problema_de_las_fichas.hs][El problema de las fichas mediante búsqueda en espacio de estado]].
 + 24 [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.hs][El problema del calendario mediante búsqueda en espacio de estado]].
++ 29 [[./src/El_problema_del_domino.hs][El problema del dominó]].

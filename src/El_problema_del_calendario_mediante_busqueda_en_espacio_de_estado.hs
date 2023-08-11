@@ -26,7 +26,7 @@
 -- decir, el elemento (i,j) indica el adversario del jugador i el día j;
 -- por ejemplo, el adversario del jugador 2 el 4ª día es el jugador 6.
 --
--- Prara representar el problema se define el tipo Calendario como
+-- Para representar el problema se define el tipo Calendario como
 -- matrices de enteros
 --    type Calendario = Matrix Int
 --
@@ -113,7 +113,7 @@ sucesores c =
     n = nrows c
     (i,j) = head (huecos c)
 
--- (esFfinal c) se verifica si c un estado final para el problema
+-- (esFinal c) se verifica si c un estado final para el problema
 -- del calendario con n participantes; es decir, no queda en c ningún
 -- elemento igual a 0. Por ejemplo,
 --    λ> esFinal (fromLists [[2,3,4],[1,4,3],[4,1,2],[3,2,1]])
