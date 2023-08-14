@@ -287,6 +287,7 @@ library
       Primos_consecutivos_con_media_capicua
       Primos_cubanos
       Primos_equidistantes
+      Problema_de_suma_cero
       Producto_cartesiano
       Producto_cartesiano_de_dos_conjuntos
       Producto_de_los_elementos_de_la_diagonal_principal
@@ -715,6 +716,7 @@ test-suite Exercitium-test
       Primos_consecutivos_con_media_capicua_Spec
       Primos_cubanos_Spec
       Primos_equidistantes_Spec
+      Problema_de_suma_cero_Spec
       Producto_cartesiano_de_dos_conjuntos_Spec
       Producto_cartesiano_Spec
       Producto_de_los_elementos_de_la_diagonal_principal_Spec

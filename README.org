@@ -446,10 +446,11 @@ Los objetivos de esta recopilación son:
 + [[./src/TAD/ColaDePrioridadConListas.hs][El tipo de datos de las colas de prioridad mediante listas]].
 + [[./src/BusquedaPrimeroElMejor.hs][Búsqueda por primero el mejor]].
 + [[./src/BPM_8Puzzle.hs][El problema del 8 puzzle]].
-+ 04 [[./src/BusquedaEnEscalada.hs][Búsqueda en escalada]].
-+ 04 [[./src/Escalada_Monedas.hs][El problema del cambio de monedas por escalada]].
-+ 09 [[./src/Escalada_Prim.hs][El algoritmo de Prim del árbol de expansión mínimo por escalada]].
-+ 14 [[./src/BEE_El_problema_del_granjero.hs][El problema del granjero mediante búsqueda en espacio de estado]].
++ [[./src/BusquedaEnEscalada.hs][Búsqueda en escalada]].
++ [[./src/Escalada_Monedas.hs][El problema del cambio de monedas por escalada]].
++ [[./src/Escalada_Prim.hs][El algoritmo de Prim del árbol de expansión mínimo por escalada]].
++ [[./src/BEE_El_problema_del_granjero.hs][El problema del granjero mediante búsqueda en espacio de estado]].
 + 19 [[./src/BEE_El_problema_de_las_fichas.hs][El problema de las fichas mediante búsqueda en espacio de estado]].
 + 24 [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.hs][El problema del calendario mediante búsqueda en espacio de estado]].
 + 29 [[./src/El_problema_del_domino.hs][El problema del dominó]].
++ 04 [[./src/Problema_de_suma_cero.hs][Problema de suma cero]].
