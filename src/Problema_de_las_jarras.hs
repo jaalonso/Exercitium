@@ -107,9 +107,9 @@ esFinal p (e:_) = esConfiguracionFinal p e
 --    λ> sucesores (4,3,2) [(4,3),(4,0),(0,0)]
 --    [[(0,3),(4,3),(4,0),(0,0)]]
 sucesores :: Problema -> Estado -> [Estado]
-sucesores p n@(e:_) =
-    [e':n | e' <- sucesorasConfiguracion p e,
-            e' `notElem` n]
+sucesores p e@(c:_) =
+    [c':e | c' <- sucesorasConfiguracion p c,
+            c' `notElem` e]
 
 jarras :: Problema -> [Estado]
 jarras p = map reverse soluciones
