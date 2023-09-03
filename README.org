@@ -456,3 +456,4 @@ Los objetivos de esta recopilación son:
 + 04 [[./src/Problema_de_suma_cero.hs][Problema de suma cero]].
 + 09 [[./src/Problema_de_las_jarras.hs][Problema de las jarras]].
 + 14 [[./src/La_funcion_de_Fibonacci_por_programacion_dinamica.hs][La función de Fibonacci por programación dinámica]].
++ 19 [[./src/Coeficientes_binomiales.hs][Coeficientes binomiales]].
