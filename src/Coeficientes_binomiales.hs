@@ -10,7 +10,8 @@
 --
 -- Definir la función
 --    binomial :: Integer -> Integer -> Integer
--- Por ejemplo,
+-- tal que (binomial n k) es el coeficiente binomial n sobre k. Por
+-- ejemplo,
 --    binomial 6 3 == 20
 --    binomial 5 2 == 10
 --    binomial 5 3 == 10

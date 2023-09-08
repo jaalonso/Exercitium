@@ -179,6 +179,7 @@ library
       La_sucesion_del_reloj_astronomico_de_Praga
       Limite_del_seno
       Lista_cuadrada
+      Longitud_SCM
       LongitudCola
       Los_primeros_al_final
       MapPila
@@ -612,6 +613,7 @@ test-suite Exercitium-test
       La_sucesion_del_reloj_astronomico_de_Praga_Spec
       Limite_del_seno_Spec
       Lista_cuadrada_Spec
+      Longitud_SCM_Spec
       LongitudCola_Spec
       Los_primeros_al_final_Spec
       MapPila_Spec
