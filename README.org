@@ -453,8 +453,9 @@ Los objetivos de esta recopilación son:
 + [[./src/BEE_El_problema_de_las_fichas.hs][El problema de las fichas mediante búsqueda en espacio de estado]].
 + [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.hs][El problema del calendario mediante búsqueda en espacio de estado]].
 + [[./src/El_problema_del_domino.hs][El problema del dominó]].
-+ 04 [[./src/Problema_de_suma_cero.hs][Problema de suma cero]].
-+ 09 [[./src/Problema_de_las_jarras.hs][Problema de las jarras]].
++ [[./src/Problema_de_suma_cero.hs][Problema de suma cero]].
++ [[./src/Problema_de_las_jarras.hs][Problema de las jarras]].
 + 14 [[./src/La_funcion_de_Fibonacci_por_programacion_dinamica.hs][La función de Fibonacci por programación dinámica]].
 + 19 [[./src/Coeficientes_binomiales.hs][Coeficientes binomiales]].
 + 24 [[./src/Longitud_SCM.hs][Longitud de la subsecuencia común máxima]].
++ 29 [[./src/Subsecuencia_comun_maxima.hs][Subsecuencia común_máxima]].

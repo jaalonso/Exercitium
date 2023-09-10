@@ -334,6 +334,7 @@ library
       SubCola
       Subconjuntos_de_un_conjunto
       SubPila
+      Subsecuencia_comun_maxima
       Sucesion_de_numeros_amigos
       Sucesion_de_suma_de_cuadrados_de_los_digitos
       Suma_alterna_de_factoriales
@@ -766,6 +767,7 @@ test-suite Exercitium-test
       SubCola_Spec
       Subconjuntos_de_un_conjunto_Spec
       SubPila_Spec
+      Subsecuencia_comun_maxima_Spec
       Sucesion_de_numeros_amigos_Spec
       Sucesion_de_suma_de_cuadrados_de_los_digitos_Spec
       Suma_alterna_de_factoriales_Spec
