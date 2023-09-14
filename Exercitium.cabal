@@ -177,6 +177,7 @@ library
       La_sucesion_de_Ducci
       La_sucesion_de_Thue_Morse
       La_sucesion_del_reloj_astronomico_de_Praga
+      Levenshtein
       Limite_del_seno
       Lista_cuadrada
       Longitud_SCM
@@ -612,6 +613,7 @@ test-suite Exercitium-test
       La_serie_de_Thue_Morse_Spec
       La_sucesion_de_Thue_Morse_Spec
       La_sucesion_del_reloj_astronomico_de_Praga_Spec
+      Levenshtein_Spec
       Limite_del_seno_Spec
       Lista_cuadrada_Spec
       Longitud_SCM_Spec
