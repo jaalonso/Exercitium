@@ -460,3 +460,4 @@ Los objetivos de esta recopilación son:
 + 24 [[./src/Longitud_SCM.hs][Longitud de la subsecuencia común máxima]].
 + 29 [[./src/Subsecuencia_comun_maxima.hs][Subsecuencia común máxima]].
 + 04 [[./src/Levenshtein.hs][La distancia Levenshtein (con programación dinámica)]].
++ 14 [[./src/Programacion_dinamica_Caminos_en_una_reticula.hs][Caminos en una retícula (con programación dinámica)]].

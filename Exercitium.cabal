@@ -298,6 +298,7 @@ library
       Producto_de_los_elementos_de_la_diagonal_principal
       Producto_escalar
       Profundidad_de_un_arbol_binario
+      Programacion_dinamica_Caminos_en_una_reticula
       Puntos_dentro_del_circulo
       Puntos_en_regiones_rectangulares
       Raices_de_la_ecuacion_de_segundo_grado
@@ -733,6 +734,7 @@ test-suite Exercitium-test
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
       Producto_escalar_Spec
       Profundidad_de_un_arbol_binario_Spec
+      Programacion_dinamica_Caminos_en_una_reticula_Spec
       Puntos_dentro_del_circulo_Spec
       Puntos_en_regiones_rectangulares_Spec
       Raices_de_la_ecuacion_de_segundo_grado_Spec
