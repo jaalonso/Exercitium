@@ -70,6 +70,7 @@ library
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales
       Calculo_de_pi_mediante_la_formula_de_Leibniz
       Caminos_en_un_triangulo
+      Caminos_en_una_matriz
       Ceros_finales_del_factorial
       Clausura
       Clausura_reflexiva
@@ -509,6 +510,7 @@ test-suite Exercitium-test
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales_Spec
       Calculo_de_pi_mediante_la_formula_de_Leibniz_Spec
       Caminos_en_un_triangulo_Spec
+      Caminos_en_una_matriz_Spec
       Ceros_finales_del_factorial_Spec
       Clausura_reflexiva_Spec
       Clausura_simetrica_Spec

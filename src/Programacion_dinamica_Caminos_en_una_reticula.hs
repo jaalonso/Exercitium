@@ -1,7 +1,7 @@
 -- Programacion_dinamica_Caminos_en_una_reticula.hs
 -- Caminos en una retícula (con programación dinámica)
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 14-octubre-2023
+-- Sevilla, 9-octubre-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
