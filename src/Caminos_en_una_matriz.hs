@@ -30,23 +30,23 @@
 -- moviéndose en cada paso una casilla hacia abajo o hacia la
 -- derecha. Por ejemplo,
 --    λ> caminos (fromLists [[1,6,11,2],[7,12,3,8],[3,8,4,9]])
---    [[1,7, 3,8,4,9],
---     [1,7,12,8,4,9],
---     [1,7,12,3,4,9],
---     [1,7,12,3,8,9],
---     [1,6,12,8,4,9],
---     [1,6,12,3,4,9],
---     [1,6,12,3,8,9],
---     [1,6,11,3,4,9],
+--    [[1,6,11,2,8,9],
 --     [1,6,11,3,8,9],
---     [1,6,11,2,8,9]]
+--     [1,6,12,3,8,9],
+--     [1,7,12,3,8,9],
+--     [1,6,11,3,4,9],
+--     [1,6,12,3,4,9],
+--     [1,7,12,3,4,9],
+--     [1,6,12,8,4,9],
+--     [1,7,12,8,4,9],
+--     [1,7, 3,8,4,9]]
 --    λ> length (caminos (fromList 12 12 [1..]))
 --    705432
 -- ---------------------------------------------------------------------
 
 module Caminos_en_una_matriz where
 
-import Data.Matrix
+import Data.Matrix (Matrix, (!), fromLists, matrix, nrows, ncols)
 import Test.Hspec (Spec, hspec, it, shouldBe)
 
 -- 1ª definición (por recursión)
@@ -82,8 +82,6 @@ matrizCaminos m = q
     f (1,y) = [[m!(1,z) | z <- [y,y-1..1]]]
     f (x,1) = [[m!(z,1) | z <- [x,x-1..1]]]
     f (x,y) = [m!(x,y) : cs | cs <- q!(x-1,y) ++ q!(x,y-1)]
-
--- Nota: (caminos2 m) es la inversa de (caminos1 m).
 
 -- Comparación de eficiencia
 -- =========================

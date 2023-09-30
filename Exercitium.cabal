@@ -191,6 +191,7 @@ library
       Matriz_zigzagueante
       MaxCola
       Maxima_suma_de_caminos_en_un_triangulo
+      Maxima_suma_de_los_caminos_en_una_matriz
       Maximo_de_tres_numeros
       Maximo_de_una_lista
       Maximos_locales
@@ -629,6 +630,7 @@ test-suite Exercitium-test
       Matriz_zigzagueante_Spec
       MaxCola_Spec
       Maxima_suma_de_caminos_en_un_triangulo_Spec
+      Maxima_suma_de_los_caminos_en_una_matriz_Spec
       Maximo_de_tres_numeros_Spec
       Maximo_de_una_lista_Spec
       Maximos_locales_Spec
