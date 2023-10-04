@@ -69,6 +69,7 @@ library
       Calculo_aproximado_de_integrales_definidas
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales
       Calculo_de_pi_mediante_la_formula_de_Leibniz
+      Camino_de_maxima_suma_en_una_matriz
       Caminos_en_un_triangulo
       Caminos_en_una_matriz
       Ceros_finales_del_factorial
@@ -510,6 +511,7 @@ test-suite Exercitium-test
       Calculo_aproximado_de_integrales_definidas_Spec
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales_Spec
       Calculo_de_pi_mediante_la_formula_de_Leibniz_Spec
+      Camino_de_maxima_suma_en_una_matriz_Spec
       Caminos_en_un_triangulo_Spec
       Caminos_en_una_matriz_Spec
       Ceros_finales_del_factorial_Spec
