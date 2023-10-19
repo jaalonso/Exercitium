@@ -455,12 +455,16 @@ Los objetivos de esta recopilación son:
 + [[./src/El_problema_del_domino.hs][El problema del dominó]].
 + [[./src/Problema_de_suma_cero.hs][Problema de suma cero]].
 + [[./src/Problema_de_las_jarras.hs][Problema de las jarras]].
+
+** Programación dinámica
 + [[./src/La_funcion_de_Fibonacci_por_programacion_dinamica.hs][La función de Fibonacci por programación dinámica]].
 + [[./src/Coeficientes_binomiales.hs][Coeficientes binomiales]].
 + [[./src/Longitud_SCM.hs][Longitud de la subsecuencia común máxima]].
 + [[./src/Subsecuencia_comun_maxima.hs][Subsecuencia común máxima]].
-+ 04 [[./src/Levenshtein.hs][La distancia Levenshtein (con programación dinámica)]].
-+ 09 [[./src/Programacion_dinamica_Caminos_en_una_reticula.hs][Caminos en una retícula (con programación dinámica)]].
-+ 14 [[./src/Caminos_en_una_matriz.hs][Caminos en una matriz (con programación dinámica)]].
-+ 19 [[./src/Maxima_suma_de_los_caminos_en_una_matriz.hs][Máxima suma de los caminos en una matriz]].
++ [[./src/Levenshtein.hs][La distancia Levenshtein (con programación dinámica)]].
++ [[./src/Programacion_dinamica_Caminos_en_una_reticula.hs][Caminos en una retícula (con programación dinámica)]].
++ [[./src/Caminos_en_una_matriz.hs][Caminos en una matriz (con programación dinámica)]].
++ [[./src/Maxima_suma_de_los_caminos_en_una_matriz.hs][Máxima suma de los caminos en una matriz]].
+
 + 24 [[./src/Camino_de_maxima_suma_en_una_matriz.hs][Camino de máxima suma en una matriz]].
++ 29 [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.hs][Método de Herón para calcular la raíz_cuadrada]].

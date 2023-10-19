@@ -42,6 +42,7 @@ module Maxima_suma_de_los_caminos_en_una_matriz where
 
 import Data.Matrix (Matrix, (!), fromList, fromLists, matrix, nrows, ncols)
 import Test.Hspec (Spec, hspec, it, shouldBe)
+import Caminos_en_una_matriz (caminos1, caminos2)
 
 -- 1ª definicion de maximaSuma (con caminos1)
 -- ==========================================
@@ -50,21 +51,10 @@ maximaSuma1 :: Matrix Int -> Int
 maximaSuma1 =
   maximum . map sum . caminos1
 
-caminos1 :: Matrix Int -> [[Int]]
-caminos1 m =
-  reverse (map reverse (caminos1Aux m (nf,nc)))
-  where nf = nrows m
-        nc = ncols m
+-- Se usará la función caminos1 del ejercicio
+-- "Caminos en una matriz" que se encuentra en
+-- https://bit.ly/45bYoYE
 
--- (caminos1Aux m p) es la lista de los caminos invertidos en la matriz m
--- desde la posición (1,1) hasta la posición p. Por ejemplo,
-caminos1Aux :: Matrix Int -> (Int,Int) -> [[Int]]
-caminos1Aux m (1,1) = [[m!(1,1)]]
-caminos1Aux m (1,j) = [[m!(1,k) | k <- [j,j-1..1]]]
-caminos1Aux m (i,1) = [[m!(k,1) | k <- [i,i-1..1]]]
-caminos1Aux m (i,j) = [m!(i,j) : xs
-                      | xs <- caminos1Aux m (i,j-1) ++
-                              caminos1Aux m (i-1,j)]
 
 -- 2ª definición de maximaSuma (con caminos2)
 -- ==========================================
@@ -73,17 +63,9 @@ maximaSuma2 :: Matrix Int -> Int
 maximaSuma2 =
   maximum . map sum . caminos2
 
-caminos2 :: Matrix Int -> [[Int]]
-caminos2 m =
-  map reverse (matrizCaminos m ! (nrows m, ncols m))
-
-matrizCaminos :: Matrix Int -> Matrix [[Int]]
-matrizCaminos m = q
-  where
-    q = matrix (nrows m) (ncols m) f
-    f (1,y) = [[m!(1,z) | z <- [y,y-1..1]]]
-    f (x,1) = [[m!(z,1) | z <- [x,x-1..1]]]
-    f (x,y) = [m!(x,y) : cs | cs <- q!(x-1,y) ++ q!(x,y-1)]
+-- Se usará la función caminos2 del ejercicio
+-- "Caminos en una matriz" que se encuentra en
+-- https://bit.ly/45bYoYE
 
 -- 3ª definicion de maximaSuma (por recursión)
 -- ===========================================
