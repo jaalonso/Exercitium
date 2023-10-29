@@ -209,6 +209,7 @@ library
       Menor_numero_con_una_cantidad_dada_de_divisores
       Metodo_de_biseccion_para_aproximar_raices_de_funciones
       Metodo_de_Heron_para_calcular_la_raiz_cuadrada
+      Metodo_de_Newton_para_calcular_raices
       Minimo_producto_escalar
       Movimientos_en_el_plano
       NubPila
@@ -650,6 +651,7 @@ test-suite Exercitium-test
       Menor_numero_con_una_cantidad_dada_de_divisores_Spec
       Metodo_de_biseccion_para_aproximar_raices_de_funciones_Spec
       Metodo_de_Heron_para_calcular_la_raiz_cuadrada_Spec
+      Metodo_de_Newton_para_calcular_raices_Spec
       Minimo_producto_escalar_Spec
       NubPila_Spec
       Numeracion_con_multiples_base_Spec

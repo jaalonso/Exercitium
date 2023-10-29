@@ -465,6 +465,8 @@ Los objetivos de esta recopilación son:
 + [[./src/Programacion_dinamica_Caminos_en_una_reticula.hs][Caminos en una retícula (con programación dinámica)]].
 + [[./src/Caminos_en_una_matriz.hs][Caminos en una matriz (con programación dinámica)]].
 + [[./src/Maxima_suma_de_los_caminos_en_una_matriz.hs][Máxima suma de los caminos en una matriz]].
++ [[./src/Camino_de_maxima_suma_en_una_matriz.hs][Camino de máxima suma en una matriz]].
 
-+ 24 [[./src/Camino_de_maxima_suma_en_una_matriz.hs][Camino de máxima suma en una matriz]].
-+ 29 [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.hs][Método de Herón para calcular la raíz_cuadrada]].
+** Próximos
++ 29 [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.hs][Método de Herón para calcular la raíz cuadrada]].
++ 04 [[./src/Metodo_de_Newton_para_calcular_raices.hs][Método de Newton para calcular raíces]].
