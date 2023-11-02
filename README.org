@@ -467,6 +467,9 @@ Los objetivos de esta recopilación son:
 + [[./src/Maxima_suma_de_los_caminos_en_una_matriz.hs][Máxima suma de los caminos en una matriz]].
 + [[./src/Camino_de_maxima_suma_en_una_matriz.hs][Camino de máxima suma en una matriz]].
 
+** Cálculo numérico
++ [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.hs][Método de Herón para calcular la raíz cuadrada]].
+
 ** Próximos
-+ 29 [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.hs][Método de Herón para calcular la raíz cuadrada]].
 + 04 [[./src/Metodo_de_Newton_para_calcular_raices.hs][Método de Newton para calcular raíces]].
++ 09 [[./src/Funciones_inversas_por_el_metodo_de_Newton.hs][Funciones inversas por el método de Newton]].

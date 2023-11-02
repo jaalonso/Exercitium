@@ -138,6 +138,7 @@ library
       Familias_de_numeros_con_algun_digito_en_comun
       FiltraPila
       Formula_de_Heron_para_el_area_de_un_triangulo
+      Funciones_inversas_por_el_metodo_de_Newton
       Grafo_Algoritmo_de_Kruskal
       Grafo_Algoritmo_de_Prim
       Grafo_Anchura_de_un_grafo
@@ -583,6 +584,7 @@ test-suite Exercitium-test
       Familias_de_numeros_con_algun_digito_en_comun_Spec
       FiltraPila_Spec
       Formula_de_Heron_para_el_area_de_un_triangulo_Spec
+      Funciones_inversas_por_el_metodo_de_Newton_Spec
       Grafo_Algoritmo_de_Kruskal_Spec
       Grafo_Anchura_de_un_grafo_Spec
       Grafo_Coloreado_correcto_de_un_mapa_Spec
