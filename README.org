@@ -469,7 +469,8 @@ Los objetivos de esta recopilación son:
 
 ** Cálculo numérico
 + [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.hs][Método de Herón para calcular la raíz cuadrada]].
++ [[./src/Metodo_de_Newton_para_calcular_raices.hs][Método de Newton para calcular raíces]].
 
 ** Próximos
-+ 04 [[./src/Metodo_de_Newton_para_calcular_raices.hs][Método de Newton para calcular raíces]].
 + 09 [[./src/Funciones_inversas_por_el_metodo_de_Newton.hs][Funciones inversas por el método de Newton]].
++ 14 [[./src/Limites_de_sucesiones.hs][Límites de sucesiones]].

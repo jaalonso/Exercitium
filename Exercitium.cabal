@@ -182,6 +182,7 @@ library
       La_sucesion_del_reloj_astronomico_de_Praga
       Levenshtein
       Limite_del_seno
+      Limites_de_sucesiones
       Lista_cuadrada
       Longitud_SCM
       LongitudCola
@@ -625,6 +626,7 @@ test-suite Exercitium-test
       La_sucesion_del_reloj_astronomico_de_Praga_Spec
       Levenshtein_Spec
       Limite_del_seno_Spec
+      Limites_de_sucesiones_Spec
       Lista_cuadrada_Spec
       Longitud_SCM_Spec
       LongitudCola_Spec
