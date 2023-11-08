@@ -210,6 +210,7 @@ library
       Media_aritmetica_de_tres_numeros
       Menor_numero_con_una_cantidad_dada_de_divisores
       Metodo_de_biseccion_para_aproximar_raices_de_funciones
+      Metodo_de_biseccion_para_calcular_ceros_de_una_funcion
       Metodo_de_Heron_para_calcular_la_raiz_cuadrada
       Metodo_de_Newton_para_calcular_raices
       Minimo_producto_escalar
@@ -654,6 +655,7 @@ test-suite Exercitium-test
       Media_aritmetica_de_tres_numeros_Spec
       Menor_numero_con_una_cantidad_dada_de_divisores_Spec
       Metodo_de_biseccion_para_aproximar_raices_de_funciones_Spec
+      Metodo_de_biseccion_para_calcular_ceros_de_una_funcion_Spec
       Metodo_de_Heron_para_calcular_la_raiz_cuadrada_Spec
       Metodo_de_Newton_para_calcular_raices_Spec
       Minimo_producto_escalar_Spec

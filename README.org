@@ -474,3 +474,4 @@ Los objetivos de esta recopilación son:
 ** Próximos
 + 09 [[./src/Funciones_inversas_por_el_metodo_de_Newton.hs][Funciones inversas por el método de Newton]].
 + 14 [[./src/Limites_de_sucesiones.hs][Límites de sucesiones]].
++ 19 [[./src/Metodo_de_biseccion_para_calcular_ceros_de_una_funcion.hs][Método de bisección para calcular ceros de una función]].
