@@ -476,3 +476,4 @@ Los objetivos de esta recopilación son:
 + 14 [[./src/Limites_de_sucesiones.hs][Límites de sucesiones]].
 + 19 [[./src/Metodo_de_biseccion_para_calcular_ceros_de_una_funcion.hs][Método de bisección para calcular ceros de una función]].
 + 24 [[./src/Raices_enteras.hs][Raíces enteras]].
++ 29 [[./src/Integracion_por_rectangulos.hs][Integración por el método de los rectángulos]].
