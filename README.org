@@ -471,9 +471,10 @@ Los objetivos de esta recopilación son:
 + [[./src/Metodo_de_Heron_para_calcular_la_raiz_cuadrada.hs][Método de Herón para calcular la raíz cuadrada]].
 + [[./src/Metodo_de_Newton_para_calcular_raices.hs][Método de Newton para calcular raíces]].
 + [[./src/Funciones_inversas_por_el_metodo_de_Newton.hs][Funciones inversas por el método de Newton]].
++ [[./src/Limites_de_sucesiones.hs][Límites de sucesiones]].
++ [[./src/Metodo_de_biseccion_para_calcular_ceros_de_una_funcion.hs][Método de bisección para calcular ceros de una función]].
 
 ** Próximos
-+ 14 [[./src/Limites_de_sucesiones.hs][Límites de sucesiones]].
-+ 19 [[./src/Metodo_de_biseccion_para_calcular_ceros_de_una_funcion.hs][Método de bisección para calcular ceros de una función]].
 + 24 [[./src/Raices_enteras.hs][Raíces enteras]].
 + 29 [[./src/Integracion_por_rectangulos.hs][Integración por el método de los rectángulos]].
++ 04 [[./src/Algoritmo_de_bajada.hs][Algoritmo de bajada para resolver un sistema triangular inferior]].

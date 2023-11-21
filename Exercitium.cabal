@@ -30,6 +30,7 @@ library
       AgrupaColas
       Alergias
       Alfabeto_desde
+      Algoritmo_de_bajada
       Algoritmo_de_Euclides_del_mcd
       Algun_vecino_menor
       AlgunoVerifica
@@ -487,6 +488,7 @@ test-suite Exercitium-test
       AgrupaColas_Spec
       Alergias_Spec
       Alfabeto_desde_Spec
+      Algoritmo_de_bajada_Spec
       Algoritmo_de_Euclides_del_mcd_Spec
       Algun_vecino_menor_Spec
       AlgunoVerifica_Spec
