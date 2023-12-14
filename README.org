@@ -474,8 +474,8 @@ Los objetivos de esta recopilación son:
 + [[./src/Limites_de_sucesiones.hs][Límites de sucesiones]].
 + [[./src/Metodo_de_biseccion_para_calcular_ceros_de_una_funcion.hs][Método de bisección para calcular ceros de una función]].
 + [[./src/Raices_enteras.hs][Raíces enteras]].
++ [[./src/Integracion_por_rectangulos.hs][Integración por el método de los rectángulos]].
 
 ** Próximos
-+ 29 [[./src/Integracion_por_rectangulos.hs][Integración por el método de los rectángulos]].
 + 04 [[./src/Algoritmo_de_bajada.hs][Algoritmo de bajada para resolver un sistema triangular inferior]].
 + 09 [[./src/ListaVector.hs][Transformación de listas a vectores]].

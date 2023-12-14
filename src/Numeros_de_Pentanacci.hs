@@ -1,17 +1,17 @@
 -- Numeros_de_Pentanacci.hs
 -- Números de Pentanacci.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 05-agosto-2022
+-- Sevilla, 05-agosto-2022 (versión 14-dic-23)
 -- ---------------------------------------------------------------------
 
--- --------------------------------------------------------------------- 
+-- ---------------------------------------------------------------------
 -- Los números de Fibonacci se definen mediante las ecuaciones
 --    F(0) = 0
 --    F(1) = 1
 --    F(n) = F(n-1) + F(n-2), si n > 1
--- Los primeros números de Fibonacci son 
+-- Los primeros números de Fibonacci son
 --    0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, ...
--- 
+--
 -- Una generalización de los anteriores son los números de Pentanacci
 -- definidos por las siguientes ecuaciones
 --    P(0) = 0
@@ -20,15 +20,15 @@
 --    P(3) = 2
 --    P(4) = 4
 --    P(n) = P(n-1) + P(n-2) + P(n-3) + P(n-4) + P(n-5), si n > 4
--- Los primeros números de Pentanacci son 
+-- Los primeros números de Pentanacci son
 --   0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236, 464, 912, 1793, 3525, ...
--- 
+--
 -- Definir la sucesión
 --    pentanacci :: [Integer]
 -- cuyos elementos son los números de Pentanacci. Por ejemplo,
 --    λ> take 15 pentanacci
 --    [0,1,1,2,4,8,16,31,61,120,236,464,912,1793,3525]
---    λ> (pentanacci !! (10^5)) `mod` (10^30) 
+--    λ> (pentanacci !! (10^5)) `mod` (10^30)
 --    482929150584077921552549215816
 --    231437922897686901289110700696
 --    λ> length (show (pentanacci !! (10^5)))
@@ -41,6 +41,7 @@
 module Numeros_de_Pentanacci where
 
 import Data.List (zipWith5)
+import Test.Hspec (Spec, hspec, it, shouldBe)
 import Test.QuickCheck (NonNegative (NonNegative), quickCheckWith, maxSize, stdArgs)
 
 -- 1ª solución
@@ -61,7 +62,7 @@ pent n = pent (n-1) + pent (n-2) + pent (n-3) + pent (n-4) + pent (n-5)
 -- ===========
 
 pentanacci2 :: [Integer]
-pentanacci2 = 
+pentanacci2 =
   0 : 1 : 1 : 2 : 4 : zipWith5 f (r 0) (r 1) (r 2) (r 3) (r 4)
   where f a b c d e = a+b+c+d+e
         r n         = drop n pentanacci2
@@ -79,6 +80,32 @@ pentanacci3 = p (0, 1, 1, 2, 4)
 pentanacci4 :: [Integer]
 pentanacci4 = 0: 1: 1: 2: 4: p pentanacci4
   where p (a:b:c:d:e:xs) = (a+b+c+d+e): p (b:c:d:e:xs)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+spec :: Spec
+spec = do
+  it "ej1" $
+    take 15 pentanacci1 `shouldBe`
+    [0,1,1,2,4,8,16,31,61,120,236,464,912,1793,3525]
+  it "ej2" $
+    take 15 pentanacci2 `shouldBe`
+    [0,1,1,2,4,8,16,31,61,120,236,464,912,1793,3525]
+  it "ej3" $
+    take 15 pentanacci3 `shouldBe`
+    [0,1,1,2,4,8,16,31,61,120,236,464,912,1793,3525]
+  it "ej4" $
+    take 15 pentanacci4 `shouldBe`
+    [0,1,1,2,4,8,16,31,61,120,236,464,912,1793,3525]
+
+-- La verificación es
+--    λ> verifica
+--
+--    4 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -105,7 +132,7 @@ prop_pentanacci (NonNegative n) =
 --    λ> pentanacci2 !! 25
 --    5976577
 --    (0.00 secs, 562,360 bytes)
---    
+--
 --    λ> length (show (pentanacci2 !! (10^5)))
 --    29357
 --    (1.04 secs, 2,531,259,408 bytes)
