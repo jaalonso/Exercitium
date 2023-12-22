@@ -110,6 +110,7 @@ library
       El_primero_al_final
       El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado
       El_problema_del_domino
+      El_teorema_de_Navidad_de_Fermat
       El_tipo_de_figuras_geometricas
       El_tipo_de_las_listas
       El_tipo_de_los_arboles_binarios
@@ -566,6 +567,7 @@ test-suite Exercitium-test
       El_primero_al_final_Spec
       El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado_Spec
       El_problema_del_domino_Spec
+      El_teorema_de_Navidad_de_Fermat_Spec
       El_tipo_de_figuras_geometricas_Spec
       El_tipo_de_las_listas_Spec
       El_tipo_de_los_arboles_binarios_Spec

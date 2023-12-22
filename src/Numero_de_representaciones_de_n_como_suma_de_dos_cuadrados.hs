@@ -1,7 +1,7 @@
 -- Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados.hs
--- Número de representaciones de n como suma de dos cuadrados. 
+-- Número de representaciones de n como suma de dos cuadrados.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 04-agosto-2022
+-- Sevilla, 14-diciembre-23
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -22,7 +22,7 @@
 -- Definir la función
 --    nRepresentaciones :: Integer -> Integer
 -- tal que (nRepresentaciones n) es el número de formas de representar n
--- como suma de dos cuadrados. Por ejemplo, 
+-- como suma de dos cuadrados. Por ejemplo,
 --    nRepresentaciones (2^3*3^9*5^3*7^8*13^6)        ==  0
 --    nRepresentaciones (2^3*3^2*5^3*7^8*13^6)        ==  14
 --    head [n | n <- [1..], nRepresentaciones n > 8]  ==  71825
@@ -76,7 +76,7 @@ nRepresentaciones2 n =
 prop_nRepresentaciones :: Positive Integer -> Bool
 prop_nRepresentaciones (Positive n) =
   nRepresentaciones1 n == nRepresentaciones2 n
-  
+
 -- La comprobación es
 --    λ> quickCheck prop_nRepresentaciones
 --    +++ OK, passed 100 tests.
@@ -102,7 +102,7 @@ prop_representacion (Positive n) =
 
 representaciones :: Integer -> [(Integer,Integer)]
 representaciones n =
-  [(x,raiz z) | x <- [0..raiz (n `div` 2)], 
+  [(x,raiz z) | x <- [0..raiz (n `div` 2)],
                 let z = n - x*x,
                 esCuadrado z]
 
@@ -112,7 +112,7 @@ esCuadrado x = x == y * y
 
 raiz :: Integer -> Integer
 raiz x = floor (sqrt (fromIntegral x))
-    
+
 -- La comprobación es
 --    λ> quickCheck prop_representacion
 --    +++ OK, passed 100 tests.
@@ -121,14 +121,14 @@ raiz x = floor (sqrt (fromIntegral x))
 -- § Referencias                                                      --
 -- ---------------------------------------------------------------------
 
--- + W. Stein, 
+-- + W. Stein,
 --   [Which numbers are the sum of two squares?](http://bit.ly/1Q193xq).
--- + E.W. Weisstein, 
+-- + E.W. Weisstein,
 --   [Sum of squares function](http://bit.ly/1Q1c4Oe) en MathWorld.
 -- + N.J.A. Sloane,
 --   [Sucesión A004018](http://oeis.org/A004018) de OEIS.
 -- + [Expressing a number as a sum of two squares](http://bit.ly/20Nr1VY).
 -- + [Sum of squares](http://bit.ly/20NrWpp).
--- 
+--
 -- La sucesión [nRepresentaciones n | n <- [0..]] es la
 -- [A000161](https://oeis.org/A000161) de la OEIS.

@@ -139,7 +139,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Factorizaciones_de_numeros_de_Hilbert.hs][Factorizaciones de números de Hilbert]].
 + [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
 + [[./src/Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados.hs][Número de representaciones de n como suma de dos cuadrados]].
-+ [[./src/Numeros_de_Pentanacci.hs][Números de Pentanacci]].
 
 * Introducción a la programación con Haskell y Python
 
@@ -477,8 +476,10 @@ Los objetivos de esta recopilación son:
 + [[./src/Integracion_por_rectangulos.hs][Integración por el método de los rectángulos]].
 + [[./src/Algoritmo_de_bajada.hs][Algoritmo de bajada para resolver un sistema triangular inferior]].
 
-** Miscelanea
+** Miscelánea
++ [[./src/Numeros_de_Pentanacci.hs][Números de Pentanacci]].
 
 ** Próximos
-+ 09 [[./src/Numeros_de_Pentanacci.hs][Números de Pentanacci]].
-+ ?? [[./src/ListaVector.hs][Transformación de listas a vectores]].
++ 14 [[./src/El_teorema_de_Navidad_de_Fermat.hs][El teorema de Navidad de Fermat]].
++ 19
++ 24
