@@ -1,7 +1,7 @@
 -- Factorizaciones_de_numeros_de_Hilbert.hs
 -- Factorizaciones de números de Hilbert.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 02-agosto-2022
+-- Sevilla, 24-diciembre-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -36,6 +36,10 @@ module Factorizaciones_de_numeros_de_Hilbert where
 
 import Data.Numbers.Primes (isPrime, primeFactors)
 import Test.QuickCheck (Positive (Positive), quickCheck)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Numeros_primos_de_Hilbert (primosH1, primosH2, primosH3)
+
+import Data.Traversable (forM)
 
 -- 1ª solución
 -- ===========
@@ -43,28 +47,11 @@ import Test.QuickCheck (Positive (Positive), quickCheck)
 factorizacionesH1 :: Integer -> [[Integer]]
 factorizacionesH1 = aux primosH1
   where
-    aux (x:xs) n 
+    aux (x:xs) n
       | x == n         = [[n]]
       | x > n          = []
-      | n `mod` x == 0 = map (x:) (aux (x:xs) (n `div` x) ) ++ aux xs n 
-      | otherwise      = aux xs n 
-
-primosH1 :: [Integer]
-primosH1 = [n | n <- tail numerosH,
-                divisoresH n == [1,n]]
-
--- numerosH es la sucesión de los números de Hilbert. Por ejemplo,
---    take 15 numerosH  ==  [1,5,9,13,17,21,25,29,33,37,41,45,49,53,57]
-numerosH :: [Integer]
-numerosH = [1,5..]
-
--- (divisoresH n) es la lista de los números de Hilbert que dividen a
--- n. Por ejemplo,
---   divisoresH 117  ==  [1,9,13,117]
---   divisoresH  21  ==  [1,21]
-divisoresH :: Integer -> [Integer]
-divisoresH n = [x | x <- takeWhile (<=n) numerosH,
-                    n `mod` x == 0]
+      | n `mod` x == 0 = map (x:) (aux (x:xs) (n `div` x) ) ++ aux xs n
+      | otherwise      = aux xs n
 
 -- 2ª solución
 -- ===========
@@ -72,38 +59,53 @@ divisoresH n = [x | x <- takeWhile (<=n) numerosH,
 factorizacionesH2 :: Integer -> [[Integer]]
 factorizacionesH2 = aux primosH2
   where
-    aux (x:xs) n 
+    aux (x:xs) n
       | x == n         = [[n]]
       | x > n          = []
-      | n `mod` x == 0 = map (x:) (aux (x:xs) (n `div` x) ) ++ aux xs n 
-      | otherwise      = aux xs n 
-
-primosH2 :: [Integer]
-primosH2 = filter esPrimoH (tail numerosH) 
-  where esPrimoH n = all noDivideAn [5,9..m]
-          where noDivideAn x = n `mod` x /= 0
-                m            = ceiling (sqrt (fromIntegral n))
+      | n `mod` x == 0 = map (x:) (aux (x:xs) (n `div` x) ) ++ aux xs n
+      | otherwise      = aux xs n
 
 -- 3ª solución
 -- ===========
 
--- Basada en la siguiente propiedad: Un primo de Hilbert es un primo 
+-- Basada en la siguiente propiedad: Un primo de Hilbert es un primo
 -- de la forma 4n + 1 o un semiprimo de la forma (4a + 3) × (4b + 3)
 -- (ver en https://bit.ly/3zq7h4e ).
 
 factorizacionesH3 :: Integer -> [[Integer]]
 factorizacionesH3 = aux primosH3
   where
-    aux (x:xs) n 
+    aux (x:xs) n
       | x == n         = [[n]]
       | x > n          = []
-      | n `mod` x == 0 = map (x:) (aux (x:xs) (n `div` x) ) ++ aux xs n 
-      | otherwise      = aux xs n 
+      | n `mod` x == 0 = map (x:) (aux (x:xs) (n `div` x) ) ++ aux xs n
+      | otherwise      = aux xs n
 
-primosH3 :: [Integer]
-primosH3 = [ n | n <- numerosH, isPrime n || semiPrimoH n ]
-  where semiPrimoH n = length xs == 2 && all (\x -> (x-3) `mod` 4 == 0) xs
-          where xs = primeFactors n
+-- Verificación                                                     --
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> [[Integer]]) -> Spec
+specG factorizacionesH = do
+  it "e1" $
+    factorizacionesH  25 `shouldBe` [[5,5]]
+  it "e2" $
+    factorizacionesH  45 `shouldBe` [[5,9]]
+  it "e3" $
+    factorizacionesH 441 `shouldBe` [[9,49],[21,21]]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG factorizacionesH1
+  describe "def. 2" $ specG factorizacionesH2
+  describe "def. 3" $ specG factorizacionesH3
+
+-- La verificación es
+--    λ> verifica
+--
+--    9 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -115,7 +117,7 @@ prop_factorizacionesH (Positive n) =
       [factorizacionesH2 m,
        factorizacionesH3 m]
   where m = 1 + 4 * n
-  
+
 -- La comprobación es
 --    λ> quickCheck prop_factorizacionesH
 --    +++ OK, passed 100 tests.
@@ -153,10 +155,10 @@ prop_factorizable (Positive n) =
 -- Basado en el artículo [Failure of unique factorization (A simple
 -- example of the failure of the fundamental theorem of
 -- arithmetic)](http://bit.ly/20A2Nyc) de R.J. Lipton en el blog [Gödel's
--- Lost Letter and P=NP](https://rjlipton.wordpress.com). 
--- 
+-- Lost Letter and P=NP](https://rjlipton.wordpress.com).
+--
 -- Otras  referencias
--- 
+--
 -- + Wikipedia, [Hilbert number](http://bit.ly/204SW1p).
 -- + E.W. Weisstein, [Hilbert number](http://bit.ly/204T8O4) en MathWorld.
 -- + N.J.A. Sloane, [Sucesión A057948](https://oeis.org/A057948) en la
