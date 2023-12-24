@@ -1,20 +1,20 @@
 -- Numeros_primos_de_Hilbert.hs
 -- Números primos de Hilbert.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 01-agosto-2022
+-- Sevilla, 18-diciembre-23
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Un [**número de Hilbert**](http://bit.ly/204SW1p) es un entero
--- positivo de la forma 4n+1. Los primeros números de Hilbert son 1, 5,
--- 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 57, 61, 65, 69, 73,
--- 77, 81, 85, 89, 93, 97, ... 
+-- Un [número de Hilbert](http://bit.ly/204SW1p) es un entero positivo
+-- de la forma 4n+1. Los primeros números de Hilbert son 1, 5, 9, 13,
+-- 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 57, 61, 65, 69, 73, 77, 81,
+-- 85, 89, 93, 97, ...
 --
--- Un **primo de Hilbert** es un número de Hilbert n que no es divisible
+-- Un primo de Hilbert es un número de Hilbert n que no es divisible
 -- por ningún número de Hilbert menor que n (salvo el 1). Los primeros
 -- primos de Hilbert son 5, 9, 13, 17, 21, 29, 33, 37, 41, 49, 53, 57,
 -- 61, 69, 73, 77, 89, 93, 97, 101, 109, 113, 121, 129, 133, 137, 141,
--- 149, 157, 161, 173, 177, 181, 193, 197, ...  
+-- 149, 157, 161, 173, 177, 181, 193, 197, ...
 --
 -- Definir la sucesión
 --    primosH :: [Integer]
@@ -28,8 +28,9 @@
 
 module Numeros_primos_de_Hilbert where
 
-import Data.Numbers.Primes (isPrime, primeFactors) 
+import Data.Numbers.Primes (isPrime, primeFactors)
 import Test.QuickCheck (NonNegative (NonNegative), quickCheck)
+import Test.Hspec (Spec, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
@@ -55,7 +56,7 @@ divisoresH n = [x | x <- takeWhile (<=n) numerosH,
 -- ===========
 
 primosH2 :: [Integer]
-primosH2 = filter esPrimoH (tail numerosH) 
+primosH2 = filter esPrimoH (tail numerosH)
   where esPrimoH n = all noDivideAn [5,9..m]
           where noDivideAn x = n `mod` x /= 0
                 m            = ceiling (sqrt (fromIntegral n))
@@ -63,7 +64,7 @@ primosH2 = filter esPrimoH (tail numerosH)
 -- 3ª solución
 -- ===========
 
--- Basada en la siguiente propiedad: Un primo de Hilbert es un primo 
+-- Basada en la siguiente propiedad: Un primo de Hilbert es un primo
 -- de la forma 4n + 1 o un semiprimo de la forma (4a + 3) × (4b + 3)
 -- (ver en https://bit.ly/3zq7h4e ).
 
@@ -71,6 +72,26 @@ primosH3 :: [Integer]
 primosH3 = [ n | n <- numerosH, isPrime n || semiPrimoH n ]
   where semiPrimoH n = length xs == 2 && all (\x -> (x-3) `mod` 4 == 0) xs
           where xs = primeFactors n
+
+-- Verificación                                                     --
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+spec :: Spec
+spec = do
+  it "e1" $
+    take 15 primosH1 `shouldBe` [5,9,13,17,21,29,33,37,41,49,53,57,61,69,73]
+  it "e2" $
+    take 15 primosH2 `shouldBe` [5,9,13,17,21,29,33,37,41,49,53,57,61,69,73]
+  it "e3" $
+    take 15 primosH3 `shouldBe` [5,9,13,17,21,29,33,37,41,49,53,57,61,69,73]
+
+-- La verificación es
+--    λ> verifica
+--
+--    3 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -99,11 +120,10 @@ prop_primosH (NonNegative n) =
 --    λ> primosH3 !! 2000
 --    16957
 --    (0.07 secs, 152,029,168 bytes)
---    
+--
 --    λ> primosH2 !! (3*10^4)
 --    313661
 --    (1.44 secs, 989,761,888 bytes)
 --    λ> primosH3 !! (3*10^4)
 --    313661
 --    (2.06 secs, 6,554,068,992 bytes)
-

@@ -8,7 +8,7 @@
 -- El 25 de diciembre de 1640, en una carta a Mersenne, Fermat demostró
 -- la conjetura de Girard: todo primo de la forma 4n+1 puede expresarse
 -- de manera única como suma de dos cuadrados. Por eso es conocido como
--- el Teorema de Navidad de Fermat
+-- el [teorema de Navidad de Fermat](http://bit.ly/2Roso1o).
 --
 -- Definir las funciones
 --    representaciones :: Integer -> [(Integer,Integer)]
@@ -35,11 +35,11 @@
 --      λ> take 20 primos4nM1
 --      [5,13,17,29,37,41,53,61,73,89,97,101,109,113,137,149,157,173,181,193]
 --
--- El [teorema de Navidad de Fermat](http://bit.ly/2Roso1o) afirma que
--- un número primo impar p se puede escribir exactamente de una manera
--- como suma de dos cuadrados de números naturales p = x² + y^2 (con
--- x <= y) si, y sólo si, p se puede escribir como uno más un múltiplo
--- de 4 (es decir, que es congruente con 1 módulo 4).
+-- El teorema de Navidad de Fermat afirma que un número primo impar p se
+-- puede escribir exactamente de una manera como suma de dos cuadrados
+-- de números naturales p = x² + y² (con x <= y) si, y sólo si, p se
+-- puede escribir como uno más un múltiplo de 4 (es decir, que es
+-- congruente con 1 módulo 4).
 
 -- Comprobar con QuickCheck el teorema de Navidad de Fermat; es decir,
 -- que para todo número n, los n-ésimos elementos de
