@@ -8,7 +8,7 @@
 -- Definir la sucesión
 --    sumasDeDosPrimos :: [Integer]
 -- cuyos elementos son los números que se pueden escribir como suma de
--- dos números primos. Por ejemplo,  
+-- dos números primos. Por ejemplo,
 --    λ> take 23 sumasDeDosPrimos
 --    [4,5,6,7,8,9,10,12,13,14,15,16,18,19,20,21,22,24,25,26,28,30,31]
 --    λ> sumasDeDosPrimos !! (5*10^5)
@@ -18,6 +18,7 @@
 module Sumas_de_dos_primos where
 
 import Data.Numbers.Primes (isPrime, primes)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -33,7 +34,7 @@ sumasDeDosPrimos1 =
 --    sumaDeDosPrimos 16  ==  [(3,13),(5,11),(11,5),(13,3)]
 --    sumaDeDosPrimos 17  ==  []
 sumaDeDosPrimos1 :: Integer -> [(Integer,Integer)]
-sumaDeDosPrimos1 n = 
+sumaDeDosPrimos1 n =
   [(x,n-x) | x <- primosN, isPrime (n-x)]
   where primosN = takeWhile (< n) primes
 
@@ -50,7 +51,7 @@ sumasDeDosPrimos2 =
 --    sumaDeDosPrimos2 16  ==  [(3,13),(5,11)]
 --    sumaDeDosPrimos2 17  ==  []
 sumaDeDosPrimos2 :: Integer -> [(Integer,Integer)]
-sumaDeDosPrimos2 n = 
+sumaDeDosPrimos2 n =
   [(x,n-x) | x <- primosN, isPrime (n-x)]
   where primosN = takeWhile (<= (n `div` 2)) primes
 
@@ -61,7 +62,7 @@ sumasDeDosPrimos3 :: [Integer]
 sumasDeDosPrimos3 = filter esSumaDeDosPrimos3 [4..]
 
 -- (esSumaDeDosPrimos3 n) se verifica si n es suma de dos primos. Por
--- ejemplo, 
+-- ejemplo,
 --    esSumaDeDosPrimos3  9  ==  True
 --    esSumaDeDosPrimos3 16  ==  True
 --    esSumaDeDosPrimos3 17  ==  False
@@ -80,12 +81,36 @@ sumasDeDosPrimos4 :: [Integer]
 sumasDeDosPrimos4 = filter esSumaDeDosPrimos4 [4..]
 
 -- (esSumaDeDosPrimos4 n) se verifica si n es suma de dos primos. Por
--- ejemplo, 
+-- ejemplo,
 --    esSumaDeDosPrimos4  9  ==  True
 --    esSumaDeDosPrimos4 16  ==  True
 --    esSumaDeDosPrimos4 17  ==  False
 esSumaDeDosPrimos4 :: Integer -> Bool
 esSumaDeDosPrimos4 n = even n || isPrime (n-2)
+
+-- Verificación                                                     --
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: [Integer] -> Spec
+specG sumasDeDosPrimos = do
+  it "e1" $
+    take 23 sumasDeDosPrimos `shouldBe`
+    [4,5,6,7,8,9,10,12,13,14,15,16,18,19,20,21,22,24,25,26,28,30,31]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG sumasDeDosPrimos1
+  describe "def. 2" $ specG sumasDeDosPrimos2
+  describe "def. 3" $ specG sumasDeDosPrimos3
+  describe "def. 4" $ specG sumasDeDosPrimos4
+
+-- La verificación es
+--    λ> verifica
+--
+--    4 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -97,7 +122,7 @@ prop_sumasDeDosPrimos (NonNegative n) =
       [sumasDeDosPrimos2 !! n,
        sumasDeDosPrimos3 !! n,
        sumasDeDosPrimos4 !! n]
-  
+
 -- La comprobación es
 --    λ> quickCheck prop_sumasDeDosPrimos
 --    +++ OK, passed 100 tests.
@@ -130,5 +155,4 @@ prop_sumasDeDosPrimos (NonNegative n) =
 -- § Referencia                                                       --
 -- ---------------------------------------------------------------------
 
--- N.J.A. Sloane, "Sucesión A014091" en OEIS http://oeis.org/A014091 
-
+-- N.J.A. Sloane, "Sucesión A014091" en OEIS http://oeis.org/A014091
