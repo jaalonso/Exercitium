@@ -1,7 +1,7 @@
 -- Sumas_de_dos_primos.hs
 -- Sumas de dos primos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 29-julio-2022
+-- Sevilla, 29-diciembre-2023
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

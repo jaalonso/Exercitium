@@ -1,7 +1,7 @@
 -- Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs
 -- Representaciones de un número como suma de dos cuadrados.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 03-agosto-2022
+-- Sevilla, 1-enero-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -26,6 +26,7 @@ module Representaciones_de_un_numero_como_suma_de_dos_cuadrados where
 
 import Data.List (genericLength, group)
 import Data.Numbers.Primes (primeFactors)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (Positive (Positive), quickCheck)
 
 -- 1ª solución
@@ -49,7 +50,25 @@ representaciones2 n =
 --    raiz 24  ==  4
 --    raiz 26  ==  5
 raiz :: Integer -> Integer
-raiz = floor . sqrt . fromIntegral
+raiz 0 = 0
+raiz 1 = 1
+raiz x = aux (0,x)
+    where aux (a,b) | d == x    = c
+                    | c == a    = a
+                    | d < x     = aux (c,b)
+                    | otherwise = aux (a,c)
+              where c = (a+b) `div` 2
+                    d = c^2
+
+-- Nota: La siguiente definición de raíz cuadrada falla para números
+-- grandes.
+--    raiz' :: Integer -> Integer
+--    raiz' = floor . sqrt . fromIntegral
+-- Por ejemplo,
+--    λ> raiz' (10^50)
+--    9999999999999998758486016
+--    λ> raiz (10^50)
+--    10000000000000000000000000
 
 -- (esCuadrado x) se verifica si x es un número al cuadrado. Por
 -- ejemplo,
@@ -70,6 +89,33 @@ representaciones3 n = aux 0 (raiz n)
                           LT -> aux (x + 1) y
                           EQ -> (x, y) : aux (x + 1) (y - 1)
                           GT -> aux x (y - 1)
+
+-- Verificación                                                     --
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> [(Integer, Integer)]) -> Spec
+specG representaciones = do
+  it "e1" $
+    representaciones  20 `shouldBe` [(2,4)]
+  it "e2" $
+    representaciones  25 `shouldBe` [(0,5),(3,4)]
+  it "e3" $
+    representaciones 325 `shouldBe` [(1,18),(6,17),(10,15)]
+
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG representaciones1
+  describe "def. 2" $ specG representaciones2
+  describe "def. 3" $ specG representaciones3
+
+-- La verificación es
+--    λ> verifica
+--
+--    9 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================

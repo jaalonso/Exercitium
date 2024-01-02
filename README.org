@@ -134,7 +134,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Numeros_belgas.hs][Números belgas]].
 + [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].
 + [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
-+ [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
 + [[./src/Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados.hs][Número de representaciones de n como suma de dos cuadrados]].
 
 * Introducción a la programación con Haskell y Python
@@ -478,6 +477,7 @@ Los objetivos de esta recopilación son:
 + [[./src/El_teorema_de_Navidad_de_Fermat.hs][El teorema de Navidad de Fermat]].
 + [[./src/Numeros_primos_de_Hilbert.hs][Números primos de Hilbert]].
 + [[./src/Factorizaciones_de_numeros_de_Hilbert.hs][Factorizaciones de números de Hilbert]].
++ [[./src/Sumas_de_dos_primos.hs][Sumas de dos primos]].
 
 ** Próximos
-+ 29 [[./src/Sumas_de_dos_primos.hs][Sumas de dos primos]].
++ 04 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
