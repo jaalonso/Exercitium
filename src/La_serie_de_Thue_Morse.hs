@@ -1,7 +1,7 @@
 -- La_serie_de_Thue_Morse.hs
 -- La serie de Thue-Morse.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 27-julio-2022
+-- Sevilla, 9-enero-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -14,11 +14,11 @@
 --    [0,1,1,0]
 --    [0,1,1,0,1,0,0,1]
 --    [0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0]
--- 
+--
 -- Definir la lista
 --    serieThueMorse :: [[Int]]
 -- tal que sus elementos son los términos de la serie de Thue-Morse. Por
--- ejemplo, 
+-- ejemplo,
 --    λ> take 4 serieThueMorse
 --    [[0],[0,1],[0,1,1,0],[0,1,1,0,1,0,0,1]]
 -- ---------------------------------------------------------------------
@@ -28,6 +28,7 @@
 module La_serie_de_Thue_Morse where
 
 import Test.QuickCheck (NonNegative (NonNegative), quickCheckWith, maxSize, stdArgs)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
@@ -36,7 +37,7 @@ serieThueMorse1 :: [[Int]]
 serieThueMorse1 = map termSerieThueMorse [0..]
 
 -- (termSerieThueMorse n) es el término n-ésimo de la serie de
--- Thue-Morse. Por ejemplo, 
+-- Thue-Morse. Por ejemplo,
 --    termSerieThueMorse 1  ==  [0,1]
 --    termSerieThueMorse 2  ==  [0,1,1,0]
 --    termSerieThueMorse 3  ==  [0,1,1,0,1,0,0,1]
@@ -48,7 +49,7 @@ termSerieThueMorse n = xs ++ complementaria xs
 
 -- (complementaria xs) es la complementaria de la lista xs (formada por
 -- ceros y unos); es decir, la lista obtenida cambiando el 0 por 1 y el
--- 1 por 0. Por ejemplo, 
+-- 1 por 0. Por ejemplo,
 --    complementaria [1,0,0,1,1,0,1]  ==  [0,1,1,0,0,1,0]
 complementaria :: [Int] -> [Int]
 complementaria = map (1-)
@@ -71,17 +72,42 @@ serieThueMorse3 = iterate paso [0]
 -- ===========
 
 -- Observando que cada término de la serie de Thue-Morse se obtiene del
--- anterior sustituyendo los 1 por 1, 0 y los 0 por  0, 1. 
+-- anterior sustituyendo los 1 por 1, 0 y los 0 por  0, 1.
 
 serieThueMorse4 :: [[Int]]
 serieThueMorse4 = [0] : map (concatMap paso4) serieThueMorse4
   where paso4 x = [x,1-x]
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: [[Int]] -> Spec
+specG serieThueMorse = do
+  it "e1" $
+    take 4 serieThueMorse `shouldBe`
+    [[0],[0,1],[0,1,1,0],[0,1,1,0,1,0,0,1]]
+
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG serieThueMorse1
+  describe "def. 2" $ specG serieThueMorse2
+  describe "def. 3" $ specG serieThueMorse3
+  describe "def. 4" $ specG serieThueMorse4
+
+-- La verificación es
+--    λ> verifica
+--
+--    4 examples, 0 failures
+
 -- Comprobación de equivalencia
 -- ============================
 
 -- La propiedad es
-prop_serieThueMorse :: NonNegative Int -> Bool 
+prop_serieThueMorse :: NonNegative Int -> Bool
 prop_serieThueMorse  (NonNegative n) =
   all (== serieThueMorse1 !! n)
       [serieThueMorse2 !! n,
@@ -116,4 +142,3 @@ prop_serieThueMorse  (NonNegative n) =
 -- + N.J.A. Sloane "Sucesión A010060" en OEIS http://oeis.org/A010060
 -- + Programming Praxis "Thue-Morse sequence" http://bit.ly/1n2PdFk
 -- + Wikipedia "Thue–Morse sequence" http://bit.ly/1KvZONW
-

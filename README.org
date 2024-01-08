@@ -132,7 +132,6 @@ Los objetivos de esta recopilación son:
 + [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
 + [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
 + [[./src/Numeros_belgas.hs][Números belgas]].
-+ [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].
 + [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
 + [[./src/Numero_de_representaciones_de_n_como_suma_de_dos_cuadrados.hs][Número de representaciones de n como suma de dos cuadrados]].
 
@@ -481,3 +480,4 @@ Los objetivos de esta recopilación son:
 
 ** Próximos
 + 04 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
++ 09 [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].

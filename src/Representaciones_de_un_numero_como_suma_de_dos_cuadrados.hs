@@ -1,7 +1,7 @@
 -- Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs
 -- Representaciones de un número como suma de dos cuadrados.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 1-enero-2024
+-- Sevilla, 4-enero-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
