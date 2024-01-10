@@ -1,7 +1,7 @@
 -- La_sucesion_de_Thue_Morse.hs
 -- La sucesión de Thue-Morse.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 28-julio-2022
+-- Sevilla, 14-enero-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -16,19 +16,19 @@
 -- De esta forma se va formando una sucesión
 --    0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,...
 -- que se conoce como la [sucesión de Thue-Morse](https://bit.ly/3PE9LRJ).
--- 
+--
 -- Definir la sucesión
 --    sucThueMorse :: [Int]
 -- cuyos elementos son los de la sucesión de Thue-Morse. Por ejemplo,
 --    λ> take 30 sucThueMorse
 --    [0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0]
---    λ> map (sucThueMorse4 !!) [1234567..1234596] 
+--    λ> map (sucThueMorse4 !!) [1234567..1234596]
 --    [1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0]
---    λ> map (sucThueMorse4 !!) [4000000..4000030] 
+--    λ> map (sucThueMorse4 !!) [4000000..4000030]
 --    [1,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,0,1,1]
 --
 -- Comprobar con QuickCheck que si s(n) representa el término n-ésimo de
--- la sucesión de Thue-Morse, entonces  
+-- la sucesión de Thue-Morse, entonces
 --    s(2n)   = s(n)
 --    s(2n+1) = 1 - s(n)
 -- ---------------------------------------------------------------------
@@ -38,6 +38,7 @@
 module La_sucesion_de_Thue_Morse where
 
 import Test.QuickCheck
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
@@ -46,7 +47,7 @@ sucThueMorse1 :: [Int]
 sucThueMorse1 = map termSucThueMorse1 [0..]
 
 -- (termSucThueMorse1 n) es el n-ésimo término de la sucesión de
--- Thue-Morse. Por ejemplo, 
+-- Thue-Morse. Por ejemplo,
 --    termSucThueMorse1 0  ==  0
 --    termSucThueMorse1 1  ==  1
 --    termSucThueMorse1 2  ==  1
@@ -54,12 +55,12 @@ sucThueMorse1 = map termSucThueMorse1 [0..]
 --    termSucThueMorse1 4  ==  1
 termSucThueMorse1 :: Int -> Int
 termSucThueMorse1 0 = 0
-termSucThueMorse1 n = 
+termSucThueMorse1 n =
   (serieThueMorse !! k) !! n
   where k = 1 + floor (logBase 2 (fromIntegral n))
 
 -- serieThueMorse es la lista cuyos elementos son los términos de la
--- serie de Thue-Morse. Por ejemplo, 
+-- serie de Thue-Morse. Por ejemplo,
 --    λ> take 4 serieThueMorse3
 --    [[0],[0,1],[0,1,1,0],[0,1,1,0,1,0,0,1]]
 serieThueMorse :: [[Int]]
@@ -70,30 +71,28 @@ serieThueMorse = iterate paso [0]
 -- ===========
 
 sucThueMorse2 :: [Int]
-sucThueMorse2 = 
+sucThueMorse2 =
   0 : intercala (map (1-) sucThueMorse2) (tail sucThueMorse2)
 
 -- (intercala xs ys) es la lista obtenida intercalando los elementos de
--- las listas infinitas xs e ys. Por ejemplo, 
+-- las listas infinitas xs e ys. Por ejemplo,
 --    take 10 (intercala [1,5..] [2,4..])  ==  [1,2,5,4,9,6,13,8,17,10]
 intercala :: [a] -> [a] -> [a]
-intercala (x:xs) ys = x : intercala ys xs 
+intercala (x:xs) ys = x : intercala ys xs
 
 -- 3ª solución
 -- ===========
 
 sucThueMorse3 :: [Int]
-sucThueMorse3 = 0 : 1 : aux (tail sucThueMorse3) 
+sucThueMorse3 = 0 : 1 : aux (tail sucThueMorse3)
   where aux (x : xs) = x : (1 - x) : aux xs
-
-
 
 -- 4ª solución
 -- ===========
 
 sucThueMorse4 :: [Int]
 sucThueMorse4 = 0 : aux [1]
-  where aux xs = xs ++ aux (xs ++ map (1-) xs) 
+  where aux xs = xs ++ aux (xs ++ map (1-) xs)
 
 -- Comprobación de la propiedad
 -- ============================
@@ -102,7 +101,7 @@ sucThueMorse4 = 0 : aux [1]
 prop_termSucThueMorse :: NonNegative Int -> Bool
 prop_termSucThueMorse (NonNegative n) =
   sucThueMorse1 !! (2*n)   == sn &&
-  sucThueMorse1 !! (2*n+1) == 1 - sn 
+  sucThueMorse1 !! (2*n+1) == 1 - sn
   where sn = sucThueMorse1 !! n
 
 -- La comprobación es
@@ -116,7 +115,7 @@ sucThueMorse5 :: [Int]
 sucThueMorse5 = map termSucThueMorse5 [0..]
 
 -- (termSucThueMorse5 n) es el n-ésimo término de la sucesión de
--- Thue-Morse. Por ejemplo, 
+-- Thue-Morse. Por ejemplo,
 --    termSucThueMorse5 0  ==  0
 --    termSucThueMorse5 1  ==  1
 --    termSucThueMorse5 2  ==  1
@@ -124,9 +123,34 @@ sucThueMorse5 = map termSucThueMorse5 [0..]
 --    termSucThueMorse5 4  ==  1
 termSucThueMorse5 :: Int -> Int
 termSucThueMorse5 0 = 0
-termSucThueMorse5 n 
+termSucThueMorse5 n
   | even n    = termSucThueMorse5 (n `div` 2)
   | otherwise = 1 - termSucThueMorse5 (n `div` 2)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: [Int] -> Spec
+specG sucThueMorse = do
+  it "e1" $
+    take 30 sucThueMorse `shouldBe`
+    [0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,1,0,1,0]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG sucThueMorse1
+  describe "def. 2" $ specG sucThueMorse2
+  describe "def. 3" $ specG sucThueMorse3
+  describe "def. 4" $ specG sucThueMorse4
+  describe "def. 5" $ specG sucThueMorse5
+
+-- La verificación es
+--    λ> verifica
+--
+--    5 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
