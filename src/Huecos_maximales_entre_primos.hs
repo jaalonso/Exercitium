@@ -1,7 +1,7 @@
 -- Huecos_maximales_entre_primos.hs
 -- Huecos maximales entre primos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 25-julio-2022
+-- Sevilla, 19-enero-24
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -13,7 +13,7 @@
 --     3    2
 --     7    4
 --    11    2
--- 
+--
 -- El hueco de un número primo p es **maximal** si es mayor que los
 -- huecos de todos los números menores que p. Por ejemplo, 4 es un hueco
 -- maximal de 7 ya que los huecos de los primos menores que 7 son 1 y 2
@@ -27,7 +27,7 @@
 --    113   14
 --    523   18
 --    887   20
--- 
+--
 -- Definir la sucesión
 --    primosYhuecosMaximales :: [(Integer,Integer)]
 -- cuyos elementos son los números primos con huecos maximales junto son
@@ -45,12 +45,13 @@ module Huecos_maximales_entre_primos where
 
 import Data.Numbers.Primes (primes)
 import Test.QuickCheck (NonNegative (NonNegative), quickCheckWith, maxSize, stdArgs)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
 
 primosYhuecosMaximales1 :: [(Integer,Integer)]
-primosYhuecosMaximales1 = 
+primosYhuecosMaximales1 =
   [(p,huecoPrimo p) | p <- primes, esMaximalHuecoPrimo p]
 
 -- (siguientePrimo x) es el menor primo mayor que x. Por ejemplo,
@@ -83,7 +84,7 @@ primosYhuecosMaximales2 = aux primosYhuecos
   where aux ((x,y):ps) = (x,y) : aux (dropWhile (\(_,b) -> b <= y) ps)
 
 -- primosYhuecos es la lista de los números primos junto son sus
--- huecos. Por ejemplo, 
+-- huecos. Por ejemplo,
 --    λ> take 10 primosYhuecos
 --    [(2,1),(3,2),(5,2),(7,4),(11,2),(13,4),(17,2),(19,4),(23,6),(29,2)]
 primosYhuecos :: [(Integer,Integer)]
@@ -97,6 +98,30 @@ primosYhuecosMaximales3 :: [(Integer,Integer)]
 primosYhuecosMaximales3 = aux 0 primes
   where aux n (x:y:zs) | y-x > n   = (x,y-x) : aux (y-x) (y:zs)
                        | otherwise = aux n (y:zs)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: [(Integer,Integer)] -> Spec
+specG primosYhuecosMaximales = do
+  it "e1" $
+    take 8 primosYhuecosMaximales `shouldBe`
+    [(2,1),(3,2),(7,4),(23,6),(89,8),(113,14),(523,18),(887,20)]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG primosYhuecosMaximales1
+  describe "def. 2" $ specG primosYhuecosMaximales2
+  describe "def. 3" $ specG primosYhuecosMaximales3
+
+
+-- La verificación es
+--    λ> verifica
+--
+--    3 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -125,7 +150,7 @@ prop_primosYhuecosMaximales (NonNegative n) =
 --    λ> primosYhuecosMaximales3 !! 10
 --    (9551,36)
 --    (0.01 secs, 4,000,368 bytes)
---    
+--
 --    λ> primosYhuecosMaximales2 !! 22
 --    (17051707,180)
 --    (7.90 secs, 17,275,407,712 bytes)
