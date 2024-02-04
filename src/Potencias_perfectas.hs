@@ -8,9 +8,9 @@
 -- Un número natural n es una **potencia perfecta** si existen dos
 -- números naturales m > 1 y k > 1 tales que n = m^k. Las primeras
 -- potencias perfectas son
---    4 = 2², 8 = 2³, 9 = 3², 16 = 2⁴, 25 = 5², 27 = 3³, 32 = 2⁵, 
+--    4 = 2², 8 = 2³, 9 = 3², 16 = 2⁴, 25 = 5², 27 = 3³, 32 = 2⁵,
 --    36 = 6², 49 = 7², 64 = 2⁶, ...
--- 
+--
 -- Definir la sucesión
 --    potenciasPerfectas :: [Integer]
 -- cuyos términos son las potencias perfectas. Por ejemplo,
@@ -42,18 +42,18 @@ potenciasPerfectas1 :: [Integer]
 potenciasPerfectas1 = filter esPotenciaPerfecta [4..]
 
 -- (esPotenciaPerfecta x) se verifica si x es una potencia perfecta. Por
--- ejemplo, 
+-- ejemplo,
 --    esPotenciaPerfecta 36  ==  True
 --    esPotenciaPerfecta 72  ==  False
 esPotenciaPerfecta :: Integer -> Bool
-esPotenciaPerfecta = not . null. potenciasPerfectasDe 
+esPotenciaPerfecta = not . null. potenciasPerfectasDe
 
--- (potenciasPerfectasDe x) es la lista de pares (a,b) tales que 
+-- (potenciasPerfectasDe x) es la lista de pares (a,b) tales que
 -- x = a^b. Por ejemplo,
 --    potenciasPerfectasDe 64  ==  [(2,6),(4,3),(8,2)]
 --    potenciasPerfectasDe 72  ==  []
 potenciasPerfectasDe :: Integer -> [(Integer,Integer)]
-potenciasPerfectasDe n = 
+potenciasPerfectasDe n =
   [(m,k) | m <- takeWhile (\x -> x*x <= n) [2..]
          , k <- takeWhile (\x -> m^x <= n) [2..]
          , m^k == n]
@@ -65,7 +65,7 @@ potenciasPerfectas2 :: [Integer]
 potenciasPerfectas2 = [x | x <- [4..], esPotenciaPerfecta2 x]
 
 -- (esPotenciaPerfecta2 x) se verifica si x es una potencia perfecta. Por
--- ejemplo, 
+-- ejemplo,
 --    esPotenciaPerfecta2 36  ==  True
 --    esPotenciaPerfecta2 72  ==  False
 esPotenciaPerfecta2 :: Integer -> Bool
@@ -76,7 +76,7 @@ esPotenciaPerfecta2 x = mcd (exponentes x) > 1
 --    exponentes 36  ==  [2,2]
 --    exponentes 72  ==  [3,2]
 exponentes :: Integer -> [Int]
-exponentes x = [length ys | ys <- group (primeFactors x)] 
+exponentes x = [length ys | ys <- group (primeFactors x)]
 
 -- (mcd xs) es el máximo común divisor de la lista xs. Por ejemplo,
 --    mcd [4,6,10]  ==  2
@@ -94,7 +94,7 @@ potenciasPerfectas3 = mezclaTodas potencias
 -- mayores que 1 con exponentes mayores que 1. Por ejemplo,
 --    λ> map (take 3) (take 4 potencias)
 --    [[4,8,16],[9,27,81],[16,64,256],[25,125,625]]
-potencias:: [[Integer]]
+potencias :: [[Integer]]
 potencias = [[n^k | k <- [2..]] | n <- [2..]]
 
 -- (mezclaTodas xss) es la mezcla ordenada sin repeticiones de las
@@ -139,7 +139,7 @@ prop_potenciasPerfectas (NonNegative n) =
 --    λ> potenciasPerfectas3 !! 200
 --    28224
 --    (0.05 secs, 7,474,280 bytes)
---    
+--
 --    λ> potenciasPerfectas2 !! 500
 --    191844
 --    (4.16 secs, 9,899,367,112 bytes)
@@ -155,10 +155,8 @@ potenciasPerfectas = potenciasPerfectas3
 -- ======================
 
 grafica :: Int -> IO ()
-grafica n = 
+grafica n =
   plotList [ Key Nothing
            , PNG "Potencias_perfectas.png"
            ]
            (take n potenciasPerfectas)
-
-

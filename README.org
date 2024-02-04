@@ -115,7 +115,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Pandigitales_primos.hs][Pandigitales primos]].
 + [[./src/Aproximacion_de_numero_pi.hs][Aproximación del número pi]].
 + [[./src/Numeros_autodescriptivos.hs][Números autodescriptivos]].
-+ [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
 + [[./src/Union_e_interseccion_general.hs][Unión e intersección general de conjuntos]].
 + [[./src/Intersecciones_parciales.hs][Intersecciones parciales]].
 + [[./src/Mayor_semiprimo_menor_que_n.hs][Mayor semiprimo menor que n]].
@@ -481,3 +480,4 @@ Los objetivos de esta recopilación son:
 + 14 [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
 + 19 [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
 + 24 [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
++ 29 [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
