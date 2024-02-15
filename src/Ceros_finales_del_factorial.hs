@@ -1,7 +1,7 @@
 -- Ceros_finales_del_factorial.hs
 -- Ceros finales del factorial.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 20-enero-2024
+-- Sevilla, 29-enero-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

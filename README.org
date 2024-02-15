@@ -473,11 +473,13 @@ Los objetivos de esta recopilación son:
 + [[./src/Numeros_primos_de_Hilbert.hs][Números primos de Hilbert]].
 + [[./src/Factorizaciones_de_numeros_de_Hilbert.hs][Factorizaciones de números de Hilbert]].
 + [[./src/Sumas_de_dos_primos.hs][Sumas de dos primos]].
++ [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
++ [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].
++ [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
++ [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
++ [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
++ [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
 
-** Enero
-+ 04 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
-+ 09 [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].
-+ 14 [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
-+ 19 [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
-+ 24 [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
-+ 29 [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
+** Febrero
++ 04 [[./src/Primos_cubanos.hs][Primos cubanos]].
++ [[./src/Primos_con_cubos.hs][Primos con cubos]].
