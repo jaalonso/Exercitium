@@ -1,7 +1,7 @@
 -- Cuadrado_mas_cercano.hs
 -- Cuadrado más cercano.
 -- José A. Alonso Jiménez
--- Sevilla, 26-enero-2022
+-- Sevilla, 9-febrero-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -17,6 +17,7 @@
 
 module Cuadrado_mas_cercano where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -83,6 +84,38 @@ raizEntera3 n = until aceptable mejora n
 cuadradoCercano4 :: Integer -> Integer
 cuadradoCercano4 = (^ 2) . round . sqrt . fromIntegral
 
+-- La 4ª solución es incorrecta. Por ejemplo,
+--    λ> cuadradoCercano4 (10^46)
+--    9999999999999998322278400000000070368744177664
+--    λ> cuadradoCercano3 (10^46)
+--    10000000000000000000000000000000000000000000000
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> Integer) -> Spec
+specG cuadradoCercano = do
+  it "e1" $
+    cuadradoCercano 2 `shouldBe` 1
+  it "e2" $
+    cuadradoCercano 6 `shouldBe` 4
+  it "e3" $
+    cuadradoCercano 8 `shouldBe` 9
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG cuadradoCercano1
+  describe "def. 2" $ specG cuadradoCercano2
+  describe "def. 3" $ specG cuadradoCercano3
+
+-- La verificación es
+--    λ> verifica
+--
+--    9 examples, 0 failures
+
 -- Equivalencia de las definiciones
 -- ================================
 
@@ -91,21 +124,11 @@ prop_cuadradoCercano :: Positive Integer -> Bool
 prop_cuadradoCercano (Positive x) =
   all (== cuadradoCercano1 x)
       [cuadradoCercano2 x,
-       cuadradoCercano3 x,
-       cuadradoCercano4 x]
+       cuadradoCercano3 x]
 
 -- La comprobación es
 --    λ> quickCheck prop_cuadradoCercano
 --    +++ OK, passed 100 tests.
-
--- Aunque ha pasado los 100 tests, las definiciones no son
--- equivalentes. Por ejemplo,
---    λ> cuadradoCercano3 (10^46) == cuadradoCercano (10^46)
---    False
---    λ> cuadradoCercano3 (10^46)
---    9999999999999998322278400000000070368744177664
---    λ> cuadradoCercano (10^46)
---    10000000000000000000000000000000000000000000000
 
 -- Comparación de eficiencia
 -- =========================
@@ -120,9 +143,6 @@ prop_cuadradoCercano (Positive x) =
 --    λ> cuadradoCercano3 (10^14)
 --    100000000000000
 --    (0.01 secs, 494,248 bytes)
---    λ> cuadradoCercano4 (10^14)
---    100000000000000
---    (0.01 secs, 475,152 bytes)
 --
 --    λ> length (show (cuadradoCercano2 (10^20000)))
 --    20001

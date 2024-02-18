@@ -15,7 +15,6 @@ Los objetivos de esta recopilación son:
 
 * Índice de ejercicios (por orden de publicación)
 
-+ [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
 + [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
 + [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
 + [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
@@ -123,8 +122,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Composicion_de_relaciones_binarias.hs][Composición de relaciones binarias]].
 + [[./src/Transitividad_de_una_relacion.hs][Transitividad de una relación]].
 + [[./src/Clausura_transitiva_de_una_relacion_binaria.hs][Clausura transitiva de una relación binaria]].
-+ [[./src/Primos_cubanos.hs][Primos cubanos]].
-+ [[./src/Primos_con_cubos.hs][Primos con cubos]].
 + [[./src/Suma_alterna_de_factoriales.hs][Suma alterna de factoriales]].
 + [[./src/Potencias_perfectas.hs][Potencias perfectas]].
 + [[./src/Sucesion_de_suma_de_cuadrados_de_los_digitos.hs][Sucesión de suma de cuadrados de los dígitos]].
@@ -482,4 +479,6 @@ Los objetivos de esta recopilación son:
 
 ** Febrero
 + 04 [[./src/Primos_cubanos.hs][Primos cubanos]].
++ [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
+
 + [[./src/Primos_con_cubos.hs][Primos con cubos]].
