@@ -1,7 +1,7 @@
 -- Suma_de_cadenas.hs
 -- Suma de cadenas.
 -- José A. Alonso Jiménez
--- Sevilla, 27-enero-2022
+-- Sevilla, 14-febrero-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -22,6 +22,7 @@
 -- ---------------------------------------------------------------------
 
 module Suma_de_cadenas where
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
@@ -61,3 +62,40 @@ sumaCadenas4 xs ys = show (numero xs + numero ys)
 numero :: String -> Int
 numero "" = 0
 numero xs = read xs
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (String -> String -> String) -> Spec
+specG sumaCadenas = do
+  it "e1" $
+    sumaCadenas "2"   "6"  `shouldBe` "8"
+  it "e2" $
+    sumaCadenas "14"  "2"  `shouldBe` "16"
+  it "e3" $
+    sumaCadenas "14"  "-5" `shouldBe` "9"
+  it "e4" $
+    sumaCadenas "-14" "-5" `shouldBe` "-19"
+  it "e5" $
+    sumaCadenas "5"   "-5" `shouldBe` "0"
+  it "e6" $
+    sumaCadenas ""    "5"  `shouldBe` "5"
+  it "e7" $
+    sumaCadenas "6"   ""   `shouldBe` "6"
+  it "e8" $
+    sumaCadenas ""    ""   `shouldBe` "0"
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG sumaCadenas1
+  describe "def. 2" $ specG sumaCadenas2
+  describe "def. 3" $ specG sumaCadenas3
+  describe "def. 4" $ specG sumaCadenas4
+
+-- La verificación es
+--    λ> verifica
+--
+--    32 examples, 0 failures
