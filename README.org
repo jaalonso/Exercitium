@@ -15,8 +15,6 @@ Los objetivos de esta recopilación son:
 
 * Índice de ejercicios (por orden de publicación)
 
-+ [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
-+ [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
 + [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
 + [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]]
 + [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
@@ -482,3 +480,4 @@ Los objetivos de esta recopilación son:
 + 04 [[./src/Primos_cubanos.hs][Primos cubanos]].
 + 09 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
 + 14 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
++ 19 [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
