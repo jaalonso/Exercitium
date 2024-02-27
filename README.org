@@ -15,8 +15,6 @@ Los objetivos de esta recopilación son:
 
 * Índice de ejercicios (por orden de publicación)
 
-+ [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
-+ [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]]
 + [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
 + [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]].
 + [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
@@ -481,3 +479,5 @@ Los objetivos de esta recopilación son:
 + 09 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
 + 14 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
 + 19 [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
++ 24 [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
++ 29 [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]].

@@ -1,7 +1,7 @@
 -- Suma_de_fila_del_triangulo_de_los_impares.hs
 -- Suma fila del triángulo de los impares
 -- José A. Alonso Jiménez
--- Sevilla, 1-febrero-2022
+-- Sevilla, 27 de febrero 2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -27,6 +27,7 @@
 
 module Suma_de_fila_del_triangulo_de_los_impares where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -38,13 +39,36 @@ sumaFilaTrianguloImpares1 n =
 sumaFilaTrianguloImpares2 :: Integer -> Integer
 sumaFilaTrianguloImpares2 = (^3)
 
--- Equivalencia
+-- Verificación
 -- ============
 
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> Integer) -> Spec
+specG sumaFilaTrianguloImpares = do
+  it "e1" $
+    sumaFilaTrianguloImpares 1  `shouldBe`  1
+  it "e2" $
+    sumaFilaTrianguloImpares 2  `shouldBe`  8
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG sumaFilaTrianguloImpares1
+  describe "def. 2" $ specG sumaFilaTrianguloImpares2
+
+-- La verificación es
+--    λ> verifica
+--
+--    4 examples, 0 failures
+
+-- Equivalencia de las definiciones
+-- ================================
+
 -- La propiedad es
-prop_sumaFilaTrianguloImpares :: Integer -> Property
-prop_sumaFilaTrianguloImpares n =
-  n > 0 ==> sumaFilaTrianguloImpares1 n == sumaFilaTrianguloImpares2 n
+prop_sumaFilaTrianguloImpares :: Positive Integer -> Bool
+prop_sumaFilaTrianguloImpares (Positive n) =
+  sumaFilaTrianguloImpares1 n == sumaFilaTrianguloImpares2 n
 
 -- La comprobación es
 --    λ> quickCheck prop_sumaFilaTrianguloImpares
