@@ -1,7 +1,7 @@
 -- Suma_de_fila_del_triangulo_de_los_impares.hs
 -- Suma fila del triángulo de los impares
 -- José A. Alonso Jiménez
--- Sevilla, 27 de febrero 2024
+-- Sevilla, 29 de febrero 2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

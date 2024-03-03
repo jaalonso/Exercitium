@@ -15,7 +15,6 @@ Los objetivos de esta recopilación son:
 
 * Índice de ejercicios (por orden de publicación)
 
-+ [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
 + [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]].
 + [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
 + [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
@@ -473,11 +472,12 @@ Los objetivos de esta recopilación son:
 + [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
 + [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
 + [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
++ [[./src/Primos_cubanos.hs][Primos cubanos]].
++ [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
++ [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
++ [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
++ [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
++ [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]].
 
-** Febrero
-+ 04 [[./src/Primos_cubanos.hs][Primos cubanos]].
-+ 09 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
-+ 14 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
-+ 19 [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
-+ 24 [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
-+ 29 [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]].
+** Marzo
++ 04 [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].

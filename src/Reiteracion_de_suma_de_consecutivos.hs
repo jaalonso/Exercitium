@@ -1,7 +1,7 @@
 -- Reiteracion_de_suma_de_consecutivos.hs
 -- Reiteración de suma de consecutivos.
--- José A. Alonso Jiménez
--- Sevilla, 2-febrero-2022
+-- José A. Alonso Jiménez <https://jaalonso.github.io>
+-- Sevilla, 4-marzo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -36,6 +36,7 @@
 
 module Reiteracion_de_suma_de_consecutivos where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -134,6 +135,37 @@ sumaReiterada10 xs =
 pascal :: [[Integer]]
 pascal = [1] : map f pascal
   where f xs = zipWith (+) (0:xs) (xs++[0])
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Integer] -> Integer) -> Spec
+specG sumaReiterada = do
+  it "e1" $
+    sumaReiterada [1,5,3] `shouldBe` 14
+  it "e2" $
+    sumaReiterada [1,5,3,4] `shouldBe` 29
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG sumaReiterada1
+  describe "def. 2" $ specG sumaReiterada2
+  describe "def. 3" $ specG sumaReiterada3
+  describe "def. 4" $ specG sumaReiterada4
+  describe "def. 5" $ specG sumaReiterada5
+  describe "def. 6" $ specG sumaReiterada6
+  describe "def. 7" $ specG sumaReiterada7
+  describe "def. 8" $ specG sumaReiterada8
+  describe "def. 9" $ specG sumaReiterada9
+  describe "def. 10" $ specG sumaReiterada10
+
+-- La verificación es
+--    λ> verifica
+--
+--    20 examples, 0 failures
 
 -- Equivalencia de las definiciones
 -- ================================

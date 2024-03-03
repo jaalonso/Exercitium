@@ -1,7 +1,7 @@
 -- Duplicacion_de_cada_elemento.hs
 -- Duplicación de cada elemento
 -- José A. Alonso Jiménez
--- Sevilla, 31-enero-2022
+-- Sevilla, 24-febrero-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
