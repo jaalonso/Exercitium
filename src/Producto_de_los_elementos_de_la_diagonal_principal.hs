@@ -1,7 +1,7 @@
 -- Producto_de_los_elementos_de_la_diagonal_principal.hs
 -- Producto de los elementos de la diagonal principal.
--- José A. Alonso Jiménez
--- Sevilla, 3-febrero-2022
+-- José A. Alonso Jiménez <https://jaalonso.github.io>
+-- Sevilla, 9-marzo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -14,9 +14,9 @@
 -- tal que (productoDiagonalPrincipal xss) es el producto de los
 -- elementos de la diagonal principal de la matriz cuadrada xss. Por
 -- ejemplo,
---    productoDiagonal1 [[3,5,2],[4,7,1],[6,9,8]]  ==  168
---    productoDiagonal1 (replicate 5 [1..5])       ==  120
---    length (show (productoDiagonal3 (replicate 30000 [1..30000])))  ==  121288
+--    productoDiagonal [[3,5,2],[4,7,1],[6,9,8]]  ==  168
+--    productoDiagonal (replicate 5 [1..5])       ==  120
+--    length (show (productoDiagonal (replicate 30000 [1..30000])))  ==  121288
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
@@ -24,6 +24,7 @@
 module Producto_de_los_elementos_de_la_diagonal_principal where
 
 import Data.List (genericReplicate)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
@@ -71,6 +72,32 @@ productoDiagonal5 xss = product (zipWith (!!) xss [0..k])
   where m = length xss
         n = length (head xss)
         k = min m n - 1
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([[Integer]] -> Integer) -> Spec
+specG productoDiagonal = do
+  it "e1" $
+    productoDiagonal [[3,5,2],[4,7,1],[6,9,8]]  `shouldBe`  168
+  it "e2" $
+    productoDiagonal (replicate 5 [1..5])       `shouldBe`  120
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG productoDiagonal1
+  describe "def. 2" $ specG productoDiagonal2
+  describe "def. 3" $ specG productoDiagonal3
+  describe "def. 4" $ specG productoDiagonal4
+  describe "def. 5" $ specG productoDiagonal5
+
+-- La verificación es
+--    λ> verifica
+--
+--    10 examples, 0 failures
 
 -- Comparación de eficiencia
 -- =========================
