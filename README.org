@@ -15,7 +15,6 @@ Los objetivos de esta recopilación son:
 
 * Índice de ejercicios (por orden de publicación)
 
-+ [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
 + [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
 + [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
 + [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
@@ -481,3 +480,4 @@ Los objetivos de esta recopilación son:
 ** Marzo
 + 04 [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
 + 09 [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]].
++ 14 [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].

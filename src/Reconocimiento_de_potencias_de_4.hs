@@ -1,7 +1,7 @@
 -- Reconocimiento_de_potencias_de_4.hs
--- Reconocimiento de potencias de 4
--- José A. Alonso Jiménez
--- Sevilla, 4-febrero-2022
+-- Reconocimiento de potencias de 4.
+-- José A. Alonso Jiménez <https://jaalonso.github.io>
+-- Sevilla, 14-marzo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -16,6 +16,8 @@
 -- ---------------------------------------------------------------------
 
 module Reconocimiento_de_potencias_de_4 where
+
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
@@ -67,6 +69,32 @@ esPotenciaDe4_4 n =
 esPotenciaDe4_5 :: Integral n => n -> Bool
 esPotenciaDe4_5 n =
   n == until (>=n) (*4) 1
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> Bool) -> Spec
+specG esPotenciaDe4 = do
+  it "e1" $
+    esPotenciaDe4 16 `shouldBe` True
+  it "e2" $
+    esPotenciaDe4 17 `shouldBe` False
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG esPotenciaDe4_1
+  describe "def. 2" $ specG esPotenciaDe4_2
+  describe "def. 3" $ specG esPotenciaDe4_3
+  describe "def. 4" $ specG esPotenciaDe4_4
+  describe "def. 5" $ specG esPotenciaDe4_5
+
+-- La verificación es
+--    λ> verifica
+--
+--    10 examples, 0 failures
 
 -- Comparación de eficiencia
 -- =========================
