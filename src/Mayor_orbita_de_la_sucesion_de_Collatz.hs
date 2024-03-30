@@ -1,7 +1,7 @@
 -- Mayor_orbita_de_la_sucesion_de_Collatz.hs
 -- Mayor órbita de la sucesión de Collatz.
--- José A. Alonso Jiménez
--- Sevilla, 11-febrero-2022
+-- José A. Alonso Jiménez <https://jaalonso.github.io>
+-- Sevilla, 24-marzo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -47,13 +47,14 @@ module Mayor_orbita_de_la_sucesion_de_Collatz where
 
 import qualified Data.MemoCombinators as Memo (integral)
 import Data.List (genericLength, genericTake)
-import Test.QuickCheck (Positive(..), quickCheck)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck
 
 -- 1ª solución
 -- ===========
 
-mayoresGeneradores :: Integer -> [Integer]
-mayoresGeneradores n =
+mayoresGeneradores1 :: Integer -> [Integer]
+mayoresGeneradores1 n =
   [x | (x,y) <- ps, y == m]
   where ps = genericTake n longitudesOrbitas
         m  = maximum (map snd ps)
@@ -121,21 +122,40 @@ longitudOrbita2 = Memo.integral longitudOrbita2'
     longitudOrbita2' 1 = 1
     longitudOrbita2' x = 1 + longitudOrbita2 (siguiente x)
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> [Integer]) -> Spec
+specG mayoresGeneradores = do
+  it "e1" $
+    mayoresGeneradores 20 `shouldBe` [18,19]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG mayoresGeneradores1
+  describe "def. 2" $ specG mayoresGeneradores2
+  describe "def. 3" $ specG mayoresGeneradores3
+
+-- La verificación es
+--    λ> verifica
+--
+--    3 examples, 0 failures
+
 -- Equivalencia de definiciones
 -- ============================
 
 -- La propiedad es
-prop_mayoresGeneradores :: (Positive Integer) -> Bool
+prop_mayoresGeneradores :: Positive Integer -> Bool
 prop_mayoresGeneradores (Positive n) =
-  all (== (mayoresGeneradores n))
+  all (== mayoresGeneradores1 n)
       [mayoresGeneradores2 n,
        mayoresGeneradores3 n]
 
-verifica_mayoresGeneradores :: IO ()
-verifica_mayoresGeneradores = quickCheck prop_mayoresGeneradores
-
 -- La comprobación es
---    λ> verifica_mayoresGeneradores
+--    λ> quickCheck prop_mayoresGeneradores
 --    +++ OK, passed 100 tests.
 
 -- Comprobación de eficiencia
