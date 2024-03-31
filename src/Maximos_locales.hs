@@ -1,7 +1,7 @@
 -- Maximos_locales.hs
 -- Máximos locales.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 9-marzo-2022
+-- Sevilla, 29-marzo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -23,6 +23,7 @@
 
 module Maximos_locales where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -40,6 +41,30 @@ maximosLocales1 _ = []
 maximosLocales2 :: Ord a => [a] -> [a]
 maximosLocales2 xs =
   [y | (x,y,z) <- zip3 xs (tail xs) (drop 2 xs), y > x, y > z]
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> [Int]) -> Spec
+specG maximosLocales = do
+  it "e1" $
+    maximosLocales [3,2,5,3,7,7,1,6,2]  `shouldBe`  [5,6]
+  it "e2" $
+    maximosLocales [1..100]             `shouldBe`  []
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG maximosLocales1
+  describe "def. 2" $ specG maximosLocales2
+
+-- La verificación es
+--    λ> verifica
+--
+--    4 examples, 0 failures
+
 
 -- Comprobación de equivalencia
 -- ============================

@@ -481,3 +481,4 @@ Los objetivos de esta recopilación son:
 + 14 [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
 + 19 [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
 + 24 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]]
++ 29 [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
