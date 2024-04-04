@@ -65,7 +65,6 @@ spec = do
 --
 --    4 examples, 0 failures
 
-
 -- Comprobación de equivalencia
 -- ============================
 
