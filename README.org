@@ -18,7 +18,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
 + [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
 + [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
-+ [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
 + [[./src/Numeros_amigos.hs][Números amigos]].
 + [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
 + [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
@@ -482,3 +481,4 @@ Los objetivos de esta recopilación son:
 
 ** Abril
 + 04 [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
++ 09 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
