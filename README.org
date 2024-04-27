@@ -482,3 +482,4 @@ Los objetivos de esta recopilación son:
 ** Abril
 + 04 [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
 + 09 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
++ 14 [[./src/Numeros_amigos.hs][Números amigos]].

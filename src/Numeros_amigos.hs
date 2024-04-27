@@ -1,7 +1,7 @@
 -- Numeros_amigos.hs
 -- Números amigos
--- José A. Alonso Jiménez
--- Sevilla, 16-febrero-2022
+-- José A. Alonso Jiménez <https://jaalonso.github.io>
+-- Sevilla, 14-abril-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -29,6 +29,7 @@ module Numeros_amigos where
 
 import Data.List (genericLength, group, inits, nub, sort, subsequences)
 import Data.Numbers.Primes (primeFactors)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución                                                   --
 -- ===========
@@ -179,6 +180,33 @@ factorizacion = map primeroYlongitud . group . primeFactors
 --    primeroYlongitud [3,2,5,7] == (3,4)
 primeroYlongitud :: [a] -> (a,Integer)
 primeroYlongitud (x:xs) = (x, 1 + genericLength xs)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> Integer -> Bool) -> Spec
+specG amigos = do
+  it "e1" $
+    amigos 220 284 `shouldBe` True
+  it "e2" $
+    amigos 220 23  `shouldBe` False
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG amigos1
+  describe "def. 2" $ specG amigos2
+  describe "def. 3" $ specG amigos3
+  describe "def. 4" $ specG amigos4
+  describe "def. 5" $ specG amigos5
+  describe "def. 6" $ specG amigos6
+  describe "def. 7" $ specG amigos7
+
+-- La verificación es
+--    λ> verifica
+--    14 examples, 0 failures
 
 -- Comparación de eficiencia
 -- =========================
