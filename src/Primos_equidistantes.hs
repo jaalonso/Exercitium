@@ -1,7 +1,7 @@
 -- Primos_equidistantes.hs
 -- Primos equidistantes.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 2-marzo-2022
+-- Sevilla, 19-abril-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -21,6 +21,7 @@
 module Primos_equidistantes where
 
 import Data.Numbers.Primes (primes)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
@@ -76,6 +77,35 @@ primosEquidistantes5 :: Integer -> [(Integer,Integer)]
 primosEquidistantes5 k =
   [(x,y) | (x,y) <- zip primes (tail primes)
          , y - x == k]
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> [(Integer,Integer)]) -> Spec
+specG primosEquidistantes = do
+  it "e1" $
+    take 3 (primosEquidistantes 2) `shouldBe` [(3,5),(5,7),(11,13)]
+  it "e2" $
+    take 3 (primosEquidistantes 4) `shouldBe` [(7,11),(13,17),(19,23)]
+  it "e3" $
+    take 3 (primosEquidistantes 6) `shouldBe` [(23,29),(31,37),(47,53)]
+  it "e4" $
+    take 3 (primosEquidistantes 8) `shouldBe` [(89,97),(359,367),(389,397)]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG primosEquidistantes1
+  describe "def. 2" $ specG primosEquidistantes2
+  describe "def. 3" $ specG primosEquidistantes3
+  describe "def. 4" $ specG primosEquidistantes4
+  describe "def. 5" $ specG primosEquidistantes5
+
+-- La verificación es
+--    λ> verifica
+--    20 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
