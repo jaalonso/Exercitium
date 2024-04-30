@@ -27,7 +27,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 + [[./src/Anagramas.hs][Anagramas]].
-
 + [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
 + [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
 + [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
@@ -38,7 +37,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] ([[https://youtu.be/JuCmeb8vV4E][vídeo]]).
 + [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] ([[https://youtu.be/Bj0jTH77k2k][vídeo]])-
 + [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] ([[https://youtu.be/4eBJi5_8qM0][vídeo]]).
-+ [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]] ([[https://youtu.be/3pbmjjozB6g][vídeo]])
+
 + [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] ([[https://youtu.be/mlgDbAPStdM][vídeo]]).
 + [[./src/Emparejamiento_binario.hs][Emparejamiento binario]] ([[https://youtu.be/oQBOs1uPIms][vídeo]]).
 + [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]] ([[https://youtu.be/Jrz5kxuhD9Y][vídeo]]).
@@ -483,3 +482,4 @@ Los objetivos de esta recopilación son:
 + 09 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
 + 14 [[./src/Numeros_amigos.hs][Números amigos]].
 + 19 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
++ 24 [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]].

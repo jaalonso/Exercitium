@@ -1,7 +1,7 @@
 -- Numeracion_de_ternas.hs
 -- Numeración de las ternas de números naturales.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 17-marzo-2022
+-- Sevilla, 24-abril-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -28,11 +28,13 @@
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+{-# OPTIONS_GHC -fno-warn-type-defaults #-}
 
 module Numeracion_de_ternas where
 
 import Data.List (elemIndex)
 import Data.Maybe (fromJust)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -79,6 +81,33 @@ posicion4 t = fromJust (elemIndex t ternas)
 posicion5 :: (Int,Int,Int) -> Int
 posicion5 = fromJust . (`elemIndex` ternas)
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ((Int,Int,Int) -> Int) -> Spec
+specG posicion = do
+  it "e1" $
+    posicion (0,1,0)  `shouldBe`  2
+  it "e2" $
+    posicion (0,0,2)  `shouldBe`  4
+  it "e3" $
+    posicion (0,1,1)  `shouldBe`  5
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG posicion1
+  describe "def. 2" $ specG posicion2
+  describe "def. 3" $ specG posicion3
+  describe "def. 4" $ specG posicion4
+  describe "def. 5" $ specG posicion5
+
+-- La verificación es
+--    λ> verifica
+--    15 examples, 0 failures
+
 -- Equivalencia
 -- ============
 
@@ -118,17 +147,13 @@ prop_posicion_equiv (NonNegative x) (NonNegative y) (NonNegative z) =
 --    5000000
 --    (1.94 secs, 1,173,229,960 bytes)
 
--- En lo que sigue, usaremos la 5ª definición
-posicion :: (Int,Int,Int) -> Int
-posicion = posicion5
-
 -- Propiedades
 -- ===========
 
 -- La 1ª propiedad es
 prop_posicion1 :: NonNegative Int -> Bool
 prop_posicion1 (NonNegative x) =
-  posicion (x,0,0) == x * (x^2 + 6*x + 11) `div` 6
+  posicion5 (x,0,0) == x * (x^2 + 6*x + 11) `div` 6
 
 -- Su comprobación es
 --    λ> quickCheckWith (stdArgs {maxSize=20}) prop_posicion1
@@ -137,7 +162,7 @@ prop_posicion1 (NonNegative x) =
 -- La 2ª propiedad es
 prop_posicion2 :: NonNegative Int -> Bool
 prop_posicion2 (NonNegative y) =
-  posicion (0,y,0) == y * (y^2 + 3*y + 8) `div` 6
+  posicion5 (0,y,0) == y * (y^2 + 3*y + 8) `div` 6
 
 -- Su comprobación es
 --    λ> quickCheckWith (stdArgs {maxSize=20}) prop_posicion2
@@ -146,7 +171,7 @@ prop_posicion2 (NonNegative y) =
 -- La 3ª propiedad es
 prop_posicion3 :: NonNegative Int -> Bool
 prop_posicion3 (NonNegative z) =
-  posicion (0,0,z) == z * (z^2 + 3*z + 2) `div` 6
+  posicion5 (0,0,z) == z * (z^2 + 3*z + 2) `div` 6
 
 -- Su comprobación es
 --    λ> quickCheckWith (stdArgs {maxSize=20}) prop_posicion3
@@ -155,7 +180,7 @@ prop_posicion3 (NonNegative z) =
 -- La 4ª propiedad es
 prop_posicion4 :: NonNegative Int -> Bool
 prop_posicion4 (NonNegative x) =
-  posicion (x,x,x) == x * (9 * x^2 + 14 * x + 7) `div` 2
+  posicion5 (x,x,x) == x * (9 * x^2 + 14 * x + 7) `div` 2
 
 -- Su comprobación es
 --    λ> quickCheckWith (stdArgs {maxSize=20}) prop_posicion4
