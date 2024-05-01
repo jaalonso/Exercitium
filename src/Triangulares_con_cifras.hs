@@ -1,7 +1,7 @@
 -- Triangulares_con_cifras.hs
 -- Números triangulares con n cifras distintas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 5-abril-2022
+-- Sevilla, 1-mayo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -22,8 +22,8 @@
 --
 -- Definir la función
 --    triangularesConCifras :: Int -> [Integer]
--- tal que (triangulares n) es la lista de los números triangulares con
--- n cifras distintas. Por  ejemplo,
+-- tal que (triangularesConCifras n) es la lista de los números
+-- triangulares con n cifras distintas. Por  ejemplo,
 --    take 6 (triangularesConCifras 1)   ==  [1,3,6,55,66,666]
 --    take 6 (triangularesConCifras 2)   ==  [10,15,21,28,36,45]
 --    take 6 (triangularesConCifras 3)   ==  [105,120,136,153,190,210]
@@ -36,6 +36,7 @@
 module Triangulares_con_cifras where
 
 import Data.List (nub)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -104,6 +105,35 @@ triangularesConCifras5 n =
 
 triangulares5 :: [Integer]
 triangulares5 = scanl (+) 1 [2..]
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Int -> [Integer]) -> Spec
+specG triangularesConCifras = do
+  it "e1" $
+    take 6 (triangularesConCifras 1) `shouldBe` [1,3,6,55,66,666]
+  it "e2" $
+    take 6 (triangularesConCifras 2) `shouldBe` [10,15,21,28,36,45]
+  it "e3" $
+    take 6 (triangularesConCifras 3) `shouldBe` [105,120,136,153,190,210]
+  it "e4" $
+    take 5 (triangularesConCifras 4) `shouldBe` [1035,1275,1326,1378,1485]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG triangularesConCifras1
+  describe "def. 2" $ specG triangularesConCifras2
+  describe "def. 3" $ specG triangularesConCifras3
+  describe "def. 4" $ specG triangularesConCifras4
+  describe "def. 5" $ specG triangularesConCifras5
+
+-- La verificación es
+--    λ> verifica
+--    20 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================

@@ -37,7 +37,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] ([[https://youtu.be/JuCmeb8vV4E][vídeo]]).
 + [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] ([[https://youtu.be/Bj0jTH77k2k][vídeo]])-
 + [[./src/Alfabeto_desde.hs][Alfabeto comenzado en un carácter]] ([[https://youtu.be/4eBJi5_8qM0][vídeo]]).
-
 + [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]] ([[https://youtu.be/mlgDbAPStdM][vídeo]]).
 + [[./src/Emparejamiento_binario.hs][Emparejamiento binario]] ([[https://youtu.be/oQBOs1uPIms][vídeo]]).
 + [[./src/Amplia_columnas.hs][Ampliación de columnas de una matriz]] ([[https://youtu.be/Jrz5kxuhD9Y][vídeo]]).
@@ -50,7 +49,7 @@ Los objetivos de esta recopilación son:
 + [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]] ([[https://youtu.be/_uOlyfzppVc][vídeo]]).
 + [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]] ([[https://youtu.be/C8P3dYzFHXY][vídeo]]).
 + [[./src/Trenzado_de_listas.hs][Trenzado de listas]] ([[https://youtu.be/zAqtMXDBt7A][vídeo]]).
-+ [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
+
 + [[./src/Enumera_arbol.hs][Enumeración de árboles binarios]] ([[https://youtu.be/JbLEKUZ2E2M][vídeo]]).
 + [[./src/Algun_vecino_menor.hs][Elementos de una matriz con algún vecino menor]] ([[https://youtu.be/ZILfrx75FyM][vídeo]]).
 + [[./src/Reiteracion_de_funciones.hs][Reiteración de una función]] ([[https://youtu.be/1Kig_ipFIu0][vídeo]]).
@@ -483,3 +482,4 @@ Los objetivos de esta recopilación son:
 + 14 [[./src/Numeros_amigos.hs][Números amigos]].
 + 19 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
 + 24 [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]].
++ 29 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
