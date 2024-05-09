@@ -1,7 +1,7 @@
 -- Posiciones_diagonales_principales.hs
--- Posiciones de las diagonales principales.
+-- Posiciones de las diagonales principales
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 4-marzo-2022
+-- Sevilla,  9-mayo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -48,6 +48,7 @@
 
 module Posiciones_diagonales_principales where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -67,17 +68,60 @@ posicionesDiagonalesPrincipales2 m n =
   [zip [i..m] [1..n] | i <- [m,m-1..1]] ++
   [zip [1..m] [j..n] | j <- [2..n]]
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Int -> Int -> [[(Int, Int)]]) -> Spec
+specG posicionesDiagonalesPrincipales = do
+  it "e1" $
+    posicionesDiagonalesPrincipales 3 4 `shouldBe`
+      [[(3,1)],
+       [(2,1),(3,2)],
+       [(1,1),(2,2),(3,3)],
+       [(1,2),(2,3),(3,4)],
+       [(1,3),(2,4)],
+       [(1,4)]]
+  it "e2" $
+    posicionesDiagonalesPrincipales 4 4 `shouldBe`
+      [[(4,1)],
+       [(3,1),(4,2)],
+       [(2,1),(3,2),(4,3)],
+       [(1,1),(2,2),(3,3),(4,4)],
+       [(1,2),(2,3),(3,4)],
+       [(1,3),(2,4)],
+       [(1,4)]]
+  it "e3" $
+    posicionesDiagonalesPrincipales 4 3 `shouldBe`
+      [[(4,1)],
+       [(3,1),(4,2)],
+       [(2,1),(3,2),(4,3)],
+       [(1,1),(2,2),(3,3)],
+       [(1,2),(2,3)],
+       [(1,3)]]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG posicionesDiagonalesPrincipales1
+  describe "def. 2" $ specG posicionesDiagonalesPrincipales2
+
+-- La verificación es
+--    λ> verifica
+--    6 examples, 0 failures
+
 -- Equivalencia de las definiciones
 -- ================================
 
 -- La propiedad es
-prop_posicionesDiagonalesPrincipales :: Positive Int -> Positive Int -> Bool
-prop_posicionesDiagonalesPrincipales (Positive m) (Positive n) =
+prop_posicionesDiagonalesPrincipales_equiv :: Positive Int -> Positive Int -> Bool
+prop_posicionesDiagonalesPrincipales_equiv (Positive m) (Positive n) =
   posicionesDiagonalesPrincipales1 m n ==
   posicionesDiagonalesPrincipales2 m n
 
 -- La comprobación es
---   λ> quickCheck prop_posicionesDiagonalesPrincipales
+--   λ> quickCheck prop_posicionesDiagonalesPrincipales_equiv
 --   +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia

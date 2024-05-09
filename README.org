@@ -28,7 +28,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 + [[./src/Anagramas.hs][Anagramas]].
 + [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
-+ [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
 + [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
 + [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
 + [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
@@ -475,11 +474,12 @@ Los objetivos de esta recopilación son:
 + [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
 + [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]]
 + [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
++ [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
++ [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
++ [[./src/Numeros_amigos.hs][Números amigos]].
++ [[./src/Primos_equidistantes.hs][Primos equidistantes]].
++ [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]].
++ [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
 
-** Abril
-+ 04 [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
-+ 09 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
-+ 14 [[./src/Numeros_amigos.hs][Números amigos]].
-+ 19 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
-+ 24 [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]].
-+ 29 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
+** Mayo
++ 04 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
