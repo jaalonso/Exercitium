@@ -1,7 +1,7 @@
 -- Diagonales_principales.hs
 -- Diagonales principales de una matriz.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 7-marzo-2022
+-- Sevilla, 9-mayo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -23,6 +23,7 @@
 module Diagonales_principales where
 
 import Data.Array (Array, (!), bounds, listArray)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -52,17 +53,38 @@ posicionesDiagonalesPrincipales2 m n =
   [zip [i..m] [1..n] | i <- [m,m-1..1]] ++
   [zip [1..m] [j..n] | j <- [2..n]]
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Array (Int,Int) Int -> [[Int]]) -> Spec
+specG diagonalesPrincipales = do
+  it "e1" $
+    diagonalesPrincipales (listArray ((1,1),(3,4)) [1..12]) `shouldBe`
+      [[9],[5,10],[1,6,11],[2,7,12],[3,8],[4]]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG diagonalesPrincipales1
+  describe "def. 2" $ specG diagonalesPrincipales2
+
+-- La verificación es
+--    λ> verifica
+--    2 examples, 0 failures
+
 -- Equivalencia de las definiciones
 -- ================================
 
 -- La propiedad es
-prop_diagonalesPrincipales :: Positive Int -> Positive Int -> Bool
-prop_diagonalesPrincipales (Positive m) (Positive n) =
+prop_diagonalesPrincipales2 :: Positive Int -> Positive Int -> Bool
+prop_diagonalesPrincipales2 (Positive m) (Positive n) =
   diagonalesPrincipales1 p == diagonalesPrincipales2 p
   where p = listArray ((1,1),(m,n)) [1..]
 
 -- La comprobación es
---    λ> quickCheck prop_diagonalesPrincipales
+--    λ> quickCheck prop_diagonalesPrincipales2
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
