@@ -1,7 +1,7 @@
 -- Matriz_Toeplitz.hs
 -- Matrices de Toepliz
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 8-marzo-2022
+-- Sevilla, 14-mayo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -30,6 +30,7 @@
 module Matriz_Toeplitz where
 
 import Data.Array (Array, (!), bounds, listArray)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 ej1, ej2 :: Array (Int,Int) Int
 ej1 = listArray ((1,1),(4,4)) [2,5,1,6,4,2,5,1,7,4,2,5,9,7,4,2]
@@ -104,9 +105,31 @@ todosIguales (x:xs) = all (== x) xs
 
 esToeplitz2 :: Eq a => Array (Int,Int) a -> Bool
 esToeplitz2 p = m == n &&
-               and [p!(i,j) == p!(i+1,j+1) |
-                    i <- [1..n-1], j <- [1..n-1]]
+                and [p!(i,j) == p!(i+1,j+1) |
+                     i <- [1..n-1], j <- [1..n-1]]
   where (_,(m,n)) = bounds p
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Array (Int,Int) Int -> Bool) -> Spec
+specG esToeplitz = do
+  it "e1" $
+    esToeplitz ej1 `shouldBe` True
+  it "e2" $
+    esToeplitz ej2 `shouldBe` False
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG esToeplitz1
+  describe "def. 2" $ specG esToeplitz2
+
+-- La verificación es
+--    λ> verifica
+--    4 examples, 0 failures
 
 -- Comparación de eficiencia
 -- =========================
