@@ -41,12 +41,11 @@ Los objetivos de esta recopilación son:
 + [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]] ([[https://youtu.be/bz-NO5s2XVQ][vídeo]]).
 + [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales]] ([[https://youtu.be/yt_aRjlA4kQ][vídeo]]).
 + [[./src/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]] ([[https://youtu.be/Q38cb9YlDR0][vídeo]]).
-+ [[./src/Diferencia_simetrica.hs][Diferencia simétrica]] ([[https://youtu.be/ebQ_u6xlVfQ][vídeo]]).
+
 + [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]] ([[https://youtu.be/OCHmRQ4XwbU][vídeo]]).
 + [[./src/Familias_de_numeros_con_algun_digito_en_comun.hs][Familias de números con algún dígito en común]] ([[https://youtu.be/_uOlyfzppVc][vídeo]]).
 + [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]] ([[https://youtu.be/C8P3dYzFHXY][vídeo]]).
 + [[./src/Trenzado_de_listas.hs][Trenzado de listas]] ([[https://youtu.be/zAqtMXDBt7A][vídeo]]).
-
 + [[./src/Enumera_arbol.hs][Enumeración de árboles binarios]] ([[https://youtu.be/JbLEKUZ2E2M][vídeo]]).
 + [[./src/Algun_vecino_menor.hs][Elementos de una matriz con algún vecino menor]] ([[https://youtu.be/ZILfrx75FyM][vídeo]]).
 + [[./src/Reiteracion_de_funciones.hs][Reiteración de una función]] ([[https://youtu.be/1Kig_ipFIu0][vídeo]]).
@@ -483,3 +482,4 @@ Los objetivos de esta recopilación son:
 + 04 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
 + 09 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
 + 14 [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
++ 19 [[./src/Diferencia_simetrica.hs][Diferencia simétrica]] ([[https://youtu.be/ebQ_u6xlVfQ][vídeo]]).
