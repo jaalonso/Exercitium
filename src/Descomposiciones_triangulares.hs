@@ -1,7 +1,7 @@
 -- Descomposiciones_triangulares.hs
--- Descomposiciones triangulares.
+-- Descomposiciones triangulares
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 13-abril-2022
+-- Sevilla, 29-mayo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -37,6 +37,7 @@
 
 module Descomposiciones_triangulares where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -94,19 +95,60 @@ descomposicionesTriangulares4 n =
                  z `elem` xs]
   where xs = takeWhile (<=n) triangulares
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Int -> [(Int, Int, Int)]) -> Spec
+specG descomposicionesTriangulares = do
+  it "e1" $
+    descomposicionesTriangulares  4 `shouldBe`
+      []
+  it "e2" $
+    descomposicionesTriangulares  5 `shouldBe`
+      [(1,1,3)]
+  it "e3" $
+    descomposicionesTriangulares 12 `shouldBe`
+      [(1,1,10),(3,3,6)]
+  it "e4" $
+    descomposicionesTriangulares 30 `shouldBe`
+      [(1,1,28),(3,6,21),(10,10,10)]
+  it "e5" $
+    descomposicionesTriangulares 61 `shouldBe`
+      [(1,15,45),(3,3,55),(6,10,45),(10,15,36)]
+  it "e6" $
+    descomposicionesTriangulares 52 `shouldBe`
+      [(1,6,45),(1,15,36),(3,21,28),(6,10,36),(10,21,21)]
+  it "e7" $
+    descomposicionesTriangulares 82 `shouldBe`
+      [(1,3,78),(1,15,66),(1,36,45),(6,10,66),(6,21,55),(10,36,36)]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG descomposicionesTriangulares1
+  describe "def. 2" $ specG descomposicionesTriangulares2
+  describe "def. 3" $ specG descomposicionesTriangulares3
+  describe "def. 4" $ specG descomposicionesTriangulares4
+
+-- La verificación es
+--    λ> verifica
+--    28 examples, 0 failures
+
 -- Comprobación de equivalencia
 -- ============================
 
 -- La propiedad es
-prop_descomposicionesTriangulares ::  Positive Int -> Bool
-prop_descomposicionesTriangulares (Positive n) =
+prop_descomposicionesTriangulares_equiv ::  Positive Int -> Bool
+prop_descomposicionesTriangulares_equiv (Positive n) =
   all (== descomposicionesTriangulares1 n)
       [descomposicionesTriangulares2 n,
        descomposicionesTriangulares3 n,
        descomposicionesTriangulares4 n]
 
 -- La comprobación es
---    λ> quickCheck prop_descomposicionesTriangulares
+--    λ> quickCheck prop_descomposicionesTriangulares_equiv
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
