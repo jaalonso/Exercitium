@@ -1,7 +1,7 @@
 -- Representacion_de_Zeckendorf.hs
 -- Representacion_de_Zeckendorf.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 25-abril-2022
+-- Sevilla, 4-junio-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -39,6 +39,7 @@
 module Representacion_de_Zeckendorf where
 
 import Data.List (subsequences)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (Positive (Positive), quickCheck)
 
 -- 1ª solución
@@ -103,19 +104,45 @@ zeckendorf4 n = aux n (reverse (takeWhile (<= n) fibs))
   where aux 0 _      = []
         aux m (x:xs) = x : aux (m-x) (dropWhile (>m-x) xs)
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> [Integer]) -> Spec
+specG zeckendorf = do
+  it "e1" $
+    zeckendorf 100 == [89,8,3]
+  it "e2" $
+    zeckendorf 200 == [144,55,1]
+  it "e3" $
+    zeckendorf 300 == [233,55,8,3,1]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG zeckendorf1
+  describe "def. 2" $ specG zeckendorf2
+  describe "def. 3" $ specG zeckendorf3
+  describe "def. 4" $ specG zeckendorf4
+
+-- La verificación es
+--    λ> verifica
+--    12 examples, 0 failures
+
 -- Comprobación de equivalencia
 -- ============================
 
 -- La propiedad es
-prop_zeckendorf :: Positive Integer -> Bool
-prop_zeckendorf (Positive n) =
+prop_zeckendorf_equiv :: Positive Integer -> Bool
+prop_zeckendorf_equiv (Positive n) =
   all (== zeckendorf1 n)
       [zeckendorf2 n,
        zeckendorf3 n,
        zeckendorf4 n]
 
 -- La comprobación es
---    λ> quickCheck prop_zeckendorf
+--    λ> quickCheck prop_zeckendorf_equiv
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia

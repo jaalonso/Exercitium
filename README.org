@@ -49,13 +49,12 @@ Los objetivos de esta recopilación son:
 + [[./src/Reiteracion_de_funciones.hs][Reiteración de una función]] ([[https://youtu.be/1Kig_ipFIu0][vídeo]]).
 + [[./src/Alergias.hs][Código de las alergias]].
 + [[./src/Indices_verdaderos.hs][Índices de valores verdaderos]].
-
 + [[./src/Numero_de_inversiones.hs][Número de inversiones]].
 + [[./src/Separacion_por_posicion.hs][Sepación por posición]].
 + [[./src/Emparejamiento_de_arboles.hs][Emparejamiento de árboles]] ([[https://youtu.be/RWO2_fadW4g][vídeo]])
 + [[./src/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]] ([[https://youtu.be/7TJAdGjM3Ik][vídeo]]).
 + [[./src/Ordenada_ciclicamente.hs][Ordenada cíclicamente]] ([[https://youtu.be/CI090GISHUc][vídeo]]).
-+ [[./src/Representacion_de_Zeckendorf.hs][Representación de Zeckendorf]] ([[https://youtu.be/U-nBf1WnLTw][vídeo]]).
+
 + [[./src/Producto_cartesiano.hs][Producto cartesiano de una familia de conjuntos]] ([[https://youtu.be/5L2fbGmoQhU][vídeo]]).
 + [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]] ([[https://youtu.be/OEAD7fLZiSk][vídeo]]).
 + [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]] ([[https://youtu.be/UQUzByuY_dQ][vídeo]]).
@@ -483,3 +482,6 @@ Los objetivos de esta recopilación son:
 + 19 [[./src/Diferencia_simetrica.hs][Diferencia simétrica]].
 + 24 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
 + 29 [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
+
+** Junio
++ 04 [[./src/Representacion_de_Zeckendorf.hs][Representación de Zeckendorf]].
