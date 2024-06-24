@@ -54,8 +54,8 @@ Los objetivos de esta recopilación son:
 + [[./src/Emparejamiento_de_arboles.hs][Emparejamiento de árboles]] ([[https://youtu.be/RWO2_fadW4g][vídeo]])
 + [[./src/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]] ([[https://youtu.be/7TJAdGjM3Ik][vídeo]]).
 + [[./src/Ordenada_ciclicamente.hs][Ordenada cíclicamente]] ([[https://youtu.be/CI090GISHUc][vídeo]]).
-
 + [[./src/Producto_cartesiano.hs][Producto cartesiano de una familia de conjuntos]] ([[https://youtu.be/5L2fbGmoQhU][vídeo]]).
+
 + [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]] ([[https://youtu.be/OEAD7fLZiSk][vídeo]]).
 + [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]] ([[https://youtu.be/UQUzByuY_dQ][vídeo]]).
 + [[./src/Puntos_en_regiones_rectangulares.hs][Puntos en regiones rectangulares]].

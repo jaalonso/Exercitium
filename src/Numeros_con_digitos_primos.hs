@@ -1,7 +1,7 @@
 -- Numeros_con_digitos_primos.hs
 -- Números con todos sus dígitos primos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 29-abril-2022
+-- Sevilla, 9-junio-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -11,7 +11,7 @@
 -- ejemplo,
 --    λ> take 22 numerosConDigitosPrimos
 --    [2,3,5,7,22,23,25,27,32,33,35,37,52,53,55,57,72,73,75,77,222,223]
---    λ> numerosConDigitosPrimos4 !! (10^7)
+--    λ> numerosConDigitosPrimos !! (10^7)
 --    322732232572
 -- ---------------------------------------------------------------------
 
@@ -21,6 +21,7 @@ module Numeros_con_digitos_primos where
 
 import Test.QuickCheck (NonNegative (NonNegative), quickCheck)
 import Data.Char (intToDigit)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
@@ -110,12 +111,35 @@ siguiente xs = concat [map (pega d) xs | d <- [2,3,5,7]]
 pega :: Int -> Integer -> Integer
 pega d n = read (intToDigit d : show n)
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: [Integer] -> Spec
+specG numerosConDigitosPrimos = do
+  it "e1" $
+    take 22 numerosConDigitosPrimos `shouldBe`
+    [2,3,5,7,22,23,25,27,32,33,35,37,52,53,55,57,72,73,75,77,222,223]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG numerosConDigitosPrimos1
+  describe "def. 2" $ specG numerosConDigitosPrimos2
+  describe "def. 3" $ specG numerosConDigitosPrimos3
+  describe "def. 4" $ specG numerosConDigitosPrimos4
+
+-- La verificación es
+--    λ> verifica
+--    4 examples, 0 failures
+
 -- Comprobación de equivalencia
 -- ============================
 
 -- La propiedad es
-prop_numerosConDigitosPrimos :: NonNegative Int -> Bool
-prop_numerosConDigitosPrimos (NonNegative n) =
+prop_numerosConDigitosPrimos_equiv :: NonNegative Int -> Bool
+prop_numerosConDigitosPrimos_equiv (NonNegative n) =
   all (== numerosConDigitosPrimos1 !! n)
       [ numerosConDigitosPrimos2 !! n
       , numerosConDigitosPrimos3 !! n
@@ -123,7 +147,7 @@ prop_numerosConDigitosPrimos (NonNegative n) =
       ]
 
 -- La comprobación es
---    λ> quickCheck prop_numerosConDigitosPrimos
+--    λ> quickCheck prop_numerosConDigitosPrimos_equiv
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
