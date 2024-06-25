@@ -1,7 +1,7 @@
 -- Minimo_producto_escalar.hs
 -- Mínimo producto escalar.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 9-mayo-2022
+-- Sevilla, 25-junio-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -29,6 +29,7 @@ module Minimo_producto_escalar where
 
 import Data.List (permutations, sort, sortOn)
 import Test.QuickCheck (quickCheck)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
@@ -52,8 +53,31 @@ menorProductoEscalar3 :: (Ord a, Num a) => [a] -> [a] -> a
 menorProductoEscalar3 xs ys =
   sum (zipWith (*) (sort xs) (reverse (sort ys)))
 
--- Equivalencia
+-- Verificación
 -- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Integer] -> [Integer] -> Integer) -> Spec
+specG menorProductoEscalar = do
+  it "e1" $
+    menorProductoEscalar [3,2,5]  [1,4,6]  `shouldBe` 29
+  it "e2" $
+    menorProductoEscalar [3,2,5]  [1,4,-6] `shouldBe` -19
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG menorProductoEscalar1
+  describe "def. 2" $ specG menorProductoEscalar2
+  describe "def. 3" $ specG menorProductoEscalar3
+
+-- La verificación es
+--    λ> verifica
+--    6 examples, 0 failures
+
+-- Comprobación de equivalencia
+-- ============================
 
 -- La propiedad es
 prop_menorProductoEscalar :: [Integer] -> [Integer] -> Bool

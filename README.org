@@ -55,11 +55,9 @@ Los objetivos de esta recopilación son:
 + [[./src/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]] ([[https://youtu.be/7TJAdGjM3Ik][vídeo]]).
 + [[./src/Ordenada_ciclicamente.hs][Ordenada cíclicamente]] ([[https://youtu.be/CI090GISHUc][vídeo]]).
 + [[./src/Producto_cartesiano.hs][Producto cartesiano de una familia de conjuntos]] ([[https://youtu.be/5L2fbGmoQhU][vídeo]]).
-
-+ [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]] ([[https://youtu.be/OEAD7fLZiSk][vídeo]]).
 + [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]] ([[https://youtu.be/UQUzByuY_dQ][vídeo]]).
 + [[./src/Puntos_en_regiones_rectangulares.hs][Puntos en regiones rectangulares]].
-+ [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
+
 + [[./src/Particiones_de_enteros_positivos.hs][Particiones de enteros positivos]].
 + [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].
 + [[./src/Conjunto_de_divisores.hs][Conjunto de divisores]].
@@ -474,14 +472,14 @@ Los objetivos de esta recopilación son:
 + [[./src/Primos_equidistantes.hs][Primos equidistantes]].
 + [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]].
 + [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
-
-** Mayo
-+ 04 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
-+ 09 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
-+ 14 [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
-+ 19 [[./src/Diferencia_simetrica.hs][Diferencia simétrica]].
-+ 24 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
-+ 29 [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
++ [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
++ [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
++ [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
++ [[./src/Diferencia_simetrica.hs][Diferencia simétrica]].
++ [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
++ [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
 
 ** Junio
 + 04 [[./src/Representacion_de_Zeckendorf.hs][Representación de Zeckendorf]].
++ 09 [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]].
++ 14 [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
