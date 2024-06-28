@@ -1,7 +1,7 @@
 -- Particiones_de_enteros_positivos.hs
 -- Particiones de enteros positivos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 10-mayo-2022
+-- Sevilla, 19-junio-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -22,6 +22,7 @@
 
 module Particiones_de_enteros_positivos where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -62,6 +63,32 @@ particiones4 n = aux n n
         aux n' m = concat [map (i:) (aux (n'-i) i)
                           | i <- [k,k-1..1]]
           where k = min m n'
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Int -> [[Int]]) -> Spec
+specG particiones = do
+  it "e1" $
+     particiones 4  `shouldBe`
+     [[4],[3,1],[2,2],[2,1,1],[1,1,1,1]]
+  it "e2" $
+     particiones 5  `shouldBe`
+     [[5],[4,1],[3,2],[3,1,1],[2,2,1],[2,1,1,1],[1,1,1,1,1]]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG particiones1
+  describe "def. 2" $ specG particiones2
+  describe "def. 3" $ specG particiones3
+  describe "def. 4" $ specG particiones4
+
+-- La verificación es
+--    λ> verifica
+--    8 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================

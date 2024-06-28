@@ -1,7 +1,7 @@
 -- Minimo_producto_escalar.hs
 -- Mínimo producto escalar.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 25-junio-2024
+-- Sevilla, 14-junio-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
