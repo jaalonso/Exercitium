@@ -58,7 +58,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]] ([[https://youtu.be/UQUzByuY_dQ][vídeo]]).
 + [[./src/Puntos_en_regiones_rectangulares.hs][Puntos en regiones rectangulares]].
 
-+ [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].
 + [[./src/Conjunto_de_divisores.hs][Conjunto de divisores]].
 + [[./src/Numero_de_divisores.hs][Número de divisores]].
 + [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
@@ -483,3 +482,4 @@ Los objetivos de esta recopilación son:
 + 09 [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]].
 + 14 [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
 + 19 [[./src/Particiones_de_enteros_positivos.hs][Particiones de enteros positivos]].
++ 24 [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].

@@ -1,7 +1,7 @@
 -- Reconocimiento_de_grandes_potencias_de_2.hs
 -- Reconocimiento de potencias de 2.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 11-mayo-2022
+-- Sevilla, 24-junio-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -24,6 +24,7 @@ module Reconocimiento_de_grandes_potencias_de_2 where
 
 import Data.Bits ((.&.))
 import Data.Numbers.Primes (primeFactors)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (Positive (Positive), quickCheck)
 
 -- 1ª solución
@@ -72,6 +73,38 @@ esPotenciaDeDos3 x = all (==2) (primeFactors x)
 
 esPotenciaDeDos4 :: Integer -> Bool
 esPotenciaDeDos4 n = n .&. (n-1) == 0
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> Bool) -> Spec
+specG esPotenciaDeDos = do
+  it "e1" $
+    esPotenciaDeDos    1 `shouldBe` True
+  it "e2" $
+    esPotenciaDeDos    2 `shouldBe` True
+  it "e3" $
+    esPotenciaDeDos    6 `shouldBe` False
+  it "e4" $
+    esPotenciaDeDos    8 `shouldBe` True
+  it "e5" $
+    esPotenciaDeDos 1024 `shouldBe` True
+  it "e6" $
+    esPotenciaDeDos 1026 `shouldBe` False
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG esPotenciaDeDos1
+  describe "def. 2" $ specG esPotenciaDeDos2
+  describe "def. 3" $ specG esPotenciaDeDos3
+  describe "def. 4" $ specG esPotenciaDeDos4
+
+-- La verificación es
+--    λ> verifica
+--    24 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
