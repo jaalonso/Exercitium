@@ -483,3 +483,4 @@ Los objetivos de esta recopilación son:
 + 14 [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
 + 19 [[./src/Particiones_de_enteros_positivos.hs][Particiones de enteros positivos]].
 + 24 [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].
++ 29 [[./src/Conjunto_de_divisores.hs][Conjunto de divisores]].

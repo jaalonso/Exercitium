@@ -1,7 +1,7 @@
 -- Conjunto_de_divisores.hs
 -- Conjunto de divisores.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 12-mayo-2022
+-- Sevilla, 29-junio-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -18,6 +18,7 @@ module Conjunto_de_divisores where
 
 import Data.List (group, inits, nub, sort, subsequences)
 import Data.Numbers.Primes (primeFactors)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -70,6 +71,29 @@ divisores5 = sort
            . map inits
            . group
            . primeFactors
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> [Integer]) -> Spec
+specG divisores = do
+  it "e1" $
+    divisores 30  `shouldBe`  [1,2,3,5,6,10,15,30]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG divisores1
+  describe "def. 2" $ specG divisores2
+  describe "def. 3" $ specG divisores3
+  describe "def. 4" $ specG divisores4
+  describe "def. 5" $ specG divisores5
+
+-- La verificación es
+--    λ> verifica
+--    5 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
