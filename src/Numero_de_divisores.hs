@@ -1,7 +1,7 @@
 -- Numero_de_divisores.hs
 -- Número de divisores.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 13-mayo-2022
+-- Sevilla, 4-julio-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -18,6 +18,7 @@ module Numero_de_divisores where
 
 import Data.List (genericLength, group, inits)
 import Data.Numbers.Primes (primeFactors)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -96,6 +97,31 @@ numeroDivisores4 = genericLength
 numeroDivisores5 :: Integer -> Integer
 numeroDivisores5 =
   product . map ((+1) . genericLength) . group . primeFactors
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> Integer) -> Spec
+specG numeroDivisores = do
+  it "e1" $
+    numeroDivisores 12  `shouldBe`  6
+  it "e2" $
+    numeroDivisores 25  `shouldBe`  3
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG numeroDivisores1
+  describe "def. 2" $ specG numeroDivisores2
+  describe "def. 3" $ specG numeroDivisores3
+  describe "def. 4" $ specG numeroDivisores4
+  describe "def. 5" $ specG numeroDivisores5
+
+-- La verificación es
+--    λ> verifica
+--    10 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
