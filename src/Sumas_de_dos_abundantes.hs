@@ -1,7 +1,7 @@
 -- Sumas_de_dos_abundantes.hs
 -- Sucesión de sumas de dos números abundantes.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 17-mayo-2022
+-- Sevilla, 10-septiembre-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

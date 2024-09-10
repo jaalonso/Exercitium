@@ -58,7 +58,6 @@ Los objetivos de esta recopilación son:
 + [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]] ([[https://youtu.be/UQUzByuY_dQ][vídeo]]).
 + [[./src/Puntos_en_regiones_rectangulares.hs][Puntos en regiones rectangulares]].
 
-+ [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
 + [[./src/Sumas_de_4_primos.hs][Sumas de 4 primos]].
 + [[./src/Parejas_de_numeros_y_divisores.hs][Parejas de números y divisores]].
 + [[./src/Sumas_de_divisores_propios.hs][Sumas de divisores propios]].
@@ -485,3 +484,6 @@ Los objetivos de esta recopilación son:
 
 ** Julio
 + 04 [[./src/Numero_de_divisores.hs][Número de divisores]].
+
+** Septiembre 2024
++ 10 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
