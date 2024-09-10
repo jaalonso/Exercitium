@@ -24,6 +24,7 @@ module Sumas_de_dos_abundantes where
 
 import Data.List (genericLength, group)
 import Data.Numbers.Primes (primeFactors)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -88,6 +89,26 @@ factorizacion = map primeroYlongitud . group . primeFactors
 primeroYlongitud :: [a] -> (a,Integer)
 primeroYlongitud (x:xs) =
   (x, 1 + genericLength xs)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: [Integer] -> Spec
+specG sumasDeDosAbundantes = do
+  it "e1" $
+    take 10 sumasDeDosAbundantes `shouldBe` [24,30,32,36,38,40,42,44,48,50]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG sumasDeDosAbundantes1
+  describe "def. 2" $ specG sumasDeDosAbundantes2
+
+-- La verificación es
+--    λ> verifica
+--    2 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
