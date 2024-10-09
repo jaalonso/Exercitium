@@ -19,7 +19,8 @@
 # resolver: https://example.com/snapshots/2018-01-01.yaml
 #resolver:
 #  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/24.yaml
-resolver: lts-18.24
+# resolver: lts-18.24
+resolver: lts-22.37
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -43,8 +44,8 @@ packages:
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
 extra-deps:
-- I1M-0.1.0
-- combinat-0.2.10.0@sha256:adc1dbb532b048e419374e9e89dc4f92c47758300ffe8534a54849266706e53b,5318
+- I1M-0.2.0
+- combinat-0.2.10.1
 - compact-word-vectors-0.2.0.2@sha256:e46c7c3186dafe1ae22434556ddec91af022f2360c57c30a46397758938f3acc,2617
 - set-monad-0.3.0.0@sha256:8c7a97a5daec64e5846975503cf8b8d8936d96674f375b1adf330dd2db488ff2,4159
 - statistics-linreg-0.3@sha256:95c6efe6c7f6b26bc6e9ada90ab2d18216371cf59a6ef2b517b4a6fd35d9a76f,2544

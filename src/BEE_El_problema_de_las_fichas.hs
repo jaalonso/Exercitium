@@ -79,6 +79,7 @@
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+{-# OPTIONS_GHC -fno-warn-incomplete-uni-patterns #-}
 
 module BEE_El_problema_de_las_fichas where
 
@@ -235,12 +236,10 @@ spec = do
     [[B,B,H,V,V],[B,B,V,V,H],[B,H,V,V,B],[B,V,V,H,B],[H,V,V,B,B],[V,V,H,B,B]]
   it "e3" $
     head (fichas buscaPM 2 2) `shouldBe`
-    [[B,B,H,V,V],[B,H,B,V,V],[B,V,B,H,V],[H,V,B,B,V],[V,H,B,B,V],[V,V,B,B,H],
-     [V,V,B,H,B],[V,V,H,B,B]]
+    [[B,B,H,V,V],[B,B,V,V,H],[B,H,V,V,B],[B,V,V,H,B],[H,V,V,B,B],[V,V,H,B,B]]
   it "e4" $
     head (fichas buscaEscalada 2 2) `shouldBe`
-    [[B,B,H,V,V],[B,H,B,V,V],[B,V,B,H,V],[H,V,B,B,V],[V,H,B,B,V],[V,V,B,B,H],
-     [V,V,B,H,B],[V,V,H,B,B]]
+    [[B,B,H,V,V],[B,B,V,V,H],[B,H,V,V,B],[B,V,V,H,B],[H,V,V,B,B],[V,V,H,B,B]]
 
 -- La verificación es
 --    λ> verifica

@@ -25,9 +25,9 @@
 -- menor o igual que n, para todo número natural n y todo árbol x.
 -- ---------------------------------------------------------------------
 
-module Subarbol_de_profundidad_dada where
-
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
+module Subarbol_de_profundidad_dada where
 
 import Arboles_binarios (Arbol (..))
 import Profundidad_de_un_arbol_binario (profundidad)
