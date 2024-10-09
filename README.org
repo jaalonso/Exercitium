@@ -2,9 +2,9 @@
 #+OPTIONS: num:t ^:nil
 
 En este repositorio se encuentran los códigos con las soluciones de los
-ejercicios de programación funcional propuestos en el blog [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]] desde el
-curso 2013-14 hasta la actualidad. En este tiempo se han propuesto 1.081
-ejercicios que han recibido 4.913 soluciones.
+ejercicios de programación funcional propuestos en el blog [[https://www.glc.us.es/~jalonso/exercitium/][Exercitium]] (y
+la [[https://jaalonso.github.io/exercitium/][continuación de Exercitium en GitHub]]) desde el curso 2013-14 hasta la
+actualidad.
 
 Los objetivos de esta recopilación son:
 + Escribir todos los ejercicios como un proyecto con Stack para evitar los
@@ -13,7 +13,9 @@ Los objetivos de esta recopilación son:
 + Escribir los tests de cada ejercicio (en el directorio [[./test][test]]) de forma que se
   puedan comprobar con [[http://hspec.github.io/][Hspec]].
 
-* Índice de ejercicios (por orden de publicación)
+* Ejercicios publicados desde el 21-04-14 hasta el 05-06-20
+
+* Ejercicios publicados desde el 12-01-21 hasta el 05-08-22
 
 + [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
 + [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
@@ -437,42 +439,56 @@ Los objetivos de esta recopilación son:
 + [[./src/Integracion_por_rectangulos.hs][Integración por el método de los rectángulos]].
 + [[./src/Algoritmo_de_bajada.hs][Algoritmo de bajada para resolver un sistema triangular inferior]].
 
-** Miscelánea
-+ [[./src/Numeros_de_Pentanacci.hs][Números de Pentanacci]].
-+ [[./src/El_teorema_de_Navidad_de_Fermat.hs][El teorema de Navidad de Fermat]].
-+ [[./src/Numeros_primos_de_Hilbert.hs][Números primos de Hilbert]].
-+ [[./src/Factorizaciones_de_numeros_de_Hilbert.hs][Factorizaciones de números de Hilbert]].
-+ [[./src/Sumas_de_dos_primos.hs][Sumas de dos primos]].
-+ [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
-+ [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].
-+ [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
-+ [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
-+ [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
-+ [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
-+ [[./src/Primos_cubanos.hs][Primos cubanos]].
-+ [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
-+ [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
-+ [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
-+ [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
-+ [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]].
-+ [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
-+ [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]].
-+ [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
-+ [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
-+ [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]]
-+ [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
-+ [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
-+ [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
-+ [[./src/Numeros_amigos.hs][Números amigos]].
-+ [[./src/Primos_equidistantes.hs][Primos equidistantes]].
-+ [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]].
-+ [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
-+ [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
-+ [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
-+ [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
-+ [[./src/Diferencia_simetrica.hs][Diferencia simétrica]].
-+ [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
-+ [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
+* Ejercicios publicados el 2023
+
+** Diciembre 2023
++ 09 [[./src/Numeros_de_Pentanacci.hs][Números de Pentanacci]].
++ 14 [[./src/El_teorema_de_Navidad_de_Fermat.hs][El teorema de Navidad de Fermat]].
++ 19 [[./src/Numeros_primos_de_Hilbert.hs][Números primos de Hilbert]].
++ 24 [[./src/Factorizaciones_de_numeros_de_Hilbert.hs][Factorizaciones de números de Hilbert]].
++ 29 [[./src/Sumas_de_dos_primos.hs][Sumas de dos primos]].
+
+* Ejercicios publicados el 2024
+
+** Enero 2024
++ 04 [[./src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.hs][Representaciones de un número como suma de dos cuadrados]].
++ 09 [[./src/La_serie_de_Thue_Morse.hs][La serie de Thue-Morse]].
++ 14 [[./src/La_sucesion_de_Thue_Morse.hs][La sucesión de Thue-Morse]].
++ 19 [[./src/Huecos_maximales_entre_primos.hs][Huecos maximales entre primos]].
++ 24 [[./src/La_funcion_indicatriz_de_Euler.hs][La función indicatriz de Euler]].
++ 29 [[./src/Ceros_finales_del_factorial.hs][Ceros finales del factorial]].
+
+** Febrero 2024
++ 04 [[./src/Primos_cubanos.hs][Primos cubanos]].
++ 09 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
++ 14 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
++ 19 [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
++ 24 [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
++ 29 [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]].
+
+** Marzo 2024
++ 04 [[./src/Reiteracion_de_suma_de_consecutivos.hs][Reiteración de suma de consecutivos]].
++ 09 [[./src/Producto_de_los_elementos_de_la_diagonal_principal.hs][Producto de los elementos de la diagonal principal]].
++ 14 [[./src/Reconocimiento_de_potencias_de_4.hs][Reconocimiento de potencias de 4]].
++ 19 [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
++ 24 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]]
++ 29 [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
+
+** Abril de 2024
++ 04 [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
++ 09 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
++ 14 [[./src/Numeros_amigos.hs][Números amigos]].
++ 19 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
++ 24 [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]].
++ 29  [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
+
+** Mayo 2024
++ 04 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
++ 09 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
++ 14 [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
++ 19 [[./src/Diferencia_simetrica.hs][Diferencia simétrica]].
++ 24 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
++ 29 [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
 
 ** Junio
 + 04 [[./src/Representacion_de_Zeckendorf.hs][Representación de Zeckendorf]].
