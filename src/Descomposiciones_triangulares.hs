@@ -25,21 +25,21 @@
 -- tal que (descomposicionesTriangulares n) es la lista de las
 -- ternas correspondientes a las descomposiciones de n en tres sumandos,
 -- como máximo, formados por números triangulares. Por ejemplo,
---    λ> descomposicionesTriangulares3 4
+--    λ> descomposicionesTriangulares 4
 --    []
---    λ> descomposicionesTriangulares3 5
+--    λ> descomposicionesTriangulares 5
 --    [(1,1,3)]
---    λ> descomposicionesTriangulares3 12
+--    λ> descomposicionesTriangulares 12
 --    [(1,1,10),(3,3,6)]
---    λ> descomposicionesTriangulares3 30
+--    λ> descomposicionesTriangulares 30
 --    [(1,1,28),(3,6,21),(10,10,10)]
---    λ> descomposicionesTriangulares3 61
+--    λ> descomposicionesTriangulares 61
 --    [(1,15,45),(3,3,55),(6,10,45),(10,15,36)]
---    λ> descomposicionesTriangulares3 52
+--    λ> descomposicionesTriangulares 52
 --    [(1,6,45),(1,15,36),(3,21,28),(6,10,36),(10,21,21)]
---    λ> descomposicionesTriangulares3 82
+--    λ> descomposicionesTriangulares 82
 --    [(1,3,78),(1,15,66),(1,36,45),(6,10,66),(6,21,55),(10,36,36)]
---    λ> length (descomposicionesTriangulares3 (5*10^5))
+--    λ> length (descomposicionesTriangulares (5*10^5))
 --    124
 -- ---------------------------------------------------------------------
 
