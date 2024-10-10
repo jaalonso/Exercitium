@@ -1,5 +1,5 @@
 -- Numeros_de_ocurrencias_de_elementos.hs
--- Número de ocurrencias de elementos
+-- Número de ocurrencias de elementos.
 -- José A. Alonso Jiménez
 -- Sevilla, 7-febrero-2022
 -- ---------------------------------------------------------------------
@@ -18,6 +18,7 @@ module Numeros_de_ocurrencias_de_elementos where
 import Data.List (group, nub, sort)
 import Data.Maybe (fromJust)
 import qualified Data.Map as M
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -71,8 +72,35 @@ ocurrenciasElementos4 = foldl aux []
     aux ((x,k):xs) y | x == y    = (x, k + 1) : xs
                      | otherwise = (x, k) : aux xs y
 
--- Equivalencia de las definiciones
--- ================================
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (String -> [(Char,Int)]) -> Spec
+specG ocurrenciasElementos = do
+  it "e1" $
+    ocurrenciasElementos "abracadabra" `shouldBe`
+    [('a',5),('b',2),('r',2),('c',1),('d',1)]
+  it "e2" $
+    ocurrenciasElementos "Code Wars"   `shouldBe`
+    [('C',1),('o',1),('d',1),('e',1),(' ',1),('W',1),('a',1),('r',1),('s',1)]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG ocurrenciasElementos1
+  describe "def. 2" $ specG ocurrenciasElementos2
+  describe "def. 3" $ specG ocurrenciasElementos3
+  describe "def. 4" $ specG ocurrenciasElementos4
+
+-- La verificación es
+--    λ> verifica
+--
+--    4 examples, 0 failures
+
+-- Comprobación de equivalencia
+-- ============================
 
 -- La propiedad es
 prop_ocurrenciasElementos :: [Integer] -> Bool

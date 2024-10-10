@@ -17,6 +17,9 @@ Los objetivos de esta recopilación son:
 
 * Ejercicios publicados desde el 12-01-21 hasta el 05-08-22
 
+* Ejercicios publicados el 2022
+
+** Febrero 2022
 + [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
 + [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
 + [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
