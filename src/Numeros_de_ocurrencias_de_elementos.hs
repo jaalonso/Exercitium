@@ -105,13 +105,10 @@ spec = do
 -- La propiedad es
 prop_ocurrenciasElementos :: [Integer] -> Bool
 prop_ocurrenciasElementos xs =
-  all (== (ocurrenciasElementos1 xs))
+  all (== ocurrenciasElementos1 xs)
       [f xs | f <- [ocurrenciasElementos2,
                     ocurrenciasElementos3,
                     ocurrenciasElementos4]]
-
-verifica_ocurrenciasElementos :: IO ()
-verifica_ocurrenciasElementos = quickCheck prop_ocurrenciasElementos
 
 -- La comprobación es
 --    λ> quickCheck prop_ocurrenciasElementos

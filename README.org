@@ -20,7 +20,9 @@ Los objetivos de esta recopilación son:
 * Ejercicios publicados el 2022
 
 ** Febrero 2022
-+ [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
++ 01 [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]].
++ 07 [[./src/Numeros_de_ocurrencias_de_elementos.hs][Número de ocurrencias de elementos]].
+
 + [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
 + [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
 + [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
@@ -483,7 +485,7 @@ Los objetivos de esta recopilación son:
 + 14 [[./src/Numeros_amigos.hs][Números amigos]].
 + 19 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
 + 24 [[./src/Numeracion_de_ternas.hs][Numeración de ternas de naturales]].
-+ 29  [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
++ 29 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]] ([[https://youtu.be/_Ic-384xp2I][vídeos]]).
 
 ** Mayo 2024
 + 04 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
@@ -506,3 +508,7 @@ Los objetivos de esta recopilación son:
 
 ** Septiembre 2024
 + 10 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
+
+** Noviembre 2024
+
++ ?? [[./src/Reto_matematico_07nov24.hs][Reto matemático (7-nov-24)]].
