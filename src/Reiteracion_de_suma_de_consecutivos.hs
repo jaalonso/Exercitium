@@ -1,7 +1,7 @@
 -- Reiteracion_de_suma_de_consecutivos.hs
 -- Reiteración de suma de consecutivos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 4-marzo-2024
+-- Sevilla, 2-febrero-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

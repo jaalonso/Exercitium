@@ -1,7 +1,7 @@
 -- Exponente_en_la_factorizacion.hs
 -- Exponente en la factorización.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 19-marzo-24
+-- Sevilla, 8-febrero-22 y 19-marzo-24
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -100,3 +100,17 @@ prop_exponente x n =
 -- La comprobación es
 --    λ> quickCheck prop_exponente
 --    +++ OK, passed 100 tests.
+
+-- Comparación de eficiencia
+-- =========================
+
+-- La comparación es
+--    λ> exponente1 2 (2^300000)
+--    300000
+--    (3.22 secs, 5,766,890,656 bytes)
+--    λ> exponente2 2 (2^300000)
+--    300000
+--    (3.02 secs, 5,703,752,008 bytes)
+--    λ> exponente3 2 (2^300000)
+--    300000
+--    (2.53 secs, 5,739,750,152 bytes)

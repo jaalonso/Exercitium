@@ -1,7 +1,7 @@
 -- Reconocimiento_de_potencias_de_4.hs
 -- Reconocimiento de potencias de 4.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 14-marzo-2024
+-- Sevilla, 04-febrero-2022 y 14-marzo-2024
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
