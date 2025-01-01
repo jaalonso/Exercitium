@@ -27,6 +27,7 @@
 module Suma_de_multiplos_de_3_o_de_5 where
 
 import Data.List (nub, union)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (Positive(..), quickCheck)
 
 -- 1ª solución
@@ -41,31 +42,31 @@ sumaMultiplos1 n = sum [x | x <- [1..n-1], multiplo x 3 || multiplo x 5]
 multiplo :: Integer -> Integer -> Bool
 multiplo x y = mod x y == 0
 
--- 2ª solución                                                        --
+-- 2ª solución
 -- ===========
 
 sumaMultiplos2 :: Integer -> Integer
 sumaMultiplos2 n = sum [x | x <- [1..n-1], gcd x 15 > 1]
 
--- 3ª solución                                                        --
+-- 3ª solución
 -- ===========
 
 sumaMultiplos3 :: Integer -> Integer
 sumaMultiplos3 n = sum [3,6..n-1] + sum [5,10..n-1] - sum [15,30..n-1]
 
--- 4ª solución                                                        --
+-- 4ª solución
 -- ===========
 
 sumaMultiplos4 :: Integer -> Integer
 sumaMultiplos4 n = sum (nub ([3,6..n-1] ++ [5,10..n-1]))
 
--- 5ª solución                                                        --
+-- 5ª solución
 -- ===========
 
 sumaMultiplos5 :: Integer -> Integer
 sumaMultiplos5 n = sum ([3,6..n-1] `union` [5,10..n-1])
 
--- 6ª solución                                                      --
+-- 6ª solución
 -- ===========
 
 sumaMultiplos6 :: Integer -> Integer
@@ -80,6 +81,33 @@ suma d x = (a+b)*n `div` 2
     where a = d
           b = d * ((x-1) `div` d)
           n = 1 + (b-a) `div` d
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> Integer) -> Spec
+specG sumaMultiplos = do
+  it "e1" $
+    sumaMultiplos 10      `shouldBe`  23
+  it "e2" $
+    sumaMultiplos (10^2)  `shouldBe`  2318
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG sumaMultiplos1
+  describe "def. 2" $ specG sumaMultiplos2
+  describe "def. 3" $ specG sumaMultiplos3
+  describe "def. 4" $ specG sumaMultiplos4
+  describe "def. 5" $ specG sumaMultiplos5
+  describe "def. 6" $ specG sumaMultiplos6
+
+-- La verificación es
+--    λ> verifica
+--
+--    12 examples, 0 failures
 
 -- Equivalencia de definiciones
 -- ============================

@@ -363,7 +363,6 @@ library
       Suma_de_los_elementos_de_las_diagonales_matrices_espirales
       Suma_de_los_primeros_numeros_naturales
       Suma_de_monedas
-      Suma_de_multiplos_de_3_o_5
       Suma_de_multiplos_de_3_o_de_5
       Suma_de_numeros_amigos_menores_que_n
       Suma_de_un_arbol
@@ -811,7 +810,6 @@ test-suite Exercitium-test
       Suma_de_los_elementos_de_las_diagonales_matrices_espirales_Spec
       Suma_de_los_primeros_numeros_naturales_Spec
       Suma_de_monedas_Spec
-      Suma_de_multiplos_de_3_o_5_Spec
       Suma_de_multiplos_de_3_o_de_5_Spec
       Suma_de_numeros_amigos_menores_que_n_Spec
       Suma_de_un_arbol_Spec

@@ -13,6 +13,8 @@
 --    ocurrenciasElementos1 "tictac"          == [('t',2),('i',1),('c',2),('a',1)]
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Numeros_de_ocurrencias_de_elementos where
 
 import Data.List (group, nub, sort)
