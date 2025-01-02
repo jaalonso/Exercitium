@@ -9,7 +9,7 @@
 -- 3, 5, 6 y 9. La suma de estos múltiplos es 23.
 --
 -- Definir la función
---    sumaMultiplos :: Integer -> Integer
+--
 -- tal que (sumaMultiplos n) es la suma de todos los múltiplos de 3 ó 5
 -- menores que n. Por ejemplo,
 --    sumaMultiplos 10      ==  23

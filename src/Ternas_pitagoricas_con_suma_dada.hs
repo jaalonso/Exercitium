@@ -1,7 +1,7 @@
 -- Ternas_pitagoricas_con_suma_dada.hs
 -- Ternas pitagóricas con suma dada
 -- José A. Alonso Jiménez
--- Sevilla, 18-octubre-2022
+-- Sevilla, 10-febrero-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -17,12 +17,15 @@
 --    ternasPitagoricas (10^6) == [(218750,360000,421250),(200000,375000,425000)]
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-incomplete-uni-patterns #-}
+
 module Ternas_pitagoricas_con_suma_dada where
 
 import Data.List (nub,sort)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
--- 1ª solución                                                   --
+-- 1ª solución
 -- ===========
 
 ternasPitagoricas1 :: Integer -> [(Integer,Integer,Integer)]
@@ -33,7 +36,7 @@ ternasPitagoricas1 x =
              a^2 + b^2 == c^2,
              a+b+c == x]
 
--- 2ª solución                                                   --
+-- 2ª solución
 -- ===========
 
 ternasPitagoricas2 :: Integer -> [(Integer,Integer,Integer)]
@@ -43,13 +46,13 @@ ternasPitagoricas2 x =
              let c = x-a-b,
              a^2+b^2 == c^2]
 
--- 3ª solución                                                   --
+-- 3ª solución
 -- ===========
 
 -- Todas las ternas pitagóricas primitivas (a,b,c) pueden representarse
 -- por
 --    a = m^2 - n^2, b = 2*m*n, c = m^2 + n^2,
--- con 1 <= n < m. (Ver en https://bit.ly/35UNY6L ).
+-- con 1 <= n < m. (Ver en https://tinyurl.com/27ydumhz ).
 
 ternasPitagoricas3 :: Integer -> [(Integer,Integer,Integer)]
 ternasPitagoricas3 x =
@@ -64,13 +67,37 @@ ternasPitagoricas3 x =
                        a+b+c == y]
       where limite = ceiling (sqrt (fromIntegral y))
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> [(Integer,Integer,Integer)]) -> Spec
+specG ternasPitagoricas = do
+  it "e1" $
+    ternasPitagoricas 12      `shouldBe` [(3,4,5)]
+  it "e2" $
+    ternasPitagoricas 60      `shouldBe` [(10,24,26),(15,20,25)]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG ternasPitagoricas1
+  describe "def. 2" $ specG ternasPitagoricas2
+  describe "def. 3" $ specG ternasPitagoricas3
+
+-- La verificación es
+--    λ> verifica
+--
+--    6 examples, 0 failures
+
 -- Equivalencia de las definiciones
 -- ================================
 
 -- La propiedad es
 prop_ternasPitagoricas :: Positive Integer -> Bool
 prop_ternasPitagoricas (Positive x) =
-  all (== (ternasPitagoricas1 x))
+  all (== ternasPitagoricas1 x)
       [ternasPitagoricas2 x,
        ternasPitagoricas3 x]
 
