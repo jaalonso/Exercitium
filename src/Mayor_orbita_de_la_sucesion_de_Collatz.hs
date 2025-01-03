@@ -1,7 +1,7 @@
 -- Mayor_orbita_de_la_sucesion_de_Collatz.hs
 -- Mayor órbita de la sucesión de Collatz.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 24-marzo-2024
+-- Sevilla, 3-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -162,12 +162,12 @@ prop_mayoresGeneradores (Positive n) =
 -- ==========================
 
 -- La comprobación es
---    λ> mayoresGeneradores (10^5)
+--    λ> mayoresGeneradores1 (10^5)
 --    [77031]
---    (5.43 secs, 6,232,320,064 bytes)
+--    (1.57 secs, 1,919,940,328 bytes)
 --    λ> mayoresGeneradores2 (10^5)
 --    [77031]
---    (7.68 secs, 5,238,991,616 bytes)
+--    (6.57 secs, 4,427,548,568 bytes)
 --    λ> mayoresGeneradores3 (10^5)
 --    [77031]
---    (0.88 secs, 571,788,736 bytes)
+--    (0.90 secs, 625,064,192 bytes)

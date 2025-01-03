@@ -28,6 +28,7 @@ Los objetivos de esta recopilación son:
 + 08 [[./src/Exponente_en_la_factorizacion.hs][Exponente en la factorización]].
 + 09 [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
 + 10 [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
++ 11 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]].
 
 + [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
 + [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
@@ -513,6 +514,9 @@ Los objetivos de esta recopilación son:
 ** Septiembre 2024
 + 10 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
 
-** Noviembre 2024
+* 2025
 
-+ ?? [[./src/Reto_matematico_07nov24.hs][Reto matemático (7-nov-24)]].
+** Enero 2025
++ 01 [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].
++ 02 [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
++ 03 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]].
