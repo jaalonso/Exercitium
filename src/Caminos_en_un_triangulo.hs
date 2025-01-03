@@ -1,7 +1,7 @@
 -- Caminos_en_un_triangulo.hs
 -- Caminos en un triángulo.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 4-abril-2024
+-- Sevilla, 4-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
