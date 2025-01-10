@@ -1,7 +1,7 @@
 -- Maxima_suma_de_caminos_en_un_triangulo.hs
 -- Máxima suma de caminos en un triángulo.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 16-abril-2024
+-- Sevilla, 10-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
