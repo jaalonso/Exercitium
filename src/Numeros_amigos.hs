@@ -1,7 +1,7 @@
 -- Numeros_amigos.hs
 -- Números amigos
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 14-abril-2024
+-- Sevilla, 11-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -31,7 +31,7 @@ import Data.List (genericLength, group, inits, nub, sort, subsequences)
 import Data.Numbers.Primes (primeFactors)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
--- 1ª solución                                                   --
+-- 1ª solución
 -- ===========
 
 amigos1 :: Integer -> Integer -> Bool
@@ -52,7 +52,7 @@ sumaDivisoresPropios1 = sum . divisoresPropios1
 divisoresPropios1 :: Integer -> [Integer]
 divisoresPropios1 x = [n | n <- [1..x-1], x `mod` n == 0]
 
--- 2ª solución                                                   --
+-- 2ª solución
 -- ===========
 
 amigos2 :: Integer -> Integer -> Bool
@@ -65,7 +65,7 @@ sumaDivisoresPropios2 = sum . divisoresPropios2
 divisoresPropios2 :: Integer -> [Integer]
 divisoresPropios2 x = filter ((== 0) . mod x) [1..x-1]
 
--- 3ª solución                                                   --
+-- 3ª solución
 -- ===========
 
 amigos3 :: Integer -> Integer -> Bool
@@ -79,7 +79,7 @@ divisoresPropios3 :: Integer -> [Integer]
 divisoresPropios3 =
   init . nub . sort . map product . subsequences . primeFactors
 
--- 4ª solución                                                   --
+-- 4ª solución
 -- ===========
 
 amigos4 :: Integer -> Integer -> Bool
@@ -108,7 +108,7 @@ productoCartesiano []       = [[]]
 productoCartesiano (xs:xss) =
   [x:ys | x <- xs, ys <- productoCartesiano xss]
 
--- 5ª solución                                                   --
+-- 5ª solución
 -- ===========
 
 amigos5 :: Integer -> Integer -> Bool
@@ -141,12 +141,11 @@ sumaDivisoresPropios6 =
   sum
   . init
   . map (product . concat)
-  . sequence
-  . map inits
+  . mapM inits
   . group
   . primeFactors
 
--- 7ª solución                                                   --
+-- 7ª solución
 -- ===========
 
 amigos7 :: Integer -> Integer -> Bool

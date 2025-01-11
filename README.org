@@ -31,6 +31,7 @@ Los objetivos de esta recopilación son:
 + 11 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]].
 + 14 [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
 + 15 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
++ 16 [[./src/Numeros_amigos.hs][Números amigos]].
 
 + [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
 + [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
@@ -523,3 +524,5 @@ Los objetivos de esta recopilación son:
 + 02 [[./src/Ternas_pitagoricas_con_suma_dada.hs][Ternas pitagóricas con suma dada]].
 + 03 [[./src/Mayor_orbita_de_la_sucesion_de_Collatz.hs][Mayor órbita de la sucesión de Collatz]].
 + 04 [[./src/Caminos_en_un_triangulo.hs][Caminos en un triángulo]].
++ 10 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
++ 11 [[./src/Numeros_amigos.hs][Números amigos]].
