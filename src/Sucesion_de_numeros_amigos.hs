@@ -1,14 +1,14 @@
 -- Sucesion_de_numeros_amigos.hs
 -- Sucesión de números amigos
 -- José A. Alonso Jiménez
--- Sevilla, 17-febrero-2022
+-- Sevilla, 15-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Dos [números amigos](https://bit.ly/36gSRHt) son dos números enteros
--- positivos distintos tales que la suma de los divisores propios de
--- cada uno es igual al otro. Los divisores propios de un número
--- incluyen la unidad pero no al propio número. Por ejemplo, los
+-- Dos [números amigos](https://tinyurl.com/2y2ktgb9) son dos números
+-- enteros  positivos distintos tales que la suma de los divisores
+-- propios de cada uno es igual al otro. Los divisores propios de un
+-- número incluyen la unidad pero no al propio número. Por ejemplo, los
 -- divisores propios de 220 son 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 y
 -- 110. La suma de estos números equivale a 284. A su vez, los divisores
 -- propios de 284 son 1, 2, 4, 71 y 142. Su suma equivale a 220. Por
@@ -28,6 +28,7 @@ module Sucesion_de_numeros_amigos where
 
 import Data.List (genericLength, group, inits, nub, sort, subsequences)
 import Data.Numbers.Primes (primeFactors)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución                                                   --
 -- ===========
@@ -156,8 +157,7 @@ sumaDivisoresPropios6 =
   sum
   . init
   . map (product . concat)
-  . sequence
-  . map inits
+  . mapM inits
   . group
   . primeFactors
 
@@ -194,6 +194,31 @@ factorizacion = map primeroYlongitud . group . primeFactors
 --    primeroYlongitud [3,2,5,7] == (3,4)
 primeroYlongitud :: [a] -> (a,Integer)
 primeroYlongitud (x:xs) = (x, 1 + genericLength xs)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: [(Integer,Integer)] -> Spec
+specG sucesionAmigos = do
+  it "e1" $
+    head sucesionAmigos `shouldBe` (220,284)
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG sucesionAmigos1
+  describe "def. 2" $ specG sucesionAmigos2
+  describe "def. 3" $ specG sucesionAmigos3
+  describe "def. 4" $ specG sucesionAmigos4
+  describe "def. 5" $ specG sucesionAmigos5
+  describe "def. 6" $ specG sucesionAmigos6
+  describe "def. 7" $ specG sucesionAmigos7
+
+-- La verificación es
+--    λ> verifica
+--    7 examples, 0 failures
 
 -- Comparación de eficiencia
 -- =========================
@@ -246,4 +271,3 @@ primeroYlongitud (x:xs) = (x, 1 + genericLength xs)
 --    λ> sucesionAmigos7 !! 12
 --    (79750,88730)
 --    (2.11 secs, 3,971,113,184 bytes)
---
