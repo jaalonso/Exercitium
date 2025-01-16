@@ -33,8 +33,8 @@ Los objetivos de esta recopilación son:
 + 15 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
 + 16 [[./src/Numeros_amigos.hs][Números amigos]].
 + 17 [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
++ 18 [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
 
-+ [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
 + [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
 + [[./src/Mastermind.hs][Mastermind]].
 + [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
@@ -527,3 +527,4 @@ Los objetivos de esta recopilación son:
 + 10 [[./src/Maxima_suma_de_caminos_en_un_triangulo.hs][Máxima suma de caminos en un triángulo]].
 + 11 [[./src/Numeros_amigos.hs][Números amigos]].
 + 15 [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
++ 16 [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].

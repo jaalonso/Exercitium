@@ -1,14 +1,14 @@
 -- Suma_de_numeros_amigos_menores_que_n.hs
 -- Suma de los números amigos menores que n
 -- José A. Alonso Jiménez
--- Sevilla, 18-febrero-2022
+-- Sevilla, 16-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Dos [números amigos](https://bit.ly/36gSRHt) son dos números enteros
--- positivos distintos tales que la suma de los divisores propios de
--- cada uno es igual al otro. Los divisores propios de un número
--- incluyen la unidad pero no al propio número. Por ejemplo, los
+-- Dos [números amigos](https://tinyurl.com/2y2ktgb9) son dos números
+-- enteros positivos distintos tales que la suma de los divisores
+-- propios de cada uno es igual al otro. Los divisores propios de un
+-- número incluyen la unidad pero no al propio número. Por ejemplo, los
 -- divisores propios de 220 son 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 y
 -- 110. La suma de estos números equivale a 284. A su vez, los divisores
 -- propios de 284 son 1, 2, 4, 71 y 142. Su suma equivale a 220. Por
@@ -28,6 +28,8 @@ module Suma_de_numeros_amigos_menores_que_n where
 
 import Data.List (genericLength, group, inits, nub, sort, subsequences)
 import Data.Numbers.Primes (primeFactors)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck
 
 -- 1ª solución                                                   --
 -- ===========
@@ -208,8 +210,7 @@ sumaDivisoresPropios6 =
   sum
   . init
   . map (product . concat)
-  . sequence
-  . map inits
+  . mapM inits
   . group
   . primeFactors
 
@@ -254,6 +255,50 @@ factorizacion = map primeroYlongitud . group . primeFactors
 --    primeroYlongitud [3,2,5,7] == (3,4)
 primeroYlongitud :: [a] -> (a,Integer)
 primeroYlongitud (x:xs) = (x, 1 + genericLength xs)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> Integer) -> Spec
+specG sumaAmigosMenores = do
+  it "e1" $
+    sumaAmigosMenores 1000   `shouldBe` 504
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG sumaAmigosMenores1
+  describe "def. 2" $ specG sumaAmigosMenores2
+  describe "def. 3" $ specG sumaAmigosMenores3
+  describe "def. 4" $ specG sumaAmigosMenores4
+  describe "def. 5" $ specG sumaAmigosMenores5
+  describe "def. 6" $ specG sumaAmigosMenores6
+  describe "def. 7" $ specG sumaAmigosMenores7
+
+-- La verificación es
+--    λ> verifica
+--    7 examples, 0 failures
+
+-- Equivalencia de definiciones
+-- ============================
+
+-- La propiedad es
+prop_sumaAmigosMenores :: Positive Integer -> Bool
+prop_sumaAmigosMenores (Positive n) =
+  all (== sumaAmigosMenores1 n)
+      [sumaAmigosMenores2 n,
+       sumaAmigosMenores3 n,
+       sumaAmigosMenores4 n,
+       sumaAmigosMenores5 n,
+       sumaAmigosMenores6 n,
+       sumaAmigosMenores7 n
+      ]
+
+-- La comprobación es
+--    λ> quickCheck prop_sumaAmigosMenores
+--    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
 -- =========================
