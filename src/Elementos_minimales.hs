@@ -1,7 +1,7 @@
 -- Elementos_minimales.hs
 -- Determinación de los elementos minimales.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 21-febrero-2022)
+-- Sevilla, 17-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -14,16 +14,20 @@
 --    map sum (minimales [[1..n] | n <- [1..300]])  ==  [45150]
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Elementos_minimales where
 
 import Data.List (delete, nub)
-import Test.QuickCheck (quickCheck)
+import Data.Set (fromList, isProperSubsetOf)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck
 
 -- 1ª solución
 -- ===========
 
-minimales :: Ord a => [[a]] -> [[a]]
-minimales xss =
+minimales1 :: Ord a => [[a]] -> [[a]]
+minimales1 xss =
   [xs | xs <- xss,
         null [ys | ys <- xss, subconjuntoPropio xs ys]]
 
@@ -60,29 +64,72 @@ subconjunto :: Ord a => [a] -> [a] -> Bool
 subconjunto xs ys =
   all (`elem` ys) xs
 
+-- 3ª solución
+-- ===========
+
+minimales3 :: Ord a => [[a]] -> [[a]]
+minimales3 xss =
+  [xs | xs <- xss,
+        null [ys | ys <- xss, subconjuntoPropio3 xs ys]]
+
+subconjuntoPropio3 :: Ord a => [a] -> [a] -> Bool
+subconjuntoPropio3 xs ys =
+  isProperSubsetOf (fromList xs) (fromList ys)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([[Int]] -> [[Int]]) -> Spec
+specG minimales = do
+  it "e1" $
+    minimales [[1,3],[2,3,1],[3,2,5]]        `shouldBe`  [[2,3,1],[3,2,5]]
+  it "e2" $
+    minimales [[1,3],[2,3,1],[3,2,5],[3,1]]  `shouldBe`  [[2,3,1],[3,2,5]]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG minimales1
+  describe "def. 2" $ specG minimales2
+  describe "def. 3" $ specG minimales3
+
+-- La verificación es
+--    λ> verifica
+--    6 examples, 0 failures
+
 -- Equivalencia de las definiciones
 -- ================================
 
 -- La propiedad es
 prop_minimales :: [[Int]] -> Bool
 prop_minimales xss =
-   minimales xss == minimales2 xss
-
-verifica_minimales :: IO ()
-verifica_minimales =
-  quickCheck prop_minimales
+  all (== minimales1 xss)
+      [minimales2 xss,
+       minimales3 xss]
 
 -- La comprobación es
---    λ> verifica_minimales
+--    λ> quickCheck prop_minimales
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
 -- =========================
 
 -- La comparación es
---    λ> length (minimales [[1..n] | n <- [1..200]])
+--    λ> length (minimales1 [[1..n] | n <- [1..200]])
 --    1
---    (2.30 secs, 657,839,560 bytes)
+--    (2.07 secs, 702,257,168 bytes)
 --    λ> length (minimales2 [[1..n] | n <- [1..200]])
 --    1
---    (0.84 secs, 101,962,480 bytes)
+--    (0.85 secs, 138,498,288 bytes)
+--    λ> length (minimales3 [[1..n] | n <- [1..200]])
+--    1
+--    (0.15 secs, 293,134,464 bytes)
+--
+--    λ> length (minimales2 [[1..n] | n <- [1..300]])
+--    1
+--    (3.61 secs, 442,569,888 bytes)
+--    λ> length (minimales3 [[1..n] | n <- [1..300]])
+--    1
+--    (0.39 secs, 981,990,968 bytes)
