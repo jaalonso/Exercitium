@@ -81,8 +81,11 @@ mastermind2 xs ys =
   (length aciertos2, length coincidencias2)
   where
     aciertos2, coincidencias2 :: [Int]
-    aciertos2      = [n | (n,x,y) <- zip3 [0..] xs ys, x == y]
-    coincidencias2 = [n | (n,y) <- zip [0..] ys, y `elem` xs, n `notElem` aciertos2]
+    aciertos2      = [n | (n,x,y) <- zip3 [0..] xs ys,
+                          x == y]
+    coincidencias2 = [n | (n,y) <- zip [0..] ys,
+                          y `elem` xs,
+                          n `notElem` aciertos2]
 
 -- 3ª solución
 -- ===========
@@ -104,9 +107,12 @@ mastermind4 xs ys =
   (length aciertos4, length coincidencias4)
   where
     aciertos4, coincidencias4 :: [Int]
-    aciertos4      = [n | (n,x,y) <- zip3 [0..] xs ys, x == y]
+    aciertos4      = [n | (n,x,y) <- zip3 [0..] xs ys,
+                          x == y]
     xs'            = S.fromList xs
-    coincidencias4 = [n | (n,y) <- zip [0..] ys, y `S.member` xs', n `notElem` aciertos4]
+    coincidencias4 = [n | (n,y) <- zip [0..] ys,
+                          y `S.member` xs',
+                          n `notElem` aciertos4]
 
 -- Verificación
 -- ============
