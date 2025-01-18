@@ -1,7 +1,7 @@
 -- Mastermind.hs
 -- Mastermind.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 22-febrero-2022
+-- Sevilla, 18-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -42,16 +42,19 @@
 --    mastermind [1..10^6] [1..10^6]  ==  (1000000,0)
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Mastermind where
 
 import qualified Data.Set as S
-import Test.QuickCheck (quickCheck)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck
 
 -- 1ª solución
 -- ===========
 
-mastermind :: [Int] -> [Int] -> (Int, Int)
-mastermind xs ys =
+mastermind1 :: [Int] -> [Int] -> (Int, Int)
+mastermind1 xs ys =
   (length (aciertos xs ys), length (coincidencias xs ys))
 
 -- (aciertos xs ys) es la lista de las posiciones de los aciertos entre
@@ -105,13 +108,41 @@ mastermind4 xs ys =
     xs'            = S.fromList xs
     coincidencias4 = [n | (n,y) <- zip [0..] ys, y `S.member` xs', n `notElem` aciertos4]
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> [Int] -> (Int, Int)) -> Spec
+specG mastermind = do
+  it "e1" $
+    mastermind [3,3] [3,2]          `shouldBe`  (1,0)
+  it "e2" $
+    mastermind [3,5,3] [3,2,5]      `shouldBe`  (1,1)
+  it "e3" $
+    mastermind [3,5,3,2] [3,2,5,3]  `shouldBe`  (1,3)
+  it "e4" $
+    mastermind [3,5,3,3] [3,2,5,3]  `shouldBe`  (2,1)
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG mastermind1
+  describe "def. 2" $ specG mastermind2
+  describe "def. 3" $ specG mastermind3
+  describe "def. 4" $ specG mastermind4
+
+-- La verificación es
+--    λ> verifica
+--    16 examples, 0 failures
+
 -- Equivalencia de las definiciones
 -- ================================
 
 -- La propiedad es
 prop_mastermind :: [Int] -> [Int] -> Bool
 prop_mastermind xs ys =
-  all (== mastermind xs1 ys1)
+  all (== mastermind1 xs1 ys1)
       [mastermind2 xs1 ys1,
        mastermind3 xs1 ys1,
        mastermind4 xs1 ys1]
@@ -119,11 +150,8 @@ prop_mastermind xs ys =
         xs1 = take n xs
         ys1 = take n ys
 
-verifica_mastermind :: IO ()
-verifica_mastermind = quickCheck prop_mastermind
-
 -- La comprobación es
---    λ> verifica_mastermind
+--    λ> quickCheck prop_mastermind
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia

@@ -35,8 +35,8 @@ Los objetivos de esta recopilación son:
 + 17 [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
 + 18 [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
 + 21 [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
++ 22 [[./src/Mastermind.hs][Mastermind]].
 
-+ [[./src/Mastermind.hs][Mastermind]].
 + [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
 + [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
 + [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
@@ -529,3 +529,4 @@ Los objetivos de esta recopilación son:
 + 15 [[./src/Sucesion_de_numeros_amigos.hs][Sucesión de números amigos]].
 + 16 [[./src/Suma_de_numeros_amigos_menores_que_n.hs][Suma de los números amigos menores que n]].
 + 17 [[./src/Elementos_minimales.hs][Determinación de los elementos minimales]].
++ 18 [[./src/Mastermind.hs][Mastermind]].
