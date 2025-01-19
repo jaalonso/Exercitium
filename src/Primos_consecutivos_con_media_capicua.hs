@@ -1,7 +1,7 @@
 -- Primos_consecutivos_con_media_capicua.hs
 -- Primos consecutivos con media capicúa.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 23-febrero-2022
+-- Sevilla, 19-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -21,12 +21,13 @@ module Primos_consecutivos_con_media_capicua where
 
 import Data.List (genericTake)
 import Data.Numbers.Primes (primes)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
 
-primosConsecutivosConMediaCapicua :: [(Integer,Integer,Integer)]
-primosConsecutivosConMediaCapicua =
+primosConsecutivosConMediaCapicua1 :: [(Integer,Integer,Integer)]
+primosConsecutivosConMediaCapicua1 =
   [(x,y,z) | (x,y) <- zip primosImpares (tail primosImpares),
              let z = (x + y) `div` 2,
              capicua z]
@@ -84,13 +85,36 @@ primosConsecutivosConMediaCapicua4 =
              let z = (x + y) `div` 2,
              capicua z]
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: [(Integer,Integer,Integer)] -> Spec
+specG primosConsecutivosConMediaCapicua = do
+  it "e1" $
+    take 5 primosConsecutivosConMediaCapicua `shouldBe`
+    [(3,5,4),(5,7,6),(7,11,9),(97,101,99),(109,113,111)]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG primosConsecutivosConMediaCapicua1
+  describe "def. 2" $ specG primosConsecutivosConMediaCapicua2
+  describe "def. 3" $ specG primosConsecutivosConMediaCapicua3
+  describe "def. 4" $ specG primosConsecutivosConMediaCapicua4
+
+-- La verificación es
+--    λ> verifica
+--    4 examples, 0 failures
+
 -- Equivalencia de definiciones
 -- ============================
 
 -- La propiedad es
 prop_primosConsecutivosConMediaCapicua :: Integer -> Bool
 prop_primosConsecutivosConMediaCapicua n =
-  all (== genericTake n primosConsecutivosConMediaCapicua)
+  all (== genericTake n primosConsecutivosConMediaCapicua1)
       [genericTake n primosConsecutivosConMediaCapicua2,
        genericTake n primosConsecutivosConMediaCapicua3,
        genericTake n primosConsecutivosConMediaCapicua4]
