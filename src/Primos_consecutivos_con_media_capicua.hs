@@ -44,6 +44,8 @@ primosImpares :: [Integer]
 primosImpares = [x | x <- [3,5..], primo x]
 
 -- (capicua x) se verifica si x es capicúa. Por ejemplo,
+--    capicua 232  == True
+--    capicua 223  == False
 capicua :: Integer -> Bool
 capicua x = ys == reverse ys
   where ys = show x

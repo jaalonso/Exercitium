@@ -1,11 +1,11 @@
 -- Iguales_al_siguiente.hs
 -- Iguales al siguiente.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 14-febrero-2022
+-- Sevilla, 21-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Ejercicio. Definir la función
+-- Definir la función
 --    igualesAlSiguiente :: Eq a => [a] -> [a]
 -- tal que (igualesAlSiguiente xs) es la lista de los elementos de xs
 -- que son iguales a su siguiente. Por ejemplo,
@@ -13,10 +13,13 @@
 --    igualesAlSiguiente [1..10]          ==  []
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Iguales_al_siguiente where
 
 import Data.List (group)
-import Test.QuickCheck (quickCheck)
+import Test.QuickCheck
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
 -- ===========
@@ -69,25 +72,25 @@ igualesAlSiguiente5 xs = concat (map tail (group xs))
 -- ===========
 
 igualesAlSiguiente6 :: Eq a => [a] -> [a]
-igualesAlSiguiente6 xs = tail =<< group xs
+igualesAlSiguiente6 xs = concatMap tail (group xs)
 
 -- 7ª solución
 -- ===========
 
 igualesAlSiguiente7 :: Eq a => [a] -> [a]
-igualesAlSiguiente7 = (tail =<<) . group
+igualesAlSiguiente7 = concatMap tail . group
 
 -- 8ª solución
 -- ===========
 
 igualesAlSiguiente8 :: Eq a => [a] -> [a]
-igualesAlSiguiente8 xs = concatMap tail (group xs)
+igualesAlSiguiente8 xs = tail =<< group xs
 
 -- 9ª solución
 -- ===========
 
 igualesAlSiguiente9 :: Eq a => [a] -> [a]
-igualesAlSiguiente9 = concatMap tail . group
+igualesAlSiguiente9 = (tail =<<) . group
 
 -- 10ª solución
 -- ===========
@@ -97,6 +100,37 @@ igualesAlSiguiente10 xs = aux xs (tail xs)
   where aux (u:us) (v:vs) | u == v    = u : aux us vs
                           | otherwise = aux us vs
         aux _ _ = []
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> [Int]) -> Spec
+specG igualesAlSiguiente = do
+  it "e1" $
+    igualesAlSiguiente [1,2,2,2,3,3,4] `shouldBe` [2,2,3]
+  it "e2" $
+    igualesAlSiguiente [1..10] `shouldBe` []
+
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG igualesAlSiguiente1
+  describe "def. 2" $ specG igualesAlSiguiente2
+  describe "def. 3" $ specG igualesAlSiguiente3
+  describe "def. 4" $ specG igualesAlSiguiente4
+  describe "def. 5" $ specG igualesAlSiguiente5
+  describe "def. 6" $ specG igualesAlSiguiente6
+  describe "def. 7" $ specG igualesAlSiguiente7
+  describe "def. 8" $ specG igualesAlSiguiente8
+  describe "def. 9" $ specG igualesAlSiguiente9
+  describe "def. 10" $ specG igualesAlSiguiente10
+
+-- La verificación es
+--    λ> verifica
+--    20 examples, 0 failures
 
 -- Equivalencia de las definiciones
 -- ================================
@@ -115,11 +149,8 @@ prop_igualesAlSiguiente xs =
        igualesAlSiguiente9 xs,
        igualesAlSiguiente10 xs]
 
-verificacion :: IO ()
-verificacion = quickCheck prop_igualesAlSiguiente
-
 -- La comprobación es
---    λ> verificacion
+--    λ> quickCheck prop_igualesAlSiguiente
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
@@ -133,31 +164,31 @@ verificacion = quickCheck prop_igualesAlSiguiente
 --    (0.16 secs, 669,787,856 bytes)
 --    λ> length (show (igualesAlSiguiente1 ej))
 --    588895
---    (1.60 secs, 886,142,944 bytes)
+--    (1.30 secs, 876,867,992 bytes)
 --    λ> length (show (igualesAlSiguiente2 ej))
 --    588895
---    (1.95 secs, 1,734,143,816 bytes)
+--    (1.91 secs, 1,724,868,880 bytes)
 --    λ> length (show (igualesAlSiguiente3 ej))
 --    588895
---    (1.81 secs, 1,178,232,104 bytes)
+--    (1.34 secs, 1,168,957,152 bytes)
 --    λ> length (show (igualesAlSiguiente4 ej))
 --    588895
---    (1.43 secs, 1,932,010,304 bytes)
+--    (1.22 secs, 1,922,735,352 bytes)
 --    λ> length (show (igualesAlSiguiente5 ej))
 --    588895
---    (0.40 secs, 2,016,810,320 bytes)
+--    (0.45 secs, 2,007,535,504 bytes)
 --    λ> length (show (igualesAlSiguiente6 ej))
 --    588895
---    (0.32 secs, 1,550,409,984 bytes)
+--    (0.43 secs, 1,541,135,200 bytes)
 --    λ> length (show (igualesAlSiguiente7 ej))
 --    588895
---    (0.34 secs, 1,550,410,104 bytes)
+--    (0.39 secs, 1,541,135,384 bytes)
 --    λ> length (show (igualesAlSiguiente8 ej))
 --    588895
---    (0.33 secs, 1,550,410,024 bytes)
+--    (0.39 secs, 1,541,135,160 bytes)
 --    λ> length (show (igualesAlSiguiente9 ej))
 --    588895
---    (0.33 secs, 1,550,450,968 bytes)
+--    (0.37 secs, 1,541,135,416 bytes)
 --    λ> length (show (igualesAlSiguiente10 ej))
 --    588895
---    (1.54 secs, 754,272,600 bytes)
+--    (1.16 secs, 744,956,960 bytes)
