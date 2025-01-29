@@ -38,8 +38,8 @@ Los objetivos de esta recopilación son:
 + 22 [[./src/Mastermind.hs][Mastermind]].
 + 23 [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
 + 24 [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
++ 25 [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
 
-+ [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
 + [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 + [[./src/Anagramas.hs][Anagramas]].
 + [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
@@ -532,3 +532,4 @@ Los objetivos de esta recopilación son:
 + 18 [[./src/Mastermind.hs][Mastermind]].
 + 19 [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
 + 21 [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
++ 29 [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].

@@ -1,7 +1,7 @@
 -- Ordenados_por_maximo.hs
 -- Ordenación por el máximo.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 15-febrero-2022
+-- Sevilla, 29-enero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -17,30 +17,67 @@
 --    ["el","primero","es","este"]
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Ordenados_por_maximo where
 
 import Data.List (sort, sortBy)
 import GHC.Exts (sortWith)
-import Test.QuickCheck (quickCheck)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck
 
 -- 1ª solución
+-- ===========
+
 ordenadosPorMaximo1 :: Ord a => [[a]] -> [[a]]
 ordenadosPorMaximo1 xss =
   map snd (sort [((maximum xs,k),xs) | (k,xs) <- zip [0..] xss])
 
 -- 2ª solución
+-- ===========
+
 ordenadosPorMaximo2 :: Ord a => [[a]] -> [[a]]
 ordenadosPorMaximo2 xss =
   [xs | (_,xs) <- sort [((maximum xs,k),xs) | (k,xs) <- zip [0..] xss]]
 
 -- 3ª solución
+-- ===========
+
 ordenadosPorMaximo3 :: Ord a => [[a]] -> [[a]]
 ordenadosPorMaximo3 =
   sortBy (\xs ys -> compare (maximum xs) (maximum ys))
 
 -- 4ª solución
+-- ===========
+
 ordenadosPorMaximo4 :: Ord a => [[a]] -> [[a]]
 ordenadosPorMaximo4 = sortWith maximum
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([[Int]] -> [[Int]]) -> Spec
+specG ordenadosPorMaximo = do
+  it "e1" $
+    ordenadosPorMaximo [[0,8],[9],[8,1],[6,3],[8,2],[6,1],[6,2]] `shouldBe`
+      [[6,3],[6,1],[6,2],[0,8],[8,1],[8,2],[9]]
+  it "e2" $
+    ordenadosPorMaximo1 ["este","es","el","primero"] `shouldBe`
+      ["el","primero","es","este"]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG ordenadosPorMaximo1
+  describe "def. 2" $ specG ordenadosPorMaximo2
+  describe "def. 3" $ specG ordenadosPorMaximo3
+  describe "def. 4" $ specG ordenadosPorMaximo4
+
+-- La verificación es
+--    λ> verifica
+--    8 examples, 0 failures
 
 -- Equivalencia de las definiciones
 -- ================================
@@ -54,12 +91,8 @@ prop_ordenadosPorMaximo xss =
        ordenadosPorMaximo4 yss]
   where yss = filter (not . null) xss
 
-verifica_ordenadosPorMaximo :: IO ()
-verifica_ordenadosPorMaximo =
-  quickCheck prop_ordenadosPorMaximo
-
 -- La comprobación es
---    λ> verifica_ordenadosPorMaximo
+--    λ> quickCheck prop_ordenadosPorMaximo
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
