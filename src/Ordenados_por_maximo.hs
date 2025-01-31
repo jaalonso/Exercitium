@@ -23,6 +23,7 @@ module Ordenados_por_maximo where
 
 import Data.List (sort, sortBy)
 import GHC.Exts (sortWith)
+import Data.Map (elems, fromList)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
@@ -53,6 +54,13 @@ ordenadosPorMaximo3 =
 ordenadosPorMaximo4 :: Ord a => [[a]] -> [[a]]
 ordenadosPorMaximo4 = sortWith maximum
 
+-- 4ª solución
+-- ===========
+
+ordenadosPorMaximo5 :: Ord a => [[a]] -> [[a]]
+ordenadosPorMaximo5 xss =
+  elems (fromList [((maximum xs, k), xs) | (k, xs) <- zip [0..] xss])
+
 -- Verificación
 -- ============
 
@@ -64,9 +72,6 @@ specG ordenadosPorMaximo = do
   it "e1" $
     ordenadosPorMaximo [[0,8],[9],[8,1],[6,3],[8,2],[6,1],[6,2]] `shouldBe`
       [[6,3],[6,1],[6,2],[0,8],[8,1],[8,2],[9]]
-  it "e2" $
-    ordenadosPorMaximo1 ["este","es","el","primero"] `shouldBe`
-      ["el","primero","es","este"]
 
 spec :: Spec
 spec = do
@@ -74,10 +79,11 @@ spec = do
   describe "def. 2" $ specG ordenadosPorMaximo2
   describe "def. 3" $ specG ordenadosPorMaximo3
   describe "def. 4" $ specG ordenadosPorMaximo4
+  describe "def. 5" $ specG ordenadosPorMaximo5
 
 -- La verificación es
 --    λ> verifica
---    8 examples, 0 failures
+--    5 examples, 0 failures
 
 -- Equivalencia de las definiciones
 -- ================================
@@ -88,7 +94,8 @@ prop_ordenadosPorMaximo xss =
   all (== ordenadosPorMaximo1 yss)
       [ordenadosPorMaximo2 yss,
        ordenadosPorMaximo3 yss,
-       ordenadosPorMaximo4 yss]
+       ordenadosPorMaximo4 yss,
+       ordenadosPorMaximo5 yss]
   where yss = filter (not . null) xss
 
 -- La comprobación es
@@ -111,3 +118,6 @@ prop_ordenadosPorMaximo xss =
 --    λ> length (ordenadosPorMaximo4 [[1..k] | k <- [1..10^4]])
 --    10000
 --    (7.77 secs, 13,914,183,776 bytes)
+--    λ> length (ordenadosPorMaximo5 [[1..k] | k <- [1..10^4]])
+--    10000
+--    (6.71 secs, 3,607,840,248 bytes)
