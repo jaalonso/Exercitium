@@ -39,8 +39,8 @@ Los objetivos de esta recopilación son:
 + 23 [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
 + 24 [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
 + 25 [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
++ 28 [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 
-+ [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 + [[./src/Anagramas.hs][Anagramas]].
 + [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
 + [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
@@ -533,3 +533,6 @@ Los objetivos de esta recopilación son:
 + 19 [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]]
 + 21 [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
 + 29 [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
+
+** Febrero 2025
++ 01 [[./src/Bandera_tricolor.hs][La bandera tricolor]].

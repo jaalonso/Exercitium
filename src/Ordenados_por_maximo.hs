@@ -54,7 +54,7 @@ ordenadosPorMaximo3 =
 ordenadosPorMaximo4 :: Ord a => [[a]] -> [[a]]
 ordenadosPorMaximo4 = sortWith maximum
 
--- 4ª solución
+-- 5ª solución
 -- ===========
 
 ordenadosPorMaximo5 :: Ord a => [[a]] -> [[a]]
