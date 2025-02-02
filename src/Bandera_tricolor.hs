@@ -1,7 +1,7 @@
 -- Bandera_tricolor.hs
 -- La bandera tricolor.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 1-febrero-2025
+-- Sevilla, 3-febrero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

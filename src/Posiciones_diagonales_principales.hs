@@ -1,7 +1,7 @@
 -- Posiciones_diagonales_principales.hs
--- Posiciones de las diagonales principales
+-- Posiciones de las diagonales principales.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 4-mayo-2024
+-- Sevilla, 4-febrero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -9,7 +9,7 @@
 --    (1,1) (1,2) (1,3) (1,4)
 --    (2,1) (2,2) (2,3) (2,4)
 --    (3,1) (3,2) (3,3) (3,4)
--- La posiciones de sus 6 diagonales principales son
+-- Las posiciones de sus 6 diagonales principales son
 --   [(3,1)]
 --   [(2,1),(3,2)]
 --   [(1,1),(2,2),(3,3)]
