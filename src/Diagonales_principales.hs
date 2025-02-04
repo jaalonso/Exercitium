@@ -1,7 +1,7 @@
 -- Diagonales_principales.hs
 -- Diagonales principales de una matriz.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 9-mayo-2024
+-- Sevilla, 5-febrero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
