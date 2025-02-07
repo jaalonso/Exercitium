@@ -42,10 +42,10 @@ Los objetivos de esta recopilación son:
 + 28 [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 
 ** Marzo 2022
++ 01 [[./src/Anagramas.hs][Anagramas]].
 + 04 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
 + 07 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
 
-+ [[./src/Anagramas.hs][Anagramas]].
 + [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
 + [[./src/Maximos_locales.hs][Máximos locales]] ([[https://youtu.be/tPjkXB425Ug][vídeo]]).
 + [[./src/Lista_cuadrada.hs][Lista cuadrada]] ([[https://youtu.be/nJHiCebyZVE][vídeo]])-
@@ -542,3 +542,4 @@ Los objetivos de esta recopilación son:
 + 03 [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 + 04 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
 + 06 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
++ 07 [[./src/Anagramas.hs][Anagramas]].

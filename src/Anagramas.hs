@@ -1,7 +1,7 @@
 -- Anagramas.hs
 -- Anagramas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 1-marzo-2022
+-- Sevilla, 7-febrero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -18,14 +18,18 @@
 --    ["aMar","aRma"]
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Anagramas where
 
-import Data.List (delete, sort)
+import Data.List (delete, sort, permutations)
 import Data.Char (toLower)
 import Data.Function (on)
+import Data.Map (Map, fromListWith)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 -- 1ª solución
--- =============
+-- ===========
 
 anagramas :: String -> [String] -> [String]
 anagramas _ [] = []
@@ -109,6 +113,49 @@ sonAnagramas7 xs ys = aux (map toLower xs) (map toLower ys)
     aux (u:us) vs | u `notElem` vs = False
                   | otherwise      = aux us (delete u vs)
 
+-- 8ª solución
+-- ===========
+
+anagramas8 :: String -> [String] -> [String]
+anagramas8 x = filter (`sonAnagramas8` x)
+
+sonAnagramas8 :: String -> String -> Bool
+sonAnagramas8 xs ys =
+  frecuencias (map toLower xs) == frecuencias (map toLower ys)
+
+frecuencias :: String -> Map Char Int
+frecuencias xs = fromListWith (+) (zip xs (repeat 1))
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (String -> [String] -> [String]) -> Spec
+specG anagramas' = do
+  it "e1" $
+    anagramas' "amor" ["Roma","mola","loma","moRa", "rama"] `shouldBe`
+    ["Roma","moRa"]
+  it "e2" $
+    anagramas' "rama" ["aMar","amaRa","roMa","marr","aRma"] `shouldBe`
+    ["aMar","aRma"]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG anagramas
+  describe "def. 2" $ specG anagramas2
+  describe "def. 3" $ specG anagramas3
+  describe "def. 4" $ specG anagramas4
+  describe "def. 5" $ specG anagramas5
+  describe "def. 6" $ specG anagramas6
+  describe "def. 7" $ specG anagramas7
+  describe "def. 8" $ specG anagramas8
+
+-- La verificación es
+--    λ> verifica
+--    16 examples, 0 failures
+
 -- Comparación de eficiencia
 -- =========================
 
@@ -135,3 +182,25 @@ sonAnagramas7 xs ys = aux (map toLower xs) (map toLower ys)
 --    λ> length (anagramas7 "1234567890" ej)
 --    1000000
 --    (6.63 secs, 6,904,821,648 bytes)
+--    λ> length (anagramas8 "1234567890" ej)
+--    1000000
+--    (3.90 secs, 9,679,323,632 bytes)
+
+-- (cadena n) es la cadena de los 10 primeros caracteres de la cadena
+-- infinita abcabcabc... Por ejemplo,
+--    cadena 10  ==  "abcabcabca"
+cadena :: Int -> String
+cadena n = take n (cycle "abc")
+
+-- (cadenas m n) es la lista otenida repitiendo m veces (adena n). Por
+-- ejemplo,
+--    cadenas 3 10 == ["abcabcabca","abcabcabca","abcabcabca"]
+cadenas :: Int -> Int -> [String]
+cadenas m n = replicate m (cadena n)
+
+--    λ> length (anagramas6 (cadena (10^5)) (cadenas 100 (10^5)))
+--    100
+--    (8.42 secs, 23,126,067,704 bytes)
+--    λ> length (anagramas8 (cadena (10^5)) (cadenas 100 (10^5)))
+--    100
+--    (4.06 secs, 7,220,705,856 bytes)
