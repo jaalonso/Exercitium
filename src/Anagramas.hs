@@ -1,7 +1,7 @@
 -- Anagramas.hs
 -- Anagramas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 7-febrero-2025
+-- Sevilla, 10-febrero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

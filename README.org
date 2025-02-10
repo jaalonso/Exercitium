@@ -43,6 +43,7 @@ Los objetivos de esta recopilación son:
 
 ** Marzo 2022
 + 01 [[./src/Anagramas.hs][Anagramas]].
++ 02 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
 + 04 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
 + 07 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
 
@@ -542,4 +543,5 @@ Los objetivos de esta recopilación son:
 + 03 [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 + 04 [[./src/Posiciones_diagonales_principales.hs][Posiciones de las diagonales principales]].
 + 06 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
-+ 07 [[./src/Anagramas.hs][Anagramas]].
++ 10 [[./src/Anagramas.hs][Anagramas]].
++ 11 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
