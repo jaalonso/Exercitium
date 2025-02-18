@@ -1,11 +1,11 @@
 -- Matriz_Toeplitz.hs
 -- Matrices de Toepliz
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 14-mayo-2024
+-- Sevilla, 18-febrero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Una [matriz de Toeplitz](https://bit.ly/3pqjY9D) es una matriz
+-- Una [matriz de Toeplitz](https://tinyurl.com/zqzokbm) es una matriz
 -- cuadrada que es constante a lo largo de las diagonales paralelas a la
 -- diagonal principal. Por ejemplo,
 --    |2 5 1 6|       |2 5 1 6|
