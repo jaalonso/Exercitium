@@ -1,7 +1,7 @@
 -- Maximos_locales.hs
 -- Máximos locales.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 29-marzo-2024
+-- Sevilla, 19-febrero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
