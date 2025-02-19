@@ -48,9 +48,9 @@ Los objetivos de esta recopilación son:
 + 07 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
 + 08 [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
 + 09 [[./src/Maximos_locales.hs][Máximos locales]].
++ 10 [[./src/Lista_cuadrada.hs][Lista cuadrada]].
 
 + [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
-+ [[./src/Lista_cuadrada.hs][Lista cuadrada]] ([[https://youtu.be/nJHiCebyZVE][vídeo]])-
 + [[./src/Segmentos_consecutivos.hs][Segmentos maximales de elementos consecutivos]] ([[https://youtu.be/qu11Uf8wF1k][vídeo]]).
 + [[./src/Valor_de_un_polinomio.hs][Valor de un polinomio mediante vectores]] ([[https://youtu.be/JuCmeb8vV4E][vídeo]]).
 + [[./src/Ramas_de_un_arbol.hs][Ramas de un árbol]] ([[https://youtu.be/Bj0jTH77k2k][vídeo]])-
@@ -548,3 +548,4 @@ Los objetivos de esta recopilación son:
 + 14 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
 + 18 [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
 + 19 [[./src/Maximos_locales.hs][Máximos locales]].
++ 20 [[./src/Lista_cuadrada.hs][Lista cuadrada]].

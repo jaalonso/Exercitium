@@ -1,7 +1,7 @@
 -- Lista_cuadrada.hs
 -- Lista cuadrada.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 10-marzo-2022
+-- Sevilla, 20-febrero-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -21,6 +21,7 @@
 module Lista_cuadrada where
 
 import Data.List.Split (chunksOf)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -57,6 +58,30 @@ grupos2 n xs = ys : grupos n zs
 listaCuadrada3 :: Int -> a -> [a] -> [[a]]
 listaCuadrada3 n x xs =
   take n (chunksOf n (xs ++ repeat x))
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Int -> Int -> [Int] -> [[Int]])  -> Spec
+specG listaCuadrada = do
+  it "e1" $
+    listaCuadrada 3 7 [0,3,5,2,4]  `shouldBe`  [[0,3,5],[2,4,7],[7,7,7]]
+  it "e2" $
+    listaCuadrada 3 7 [0..]        `shouldBe`  [[0,1,2],[3,4,5],[6,7,8]]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG listaCuadrada1
+  describe "def. 2" $ specG listaCuadrada2
+  describe "def. 3" $ specG listaCuadrada3
+
+-- La verificación es
+--    λ> verifica
+--
+--    6 examples, 0 failures
 
 -- Comprobación de la equivalencia
 -- ===============================
