@@ -16,7 +16,7 @@ Los objetivos de esta recopilación son:
 * Ejercicios publicados el 2014
 
 ** Abril 2014
-
++ 21 [[./src/A2014/M04/Iguales_al_siguiente.hs][Iguales al siguiente]].
 
 * Ejercicios publicados el 2022
 
