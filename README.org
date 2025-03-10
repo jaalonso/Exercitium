@@ -13,9 +13,10 @@ Los objetivos de esta recopilación son:
 + Escribir los tests de cada ejercicio (en el directorio [[./test][test]]) de forma que se
   puedan comprobar con [[http://hspec.github.io/][Hspec]].
 
-* Ejercicios publicados desde el 21-04-14 hasta el 05-06-20
+* Ejercicios publicados el 2014
 
-* Ejercicios publicados desde el 12-01-21 hasta el 05-08-22
+** Abril 2014
+
 
 * Ejercicios publicados el 2022
 
