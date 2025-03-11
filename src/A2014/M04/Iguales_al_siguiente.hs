@@ -100,11 +100,11 @@ spec = do
   describe "def. 1" $ specG igualesAlSiguiente1
   describe "def. 2" $ specG igualesAlSiguiente2
   describe "def. 3" $ specG igualesAlSiguiente3
-  describe "def. 4" $ specG igualesAlSiguiente3
-  describe "def. 5" $ specG igualesAlSiguiente3
-  describe "def. 6" $ specG igualesAlSiguiente3
-  describe "def. 7" $ specG igualesAlSiguiente3
-  describe "def. 8" $ specG igualesAlSiguiente3
+  describe "def. 4" $ specG igualesAlSiguiente4
+  describe "def. 5" $ specG igualesAlSiguiente5
+  describe "def. 6" $ specG igualesAlSiguiente6
+  describe "def. 7" $ specG igualesAlSiguiente7
+  describe "def. 8" $ specG igualesAlSiguiente8
 
 -- La verificación es
 --    λ> verifica

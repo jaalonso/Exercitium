@@ -223,6 +223,7 @@ Los objetivos de esta recopilación son:
 ** Abril 2014
 + 21 [[./src/A2014/M04/Iguales_al_siguiente.hs][Iguales al siguiente]].
 
+
 * Introducción a la programación con Haskell y Python
 
 ** Definiciones elementales de funciones

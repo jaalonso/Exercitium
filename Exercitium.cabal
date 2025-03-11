@@ -27,6 +27,7 @@ source-repository head
 library
   exposed-modules:
       A2014.M04.Iguales_al_siguiente
+      A2014.M04.Ordenados_por_maximo
       Agrupacion_de_elementos_por_posicion
       AgrupaColas
       Alergias
@@ -487,6 +488,7 @@ test-suite Exercitium-test
   main-is: Spec.hs
   other-modules:
       A2014.M04.Iguales_al_siguiente_Spec
+      A2014.M04.Ordenados_por_maximo_Spec
       Agrupacion_de_elementos_por_posicion_Spec
       AgrupaColas_Spec
       Alergias_Spec
