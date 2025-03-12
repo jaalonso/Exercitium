@@ -221,8 +221,9 @@ Los objetivos de esta recopilación son:
 * Ejercicios publicados el 2014
 
 ** Abril 2014
++ 23 [[./src/A2014/M04/Bandera_tricolor.hs][La bandera tricolor]].
++ 22 [[./src/A2014/M04/Ordenados_por_maximo.hs][Ordenación por el máximo]].
 + 21 [[./src/A2014/M04/Iguales_al_siguiente.hs][Iguales al siguiente]].
-
 
 * Introducción a la programación con Haskell y Python
 

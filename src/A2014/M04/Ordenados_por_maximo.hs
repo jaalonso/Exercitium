@@ -24,12 +24,12 @@ import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 -- 1ª definición
 ordenadosPorMaximo1 :: Ord a => [[a]] -> [[a]]
 ordenadosPorMaximo1 xss =
-    map snd (sort [(maximum xs,xs) | xs <- xss])
+  map snd (sort [(maximum xs,xs) | xs <- xss])
 
 -- 2ª definición
 ordenadosPorMaximo2 :: Ord a => [[a]] -> [[a]]
 ordenadosPorMaximo2 xss =
-    [xs | (_,xs) <- sort [(maximum xs,xs) | xs <- xss]]
+  [xs | (_,xs) <- sort [(maximum xs,xs) | xs <- xss]]
 
 -- 3ª definición:
 ordenadosPorMaximo3 :: Ord a => [[a]] -> [[a]]
