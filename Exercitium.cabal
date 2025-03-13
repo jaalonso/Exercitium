@@ -27,6 +27,7 @@ source-repository head
 library
   exposed-modules:
       A2014.M04.Bandera_tricolor
+      A2014.M04.ElementosMinimales
       A2014.M04.Iguales_al_siguiente
       A2014.M04.Ordenados_por_maximo
       Agrupacion_de_elementos_por_posicion
@@ -489,6 +490,7 @@ test-suite Exercitium-test
   main-is: Spec.hs
   other-modules:
       A2014.M04.Bandera_tricolor_Spec
+      A2014.M04.ElementosMinimales_Spec
       A2014.M04.Iguales_al_siguiente_Spec
       A2014.M04.Ordenados_por_maximo_Spec
       Agrupacion_de_elementos_por_posicion_Spec
