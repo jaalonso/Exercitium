@@ -1,6 +1,6 @@
 -- ElementosMinimales.hs
 -- Determinación de los elementos minimales.
--- José A. Alonso Jiménez https://jaalonso.github.io
+-- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 24 de abril de 2014
 -- ---------------------------------------------------------------------
 
@@ -17,7 +17,7 @@
 
 module A2014.M04.ElementosMinimales where
 
-import Data.List
+import Data.List (nub, delete)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
