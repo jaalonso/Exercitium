@@ -20,8 +20,8 @@ module A2014.M04.Primos_consecutivos_con_media_capicua where
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Data.Numbers.Primes (primes)
 
--- Primera solución
--- ================
+-- 1ª solución
+-- ===========
 
 primosConsecutivosConMediaCapicua1 :: [(Int,Int,Int)]
 primosConsecutivosConMediaCapicua1 =
@@ -45,8 +45,8 @@ capicua :: Int -> Bool
 capicua x = ys == reverse ys
     where ys = show x
 
--- Primera solución
--- ================
+-- 2ª solución
+-- ===========
 
 primosConsecutivosConMediaCapicua2 :: [(Int,Int,Int)]
 primosConsecutivosConMediaCapicua2 =
