@@ -26,6 +26,7 @@ source-repository head
 
 library
   exposed-modules:
+      A2014.M04.Anagramas
       A2014.M04.Bandera_tricolor
       A2014.M04.ElementosMinimales
       A2014.M04.Iguales_al_siguiente
@@ -491,6 +492,7 @@ test-suite Exercitium-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      A2014.M04.Anagramas_Spec
       A2014.M04.Bandera_tricolor_Spec
       A2014.M04.ElementosMinimales_Spec
       A2014.M04.Iguales_al_siguiente_Spec
