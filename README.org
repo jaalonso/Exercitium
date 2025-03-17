@@ -221,6 +221,7 @@ Los objetivos de esta recopilación son:
 * Ejercicios publicados el 2014
 
 ** Abril 2014
++ 30 [[exercitiumGH:A2014/M04/Primos_equidistantes.hs][Primos equidistantes]].
 + 29 [[exercitiumGH:A2014/M04/Anagramas.hs][Anagramas]].
 + 28 [[exercitiumGH:A2014/M04/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]].
 + 25 [[exercitiumGH:A2014/M04/Mastermind.hs][Mastermind]].
