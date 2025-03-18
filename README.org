@@ -220,6 +220,9 @@ Los objetivos de esta recopilación son:
 
 * Ejercicios publicados el 2014
 
+** Mayo 2014
++ 01 [[exercitiumGH:A2014/M05/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
+
 ** Abril 2014
 + 30 [[exercitiumGH:A2014/M04/Primos_equidistantes.hs][Primos equidistantes]].
 + 29 [[exercitiumGH:A2014/M04/Anagramas.hs][Anagramas]].

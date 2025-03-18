@@ -34,6 +34,7 @@ library
       A2014.M04.Ordenados_por_maximo
       A2014.M04.Primos_consecutivos_con_media_capicua
       A2014.M04.Primos_equidistantes
+      A2014.M05.Suma_si_todos_justos
       Agrupacion_de_elementos_por_posicion
       AgrupaColas
       Alergias
@@ -501,6 +502,7 @@ test-suite Exercitium-test
       A2014.M04.Ordenados_por_maximo_Spec
       A2014.M04.Primos_consecutivos_con_media_capicua_Spec
       A2014.M04.Primos_equidistantes_Spec
+      A2014.M05.Suma_si_todos_justos_Spec
       Agrupacion_de_elementos_por_posicion_Spec
       AgrupaColas_Spec
       Alergias_Spec
