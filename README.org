@@ -221,6 +221,7 @@ Los objetivos de esta recopilación son:
 * Ejercicios publicados el 2014
 
 ** Mayo 2014
++ 02 [[exercitiumGH:A2014/M05/Matriz_Toeplitz.hs][Matriz de Toeplitz]].
 + 01 [[exercitiumGH:A2014/M05/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
 
 ** Abril 2014
