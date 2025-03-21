@@ -33,6 +33,7 @@ Los objetivos de esta recopilación son:
 + 01 [[exercitiumGH:A2014/M05/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
 + 02 [[exercitiumGH:A2014/M05/Matriz_Toeplitz.hs][Matriz de Toeplitz]].
 + 05 [[exercitiumGH:A2014/M05/Maximos_locales.hs][Máximos locales]].
++ 06 [[exercitiumGH:A2014/M05/Lista_cuadrada.hs][Lista cuadrada]].
 
 ** Ejercicios publicados el 2022
 
