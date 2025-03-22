@@ -37,6 +37,7 @@ library
       A2014.M05.Lista_cuadrada
       A2014.M05.Matriz_Toeplitz
       A2014.M05.Maximos_locales
+      A2014.M05.Segmentos_consecutivos
       A2014.M05.Suma_si_todos_justos
       Agrupacion_de_elementos_por_posicion
       AgrupaColas
@@ -508,6 +509,7 @@ test-suite Exercitium-test
       A2014.M05.Lista_cuadrada_Spec
       A2014.M05.Matriz_Toeplitz_Spec
       A2014.M05.Maximos_locales_Spec
+      A2014.M05.Segmentos_consecutivos_Spec
       A2014.M05.Suma_si_todos_justos_Spec
       Agrupacion_de_elementos_por_posicion_Spec
       AgrupaColas_Spec
