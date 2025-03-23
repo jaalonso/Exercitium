@@ -35,6 +35,7 @@ Los objetivos de esta recopilación son:
 + 05 [[./src/A2014/M05/Maximos_locales.hs][Máximos locales]].
 + 06 [[./src/A2014/M05/Lista_cuadrada.hs][Lista cuadrada]].
 + 07 [[./src/A2014/M05/Segmentos_consecutivos.hs][Segmentos maximales con elementos consecutivos]].
++ 08 [[./src/A2014/M05/Valor_de_un_polinomio.hs][Valores de polinomios representados con vectores]].
 
 ** Ejercicios publicados el 2022
 
@@ -214,7 +215,7 @@ Los objetivos de esta recopilación son:
 *** Septiembre 2024
 + 10 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
 
-* Ejercicios publicados el 2025
+** Ejercicios publicados el 2025
 
 *** Enero 2025
 + 01 [[./src/Suma_de_multiplos_de_3_o_de_5.hs][Suma de múltiplos de 3 o de 5]].

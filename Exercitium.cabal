@@ -39,6 +39,7 @@ library
       A2014.M05.Maximos_locales
       A2014.M05.Segmentos_consecutivos
       A2014.M05.Suma_si_todos_justos
+      A2014.M05.Valor_de_un_polinomio
       Agrupacion_de_elementos_por_posicion
       AgrupaColas
       Alergias
@@ -511,6 +512,7 @@ test-suite Exercitium-test
       A2014.M05.Maximos_locales_Spec
       A2014.M05.Segmentos_consecutivos_Spec
       A2014.M05.Suma_si_todos_justos_Spec
+      A2014.M05.Valor_de_un_polinomio_Spec
       Agrupacion_de_elementos_por_posicion_Spec
       AgrupaColas_Spec
       Alergias_Spec
