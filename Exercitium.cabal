@@ -34,6 +34,7 @@ library
       A2014.M04.Ordenados_por_maximo
       A2014.M04.Primos_consecutivos_con_media_capicua
       A2014.M04.Primos_equidistantes
+      A2014.M05.Alfabeto_desde
       A2014.M05.Lista_cuadrada
       A2014.M05.Matriz_Toeplitz
       A2014.M05.Maximos_locales
@@ -508,6 +509,7 @@ test-suite Exercitium-test
       A2014.M04.Ordenados_por_maximo_Spec
       A2014.M04.Primos_consecutivos_con_media_capicua_Spec
       A2014.M04.Primos_equidistantes_Spec
+      A2014.M05.Alfabeto_desde_Spec
       A2014.M05.Lista_cuadrada_Spec
       A2014.M05.Matriz_Toeplitz_Spec
       A2014.M05.Maximos_locales_Spec

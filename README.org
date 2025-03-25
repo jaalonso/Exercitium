@@ -36,6 +36,8 @@ Los objetivos de esta recopilación son:
 + 06 [[./src/A2014/M05/Lista_cuadrada.hs][Lista cuadrada]].
 + 07 [[./src/A2014/M05/Segmentos_consecutivos.hs][Segmentos maximales con elementos consecutivos]].
 + 08 [[./src/A2014/M05/Valor_de_un_polinomio.hs][Valores de polinomios representados con vectores]].
++ 09 [[./src/A2014/M05/Ramas_de_un_arbol.hs][Ramas de un_árbol]].
++ 12 [[./src/A2014/M05/Alfabeto_desde.hs][Alfabeto comenzando en un carácter]].
 
 ** Ejercicios publicados el 2022
 
