@@ -38,6 +38,7 @@ Los objetivos de esta recopilación son:
 + 08 [[./src/A2014/M05/Valor_de_un_polinomio.hs][Valores de polinomios representados con vectores]].
 + 09 [[./src/A2014/M05/Ramas_de_un_arbol.hs][Ramas de un_árbol]].
 + 12 [[./src/A2014/M05/Alfabeto_desde.hs][Alfabeto comenzando en un carácter]].
++ 13 [[./src/A2014/M05/Numeracion_de_ternas.hs][Numeración de ternas]].
 
 ** Ejercicios publicados el 2022
 
