@@ -40,6 +40,7 @@ Los objetivos de esta recopilación son:
 + 12 [[./src/A2014/M05/Alfabeto_desde.hs][Alfabeto comenzando en un carácter]].
 + 13 [[./src/A2014/M05/Numeracion_de_ternas.hs][Numeración de ternas]].
 + 15 [[./src/A2014/M05/Emparejamiento_binario.hs][Emparejamiento binario]].
++ 16 [[./src/A2014/M05/Amplia_columnas.hs][Amplia columnas]].
 
 ** Ejercicios publicados el 2022
 
