@@ -43,6 +43,7 @@ library
       A2014.M05.Numeracion_de_ternas
       A2014.M05.Ordenacion_de_estructuras
       A2014.M05.Ramas_de_un_arbol
+      A2014.M05.Regiones
       A2014.M05.Segmentos_consecutivos
       A2014.M05.Suma_si_todos_justos
       A2014.M05.Valor_de_un_polinomio
@@ -522,6 +523,7 @@ test-suite Exercitium-test
       A2014.M05.Numeracion_de_ternas_Spec
       A2014.M05.Ordenacion_de_estructuras_Spec
       A2014.M05.Ramas_de_un_arbol_Spec
+      A2014.M05.Regiones_Spec
       A2014.M05.Segmentos_consecutivos_Spec
       A2014.M05.Suma_si_todos_justos_Spec
       A2014.M05.Valor_de_un_polinomio_Spec
