@@ -42,6 +42,7 @@ Los objetivos de esta recopilación son:
 + 15 [[./src/A2014/M05/Emparejamiento_binario.hs][Emparejamiento binario]].
 + 16 [[./src/A2014/M05/Amplia_columnas.hs][Amplia columnas]].
 + 19 [[./src/A2014/M05/Regiones.hs][Regiones determinadas por n rectas del plano]].
++ 20 [[./src/A2014/M05/Mas_repetido.hs][Elemento más repetido de manera consecutiva]].
 
 ** Ejercicios publicados el 2022
 

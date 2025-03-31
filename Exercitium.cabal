@@ -38,6 +38,7 @@ library
       A2014.M05.Amplia_columnas
       A2014.M05.Emparejamiento_binario
       A2014.M05.Lista_cuadrada
+      A2014.M05.Mas_repetido
       A2014.M05.Matriz_Toeplitz
       A2014.M05.Maximos_locales
       A2014.M05.Numeracion_de_ternas
@@ -518,6 +519,7 @@ test-suite Exercitium-test
       A2014.M05.Amplia_columnas_Spec
       A2014.M05.Emparejamiento_binario_Spec
       A2014.M05.Lista_cuadrada_Spec
+      A2014.M05.Mas_repetido_Spec
       A2014.M05.Matriz_Toeplitz_Spec
       A2014.M05.Maximos_locales_Spec
       A2014.M05.Numeracion_de_ternas_Spec
