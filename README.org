@@ -44,6 +44,7 @@ Los objetivos de esta recopilación son:
 + 19 [[./src/A2014/M05/Regiones.hs][Regiones determinadas por n rectas del plano]].
 + 20 [[./src/A2014/M05/Mas_repetido.hs][Elemento más repetido de manera consecutiva]].
 + 21 [[./src/A2014/M05/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales en una matriz]].
++ 22 [[./src/A2014/M05/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]].
 
 ** Ejercicios publicados el 2022
 

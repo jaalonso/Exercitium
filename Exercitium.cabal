@@ -41,6 +41,7 @@ library
       A2014.M05.Mas_repetido
       A2014.M05.Matriz_Toeplitz
       A2014.M05.Maximos_locales
+      A2014.M05.Mayor_producto_de_las_ramas_de_un_arbol
       A2014.M05.Numeracion_de_ternas
       A2014.M05.Ordenacion_de_estructuras
       A2014.M05.Pares_adyacentes_iguales
@@ -523,6 +524,7 @@ test-suite Exercitium-test
       A2014.M05.Mas_repetido_Spec
       A2014.M05.Matriz_Toeplitz_Spec
       A2014.M05.Maximos_locales_Spec
+      A2014.M05.Mayor_producto_de_las_ramas_de_un_arbol_Spec
       A2014.M05.Numeracion_de_ternas_Spec
       A2014.M05.Ordenacion_de_estructuras_Spec
       A2014.M05.Pares_adyacentes_iguales_Spec
