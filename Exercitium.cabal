@@ -36,6 +36,7 @@ library
       A2014.M04.Primos_equidistantes
       A2014.M05.Alfabeto_desde
       A2014.M05.Amplia_columnas
+      A2014.M05.Biparticiones_de_una_lista
       A2014.M05.Emparejamiento_binario
       A2014.M05.Lista_cuadrada
       A2014.M05.Mas_repetido
@@ -519,6 +520,7 @@ test-suite Exercitium-test
       A2014.M04.Primos_equidistantes_Spec
       A2014.M05.Alfabeto_desde_Spec
       A2014.M05.Amplia_columnas_Spec
+      A2014.M05.Biparticiones_de_una_lista_Spec
       A2014.M05.Emparejamiento_binario_Spec
       A2014.M05.Lista_cuadrada_Spec
       A2014.M05.Mas_repetido_Spec
