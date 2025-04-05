@@ -47,6 +47,7 @@ Los objetivos de esta recopilación son:
 + 22 [[./src/A2014/M05/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]].
 + 23 [[./src/A2014/M05/Biparticiones_de_una_lista.hs][Biparticiones de una lista]].
 + 26 [[./src/A2014/M05/Trenzado_de_listas.hs][Trenzado de listas]].
++ 27 [[./src/A2014/M05/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
 
 ** Ejercicios publicados el 2022
 
@@ -160,6 +161,7 @@ Los objetivos de esta recopilación son:
 + 20 [[./src/Potencias_perfectas.hs][Potencias perfectas]].
 + 21 [[./src/Sucesion_de_suma_de_cuadrados_de_los_digitos.hs][Sucesión de suma de cuadrados de los dígitos]].
 + 26 [[./src/Numeros_belgas.hs][Números belgas]].
++ 27 [[./src/A2014/M05/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
 
 ** Ejercicios publicados el 2023
 
