@@ -48,6 +48,9 @@ Los objetivos de esta recopilación son:
 + 23 [[./src/A2014/M05/Biparticiones_de_una_lista.hs][Biparticiones de una lista]].
 + 26 [[./src/A2014/M05/Trenzado_de_listas.hs][Trenzado de listas]].
 + 27 [[./src/A2014/M05/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
++ 28 [[./src/A2014/M05/Enumera_arbol.hs][Enumeración de árboles binarios]].
+
+------------------------------------------------------------------------
 
 ** Ejercicios publicados el 2022
 
