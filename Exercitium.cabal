@@ -50,6 +50,7 @@ library
       A2014.M05.Pares_adyacentes_iguales
       A2014.M05.Ramas_de_un_arbol
       A2014.M05.Regiones
+      A2014.M05.Reiteracion_de_funciones
       A2014.M05.Segmentos_consecutivos
       A2014.M05.Suma_si_todos_justos
       A2014.M05.Trenzado_de_listas
@@ -538,6 +539,7 @@ test-suite Exercitium-test
       A2014.M05.Pares_adyacentes_iguales_Spec
       A2014.M05.Ramas_de_un_arbol_Spec
       A2014.M05.Regiones_Spec
+      A2014.M05.Reiteracion_de_funciones_Spec
       A2014.M05.Segmentos_consecutivos_Spec
       A2014.M05.Suma_si_todos_justos_Spec
       A2014.M05.Trenzado_de_listas_Spec

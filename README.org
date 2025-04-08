@@ -49,7 +49,8 @@ Los objetivos de esta recopilación son:
 + 26 [[./src/A2014/M05/Trenzado_de_listas.hs][Trenzado de listas]].
 + 27 [[./src/A2014/M05/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
 + 28 [[./src/A2014/M05/Enumera_arbol.hs][Enumeración de árboles binarios]].
-+ 29 [[./src/A2014/M05/Algun_vecino_menor.hs][Algun vecino menor]].
++ 29 [[./src/A2014/M05/Algun_vecino_menor.hs][Algún vecino menor]].
++ 30 [[./src/A2014/M05/Reiteracion_de_funciones.hs][Reiteración de una función]].
 
 ------------------------------------------------------------------------
 
