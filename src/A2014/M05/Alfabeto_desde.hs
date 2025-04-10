@@ -87,7 +87,7 @@ spec = do
   describe "def. 2" $ specG alfabetoDesde2
   describe "def. 3" $ specG alfabetoDesde3
   describe "def. 4" $ specG alfabetoDesde4
-  describe "def. 4" $ specG alfabetoDesde5
+  describe "def. 5" $ specG alfabetoDesde5
 
 -- La verificación es
 --    λ> verifica

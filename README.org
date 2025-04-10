@@ -52,6 +52,9 @@ Los objetivos de esta recopilación son:
 + 29 [[./src/A2014/M05/Algun_vecino_menor.hs][Algún vecino menor]].
 + 30 [[./src/A2014/M05/Reiteracion_de_funciones.hs][Reiteración de una función]].
 
+*** Junio 2014
++ 02 [[./src/A2014/M06/PimPamPum.hs][Pim, Pam, Pum y divisibilidad]].
+
 ------------------------------------------------------------------------
 
 ** Ejercicios publicados el 2022

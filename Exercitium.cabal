@@ -56,6 +56,7 @@ library
       A2014.M05.Trenzado_de_listas
       A2014.M05.Triangulares_con_cifras
       A2014.M05.Valor_de_un_polinomio
+      A2014.M06.PimPamPum
       Agrupacion_de_elementos_por_posicion
       AgrupaColas
       Alergias
@@ -545,6 +546,7 @@ test-suite Exercitium-test
       A2014.M05.Trenzado_de_listas_Spec
       A2014.M05.Triangulares_con_cifras_Spec
       A2014.M05.Valor_de_un_polinomio_Spec
+      A2014.M06.PimPamPum_Spec
       Agrupacion_de_elementos_por_posicion_Spec
       AgrupaColas_Spec
       Alergias_Spec
