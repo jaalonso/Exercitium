@@ -54,6 +54,7 @@ Los objetivos de esta recopilación son:
 
 *** Junio 2014
 + 02 [[./src/A2014/M06/PimPamPum.hs][Pim, Pam, Pum y divisibilidad]].
++ 03 [[./src/A2014/M06/Alergias.hs][Código de las alergias]].
 
 ------------------------------------------------------------------------
 
