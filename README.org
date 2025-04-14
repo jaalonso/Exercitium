@@ -56,6 +56,8 @@ Los objetivos de esta recopilación son:
 + 02 [[./src/A2014/M06/PimPamPum.hs][Pim, Pam, Pum y divisibilidad]].
 + 03 [[./src/A2014/M06/Alergias.hs][Código de las alergias]].
 + 04 [[./src/A2014/M06/Indices_verdaderos.hs][Índices de valores verdaderos]].
++ 05 [[./src/A2014/M06/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
++ 06 [[./src/A2014/M06/Numero_de_inversiones.hs][Número de inversiones]].
 
 ------------------------------------------------------------------------
 
