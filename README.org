@@ -59,6 +59,7 @@ Los objetivos de esta recopilación son:
 + 05 [[./src/A2014/M06/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
 + 06 [[./src/A2014/M06/Numero_de_inversiones.hs][Número de inversiones]].
 + 09 [[./src/A2014/M06/Separacion_por_posicion.hs][Separación por posición]].
++ 11 [[./src/A2014/M06/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]].
 
 ------------------------------------------------------------------------
 
