@@ -62,6 +62,7 @@ library
       A2014.M06.Emparejamiento_de_arboles
       A2014.M06.Indices_verdaderos
       A2014.M06.Numero_de_inversiones
+      A2014.M06.Ordenada_ciclicamente
       A2014.M06.PimPamPum
       A2014.M06.Separacion_por_posicion
       Agrupacion_de_elementos_por_posicion
@@ -559,6 +560,7 @@ test-suite Exercitium-test
       A2014.M06.Emparejamiento_de_arboles_Spec
       A2014.M06.Indices_verdaderos_Spec
       A2014.M06.Numero_de_inversiones_Spec
+      A2014.M06.Ordenada_ciclicamente_Spec
       A2014.M06.PimPamPum_Spec
       A2014.M06.Separacion_por_posicion_Spec
       Agrupacion_de_elementos_por_posicion_Spec
