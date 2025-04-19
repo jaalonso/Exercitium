@@ -61,6 +61,7 @@ Los objetivos de esta recopilación son:
 + 09 [[./src/A2014/M06/Separacion_por_posicion.hs][Separación por posición]].
 + 11 [[./src/A2014/M06/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]].
 + 12 [[./src/A2014/M06/Ordenada_ciclicamente.hs][Ordenada cíclicamente]].
++ 13 [[./src/A2014/M06/Orbita_prima.hs][Órbita prima]].
 
 ------------------------------------------------------------------------
 
