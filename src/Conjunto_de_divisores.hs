@@ -115,21 +115,22 @@ prop_divisores (Positive n) =
 -- Comparación de la eficiencia
 -- ============================
 
---    λ> length (divisores (product [1..11]))
+-- La comparación es
+--    λ> length (divisores1 (product [1..11]))
 --    540
---    (12.51 secs, 7,983,499,736 bytes)
+--    (14.22 secs, 7,983,997,400 bytes)
 --    λ> length (divisores2 (product [1..11]))
 --    540
---    (4.81 secs, 4,790,146,656 bytes)
+--    (4.83 secs, 4,790,644,992 bytes)
 --    λ> length (divisores3 (product [1..11]))
 --    540
---    (0.10 secs, 107,339,848 bytes)
+--    (0.10 secs, 86,862,864 bytes)
 --    λ> length (divisores4 (product [1..11]))
 --    540
---    (0.02 secs, 1,702,616 bytes)
+--    (0.01 secs, 2,050,568 bytes)
 --    λ> length (divisores5 (product [1..11]))
 --    540
---    (0.02 secs, 1,205,824 bytes)
+--    (0.01 secs, 1,527,144 bytes)
 --
 --    λ> length (divisores3 (product [1..14]))
 --    2592
