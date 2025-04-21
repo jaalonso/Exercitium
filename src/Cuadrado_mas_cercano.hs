@@ -1,7 +1,7 @@
 -- Cuadrado_mas_cercano.hs
 -- Cuadrado más cercano.
 -- José A. Alonso Jiménez
--- Sevilla, 9-febrero-2024
+-- Sevilla, 26-enero-2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -113,7 +113,6 @@ spec = do
 
 -- La verificación es
 --    λ> verifica
---
 --    9 examples, 0 failures
 
 -- Equivalencia de las definiciones

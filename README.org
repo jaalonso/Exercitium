@@ -63,10 +63,14 @@ Los objetivos de esta recopilación son:
 + 12 [[./src/A2014/M06/Ordenada_ciclicamente.hs][Ordenada cíclicamente]].
 + 13 [[./src/A2014/M06/Orbita_prima.hs][Órbita prima]].
 + 16 [[./src/A2014/M06/Divisores_con_final.hs][Divisores de un número con final dado]].
++ 17 [[./src/A2014/M06/Descomposiciones_con_n_sumandos.hs][Descomposiciones de x como sumas de n sumandos de una lista]].
 
 ------------------------------------------------------------------------
 
 ** Ejercicios publicados el 2022
+
+*** Enero 2022
++ 26 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]].
 
 *** Febrero 2022
 + 01 [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]].
@@ -201,7 +205,7 @@ Los objetivos de esta recopilación son:
 
 *** Febrero 2024
 + 04 [[./src/Primos_cubanos.hs][Primos cubanos]].
-+ 09 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]] ([[https://youtu.be/W6Slw8tcoLM][vídeo]]).
++ 09 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]].
 + 14 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
 + 19 [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
 + 24 [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
