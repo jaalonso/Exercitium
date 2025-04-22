@@ -71,6 +71,7 @@ Los objetivos de esta recopilación son:
 
 *** Enero 2022
 + 26 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]].
++ 27 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
 
 *** Febrero 2022
 + 01 [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]].
@@ -275,6 +276,11 @@ Los objetivos de esta recopilación son:
 + 18 [[./src/Matriz_Toeplitz.hs][Matrices de Toeplitz]].
 + 19 [[./src/Maximos_locales.hs][Máximos locales]].
 + 20 [[./src/Lista_cuadrada.hs][Lista cuadrada]].
+
+*** Abril 2025
++ 11 Pendientes de añadir
++ 22 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]].
++ 23 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
 
 * Introducción a la programación con Haskell y Python
 

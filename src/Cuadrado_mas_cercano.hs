@@ -1,7 +1,7 @@
 -- Cuadrado_mas_cercano.hs
 -- Cuadrado más cercano.
--- José A. Alonso Jiménez
--- Sevilla, 26-enero-2022
+-- José A. Alonso Jiménez <https://jaalonso.github.io>
+-- Sevilla, 22-abril-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
