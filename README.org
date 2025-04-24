@@ -72,6 +72,7 @@ Los objetivos de esta recopilación son:
 *** Enero 2022
 + 26 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]].
 + 27 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
++ 28 [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
 
 *** Febrero 2022
 + 01 [[./src/Suma_de_fila_del_triangulo_de_los_impares.hs][Suma de fila del triángulo de los impares]].
@@ -281,6 +282,7 @@ Los objetivos de esta recopilación son:
 + 11 Pendientes de añadir
 + 22 [[./src/Cuadrado_mas_cercano.hs][Cuadrado más cercano]].
 + 23 [[./src/Suma_de_cadenas.hs][Suma de cadenas]].
++ 24 [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
 
 * Introducción a la programación con Haskell y Python
 

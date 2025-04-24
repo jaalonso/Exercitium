@@ -1,7 +1,7 @@
 -- Sistema_factoradico_de_numeracion.hs
 -- Sistema factorádico de numeración.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 19-febrero-2024
+-- Sevilla, 24-abril-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
