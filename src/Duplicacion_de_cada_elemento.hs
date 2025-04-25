@@ -98,3 +98,26 @@ prop_duplicaElementos xs =
 -- La comprobación es
 --    λ> quickCheck prop_duplicaElementos
 --    +++ OK, passed 100 tests.
+
+-- Comparación de eficiencia
+-- =========================
+
+-- La comparación es
+--    λ> length (duplicaElementos1 [1..10^7])
+--    20000000
+--    (3.03 secs, 2,560,602,200 bytes)
+--    λ> length (duplicaElementos2 [1..10^7])
+--    20000000
+--    (2.19 secs, 2,000,602,232 bytes)
+--    λ> length (duplicaElementos3 [1..10^7])
+--    20000000
+--    (2.17 secs, 3,520,602,304 bytes)
+--    λ> length (duplicaElementos4 [1..10^7])
+--    20000000
+--    (0.70 secs, 4,080,602,272 bytes)
+--    λ> length (duplicaElementos5 [1..10^7])
+--    20000000
+--    (0.58 secs, 3,200,602,312 bytes)
+--    λ> length (duplicaElementos6 [1..10^7])
+--    20000000
+--    (0.56 secs, 3,200,602,312 bytes)
