@@ -1,7 +1,7 @@
 -- Duplicacion_de_cada_elemento.hs
--- Duplicación de cada elemento
+-- Duplicación de cada elemento.
 -- José A. Alonso Jiménez
--- Sevilla, 24-febrero-2024
+-- Sevilla, 25-abril-2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -13,33 +13,47 @@
 --    duplicaElementos "Haskell"  ==  "HHaasskkeellll"
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Duplicacion_de_cada_elemento where
 
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
---  1ª solución
+-- 1ª solución
+-- ============
+
 duplicaElementos1 :: [a] -> [a]
 duplicaElementos1 []     = []
 duplicaElementos1 (x:xs) = x : x : duplicaElementos1 xs
 
 -- 2 solución
+-- ==========
+
 duplicaElementos2 :: [a] -> [a]
 duplicaElementos2 = foldr (\x ys -> x:x:ys) []
 
 -- 3ª solución
+-- ===========
+
 duplicaElementos3 :: [a] -> [a]
 duplicaElementos3 xs = concat [[x,x] | x <- xs]
 
 -- 4ª solución
+-- ===========
+
 duplicaElementos4 :: [a] -> [a]
 duplicaElementos4 xs = concat (map (replicate 2) xs)
 
 -- 5ª solución
+-- ===========
+
 duplicaElementos5 :: [a] -> [a]
 duplicaElementos5 = concatMap (replicate 2)
 
 -- 6ª solución
+-- ===========
+
 duplicaElementos6 :: [a] -> [a]
 duplicaElementos6 = (>>= replicate 2)
 
@@ -81,9 +95,6 @@ prop_duplicaElementos xs =
                     duplicaElementos5,
                     duplicaElementos6]]
 
-verifica_duplicaElementos :: IO ()
-verifica_duplicaElementos = quickCheck prop_duplicaElementos
-
 -- La comprobación es
---    λ> verifica_duplicaElementos
+--    λ> quickCheck prop_duplicaElementos
 --    +++ OK, passed 100 tests.
