@@ -284,6 +284,7 @@ library
       Numeros_de_Lychrel
       Numeros_de_ocurrencias_de_elementos
       Numeros_de_Pentanacci
+      Numeros_duffinianos
       Numeros_libres_de_cuadrados
       Numeros_para_los_que_mcm
       Numeros_perfectos
@@ -773,6 +774,7 @@ test-suite Exercitium-test
       Numeros_de_Lychrel_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
       Numeros_de_Pentanacci_Spec
+      Numeros_duffinianos_Spec
       Numeros_libres_de_cuadrados_Spec
       Numeros_para_los_que_mcm_Spec
       Numeros_perfectos_Spec
