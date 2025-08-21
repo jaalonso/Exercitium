@@ -20,50 +20,59 @@ Los objetivos de esta recopilación son:
 ** Ejercicios publicados el 2014
 
 *** Abril 2014
-+ 21 [[./src/A2014/M04/Iguales_al_siguiente.hs][Iguales al siguiente]].
-+ 22 [[./src/A2014/M04/Ordenados_por_maximo.hs][Ordenación por el máximo]].
-+ 23 [[./src/A2014/M04/Bandera_tricolor.hs][La bandera tricolor]].
-+ 24 [[./src/A2014/M04/ElementosMinimales.hs][Determinación de los elementos minimales]].
-+ 25 [[./src/A2014/M04/Mastermind.hs][Mastermind]].
-+ 28 [[./src/A2014/M04/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]].
-+ 29 [[./src/A2014/M04/Anagramas.hs][Anagramas]].
-+ 30 [[./src/A2014/M04/Primos_equidistantes.hs][Primos equidistantes]].
++ 21 [[./src/Iguales_al_siguiente.hs][Igual es al siguiente]].
++ 22 [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
++ 23 [[./src/Bandera_tricolor.hs][La bandera tricolor]].
++ 24 [[./src/ElementosMinimales.hs][Determinación de los elementos minimales]].
++ 25 [[./src/Mastermind.hs][Mastermind]].
++ 28 [[./src/Primos_consecutivos_con_media_capicua.hs][Primos consecutivos con media capicúa]].
++ 29 [[./src/Anagramas.hs][Anagramas]].
++ 30 [[./src/Primos_equidistantes.hs][Primos equidistantes]].
 
 *** Mayo 2014
-+ 01 [[./src/A2014/M05/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
-+ 02 [[./src/A2014/M05/Matriz_Toeplitz.hs][Matriz de Toeplitz]].
-+ 05 [[./src/A2014/M05/Maximos_locales.hs][Máximos locales]].
-+ 06 [[./src/A2014/M05/Lista_cuadrada.hs][Lista cuadrada]].
-+ 07 [[./src/A2014/M05/Segmentos_consecutivos.hs][Segmentos maximales con elementos consecutivos]].
-+ 08 [[./src/A2014/M05/Valor_de_un_polinomio.hs][Valores de polinomios representados con vectores]].
-+ 09 [[./src/A2014/M05/Ramas_de_un_arbol.hs][Ramas de un_árbol]].
-+ 12 [[./src/A2014/M05/Alfabeto_desde.hs][Alfabeto comenzando en un carácter]].
-+ 13 [[./src/A2014/M05/Numeracion_de_ternas.hs][Numeración de ternas]].
-+ 15 [[./src/A2014/M05/Emparejamiento_binario.hs][Emparejamiento binario]].
-+ 16 [[./src/A2014/M05/Amplia_columnas.hs][Amplia columnas]].
-+ 19 [[./src/A2014/M05/Regiones.hs][Regiones determinadas por n rectas del plano]].
-+ 20 [[./src/A2014/M05/Mas_repetido.hs][Elemento más repetido de manera consecutiva]].
-+ 21 [[./src/A2014/M05/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales en una matriz]].
-+ 22 [[./src/A2014/M05/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]].
-+ 23 [[./src/A2014/M05/Biparticiones_de_una_lista.hs][Biparticiones de una lista]].
-+ 26 [[./src/A2014/M05/Trenzado_de_listas.hs][Trenzado de listas]].
-+ 27 [[./src/A2014/M05/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
-+ 28 [[./src/A2014/M05/Enumera_arbol.hs][Enumeración de árboles binarios]].
-+ 29 [[./src/A2014/M05/Algun_vecino_menor.hs][Algún vecino menor]].
-+ 30 [[./src/A2014/M05/Reiteracion_de_funciones.hs][Reiteración de una función]].
++ 01 [[./src/Suma_si_todos_justos.hs][Suma si todos los valores son justos]].
++ 02 [[./src/Matriz_Toeplitz.hs][Matriz de Toeplitz]].
++ 05 [[./src/Maximos_locales.hs][Máximos locales]].
++ 06 [[./src/Lista_cuadrada.hs][Lista cuadrada]].
++ 07 [[./src/Segmentos_consecutivos.hs][Segmentos maximales con elementos consecutivos]].
++ 08 [[./src/Valor_de_un_polinomio.hs][Valores de polinomios representados con vectores]].
++ 09 [[./src/Ramas_de_un_arbol.hs][Ramas de un_árbol]].
++ 12 [[./src/Alfabeto_desde.hs][Alfabeto comenzando en un carácter]].
++ 13 [[./src/Numeracion_de_ternas.hs][Numeración de ternas]].
++ 15 [[./src/Emparejamiento_binario.hs][Emparejamiento binario]].
++ 16 [[./src/Amplia_columnas.hs][Amplia columnas]].
++ 19 [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]].
++ 20 [[./src/Mas_repetido.hs][Elemento más repetido de manera consecutiva]].
++ 21 [[./src/Pares_adyacentes_iguales.hs][Número de pares de elementos adyacentes iguales en una matriz]].
++ 22 [[./src/Mayor_producto_de_las_ramas_de_un_arbol.hs][Mayor producto de las ramas de un árbol]].
++ 23 [[./src/Biparticiones_de_una_lista.hs][Biparticiones de una lista]].
++ 26 [[./src/Trenzado_de_listas.hs][Trenzado de listas]].
++ 27 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
++ 28 [[./src/Enumera_arbol.hs][Enumeración de árboles binarios]].
++ 29 [[./src/Algun_vecino_menor.hs][Algún vecino menor]].
++ 30 [[./src/Reiteracion_de_funciones.hs][Reiteración de una función]].
 
 *** Junio 2014
-+ 02 [[./src/A2014/M06/PimPamPum.hs][Pim, Pam, Pum y divisibilidad]].
-+ 03 [[./src/A2014/M06/Alergias.hs][Código de las alergias]].
-+ 04 [[./src/A2014/M06/Indices_verdaderos.hs][Índices de valores verdaderos]].
-+ 05 [[./src/A2014/M06/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
-+ 06 [[./src/A2014/M06/Numero_de_inversiones.hs][Número de inversiones]].
-+ 09 [[./src/A2014/M06/Separacion_por_posicion.hs][Separación por posición]].
-+ 11 [[./src/A2014/M06/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]].
-+ 12 [[./src/A2014/M06/Ordenada_ciclicamente.hs][Ordenada cíclicamente]].
-+ 13 [[./src/A2014/M06/Orbita_prima.hs][Órbita prima]].
-+ 16 [[./src/A2014/M06/Divisores_con_final.hs][Divisores de un número con final dado]].
-+ 17 [[./src/A2014/M06/Descomposiciones_con_n_sumandos.hs][Descomposiciones de x como sumas de n sumandos de una lista]].
++ 02 [[./src/PimPamPum.hs][Pim, Pam, Pum y divisibilidad]].
++ 03 [[./src/Alergias.hs][Código de las alergias]].
++ 04 [[./src/Indices_verdaderos.hs][Índices de valores verdaderos]].
++ 05 [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
++ 06 [[./src/Numero_de_inversiones.hs][Número de inversiones]].
++ 09 [[./src/Separacion_por_posicion.hs][Separación por posición]].
++ 11 [[./src/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]].
++ 12 [[./src/Ordenada_ciclicamente.hs][Ordenada cíclicamente]].
++ 13 [[./src/Orbita_prima.hs][Órbita prima]].
++ 16 [[./src/Divisores_con_final.hs][Divisores de un número con final dado]].
++ 17 [[./src/Descomposiciones_con_n_sumandos.hs][Descomposiciones de x como sumas de n sumandos de una lista]].
++ 18 [[./src/Seleccion_con_fallo.hs][Selección hasta el primero que falla inclusive]].
++ 19 [[./src/Buscaminas.hs][Buscaminas]].
++ 20 Mayor sucesión del problema 3n+1
++ 23 Filtro booleano
++ 24 Entero positivo de la cadena
++ 25 N gramas
++ 26 Sopa de letras
++ 27 Intercalación de n copias
++ 30 Eliminación de n elementos
 
 ** Ejercicios publicados el 2021
 
@@ -188,7 +197,7 @@ Los objetivos de esta recopilación son:
 + 20 [[./src/Potencias_perfectas.hs][Potencias perfectas]].
 + 21 [[./src/Sucesion_de_suma_de_cuadrados_de_los_digitos.hs][Sucesión de suma de cuadrados de los dígitos]].
 + 26 [[./src/Numeros_belgas.hs][Números belgas]].
-+ 27 [[./src/A2014/M05/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
++ 27 [[./src/Triangulares_con_cifras.hs][Números triangulares con n cifras distintas]].
 
 ** Ejercicios publicados el 2023
 

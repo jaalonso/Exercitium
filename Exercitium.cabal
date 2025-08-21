@@ -63,6 +63,7 @@ library
       BEE_Reinas_Profundidad
       Biparticiones_de_una_lista
       BPM_8Puzzle
+      Buscaminas
       BusquedaEnAnchura
       BusquedaEnEscalada
       BusquedaEnProfundidad
@@ -348,6 +349,7 @@ library
       Segmento_de_una_lista
       Segmentos_consecutivos
       Segmentos_cuyos_elementos_cumple_una_propiedad
+      Seleccion_con_fallo
       Separacion_por_posicion
       Sistema_factoradico_de_numeracion
       Subarbol_de_profundidad_dada
@@ -524,6 +526,7 @@ test-suite Exercitium-test
       BEE_Reinas_Profundidad_Spec
       Biparticiones_de_una_lista_Spec
       BPM_8Puzzle_Spec
+      Buscaminas_Spec
       Calculo_aproximado_de_integrales_definidas_Spec
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales_Spec
       Calculo_de_pi_mediante_la_formula_de_Leibniz_Spec
@@ -802,6 +805,7 @@ test-suite Exercitium-test
       Segmento_de_una_lista_Spec
       Segmentos_consecutivos_Spec
       Segmentos_cuyos_elementos_cumple_una_propiedad_Spec
+      Seleccion_con_fallo_Spec
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
       Subarbol_de_profundidad_dada_Spec

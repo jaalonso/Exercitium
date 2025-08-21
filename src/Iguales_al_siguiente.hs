@@ -1,11 +1,11 @@
 -- Iguales_al_siguiente.hs
 -- Iguales al siguiente.
 -- José A. Alonso Jiménez https://jaalonso.github.io
--- Sevilla, 21 de Abril de 2014
+-- Sevilla, 21-abril-2014
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Ejercicio. Definir la función
+-- Definir la función
 --    igualesAlSiguiente :: Eq a => [a] -> [a]
 -- tal que (igualesAlSiguiente xs) es la lista de los elementos de xs
 -- que son iguales a su siguiente. Por ejemplo,
@@ -21,30 +21,40 @@ import Data.List (group)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (quickCheck)
 
--- 1ª definición (por comprensión):
+-- 1ª solución
+-- ===========
+
 igualesAlSiguiente1 :: Eq a => [a] -> [a]
 igualesAlSiguiente1 xs =
-    [x | (x,y) <- zip xs (tail xs), x == y]
+  [x | (x,y) <- zip xs (tail xs), x == y]
 
--- 2ª definición (por recursión):
+-- 2ª solución (por recursión):
+-- ===========
+
 igualesAlSiguiente2 :: Eq a => [a] -> [a]
 igualesAlSiguiente2 (x:y:zs) | x == y    = x : igualesAlSiguiente2 (y:zs)
                              | otherwise = igualesAlSiguiente2 (y:zs)
 igualesAlSiguiente2 _                    = []
 
--- 3ª definición (con concat y comprensión):
+-- 3ª solución
+-- ===========
+
 igualesAlSiguiente3 :: Eq a => [a] -> [a]
 igualesAlSiguiente3 xs = concat [ys | (_:ys) <- group xs]
 
--- 4ª definición (con concat y map):
+-- 4ª solución
+-- ===========
+
 igualesAlSiguiente4 :: Eq a => [a] -> [a]
 igualesAlSiguiente4 xs = concat (map tail (group xs))
 
--- 5ª definición (con =<<):
+-- 5ª solución
+-- ===========
+
 igualesAlSiguiente5 :: Eq a => [a] -> [a]
 igualesAlSiguiente5 xs = tail =<< (group xs)
 
--- Nota: En la definición anterior se usa el operador (=<<) ya que
+-- Nota: En la solución anterior se usa el operador (=<<) ya que
 --    f =<< xs
 -- es equivalente a
 --    concat (map f xs)
@@ -62,15 +72,19 @@ igualesAlSiguiente5 xs = tail =<< (group xs)
 --    ghci> (++[0]) =<< [[1],[2,3,4],[3,7],[6]]
 --    [1,0,2,3,4,0,3,7,0,6,0]
 
--- 6ª definición (con =<< y sin argumentos):
+-- 6ª solución
+-- ===========
+
 igualesAlSiguiente6 :: Eq a => [a] -> [a]
 igualesAlSiguiente6 = (tail =<<) . group
 
--- 7ª definición (con concatMap):
+-- 7ª solución
+-- ===========
+
 igualesAlSiguiente7 :: Eq a => [a] -> [a]
 igualesAlSiguiente7 xs = concatMap tail (group xs)
 
--- Nota: En la definición anterior se usa la función ya que
+-- Nota: En la solución anterior se usa la función ya que
 --    concatMap f xs
 -- es equivalente a
 --    concat (map f xs)
@@ -78,7 +92,9 @@ igualesAlSiguiente7 xs = concatMap tail (group xs)
 --    ghci> concatMap tail [[1],[2,3,4],[9,7],[6]]
 --    [3,4,7]
 
--- 8ª definición (con concatMap y sin argumentos):
+-- 8ª solución
+-- ===========
+
 igualesAlSiguiente8 :: Eq a => [a] -> [a]
 igualesAlSiguiente8 = (concatMap tail) . group
 
