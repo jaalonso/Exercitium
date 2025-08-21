@@ -1,13 +1,13 @@
 -- Ramas_de_un_arbol.hs
 -- Ramas de un árbol.
--- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 15-marzo-2022
+-- José A. Alonso <https://jaalonso.github.io>
+-- Sevilla, 9-mayo-2014
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
 -- Los árboles se pueden representar mediante el siguiente tipo de datos
 --    data Arbol a = N a [Arbol a]
---                   deriving Show
+--      deriving Show
 -- Por ejemplo, los árboles
 --      1               3
 --     / \             /|\
@@ -27,8 +27,11 @@
 --    ramas ej2  ==  [[3,5,6],[3,4],[3,7,2],[3,7,1]]
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Ramas_de_un_arbol where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 data Arbol a = N a [Arbol a]
@@ -39,29 +42,64 @@ ej1 = N 1 [N 2 [],N 3 [N 4 []]]
 ej2 = N 3 [N 5 [N 6 []], N 4 [], N 7 [N 2 [], N 1 []]]
 
 -- 1ª solución
+-- ===========
+
 ramas1 :: Arbol b -> [[b]]
 ramas1 (N x []) = [[x]]
 ramas1 (N x as) = [x : xs | a <- as, xs <- ramas1 a]
 
 -- 2ª solución
+-- ===========
+
 ramas2 :: Arbol b -> [[b]]
 ramas2 (N x []) = [[x]]
 ramas2 (N x as) = concat (map (map (x:)) (map ramas2 as))
 
 -- 3ª solución
+-- ===========
+
 ramas3 :: Arbol b -> [[b]]
 ramas3 (N x []) = [[x]]
 ramas3 (N x as) = concat (map (map (x:) . ramas3) as)
 
 -- 4ª solución
+-- ===========
+
 ramas4 :: Arbol b -> [[b]]
 ramas4 (N x []) = [[x]]
 ramas4 (N x as) = concatMap (map (x:) . ramas4) as
 
 -- 5ª solución
+-- ===========
+
 ramas5 :: Arbol a -> [[a]]
 ramas5 (N x []) = [[x]]
 ramas5 (N x xs) = map ramas5 xs >>= map (x:)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Arbol Int -> [[Int]]) -> Spec
+specG ramas = do
+  it "e1" $
+    ramas ej1  `shouldBe`  [[1,2],[1,3,4]]
+  it "e2" $
+    ramas ej2  `shouldBe`  [[3,5,6],[3,4],[3,7,2],[3,7,1]]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG ramas1
+  describe "def. 2" $ specG ramas2
+  describe "def. 3" $ specG ramas3
+  describe "def. 4" $ specG ramas4
+  describe "def. 5" $ specG ramas5
+
+-- La verificación es
+--    λ> verifica
+--    10 examples, 0 failures
 
 -- Comprobación de la equivalencia de las definiciones
 -- ===================================================

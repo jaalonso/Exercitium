@@ -21,7 +21,7 @@
 --    sonido 105  ==  "PimPamPum"
 -- ---------------------------------------------------------------------
 
-module A2014.M06.PimPamPum where
+module PimPamPum where
 
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck

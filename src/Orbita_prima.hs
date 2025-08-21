@@ -27,7 +27,7 @@
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module A2014.M06.Orbita_prima where
+module Orbita_prima where
 
 import Data.Numbers.Primes (isPrime)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)

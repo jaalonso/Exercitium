@@ -1,7 +1,7 @@
 -- Numeros_duffinianos.hs
 -- Números duffinianos.
 -- José A. Alonso Jiménez
--- Sevilla, 12 de enero de 2021
+-- Sevilla, 28 de abril de 2025
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

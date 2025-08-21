@@ -1,7 +1,7 @@
 -- Bandera_tricolor.hs
 -- La bandera tricolor.
--- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 3-febrero-2025
+-- José A. Alonso Jiménez <jalonso@us.es>
+-- Sevilla, 23 de Abril de 2014
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -20,56 +20,45 @@
 --    banderaTricolor [M,R,A,R,R,A]        ==  [R,R,R,A,A,M]
 -- ---------------------------------------------------------------------
 
-{-# OPTIONS_GHC -fno-warn-unused-imports #-}
-
 module Bandera_tricolor where
 
 import Data.List (sort)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
-import Test.QuickCheck
 
 data Color = R | A | M
   deriving (Show, Eq, Ord, Enum)
 
--- 1ª solución
--- ===========
-
+-- 1ª definición (con sort):
 banderaTricolor1 :: [Color] -> [Color]
-banderaTricolor1 xs =
-  [x | x <- xs, x == R] ++
-  [x | x <- xs, x == A] ++
-  [x | x <- xs, x == M]
+banderaTricolor1 = sort
 
--- 2ª solución
--- ===========
-
+-- 2ª definición (por comprensión):
 banderaTricolor2 :: [Color] -> [Color]
 banderaTricolor2 xs =
-  colores R ++ colores A ++ colores M
-  where colores c = filter (== c) xs
+  [x | x <- xs, x == R] ++ [x | x <- xs, x == A] ++ [x | x <- xs, x == M]
 
--- 3ª solución
--- ===========
-
+-- 3ª definición (por comprensión y concat):
 banderaTricolor3 :: [Color] -> [Color]
 banderaTricolor3 xs =
   concat [[x | x <- xs, x == c] | c <- [R,A,M]]
 
--- 4ª solución
--- ===========
-
+-- 4ª definición (por recursión):
 banderaTricolor4 :: [Color] -> [Color]
 banderaTricolor4 xs = aux xs ([],[],[])
-  where aux []     (rs,as,ms) = rs ++ as ++ ms
-        aux (R:ys) (rs,as,ms) = aux ys (R:rs,   as,   ms)
-        aux (A:ys) (rs,as,ms) = aux ys (  rs, A:as,   ms)
-        aux (M:ys) (rs,as,ms) = aux ys (  rs,   as, M:ms)
+  where aux []     (as,rs,ms) = as ++ rs ++ ms
+        aux (R:ys) (as,rs,ms) = aux ys (R:as,   rs,   ms)
+        aux (A:ys) (as,rs,ms) = aux ys (  as, A:rs,   ms)
+        aux (M:ys) (as,rs,ms) = aux ys (  as,   rs, M:ms)
 
--- 5ª solución
--- ===========
-
+-- 5ª definición (por recursión):
 banderaTricolor5 :: [Color] -> [Color]
-banderaTricolor5 = sort
+banderaTricolor5 xs = aux xs (0,0,0)
+  where aux []     (as,rs,ms) = replicate as R ++
+                                replicate rs A ++
+                                replicate ms M
+        aux (R:ys) (as,rs,ms) = aux ys (1+as,   rs,   ms)
+        aux (A:ys) (as,rs,ms) = aux ys (  as, 1+rs,   ms)
+        aux (M:ys) (as,rs,ms) = aux ys (  as,   rs, 1+ms)
 
 -- Verificación
 -- ============
@@ -77,12 +66,12 @@ banderaTricolor5 = sort
 verifica :: IO ()
 verifica = hspec spec
 
-specG :: ([Color] -> [Color]) -> Spec
+specG :: ([Color] -> [Color])  -> Spec
 specG banderaTricolor = do
   it "e1" $
-    banderaTricolor [M,R,A,A,R,R,A,M,M]  `shouldBe`  [R,R,R,A,A,A,M,M,M]
+    banderaTricolor [M,R,A,A,R,R,A,M,M] `shouldBe` [R,R,R,A,A,A,M,M,M]
   it "e2" $
-    banderaTricolor [M,R,A,R,R,A]        `shouldBe`  [R,R,R,A,A,M]
+    banderaTricolor [M,R,A,R,R,A] `shouldBe` [R,R,R,A,A,M]
 
 spec :: Spec
 spec = do
@@ -96,45 +85,21 @@ spec = do
 --    λ> verifica
 --    10 examples, 0 failures
 
--- Comprobación de equivalencia
--- ============================
-
-instance Arbitrary Color where
-  arbitrary = elements [A,R,M]
-
--- La propiedad es
-prop_banderaTricolor :: [Color] -> Bool
-prop_banderaTricolor xs =
-  all (== banderaTricolor1 xs)
-      [banderaTricolor2 xs,
-       banderaTricolor3 xs,
-       banderaTricolor4 xs,
-       banderaTricolor5 xs]
-
--- La comprobación es
---    λ> quickCheck prop_banderaTricolor
---    +++ OK, passed 100 tests.
-
--- Comparación de eficiencia
--- =========================
-
--- La comparación es
+-- Comparación de eficiencia:
 --    λ> bandera n = concat [replicate n c | c <- [M,R,A]]
---    λ> length (banderaTricolor1 (bandera (10^6)))
+--    λ> :set +s
+--    λ> length (banderaTricolor1 (bandera 1000000))
 --    3000000
---    (1.51 secs, 1,024,454,768 bytes)
---    λ> length (banderaTricolor1 (bandera (2*10^6)))
---    6000000
---    (2.94 secs, 2,048,454,832 bytes)
---    λ> length (banderaTricolor2 (bandera (2*10^6)))
---    6000000
---    (2.35 secs, 1,232,454,920 bytes)
---    λ> length (banderaTricolor3 (bandera (2*10^6)))
---    6000000
---    (4.28 secs, 2,304,455,360 bytes)
---    λ> length (banderaTricolor4 (bandera (2*10^6)))
---    6000000
---    (3.01 secs, 1,904,454,672 bytes)
---    λ> length (banderaTricolor5 (bandera (2*10^6)))
---    6000000
---    (2.47 secs, 1,248,454,744 bytes)
+--    (2.92 secs, 1,024,602,024 bytes)
+--    λ> length (banderaTricolor2 (bandera 1000000))
+--    3000000
+--    (1.91 secs, 1,168,601,536 bytes)
+--    λ> length (banderaTricolor3 (bandera 1000000))
+--    3000000
+--    (3.55 secs, 1,440,602,120 bytes)
+--    λ> length (banderaTricolor4 (bandera 1000000))
+--    3000000
+--    (1.30 secs, 1,000,601,376 bytes)
+--    λ> length (banderaTricolor5 (bandera 1000000))
+--    3000000
+--    (1.56 secs, 1,245,461,400 bytes)

@@ -1,7 +1,7 @@
 -- Amplia_columnas.hs
 -- Ampliación de matrices por columnas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 22-marzo-2022
+-- Sevilla, 16-mayo-2014
 -- ---------------------------------------------------------------------
 
 -- ----------------------------------------------------------------------
@@ -33,6 +33,7 @@ module Amplia_columnas where
 
 import Data.Array (Array, (!), array, bounds, elems, listArray)
 import Data.Matrix (Matrix, (<|>), fromList, ncols, nrows, toList)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 type Matriz = Array (Int,Int) Int
@@ -81,6 +82,26 @@ matrix p = fromList m n (elems p)
 --    array ((1,1),(2,3)) [((1,1),1),((1,2),2),((1,3),3),((2,1),4),((2,2),5),((2,3),6)]
 matriz :: Matrix Int -> Matriz
 matriz p = listArray ((1,1),(nrows p,ncols p)) (toList p)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Matriz -> Matriz -> Matriz) -> Spec
+specG ampliaColumnas = do
+  it "e1" $
+    elems (ampliaColumnas ej1 ej2) `shouldBe` [0,1,4,5,6,2,3,7,8,9]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG ampliaColumnas1
+  describe "def. 2" $ specG ampliaColumnas2
+
+-- La verificación es
+--    λ> verifica
+--    2 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================

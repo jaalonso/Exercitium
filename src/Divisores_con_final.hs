@@ -13,7 +13,7 @@
 --    divisoresConFinal 720 20  ==  [20,120,720]
 -- ---------------------------------------------------------------------
 
-module A2014.M06.Divisores_con_final where
+module Divisores_con_final where
 
 import Data.List (group, inits, isSuffixOf, nub, sort, subsequences)
 import Data.Numbers.Primes (primeFactors)

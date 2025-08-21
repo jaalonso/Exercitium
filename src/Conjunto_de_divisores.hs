@@ -7,8 +7,7 @@
 -- ---------------------------------------------------------------------
 -- Definir la función
 --    divisores :: Integer -> [Integer]
--- tal que (divisores x) es el conjunto de divisores de los x. Por
--- ejemplo,
+-- tal que (divisores x) es el conjunto de divisores de x. Por ejemplo,
 --   divisores 30  ==  [1,2,3,5,6,10,15,30]
 --   length (divisores (product [1..10]))  ==  270
 --   length (divisores (product [1..25]))  ==  340032

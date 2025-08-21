@@ -289,6 +289,11 @@ Los objetivos de esta recopilación son:
 + 24 [[./src/Sistema_factoradico_de_numeracion.hs][Sistema factorádico de numeración]].
 + 25 [[./src/Duplicacion_de_cada_elemento.hs][Duplicación de cada elemento]].
 
+*** Mayo 2025
++ ?? [[./src/Conjunto_de_divisores.hs][Conjunto de divisores]].
++ ?? [[./src/Suma_de_divisores.hs][Suma de divisores]].
++ ?? [[./src/Numeros_duffinianos.hs][Números duffinianos]].
+
 * Introducción a la programación con Haskell y Python
 
 En [[./Haskell_y_Python.org][este enlace]] se encuentran los ejercicios del curso de introducción al

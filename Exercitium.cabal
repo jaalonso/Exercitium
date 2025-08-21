@@ -26,48 +26,6 @@ source-repository head
 
 library
   exposed-modules:
-      A2014.M04.Anagramas
-      A2014.M04.Bandera_tricolor
-      A2014.M04.ElementosMinimales
-      A2014.M04.Iguales_al_siguiente
-      A2014.M04.Mastermind
-      A2014.M04.Ordenados_por_maximo
-      A2014.M04.Primos_consecutivos_con_media_capicua
-      A2014.M04.Primos_equidistantes
-      A2014.M05.Alfabeto_desde
-      A2014.M05.Algun_vecino_menor
-      A2014.M05.Amplia_columnas
-      A2014.M05.Biparticiones_de_una_lista
-      A2014.M05.Emparejamiento_binario
-      A2014.M05.Enumera_arbol
-      A2014.M05.Lista_cuadrada
-      A2014.M05.Mas_repetido
-      A2014.M05.Matriz_Toeplitz
-      A2014.M05.Maximos_locales
-      A2014.M05.Mayor_producto_de_las_ramas_de_un_arbol
-      A2014.M05.Numeracion_de_ternas
-      A2014.M05.Ordenacion_de_estructuras
-      A2014.M05.Pares_adyacentes_iguales
-      A2014.M05.Ramas_de_un_arbol
-      A2014.M05.Regiones
-      A2014.M05.Reiteracion_de_funciones
-      A2014.M05.Segmentos_consecutivos
-      A2014.M05.Suma_si_todos_justos
-      A2014.M05.Trenzado_de_listas
-      A2014.M05.Triangulares_con_cifras
-      A2014.M05.Valor_de_un_polinomio
-      A2014.M06.Alergias
-      A2014.M06.Descomposiciones_con_n_sumandos
-      A2014.M06.Descomposiciones_triangulares
-      A2014.M06.Divisores_con_final
-      A2014.M06.Elimina_aisladas
-      A2014.M06.Emparejamiento_de_arboles
-      A2014.M06.Indices_verdaderos
-      A2014.M06.Numero_de_inversiones
-      A2014.M06.Orbita_prima
-      A2014.M06.Ordenada_ciclicamente
-      A2014.M06.PimPamPum
-      A2014.M06.Separacion_por_posicion
       Agrupacion_de_elementos_por_posicion
       AgrupaColas
       Alergias
@@ -145,6 +103,7 @@ library
       Disyuncion_excluyente
       DivideVenceras
       Division_segura
+      Divisores_con_final
       Divisores_de_un_numero
       Divisores_primos
       Duplicacion_de_cada_elemento
@@ -163,6 +122,7 @@ library
       Elementos_del_nivel_k_de_un_arbol
       Elementos_finales
       Elementos_minimales
+      ElementosMinimales
       Elimina_aisladas
       Emparejamiento_binario
       Emparejamiento_de_arboles
@@ -290,6 +250,7 @@ library
       Numeros_perfectos
       Numeros_primos_de_Hilbert
       Numeros_racionales
+      Orbita_prima
       Ordenacion_de_estructuras
       Ordenacion_de_los_racionales
       Ordenada_ciclicamente
@@ -306,6 +267,7 @@ library
       PerteneceCola
       PertenecePila
       Pertenencia_de_un_elemento_a_un_arbol
+      PimPamPum
       Pol_Coeficiente
       Pol_Comprobacion_de_raices_de_polinomios
       Pol_Crea_termino
@@ -528,47 +490,6 @@ test-suite Exercitium-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      A2014.M04.Anagramas_Spec
-      A2014.M04.Bandera_tricolor_Spec
-      A2014.M04.ElementosMinimales_Spec
-      A2014.M04.Iguales_al_siguiente_Spec
-      A2014.M04.Mastermind_Spec
-      A2014.M04.Ordenados_por_maximo_Spec
-      A2014.M04.Primos_consecutivos_con_media_capicua_Spec
-      A2014.M04.Primos_equidistantes_Spec
-      A2014.M05.Alfabeto_desde_Spec
-      A2014.M05.Algun_vecino_menor_Spec
-      A2014.M05.Amplia_columnas_Spec
-      A2014.M05.Biparticiones_de_una_lista_Spec
-      A2014.M05.Emparejamiento_binario_Spec
-      A2014.M05.Enumera_arbol_Spec
-      A2014.M05.Lista_cuadrada_Spec
-      A2014.M05.Mas_repetido_Spec
-      A2014.M05.Matriz_Toeplitz_Spec
-      A2014.M05.Maximos_locales_Spec
-      A2014.M05.Mayor_producto_de_las_ramas_de_un_arbol_Spec
-      A2014.M05.Numeracion_de_ternas_Spec
-      A2014.M05.Ordenacion_de_estructuras_Spec
-      A2014.M05.Pares_adyacentes_iguales_Spec
-      A2014.M05.Ramas_de_un_arbol_Spec
-      A2014.M05.Regiones_Spec
-      A2014.M05.Reiteracion_de_funciones_Spec
-      A2014.M05.Segmentos_consecutivos_Spec
-      A2014.M05.Suma_si_todos_justos_Spec
-      A2014.M05.Trenzado_de_listas_Spec
-      A2014.M05.Triangulares_con_cifras_Spec
-      A2014.M05.Valor_de_un_polinomio_Spec
-      A2014.M06.Alergias_Spec
-      A2014.M06.Descomposiciones_triangulares_Spec
-      A2014.M06.Divisores_con_final_Spec
-      A2014.M06.Elimina_aisladas_Spec
-      A2014.M06.Emparejamiento_de_arboles_Spec
-      A2014.M06.Indices_verdaderos_Spec
-      A2014.M06.Numero_de_inversiones_Spec
-      A2014.M06.Orbita_prima_Spec
-      A2014.M06.Ordenada_ciclicamente_Spec
-      A2014.M06.PimPamPum_Spec
-      A2014.M06.Separacion_por_posicion_Spec
       Agrupacion_de_elementos_por_posicion_Spec
       AgrupaColas_Spec
       Alergias_Spec
@@ -578,6 +499,7 @@ test-suite Exercitium-test
       Algun_vecino_menor_Spec
       AlgunoVerifica_Spec
       Altura_de_un_arbol_binario_Spec
+      Amplia_columnas_Spec
       Anagramas_Spec
       Aplanamiento_de_un_arbol_Spec
       Aplica_segun_propiedad_Spec
@@ -643,6 +565,7 @@ test-suite Exercitium-test
       Distancia_entre_dos_puntos_Spec
       Disyuncion_excluyente_Spec
       Division_segura_Spec
+      Divisores_con_final_Spec
       Divisores_de_un_numero_Spec
       Divisores_primos_Spec
       Duplicacion_de_cada_elemento_Spec
@@ -661,6 +584,7 @@ test-suite Exercitium-test
       Elementos_del_nivel_k_de_un_arbol_Spec
       Elementos_finales_Spec
       Elementos_minimales_Spec
+      ElementosMinimales_Spec
       Elimina_aisladas_Spec
       Emparejamiento_binario_Spec
       Emparejamiento_de_arboles_Spec
@@ -779,6 +703,7 @@ test-suite Exercitium-test
       Numeros_para_los_que_mcm_Spec
       Numeros_perfectos_Spec
       Numeros_primos_de_Hilbert_Spec
+      Orbita_prima_Spec
       Ordenacion_de_estructuras_Spec
       Ordenacion_de_los_racionales_Spec
       Ordenada_ciclicamente_Spec
@@ -797,6 +722,7 @@ test-suite Exercitium-test
       Pertenencia_de_un_elemento_a_un_arbol_Spec
       PilaConListas_Spec
       PilaConSucesiones_Spec
+      PimPamPum_Spec
       Pol_Coeficiente_Spec
       Pol_Comprobacion_de_raices_de_polinomios_Spec
       Pol_Crea_termino_Spec
@@ -849,6 +775,7 @@ test-suite Exercitium-test
       Raices_de_la_ecuacion_de_segundo_grado_Spec
       Raices_enteras_Spec
       Rama_izquierda_de_un_arbol_binario_Spec
+      Ramas_de_un_arbol_Spec
       Rango_de_una_lista_Spec
       Reconocimiento_de_grandes_potencias_de_2_Spec
       Reconocimiento_de_palindromos_Spec

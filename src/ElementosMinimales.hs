@@ -15,7 +15,7 @@
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
-module A2014.M04.ElementosMinimales where
+module ElementosMinimales where
 
 import Data.List (nub, delete)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)

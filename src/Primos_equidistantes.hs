@@ -1,7 +1,7 @@
 -- Primos_equidistantes.hs
 -- Primos equidistantes.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 14-febrero-2025
+-- Sevilla, 30-abril-2014
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -13,7 +13,6 @@
 --    take 3 (primosEquidistantes 4)  ==  [(7,11),(13,17),(19,23)]
 --    take 3 (primosEquidistantes 6)  ==  [(23,29),(31,37),(47,53)]
 --    take 3 (primosEquidistantes 8)  ==  [(89,97),(359,367),(389,397)]
---    primosEquidistantes 4 !! (10^5) ==  (18467047,18467051)
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
