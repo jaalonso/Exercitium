@@ -1,7 +1,7 @@
 -- Bandera_tricolor.hs
 -- La bandera tricolor.
 -- José A. Alonso Jiménez <jalonso@us.es>
--- Sevilla, 23 de Abril de 2014
+-- Sevilla, 23-abril-2014
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -24,25 +24,34 @@ module Bandera_tricolor where
 
 import Data.List (sort)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck
 
 data Color = R | A | M
   deriving (Show, Eq, Ord, Enum)
 
--- 1ª definición (con sort):
+-- 1ª solución
+-- ===========
+
 banderaTricolor1 :: [Color] -> [Color]
 banderaTricolor1 = sort
 
--- 2ª definición (por comprensión):
+-- 2ª solución
+-- ===========
+
 banderaTricolor2 :: [Color] -> [Color]
 banderaTricolor2 xs =
   [x | x <- xs, x == R] ++ [x | x <- xs, x == A] ++ [x | x <- xs, x == M]
 
--- 3ª definición (por comprensión y concat):
+-- 3ª solución
+-- ===========
+
 banderaTricolor3 :: [Color] -> [Color]
 banderaTricolor3 xs =
   concat [[x | x <- xs, x == c] | c <- [R,A,M]]
 
--- 4ª definición (por recursión):
+-- 4ª solución
+-- ===========
+
 banderaTricolor4 :: [Color] -> [Color]
 banderaTricolor4 xs = aux xs ([],[],[])
   where aux []     (as,rs,ms) = as ++ rs ++ ms
@@ -50,7 +59,9 @@ banderaTricolor4 xs = aux xs ([],[],[])
         aux (A:ys) (as,rs,ms) = aux ys (  as, A:rs,   ms)
         aux (M:ys) (as,rs,ms) = aux ys (  as,   rs, M:ms)
 
--- 5ª definición (por recursión):
+-- 5ª solución
+-- ===========
+
 banderaTricolor5 :: [Color] -> [Color]
 banderaTricolor5 xs = aux xs (0,0,0)
   where aux []     (as,rs,ms) = replicate as R ++
@@ -85,7 +96,29 @@ spec = do
 --    λ> verifica
 --    10 examples, 0 failures
 
--- Comparación de eficiencia:
+-- Equivalencia de las definiciones
+-- ================================
+
+instance Arbitrary Color where
+  arbitrary = elements [R, A, M]
+
+-- La propiedad es
+prop_banderaTricolor :: [Color] -> Bool
+prop_banderaTricolor xs =
+  all (== banderaTricolor1 xs)
+      [banderaTricolor2 xs,
+       banderaTricolor3 xs,
+       banderaTricolor4 xs,
+       banderaTricolor5 xs]
+
+-- La comprobación es
+--    λ> quickCheck prop_banderaTricolor
+--    +++ OK, passed 100 tests.
+
+-- Comparación de eficiencia
+-- =========================
+
+-- La comparación es
 --    λ> bandera n = concat [replicate n c | c <- [M,R,A]]
 --    λ> :set +s
 --    λ> length (banderaTricolor1 (bandera 1000000))
