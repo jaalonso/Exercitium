@@ -24,7 +24,6 @@ module Ordenados_por_maximo where
 
 import Data.List (sort, sortOn, sortBy)
 import Data.Ord (comparing)
-import GHC.Exts (sortWith)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
