@@ -1,7 +1,7 @@
 -- Primos_consecutivos_con_media_capicua.hs
 -- Primos consecutivos con media capicúa.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 28-abril-2014
+-- Sevilla, 28-Abril-2014
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -43,7 +43,7 @@ primos = [x | x <- [3,5..], primo x]
 -- (capicua x) se verifica si x es capicúa. Por ejemplo,
 capicua :: Int -> Bool
 capicua x = ys == reverse ys
-    where ys = show x
+  where ys = show x
 
 -- 2ª solución
 -- ===========
@@ -74,6 +74,17 @@ spec = do
 -- La verificación es
 --    λ> verifica
 --    2 examples, 0 failures
+
+-- Equivalencia de las definiciones
+-- ================================
+
+prop_equivalencia :: Int -> Bool
+prop_equivalencia n =
+  take n primosConsecutivosConMediaCapicua1 == take n primosConsecutivosConMediaCapicua2
+
+-- La comprobación es
+--    λ> prop_equivalencia 30
+--    True
 
 -- Comparación de eficiencia
 -- =========================
