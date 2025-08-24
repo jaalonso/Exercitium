@@ -1,7 +1,7 @@
 -- Mastermind.hs
 -- Mastermind.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 25-abril-2014
+-- Sevilla, 25-Abril-2014
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -50,7 +50,8 @@ import Data.List (nub)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
--- 1ª solución (por comprensión)
+-- 1ª solución
+-- ===========
 mastermind1 :: [Int] -> [Int] -> (Int,Int)
 mastermind1 xs ys =
   (length (aciertos xs ys),length (coincidencias xs ys))
@@ -58,7 +59,8 @@ mastermind1 xs ys =
 -- (aciertos xs ys) es la lista de aciertos entre xs e ys. Por ejemplo,
 --    aciertos [2,6,0,7] [1,4,0,6]  ==  [0]
 aciertos :: Eq a => [a] -> [a] -> [a]
-aciertos xs ys = [x | (x,y) <- zip xs ys, x == y]
+aciertos xs ys =
+  [x | (x,y) <- zip xs ys, x == y]
 
 -- (coincidencia xs ys) es la lista de coincidencias entre xs e ys. Por
 -- ejemplo,
@@ -68,7 +70,8 @@ coincidencias xs ys =
   [x | x <- xs, x `elem` ys, x `notElem` zs]
   where zs = aciertos xs ys
 
--- 2ª solución (por recursión)
+-- 2ª solución
+-- ===========
 mastermind2 :: [Int] -> [Int] -> (Int,Int)
 mastermind2 xs ys = aux xs ys
   where aux [] [] = (0,0)
@@ -79,6 +82,7 @@ mastermind2 xs ys = aux xs ys
           where (a,b) = aux xs' zs
 
 -- 3ª solución
+-- ===========
 mastermind3 :: [Int] -> [Int] -> (Int,Int)
 mastermind3 xs ys = (nAciertos,nCoincidencias)
   where nAciertos = length [(x,y) | (x,y) <- zip xs ys, x == y]
@@ -110,3 +114,54 @@ spec = do
 -- La verificación es
 --    λ> verifica
 --    12 examples, 0 failures
+
+-- Equivalencia de las definiciones
+-- ================================
+
+-- Generador para listas de 4 elementos elgidos del 1 al 6. Por ejemplo,
+--    λ> sample genMastermind
+--    [2,4,6,1]
+--    [6,5,1,2]
+--    [3,2,6,4]
+--    [1,3,2,5]
+--    [5,2,6,4]
+--    [3,2,4,1]
+--    [2,6,5,4]
+--    [4,1,2,3]
+--    [6,4,2,5]
+--    [4,5,3,2]
+--    [6,3,4,2]
+genMastermind :: Gen [Int]
+genMastermind = do
+  elementos <- shuffle [1..6]
+  return (take 4 elementos)
+
+-- Generador para el juego clásico de Mastermind (4 posiciones, 6
+-- colores). Por ejemplo,
+--    λ> sample genParesMastermind
+--    ([3,5,6,2],[6,3,4,2])
+--    ([1,4,3,2],[4,2,1,3])
+--    ([1,5,3,6],[2,6,4,1])
+--    ([5,6,1,4],[1,6,4,2])
+--    ([2,6,4,3],[3,6,4,1])
+--    ([6,1,3,5],[6,1,3,5])
+--    ([6,4,5,1],[3,2,4,5])
+--    ([5,6,4,2],[1,4,6,2])
+--    ([1,5,3,6],[3,4,2,6])
+--    ([6,1,5,3],[1,4,5,6])
+--    ([1,2,4,5],[4,1,2,5])
+genParesMastermind :: Gen ([Int], [Int])
+genParesMastermind = do
+  xs <- genMastermind
+  ys <- genMastermind
+  return (xs, ys)
+
+prop_Mastermind :: Property
+prop_Mastermind = forAll genParesMastermind $ \(xs, ys) ->
+  all (== mastermind1 xs ys)
+      [mastermind2 xs ys,
+       mastermind3 xs ys]
+
+-- La comprobación es
+--    λ> quickCheck prop_Mastermind
+--    +++ OK, passed 100 tests.
