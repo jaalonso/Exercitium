@@ -165,3 +165,27 @@ prop_Mastermind = forAll genParesMastermind $ \(xs, ys) ->
 -- La comprobación es
 --    λ> quickCheck prop_Mastermind
 --    +++ OK, passed 100 tests.
+
+-- Comparación de eficiencia
+-- =========================
+
+-- La comparación es
+--    λ> mastermind1 [1..20000] [1,3..40000]
+--    (1,9999)
+--    (2.14 secs, 12,442,128 bytes)
+--    λ> mastermind2 [1..20000] [1,3..40000]
+--    (1,9999)
+--    (2.01 secs, 11,969,360 bytes)
+--    λ> mastermind3 [1..20000] [1,3..40000]
+--    (1,9999)
+--    (5.60 secs, 11,322,176 bytes)
+--
+--    λ> mastermind1 [1..20000] [1..20000]
+--    (20000,0)
+--    (5.02 secs, 15,962,800 bytes)
+--    λ> mastermind2 [1..20000] [1..20000]
+--    (20000,0)
+--    (0.02 secs, 12,978,344 bytes)
+--    λ> mastermind3 [1..20000] [1..20000]
+--    (20000,0)
+--    (3.89 secs, 12,122,840 bytes)
