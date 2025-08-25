@@ -1,7 +1,7 @@
 -- ElementosMinimales.hs
 -- Determinación de los elementos minimales.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 24-abril-2014
+-- Sevilla, 24-abril-2014 (Revisión del 22-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

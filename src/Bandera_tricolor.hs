@@ -1,7 +1,7 @@
 -- Bandera_tricolor.hs
 -- La bandera tricolor.
 -- José A. Alonso Jiménez <jalonso@us.es>
--- Sevilla, 23-abril-2014
+-- Sevilla, 23-Abril-2014 (Revisión del 22-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

@@ -1,7 +1,7 @@
 -- Primos_equidistantes.hs
 -- Primos equidistantes.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 30-abril-2014
+-- Sevilla, 30-Abril-2014 (Revisión del 25-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -19,6 +19,7 @@
 
 module Primos_equidistantes where
 
+import Data.List (unfoldr, tails)
 import Data.Numbers.Primes (primes)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
@@ -77,6 +78,24 @@ primosEquidistantes5 k =
   [(x,y) | (x,y) <- zip primes (tail primes)
          , y - x == k]
 
+-- 6ª solución
+-- ===========
+
+primosEquidistantes6 :: Integer -> [(Integer,Integer)]
+primosEquidistantes6 k =
+  [(p, q) | (p:q:_) <- tails primes, q - p == k]
+
+-- 7ª solución
+-- ===========
+
+primosEquidistantes7 :: Integer -> [(Integer, Integer)]
+primosEquidistantes7 k = unfoldr aux (primes)
+  where
+    aux (p:q:ps)
+      | q - p == k  = Just ((p,q), q:ps)
+      | otherwise   = aux (q:ps)
+    aux _ = Nothing
+
 -- Verificación
 -- ============
 
@@ -101,10 +120,12 @@ spec = do
   describe "def. 3" $ specG primosEquidistantes3
   describe "def. 4" $ specG primosEquidistantes4
   describe "def. 5" $ specG primosEquidistantes5
+  describe "def. 6" $ specG primosEquidistantes6
+  describe "def. 7" $ specG primosEquidistantes7
 
 -- La verificación es
 --    λ> verifica
---    20 examples, 0 failures
+--    28 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -116,7 +137,9 @@ prop_primosEquidistantes n k =
       [take n (f k) | f <- [primosEquidistantes2,
                             primosEquidistantes3,
                             primosEquidistantes4,
-                            primosEquidistantes5]]
+                            primosEquidistantes5,
+                            primosEquidistantes6,
+                            primosEquidistantes7]]
 
 -- La comprobación es
 --    λ> prop_primosEquidistantes 100 4
@@ -141,6 +164,12 @@ prop_primosEquidistantes n k =
 --    λ> primosEquidistantes5 4 !! 200
 --    (9829,9833)
 --    (0.01 secs, 7,085,072 bytes)
+--    λ> primosEquidistantes6 4 !! 200
+--    (9829,9833)
+--    (0.02 secs, 3,628,024 bytes)
+--    λ> primosEquidistantes7 4 !! 200
+--    (9829,9833)
+--    (0.02 secs, 3,729,816 bytes)
 --
 --    λ> primosEquidistantes2 4 !! 600
 --    (41617,41621)
@@ -154,6 +183,12 @@ prop_primosEquidistantes n k =
 --    λ> primosEquidistantes5 4 !! 600
 --    (41617,41621)
 --    (0.04 secs, 28,858,232 bytes)
+--    λ> primosEquidistantes6 4 !! 600
+--    (41617,41621)
+--    (0.04 secs, 13,449,344 bytes)
+--    λ> primosEquidistantes7 4 !! 600
+--    (41617,41621)
+--    (0.04 secs, 13,811,992 bytes)
 --
 --    λ> primosEquidistantes4 4 !! (10^5)
 --    (18467047,18467051)
@@ -161,3 +196,9 @@ prop_primosEquidistantes n k =
 --    λ> primosEquidistantes5 4 !! (10^5)
 --    (18467047,18467051)
 --    (7.95 secs, 18,712,469,144 bytes)
+--    λ> primosEquidistantes6 4 !! (10^5)
+--    (18467047,18467051)
+--    (3.71 secs, 8,405,806,400 bytes)
+--    λ> primosEquidistantes7 4 !! (10^5)
+--    (18467047,18467051)
+--    (3.72 secs, 8,502,545,368 bytes)

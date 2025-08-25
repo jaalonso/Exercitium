@@ -1,7 +1,7 @@
 -- Iguales_al_siguiente.hs
 -- Iguales al siguiente.
 -- José A. Alonso Jiménez https://jaalonso.github.io
--- Sevilla, 21-abril-2014
+-- Sevilla, 21-Abril-2014 (Revisión del 22-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

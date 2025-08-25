@@ -1,7 +1,7 @@
 -- Anagramas.hs
 -- Anagramas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 29-abril-2014
+-- Sevilla, 29-Abril-2014 (Revisión del 24-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -24,6 +24,7 @@ import Data.List (sort)
 import Data.Char (toLower)
 import Data.Function (on)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck
 
 -- 1ª solución
 -- ===========
@@ -117,3 +118,59 @@ spec = do
 -- La verificación es
 --    λ> verifica
 --    12 examples, 0 failures
+
+-- Comprobación de equivalencia
+-- ============================
+
+-- Genera un carácter. Por ejemplo.
+--    λ> sample genCaracter
+--    'b'
+--    'O'
+--    'Y'
+--    't'
+--    'B'
+--    'm'
+--    'S'
+--    'z'
+--    'e'
+--    'c'
+--    'c'
+genCaracter :: Gen Char
+genCaracter = elements (['a'..'z'] ++ ['A'..'Z'])
+
+-- Genera una palabra. Por ejemplo.
+--    λ> sample genPalabra
+--    ""
+--    "U"
+--    ""
+--    ""
+--    "SBNrDsv"
+--    "L"
+--    ""
+--    "WEbZepkEMiOT"
+--    "TPC"
+--    "MQKbhuiOSoiLhGKc"
+--    "TTUujizoQZxLtyKTH"
+genPalabra :: Gen String
+genPalabra = listOf genCaracter
+
+-- Genera una lista de palabras.
+genPalabras :: Gen [String]
+genPalabras = listOf genPalabra
+
+-- Propiedad con generador personalizado
+prop_equivalencia :: Property
+prop_equivalencia =
+  forAll genPalabra $ \x ->
+  forAll genPalabras $ \ys ->
+  all (== anagramas1 x ys)
+      [anagramas2 x ys,
+       anagramas3 x ys,
+       anagramas4 x ys,
+       anagramas5 x ys,
+       anagramas6 x ys]
+
+-- La comprobación es
+--    λ> quickCheck prop_equivalencia
+--    +++ OK, passed 100 tests.
+--    (0.16 secs, 240,359,144 bytes)

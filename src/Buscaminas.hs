@@ -1,7 +1,7 @@
 -- Buscaminas.hs
 -- Buscaminas.
 -- José A. Alonso <https://jaalonso.github.io>
--- Sevilla, 19 de Junio de 2014
+-- Sevilla, 19-Junio-2014 (Revisión del 22-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

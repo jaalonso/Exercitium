@@ -1,7 +1,7 @@
 -- Primos_consecutivos_con_media_capicua.hs
 -- Primos consecutivos con media capicúa.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 28-Abril-2014
+-- Sevilla, 28-Abril-2014 (Revisión del 24-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

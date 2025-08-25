@@ -1,7 +1,7 @@
 -- Mastermind.hs
 -- Mastermind.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 25-Abril-2014
+-- Sevilla, 25-Abril-2014 (Revisión del 24-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
