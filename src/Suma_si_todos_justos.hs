@@ -1,7 +1,7 @@
 -- Suma_si_todos_justos.hs
 -- Suma si todos los valores son justos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 3-marzo-2022
+-- Sevilla, 1-Mayo-2014 (Revisión del 25-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -17,6 +17,7 @@
 module Suma_si_todos_justos where
 
 import Data.Maybe (catMaybes, isJust, fromJust)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
@@ -94,6 +95,33 @@ sumaSiTodosJustos6 xs = fmap sum (sequence xs)
 sumaSiTodosJustos7 :: (Num a, Eq a) => [Maybe a] -> Maybe a
 sumaSiTodosJustos7 = fmap sum . sequence
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Maybe Integer] -> Maybe Integer) -> Spec
+specG sumaSiTodosJustos = do
+  it "e1" $
+    sumaSiTodosJustos [Just 2, Just 5]           `shouldBe` Just 7
+  it "e2" $
+    sumaSiTodosJustos [Just 2, Just 5, Nothing]  `shouldBe` Nothing
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG sumaSiTodosJustos1
+  describe "def. 2" $ specG sumaSiTodosJustos2
+  describe "def. 3" $ specG sumaSiTodosJustos3
+  describe "def. 4" $ specG sumaSiTodosJustos4
+  describe "def. 5" $ specG sumaSiTodosJustos5
+  describe "def. 6" $ specG sumaSiTodosJustos6
+  describe "def. 7" $ specG sumaSiTodosJustos7
+
+-- La verificación es
+--    λ> verifica
+--    14 examples, 0 failures
+
 -- Equivalencia de las definiciones
 -- ================================
 
@@ -115,3 +143,57 @@ verifica_sumaSiTodosJustos =
 -- La comprobación es
 --    λ> verifica_sumaSiTodosJustos
 --    +++ OK, passed 100 tests.
+
+-- Comparación de eficiencia
+-- =========================
+
+ejemplo1 :: Integer -> [Maybe Integer]
+ejemplo1 n = map Just [1..n]
+
+ejemplo2 :: Integer -> [Maybe Integer]
+ejemplo2 n = map Just [1..n] ++ [Nothing]
+
+-- La comparación es
+--    λ> sumaSiTodosJustos1 (ejemplo1 10000000)
+--    Just 50000005000000
+--    (4.08 secs, 3,520,610,288 bytes)
+--    λ> sumaSiTodosJustos2 (ejemplo1 10000000)
+--    Just 50000005000000
+--    (4.75 secs, 4,000,610,376 bytes)
+--    λ> sumaSiTodosJustos3 (ejemplo1 10000000)
+--    Just 50000005000000
+--    (2.55 secs, 3,680,610,368 bytes)
+--    λ> sumaSiTodosJustos4 (ejemplo1 10000000)
+--    Just 50000005000000
+--    (2.87 secs, 3,360,610,184 bytes)
+--    λ> sumaSiTodosJustos5 (ejemplo1 10000000)
+--    Just 50000005000000
+--    (4.96 secs, 3,461,220,272 bytes)
+--    λ> sumaSiTodosJustos6 (ejemplo1 10000000)
+--    Just 50000005000000
+--    (3.30 secs, 3,461,220,152 bytes)
+--    λ> sumaSiTodosJustos7 (ejemplo1 10000000)
+--    Just 50000005000000
+--    (4.10 secs, 3,461,220,304 bytes)
+--
+--    λ> sumaSiTodosJustos1 (ejemplo2 10000000)
+--    Nothing
+--    (3.22 secs, 3,200,600,632 bytes)
+--    λ> sumaSiTodosJustos2 (ejemplo2 10000000)
+--    Nothing
+--    (2.12 secs, 3,200,600,688 bytes)
+--    λ> sumaSiTodosJustos3 (ejemplo2 10000000)
+--    Nothing
+--    (3.22 secs, 3,200,600,704 bytes)
+--    λ> sumaSiTodosJustos4 (ejemplo2 10000000)
+--    Nothing
+--    (2.34 secs, 3,200,600,616 bytes)
+--    λ> sumaSiTodosJustos5 (ejemplo2 10000000)
+--    Nothing
+--    (4.02 secs, 3,061,210,672 bytes)
+--    λ> sumaSiTodosJustos6 (ejemplo2 10000000)
+--    Nothing
+--    (2.81 secs, 3,061,210,568 bytes)
+--    λ> sumaSiTodosJustos7 (ejemplo2 10000000)
+--    Nothing
+--    (2.61 secs, 3,061,210,720 bytes)
