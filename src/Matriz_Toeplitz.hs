@@ -1,7 +1,7 @@
 -- Matriz_Toeplitz.hs
 -- Matrices de Toepliz
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 18-febrero-2025
+-- Sevilla, 2-Mayo-2014 (Revisión de 26-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -29,8 +29,9 @@
 
 module Matriz_Toeplitz where
 
-import Data.Array (Array, (!), bounds, listArray)
+import Data.Array (Array, (!), array, bounds, listArray)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck
 
 ej1, ej2 :: Array (Int,Int) Int
 ej1 = listArray ((1,1),(4,4)) [2,5,1,6,4,2,5,1,7,4,2,5,9,7,4,2]
@@ -130,6 +131,69 @@ spec = do
 -- La verificación es
 --    λ> verifica
 --    4 examples, 0 failures
+
+-- Equivalencia de las definiciones
+-- ================================
+
+newtype Matriz2 = M (Array (Int,Int) Int)
+  deriving Show
+
+-- Generador de matrices arbitrarias. Por ejemplo,
+--    λ> generate matrizArbitraria
+--    M (array ((1,1),(3,4))
+--             [((1,1),18),((1,2),6), ((1,3),-23),((1,4),-13),
+--              ((2,1),-2),((2,2),22),((2,3),-25),((2,4),-5),
+--              ((3,1),2), ((3,2),16),((3,3),-15),((3,4),7)])
+matrizArbitraria :: Gen Matriz2
+matrizArbitraria = do
+  n  <- chooseInt (1,5)
+  xs <- vectorOf (n*n) arbitrary
+  return (M (listArray ((1,1),(n,n)) xs))
+
+-- Generador de matrices de Toeplitz arbitrarias. Por ejemplo,
+--    λ> generate matrizToeplitzArbitraria
+--    M (array ((1,1),(3,3)) [((1,1),-28),((1,2), 28),((1,3),  9),
+--                            ((2,1),  6),((2,2),-28),((2,3), 28),
+--                            ((3,1),-29),((3,2),  6),((3,3),-28)])
+matrizToeplitzArbitraria :: Gen Matriz2
+matrizToeplitzArbitraria = do
+  n <- chooseInt (1, 5)
+  primeraFila <- vectorOf n arbitrary
+  primeraColumna <- vectorOf (n-1) arbitrary
+  let xs = [((i,j), if i <= j
+                    then primeraFila !! (j-i)
+                    else primeraColumna !! (i-j-1))
+           | i <- [1..n], j <- [1..n]]
+  return (M (array ((1,1),(n,n)) xs))
+
+-- Matriz es una subclase de Arbitrary.
+instance Arbitrary Matriz2 where
+  arbitrary = frequency
+    [ (1, matrizToeplitzArbitraria)  -- 25% matrices de Toeplitz
+    , (3, matrizArbitraria)          -- 75% matrices aleatorias
+    ]
+
+-- La propiedad es
+prop_esToeplitz :: Matriz2 -> Bool
+prop_esToeplitz (M p) =
+  esToeplitz1 p == esToeplitz2 p
+
+-- La comprobación es
+--    λ> quickCheck prop_esToeplitz
+--    +++ OK, passed 100 tests.
+
+-- La propiedad para que indique el porcentaje de matrices de Toeplitz
+-- generadas.
+prop_esToeplitz2 :: Matriz2 -> Property
+prop_esToeplitz2 (M p) =
+  collect resultado1 $ resultado1 == esToeplitz2 p
+  where resultado1 = esToeplitz1 p
+
+-- La comprobación es
+--    λ> quickCheck prop_esToeplitz2
+--    +++ OK, passed 100 tests:
+--    58% False
+--    42% True
 
 -- Comparación de eficiencia
 -- =========================
