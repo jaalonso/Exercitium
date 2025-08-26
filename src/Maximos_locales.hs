@@ -1,7 +1,7 @@
 -- Maximos_locales.hs
 -- Máximos locales.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 19-febrero-2025
+-- Sevilla, 5-Mayo-2014 (Revisión del 26-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
