@@ -1,7 +1,7 @@
 -- Lista_cuadrada.hs
 -- Lista cuadrada.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 20-febrero-2025
+-- Sevilla, 6-Mayo-2014 (Revisión de 26-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -49,7 +49,7 @@ listaCuadrada2 n x xs =
 
 grupos2 :: Int -> [a] -> [[a]]
 grupos2 _ [] = []
-grupos2 n xs = ys : grupos n zs
+grupos2 n xs = ys : grupos2 n zs
   where (ys,zs) = splitAt n xs
 
 -- 3ª solución
@@ -106,7 +106,7 @@ prop_listaCuadrada n x xs =
 --    (2.02 secs, 12,801,918,616 bytes)
 --    λ> length (listaCuadrada2 (10^4) 5 [1..])
 --    10000
---    (1.89 secs, 12,803,198,576 bytes)
+--    (5.47 secs, 25,600,440,048 bytes)
 --    λ> length (listaCuadrada3 (10^4) 5 [1..])
 --    10000
---    (1.85 secs, 12,801,518,728 bytes)
+--    (2.05 secs, 12,801,518,728 bytes)
