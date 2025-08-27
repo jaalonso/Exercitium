@@ -1,7 +1,7 @@
 -- Segmentos_consecutivos.hs
 -- Segmentos de elementos consecutivos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 11-marzo-2022
+-- Sevilla, 7-Mayo-2014 (Revisión del 27-Agosto-2025).
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -15,9 +15,11 @@
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
+{-# OPTIONS_GHC -fno-warn-incomplete-uni-patterns #-}
 
 module Segmentos_consecutivos where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -101,6 +103,32 @@ inicial5 :: (Enum a, Eq a) => [a] -> [a]
 inicial5 [] = []
 inicial5 (x:xs) =
   map fst (takeWhile (uncurry (==)) (zip (x:xs) [x..]))
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> [[Int]])  -> Spec
+specG segmentos = do
+  it "e1" $
+    segmentos [1,2,5,6,4] `shouldBe` [[1,2],[5,6],[4]]
+  it "e2" $
+    segmentos [1,2,3,4,7,8,9] `shouldBe` [[1,2,3,4],[7,8,9]]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG segmentos1
+  describe "def. 2" $ specG segmentos2
+  describe "def. 3" $ specG segmentos3
+  describe "def. 4" $ specG segmentos4
+  describe "def. 5" $ specG segmentos5
+
+-- La verificación es
+--    λ> verifica
+--
+--    10 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
