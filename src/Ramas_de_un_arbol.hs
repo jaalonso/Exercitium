@@ -1,7 +1,7 @@
 -- Ramas_de_un_arbol.hs
 -- Ramas de un árbol.
 -- José A. Alonso <https://jaalonso.github.io>
--- Sevilla, 9-mayo-2014
+-- Sevilla, 9-Mayo-2014 (Revisión del 27-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
