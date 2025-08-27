@@ -1,7 +1,7 @@
 -- Valor_de_un_polinomio.hs
 -- Valores de polinomios representados con vectores.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 14-marzo-2022
+-- Sevilla, 8-Mayo-2014 (Revisión del 27-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -36,6 +36,7 @@ module Valor_de_un_polinomio where
 
 import Data.List (foldl')
 import Data.Array (Array, (!), array, assocs, bounds, elems, listArray)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 type Polinomio a = Array Int a
@@ -153,6 +154,42 @@ valor12 p b =
 valor13 :: Num a => Polinomio a -> a -> a
 valor13 p b =
   foldl' (+) 0 (zipWith (*) (elems p) (iterate (* b) 1))
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Polinomio Int -> Int -> Int) -> Spec
+specG valor = do
+  it "e1" $
+    valor ej_pol1 0  `shouldBe`  6
+  it "e2" $
+    valor ej_pol1 1  `shouldBe`  10
+  it "e3" $
+    valor ej_pol1 2  `shouldBe`  102
+
+spec :: Spec
+spec = do
+  describe "def. 1"  $ specG valor1
+  describe "def. 2"  $ specG valor2
+  describe "def. 3"  $ specG valor3
+  describe "def. 4"  $ specG valor4
+  describe "def. 5"  $ specG valor5
+  describe "def. 6"  $ specG valor6
+  describe "def. 7"  $ specG valor7
+  describe "def. 8"  $ specG valor8
+  describe "def. 9"  $ specG valor9
+  describe "def. 10" $ specG valor10
+  describe "def. 11" $ specG valor11
+  describe "def. 12" $ specG valor12
+  describe "def. 13" $ specG valor13
+
+-- La verificación es
+--    λ> verifica
+--
+--    39 examples, 0 failures
 
 -- Equivalencia de las definiciones
 -- ================================
