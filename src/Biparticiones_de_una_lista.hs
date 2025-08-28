@@ -21,7 +21,7 @@ module Biparticiones_de_una_lista where
 
 import Data.List (inits, tails)
 import Control.Applicative (liftA2)
-
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
@@ -64,6 +64,31 @@ biparticiones5 = liftA2 zip inits tails
 
 biparticiones6 :: [a] -> [([a],[a])]
 biparticiones6 = zip <$> inits <*> tails
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> [([Int],[Int])]) -> Spec
+specG biparticiones = do
+  it "e1" $
+    biparticiones [3,2,5]
+    `shouldBe` [([],[3,2,5]),([3],[2,5]),([3,2],[5]),([3,2,5],[])]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG biparticiones1
+  describe "def. 2" $ specG biparticiones2
+  describe "def. 3" $ specG biparticiones3
+  describe "def. 4" $ specG biparticiones4
+  describe "def. 5" $ specG biparticiones5
+  describe "def. 6" $ specG biparticiones6
+
+-- La verificación es
+--    λ> verifica
+--    6 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
