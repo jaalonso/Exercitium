@@ -1,7 +1,7 @@
 -- Mayor_producto_de_las_ramas_de_un_arbol.hs
 -- Mayor producto de las ramas de un árbol.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 22-Mayo.2014 (actualizado 28-Agosto-2025)
+-- Sevilla, 22-Mayo-2014 (actualizado 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

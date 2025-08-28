@@ -1,7 +1,7 @@
 -- Biparticiones_de_una_lista.hs
 -- Biparticiones de una lista.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 1-abril-2022
+-- Sevilla, 23-Mayo-2014 (actualizado 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -21,6 +21,7 @@ module Biparticiones_de_una_lista where
 
 import Data.List (inits, tails)
 import Control.Applicative (liftA2)
+
 import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
