@@ -1,7 +1,7 @@
 -- Numeracion_de_ternas.hs
 -- Numeración de las ternas de números naturales.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 24-abril-2024
+-- Sevilla, 13-Mayo-2014 (actualizado 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -81,6 +81,15 @@ posicion4 t = fromJust (elemIndex t ternas)
 posicion5 :: (Int,Int,Int) -> Int
 posicion5 = fromJust . (`elemIndex` ternas)
 
+-- 6ª solución
+-- ===========
+
+posicion6 :: (Int,Int,Int) -> Int
+posicion6 (x,y,z) =
+  sum [((n+2)*(n+1)) `div` 2 | n <- [0..s-1]] +
+  sum [s-i+1 | i <- [0..x-1]] + y
+  where s = x + y + z
+
 -- Verificación
 -- ============
 
@@ -103,6 +112,7 @@ spec = do
   describe "def. 3" $ specG posicion3
   describe "def. 4" $ specG posicion4
   describe "def. 5" $ specG posicion5
+  describe "def. 6" $ specG posicion6
 
 -- La verificación es
 --    λ> verifica
@@ -121,7 +131,8 @@ prop_posicion_equiv (NonNegative x) (NonNegative y) (NonNegative z) =
       [f (x,y,z) | f <- [ posicion2
                         , posicion3
                         , posicion4
-                        , posicion5 ]]
+                        , posicion5
+                        , posicion6 ]]
 
 -- La comprobación es
 --    λ> quickCheckWith (stdArgs {maxSize=20}) prop_posicion_equiv
@@ -146,6 +157,9 @@ prop_posicion_equiv (NonNegative x) (NonNegative y) (NonNegative z) =
 --    λ> posicion5 (147,46,116)
 --    5000000
 --    (1.94 secs, 1,173,229,960 bytes)
+--    λ> posicion6 (147,46,116)
+--    5000000
+--    (0.01 secs, 779,568 bytes)
 
 -- Propiedades
 -- ===========
