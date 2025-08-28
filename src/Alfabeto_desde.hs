@@ -108,6 +108,7 @@ prop_alfabetoDesde =
                    alfabetoDesde4,
                    alfabetoDesde5]]
 
+
 -- La comprobación es
 --    λ> quickCheck prop_alfabetoDesde
 --    +++ OK, passed 100 tests.
