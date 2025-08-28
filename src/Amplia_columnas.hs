@@ -1,7 +1,7 @@
 -- Amplia_columnas.hs
 -- Ampliación de matrices por columnas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 16-mayo-2014
+-- Sevilla, 16-mayo-2014 (actualizado 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ----------------------------------------------------------------------
@@ -138,9 +138,10 @@ prop_ampliaColumna (P p q) =
 -- =========================
 
 -- La comparación es
---    λ> let p = listArray ((1,1),(10^3,10^3)) [1..] in maximum (ampliaColumnas1 p p)
---    1000000
---    (2.04 secs, 1,562,652,704 bytes)
---    λ> let p = listArray ((1,1),(10^3,10^3)) [1..] in maximum (ampliaColumnas2 p p)
---    1000000
---    (0.69 secs, 738,508,624 bytes)
+--    λ> ej2000 = listArray ((1,1),(2000,2000)) [1..]
+--    λ> maximum (ampliaColumnas1 ej2000 ej2000)
+--    4000000
+--    (6.26 secs, 6,049,256,416 bytes)
+--    λ> maximum (ampliaColumnas2 ej2000 ej2000)
+--    4000000
+--    (1.90 secs, 2,625,302,000 bytes)
