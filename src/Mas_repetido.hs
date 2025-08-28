@@ -1,7 +1,7 @@
 -- Mas_repetido.hs
 -- Elemento más repetido de manera consecutiva.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 24-marzo-2022
+-- Sevilla, 20-Mayo-2014 (actualizado 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -25,6 +25,7 @@ module Mas_repetido where
 import Data.List (group)
 import Data.Tuple (swap)
 import Control.Arrow ((&&&))
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -85,6 +86,33 @@ masRepetido6 =
 masRepetido7 :: Ord a => [a] -> (a,Int)
 masRepetido7 =
   swap . maximum . map (length &&& head) . group
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> (Int,Int)) -> Spec
+specG masRepetido = do
+  it "e1" $
+    masRepetido [1,1,4,4,1]  `shouldBe`  (4,2)
+  it "e2" $
+    masRepetido [4,4,1,1,5]  `shouldBe`  (4,2)
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG masRepetido1
+  describe "def. 2" $ specG masRepetido2
+  describe "def. 3" $ specG masRepetido3
+  describe "def. 4" $ specG masRepetido4
+  describe "def. 5" $ specG masRepetido5
+  describe "def. 6" $ specG masRepetido6
+  describe "def. 7" $ specG masRepetido7
+
+-- La verificación es
+--    λ> verifica
+--    14 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
