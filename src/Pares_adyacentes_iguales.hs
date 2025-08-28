@@ -1,7 +1,7 @@
 -- Pares_adyacentes_iguales.hs
 -- Número de pares de elementos adyacentes iguales en una matriz.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 25-marzo-2022
+-- Sevilla, 21-Mayo-2014 (actualizado 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -30,6 +30,7 @@ module Pares_adyacentes_iguales where
 
 import Data.List (group,transpose)
 import Data.Array ((!), listArray)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -93,6 +94,38 @@ numeroParesAdyacentesIguales4 :: Eq a => [[a]] -> Int
 numeroParesAdyacentesIguales4 =
   length . (tail =<<) . (group =<<) . ((++) =<< transpose)
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([[Int]] -> Int) -> Spec
+specG numeroParesAdyacentesIguales = do
+  it "e1" $
+    numeroParesAdyacentesIguales [[0,1],[0,2]]              `shouldBe`  1
+  it "e2" $
+    numeroParesAdyacentesIguales [[0,0],[1,2]]              `shouldBe`  1
+  it "e3" $
+    numeroParesAdyacentesIguales [[0,1],[0,0]]              `shouldBe`  2
+  it "e4" $
+    numeroParesAdyacentesIguales [[1,2],[1,4],[4,4]]        `shouldBe`  3
+  it "e5" $
+    numeroParesAdyacentesIguales [[0,0,0],[0,0,0],[0,0,0]]  `shouldBe`  12
+  it "e6" $
+    numeroParesAdyacentesIguales [[0,0,0],[0,1,0],[0,0,0]]  `shouldBe`  8
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG numeroParesAdyacentesIguales1
+  describe "def. 2" $ specG numeroParesAdyacentesIguales2
+  describe "def. 3" $ specG numeroParesAdyacentesIguales3
+  describe "def. 4" $ specG numeroParesAdyacentesIguales4
+
+-- La verificación es
+--    λ> verifica
+--    24 examples, 0 failures
+
 -- Comprobación de equivalencia
 -- ============================
 
@@ -143,3 +176,17 @@ prop_numeroParesAdyacentesIguales (M xss) =
 --    λ> numeroParesAdyacentesIguales4 (replicate (3*10^3) (replicate (10^3) 0))
 --    5996000
 --    (0.38 secs, 1,393,560,848 bytes)
+--
+--    λ> ej2 <- generate (vectorOf 1000 (vectorOf 1000 (arbitrary)) :: Gen [[Int]])
+--    λ> numeroParesAdyacentesIguales1 ej2
+--    32593
+--    (1.81 secs, 1,771,121,448 bytes)
+--    λ> numeroParesAdyacentesIguales2 ej2
+--    32593
+--    (0.52 secs, 420,330,176 bytes)
+--    λ> numeroParesAdyacentesIguales3 ej2
+--    32593
+--    (0.33 secs, 780,279,752 bytes)
+--    λ> numeroParesAdyacentesIguales4 ej2
+--    32593
+--    (0.25 secs, 780,280,224 bytes)
