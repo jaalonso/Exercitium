@@ -1,7 +1,7 @@
 -- Regiones.hs
 -- Regiones determinadas por n rectas del plano.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 23-marzo-2022
+-- Sevilla, 19-Mayo-2014 (actualizado 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -39,6 +39,7 @@
 module Regiones where
 
 import Data.List (genericIndex)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -71,6 +72,34 @@ sumas = scanl1 (+) [0..]
 regiones4 :: Integer -> Integer
 regiones4 n = 1 + n*(n+1) `div` 2
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Integer -> Integer) -> Spec
+specG regiones = do
+  it "e1" $
+    regiones 1     `shouldBe`  2
+  it "e2" $
+    regiones 2     `shouldBe`  4
+  it "e3" $
+    regiones 3     `shouldBe`  7
+  it "e4" $
+    regiones 100   `shouldBe`  5051
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG regiones1
+  describe "def. 2" $ specG regiones2
+  describe "def. 3" $ specG regiones3
+  describe "def. 4" $ specG regiones4
+
+-- La verificación es
+--    λ> verifica
+--    16 examples, 0 failures
+
 -- Comprobación de equivalencia
 -- ============================
 
@@ -102,4 +131,3 @@ prop_regiones (Positive n) =
 --    λ> regiones4 (4*10^6)
 --    8000002000001
 --    (0.01 secs, 484,552 bytes)
---
