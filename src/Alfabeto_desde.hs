@@ -1,7 +1,7 @@
 -- Alfabeto_desde.hs
 -- Alfabeto comenzando en un carácter.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 16-marzo-2022
+-- Sevilla, 12-Mayo-2014 (actualizado el 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -22,34 +22,78 @@
 module Alfabeto_desde where
 
 import Data.Char (isLower, isAscii)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
+-- ===========
+
 alfabetoDesde1 :: Char -> String
 alfabetoDesde1 c =
   dropWhile (<c) ['a'..'z'] ++ takeWhile (<c) ['a'..'z']
 
 -- 2ª solución
+-- ===========
+
 alfabetoDesde2 :: Char -> String
 alfabetoDesde2 c = ys ++ xs
   where (xs,ys) = span (<c) ['a'..'z']
 
 -- 3ª solución
+-- ===========
+
 alfabetoDesde3 :: Char -> String
 alfabetoDesde3 c = ys ++ xs
   where (xs,ys) = break (==c) ['a'..'z']
 
 -- 4ª solución
+-- ===========
+
 alfabetoDesde4 :: Char -> String
 alfabetoDesde4 c
   | 'a' <= c && c <= 'z' = [c..'z'] ++ ['a'..pred c]
   | otherwise            = ['a'..'z']
 
 -- 5ª solución
+-- ===========
+
 alfabetoDesde5 :: Char -> String
 alfabetoDesde5 c
   | isLower c = [c..'z'] ++ ['a'..pred c]
   | otherwise = ['a'..'z']
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Char -> String) -> Spec
+specG alfabetoDesde = do
+  it "e1" $
+      alfabetoDesde 'e'  `shouldBe`  "efghijklmnopqrstuvwxyzabcd"
+  it "e2" $
+      alfabetoDesde 'a'  `shouldBe`  "abcdefghijklmnopqrstuvwxyz"
+  it "e3" $
+      alfabetoDesde '7'  `shouldBe`  "abcdefghijklmnopqrstuvwxyz"
+  it "e4" $
+      alfabetoDesde '{'  `shouldBe`  "abcdefghijklmnopqrstuvwxyz"
+  it "e5" $
+      alfabetoDesde 'B'  `shouldBe`  "abcdefghijklmnopqrstuvwxyz"
+  it "p1" $
+    property prop_alfabetoDesde
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG alfabetoDesde1
+  describe "def. 2" $ specG alfabetoDesde2
+  describe "def. 3" $ specG alfabetoDesde3
+  describe "def. 4" $ specG alfabetoDesde4
+  describe "def. 5" $ specG alfabetoDesde5
+
+-- La verificación es
+--    λ> verifica
+--    30 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -63,7 +107,6 @@ prop_alfabetoDesde =
                    alfabetoDesde3,
                    alfabetoDesde4,
                    alfabetoDesde5]]
-
 
 -- La comprobación es
 --    λ> quickCheck prop_alfabetoDesde
