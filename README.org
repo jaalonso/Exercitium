@@ -39,6 +39,7 @@ Los objetivos de esta recopilación son:
 + 09 [[./src/Ramas_de_un_arbol.hs][Ramas de un_árbol]].
 + 12 [[./src/Alfabeto_desde.hs][Alfabeto comenzando en un carácter]].
 + 13 [[./src/Numeracion_de_ternas.hs][Numeración de ternas]].
++ 14 [[./src/Ordenacion_de_estructuras.hs][Ordenación de estructuras]].
 + 15 [[./src/Emparejamiento_binario.hs][Emparejamiento binario]].
 + 16 [[./src/Amplia_columnas.hs][Amplia columnas]].
 + 19 [[./src/Regiones.hs][Regiones determinadas por n rectas del plano]].
