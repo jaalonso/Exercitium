@@ -1,11 +1,11 @@
 -- Emparejamiento_binario.hs
 -- Emparejamiento binario.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 21-marzo-2022
+-- Sevilla, 15-mayo-2014 (actualizado 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Ejercicio. Definir la función
+-- Definir la función
 --    zipBinario :: [a -> b -> c] -> [a] -> [b] -> [c]
 -- tal que (zipBinario fs xs ys) es la lista obtenida aplicando cada una
 -- de las operaciones binarias de fs a los correspondientes elementos de
@@ -24,54 +24,50 @@ import Test.QuickCheck.HigherOrder
 import Test.Hspec
 
 -- 1ª solución
+-- ===========
+
 zipBinario1 :: [a -> b -> c] -> [a] -> [b] -> [c]
 zipBinario1 (f:fs) (x:xs) (y:ys) = f x y : zipBinario1 fs xs ys
 zipBinario1 _ _ _                = []
 
 -- 2ª solución
+-- ===========
+
 zipBinario2 :: [a -> b -> c] -> [a] -> [b] -> [c]
 zipBinario2 fs xs ys = [f x y | (f,(x,y)) <- zip fs (zip xs ys)]
 
 -- 3ª solución
+-- ===========
+
 zipBinario3 :: [a -> b -> c] -> [a] -> [b] -> [c]
 zipBinario3 fs xs ys = [f x y | (f,x,y) <- zip3 fs xs ys]
 
 -- 4ª solución
+-- ===========
+
 zipBinario4 :: [a -> b -> c] -> [a] -> [b] -> [c]
 zipBinario4 = zipWith3 id
 
 -- Verificación
 -- ============
 
-especificacion :: ([Int -> Int -> Int] -> [Int] -> [Int] -> [Int]) -> Spec
-especificacion zipBinario = do
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int -> Int -> Int] -> [Int] -> [Int] -> [Int]) -> Spec
+specG zipBinario = do
   it "e1" $ zipBinario [(+), (*), (*)] [2,2,2] [4,4,4]    `shouldBe` [6,8,8]
   it "e2" $ zipBinario [(+)] [2,2,2] [4,4,4]              `shouldBe` [6]
 
-verifica :: IO ()
-verifica = hspec $ do
-  describe "zipBinario1" $ especificacion zipBinario1
-  describe "zipBinario2" $ especificacion zipBinario2
-  describe "zipBinario3" $ especificacion zipBinario3
-  describe "zipBinario4" $ especificacion zipBinario4
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG zipBinario1
+  describe "def. 2" $ specG zipBinario2
+  describe "def. 3" $ specG zipBinario3
+  describe "def. 4" $ specG zipBinario4
 
 -- La verificación es
 --    λ> verifica
---
---    zipBinario1
---      e1
---      e2
---    zipBinario2
---      e1
---      e2
---    zipBinario3
---      e1
---      e2
---    zipBinario4
---      e1
---      e2
---
---    Finished in 0.0016 seconds
 --    8 examples, 0 failures
 
 -- Comprobación de equivalencia
