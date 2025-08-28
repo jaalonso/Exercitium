@@ -1,7 +1,7 @@
 -- Mayor_producto_de_las_ramas_de_un_arbol.hs
 -- Mayor producto de las ramas de un árbol.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 28-marzo-2022
+-- Sevilla, 22-Mayo.2014 (actualizado 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -41,6 +41,7 @@
 
 module Mayor_producto_de_las_ramas_de_un_arbol where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 data Arbol a = N a [Arbol a]
@@ -122,6 +123,42 @@ mayorProducto6 = maximum . aux
           where u = maximum g
                 v = minimum g
                 g = map (*a) (concatMap aux b)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Arbol Integer -> Integer) -> Spec
+specG mayorProducto = do
+  it "e1" $
+    mayorProducto (N 1 [N 2 [], N  3 []]) `shouldBe`3
+  it "e2" $
+    mayorProducto (N 1 [N 8 [], N  4 [N 3 []]]) `shouldBe`12
+  it "e3" $
+    mayorProducto (N 1 [N 2 [],N 3 [N 4 []]]) `shouldBe`12
+  it "e4" $
+    mayorProducto (N 3 [N 5 [N 6 []], N 4 [], N 7 [N 2 [], N 1 []]])
+    `shouldBe` 90
+  it "e5" $
+    mayorProducto (N (-8) [N 0 [N (-9) []],N 6 []]) `shouldBe` 0
+  it "e6" $ do
+    let a = N (-4) [N (-7) [],N 14 [N 19 []],N (-1) [N (-6) [],N 21 []],N (-4) []]
+    mayorProducto a `shouldBe` 84
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG mayorProducto1
+  describe "def. 2" $ specG mayorProducto2
+  describe "def. 3" $ specG mayorProducto3
+  describe "def. 4" $ specG mayorProducto4
+  describe "def. 5" $ specG mayorProducto5
+  describe "def. 6" $ specG mayorProducto6
+
+-- La verificación es
+--    λ> verifica
+--    36 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
