@@ -1,7 +1,7 @@
 -- Trenzado_de_listas.hs
 -- Trenzado de listas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 4-abril-2022
+-- Sevilla, 26-Mayo-2014 (actualizado 28-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -19,6 +19,7 @@
 
 module Trenzado_de_listas where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
@@ -88,6 +89,35 @@ prop_composicion x y =
 
 trenza5 :: [a] -> [a] -> [a]
 trenza5 = (concat .) . zipWith par
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> [Int] -> [Int]) -> Spec
+specG trenza = do
+  it "e1" $
+    trenza [5,1] [2,7,4]             `shouldBe`  [5,2,1,7]
+  it "e2" $
+    trenza [5,1,7] [2..]             `shouldBe`  [5,2,1,3,7,4]
+  it "e3" $
+    trenza [2..] [5,1,7]             `shouldBe`  [2,5,3,1,4,7]
+  it "e4" $
+    take 8 (trenza [2,4..] [1,5..])  `shouldBe`  [2,1,4,5,6,9,8,13]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG trenza1
+  describe "def. 2" $ specG trenza2
+  describe "def. 3" $ specG trenza3
+  describe "def. 4" $ specG trenza4
+  describe "def. 4" $ specG trenza5
+
+-- La verificación es
+--    λ> verifica
+--    20 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
