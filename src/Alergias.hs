@@ -1,7 +1,7 @@
 -- Alergias.hs
 -- Código de las alergias.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 11-abril-2022
+-- Sevilla, 3-Junio-2014 (actualizado 29-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -48,6 +48,7 @@
 module Alergias where
 
 import Data.List (subsequences)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 data Alergeno =
@@ -151,6 +152,42 @@ alergias6 = aux alergenos
 --    take 3 alergenos  ==  [Huevos,Cacahuetes,Mariscos]
 alergenos :: [Alergeno]
 alergenos = [minBound..maxBound]
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Int -> [Alergeno]) -> Spec
+specG alergias = do
+  it "e1" $
+    alergias 1
+    `shouldBe` [Huevos]
+  it "e2" $
+    alergias 2
+    `shouldBe` [Cacahuetes]
+  it "e3" $
+    alergias 3
+    `shouldBe` [Huevos,Cacahuetes]
+  it "e4" $
+    alergias 5
+    `shouldBe` [Huevos,Mariscos]
+  it "e5" $
+    alergias 255
+    `shouldBe` [Huevos,Cacahuetes,Mariscos,Fresas,Tomates,Chocolate,Polen,Gatos]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG alergias1
+  describe "def. 2" $ specG alergias2
+  describe "def. 3" $ specG alergias3
+  describe "def. 4" $ specG alergias4
+  describe "def. 5" $ specG alergias5
+
+-- La verificación es
+--    λ> verifica
+--    25 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
