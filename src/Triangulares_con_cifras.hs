@@ -1,7 +1,7 @@
 -- Triangulares_con_cifras.hs
 -- Números triangulares con n cifras distintas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 1-mayo-2024
+-- Sevilla, 27-Mayo-2014 (actualozado 29-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
