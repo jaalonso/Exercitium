@@ -1,7 +1,7 @@
 -- PimPamPum.hs
 -- Pim, Pam, Pum y divisibilidad.
 -- José A. Alonso Jiménez <jalonso@us.es>
--- Sevilla, 2-junio-2014
+-- Sevilla, 2-Junio-2014 (actualizado 29-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
