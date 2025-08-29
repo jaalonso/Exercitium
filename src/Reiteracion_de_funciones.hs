@@ -1,7 +1,7 @@
 -- Reiteracion_de_funciones.hs
 -- Reiteración de una función.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 8-abril-2022
+-- Sevilla, 30-Mayo-2014 (actualizado 29-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -19,6 +19,7 @@
 
 module Reiteracion_de_funciones where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (Fun (..), Positive (..), quickCheck)
 
 -- 1ª solución
@@ -76,6 +77,34 @@ reiteracion5 f n x = iterate f x !! n
 
 reiteracion6 :: (a -> a) -> Int -> a -> a
 reiteracion6 = flip . ((!!) .) . iterate
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ((Int -> Int) -> Int -> Int -> Int) -> Spec
+specG reiteracion = do
+  it "e1" $
+    reiteracion (+1) 10 5  `shouldBe`  15
+  it "e2" $
+    reiteracion (+5) 10 0  `shouldBe`  50
+  it "e3" $
+    reiteracion (*2)  4 1  `shouldBe`  16
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG reiteracion1
+  describe "def. 2" $ specG reiteracion2
+  describe "def. 3" $ specG reiteracion3
+  describe "def. 4" $ specG reiteracion4
+  describe "def. 5" $ specG reiteracion5
+  describe "def. 6" $ specG reiteracion6
+
+-- La verificación es
+--    λ> verifica
+--    18 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
