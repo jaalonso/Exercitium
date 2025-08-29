@@ -1,7 +1,7 @@
 -- Enumera_arbol.hs
 -- Enumeración de árboles binarios.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 6-abril-2022
+-- Sevilla, 28-Mayo-2014 (actualizado 29-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -44,8 +44,9 @@
 
 module Enumera_arbol where
 
-import Test.QuickCheck (Arbitrary, Gen, arbitrary, quickCheck, sized)
 import Control.Monad.State (State, evalState, get, modify)
+import Test.QuickCheck (Arbitrary, Gen, arbitrary, quickCheck, sized)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 data Arbol a = H a
              | N (Arbol a) a (Arbol a)
@@ -107,6 +108,29 @@ enumeraArbol4 a = evalState (traverse enumeraNodo4 a) 0
       n <- get
       modify succ
       return n
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Arbol String -> Arbol Int) -> Spec
+specG enumeraArbol = do
+  it "e1" $
+    enumeraArbol ej1
+    `shouldBe` N (N (H 0) 1 (H 2)) 3 (N (H 4) 5 (H 6))
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG enumeraArbol1
+  describe "def. 2" $ specG enumeraArbol2
+  describe "def. 3" $ specG enumeraArbol3
+  describe "def. 4" $ specG enumeraArbol4
+
+-- La verificación es
+--    λ> verifica
+--    4 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
