@@ -1,7 +1,7 @@
 -- Indices_verdaderos.hs
 -- Índices de valores verdaderos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 12-abril-2022
+-- Sevilla, 4-Junio-2014 (actualizado 29-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -27,6 +27,7 @@
 module Indices_verdaderos where
 
 import Data.List.Ordered (member)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
@@ -87,6 +88,40 @@ pertenece2 x = aux
 
 indicesVerdaderos6 :: [Int] -> [Bool]
 indicesVerdaderos6 xs = map (`member` xs) [0..]
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> [Bool]) -> Spec
+specG indicesVerdaderos = do
+  it "e1" $
+    take 6 (indicesVerdaderos [1,4])
+    `shouldBe` [False,True,False,False,True,False]
+  it "e2" $
+    take 6 (indicesVerdaderos [0,2..])
+    `shouldBe` [True,False,True,False,True,False]
+  it "e3" $
+    take 3 (indicesVerdaderos [])
+    `shouldBe` [False,False,False]
+  it "e4" $
+    take 6 (indicesVerdaderos [1..])
+    `shouldBe` [False,True,True,True,True,True]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG indicesVerdaderos1
+  describe "def. 2" $ specG indicesVerdaderos2
+  describe "def. 3" $ specG indicesVerdaderos3
+  describe "def. 4" $ specG indicesVerdaderos4
+  describe "def. 5" $ specG indicesVerdaderos5
+  describe "def. 6" $ specG indicesVerdaderos6
+
+-- La verificación es
+--    λ> verifica
+--    24 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
