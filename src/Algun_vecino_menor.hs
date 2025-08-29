@@ -1,7 +1,7 @@
 -- Algun_vecino_menor.hs
 -- Elementos de una matriz con algún vecino menor
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 7-abril-2022
+-- Sevilla, 29-Mayo-2014 (actualizado 29-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -34,6 +34,7 @@
 module Algun_vecino_menor where
 
 import Data.Array (Array, (!), bounds, indices, inRange, listArray)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (Arbitrary, Gen, arbitrary, chooseInt, quickCheck,
                         vectorOf)
 
@@ -143,7 +144,28 @@ algunoMenor5 a =
       [(i+1,j+1) | i < m, j < n]
       where (_,(m,n)) = bounds a
 
--- ---------------------------------------------------------------------
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Matriz -> [Int]) -> Spec
+specG algunoMenor = do
+  it "e1" $
+    algunoMenor ej `shouldBe` [9,4,6,5,8,7,4,2,5,4]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG algunoMenor1
+  describe "def. 2" $ specG algunoMenor2
+  describe "def. 3" $ specG algunoMenor3
+  describe "def. 4" $ specG algunoMenor4
+  describe "def. 5" $ specG algunoMenor5
+
+-- La verificación es
+--    λ> verifica
+--    5 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
