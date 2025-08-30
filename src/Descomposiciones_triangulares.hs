@@ -39,8 +39,8 @@
 --    [(1,6,45),(1,15,36),(3,21,28),(6,10,36),(10,21,21)]
 --    λ> descomposicionesTriangulares 82
 --    [(1,3,78),(1,15,66),(1,36,45),(6,10,66),(6,21,55),(10,36,36)]
---    λ> length (descomposicionesTriangulares (5*10^5))
---    124
+--    λ> length (descomposicionesTriangulares (5*10^6))
+--    390
 -- ---------------------------------------------------------------------
 
 module Descomposiciones_triangulares where
