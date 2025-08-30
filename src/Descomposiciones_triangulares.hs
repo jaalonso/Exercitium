@@ -1,7 +1,7 @@
 -- Descomposiciones_triangulares.hs
--- Descomposiciones triangulares
+-- Descomposiciones triangulares.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 29-mayo-2024
+-- Sevilla, 5-Junio-2014 (actualizado 30-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -45,6 +45,7 @@
 
 module Descomposiciones_triangulares where
 
+import Data.Set
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
@@ -103,6 +104,20 @@ descomposicionesTriangulares4 n =
                  z `elem` xs]
   where xs = takeWhile (<=n) triangulares
 
+-- 5ª solución
+-- ===========
+
+descomposicionesTriangulares5 :: Int -> [(Int, Int, Int)]
+descomposicionesTriangulares5 n =
+  [(x,y,z) | x <- xs,
+             y <- dropWhile (<x) xs,
+             let z = n - x - y,
+             y <= z,
+             z `member` ys]
+  where
+    xs = takeWhile (<=n) triangulares
+    ys = fromList xs
+
 -- Verificación
 -- ============
 
@@ -139,6 +154,7 @@ spec = do
   describe "def. 2" $ specG descomposicionesTriangulares2
   describe "def. 3" $ specG descomposicionesTriangulares3
   describe "def. 4" $ specG descomposicionesTriangulares4
+  describe "def. 5" $ specG descomposicionesTriangulares5
 
 -- La verificación es
 --    λ> verifica
@@ -153,7 +169,8 @@ prop_descomposicionesTriangulares_equiv (Positive n) =
   all (== descomposicionesTriangulares1 n)
       [descomposicionesTriangulares2 n,
        descomposicionesTriangulares3 n,
-       descomposicionesTriangulares4 n]
+       descomposicionesTriangulares4 n,
+       descomposicionesTriangulares5 n]
 
 -- La comprobación es
 --    λ> quickCheck prop_descomposicionesTriangulares_equiv
@@ -179,3 +196,6 @@ prop_descomposicionesTriangulares_equiv (Positive n) =
 --   λ> last (descomposicionesTriangulares4 (5*10^5))
 --   (140185,148240,211575)
 --   (2.30 secs, 103,280,216 bytes)
+--   λ> last (descomposicionesTriangulares5 (5*10^5))
+--   (140185,148240,211575)
+--   (0.30 secs, 103,508,368 bytes)
