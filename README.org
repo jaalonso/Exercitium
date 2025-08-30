@@ -60,6 +60,7 @@ Los objetivos de esta recopilación son:
 + 05 [[./src/Descomposiciones_triangulares.hs][Descomposiciones triangulares]].
 + 06 [[./src/Numero_de_inversiones.hs][Número de inversiones]].
 + 09 [[./src/Separacion_por_posicion.hs][Separación por posición]].
++ 10 [[./src/Emparejamiento_de_arboles.hs][Emparejamiento de árboles]].
 + 11 [[./src/Elimina_aisladas.hs][Eliminación de las ocurrencias aisladas]].
 + 12 [[./src/Ordenada_ciclicamente.hs][Ordenada cíclicamente]].
 + 13 [[./src/Orbita_prima.hs][Órbita prima]].
