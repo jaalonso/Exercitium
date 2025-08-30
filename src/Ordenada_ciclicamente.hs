@@ -1,7 +1,7 @@
 -- Ordenada_ciclicamente.hs
 -- Ordenada cíclicamente.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 22-abril-2022
+-- Sevilla, 12-Junio-2014 (actualizado 30-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -30,10 +30,11 @@
 
 module Ordenada_ciclicamente where
 
-import Test.QuickCheck (Arbitrary, Gen, NonEmptyList (NonEmpty), Property,
-                        arbitrary, chooseInt, collect, quickCheck)
 import Data.List       (nub, sort)
 import Data.Maybe      (isJust, listToMaybe)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck (Arbitrary, Gen, NonEmptyList (NonEmpty), Property,
+                        arbitrary, chooseInt, collect, quickCheck)
 
 -- 1ª solución
 -- ===========
@@ -78,6 +79,35 @@ ordenadaCiclicamente3 xs
   | otherwise           = Nothing
   where (_,k)   = minimum (zip xs [0..])
         (as,bs) = splitAt k xs
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> Maybe Int) -> Spec
+specG ordenadaCiclicamente = do
+  it "e1" $
+    ordenadaCiclicamente [1,2,3,4]      `shouldBe`  Just 0
+  it "e2" $
+    ordenadaCiclicamente [5,8,1,3]      `shouldBe`  Just 2
+  it "e3" $
+    ordenadaCiclicamente [4,6,7,5,1,3]  `shouldBe`  Nothing
+  it "e4" $
+    ordenadaCiclicamente [1,0,3,2]      `shouldBe`  Nothing
+  it "e5" $
+    ordenadaCiclicamente [1,2,0]        `shouldBe`  Just 2
+
+spec :: Spec
+spec = do
+  describe "def. 1"  $ specG ordenadaCiclicamente1
+  describe "def. 2"  $ specG ordenadaCiclicamente2
+  describe "def. 3"  $ specG ordenadaCiclicamente3
+
+-- La verificación es
+--    λ> verifica
+--    15 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
