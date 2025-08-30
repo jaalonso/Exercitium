@@ -1,7 +1,7 @@
 -- Numero_de_inversiones.hs
 -- Número de inversiones.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 6-Junio-2014 (actualiado 30-Agosto-2025)
+-- Sevilla, 6-Junio-2014 (actualizado 30-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
