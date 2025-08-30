@@ -1,19 +1,21 @@
 -- Orbita_prima.hs
 -- Órbita prima.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 13-junio-2014
+-- Sevilla, 13-Junio-2014 (actualizado 30-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
 -- La órbita prima de un número n es la sucesión construida de la
 -- siguiente forma:
---    * si n es compuesto su órbita no tiene elementos
---    * si n es primo, entonces n está en su órbita; además, sumamos n y
---      sus dígitos, si el resultado es un número primo repetimos el
---      proceso hasta obtener un número compuesto.
+-- + si n es compuesto su órbita no tiene elementos
+-- + si n es primo, entonces n está en su órbita; además, sumamos n y
+--   sus dígitos, si el resultado es un número primo repetimos el
+--   proceso hasta obtener un número compuesto.
+--
 -- Por ejemplo, con el 11 podemos repetir el proceso dos veces
 --    13 = 11+1+1
 --    17 = 13+1+3
+--    25 = 17+1+7
 -- Así, la órbita prima de 11 es 11, 13, 17.
 --
 -- Definir la función
@@ -106,12 +108,15 @@ prop_orbita n =
 -- =========================
 
 -- La comparación es
+--    λ> orbita1 516493
+--    [516493,516521,516541,516563,516589,516623]
+--    (1.12 secs, 620,631,504 bytes)
 --    λ> orbita2 516493
 --    [516493,516521,516541,516563,516589,516623]
---    (1.14 secs, 620,631,072 bytes)
+--    (1.08 secs, 620,631,112 bytes)
 --    λ> orbita3 516493
 --    [516493,516521,516541,516563,516589,516623]
---    (0.01 secs, 2,340,984 bytes)
+--    (0.01 secs, 2,340,960 bytes)
 
 -- Cálculo
 -- =======
