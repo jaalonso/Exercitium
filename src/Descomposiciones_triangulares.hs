@@ -45,7 +45,7 @@
 
 module Descomposiciones_triangulares where
 
-import Data.Set
+import Data.Set (fromList, member)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
