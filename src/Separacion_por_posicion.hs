@@ -1,7 +1,7 @@
 -- Separacion_por_posicion.hs
 -- Separación por posición.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 15-abril-2022
+-- Sevilla, 8-Junio-2014 (actualizado 30-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -20,7 +20,9 @@
 module Separacion_por_posicion where
 
 import Data.List (partition)
+import Control.Arrow ((***))
 import qualified Data.Vector as V ((!), fromList, length)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
@@ -108,6 +110,50 @@ particion8 xs =
 posicionPar :: (Int,a) -> Bool
 posicionPar = even . fst
 
+-- 9ª solución
+-- ===========
+
+particion9 :: [a] -> ([a], [a])
+particion9 xs =
+  ([x | (x, b) <- zip xs (cycle [True, False]), b]
+  ,[x | (x, b) <- zip xs (cycle [True, False]), not b])
+
+-- 10ª solución
+-- ============
+
+particion10 :: [a] -> ([a], [a])
+particion10 = (map snd *** map snd) . partition (even . fst) . zip [0..]
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> ([Int], [Int])) -> Spec
+specG particion = do
+  it "e1" $
+    particion [3,5,6,2]    `shouldBe`  ([3,6],[5,2])
+  it "e2" $
+    particion [3,5,6,2,7]  `shouldBe`  ([3,6,7],[5,2])
+
+spec :: Spec
+spec = do
+  describe "def. 1"  $ specG particion1
+  describe "def. 2"  $ specG particion2
+  describe "def. 3"  $ specG particion3
+  describe "def. 4"  $ specG particion4
+  describe "def. 5"  $ specG particion5
+  describe "def. 6"  $ specG particion6
+  describe "def. 7"  $ specG particion7
+  describe "def. 8"  $ specG particion8
+  describe "def. 9"  $ specG particion9
+  describe "def. 10" $ specG particion10
+
+-- La verificación es
+--    λ> verifica
+--    20 examples, 0 failures
+
 -- Comprobación de equivalencia
 -- ============================
 
@@ -121,7 +167,9 @@ prop_particion xs =
        particion5 xs,
        particion6 xs,
        particion7 xs,
-       particion8 xs]
+       particion8 xs,
+       particion9 xs,
+       particion10 xs]
 
 -- La comprobación es
 --    λ> quickCheck prop_particion
@@ -158,6 +206,12 @@ prop_particion xs =
 --    λ> last (snd (particion8 [1..6*10^6]))
 --    6000000
 --    (0.87 secs, 3,384,516,616 bytes)
+--    λ> last (snd (particion9 [1..6*10^6]))
+--    6000000
+--    (1.68 secs, 1,368,602,104 bytes)
+--    λ> last (snd (particion10 [1..6*10^6]))
+--    6000000
+--    (1.83 secs, 3,192,595,776 bytes)
 --
 --    λ> last (snd (particion5 [1..10^7]))
 --    10000000
@@ -168,3 +222,9 @@ prop_particion xs =
 --    λ> last (snd (particion8 [1..10^7]))
 --    10000000
 --    (1.33 secs, 5,640,516,960 bytes)
+--    λ> last (snd (particion9 [1..10^7]))
+--    10000000
+--    (2.66 secs, 2,280,602,872 bytes)
+--    λ> last (snd (particion10 [1..10^7]))
+--    10000000
+--    (1.77 secs, 4,888,602,592 bytes)
