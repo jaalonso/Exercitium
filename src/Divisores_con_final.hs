@@ -1,7 +1,7 @@
 -- Divisores_con_final.hs
 -- Divisores de un número con final dado.
 -- José A. Alonso Jiménez <jalonso@us.es>
--- Sevilla, 16 de Junio de 2014
+-- Sevilla, 16-Junio-2014 (actualizado 30-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -143,7 +143,7 @@ spec = do
 
 -- La verificación es
 --    λ> verifica
---    12examples, 0 failures
+--    12 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -194,9 +194,3 @@ prop_divisoresConFinal (Positive n) (Positive m) =
 --    λ> divisoresConFinal6 (product [1..25]) 985984000000
 --    [2985984000000,95096985984000000,15511210043330985984000000]
 --    (1.19 secs, 1,603,329,840 bytes)
-
--- Referencia                                                       --
--- ==========
-
--- Basado en el problema 474 del proyecto Euler que se encuentra
--- en https://projecteuler.net/problem=474
