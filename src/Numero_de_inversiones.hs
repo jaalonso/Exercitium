@@ -1,7 +1,7 @@
 -- Numero_de_inversiones.hs
 -- Número de inversiones.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 14-abril-2022
+-- Sevilla, 6-Junio-2014 (actualiado 30-Agosto-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -25,6 +25,7 @@
 module Numero_de_inversiones where
 
 import Test.QuickCheck (quickCheck)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Data.Array ((!), listArray)
 
 -- 1ª solución
@@ -76,6 +77,57 @@ numeroInversiones4 :: Ord a => [a] -> Int
 numeroInversiones4 []     = 0
 numeroInversiones4 (x:xs) = length (filter (x>) xs) + numeroInversiones4 xs
 
+-- 5ª solución
+-- ===========
+
+numeroInversiones5 :: Ord a => [a] -> Int
+numeroInversiones5 xs = snd (ordenadaConInversiones xs)
+
+ordenadaConInversiones :: Ord a => [a] -> ([a], Int)
+ordenadaConInversiones []  = ([], 0)
+ordenadaConInversiones [x] = ([x], 0)
+ordenadaConInversiones xs  =
+  (mezcla, izqInversiones + dchaInversiones + mezclaInversiones)
+  where
+  (izq, dcha) = splitAt (length xs `div` 2) xs
+  (izqOrdenada, izqInversiones)  = ordenadaConInversiones izq
+  (dchaOrdenada, dchaInversiones) = ordenadaConInversiones dcha
+  (mezcla, mezclaInversiones) = mezclaYcuenta izqOrdenada dchaOrdenada
+
+mezclaYcuenta :: Ord a => [a] -> [a] -> ([a], Int)
+mezclaYcuenta [] ys = (ys, 0)
+mezclaYcuenta xs [] = (xs, 0)
+mezclaYcuenta (x:xs) (y:ys)
+  | x <= y = let (zs, n) = mezclaYcuenta xs (y:ys) in
+      (x : zs, n)
+  | otherwise = let (zs, n) = mezclaYcuenta (x:xs) ys in
+      (y : zs, length xs + n + 1)
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([Int] -> Int) -> Spec
+specG numeroInversiones = do
+  it "e1" $
+    numeroInversiones [2,1,4,3]  `shouldBe`  2
+  it "e2" $
+    numeroInversiones [4,3,1,2]  `shouldBe`  5
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG numeroInversiones1
+  describe "def. 2" $ specG numeroInversiones2
+  describe "def. 3" $ specG numeroInversiones3
+  describe "def. 4" $ specG numeroInversiones4
+  describe "def. 5" $ specG numeroInversiones5
+
+-- La verificación es
+--    λ> verifica
+--    10 examples, 0 failures
+
 -- Comprobación de equivalencia
 -- ============================
 
@@ -85,7 +137,8 @@ prop_numeroInversiones xs =
   all (== numeroInversiones1 xs)
       [numeroInversiones2 xs,
        numeroInversiones3 xs,
-       numeroInversiones4 xs]
+       numeroInversiones4 xs,
+       numeroInversiones5 xs]
 
 -- La comprobación es
 --    λ> quickCheck prop_numeroInversiones
@@ -97,20 +150,25 @@ prop_numeroInversiones xs =
 -- La comparación es
 --    λ> numeroInversiones1 [1200,1199..1]
 --    719400
---    (2.30 secs, 236,976,776 bytes)
+--    (2.15 secs, 260,102,328 bytes)
 --    λ> numeroInversiones2 [1200,1199..1]
 --    719400
---    (0.61 secs, 294,538,488 bytes)
+--    (0.36 secs, 294,624,048 bytes)
 --    λ> numeroInversiones3 [1200,1199..1]
 --    719400
---    (0.26 secs, 150,543,056 bytes)
+--    (0.21 secs, 150,647,848 bytes)
 --    λ> numeroInversiones4 [1200,1199..1]
 --    719400
---    (0.10 secs, 41,274,888 bytes)
---
+--    (0.06 secs, 41,504,368 bytes)
+--    λ> numeroInversiones5 [1200,1199..1]
+--    719400
+--    (0.06 secs, 6,825,296 bytes)
 --    λ> numeroInversiones3 [3000,2999..1]
 --    4498500
---    (1.35 secs, 937,186,992 bytes)
+--    (1.03 secs, 937,320,624 bytes)
 --    λ> numeroInversiones4 [3000,2999..1]
 --    4498500
---    (0.61 secs, 253,665,928 bytes)
+--    (0.40 secs, 254,111,416 bytes)
+--    λ> numeroInversiones5 [3000,2999..1]
+--    4498500
+--    (0.09 secs, 17,593,416 bytes)
