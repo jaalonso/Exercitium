@@ -92,6 +92,7 @@ library
       ContenidaPila
       Cuadrado_mas_cercano
       Densidad_de_numeros_abundantes
+      Descomposiciones_con_n_sumandos
       Descomposiciones_con_sumandos_1_o_2
       Descomposiciones_triangulares
       Diagonales_principales
@@ -558,6 +559,7 @@ test-suite Exercitium-test
       ContenidaPila_Spec
       Cuadrado_mas_cercano_Spec
       Densidad_de_numeros_abundantes_Spec
+      Descomposiciones_con_n_sumandos_Spec
       Descomposiciones_con_sumandos_1_o_2_Spec
       Descomposiciones_triangulares_Spec
       Diagonales_principales_Spec
