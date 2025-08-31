@@ -1,7 +1,7 @@
 -- Seleccion_con_fallo.hs
 -- Selección hasta el primero que falla inclusive.
 -- José A. Alonso <https://jaalonso.github.io>
--- Sevilla, 18-junio-2014
+-- Sevilla, 18-Junio-2014 (actualizado 31-Agosto-2014)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -16,9 +16,12 @@
 --    seleccionConFallo (<5) [10..20]       ==  [10]
 -- ---------------------------------------------------------------------
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+
 module Seleccion_con_fallo where
 
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck.HigherOrder (quickCheck')
 
 -- 1ª solución
 -- ===========
@@ -76,3 +79,31 @@ spec = do
 -- La verificación es
 --    λ> verifica
 --    12 examples, 0 failures
+
+-- Comprobación de equivalencia
+-- ============================
+
+-- La propiedad es
+prop_seleccionConFallo :: (Int -> Bool) -> [Int] -> Bool
+prop_seleccionConFallo p xs =
+  all (== seleccionConFallo1 p xs)
+      [seleccionConFallo2 p xs,
+       seleccionConFallo3 p xs]
+
+-- La comprobación es
+--    λ> quickCheck' prop_seleccionConFallo
+--    +++ OK, passed 100 tests.
+
+-- Comparación de eficiencia
+-- =========================
+
+-- La comparación es
+--    λ> length (seleccionConFallo1 (<5*10^6) [1..])
+--    5000000
+--    (1.92 secs, 1,240,601,360 bytes)
+--    λ> length (seleccionConFallo2 (<5*10^6) [1..])
+--    5000000
+--    (1.36 secs, 1,280,601,504 bytes)
+--    λ> length (seleccionConFallo3 (<5*10^6) [1..])
+--    5000000
+--    (1.17 secs, 1,280,601,544 bytes)
