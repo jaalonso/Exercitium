@@ -66,7 +66,7 @@
 module Buscaminas where
 
 import Data.List (foldl')
-import Data.Matrix
+import Data.Matrix (Matrix, (!), fromLists, matrix, mapPos, nrows, ncols, toLists)
 import Control.Monad (replicateM)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
