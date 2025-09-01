@@ -213,6 +213,7 @@ library
       Mayor_producto_de_las_ramas_de_un_arbol
       Mayor_rectangulo
       Mayor_semiprimo_menor_que_n
+      Mayor_sucesion_3n_mas_1
       Mayuscula_inicial
       Mayusculas_iniciales
       Media_aritmetica_de_tres_numeros
@@ -671,6 +672,7 @@ test-suite Exercitium-test
       Mayor_producto_de_las_ramas_de_un_arbol_Spec
       Mayor_rectangulo_Spec
       Mayor_semiprimo_menor_que_n_Spec
+      Mayor_sucesion_3n_mas_1_Spec
       Mayuscula_inicial_Spec
       Mayusculas_iniciales_Spec
       Media_aritmetica_de_tres_numeros_Spec
