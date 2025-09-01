@@ -69,7 +69,7 @@ Los objetivos de esta recopilación son:
 + 18 [[./src/Seleccion_con_fallo.hs][Selección hasta el primero que falla inclusive]].
 + 19 [[./src/Buscaminas.hs][Buscaminas]].
 + 20 [[./src/Mayor_sucesion_3n_mas_1.hs][Mayor sucesión del problema 3n+1]].
-+ 23 Filtro booleano
++ 23 [[./src/Filtro_booleano.hs][Filtro booleano]].
 + 24 Entero positivo de la cadena
 + 25 N gramas
 + 26 Sopa de letras
