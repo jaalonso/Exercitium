@@ -88,7 +88,6 @@ spec = do
 --    λ> verifica
 --    12 examples, 0 failures
 
-
 -- Equivalencia de las definiciones
 -- ================================
 
