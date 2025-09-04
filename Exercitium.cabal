@@ -226,6 +226,7 @@ library
       Metodo_de_Newton_para_calcular_raices
       Minimo_producto_escalar
       Movimientos_en_el_plano
+      N_gramas
       NubPila
       Numeracion_con_multiples_base
       Numeracion_de_ternas
@@ -686,6 +687,7 @@ test-suite Exercitium-test
       Metodo_de_Heron_para_calcular_la_raiz_cuadrada_Spec
       Metodo_de_Newton_para_calcular_raices_Spec
       Minimo_producto_escalar_Spec
+      N_gramas_Spec
       NubPila_Spec
       Numeracion_con_multiples_base_Spec
       Numeracion_de_ternas_Spec
