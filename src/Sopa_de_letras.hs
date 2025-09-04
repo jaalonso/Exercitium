@@ -34,8 +34,8 @@
 
 module Sopa_de_letras where
 
-import Data.Array
-import Data.List
+import Data.Array (Array, (!), bounds, listArray)
+import Data.List (isInfixOf, transpose)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
