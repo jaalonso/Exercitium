@@ -102,6 +102,7 @@ spec = do
 -- Equivalencia de las definiciones
 -- ================================
 
+-- La propiedad es
 prop_nGramas :: NonNegative Int -> [Int] -> Bool
 prop_nGramas (NonNegative k) xs =
   all (== nGramas1 k xs)

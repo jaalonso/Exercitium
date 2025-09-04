@@ -72,7 +72,7 @@ Los objetivos de esta recopilación son:
 + 23 [[./src/Filtro_booleano.hs][Filtro booleano]].
 + 24 [[./src/Entero_positivo_de_la_cadena.hs][Entero positivo de la cadena]].
 + 25 [[./src/N_gramas.hs][N gramas]].
-+ 26 Sopa de letras
++ 26 [[./src/Sopa_de_letras.hs][Sopa de letras]].
 + 27 Intercalación de n copias
 + 30 Eliminación de n elementos
 

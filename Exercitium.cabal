@@ -357,6 +357,7 @@ library
       Seleccion_con_fallo
       Separacion_por_posicion
       Sistema_factoradico_de_numeracion
+      Sopa_de_letras
       Subarbol_de_profundidad_dada
       SubCola
       Subconjuntos_de_un_conjunto
@@ -818,6 +819,7 @@ test-suite Exercitium-test
       Seleccion_con_fallo_Spec
       Separacion_por_posicion_Spec
       Sistema_factoradico_de_numeracion_Spec
+      Sopa_de_letras_Spec
       Subarbol_de_profundidad_dada_Spec
       SubCola_Spec
       Subconjuntos_de_un_conjunto_Spec
