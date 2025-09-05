@@ -126,6 +126,7 @@ library
       Elementos_minimales
       ElementosMinimales
       Elimina_aisladas
+      Elimina_n_elementos
       Emparejamiento_binario
       Emparejamiento_de_arboles
       Emparejamiento_de_arboles_1
@@ -597,6 +598,7 @@ test-suite Exercitium-test
       Elementos_minimales_Spec
       ElementosMinimales_Spec
       Elimina_aisladas_Spec
+      Elimina_n_elementos_Spec
       Emparejamiento_binario_Spec
       Emparejamiento_de_arboles_Spec
       Entero_positivo_de_la_cadena_Spec
