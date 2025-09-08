@@ -130,6 +130,7 @@ library
       Emparejamiento_binario
       Emparejamiento_de_arboles
       Emparejamiento_de_arboles_1
+      Empiezan_con_mayuscula
       Entero_positivo_de_la_cadena
       Enumera_arbol
       Escalada_Monedas
@@ -601,6 +602,7 @@ test-suite Exercitium-test
       Elimina_n_elementos_Spec
       Emparejamiento_binario_Spec
       Emparejamiento_de_arboles_Spec
+      Empiezan_con_mayuscula_Spec
       Entero_positivo_de_la_cadena_Spec
       Enumera_arbol_Spec
       Escalada_Monedas_Spec

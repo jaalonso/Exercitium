@@ -78,7 +78,7 @@ Los objetivos de esta recopilación son:
 
 *** Julio 2014
 + 01 [[./src/Limites_de_sucesiones.hs][Límite de sucesiones]].
-+ 02 Empiezan con mayúscula
++ 02 [[./src/Empiezan_con_mayuscula.hs][Empiezan con mayúscula]].
 + 03 Renombramiento de un árbol
 + 04 Divide si todos son múltiplos
 + 07 Ventana deslizante
