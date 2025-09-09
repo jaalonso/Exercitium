@@ -103,6 +103,7 @@ library
       Distancia_entre_dos_puntos
       Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario
       Disyuncion_excluyente
+      Divide_si_todos_multiplos
       DivideVenceras
       Division_segura
       Divisores_con_final
@@ -578,6 +579,7 @@ test-suite Exercitium-test
       Digitos_de_un_numero_Spec
       Distancia_entre_dos_puntos_Spec
       Disyuncion_excluyente_Spec
+      Divide_si_todos_multiplos_Spec
       Division_segura_Spec
       Divisores_con_final_Spec
       Divisores_de_un_numero_Spec
