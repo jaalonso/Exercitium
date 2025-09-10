@@ -466,6 +466,7 @@ library
       Valor_de_una_expresion_vectorial
       Valor_de_una_formula
       Variables_de_una_formula
+      Ventana_deslizante
       Volumen_de_la_esfera
   other-modules:
       Paths_Exercitium
@@ -904,6 +905,7 @@ test-suite Exercitium-test
       Valor_de_una_expresion_aritmetica_con_variables_Spec
       Valor_de_una_expresion_aritmetica_Spec
       Valor_de_una_expresion_vectorial_Spec
+      Ventana_deslizante_Spec
       Volumen_de_la_esfera_Spec
       Paths_Exercitium
   hs-source-dirs:
