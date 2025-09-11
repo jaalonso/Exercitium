@@ -1,7 +1,7 @@
 -- Representacion_de_Zeckendorf.hs
 -- Representación de Zeckendorf.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 4-junio-2024
+-- Sevilla, 8-Julio-2014 (actualizado 11-Septiembre-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

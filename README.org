@@ -82,7 +82,7 @@ Los objetivos de esta recopilación son:
 + 03 [[./src/Renombra_arbol.hs][Renombramiento de un árbol]].
 + 04 [[./src/Divide_si_todos_multiplos.hs][Divide si todos son múltiplos]].
 + 07 [[./src/Ventana_deslizante.hs][Ventana deslizante]].
-+ 08 Representación de Zeckendorf
++ 08 [[./src/Representacion_de_Zeckendorf.hs][Representación de Zeckendorf]].
 + 09 Elemento más cercano que cumple una propiedad
 + 10 Código Morse
 + 11 Producto cartesiano de una familia de conjuntos
