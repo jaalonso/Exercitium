@@ -202,6 +202,7 @@ library
       LongitudCola
       Los_primeros_al_final
       MapPila
+      Mas_cercano_cumpliendo_la_propiedad
       Mas_repetido
       Mastermind
       Matriz_Toeplitz
@@ -671,6 +672,7 @@ test-suite Exercitium-test
       LongitudCola_Spec
       Los_primeros_al_final_Spec
       MapPila_Spec
+      Mas_cercano_cumpliendo_la_propiedad_Spec
       Mas_repetido_Spec
       Mastermind_Spec
       Matriz_Toeplitz_Spec
