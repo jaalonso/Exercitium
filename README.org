@@ -84,7 +84,7 @@ Los objetivos de esta recopilación son:
 + 07 [[./src/Ventana_deslizante.hs][Ventana deslizante]].
 + 08 [[./src/Representacion_de_Zeckendorf.hs][Representación de Zeckendorf]].
 + 09 [[exercitiumH:Mas_cercano_cumpliendo_la_propiedad.hs][Elemento más cercano que cumple una propiedad]].
-+ 10 Código Morse
++ 10 [[./src/Codigo_Morse.hs][Código Morse]].
 + 11 Producto cartesiano de una familia de conjuntos
 + 14 Todas tienen par
 + 15 Sucesiones pucelanas

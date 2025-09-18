@@ -82,6 +82,7 @@ library
       Clausura_transitiva_de_una_relacion_binaria
       Codificacion_de_Fibonacci
       Codificacion_de_Godel
+      Codigo_Morse
       Coeficientes_binomiales
       Composicion_de_relaciones_binarias
       Composicion_de_relaciones_binarias_v2
@@ -554,6 +555,7 @@ test-suite Exercitium-test
       Clausura_transitiva_Spec
       Codificacion_de_Fibonacci_Spec
       Codificacion_de_Godel_Spec
+      Codigo_Morse_Spec
       Coeficientes_binomiales_Spec
       ColaConDosListas_Spec
       ColaConListas_Spec
