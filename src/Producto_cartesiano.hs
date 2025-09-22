@@ -1,7 +1,7 @@
 -- Producto_cartesiano.hs
 -- Producto cartesiano de una familia de conjuntos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 27-abril-2022
+-- Sevilla, 11-Julio-2014 (actualizado 22-Septiembre-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -9,9 +9,9 @@
 --    producto :: [[a]] -> [[a]]
 -- tal que (producto xss) es el producto cartesiano de los conjuntos xss.
 -- Por ejemplo,
---    λ> producto1 [[2,5],[6,4]]
+--    λ> producto [[2,5],[6,4]]
 --    [[2,6],[2,4],[5,6],[5,4]]
---    λ> producto1 [[1,3],[2,5],[6,4]]
+--    λ> producto [[1,3],[2,5],[6,4]]
 --    [[1,2,6],[1,2,4],[1,5,6],[1,5,4],[3,2,6],[3,2,4],[3,5,6],[3,5,4]]
 --    λ> producto [[1,3,5],[2,4]]
 --    [[1,2],[1,4],[3,2],[3,4],[5,2],[5,4]]
@@ -28,9 +28,10 @@
 
 module Producto_cartesiano where
 
-import Test.QuickCheck (quickCheck)
 import Control.Monad (liftM2)
 import Control.Applicative (liftA2)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck (quickCheck)
 
 -- 1ª solución
 -- ===========
@@ -129,6 +130,42 @@ producto10 = foldr (liftM2 (:)) [[]]
 producto11 :: [[a]] -> [[a]]
 producto11 = sequence
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ([[Int]] -> [[Int]]) -> Spec
+specG producto = do
+  it "e1" $
+    producto [[1,3],[2,5]]
+    `shouldBe` [[1,2],[1,5],[3,2],[3,5]]
+  it "e2" $
+    producto [[1,3],[2,5],[6,4]]
+    `shouldBe` [[1,2,6],[1,2,4],[1,5,6],[1,5,4],[3,2,6],[3,2,4],[3,5,6],[3,5,4]]
+  it "e3" $
+    producto [[1,3,5],[2,4]]
+    `shouldBe` [[1,2],[1,4],[3,2],[3,4],[5,2],[5,4]]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG producto1
+  describe "def. 2" $ specG producto2
+  describe "def. 3" $ specG producto3
+  describe "def. 4" $ specG producto4
+  describe "def. 5" $ specG producto5
+  describe "def. 6" $ specG producto6
+  describe "def. 7" $ specG producto7
+  describe "def. 8" $ specG producto8
+  describe "def. 9" $ specG producto9
+  describe "def. 10" $ specG producto10
+  describe "def. 11" $ specG producto11
+
+-- La verificación es
+--    λ> verifica
+--    33 examples, 0 failures
+
 -- Comprobación de equivalencia
 -- ============================
 
@@ -158,44 +195,47 @@ prop_producto xss =
 -- La comparación es
 --    λ> length (producto1 (replicate 7 [0..9]))
 --    10000000
---    (10.51 secs, 10,169,418,496 bytes)
+--    (10.04 secs, 10,507,268,856 bytes)
 --    λ> length (producto2 (replicate 7 [0..9]))
 --    10000000
---    (2.14 secs, 1,333,870,712 bytes)
+--    (1.71 secs, 1,333,943,632 bytes)
 --    λ> length (producto3 (replicate 7 [0..9]))
 --    10000000
---    (3.33 secs, 1,956,102,056 bytes)
+--    (2.94 secs, 1,956,176,072 bytes)
 --    λ> length (producto4 (replicate 7 [0..9]))
 --    10000000
---    (0.98 secs, 1,600,542,752 bytes)
+--    (1.06 secs, 1,600,616,296 bytes)
 --    λ> length (producto5 (replicate 7 [0..9]))
 --    10000000
---    (2.10 secs, 1,333,870,288 bytes)
+--    (1.77 secs, 1,333,943,248 bytes)
 --    λ> length (producto6 (replicate 7 [0..9]))
 --    10000000
---    (1.17 secs, 1,600,534,632 bytes)
+--    (1.06 secs, 1,600,608,064 bytes)
 --    λ> length (producto7 (replicate 7 [0..9]))
 --    10000000
---    (0.35 secs, 1,600,534,352 bytes)
+--    (0.34 secs, 1,600,607,784 bytes)
 --    λ> length (producto8 (replicate 7 [0..9]))
 --    10000000
---    (0.87 secs, 978,317,848 bytes)
+--    (1.03 secs, 978,390,888 bytes)
 --    λ> length (producto9 (replicate 7 [0..9]))
 --    10000000
---    (1.38 secs, 1,067,201,016 bytes)
+--    (1.20 secs, 1,067,273,920 bytes)
 --    λ> length (producto10 (replicate 7 [0..9]))
 --    10000000
---    (0.54 secs, 2,311,645,392 bytes)
+--    (0.58 secs, 2,311,718,360 bytes)
 --    λ> length (producto11 (replicate 7 [0..9]))
 --    10000000
---    (1.32 secs, 1,067,200,992 bytes)
+--    (1.22 secs, 1,067,273,840 bytes)
 --
 --    λ> length (producto7 (replicate 7 [1..14]))
 --    105413504
---    (3.77 secs, 16,347,739,040 bytes)
+--    (3.71 secs, 16,347,812,624 bytes)
 --    λ> length (producto10 (replicate 7 [1..14]))
 --    105413504
---    (5.11 secs, 23,613,162,016 bytes)
+--    (5.12 secs, 23,613,234,792 bytes)
+--    λ> length (producto11 (replicate 7 [1..14]))
+--    105413504
+--    (17.83 secs, 10,898,744,528 bytes)
 
 -- Comprobación de la propiedad
 -- ============================
