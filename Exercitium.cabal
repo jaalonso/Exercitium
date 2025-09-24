@@ -441,6 +441,7 @@ library
       Ternas_pitagoricas_con_suma_dada
       Tipo_de_formulas
       Tipo_expresion_aritmetica
+      Todas_tienen_par
       Todos_los_abundantes_hasta_n_son_pares
       TodosVerifican
       Transformaciones_colas_listas
@@ -886,6 +887,7 @@ test-suite Exercitium-test
       Termino_ausente_en_una_progresion_aritmetica_Spec
       Ternas_pitagoricas_con_suma_dada_Spec
       Ternas_pitagoricas_Spec
+      Todas_tienen_par_Spec
       TodosVerifican_Spec
       Transformaciones_colas_listas_Spec
       Transformaciones_pilas_listas_Spec
