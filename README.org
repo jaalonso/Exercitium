@@ -87,7 +87,7 @@ Los objetivos de esta recopilación son:
 + 10 [[./src/Codigo_Morse.hs][Código Morse]].
 + 11 [[./src/Producto_cartesiano.hs][Producto cartesiano de una familia de conjuntos]].
 + 14 [[./src/Todas_tienen_par.hs][Todas tienen par]].
-+ 15 Sucesiones pucelanas
++ 15 [[./src/Sucesiones_pucelanas.hs][Sucesiones pucelanas]].
 + 16 Producto de matrices como listas de listas
 + 17 Inserción en árboles binarios de búsqueda
 + 18 Matriz permutación

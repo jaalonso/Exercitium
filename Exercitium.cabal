@@ -372,6 +372,7 @@ library
       Subsecuencia_comun_maxima
       Sucesion_de_numeros_amigos
       Sucesion_de_suma_de_cuadrados_de_los_digitos
+      Sucesiones_pucelanas
       Suma_alterna_de_factoriales
       Suma_de_cadenas
       Suma_de_cuadrados_menos_cuadrado_de_la_suma
@@ -843,6 +844,7 @@ test-suite Exercitium-test
       Subsecuencia_comun_maxima_Spec
       Sucesion_de_numeros_amigos_Spec
       Sucesion_de_suma_de_cuadrados_de_los_digitos_Spec
+      Sucesiones_pucelanas_Spec
       Suma_alterna_de_factoriales_Spec
       Suma_de_cadenas_Spec
       Suma_de_cuadrados_menos_cuadrado_de_la_suma_Spec
