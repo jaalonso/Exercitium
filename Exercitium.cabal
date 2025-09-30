@@ -325,6 +325,7 @@ library
       Producto_cartesiano
       Producto_cartesiano_de_dos_conjuntos
       Producto_de_los_elementos_de_la_diagonal_principal
+      Producto_de_matrices_como_listas_de_listas
       Producto_escalar
       Profundidad_de_un_arbol_binario
       Programacion_dinamica_Caminos_en_una_reticula
@@ -797,6 +798,7 @@ test-suite Exercitium-test
       Producto_cartesiano_de_dos_conjuntos_Spec
       Producto_cartesiano_Spec
       Producto_de_los_elementos_de_la_diagonal_principal_Spec
+      Producto_de_matrices_como_listas_de_listas_Spec
       Producto_escalar_Spec
       Profundidad_de_un_arbol_binario_Spec
       Programacion_dinamica_Caminos_en_una_reticula_Spec

@@ -88,7 +88,7 @@ Los objetivos de esta recopilación son:
 + 11 [[./src/Producto_cartesiano.hs][Producto cartesiano de una familia de conjuntos]].
 + 14 [[./src/Todas_tienen_par.hs][Todas tienen par]].
 + 15 [[./src/Sucesiones_pucelanas.hs][Sucesiones pucelanas]].
-+ 16 Producto de matrices como listas de listas
++ 16 [[./src/Producto_de_matrices_como_listas_de_listas.hs][Producto de matrices como listas de listas]].
 + 17 Inserción en árboles binarios de búsqueda
 + 18 Matriz permutación
 + 21 Números con todos sus dígitos primos
