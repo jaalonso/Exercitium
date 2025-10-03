@@ -179,6 +179,7 @@ library
       Iguales_al_siguiente
       Imagen_especular_de_un_arbol_binario
       Indices_verdaderos
+      Insercion_en_arboles_binarios_de_busqueda
       Integracion_por_rectangulos
       Intercala_n_copias
       IntercalaColas
@@ -656,6 +657,7 @@ test-suite Exercitium-test
       Iguales_al_siguiente_Spec
       Imagen_especular_de_un_arbol_binario_Spec
       Indices_verdaderos_Spec
+      Insercion_en_arboles_binarios_de_busqueda_Spec
       Integracion_por_rectangulos_Spec
       Intercala_n_copias_Spec
       IntercalaColas_Spec
