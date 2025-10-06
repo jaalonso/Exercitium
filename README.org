@@ -90,7 +90,7 @@ Los objetivos de esta recopilación son:
 + 15 [[./src/Sucesiones_pucelanas.hs][Sucesiones pucelanas]].
 + 16 [[./src/Producto_de_matrices_como_listas_de_listas.hs][Producto de matrices como listas de listas]].
 + 17 [[./src/Insercion_en_arboles_binarios_de_busqueda.hs][Inserción en árboles binarios de búsqueda]]
-+ 18 Matriz permutación
++ 18 [[./src/Matriz_permutacion.hs][Matriz permutación]].
 + 21 Números con todos sus dígitos primos
 + 22 Cadenas de ceros y unos
 + 23 Clausura de un conjunto respecto de una función

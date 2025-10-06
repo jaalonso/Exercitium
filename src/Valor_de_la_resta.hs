@@ -61,7 +61,6 @@ exprArbitraria n
 instance Arbitrary Expr where
   arbitrary = sized exprArbitraria
 
-
 -- La propiedad es
 prop_resta :: Expr -> Expr -> Property
 prop_resta x y =

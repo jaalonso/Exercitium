@@ -207,6 +207,7 @@ library
       Mas_cercano_cumpliendo_la_propiedad
       Mas_repetido
       Mastermind
+      Matriz_permutacion
       Matriz_Toeplitz
       Matriz_zigzagueante
       MaxCola
@@ -682,6 +683,7 @@ test-suite Exercitium-test
       Mas_cercano_cumpliendo_la_propiedad_Spec
       Mas_repetido_Spec
       Mastermind_Spec
+      Matriz_permutacion_Spec
       Matriz_Toeplitz_Spec
       Matriz_zigzagueante_Spec
       MaxCola_Spec
