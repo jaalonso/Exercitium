@@ -29,7 +29,7 @@
 
 module Matriz_permutacion where
 
-import Data.Array
+import Data.Array (Array, (!), array, bounds, listArray)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 

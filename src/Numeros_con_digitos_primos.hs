@@ -1,7 +1,7 @@
 -- Numeros_con_digitos_primos.hs
 -- Números con todos sus dígitos primos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 9-junio-2024
+-- Sevilla, 21-Julio-2014 (actualizado 7-Octubre-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -111,6 +111,29 @@ siguiente xs = concat [map (pega d) xs | d <- [2,3,5,7]]
 pega :: Int -> Integer -> Integer
 pega d n = read (intToDigit d : show n)
 
+-- 5ª solución
+-- ===========
+
+numerosConDigitosPrimos5 :: [Integer]
+numerosConDigitosPrimos5 = concat (iterate siguiente2 [2,3,5,7])
+  where
+    siguiente2 xs = [10 * n + d | n <- xs, d <- [2,3,5,7]]
+
+-- 6ª solución
+-- ===========
+
+numerosConDigitosPrimos6 :: [Integer]
+numerosConDigitosPrimos6 =
+  concatMap numerosConDigitosPrimosAux [1..]
+
+-- (numerosConDigitosPrimosAux n) son los números formados con n digitos
+-- primos. Por ejemplo,
+--    λ> numerosConDigitosPrimosAux 2
+--    [22,23,25,27,32,33,35,37,52,53,55,57,72,73,75,77]
+numerosConDigitosPrimosAux :: Int -> [Integer]
+numerosConDigitosPrimosAux n =
+  map read (mapM (const "2357") [1..n])
+
 -- Verificación
 -- ============
 
@@ -129,10 +152,12 @@ spec = do
   describe "def. 2" $ specG numerosConDigitosPrimos2
   describe "def. 3" $ specG numerosConDigitosPrimos3
   describe "def. 4" $ specG numerosConDigitosPrimos4
+  describe "def. 5" $ specG numerosConDigitosPrimos5
+  describe "def. 6" $ specG numerosConDigitosPrimos6
 
 -- La verificación es
 --    λ> verifica
---    4 examples, 0 failures
+--    6 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -144,6 +169,8 @@ prop_numerosConDigitosPrimos_equiv (NonNegative n) =
       [ numerosConDigitosPrimos2 !! n
       , numerosConDigitosPrimos3 !! n
       , numerosConDigitosPrimos4 !! n
+      , numerosConDigitosPrimos5 !! n
+      , numerosConDigitosPrimos6 !! n
       ]
 
 -- La comprobación es
@@ -166,10 +193,22 @@ prop_numerosConDigitosPrimos_equiv (NonNegative n) =
 --    λ> numerosConDigitosPrimos4 !! 5000
 --    752732
 --    (0.00 secs, 1,556,104 bytes)
+--    λ> numerosConDigitosPrimos5 !! 5000
+--    752732
+--    (0.02 secs, 1,964,952 bytes)
+--    λ> numerosConDigitosPrimos6 !! 5000
+--    752732
+--    (0.01 secs, 1,981,704 bytes)
 --
 --    λ> numerosConDigitosPrimos3 !! (10^7)
 --    322732232572
---    (3.94 secs, 1,820,533,328 bytes)
+--    (2.53 secs, 1,860,588,784 bytes)
 --    λ> numerosConDigitosPrimos4 !! (10^7)
 --    322732232572
---    (1.84 secs, 2,000,606,640 bytes)
+--    (3.61 secs, 2,000,679,432 bytes)
+--    λ> numerosConDigitosPrimos5 !! (10^7)
+--    322732232572
+--    (3.51 secs, 2,780,609,160 bytes)
+--    λ> numerosConDigitosPrimos6 !! (10^7)
+--    322732232572
+--    (2.19 secs, 3,116,479,176 bytes)
