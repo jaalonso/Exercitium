@@ -19,9 +19,9 @@
 
 module Numeros_con_digitos_primos where
 
-import Test.QuickCheck (NonNegative (NonNegative), quickCheck)
 import Data.Char (intToDigit)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck (NonNegative (NonNegative), quickCheck)
 
 -- 1ª solución
 -- ===========

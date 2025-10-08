@@ -92,7 +92,7 @@ Los objetivos de esta recopilación son:
 + 17 [[./src/Insercion_en_arboles_binarios_de_busqueda.hs][Inserción en árboles binarios de búsqueda]]
 + 18 [[./src/Matriz_permutacion.hs][Matriz permutación]].
 + 21 [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]].
-+ 22 Cadenas de ceros y unos
++ 22 [[./src/Cadenas0y1.hs][Cadenas de ceros y unos]].
 + 23 Clausura de un conjunto respecto de una función
 + 24 Sustitución en una expresión
 + 25 Laberinto numérico
