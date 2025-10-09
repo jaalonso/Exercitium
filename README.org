@@ -93,7 +93,7 @@ Los objetivos de esta recopilación son:
 + 18 [[./src/Matriz_permutacion.hs][Matriz permutación]].
 + 21 [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]].
 + 22 [[./src/Cadenas0y1.hs][Cadenas de ceros y unos]].
-+ 23 Clausura de un conjunto respecto de una función
++ 23 [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]].
 + 24 Sustitución en una expresión
 + 25 Laberinto numérico
 

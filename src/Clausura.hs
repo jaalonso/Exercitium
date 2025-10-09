@@ -1,7 +1,7 @@
 -- Clausura.hs
--- Clausura de un conjunto respecto de una función
+-- Clausura de un conjunto respecto de una función.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 2-mayo-2022
+-- Sevilla, 23-Julio-2014 (actualizado 9-Octubre-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -9,7 +9,7 @@
 -- elemento x de A se tiene que f(x) pertenece a A. La clausura de un
 -- conjunto B respecto de una función f es el menor conjunto A que
 -- contiene a B y es cerrado respecto de f. Por ejemplo, la clausura de
--- {0,1,2] respecto del opuesto es {-1,-2,0,1,2}.
+-- {0,1,2} respecto del opuesto es {-1,-2,0,1,2}.
 --
 -- Definir la función
 --    clausura :: Ord a => (a -> a) -> [a] -> [a]
@@ -25,8 +25,9 @@
 module Clausura where
 
 import Data.List ((\\), nub, sort, union)
-import Test.QuickCheck.HigherOrder (quickCheck')
 import qualified Data.Set as S (Set, difference, fromList, map, null, toList, union)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck.HigherOrder (quickCheck')
 
 -- 1ª solución
 -- ===========
@@ -46,7 +47,7 @@ esCerrado :: Ord a => (a -> a) -> [a] -> Bool
 esCerrado f xs = all (`elem` xs) (map f xs)
 
 -- (expansion f xs) es la lista (sin repeticiones) obtenidas añadiéndole
--- a xs el resulta de aplicar f a sus elementos. Por ejemplo,
+-- a xs el resultado de aplicar f a sus elementos. Por ejemplo,
 --    expansion (\x -> -x) [0,1,2]  ==  [0,1,2,-1,-2]
 expansion :: Ord a => (a -> a) -> [a] -> [a]
 expansion f xs = xs `union` map f xs
@@ -77,6 +78,31 @@ clausura4' f xs = aux xs xs
   where aux ys vs | S.null ns = vs
                   | otherwise = aux ns (vs `S.union` ns)
           where ns = S.map f ys `S.difference` vs
+
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: ((Int -> Int) -> [Int] -> [Int]) -> Spec
+specG clausura = do
+  it "e1" $
+    clausura (\x -> -x) [0,1,2]         `shouldBe`  [-2,-1,0,1,2]
+  it "e2" $
+    clausura (\x -> (x+1) `mod` 5) [0]  `shouldBe`  [0,1,2,3,4]
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG clausura1
+  describe "def. 2" $ specG clausura2
+  describe "def. 3" $ specG clausura3
+  describe "def. 4" $ specG clausura4
+
+-- La verificación es
+--    λ> verifica
+--    8 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
