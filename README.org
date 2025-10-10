@@ -94,7 +94,7 @@ Los objetivos de esta recopilación son:
 + 21 [[./src/Numeros_con_digitos_primos.hs][Números con todos sus dígitos primos]].
 + 22 [[./src/Cadenas0y1.hs][Cadenas de ceros y unos]].
 + 23 [[./src/Clausura.hs][Clausura de un conjunto respecto de una función]].
-+ 24 Sustitución en una expresión
++ 24 [[./src/Sustitucion_en_una_expresion_aritmetica.hs][Sustitución en una expresión aritmética]].
 + 25 Laberinto numérico
 
 ** Ejercicios publicados el 2021
