@@ -17,7 +17,7 @@
 -- Definir la función
 --    buscaAnchura :: Eq nodo => (nodo -> [nodo]) -> (nodo -> Bool)
 --                               -> nodo -> [nodo]
--- tal que (buscaAnchura s o e) es  la lista de soluciones del
+-- tal que (buscaAnchura s o e) es la lista de soluciones del
 -- problema de espacio de estado definido por la función sucesores s, el
 -- objetivo o y estado inicial e obtenidas mediante búsqueda en
 -- anchura.

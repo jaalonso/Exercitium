@@ -196,6 +196,7 @@ library
       La_sucesion_de_Ducci
       La_sucesion_de_Thue_Morse
       La_sucesion_del_reloj_astronomico_de_Praga
+      Laberinto_numerico
       Levenshtein
       Limite_del_seno
       Limites_de_sucesiones
@@ -673,6 +674,7 @@ test-suite Exercitium-test
       La_serie_de_Thue_Morse_Spec
       La_sucesion_de_Thue_Morse_Spec
       La_sucesion_del_reloj_astronomico_de_Praga_Spec
+      Laberinto_numerico_Spec
       Levenshtein_Spec
       Limite_del_seno_Spec
       Limites_de_sucesiones_Spec
