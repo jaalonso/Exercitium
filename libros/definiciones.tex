@@ -1,0 +1,26 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% § Código                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{descripcion}
+{\VerbatimEnvironment
+  \vspace*{-3ex}
+  \begin{minted}[
+    frame=lines,
+    framesep=2mm,
+    fontsize=\normalsize
+    ]{haskell}}
+ {\end{minted}}
+
+\newenvironment{code}
+{\VerbatimEnvironment
+  \begin{minted}[
+    fontsize=\normalsize
+    ]{haskell}}
+ {\end{minted}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% § Definiciones                                                           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\ejercicio}[1]{\inputminted[firstline=7]{haskell}{../src/#1.hs}}

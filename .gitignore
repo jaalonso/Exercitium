@@ -18,10 +18,12 @@ cabal.sandbox.config
 *.eventlog
 .stack-work/
 cabal.project.local
-cabal.project.local~
 .HTF/
 .ghc.environment.*
 src/zzz.hs
-src/zzz.hs
 /cod/
 /auxiliar
+*.log
+*.toc
+libros/_minted-Exercitium*
+libros/auto*

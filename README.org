@@ -20,7 +20,7 @@ Los objetivos de esta recopilación son:
 ** Ejercicios publicados el 2014
 
 *** Abril 2014
-+ 21 [[./src/Iguales_al_siguiente.hs][Igual es al siguiente]].
++ 21 [[./src/Iguales_al_siguiente.hs][Iguales al siguiente]].
 + 22 [[./src/Ordenados_por_maximo.hs][Ordenación por el máximo]].
 + 23 [[./src/Bandera_tricolor.hs][La bandera tricolor]].
 + 24 [[./src/ElementosMinimales.hs][Determinación de los elementos minimales]].
