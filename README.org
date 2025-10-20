@@ -97,6 +97,36 @@ Los objetivos de esta recopilación son:
 + 24 [[./src/Sustitucion_en_una_expresion_aritmetica.hs][Sustitución en una expresión aritmética]].
 + 25 [[./src/Laberinto_numerico.hs][Laberinto numérico]].
 
+** Ejercicios publicados el 2015
+
+*** Octubre 2014
++ 30 [[./src/Divisibles_por_el_primero.hs][Divisibles por el primero]].
++ 31 Listas equidigitales.
+
+*** Noviembre 2014
++ 01 Elementos no repetidos.
++ 02 Parte impar de un número.
++ 03 Mayúscula inicial.
++ 04 Máximo de una función.
++ 05 Suma de todos los anteriores.
++ 06 Rompecabeza matemático.
++ 07 Distancia de Hamming.
++ 10 Extensión de un fichero.
++ 11 Precio total.
++ 12 Conjunto de primos relativos.
++ 13 Repetición de elementos.
++ 14 Último dígito no nulo del factorial.
++ 17 Mayores elementos de una matriz.
++ 18 Pequeño test de inteligencia.
++ 19 Mínimos locales.
++ 20 Inversa a trozos.
++ 21 Cuantificadores sobre listas.
++ 24 Elemento común en la menor posición.
++ 25 Repetición cíclica.
++ 26 Aplicaciones alternativas.
++ 27 Evaluación de árboles de expresiones aritméticas.
++ 28 Particiones de longitud fija.
+
 ** Ejercicios publicados el 2021
 
 *** Enero 2021

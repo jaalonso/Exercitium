@@ -107,6 +107,7 @@ library
       Disyuncion_excluyente
       Divide_si_todos_multiplos
       DivideVenceras
+      Divisibles_por_el_primero
       Division_segura
       Divisores_con_final
       Divisores_de_un_numero
@@ -592,6 +593,7 @@ test-suite Exercitium-test
       Distancia_entre_dos_puntos_Spec
       Disyuncion_excluyente_Spec
       Divide_si_todos_multiplos_Spec
+      Divisibles_por_el_primero_Spec
       Division_segura_Spec
       Divisores_con_final_Spec
       Divisores_de_un_numero_Spec
