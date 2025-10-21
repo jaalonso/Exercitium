@@ -101,7 +101,7 @@ Los objetivos de esta recopilación son:
 
 *** Octubre 2014
 + 30 [[./src/Divisibles_por_el_primero.hs][Divisibles por el primero]].
-+ 31 Listas equidigitales.
++ 31 [[./src/Listas_equidigitales.hs][Listas equidigitales]].
 
 *** Noviembre 2014
 + 01 Elementos no repetidos.

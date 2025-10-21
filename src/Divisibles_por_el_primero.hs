@@ -14,7 +14,6 @@
 --    divisiblesPorPrimero [-3,6,1,-3,9,18]      ==  False
 --    divisiblesPorPrimero [5,-2,-6,3]           ==  False
 --    divisiblesPorPrimero []                    ==  True
---    divisiblesPorPrimero []                    ==  True
 --    divisiblesPorPrimero [0,2,4]               ==  False
 --    divisiblesPorPrimero []                    ==  True
 --    divisiblesPorPrimero [0,-2,-4]             ==  True
@@ -87,12 +86,8 @@ specG divisiblesPorPrimero = do
   it "e5" $
     divisiblesPorPrimero []                   `shouldBe` True
   it "e6" $
-    divisiblesPorPrimero []                   `shouldBe` True
-  it "e7" $
     divisiblesPorPrimero [0,2,4]              `shouldBe` False
-  it "e8" $
-    divisiblesPorPrimero []                   `shouldBe` True
-  it "e9" $
+  it "e7" $
     divisiblesPorPrimero [0,-2,-4]            `shouldBe` True
 
 spec :: Spec
@@ -104,7 +99,7 @@ spec = do
 
 -- La verificación es
 --    λ> verifica
---    36 examples, 0 failures
+--    28 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
