@@ -128,6 +128,7 @@ library
       Elementos_del_nivel_k_de_un_arbol
       Elementos_finales
       Elementos_minimales
+      Elementos_no_repetidos
       ElementosMinimales
       Elimina_aisladas
       Elimina_n_elementos
@@ -615,6 +616,7 @@ test-suite Exercitium-test
       Elementos_del_nivel_k_de_un_arbol_Spec
       Elementos_finales_Spec
       Elementos_minimales_Spec
+      Elementos_no_repetidos_Spec
       ElementosMinimales_Spec
       Elimina_aisladas_Spec
       Elimina_n_elementos_Spec
