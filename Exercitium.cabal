@@ -280,6 +280,7 @@ library
       Pandigitales_primos
       Parejas_de_numeros_y_divisores
       Pares_adyacentes_iguales
+      Parte_impar
       Particiones_de_enteros_positivos
       Particiones_en_k_subconjuntos
       Permutacion_ciclica
@@ -759,6 +760,7 @@ test-suite Exercitium-test
       Pandigitales_primos_Spec
       Parejas_de_numeros_y_divisores_Spec
       Pares_adyacentes_iguales_Spec
+      Parte_impar_Spec
       Particiones_de_enteros_positivos_Spec
       Particiones_en_k_subconjuntos_Spec
       Permutacion_ciclica_Spec
