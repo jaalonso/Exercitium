@@ -87,10 +87,10 @@ prop_mayusculaInicial xs =
 -- La comparación es
 --    λ> length (mayusculaInicial1 (take (10^7) (cycle "aA")))
 --    10000000
---    (2.22 secs, 1,680,592,240 bytes)
+--    (1.61 secs, 1,680,602,560 bytes)
 --    λ> length (mayusculaInicial2 (take (10^7) (cycle "aA")))
 --    10000000
---    (2.57 secs, 2,240,592,192 bytes)
+--    (2.01 secs, 2,240,602,528 bytes)
 --    λ> length (mayusculaInicial3 (take (10^7) (cycle "aA")))
 --    10000000
---    (0.16 secs, 1,440,592,192 bytes)
+--    (0.22 secs, 1,440,602,552 bytes)
