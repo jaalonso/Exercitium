@@ -1,7 +1,7 @@
 -- Mayuscula_inicial.hs
 -- Poner en mayúscula la primera letra y las restantes en minúsculas
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 9-noviembre-2022
+-- Sevilla, 3-Noviembre-2014 (actualizado 27-Octubre-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -18,13 +18,14 @@
 module Mayuscula_inicial where
 
 import Data.Char (toUpper, toLower)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
 -- 1ª solución
 -- ===========
 
 mayusculaInicial1 :: String -> String
-mayusculaInicial1 []     = []
+mayusculaInicial1 [] = []
 mayusculaInicial1 (x:xs) = toUpper x : [toLower y | y <- xs]
 
 -- 2ª solución
@@ -42,6 +43,29 @@ mayusculaInicial2 (x:xs) = toUpper x : aux xs
 mayusculaInicial3 :: String -> String
 mayusculaInicial3 [] = []
 mayusculaInicial3 (x:xs) = toUpper x : map toLower xs
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (String -> String) -> Spec
+specG mayusculaInicial = do
+  it "e1" $
+    mayusculaInicial "sEviLLa"  `shouldBe`  "Sevilla"
+  it "e2" $
+    mayusculaInicial ""         `shouldBe`  ""
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG mayusculaInicial1
+  describe "def. 2" $ specG mayusculaInicial2
+  describe "def. 3" $ specG mayusculaInicial3
+
+-- La verificación es
+--    λ> verifica
+--    6 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
