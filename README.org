@@ -107,7 +107,7 @@ Los objetivos de esta recopilación son:
 + 01 [[./src/Elementos_no_repetidos.hs][Elementos no repetidos]].
 + 02 [[./src/Parte_impar.hs][Parte impar de un número]].
 + 03 [[./src/Mayuscula_inicial.hs][Mayúscula inicial]].
-+ 04 Máximo de una función.
++ 04 [[./src/Maximo_de_una_funcion.hs][Máximo de una función]].
 + 05 Suma de todos los anteriores.
 + 06 Rompecabeza matemático.
 + 07 Distancia de Hamming.
