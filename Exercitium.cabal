@@ -396,6 +396,7 @@ library
       Suma_de_monedas
       Suma_de_multiplos_de_3_o_de_5
       Suma_de_numeros_amigos_menores_que_n
+      Suma_de_todos_los_anteriores
       Suma_de_un_arbol
       Suma_elementos_consecutivos
       Suma_si_todos_justos
@@ -878,6 +879,7 @@ test-suite Exercitium-test
       Suma_de_monedas_Spec
       Suma_de_multiplos_de_3_o_de_5_Spec
       Suma_de_numeros_amigos_menores_que_n_Spec
+      Suma_de_todos_los_anteriores_Spec
       Suma_de_un_arbol_Spec
       Suma_elementos_consecutivos_Spec
       Suma_si_todos_justos_Spec
