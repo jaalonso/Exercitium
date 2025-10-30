@@ -110,7 +110,7 @@ Los objetivos de esta recopilación son:
 + 04 [[./src/Maximo_de_una_funcion.hs][Máximo de una función]].
 + 05 [[./src/Suma_de_todos_los_anteriores.hs][Suma de todos los anteriores]].
 + 06 [[./src/Rompecabeza_matematico.hs][Rompecabeza matemático]].
-+ 07 Distancia de Hamming.
++ 07 [[./src/Distancia_de_Hamming.hs][Distancia de Hamming]].
 + 10 Extensión de un fichero.
 + 11 Precio total.
 + 12 Conjunto de primos relativos.

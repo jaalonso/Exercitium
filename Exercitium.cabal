@@ -102,6 +102,7 @@ library
       Diferencia_conjuntista_de_listas
       Diferencia_simetrica
       Digitos_de_un_numero
+      Distancia_de_Hamming
       Distancia_entre_dos_puntos
       Distancia_esperada_entre_dos_puntos_de_un_cuadrado_unitario
       Disyuncion_excluyente
@@ -596,6 +597,7 @@ test-suite Exercitium-test
       Diferencia_conjuntista_de_listas_Spec
       Diferencia_simetrica_Spec
       Digitos_de_un_numero_Spec
+      Distancia_de_Hamming_Spec
       Distancia_entre_dos_puntos_Spec
       Disyuncion_excluyente_Spec
       Divide_si_todos_multiplos_Spec
