@@ -148,6 +148,7 @@ library
       Expresion_aritmetica_con_una_variable
       Expresion_aritmetica_con_variables
       Expresiones_aritmeticas_reducibles
+      Extension_de_un_fichero
       ExtiendeCola
       Factorizaciones_de_numeros_de_Hilbert
       Familias_de_numeros_con_algun_digito_en_comun
@@ -637,6 +638,7 @@ test-suite Exercitium-test
       Exponente_en_la_factorizacion_Spec
       Exponente_mayor_Spec
       Expresiones_aritmeticas_reducibles_Spec
+      Extension_de_un_fichero_Spec
       ExtiendeCola_Spec
       Factorizaciones_de_numeros_de_Hilbert_Spec
       Familias_de_numeros_con_algun_digito_en_comun_Spec
