@@ -112,7 +112,7 @@ Los objetivos de esta recopilación son:
 + 06 [[./src/Rompecabeza_matematico.hs][Rompecabeza matemático]].
 + 07 [[./src/Distancia_de_Hamming.hs][Distancia de Hamming]].
 + 10 [[./src/Extension_de_un_fichero.hs][Extensión de un fichero]].
-+ 11 Precio total.
++ 11 [[./src/Precio_total.hs][Precio total]].
 + 12 Conjunto de primos relativos.
 + 13 Repetición de elementos.
 + 14 Último dígito no nulo del factorial.

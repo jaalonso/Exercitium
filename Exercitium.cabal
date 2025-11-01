@@ -322,6 +322,7 @@ library
       Posiciones_diagonales_principales
       Potencia_entera
       Potencias_perfectas
+      Precio_total
       PrefijoCola
       PrefijoPila
       Primeros_y_ultimos_elementos
@@ -809,6 +810,7 @@ test-suite Exercitium-test
       Posiciones_diagonales_principales_Spec
       Potencia_entera_Spec
       Potencias_perfectas_Spec
+      Precio_total_Spec
       PrefijoCola_Spec
       PrefijoPila_Spec
       Primeros_y_ultimos_elementos_Spec
