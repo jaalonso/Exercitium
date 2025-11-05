@@ -470,6 +470,7 @@ library
       Triangulares_con_cifras
       Triangulo_aritmetico
       Ultimo_digito
+      Ultimo_digito_no_nulo_del_factorial
       UltimoCola
       Union_conjuntista_de_listas
       Union_e_interseccion_general
@@ -930,6 +931,7 @@ test-suite Exercitium-test
       Tres_iguales_Spec
       Triangulares_con_cifras_Spec
       Triangulo_aritmetico_Spec
+      Ultimo_digito_no_nulo_del_factorial_Spec
       Ultimo_digito_Spec
       UltimoCola_Spec
       Union_conjuntista_de_listas_Spec

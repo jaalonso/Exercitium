@@ -81,11 +81,11 @@ spec = do
 -- La propiedad es
 prop_equivalencia :: Int -> [Int] -> Bool
 prop_equivalencia k xs =
-  repiteElementos2 k xs == ys &&
-  repiteElementos3 k xs == ys &&
-  repiteElementos4 k xs == ys &&
-  repiteElementos5 k xs == ys
-  where ys = repiteElementos1 k xs
+  all (== repiteElementos1 k xs)
+      [repiteElementos2 k xs,
+       repiteElementos3 k xs,
+       repiteElementos4 k xs,
+       repiteElementos5 k xs]
 
 -- La comprobación es
 --    λ> quickCheckWith (stdArgs {maxSize=10}) prop_equivalencia

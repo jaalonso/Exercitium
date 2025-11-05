@@ -115,7 +115,7 @@ Los objetivos de esta recopilación son:
 + 11 [[./src/Precio_total.hs][Precio total]].
 + 12 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
 + 13 [[./src/Repeticion_de_elementos.hs][Repetición de elementos]].
-+ 14 Último dígito no nulo del factorial.
++ 14 [[./src/Ultimo_digito_no_nulo_del_factorial.hs][Último dígito no nulo del factorial]].
 + 17 Mayores elementos de una matriz.
 + 18 Pequeño test de inteligencia.
 + 19 Mínimos locales.
