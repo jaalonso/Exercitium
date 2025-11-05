@@ -1,14 +1,14 @@
 -- Conjunto_de_primos_relativos.hs
 -- Conjunto de primos relativos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 29-marzo-2022
+-- Sevilla, 12-Noviembre-2014 (actualizado 5-Noviembre-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Dos números enteros positivos son [primos relativos](http://bit.ly/1xgqDTK)
--- si no tienen ningún factor primo en común; es decir, si 1 es su único
--- divisor común. Por ejemplo, 6 y 35 son primos entre sí, pero 6 y 27
--- no lo son porque ambos son divisibles por 3.
+-- Dos números enteros positivos son primos relativos si no tienen
+-- ningún factor primo en común; es decir, si 1 es su único divisor
+-- común. Por ejemplo, 6 y 35 son primos entre sí, pero 6 y 27 no lo son
+-- porque ambos son divisibles por 3.
 --
 -- Definir la función
 --    primosRelativos :: [Int] -> Bool
@@ -34,9 +34,22 @@ import Test.QuickCheck
 -- ===========
 
 primosRelativos1 :: [Int] -> Bool
-primosRelativos1 []     = True
-primosRelativos1 (x:xs) =
-  and [sonPrimosRelativos x y | y <- xs] && primosRelativos1 xs
+primosRelativos1 xs =
+  and [gcd x y == 1 | (x,y) <- pares xs]
+
+-- (pares xs) es la lista de los pares de elementos de xs. Por ejemplo,
+--    pares [2,3,4,5]  ==  [(2,3),(2,4),(2,5),(3,4),(3,5),(4,5)]
+pares :: [a] -> [(a,a)]
+pares []     = []
+pares (x:xs) = [(x, y) | y <- xs] ++ pares xs
+
+-- 2ª solución
+-- ===========
+
+primosRelativos2 :: [Int] -> Bool
+primosRelativos2 []     = True
+primosRelativos2 (x:xs) =
+  and [sonPrimosRelativos x y | y <- xs] && primosRelativos2 xs
 
 -- (sonPrimosRelativos x y) se verifica si x e y son primos
 -- relativos. Por ejemplo,
@@ -46,13 +59,21 @@ sonPrimosRelativos :: Int -> Int -> Bool
 sonPrimosRelativos x y =
   gcd x y == 1
 
--- 2ª solución
+-- 3ª solución
 -- ===========
 
-primosRelativos2 :: [Int] -> Bool
-primosRelativos2 []     = True
-primosRelativos2 (x:xs) =
-  all (sonPrimosRelativos x) xs && primosRelativos2 xs
+primosRelativos3 :: [Int] -> Bool
+primosRelativos3 []     = True
+primosRelativos3 (x:xs) =
+  all (sonPrimosRelativos x) xs && primosRelativos3 xs
+
+-- 4ª solución
+-- ===========
+
+primosRelativos4 :: [Int] -> Bool
+primosRelativos4 [] = True
+primosRelativos4 (x:xs) =
+  all ((== 1) . gcd x) xs && primosRelativos4 xs
 
 -- Verificación
 -- ============
@@ -79,10 +100,12 @@ spec :: Spec
 spec = do
   describe "def. 1" $ specG primosRelativos1
   describe "def. 2" $ specG primosRelativos2
+  describe "def. 3" $ specG primosRelativos3
+  describe "def. 4" $ specG primosRelativos4
 
 -- La verificación es
 --    λ> verifica
---    12 examples, 0 failures
+--    24 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -90,7 +113,10 @@ spec = do
 -- La propiedad es
 prop_primosRelativos :: [Positive Int] -> Bool
 prop_primosRelativos xs =
-  primosRelativos1 ys == primosRelativos2 ys
+  all (== primosRelativos1 ys)
+      [primosRelativos2 ys,
+       primosRelativos3 ys,
+       primosRelativos4 ys]
   where ys = getPositive <$> xs
 
 -- La comprobación es
@@ -101,9 +127,16 @@ prop_primosRelativos xs =
 -- =========================
 
 -- La comparación es
---    λ> primosRelativos1 (take 2000 primes)
+--    λ> ej = take 2000 primes
+--    λ> primosRelativos1 ej
 --    True
---    (1.43 secs, 1,730,437,768 bytes)
---    λ> primosRelativos2 (take 2000 primes)
+--    (1.65 secs, 2,081,369,936 bytes)
+--    λ> primosRelativos2 ej
 --    True
---    (0.99 secs, 1,490,445,736 bytes)
+--    (1.27 secs, 1,777,761,720 bytes)
+--    λ> primosRelativos3 ej
+--    True
+--    (0.97 secs, 1,537,737,728 bytes)
+--    λ> primosRelativos4 ej
+--    True
+--    (0.76 secs, 1,474,185,496 bytes)

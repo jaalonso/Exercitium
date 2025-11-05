@@ -113,7 +113,7 @@ Los objetivos de esta recopilación son:
 + 07 [[./src/Distancia_de_Hamming.hs][Distancia de Hamming]].
 + 10 [[./src/Extension_de_un_fichero.hs][Extensión de un fichero]].
 + 11 [[./src/Precio_total.hs][Precio total]].
-+ 12 Conjunto de primos relativos.
++ 12 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
 + 13 Repetición de elementos.
 + 14 Último dígito no nulo del factorial.
 + 17 Mayores elementos de una matriz.
