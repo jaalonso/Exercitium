@@ -114,7 +114,7 @@ Los objetivos de esta recopilación son:
 + 10 [[./src/Extension_de_un_fichero.hs][Extensión de un fichero]].
 + 11 [[./src/Precio_total.hs][Precio total]].
 + 12 [[./src/Conjunto_de_primos_relativos.hs][Conjunto de primos relativos]].
-+ 13 Repetición de elementos.
++ 13 [[./src/Repeticion_de_elementos.hs][Repetición de elementos]].
 + 14 Último dígito no nulo del factorial.
 + 17 Mayores elementos de una matriz.
 + 18 Pequeño test de inteligencia.

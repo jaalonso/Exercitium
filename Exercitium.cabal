@@ -366,6 +366,7 @@ library
       Relaciones_totales
       Relaciones_transitivas
       Renombra_arbol
+      Repeticion_de_elementos
       Representacion_de_Zeckendorf
       Representacion_densa_de_polinomios
       Representacion_matricial_de_relaciones_binarias
@@ -853,6 +854,7 @@ test-suite Exercitium-test
       Relaciones_totales_Spec
       Relaciones_transitivas_Spec
       Renombra_arbol_Spec
+      Repeticion_de_elementos_Spec
       Representacion_de_Zeckendorf_Spec
       Representacion_densa_de_polinomios_Spec
       Representacion_matricial_de_relaciones_binarias_Spec
