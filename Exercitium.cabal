@@ -287,6 +287,7 @@ library
       Parte_impar
       Particiones_de_enteros_positivos
       Particiones_en_k_subconjuntos
+      Pequeño_test_de_inteligencia
       Permutacion_ciclica
       PerteneceCola
       PertenecePila
@@ -776,6 +777,7 @@ test-suite Exercitium-test
       Parte_impar_Spec
       Particiones_de_enteros_positivos_Spec
       Particiones_en_k_subconjuntos_Spec
+      Pequeño_test_de_inteligencia_Spec
       Permutacion_ciclica_Spec
       PerteneceCola_Spec
       PertenecePila_Spec

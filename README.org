@@ -117,7 +117,7 @@ Los objetivos de esta recopilación son:
 + 13 [[./src/Repeticion_de_elementos.hs][Repetición de elementos]].
 + 14 [[./src/Ultimo_digito_no_nulo_del_factorial.hs][Último dígito no nulo del factorial]].
 + 17 [[./src/Mayores_elementos_de_una_matriz.hs][Mayores elementos de una matriz]].
-+ 18 Pequeño test de inteligencia.
++ 18 [[./src/Pequeño_test_de_inteligencia.hs][Pequeño test de inteligencia]].
 + 19 Mínimos locales.
 + 20 Inversa a trozos.
 + 21 Cuantificadores sobre listas.
