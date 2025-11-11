@@ -119,7 +119,7 @@ Los objetivos de esta recopilación son:
 + 17 [[./src/Mayores_elementos_de_una_matriz.hs][Mayores elementos de una matriz]].
 + 18 [[./src/Pequeño_test_de_inteligencia.hs][Pequeño test de inteligencia]].
 + 19 [[./src/Minimos_locales.hs][Mínimos locales]].
-+ 20 Inversa a trozos.
++ 20 [[./src/Inversa_a_trozos.hs][Inversa a trozos]].
 + 21 Cuantificadores sobre listas.
 + 24 Elemento común en la menor posición.
 + 25 Repetición cíclica.
