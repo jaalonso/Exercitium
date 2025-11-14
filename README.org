@@ -120,7 +120,7 @@ Los objetivos de esta recopilación son:
 + 18 [[./src/Pequeño_test_de_inteligencia.hs][Pequeño test de inteligencia]].
 + 19 [[./src/Minimos_locales.hs][Mínimos locales]].
 + 20 [[./src/Inversa_a_trozos.hs][Inversa a trozos]].
-+ 21 Cuantificadores sobre listas.
++ 21 [[./src/Cuantificadores_sobre_listas.hs][Cuantificadores sobre listas]].
 + 24 Elemento común en la menor posición.
 + 25 Repetición cíclica.
 + 26 Aplicaciones alternativas.

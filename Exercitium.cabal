@@ -93,6 +93,7 @@ library
       ContenidaCola
       ContenidaPila
       Cuadrado_mas_cercano
+      Cuantificadores_sobre_listas
       Densidad_de_numeros_abundantes
       Descomposiciones_con_n_sumandos
       Descomposiciones_con_sumandos_1_o_2
@@ -596,6 +597,7 @@ test-suite Exercitium-test
       ContenidaCola_Spec
       ContenidaPila_Spec
       Cuadrado_mas_cercano_Spec
+      Cuantificadores_sobre_listas_Spec
       Densidad_de_numeros_abundantes_Spec
       Descomposiciones_con_n_sumandos_Spec
       Descomposiciones_con_sumandos_1_o_2_Spec

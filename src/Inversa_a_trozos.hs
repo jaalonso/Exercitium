@@ -104,7 +104,7 @@ spec = do
 
 -- La verificación es
 --    λ> verifica
---    10 examples, 0 failures
+--    12 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
