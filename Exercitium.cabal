@@ -125,6 +125,7 @@ library
       El_tipo_de_los_arboles_binarios
       El_tipo_de_los_numeros_naturales
       El_triangulo_de_Floyd
+      Elemento_comun_en_menor_posicion
       Elemento_mediano
       Elementos_consecutivos_relacionados
       Elementos_del_nivel_k_de_un_arbol
@@ -627,6 +628,7 @@ test-suite Exercitium-test
       El_tipo_de_los_arboles_binarios_Spec
       El_tipo_de_los_numeros_naturales_Spec
       El_triangulo_de_Floyd_Spec
+      Elemento_comun_en_menor_posicion_Spec
       Elemento_mediano_Spec
       Elementos_consecutivos_relacionados_Spec
       Elementos_del_nivel_k_de_un_arbol_Spec
