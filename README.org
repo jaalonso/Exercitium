@@ -122,7 +122,7 @@ Los objetivos de esta recopilación son:
 + 20 [[./src/Inversa_a_trozos.hs][Inversa a trozos]].
 + 21 [[./src/Cuantificadores_sobre_listas.hs][Cuantificadores sobre listas]].
 + 24 [[./src/Elemento_comun_en_menor_posicion.hs][Elemento común en la menor posición]].
-+ 25 Repetición cíclica.
++ 25 [[./src/Repeticion_ciclica.hs][Repetición cíclica]].
 + 26 Aplicaciones alternativas.
 + 27 Evaluación de árboles de expresiones aritméticas.
 + 28 Particiones de longitud fija.
