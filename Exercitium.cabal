@@ -41,6 +41,7 @@ library
       Aplica_segun_propiedad
       Aplicacion_de_una_funcion_a_un_arbol
       Aplicacion_de_una_funcion_a_una_expresion_aritmetica
+      Aplicaciones_alternativas
       Aproximacion_de_numero_pi
       Aproximacion_del_numero_e
       Arbol_binario_valores_en_hojas
@@ -547,6 +548,7 @@ test-suite Exercitium-test
       Aplica_segun_propiedad_Spec
       Aplicacion_de_una_funcion_a_un_arbol_Spec
       Aplicacion_de_una_funcion_a_una_expresion_aritmetica_Spec
+      Aplicaciones_alternativas_Spec
       Aproximacion_de_numero_pi_Spec
       Aproximacion_del_numero_e_Spec
       Arbol_con_las_hojas_en_la_profundidad_dada_Spec
