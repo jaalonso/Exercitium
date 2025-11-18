@@ -144,6 +144,7 @@ library
       Enumera_arbol
       Escalada_Monedas
       Escalada_Prim
+      Evaluacion_de_arboles_de_expresiones_aritmeticas
       Existencia_de_elemento_del_arbol_con_propiedad
       Exponente_en_la_factorizacion
       Exponente_mayor
@@ -648,6 +649,7 @@ test-suite Exercitium-test
       Enumera_arbol_Spec
       Escalada_Monedas_Spec
       Escalada_Prim_Spec
+      Evaluacion_de_arboles_de_expresiones_aritmeticas_Spec
       Existencia_de_elemento_del_arbol_con_propiedad_Spec
       Exponente_en_la_factorizacion_Spec
       Exponente_mayor_Spec

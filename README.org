@@ -124,7 +124,7 @@ Los objetivos de esta recopilación son:
 + 24 [[./src/Elemento_comun_en_menor_posicion.hs][Elemento común en la menor posición]].
 + 25 [[./src/Repeticion_ciclica.hs][Repetición cíclica]].
 + 26 [[./src/Aplicaciones_alternativas.hs][Aplicaciones alternativas]].
-+ 27 Evaluación de árboles de expresiones aritméticas.
++ 27 [[./src/Evaluacion_de_arboles_de_expresiones_aritmeticas.hs][Evaluación de árboles de expresiones aritméticas]].
 + 28 Particiones de longitud fija.
 
 ** Ejercicios publicados el 2021
