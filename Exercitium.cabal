@@ -292,6 +292,7 @@ library
       Pares_adyacentes_iguales
       Parte_impar
       Particiones_de_enteros_positivos
+      Particiones_de_longitud_fija
       Particiones_en_k_subconjuntos
       Pequeño_test_de_inteligencia
       Permutacion_ciclica
@@ -789,6 +790,7 @@ test-suite Exercitium-test
       Pares_adyacentes_iguales_Spec
       Parte_impar_Spec
       Particiones_de_enteros_positivos_Spec
+      Particiones_de_longitud_fija_Spec
       Particiones_en_k_subconjuntos_Spec
       Pequeño_test_de_inteligencia_Spec
       Permutacion_ciclica_Spec
