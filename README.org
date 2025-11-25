@@ -127,6 +127,30 @@ Los objetivos de esta recopilación son:
 + 27 [[./src/Evaluacion_de_arboles_de_expresiones_aritmeticas.hs][Evaluación de árboles de expresiones aritméticas]].
 + 28 [[./src/Particiones_de_longitud_fija.hs][Particiones de longitud fija]].
 
+*** Diciembre 2014
++ 01 [[./src/Acronimos.hs][Acrónimos]].
++ 02 [[./src/Expresiones_aritmeticas_normalizadas.hs][Expresiones aritmética normalizadas]].
++ 03 Expresiones vectoriales
++ 04 Llanuras de longitud dada
++ 05 Problema de las puertas
++ 08 Búsqueda en lista de listas de pares
++ 09 Sin consecutivos repetidos
++ 10 Normalización de expresiones aritméticas
++ 11 Números que sumados a su siguiente primo dan primos
++ 12 Juego de bloques con letras
++ 15 Permutación de elementos consecutivos
++ 16 Representaciones de matrices
++ 17 Elementos adicionales
++ 18 Fractal de la curva del dragón
++ 19 2015 como raíz cuadrada de la suma de tres cubos
++ 22 2015, suma de dígitos y número de divisores
++ 23 Desemparejamiento de listas
++ 24 Puntos en regiones rectangulares
++ 26 Elementos más frecuentes
++ 29 Enumeración de los pares de números naturales
++ 30 La función suelo
++ 31 Período de una lista
+
 ** Ejercicios publicados el 2021
 
 *** Enero 2021

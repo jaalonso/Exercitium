@@ -26,6 +26,7 @@ source-repository head
 
 library
   exposed-modules:
+      Acronimos
       Agrupacion_de_elementos_por_posicion
       AgrupaColas
       Alergias
@@ -151,6 +152,7 @@ library
       Expresion_aritmetica_basica
       Expresion_aritmetica_con_una_variable
       Expresion_aritmetica_con_variables
+      Expresiones_aritmeticas_normalizadas
       Expresiones_aritmeticas_reducibles
       Extension_de_un_fichero
       ExtiendeCola
@@ -535,6 +537,7 @@ test-suite Exercitium-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Acronimos_Spec
       Agrupacion_de_elementos_por_posicion_Spec
       AgrupaColas_Spec
       Alergias_Spec
@@ -654,6 +657,7 @@ test-suite Exercitium-test
       Existencia_de_elemento_del_arbol_con_propiedad_Spec
       Exponente_en_la_factorizacion_Spec
       Exponente_mayor_Spec
+      Expresiones_aritmeticas_normalizadas_Spec
       Expresiones_aritmeticas_reducibles_Spec
       Extension_de_un_fichero_Spec
       ExtiendeCola_Spec
