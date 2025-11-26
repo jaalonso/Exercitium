@@ -154,6 +154,7 @@ library
       Expresion_aritmetica_con_variables
       Expresiones_aritmeticas_normalizadas
       Expresiones_aritmeticas_reducibles
+      Expresiones_vectoriales
       Extension_de_un_fichero
       ExtiendeCola
       Factorizaciones_de_numeros_de_Hilbert
@@ -659,6 +660,7 @@ test-suite Exercitium-test
       Exponente_mayor_Spec
       Expresiones_aritmeticas_normalizadas_Spec
       Expresiones_aritmeticas_reducibles_Spec
+      Expresiones_vectoriales_Spec
       Extension_de_un_fichero_Spec
       ExtiendeCola_Spec
       Factorizaciones_de_numeros_de_Hilbert_Spec

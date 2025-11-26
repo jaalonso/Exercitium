@@ -130,7 +130,7 @@ Los objetivos de esta recopilación son:
 *** Diciembre 2014
 + 01 [[./src/Acronimos.hs][Acrónimos]].
 + 02 [[./src/Expresiones_aritmeticas_normalizadas.hs][Expresiones aritmética normalizadas]].
-+ 03 Expresiones vectoriales
++ 03 [[./src/Expresiones_vectoriales.hs][Expresiones vectoriales]].
 + 04 Llanuras de longitud dada
 + 05 Problema de las puertas
 + 08 Búsqueda en lista de listas de pares
