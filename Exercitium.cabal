@@ -215,6 +215,7 @@ library
       Lista_cuadrada
       Listas_equidigitales
       ListaVector
+      Llanuras_de_longitud_dada
       Longitud_SCM
       LongitudCola
       Los_primeros_al_final
@@ -718,6 +719,7 @@ test-suite Exercitium-test
       Lista_cuadrada_Spec
       Listas_equidigitales_Spec
       ListaVector_Spec
+      Llanuras_de_longitud_dada_Spec
       Longitud_SCM_Spec
       LongitudCola_Spec
       Los_primeros_al_final_Spec

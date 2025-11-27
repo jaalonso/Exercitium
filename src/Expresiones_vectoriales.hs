@@ -15,7 +15,7 @@
 --
 -- Definir la función
 --    valor :: ExpV -> (Int,Int)
--- tal que (valor e) es el valor de la expresión vectorial c. Por
+-- tal que (valor e) es el valor de la expresión vectorial e. Por
 -- ejemplo,
 --    valor (Vec 1 2)                                  ==  (1,2)
 --    valor (Sum (Vec 1 2 ) (Vec 3 4))                 ==  (4,6)
