@@ -132,7 +132,7 @@ Los objetivos de esta recopilación son:
 + 02 [[./src/Expresiones_aritmeticas_normalizadas.hs][Expresiones aritmética normalizadas]].
 + 03 [[./src/Expresiones_vectoriales.hs][Expresiones vectoriales]].
 + 04 [[./src/Llanuras_de_longitud_dada.hs][Llanuras de longitud dada]].
-+ 05 Problema de las puertas
++ 05 [[./src/Problema_de_las_puertas.hs][Problema de las puertas]].
 + 08 Búsqueda en lista de listas de pares
 + 09 Sin consecutivos repetidos
 + 10 Normalización de expresiones aritméticas

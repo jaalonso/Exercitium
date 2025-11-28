@@ -346,6 +346,7 @@ library
       Primos_cubanos
       Primos_equidistantes
       Problema_de_las_jarras
+      Problema_de_las_puertas
       Problema_de_suma_cero
       Producto_cartesiano
       Producto_cartesiano_de_dos_conjuntos
@@ -849,6 +850,7 @@ test-suite Exercitium-test
       Primos_cubanos_Spec
       Primos_equidistantes_Spec
       Problema_de_las_jarras_Spec
+      Problema_de_las_puertas_Spec
       Problema_de_suma_cero_Spec
       Producto_cartesiano_de_dos_conjuntos_Spec
       Producto_cartesiano_Spec
