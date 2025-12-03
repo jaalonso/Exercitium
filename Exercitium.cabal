@@ -66,6 +66,7 @@ library
       Biparticiones_de_una_lista
       BPM_8Puzzle
       Buscaminas
+      Busqueda_en_lista_de_listas_de_pares
       BusquedaEnAnchura
       BusquedaEnEscalada
       BusquedaEnProfundidad
@@ -577,6 +578,7 @@ test-suite Exercitium-test
       Biparticiones_de_una_lista_Spec
       BPM_8Puzzle_Spec
       Buscaminas_Spec
+      Busqueda_en_lista_de_listas_de_pares_Spec
       Cadenas0y1_Spec
       Calculo_aproximado_de_integrales_definidas_Spec
       Calculo_de_la_suma_de_productos_de_numeros_por_factoriales_Spec

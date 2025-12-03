@@ -1,4 +1,4 @@
--- Problema_de_las_puertas.hs
+ -- Problema_de_las_puertas.hs
 -- Problema de las puertas.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 5-Diciembre-2014 (actualizado 28-Noviembre-2025)
