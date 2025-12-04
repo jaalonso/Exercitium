@@ -394,6 +394,7 @@ library
       Segmentos_cuyos_elementos_cumple_una_propiedad
       Seleccion_con_fallo
       Separacion_por_posicion
+      Sin_consecutivos_repetidos
       Sistema_factoradico_de_numeracion
       Sopa_de_letras
       Subarbol_de_profundidad_dada
@@ -898,6 +899,7 @@ test-suite Exercitium-test
       Segmentos_cuyos_elementos_cumple_una_propiedad_Spec
       Seleccion_con_fallo_Spec
       Separacion_por_posicion_Spec
+      Sin_consecutivos_repetidos_Spec
       Sistema_factoradico_de_numeracion_Spec
       Sopa_de_letras_Spec
       Subarbol_de_profundidad_dada_Spec
