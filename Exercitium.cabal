@@ -255,6 +255,7 @@ library
       Minimos_locales
       Movimientos_en_el_plano
       N_gramas
+      Normalizacion_de_expresiones_aritmetica
       NubPila
       Numeracion_con_multiples_base
       Numeracion_de_ternas
@@ -761,6 +762,7 @@ test-suite Exercitium-test
       Minimo_producto_escalar_Spec
       Minimos_locales_Spec
       N_gramas_Spec
+      Normalizacion_de_expresiones_aritmetica_Spec
       NubPila_Spec
       Numeracion_con_multiples_base_Spec
       Numeracion_de_ternas_Spec

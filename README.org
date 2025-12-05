@@ -135,7 +135,7 @@ Los objetivos de esta recopilación son:
 + 05 [[./src/Problema_de_las_puertas.hs][Problema de las puertas]].
 + 08 [[./src/Busqueda_en_lista_de_listas_de_pares.hs][Búsqueda en lista de listas de pares]].
 + 09 [[./src/Sin_consecutivos_repetidos.hs][Sin consecutivos repetidos]].
-+ 10 Normalización de expresiones aritméticas
++ 10 [[./src/Normalizacion_de_expresiones_aritmetica.hs][Normalización de expresiones aritméticas]].
 + 11 Números que sumados a su siguiente primo dan primos
 + 12 Juego de bloques con letras
 + 15 Permutación de elementos consecutivos
