@@ -136,7 +136,7 @@ Los objetivos de esta recopilación son:
 + 08 [[./src/Busqueda_en_lista_de_listas_de_pares.hs][Búsqueda en lista de listas de pares]].
 + 09 [[./src/Sin_consecutivos_repetidos.hs][Sin consecutivos repetidos]].
 + 10 [[./src/Normalizacion_de_expresiones_aritmetica.hs][Normalización de expresiones aritméticas]].
-+ 11 Números que sumados a su siguiente primo dan primos
++ 11 [[./src/Numeros_que_sumados_a_su_siguiente_primo_dan_primos.hs][Números que sumados a su siguiente primo dan primos]].
 + 12 Juego de bloques con letras
 + 15 Permutación de elementos consecutivos
 + 16 Representaciones de matrices
