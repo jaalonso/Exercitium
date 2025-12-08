@@ -203,6 +203,7 @@ library
       Interseccion_de_intervalos_cerrados
       Intersecciones_parciales
       Inversa_a_trozos
+      Juego_de_bloques_con_letras
       La_funcion_de_Fibonacci_por_programacion_dinamica
       La_funcion_indicatriz_de_Euler
       La_serie_de_Thue_Morse
@@ -713,6 +714,7 @@ test-suite Exercitium-test
       Interseccion_conjuntista_de_listas_Spec
       Interseccion_de_intervalos_cerrados_Spec
       Inversa_a_trozos_Spec
+      Juego_de_bloques_con_letras_Spec
       La_funcion_de_Fibonacci_por_programacion_dinamica_Spec
       La_funcion_indicatriz_de_Euler_Spec
       La_serie_de_Thue_Morse_Spec
