@@ -304,6 +304,7 @@ library
       Particiones_en_k_subconjuntos
       Pequeño_test_de_inteligencia
       Permutacion_ciclica
+      Permutacion_de_consecutivos
       PerteneceCola
       PertenecePila
       Pertenencia_de_un_elemento_a_un_arbol
@@ -812,6 +813,7 @@ test-suite Exercitium-test
       Particiones_en_k_subconjuntos_Spec
       Pequeño_test_de_inteligencia_Spec
       Permutacion_ciclica_Spec
+      Permutacion_de_consecutivos_Spec
       PerteneceCola_Spec
       PertenecePila_Spec
       Pertenencia_de_un_elemento_a_un_arbol_Spec

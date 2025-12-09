@@ -35,7 +35,7 @@
 
 module Juego_de_bloques_con_letras where
 
-import Data.List (delete, nub, nubBy, sort)
+import Data.List (delete, nubBy, sort)
 import Data.Char (toUpper)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
@@ -73,7 +73,7 @@ soluciones3 :: [String] -> String -> [[String]]
 soluciones3 bs cs = aux bs' (map toUpper cs)
   where
     cs' = map toUpper cs
-    bs' = nub (filter (\b -> any (`elem` b) cs') bs)
+    bs' = filter (\b -> any (`elem` b) cs') bs
     aux _ [] = [[]]
     aux [] _ = []
     aux as (d:ds) =
