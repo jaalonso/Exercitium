@@ -390,6 +390,7 @@ library
       Representacion_de_Zeckendorf
       Representacion_densa_de_polinomios
       Representacion_matricial_de_relaciones_binarias
+      Representaciones_de_matrices
       Representaciones_de_un_numero_como_suma_de_dos_cuadrados
       Rompecabeza_del_triomino_mediante_divide_y_venceras
       Rompecabeza_matematico
@@ -900,6 +901,7 @@ test-suite Exercitium-test
       Representacion_de_Zeckendorf_Spec
       Representacion_densa_de_polinomios_Spec
       Representacion_matricial_de_relaciones_binarias_Spec
+      Representaciones_de_matrices_Spec
       Representaciones_de_un_numero_como_suma_de_dos_cuadrados_Spec
       Rompecabeza_del_triomino_mediante_divide_y_venceras_Spec
       Segmento_de_una_lista_Spec
