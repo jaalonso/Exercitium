@@ -140,7 +140,7 @@ Los objetivos de esta recopilación son:
 + 12 [[./src/Juego_de_bloques_con_letras.hs][Juego de bloques con letras]].
 + 15 [[./src/Permutacion_de_consecutivos.hs][Permutación de elementos consecutivos]].
 + 16 [[./src/Representaciones_de_matrices.hs][Representaciones de matrices]].
-+ 17 Elementos adicionales
++ 17 [[./src/Elementos_adicionales.hs][Elementos adicionales]].
 + 18 Fractal de la curva del dragón
 + 19 2015 como raíz cuadrada de la suma de tres cubos
 + 22 2015, suma de dígitos y número de divisores
