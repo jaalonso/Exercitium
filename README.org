@@ -142,7 +142,7 @@ Los objetivos de esta recopilación son:
 + 16 [[./src/Representaciones_de_matrices.hs][Representaciones de matrices]].
 + 17 [[./src/Elementos_adicionales.hs][Elementos adicionales]].
 + 18 Fractal de la curva del dragón
-+ 19 2015 como raíz cuadrada de la suma de tres cubos
++ 19 [[./src/Raiz_de_suma_de_tres_cubos.hs][2015 como raíz cuadrada de la suma de tres cubos]].
 + 22 2015, suma de dígitos y número de divisores
 + 23 Desemparejamiento de listas
 + 24 Puntos en regiones rectangulares

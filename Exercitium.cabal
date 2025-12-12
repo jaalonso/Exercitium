@@ -365,6 +365,7 @@ library
       Puntos_en_regiones_rectangulares
       Raices_de_la_ecuacion_de_segundo_grado
       Raices_enteras
+      Raiz_de_suma_de_tres_cubos
       Rama_izquierda_de_un_arbol_binario
       Ramas_de_un_arbol
       Rango_de_una_lista
@@ -877,6 +878,7 @@ test-suite Exercitium-test
       Puntos_en_regiones_rectangulares_Spec
       Raices_de_la_ecuacion_de_segundo_grado_Spec
       Raices_enteras_Spec
+      Raiz_de_suma_de_tres_cubos_Spec
       Rama_izquierda_de_un_arbol_binario_Spec
       Ramas_de_un_arbol_Spec
       Rango_de_una_lista_Spec
