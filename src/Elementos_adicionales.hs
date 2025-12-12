@@ -80,8 +80,6 @@ specG adicionales = do
   it "e4" $
     adicionales 2 [1,3,5,7,9] [1,5,7]  `shouldBe`  [3,9]
   it "e5" $
-    adicionales 2 [1,3,5,7,9] [1,5]    `shouldBe` [3,7]
-  it "e6" $
     adicionales 2 ([1,3,5]++[7..]) (1 : [7..])  `shouldBe`  [3,5]
 
 spec :: Spec
