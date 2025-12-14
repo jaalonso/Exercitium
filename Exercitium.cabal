@@ -101,6 +101,7 @@ library
       Descomposiciones_con_n_sumandos
       Descomposiciones_con_sumandos_1_o_2
       Descomposiciones_triangulares
+      Desemparejamiento_de_listas
       Diagonales_principales
       Diccionario_de_frecuencias
       Diferencia_conjuntista_de_listas
@@ -278,6 +279,7 @@ library
       Numeros_autodescriptivos
       Numeros_belgas
       Numeros_con_digitos_primos
+      Numeros_cuya_suma_de_digitos_es_su_numero_de_divisores
       Numeros_de_Lychrel
       Numeros_de_ocurrencias_de_elementos
       Numeros_de_Pentanacci
@@ -624,6 +626,7 @@ test-suite Exercitium-test
       Descomposiciones_con_n_sumandos_Spec
       Descomposiciones_con_sumandos_1_o_2_Spec
       Descomposiciones_triangulares_Spec
+      Desemparejamiento_de_listas_Spec
       Diagonales_principales_Spec
       Diccionario_de_frecuencias_Spec
       Diferencia_conjuntista_de_listas_Spec
@@ -791,6 +794,7 @@ test-suite Exercitium-test
       Numeros_autodescriptivos_Spec
       Numeros_belgas_Spec
       Numeros_con_digitos_primos_Spec
+      Numeros_cuya_suma_de_digitos_es_su_numero_de_divisores_Spec
       Numeros_de_Lychrel_Spec
       Numeros_de_ocurrencias_de_elementos_Spec
       Numeros_de_Pentanacci_Spec

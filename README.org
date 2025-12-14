@@ -143,8 +143,8 @@ Los objetivos de esta recopilación son:
 + 17 [[./src/Elementos_adicionales.hs][Elementos adicionales]].
 + 18 Fractal de la curva del dragón
 + 19 [[./src/Raiz_de_suma_de_tres_cubos.hs][2015 como raíz cuadrada de la suma de tres cubos]].
-+ 22 2015, suma de dígitos y número de divisores
-+ 23 Desemparejamiento de listas
++ 22 [[./src/Numeros_cuya_suma_de_digitos_es_su_numero_de_divisores.hs][2015, suma de dígitos y número de divisores]].
++ 23 [[./src/Desemparejamiento_de_listas.hs][Desemparejamiento de listas]].
 + 24 Puntos en regiones rectangulares
 + 26 Elementos más frecuentes
 + 29 Enumeración de los pares de números naturales
