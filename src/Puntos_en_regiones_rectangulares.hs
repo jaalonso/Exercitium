@@ -1,7 +1,7 @@
 -- Puntos_en_regiones_rectangulares.hs
 -- Puntos en regiones rectangulares.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 5-mayo-2022
+-- Sevilla, 24-Diciembre-2014 (actualizado 15-Diciembre-2025)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -48,6 +48,7 @@
 
 module Puntos_en_regiones_rectangulares where
 
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (Arbitrary, Gen, Property, (==>), arbitrary, oneof,
                         sized, generate, quickCheck, quickCheckWith, stdArgs,
                         Args(maxDiscardRatio))
@@ -64,14 +65,83 @@ r0021 = Rectangulo (0,0) (2,1)
 r3051 = Rectangulo (3,0) (5,1)
 r4162 = Rectangulo (4,1) (6,2)
 
-enRegion :: Punto -> Region -> Bool
-enRegion (x,y) (Rectangulo (x1,y1) (x2,y2)) =
+-- 1ª solución
+-- ===========
+
+enRegion1 :: Punto -> Region -> Bool
+enRegion1 (x,y) (Rectangulo (x1,y1) (x2,y2)) =
   x1 <= x && x <= x2 &&
   y1 <= y && y <= y2
-enRegion p (Union  r1 r2) =
-  enRegion p r1 || enRegion p r2
-enRegion p (Diferencia r1 r2) =
-  enRegion p r1 && not (enRegion p r2)
+enRegion1 p (Union  r1 r2) =
+  enRegion1 p r1 || enRegion1 p r2
+enRegion1 p (Diferencia r1 r2) =
+  enRegion1 p r1 && not (enRegion1 p r2)
+
+-- 2ª solución
+-- ===========
+
+enRegion2 :: Punto -> Region -> Bool
+enRegion2 (x, y) (Rectangulo (x1, y1) (x2, y2)) =
+  and [x1 <= x, x <= x2, y1 <= y, y <= y2]
+enRegion2 p (Union r1 r2) =
+  or [enRegion2 p r1, enRegion2 p r2]
+enRegion2 p (Diferencia r1 r2) =
+  and [enRegion2 p r1, not (enRegion2 p r2)]
+
+-- 3ª solución
+-- ===========
+
+enRegion3 :: Punto -> Region -> Bool
+enRegion3 (x, y) (Rectangulo (x1, y1) (x2, y2))
+  | x < x1 || x > x2 = False
+  | y < y1 || y > y2 = False
+  | otherwise        = True
+enRegion3 p (Union r1 r2)
+  | enRegion3 p r1 = True
+  | otherwise      = enRegion3 p r2
+enRegion3 p (Diferencia r1 r2)
+  | enRegion3 p r1 = not (enRegion3 p r2)
+  | otherwise     = False
+
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Punto -> Region -> Bool) -> Spec
+specG enRegion = do
+  it "e1" $
+    enRegion (1,0) r0021                                   `shouldBe`  True
+  it "e2" $
+    enRegion (3,0) r0021                                   `shouldBe`  False
+  it "e3" $
+    enRegion (1,1) (Union r0021 r3051)                     `shouldBe`  True
+  it "e4" $
+    enRegion (4,0) (Union r0021 r3051)                     `shouldBe`  True
+  it "e5" $
+    enRegion (4,2) (Union r0021 r3051)                     `shouldBe`  False
+  it "e6" $
+    enRegion (3,1) (Diferencia r3051 r4162)                `shouldBe`  True
+  it "e7" $
+    enRegion (4,1) (Diferencia r3051 r4162)                `shouldBe`  False
+  it "e8" $
+    enRegion (4,2) (Diferencia r3051 r4162)                `shouldBe`  False
+  it "e9" $
+    enRegion (4,2) (Union (Diferencia r3051 r4162) r4162)  `shouldBe`  True
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG enRegion1
+  describe "def. 2" $ specG enRegion2
+  describe "def. 3" $ specG enRegion3
+
+-- La verificación es
+--    λ> verifica
+--    27 examples, 0 failures
+
+-- Comprobación de equivalencia
+-- ============================
 
 -- (regionArbitraria n) es un generador de regiones arbitrarias de orden
 -- n. Por ejemplo,
@@ -94,12 +164,46 @@ instance Arbitrary Region where
   arbitrary = sized regionArbitraria
 
 -- La propiedad es
+prop_equivalencia :: Punto -> Region -> Bool
+prop_equivalencia p r =
+  all (== enRegion1 p r)
+      [enRegion2 p r,
+       enRegion3 p r]
+
+-- La comprobación es
+--    λ> quickCheck prop_equivalencia
+--    +++ OK, passed 100 tests.
+
+-- Comparación de eficiencia
+-- =========================
+
+ejRegion:: Region
+ejRegion = foldl1 Union [Rectangulo (i, 0) (i + 5, 1) | i <- [0..5000]]
+
+ejPuntos :: [Punto]
+ejPuntos = [(x, y) | x <- [0..500], y <- [0, 5]]
+
+-- La comparación es
+--    λ> length (filter (\p -> enRegion1 p ejRegion) ejPuntos)
+--    501
+--    (2.21 secs, 1,666,408,488 bytes)
+--    λ> length (filter (\p -> enRegion2 p ejRegion) ejPuntos)
+--    501
+--    (3.55 secs, 3,852,610,152 bytes)
+--    λ> length (filter (\p -> enRegion3 p ejRegion) ejPuntos)
+--    501
+--    (2.12 secs, 1,856,975,528 bytes)
+
+-- Propiedades
+-- ===========
+
+-- La propiedad es
 prop_enRegion :: Punto -> Region -> Region -> Property
 prop_enRegion p r1 r2 =
-  enRegion p r1 ==>
-  (enRegion p (Union  r1 r2) &&
-   enRegion p (Union  r2 r1) &&
-   not (enRegion p (Diferencia r2 r1)))
+  enRegion1 p r1 ==>
+  (enRegion1 p (Union  r1 r2) &&
+   enRegion1 p (Union  r2 r1) &&
+   not (enRegion1 p (Diferencia r2 r1)))
 
 -- La comprobación es
 --    λ> quickCheck prop_enRegion
