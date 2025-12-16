@@ -146,7 +146,7 @@ Los objetivos de esta recopilación son:
 + 22 [[./src/Numeros_cuya_suma_de_digitos_es_su_numero_de_divisores.hs][2015, suma de dígitos y número de divisores]].
 + 23 [[./src/Desemparejamiento_de_listas.hs][Desemparejamiento de listas]].
 + 24 [[./src/Puntos_en_regiones_rectangulares.hs][Puntos en regiones rectangulares]].
-+ 26 Elementos más frecuentes
++ 26 [[./src/Elementos_mas_frecuentes.hs][Elementos más frecuentes]].
 + 29 Enumeración de los pares de números naturales
 + 30 La función suelo
 + 31 Período de una lista
