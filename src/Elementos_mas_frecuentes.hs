@@ -108,9 +108,9 @@ verifica = hspec spec
 specG :: (Int -> String -> [(Int,Char)]) -> Spec
 specG masFrecuentes = do
   it "e1" $
-    masFrecuentes 2 "trianera" == [(2,'a'),(2,'r')]
+    masFrecuentes 2 "trianera" == [(2,'r'),(2,'a')]
   it "e2" $
-    masFrecuentes 2 "interdisciplinariedad" == [(3,'d'),(5,'i')]
+    masFrecuentes 2 "interdisciplinariedad" == [(5,'i'),(3,'d')]
 
 spec :: Spec
 spec = do
@@ -121,7 +121,7 @@ spec = do
 
 -- La verificación es
 --    λ> verifica
---    10 examples, 0 failures
+--    8 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
