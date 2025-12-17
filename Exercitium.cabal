@@ -147,6 +147,7 @@ library
       Empiezan_con_mayuscula
       Entero_positivo_de_la_cadena
       Enumera_arbol
+      Enumeracion_de_pares_de_naturales
       Escalada_Monedas
       Escalada_Prim
       Evaluacion_de_arboles_de_expresiones_aritmeticas
@@ -670,6 +671,7 @@ test-suite Exercitium-test
       Empiezan_con_mayuscula_Spec
       Entero_positivo_de_la_cadena_Spec
       Enumera_arbol_Spec
+      Enumeracion_de_pares_de_naturales_Spec
       Escalada_Monedas_Spec
       Escalada_Prim_Spec
       Evaluacion_de_arboles_de_expresiones_aritmeticas_Spec
