@@ -210,6 +210,7 @@ library
       Juego_de_bloques_con_letras
       La_funcion_de_Fibonacci_por_programacion_dinamica
       La_funcion_indicatriz_de_Euler
+      La_funcion_suelo
       La_serie_de_Thue_Morse
       La_sucesion_de_Ducci
       La_sucesion_de_Thue_Morse
@@ -729,6 +730,7 @@ test-suite Exercitium-test
       Juego_de_bloques_con_letras_Spec
       La_funcion_de_Fibonacci_por_programacion_dinamica_Spec
       La_funcion_indicatriz_de_Euler_Spec
+      La_funcion_suelo_Spec
       La_serie_de_Thue_Morse_Spec
       La_sucesion_de_Thue_Morse_Spec
       La_sucesion_del_reloj_astronomico_de_Praga_Spec

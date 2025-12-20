@@ -9,19 +9,18 @@
 -- sus componentes y entres los pares con la misma suma elegir antes al
 -- que tiene mayor su primera componente.
 --
--- Definir la función
---    pares :: [(Int,Int)]
--- tal que pares es la lista de los pares de números naturales con el
--- orden anterior. por ejemplo,
---    λ> take 10 pares
---    [(0,0),(1,0),(0,1),(2,0),(1,1),(0,2),(3,0),(2,1),(1,2),(0,3)]
---
--- Usando la definición de pares, definir la función
+-- Definir las funciones
+--    pares    :: [(Int,Int)]
 --    posicion :: (Int,Int) -> Int
--- tal que (posicion p) es la posición del par p en la lista pares. Por
--- ejemplo,
---    posicion (0,0)  ==  0
---    posicion (2,0)  ==  3
+-- tales que
+-- + pares es la lista de los pares de números naturales con el orden
+--   anterior. Por ejemplo,
+--      λ> take 10 pares
+--      [(0,0),(1,0),(0,1),(2,0),(1,1),(0,2),(3,0),(2,1),(1,2),(0,3)]
+-- + (posicion p) es la posición del par p en la lista pares. Por
+--   ejemplo,
+--      posicion (0,0)  ==  0
+--      posicion (2,0)  ==  3
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
