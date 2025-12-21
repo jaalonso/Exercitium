@@ -149,7 +149,7 @@ Los objetivos de esta recopilación son:
 + 26 [[./src/Elementos_mas_frecuentes.hs][Elementos más frecuentes]].
 + 29 [[./src/Enumeracion_de_pares_de_naturales.hs][Enumeración de los pares de números naturales]].
 + 30 [[./src/La_funcion_suelo.hs][La función suelo]].
-+ 31 Período de una lista
++ 31 [[./src/Periodo_de_una_lista.hs][Período de una lista]].
 
 ** Ejercicios publicados el 2021
 
