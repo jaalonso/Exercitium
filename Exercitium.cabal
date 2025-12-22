@@ -282,6 +282,7 @@ library
       Numeros_autodescriptivos
       Numeros_belgas
       Numeros_con_digitos_primos
+      Numeros_con_factorizacion_capicua
       Numeros_cuya_suma_de_digitos_es_su_numero_de_divisores
       Numeros_de_Lychrel
       Numeros_de_ocurrencias_de_elementos
@@ -801,6 +802,7 @@ test-suite Exercitium-test
       Numeros_autodescriptivos_Spec
       Numeros_belgas_Spec
       Numeros_con_digitos_primos_Spec
+      Numeros_con_factorizacion_capicua_Spec
       Numeros_cuya_suma_de_digitos_es_su_numero_de_divisores_Spec
       Numeros_de_Lychrel_Spec
       Numeros_de_ocurrencias_de_elementos_Spec

@@ -97,8 +97,6 @@ Los objetivos de esta recopilación son:
 + 24 [[./src/Sustitucion_en_una_expresion_aritmetica.hs][Sustitución en una expresión aritmética]].
 + 25 [[./src/Laberinto_numerico.hs][Laberinto numérico]].
 
-** Ejercicios publicados el 2015
-
 *** Octubre 2014
 + 30 [[./src/Divisibles_por_el_primero.hs][Divisibles por el primero]].
 + 31 [[./src/Listas_equidigitales.hs][Listas equidigitales]].
@@ -150,6 +148,32 @@ Los objetivos de esta recopilación son:
 + 29 [[./src/Enumeracion_de_pares_de_naturales.hs][Enumeración de los pares de números naturales]].
 + 30 [[./src/La_funcion_suelo.hs][La función suelo]].
 + 31 [[./src/Periodo_de_una_lista.hs][Período de una lista]].
+
+** Ejercicios publicados el 2015
+
+*** Enero 2015
++ 01 [[./src/Numeros_con_factorizacion_capicua.hs][2015 y los números con factorización capicúa]].
++ 02 Simplificación de expresiones booleanas
++ 05 Dos cuadrados encajados
++ 06 Varios cuadrados encajados
++ 07 Varios cuadrados encajados rotando
++ 08 2015 y los números pitagóricos
++ 09 Triángulos de Herón
++ 12 Listas disjuntas
++ 13 Máxima suma de los segmentos
++ 14 Conjuntos de puntos enteros en regiones rectangulares
++ 15 Mezcla de infinitas listas infinitas
++ 16 Ordenación según una función
++ 19 Suma de una lista de vectores
++ 20 Listas con suma dada
++ 21 Triparticiones de una lista
++ 22 Sustitución de listas
++ 23 Enumeración de los números enteros
++ 26 Números naturales separados por ceros
++ 27 Particiones en listas de segmentos
++ 28 División según una propiedad
++ 29 Posición del primer falso en un vector
++ 30 Números polidivisibles
 
 ** Ejercicios publicados el 2021
 
