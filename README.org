@@ -153,7 +153,7 @@ Los objetivos de esta recopilación son:
 
 *** Enero 2015
 + 01 [[./src/Numeros_con_factorizacion_capicua.hs][2015 y los números con factorización capicúa]].
-+ 02 Simplificación de expresiones booleanas
++ 02 [[./src/Simplificacion_de_expresiones_booleanas.hs][Simplificación de expresiones booleanas]].
 + 05 Dos cuadrados encajados
 + 06 Varios cuadrados encajados
 + 07 Varios cuadrados encajados rotando
