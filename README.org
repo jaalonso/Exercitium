@@ -157,7 +157,7 @@ Los objetivos de esta recopilación son:
 + 05 Dos cuadrados encajados
 + 06 Varios cuadrados encajados
 + 07 Varios cuadrados encajados rotando
-+ 08 2015 y los números pitagóricos
++ 08 [[./src/Numeros_pitagoricos.hs][2015 y los números pitagóricos]].
 + 09 Triángulos de Herón
 + 12 Listas disjuntas
 + 13 Máxima suma de los segmentos
