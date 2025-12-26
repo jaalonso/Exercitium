@@ -502,6 +502,7 @@ library
       Tres_iguales
       Triangulares_con_cifras
       Triangulo_aritmetico
+      Triangulos_de_Heron
       Ultimo_digito
       Ultimo_digito_no_nulo_del_factorial
       UltimoCola
@@ -997,6 +998,7 @@ test-suite Exercitium-test
       Tres_iguales_Spec
       Triangulares_con_cifras_Spec
       Triangulo_aritmetico_Spec
+      Triangulos_de_Heron_Spec
       Ultimo_digito_no_nulo_del_factorial_Spec
       Ultimo_digito_Spec
       UltimoCola_Spec

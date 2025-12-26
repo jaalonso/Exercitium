@@ -27,7 +27,7 @@
 
 module Numeros_pitagoricos where
 
-import Data.Numbers.Primes
+import Data.Numbers.Primes (primes)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
