@@ -92,6 +92,7 @@ library
       Composicion_de_relaciones_binarias_v2
       Conjunto_de_divisores
       Conjunto_de_primos_relativos
+      Conjuntos_de_puntos_enteros_en_regiones_rectangulares
       Contenacion_de_una_lista_de_listas
       ContenidaCola
       ContenidaPila
@@ -237,6 +238,7 @@ library
       MaxCola
       Maxima_suma_de_caminos_en_un_triangulo
       Maxima_suma_de_los_caminos_en_una_matriz
+      Maxima_suma_de_segmentos
       Maximo_de_tres_numeros
       Maximo_de_una_funcion
       Maximo_de_una_lista
@@ -626,6 +628,7 @@ test-suite Exercitium-test
       ConjuntoConListasNoOrdenadasConDuplicados_Spec
       ConjuntoConListasNoOrdenadasSinDuplicados_Spec
       ConjuntoConListasOrdenadasSinDuplicados_Spec
+      Conjuntos_de_puntos_enteros_en_regiones_rectangulares_Spec
       Contenacion_de_una_lista_de_listas_Spec
       ContenidaCola_Spec
       ContenidaPila_Spec
@@ -762,6 +765,7 @@ test-suite Exercitium-test
       MaxCola_Spec
       Maxima_suma_de_caminos_en_un_triangulo_Spec
       Maxima_suma_de_los_caminos_en_una_matriz_Spec
+      Maxima_suma_de_segmentos_Spec
       Maximo_de_tres_numeros_Spec
       Maximo_de_una_funcion_Spec
       Maximo_de_una_lista_Spec

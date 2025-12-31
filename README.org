@@ -160,8 +160,8 @@ Los objetivos de esta recopilación son:
 + 08 [[./src/Numeros_pitagoricos.hs][2015 y los números pitagóricos]].
 + 09 [[./src/Triangulos_de_Heron.hs][Triángulos de Herón]].
 + 12 [[./src/Listas_disjuntas.hs][Listas disjuntas]].
-+ 13 Máxima suma de los segmentos
-+ 14 Conjuntos de puntos enteros en regiones rectangulares
++ 13 [[./src/Maxima_suma_de_segmentos.hs][Máxima suma de los segmentos]].
++ 14 [[./src/Conjuntos_de_puntos_enteros_en_regiones_rectangulares.hs][Conjuntos de puntos enteros en regiones rectangulares]].
 + 15 Mezcla de infinitas listas infinitas
 + 16 Ordenación según una función
 + 19 Suma de una lista de vectores
