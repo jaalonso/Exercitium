@@ -162,7 +162,7 @@ Los objetivos de esta recopilación son:
 + 12 [[./src/Listas_disjuntas.hs][Listas disjuntas]].
 + 13 [[./src/Maxima_suma_de_segmentos.hs][Máxima suma de los segmentos]].
 + 14 [[./src/Conjuntos_de_puntos_enteros_en_regiones_rectangulares.hs][Conjuntos de puntos enteros en regiones rectangulares]].
-+ 15 Mezcla de infinitas listas infinitas
++ 15 [[./src/Mezcla_de_infinitas_listas_infinitas.hs][Mezcla de infinitas listas infinitas]].
 + 16 Ordenación según una función
 + 19 Suma de una lista de vectores
 + 20 Listas con suma dada
