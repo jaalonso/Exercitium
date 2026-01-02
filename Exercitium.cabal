@@ -302,6 +302,7 @@ library
       Orbita_prima
       Ordenacion_de_estructuras
       Ordenacion_de_los_racionales
+      Ordenacion_segun
       Ordenada_ciclicamente
       OrdenadaCola
       OrdenadaPila
@@ -828,6 +829,7 @@ test-suite Exercitium-test
       Orbita_prima_Spec
       Ordenacion_de_estructuras_Spec
       Ordenacion_de_los_racionales_Spec
+      Ordenacion_segun_Spec
       Ordenada_ciclicamente_Spec
       OrdenadaCola_Spec
       OrdenadaPila_Spec
