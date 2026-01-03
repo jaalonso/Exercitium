@@ -441,6 +441,7 @@ library
       Suma_de_numeros_amigos_menores_que_n
       Suma_de_todos_los_anteriores
       Suma_de_un_arbol
+      Suma_de_un_lista_de_vectores
       Suma_elementos_consecutivos
       Suma_si_todos_justos
       Sumas_de_4_primos
@@ -968,6 +969,7 @@ test-suite Exercitium-test
       Suma_de_numeros_amigos_menores_que_n_Spec
       Suma_de_todos_los_anteriores_Spec
       Suma_de_un_arbol_Spec
+      Suma_de_un_lista_de_vectores_Spec
       Suma_elementos_consecutivos_Spec
       Suma_si_todos_justos_Spec
       Sumas_de_4_primos_Spec

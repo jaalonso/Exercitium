@@ -164,7 +164,7 @@ Los objetivos de esta recopilación son:
 + 14 [[./src/Conjuntos_de_puntos_enteros_en_regiones_rectangulares.hs][Conjuntos de puntos enteros en regiones rectangulares]].
 + 15 [[./src/Mezcla_de_infinitas_listas_infinitas.hs][Mezcla de infinitas listas infinitas]].
 + 16 [[./src/Ordenacion_segun.hs][Ordenación según una función]].
-+ 19 Suma de una lista de vectores
++ 19 [[./src/Suma_de_un_lista_de_vectores.hs][Suma de una lista de vectores]].
 + 20 Listas con suma dada
 + 21 Triparticiones de una lista
 + 22 Sustitución de listas
