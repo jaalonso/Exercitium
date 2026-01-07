@@ -221,6 +221,7 @@ library
       Limite_del_seno
       Limites_de_sucesiones
       Lista_cuadrada
+      Listas_con_suma_dada
       Listas_disjuntas
       Listas_equidigitales
       ListaVector
@@ -751,6 +752,7 @@ test-suite Exercitium-test
       Limite_del_seno_Spec
       Limites_de_sucesiones_Spec
       Lista_cuadrada_Spec
+      Listas_con_suma_dada_Spec
       Listas_disjuntas_Spec
       Listas_equidigitales_Spec
       ListaVector_Spec

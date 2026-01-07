@@ -165,7 +165,7 @@ Los objetivos de esta recopilación son:
 + 15 [[./src/Mezcla_de_infinitas_listas_infinitas.hs][Mezcla de infinitas listas infinitas]].
 + 16 [[./src/Ordenacion_segun.hs][Ordenación según una función]].
 + 19 [[./src/Suma_de_un_lista_de_vectores.hs][Suma de una lista de vectores]].
-+ 20 Listas con suma dada
++ 20 [[./src/Listas_con_suma_dada.hs][Listas con suma dada]].
 + 21 Triparticiones de una lista
 + 22 Sustitución de listas
 + 23 Enumeración de los números enteros
