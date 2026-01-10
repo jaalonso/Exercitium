@@ -510,6 +510,7 @@ library
       Triangulares_con_cifras
       Triangulo_aritmetico
       Triangulos_de_Heron
+      Triparticiones_de_una_lista
       Ultimo_digito
       Ultimo_digito_no_nulo_del_factorial
       UltimoCola
@@ -1013,6 +1014,7 @@ test-suite Exercitium-test
       Triangulares_con_cifras_Spec
       Triangulo_aritmetico_Spec
       Triangulos_de_Heron_Spec
+      Triparticiones_de_una_lista_Spec
       Ultimo_digito_no_nulo_del_factorial_Spec
       Ultimo_digito_Spec
       UltimoCola_Spec

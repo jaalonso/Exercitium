@@ -13,13 +13,15 @@
 --    [[[4,7,3],[5,3,9]],[[4,7,3],[3,1,4],[2,2,5]]]
 --    λ> conSuma [9,11,12] [[4,7,3],[3,1,4],[5,3,9],[2,2,5]]
 --    []
+--    λ> length (conSuma [5,5,5] (replicate 70 [1,1,1]))
+--    12103014
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
 module Listas_con_suma_dada where
 
-import Data.List
+import Data.List (sort, subsequences, transpose)
 import qualified Data.Map.Strict as M
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
