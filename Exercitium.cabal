@@ -449,6 +449,7 @@ library
       Sumas_de_divisores_propios
       Sumas_de_dos_abundantes
       Sumas_de_dos_primos
+      Sustitucion_de_listas
       Sustitucion_en_una_expresion_aritmetica
       TAD.Cola
       TAD.ColaConDosListas
@@ -979,6 +980,7 @@ test-suite Exercitium-test
       Sumas_de_divisores_propios_Spec
       Sumas_de_dos_abundantes_Spec
       Sumas_de_dos_primos_Spec
+      Sustitucion_de_listas_Spec
       Sustitucion_en_una_expresion_aritmetica_Spec
       TAD_AlgunosVerificanConj_Spec
       TAD_Conjunto_unitario_Spec
