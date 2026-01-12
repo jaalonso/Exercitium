@@ -168,7 +168,7 @@ Los objetivos de esta recopilación son:
 + 20 [[./src/Listas_con_suma_dada.hs][Listas con suma dada]].
 + 21 [[./src/Triparticiones_de_una_lista.hs][Triparticiones de una lista]].
 + 22 [[./src/Sustitucion_de_listas.hs][Sustitución de listas]].
-+ 23 [[./Enumeracion_de_los_enteros.hs][Enumeración de los números enteros]].
++ 23 [[./src/Enumeracion_de_los_enteros.hs][Enumeración de los números enteros]].
 + 26 Números naturales separados por ceros
 + 27 Particiones en listas de segmentos
 + 28 División según una propiedad
