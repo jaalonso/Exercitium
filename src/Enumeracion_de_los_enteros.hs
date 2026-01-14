@@ -216,7 +216,6 @@ prop_equivalencia (NonNegative n) =
 --    -15000000
 --    (2.84 secs, 4,800,606,416 bytes)
 
-
 -- Propiedad
 -- =========
 
