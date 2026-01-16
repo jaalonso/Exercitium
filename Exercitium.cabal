@@ -318,6 +318,7 @@ library
       Particiones_de_enteros_positivos
       Particiones_de_longitud_fija
       Particiones_en_k_subconjuntos
+      Particiones_en_listas_de_segmentos
       Pequeño_test_de_inteligencia
       Periodo_de_una_lista
       Permutacion_ciclica
@@ -851,6 +852,7 @@ test-suite Exercitium-test
       Particiones_de_enteros_positivos_Spec
       Particiones_de_longitud_fija_Spec
       Particiones_en_k_subconjuntos_Spec
+      Particiones_en_listas_de_segmentos_Spec
       Pequeño_test_de_inteligencia_Spec
       Periodo_de_una_lista_Spec
       Permutacion_ciclica_Spec

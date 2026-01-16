@@ -1,7 +1,7 @@
 -- Numeros_naturales_separados_por_ceros.hs
 -- Números naturales separados por ceros.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 26-Enero-2015 (actualizado 13-Enero-2026)
+-- Sevilla, 26-Enero-2015 (actualizado 14-Enero-2026)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------

@@ -170,7 +170,7 @@ Los objetivos de esta recopilación son:
 + 22 [[./src/Sustitucion_de_listas.hs][Sustitución de listas]].
 + 23 [[./src/Enumeracion_de_los_enteros.hs][Enumeración de los números enteros]].
 + 26 [[./src/Numeros_naturales_separados_por_ceros.hs][Números naturales separados por ceros]].
-+ 27 Particiones en listas de segmentos
++ 27 [[./src/Particiones_en_listas_de_segmentos.hs][Particiones en listas de segmentos]].
 + 28 División según una propiedad
 + 29 Posición del primer falso en un vector
 + 30 Números polidivisibles
