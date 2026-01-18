@@ -172,7 +172,7 @@ Los objetivos de esta recopilación son:
 + 26 [[./src/Numeros_naturales_separados_por_ceros.hs][Números naturales separados por ceros]].
 + 27 [[./src/Particiones_en_listas_de_segmentos.hs][Particiones en listas de segmentos]].
 + 28 [[./src/Division_segun_una_propiedad.hs][División según una propiedad]].
-+ 29 Posición del primer falso en un vector
++ 29 [[./src/Posicion_del_primer_falso_en_un_vector.hs][Posición del primer falso en un vector]].
 + 30 Números polidivisibles
 
 ** Ejercicios publicados el 2021

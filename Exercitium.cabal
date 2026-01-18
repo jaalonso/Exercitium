@@ -355,6 +355,7 @@ library
       Pol_Valor_de_un_polinomio_en_un_punto
       Polinomios_cuadraticos_generadores_de_primos
       Polinomios_de_Bell
+      Posicion_del_primer_falso_en_un_vector
       Posiciones_de_un_caracter_en_una_cadena
       Posiciones_diagonales_principales
       Potencia_entera
@@ -892,6 +893,7 @@ test-suite Exercitium-test
       Pol_Valor_de_un_polinomio_en_un_punto_Spec
       Polinomios_cuadraticos_generadores_de_primos_Spec
       Polinomios_de_Bell_Spec
+      Posicion_del_primer_falso_en_un_vector_Spec
       Posiciones_de_un_caracter_en_una_cadena_Spec
       Posiciones_diagonales_principales_Spec
       Potencia_entera_Spec
