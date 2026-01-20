@@ -300,6 +300,7 @@ library
       Numeros_para_los_que_mcm
       Numeros_perfectos
       Numeros_pitagoricos
+      Numeros_polidivisibles
       Numeros_primos_de_Hilbert
       Numeros_que_sumados_a_su_siguiente_primo_dan_primos
       Numeros_racionales
@@ -837,6 +838,7 @@ test-suite Exercitium-test
       Numeros_para_los_que_mcm_Spec
       Numeros_perfectos_Spec
       Numeros_pitagoricos_Spec
+      Numeros_polidivisibles_Spec
       Numeros_primos_de_Hilbert_Spec
       Numeros_que_sumados_a_su_siguiente_primo_dan_primos_Spec
       Orbita_prima_Spec

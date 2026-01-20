@@ -173,7 +173,7 @@ Los objetivos de esta recopilación son:
 + 27 [[./src/Particiones_en_listas_de_segmentos.hs][Particiones en listas de segmentos]].
 + 28 [[./src/Division_segun_una_propiedad.hs][División según una propiedad]].
 + 29 [[./src/Posicion_del_primer_falso_en_un_vector.hs][Posición del primer falso en un vector]].
-+ 30 Números polidivisibles
++ 30 [[./src/Numeros_polidivisibles.hs][Números polidivisibles]].
 
 ** Ejercicios publicados el 2021
 
