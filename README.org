@@ -175,6 +175,28 @@ Los objetivos de esta recopilación son:
 + 29 [[./src/Posicion_del_primer_falso_en_un_vector.hs][Posición del primer falso en un vector]].
 + 30 [[./src/Numeros_polidivisibles.hs][Números polidivisibles]].
 
+*** Febrero 2015
++ 02 [[./src/Siguiente_elemento_en_una_lista.hs][Siguiente elemento en una lista]].
++ 03 Mayor capicúa producto de dos números de n cifras
++ 04 Mínimo producto escalar
++ 05 Particiones de enteros positivos
++ 06 Menor número triangular con más de n divisores
++ 09 Reconocimiento de potencias de 2
++ 10 Segmentos de longitud dada
++ 11 Diagonales principales de una matriz
++ 12 Mayor producto de n dígitos consecutivos de un número
++ 13 Sucesión de sumas de dos números abundantes
++ 16 Sumas de 4 primos
++ 17 Parejas de números y divisores
++ 18 Sumas de divisores propios
++ 19 Densidades de números abundantes, perfectos y deficientes
++ 20 Diagonales secundarias de una matriz
++ 23 Mínimo número de cambios para igualar una lista
++ 24 Matriz zigzagueante
++ 25 Suma de conjuntos de polinomios
++ 26 Mayor diferencia progresiva
++ 27 Numeración con múltiples bases
+
 ** Ejercicios publicados el 2021
 
 *** Enero 2021

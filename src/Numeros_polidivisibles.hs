@@ -30,7 +30,7 @@
 --      [1,2,3,4,5,6,7,8,9,10,12,14,16,18,20,22,24,26,28,30]
 --      λ> take 10 (dropWhile (<100) polidivisibles)
 --      [102,105,108,120,123,126,129,141,144,147]
---      λ> polidivisibles8 !! 20455
+--      λ> polidivisibles !! 20455
 --      3608528850368400786036725
 -- + (polidivisiblesN k) es la lista de los números polidivisibles con k
 --   dígitos. Por ejemplo,
@@ -52,8 +52,8 @@
 
 module Numeros_polidivisibles where
 
-import Control.Applicative ((<$>))       -- para la definición A5
-import Data.List (inits, tails, sort)    -- para las definiciones A7 y A8
+import Control.Applicative ((<$>))
+import Data.List (inits, tails, sort)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
