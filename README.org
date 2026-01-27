@@ -178,7 +178,7 @@ Los objetivos de esta recopilación son:
 *** Febrero 2015
 + 02 [[./src/Siguiente_elemento_en_una_lista.hs][Siguiente elemento en una lista]].
 + 03 [[./src/Mayor_capicua_producto_de_dos_numeros_de_n_cifras.hs][Mayor capicúa producto de dos números de n cifras]].
-+ 04 Mínimo producto escalar
++ 04 [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
 + 05 Particiones de enteros positivos
 + 06 Menor número triangular con más de n divisores
 + 09 Reconocimiento de potencias de 2
