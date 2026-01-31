@@ -260,6 +260,7 @@ library
       Mayusculas_iniciales
       Media_aritmetica_de_tres_numeros
       Menor_numero_con_una_cantidad_dada_de_divisores
+      Menor_numero_triangular_con_mas_de_n_divisores
       Metodo_de_biseccion_para_aproximar_raices_de_funciones
       Metodo_de_biseccion_para_calcular_ceros_de_una_funcion
       Metodo_de_Heron_para_calcular_la_raiz_cuadrada
@@ -801,6 +802,7 @@ test-suite Exercitium-test
       Mayusculas_iniciales_Spec
       Media_aritmetica_de_tres_numeros_Spec
       Menor_numero_con_una_cantidad_dada_de_divisores_Spec
+      Menor_numero_triangular_con_mas_de_n_divisores_Spec
       Metodo_de_biseccion_para_aproximar_raices_de_funciones_Spec
       Metodo_de_biseccion_para_calcular_ceros_de_una_funcion_Spec
       Metodo_de_Heron_para_calcular_la_raiz_cuadrada_Spec

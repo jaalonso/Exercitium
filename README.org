@@ -180,7 +180,7 @@ Los objetivos de esta recopilación son:
 + 03 [[./src/Mayor_capicua_producto_de_dos_numeros_de_n_cifras.hs][Mayor capicúa producto de dos números de n cifras]].
 + 04 [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
 + 05 [[./src/Particiones_de_enteros_positivos.hs][Particiones de enteros positivos]].
-+ 06 Menor número triangular con más de n divisores
++ 06 [[./src/Menor_numero_triangular_con_mas_de_n_divisores.hs][Menor número triangular con más de n divisores]].
 + 09 Reconocimiento de potencias de 2
 + 10 Segmentos de longitud dada
 + 11 Diagonales principales de una matriz
