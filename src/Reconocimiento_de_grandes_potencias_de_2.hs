@@ -1,7 +1,7 @@
 -- Reconocimiento_de_grandes_potencias_de_2.hs
 -- Reconocimiento de potencias de 2.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 24-junio-2024
+-- Sevilla, 09-Febrero-2015 (actualizado 1-Febrero-2026)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -22,8 +22,9 @@
 
 module Reconocimiento_de_grandes_potencias_de_2 where
 
-import Data.Bits ((.&.))
+import Data.Bits ((.&.), popCount)
 import Data.Numbers.Primes (primeFactors)
+import Math.NumberTheory.Logarithms (integerLog2)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck (Positive (Positive), quickCheck)
 
@@ -57,22 +58,40 @@ esPotenciaDeDos3 x = all (==2) (primeFactors x)
 -- 4ª solución
 -- ===========
 
+esPotenciaDeDos4 :: Integer -> Bool
+esPotenciaDeDos4 n = n == 2 ^ integerLog2 n
+
+-- 5ª solución
+-- ===========
+
 -- Usando la función (.&.) de la librería Data.Bits. Dicha función
 -- calcula el número correspondiente a la conjunción de las
 -- representaciones binarias de sus argumentos. Por ejemplo,
 --    6 .&. 3 == 2
 -- ya que
---    la representación binaria de 6 es     [1,1,0]
+--    la representación binaria de 6 es       [1,1,0]
 --    la representación binaria de 3 es       [1,1]
 --    la conjunción es                        [1,0]
 --    la representación decimal de [1,0] es   2
 --
 -- Otros ejemplos:
---    4 .&. 3 ==   [1,0,0] .&.   [1,1] == 0
+--    5 .&. 3 ==   [1,0,0] .&.   [1,1] == 0
 --    8 .&. 7 == [1,0,0,0] .&. [1,1,1] = 0
+--
+-- Usa el truco de que una potencia de 2 en binario tiene exactamente un
+-- bit en 1, y al restarle 1, todos los bits se invierten. La operación
+-- (.&.) entre ambos da 0. Por ejemplo:
+--    8 = 1000₂, 7 = 0111₂ -> 1000 .&. 0111 = 0000
+--    6 = 0110₂, 5 = 0101₂ -> 0110 .&. 0101 = 0100
 
-esPotenciaDeDos4 :: Integer -> Bool
-esPotenciaDeDos4 n = n .&. (n-1) == 0
+esPotenciaDeDos5 :: Integer -> Bool
+esPotenciaDeDos5 n = n .&. (n-1) == 0
+
+-- 6ª solución
+-- ===========
+
+esPotenciaDeDos6 :: Integer -> Bool
+esPotenciaDeDos6 n = popCount n == 1
 
 -- Verificación
 -- ============
@@ -101,10 +120,12 @@ spec = do
   describe "def. 2" $ specG esPotenciaDeDos2
   describe "def. 3" $ specG esPotenciaDeDos3
   describe "def. 4" $ specG esPotenciaDeDos4
+  describe "def. 5" $ specG esPotenciaDeDos5
+  describe "def. 6" $ specG esPotenciaDeDos6
 
 -- La verificación es
 --    λ> verifica
---    24 examples, 0 failures
+--    36 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
@@ -116,6 +137,8 @@ prop_esPotenciaDeDos (Positive n) =
       [ esPotenciaDeDos2 n
       , esPotenciaDeDos3 n
       , esPotenciaDeDos4 n
+      , esPotenciaDeDos5 n
+      , esPotenciaDeDos6 n
       ]
 
 -- La comprobación es
@@ -128,13 +151,29 @@ prop_esPotenciaDeDos (Positive n) =
 -- La comparación es
 --    λ> esPotenciaDeDos1 (2^(3*10^5))
 --    True
---    (3.51 secs, 5,730,072,544 bytes)
+--    (3.07 secs, 5,713,366,248 bytes)
 --    λ> esPotenciaDeDos2 (2^(3*10^5))
 --    True
---    (3.12 secs, 5,755,639,952 bytes)
+--    (5.86 secs, 5,665,328,552 bytes)
 --    λ> esPotenciaDeDos3 (2^(3*10^5))
 --    True
---    (2.92 secs, 5,758,872,040 bytes)
+--    (2.39 secs, 5,749,363,752 bytes)
 --    λ> esPotenciaDeDos4 (2^(3*10^5))
 --    True
---    (0.03 secs, 715,152 bytes)
+--    (0.02 secs, 844,400 bytes)
+--    λ> esPotenciaDeDos5 (2^(3*10^5))
+--    True
+--    (0.03 secs, 803,456 bytes)
+--    λ> esPotenciaDeDos6 (2^(3*10^5))
+--    True
+--    (0.03 secs, 728,296 bytes)
+--
+--    λ> esPotenciaDeDos4 (2^(2*10^8))
+--    True
+--    (3.78 secs, 148,890,576 bytes)
+--    λ> esPotenciaDeDos5 (2^(2*10^8))
+--    True
+--    (1.83 secs, 124,751,352 bytes)
+--    λ> esPotenciaDeDos6 (2^(2*10^8))
+--    True
+--    (1.83 secs, 74,751,256 bytes)

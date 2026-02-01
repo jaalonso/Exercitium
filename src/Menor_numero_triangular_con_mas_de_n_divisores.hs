@@ -49,8 +49,8 @@ import Data.Numbers.Primes (primes,primeFactors)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
--- 1ª solución
--- ===========
+-- 1ª solución: Fuerza bruta (Definición directa)
+-- ==============================================
 
 menorTriangularConAlMenosNDivisores1 :: Int -> Integer
 menorTriangularConAlMenosNDivisores1 n =
@@ -67,8 +67,8 @@ nDivisores :: Integer -> Int
 nDivisores x =
   1 + length [y | y <- [1..x `div` 2], mod x y == 0]
 
--- 2ª solución
--- ===========
+-- 2ª solución: Factorización prima manual
+-- =======================================
 
 menorTriangularConAlMenosNDivisores2 :: Int -> Integer
 menorTriangularConAlMenosNDivisores2 n =
@@ -95,8 +95,8 @@ factoresPrimos n = aux n primos
 primos :: [Integer]
 primos = 2 : filter ((==1) . length . factoresPrimos) [3,5..]
 
--- 3ª solución
--- ===========
+-- 3ª solución: Factorización usando la lista 'primes' de la librería
+-- ==================================================================
 
 menorTriangularConAlMenosNDivisores3 :: Int -> Integer
 menorTriangularConAlMenosNDivisores3 n =
@@ -119,8 +119,8 @@ factoresPrimos3 n = aux n primes
         | m `mod` p == 0 = p : aux (m `div` p) (p:ps)
         | otherwise      = aux m ps
 
--- 4ª solución
--- ===========
+-- 4ª solución: Usando de 'primeFactors' de la librería
+-- ====================================================
 
 menorTriangularConAlMenosNDivisores4 :: Int -> Integer
 menorTriangularConAlMenosNDivisores4 n =
@@ -131,8 +131,8 @@ menorTriangularConAlMenosNDivisores4 n =
 nDivisores4 :: Integer -> Int
 nDivisores4 n = product [1 + length xs | xs <- group (primeFactors n)]
 
--- 5ª solución
--- ===========
+-- 5ª solución: Estilo functional (point-free)
+-- ===========================================
 
 menorTriangularConAlMenosNDivisores5 :: Int -> Integer
 menorTriangularConAlMenosNDivisores5 n =
@@ -144,8 +144,8 @@ nDivisores5 :: Integer -> Int
 nDivisores5 =
   product . map ((+1) . length) . group . primeFactors
 
--- 6ª solución
--- ===========
+-- 6ª solución: Optimización matemática
+-- ====================================
 
 -- El n-ésimo número triangular es T(n) = n(n+1)2.
 --

@@ -181,7 +181,7 @@ Los objetivos de esta recopilación son:
 + 04 [[./src/Minimo_producto_escalar.hs][Mínimo producto escalar]].
 + 05 [[./src/Particiones_de_enteros_positivos.hs][Particiones de enteros positivos]].
 + 06 [[./src/Menor_numero_triangular_con_mas_de_n_divisores.hs][Menor número triangular con más de n divisores]].
-+ 09 Reconocimiento de potencias de 2
++ 09 [[./src/Reconocimiento_de_grandes_potencias_de_2.hs][Reconocimiento de potencias de 2]].
 + 10 Segmentos de longitud dada
 + 11 Diagonales principales de una matriz
 + 12 Mayor producto de n dígitos consecutivos de un número
