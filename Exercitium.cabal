@@ -421,6 +421,7 @@ library
       Segmento_de_una_lista
       Segmentos_consecutivos
       Segmentos_cuyos_elementos_cumple_una_propiedad
+      Segmentos_de_longitud_dada
       Seleccion_con_fallo
       Separacion_por_posicion
       Siguiente_elemento_en_una_lista
@@ -561,6 +562,7 @@ library
     , gnuplot
     , hspec
     , hspec-core
+    , integer-logarithms
     , matrix
     , mtl
     , primes
@@ -961,6 +963,7 @@ test-suite Exercitium-test
       Segmento_de_una_lista_Spec
       Segmentos_consecutivos_Spec
       Segmentos_cuyos_elementos_cumple_una_propiedad_Spec
+      Segmentos_de_longitud_dada_Spec
       Seleccion_con_fallo_Spec
       Separacion_por_posicion_Spec
       Siguiente_elemento_en_una_lista_Spec
@@ -1071,6 +1074,7 @@ test-suite Exercitium-test
     , fast-digits
     , hspec
     , hspec-core
+    , integer-logarithms
     , matrix
     , mtl
     , primes

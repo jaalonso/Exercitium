@@ -26,6 +26,7 @@ dependencies:
   - fast-digits
   - hspec
   - hspec-core
+  - integer-logarithms
   - matrix
   - mtl
   - primes
