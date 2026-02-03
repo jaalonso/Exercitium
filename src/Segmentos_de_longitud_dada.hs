@@ -9,7 +9,8 @@
 --    segmentos :: Int -> [a] -> [[a]]
 -- tal que (segmentos n xs) es la lista de los segmentos de longitud n
 -- de la lista xs. Por ejemplo,
---    segmentos 3 [1..5]  ==  [[1,2,3],[2,3,4],[3,4,5]]
+--    segmentos 3 [1..5] == [[1,2,3],[2,3,4],[3,4,5]]
+--    length (segmentos 3 [1..30000000]) == 29999998
 -- ---------------------------------------------------------------------
 
 module Segmentos_de_longitud_dada where
