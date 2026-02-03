@@ -28,8 +28,8 @@ import qualified Data.Vector as V (toList)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
--- 1ª solución
--- ===========
+-- 1ª solución: Basada en la propiedad matemática (Filtro conceptual)
+-- ==================================================================
 
 diagonalesPrincipales1 :: Array (Int,Int) a -> [[a]]
 diagonalesPrincipales1 p =
@@ -38,8 +38,8 @@ diagonalesPrincipales1 p =
   where
     (_, (m,n)) = bounds p
 
--- 2ª solución
--- ===========
+-- 2ª solución: Generación explícita de posiciones
+-- ===============================================
 
 diagonalesPrincipales2 :: Array (Int,Int) a -> [[a]]
 diagonalesPrincipales2 p =
@@ -52,8 +52,8 @@ posicionesDiagonalesPrincipales2 m n =
   where iniciales = [(i,1) | i <- [m,m-1..2]] ++ [(1,j) | j <- [1..n]]
         extension (i,j) = [(i+k,j+k) | k <- [0..min (m-i) (n-j)]]
 
--- 3ª solución
--- ===========
+-- 3ª solución: Basada en zip
+-- ==========================
 
 diagonalesPrincipales3 :: Array (Int,Int) a -> [[a]]
 diagonalesPrincipales3 p =
@@ -65,8 +65,8 @@ posicionesDiagonalesPrincipales3 m n =
   [zip [i..m] [1..n] | i <- [m,m-1..1]] ++
   [zip [1..m] [j..n] | j <- [2..n]]
 
--- 4ª solución
--- ===========
+-- 4ª solución: Basada en cálculo de rangos (Optimización de índices)
+-- ==================================================================
 
 diagonalesPrincipales4 :: Array (Int,Int) a -> [[a]]
 diagonalesPrincipales4 p =
@@ -75,8 +75,8 @@ diagonalesPrincipales4 p =
     ]
   where (_,(m,n)) = bounds p
 
--- 5ª solución
--- ===========
+-- 5ª solución: Uso de Data.Matrix
+-- ===============================
 
 diagonalesPrincipales5 :: Array (Int,Int) a -> [[a]]
 diagonalesPrincipales5 p = diagsInferiores ++ diagsSuperiores
