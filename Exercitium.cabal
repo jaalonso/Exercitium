@@ -252,6 +252,7 @@ library
       Mayor_numero_con_dos_digitos_dados
       Mayor_orbita_de_la_sucesion_de_Collatz
       Mayor_producto_de_las_ramas_de_un_arbol
+      Mayor_producto_de_n_digitos_consecutivos_de_un_numero
       Mayor_rectangulo
       Mayor_semiprimo_menor_que_n
       Mayor_sucesion_3n_mas_1
@@ -796,6 +797,7 @@ test-suite Exercitium-test
       Mayor_numero_con_dos_digitos_dados_Spec
       Mayor_orbita_de_la_sucesion_de_Collatz_Spec
       Mayor_producto_de_las_ramas_de_un_arbol_Spec
+      Mayor_producto_de_n_digitos_consecutivos_de_un_numero_Spec
       Mayor_rectangulo_Spec
       Mayor_semiprimo_menor_que_n_Spec
       Mayor_sucesion_3n_mas_1_Spec
