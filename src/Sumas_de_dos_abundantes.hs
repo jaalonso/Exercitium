@@ -1,21 +1,22 @@
 -- Sumas_de_dos_abundantes.hs
 -- Sucesión de sumas de dos números abundantes.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 10-septiembre-2024
+-- Sevilla, 13-Febrero-2015 (actualizado 10-Febrero-2026)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Un número n es [abundante](http://bit.ly/1vySpf2) si la suma de los
--- divisores propios de n es mayor que n. El primer número abundante es
--- el 12 (cuyos divisores propios son 1, 2, 3, 4 y 6 cuya suma es
--- 16). Por tanto, el menor número que es la suma de dos números
--- abundantes es el 24.
+-- Un número n es abundante si la suma de los divisores propios de n es
+-- mayor que n. El primer número abundante es el 12 (cuyos divisores
+-- propios son 1, 2, 3, 4 y 6 cuya suma es 16). Por tanto, el menor
+-- número que es la suma de dos números abundantes es el 24.
 --
 -- Definir la sucesión
 --    sumasDeDosAbundantes :: [Integer]
 -- cuyos elementos son los números que se pueden escribir como suma de
 -- dos números abundantes. Por ejemplo,
---    take 10 sumasDeDosAbundantes  ==  [24,30,32,36,38,40,42,44,48,50]
+--    take 10 sumasDeDosAbundantes     == [24,30,32,36,38,40,42,44,48,50]
+--    sumasDeDosAbundantes !! (2*10^4) == 21457
+--    sumasDeDosAbundantes !! (10^7)   == 10001457
 -- ---------------------------------------------------------------------
 
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
@@ -24,6 +25,8 @@ module Sumas_de_dos_abundantes where
 
 import Data.List (genericLength, group)
 import Data.Numbers.Primes (primeFactors)
+import Math.NumberTheory.ArithmeticFunctions (sigma)
+import Data.List.Ordered (unionAll)
 import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 import Test.QuickCheck
 
@@ -90,6 +93,40 @@ primeroYlongitud :: [a] -> (a,Integer)
 primeroYlongitud (x:xs) =
   (x, 1 + genericLength xs)
 
+-- 3ª solución
+-- ===========
+
+sumasDeDosAbundantes3 :: [Integer]
+sumasDeDosAbundantes3 = filter esSumaDeDosAbundantes3 [1..]
+
+esSumaDeDosAbundantes3 :: Integer -> Bool
+esSumaDeDosAbundantes3 n = (not . null) [x | x <- xs, n-x `elem` xs]
+  where xs = takeWhile (<n) abundantes3
+
+abundantes3 :: [Integer]
+abundantes3 = filter abundante3 [3..]
+
+abundante3 :: Integer -> Bool
+abundante3 n = n < sumaDivisores3 n - n
+
+sumaDivisores3 :: Integer -> Integer
+sumaDivisores3 = sigma 1
+
+-- 4ª definición
+-- =============
+
+sumasDeDosAbundantes4 :: [Integer]
+sumasDeDosAbundantes4 =
+  unionAll [ [a + b | b <- dropWhile (<a) abundantes3]
+           | a <- abundantes3 ]
+
+-- 5ª definición
+-- =============
+
+sumasDeDosAbundantes5 :: [Integer]
+sumasDeDosAbundantes5 =
+  takeWhile (<20161) sumasDeDosAbundantes4 ++ [20162..]
+
 -- Verificación
 -- ============
 
@@ -105,21 +142,29 @@ spec :: Spec
 spec = do
   describe "def. 1" $ specG sumasDeDosAbundantes1
   describe "def. 2" $ specG sumasDeDosAbundantes2
+  describe "def. 3" $ specG sumasDeDosAbundantes3
+  describe "def. 4" $ specG sumasDeDosAbundantes4
+  describe "def. 5" $ specG sumasDeDosAbundantes5
 
 -- La verificación es
 --    λ> verifica
---    2 examples, 0 failures
+--    5 examples, 0 failures
 
 -- Comprobación de equivalencia
 -- ============================
 
 -- La propiedad es
-prop_sumasDeDosAbundantes :: Positive Int -> Bool
-prop_sumasDeDosAbundantes (Positive n) =
-  sumasDeDosAbundantes1 !! n == sumasDeDosAbundantes2 !! n
+prop_equivalencia :: Positive Int -> Bool
+prop_equivalencia (Positive n) =
+  all (== sumasDeDosAbundantes1 !! n)
+      [ sumasDeDosAbundantes2 !! n
+      , sumasDeDosAbundantes3 !! n
+      , sumasDeDosAbundantes4 !! n
+      , sumasDeDosAbundantes5 !! n
+      ]
 
 -- La comprobación es
---    λ> quickCheck prop_sumasDeDosAbundantes
+--    λ> quickCheck prop_equivalencia
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
@@ -128,10 +173,28 @@ prop_sumasDeDosAbundantes (Positive n) =
 -- La comparación es
 --    λ> sumasDeDosAbundantes1 !! (2*10^3)
 --    2887
---    (2.54 secs, 516,685,168 bytes)
+--    (2.60 secs, 515,985,136 bytes)
 --    λ> sumasDeDosAbundantes2 !! (2*10^3)
 --    2887
---    (1.43 secs, 141,606,136 bytes)
+--    (1.80 secs, 141,515,008 bytes)
+--    λ> sumasDeDosAbundantes3 !! (2*10^3)
+--    2887
+--    (1.70 secs, 99,952,000 bytes)
+--    λ> sumasDeDosAbundantes4 !! (2*10^3)
+--    2887
+--    (0.14 secs, 42,338,832 bytes)
+--    λ> sumasDeDosAbundantes5 !! (2*10^3)
+--    2887
+--    (0.14 secs, 43,307,904 bytes)
+--
+--    λ> sumasDeDosAbundantes4 !! (3*10^4)
+--    31457
+--    (8.54 secs, 3,964,578,888 bytes)
+--    λ> :r
+--    Ok, one module loaded.
+--    λ> sumasDeDosAbundantes5 !! (3*10^4)
+--    31457
+--    (4.44 secs, 1,688,872,056 bytes)
 
 -- ---------------------------------------------------------------------
 -- § Referencias                                                      --

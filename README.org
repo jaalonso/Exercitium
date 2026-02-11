@@ -185,8 +185,8 @@ Los objetivos de esta recopilación son:
 + 10 [[./src/Segmentos_de_longitud_dada.hs][Segmentos de longitud dada]].
 + 11 [[./src/Diagonales_principales.hs][Diagonales principales de una matriz]].
 + 12 [[./src/Mayor_producto_de_n_digitos_consecutivos_de_un_numero.hs][Mayor producto de n dígitos consecutivos de un número]].
-+ 13 Sucesión de sumas de dos números abundantes
-+ 16 Sumas de 4 primos
++ 13 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
++ 16 [[./src/Sumas_de_4_primos.hs][Sumas de 4 primos]].
 + 17 Parejas de números y divisores
 + 18 Sumas de divisores propios
 + 19 Densidades de números abundantes, perfectos y deficientes
