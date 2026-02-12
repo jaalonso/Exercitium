@@ -187,7 +187,7 @@ Los objetivos de esta recopilación son:
 + 12 [[./src/Mayor_producto_de_n_digitos_consecutivos_de_un_numero.hs][Mayor producto de n dígitos consecutivos de un número]].
 + 13 [[./src/Sumas_de_dos_abundantes.hs][Sucesión de sumas de dos números abundantes]].
 + 16 [[./src/Sumas_de_4_primos.hs][Sumas de 4 primos]].
-+ 17 Parejas de números y divisores
++ 17 [[./src/Parejas_de_numeros_y_divisores.hs][Parejas de números y divisores]].
 + 18 Sumas de divisores propios
 + 19 Densidades de números abundantes, perfectos y deficientes
 + 20 Diagonales secundarias de una matriz
