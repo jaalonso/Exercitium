@@ -6,7 +6,7 @@
 
 -- ---------------------------------------------------------------------
 -- Definir la función
---    sumaDivisoresHasta :: Int -> [(Int,Int)]
+--    sumaDivisoresHasta :: Integer -> [(Integer,Integer)]
 -- tal que (sumaDivisoresHasta n) es la lista de los pares (a,b) tales
 -- que a es un número entre 1 y n y b es la suma de los divisores
 -- propios de a. Por ejemplo,
@@ -30,53 +30,53 @@ import Test.QuickCheck
 -- 1ª solución: Fuerza bruta
 -- =========================
 
-sumaDivisoresHasta1 :: Int -> [(Int,Int)]
+sumaDivisoresHasta1 :: Integer -> [(Integer,Integer)]
 sumaDivisoresHasta1 n =
   [(x, sum (divisores x)) | x <- [1..n]]
 
-divisores :: Int -> [Int]
+divisores :: Integer -> [Integer]
 divisores n =
   [x | x <- [1..n `div` 2], n `mod` x == 0]
 
 -- 2ª solución: Basada en factorización
 -- ====================================
 
-sumaDivisoresHasta2 :: Int -> [(Int,Int)]
+sumaDivisoresHasta2 :: Integer -> [(Integer,Integer)]
 sumaDivisoresHasta2 n =
   [(x, sumaDivisores x) | x <- [1..n]]
 
-sumaDivisores :: Int -> Int
+sumaDivisores :: Integer -> Integer
 sumaDivisores x =
   product [(p^(e+1)-1) `div` (p-1) | (p,e) <- factorizacion x] - x
 
 -- (factorizacion x) es la lista de las bases y exponentes de la
 -- descomposición prima de x. Por ejemplo,
 --    factorizacion 600  ==  [(2,3),(3,1),(5,2)]
-factorizacion :: Int -> [(Int,Int)]
+factorizacion :: Integer -> [(Integer,Integer)]
 factorizacion =
   map primeroYlongitud . group . primeFactors
 
 -- (primeroYlongitud xs) es el par formado por el primer elemento de xs
 -- y la longitud de xs. Por ejemplo,
 --    primeroYlongitud [3,2,5,7] == (3,4)
-primeroYlongitud :: [a] -> (a,Int)
+primeroYlongitud :: [a] -> (a,Integer)
 primeroYlongitud (x:xs) =
   (x, 1 + genericLength xs)
 
 -- 3ª solución: Usando sigma
 -- =========================
 
-sumaDivisoresHasta3 :: Int -> [(Int,Int)]
+sumaDivisoresHasta3 :: Integer -> [(Integer,Integer)]
 sumaDivisoresHasta3 n =
   [(x, sumaDivisores3 x) | x <- [1..n]]
 
-sumaDivisores3 :: Int -> Int
+sumaDivisores3 :: Integer -> Integer
 sumaDivisores3 x = sigma 1 x - x
 
 -- 4ª solución: Criba con accumArray
 -- =================================
 
-sumaDivisoresHasta4 :: Int -> [(Int,Int)]
+sumaDivisoresHasta4 :: Integer -> [(Integer,Integer)]
 sumaDivisoresHasta4 n =
   assocs (accumArray (+) 0 (1,n) (divisoresHasta n))
 
@@ -86,7 +86,7 @@ sumaDivisoresHasta4 n =
 --    [(2,1),(3,1),(4,1),(5,1),(6,1),(4,2),(6,2),(6,3)]
 --    λ> divisoresHasta 8
 --    [(2,1),(3,1),(4,1),(5,1),(6,1),(7,1),(8,1),(4,2),(6,2),(8,2),(6,3),(8,4)]
-divisoresHasta :: Int -> [(Int,Int)]
+divisoresHasta :: Integer -> [(Integer,Integer)]
 divisoresHasta n =
   [(a,b) | b <- [1..n `div` 2], a <- [b*2, b*3..n]]
 
@@ -96,7 +96,7 @@ divisoresHasta n =
 verifica :: IO ()
 verifica = hspec spec
 
-specG :: (Int -> [(Int,Int)]) -> Spec
+specG :: (Integer -> [(Integer,Integer)]) -> Spec
 specG sumaDivisoresHasta = do
   it "e1" $
     sumaDivisoresHasta 12 `shouldBe`
@@ -117,7 +117,7 @@ spec = do
 -- ============================
 
 -- La propiedad es
-prop_sumaDivisoresHasta :: Positive Int -> Bool
+prop_sumaDivisoresHasta :: Positive Integer -> Bool
 prop_sumaDivisoresHasta (Positive n) =
   all (== sumaDivisoresHasta1 n)
       [ sumaDivisoresHasta2 n
@@ -135,38 +135,51 @@ prop_sumaDivisoresHasta (Positive n) =
 -- La comparación es
 --    λ> maximum (map snd (sumaDivisoresHasta1 5000))
 --    11700
---    (2.41 secs, 1,256,416,456 bytes)
+--    (2.51 secs, 1,256,790,472 bytes)
 --    λ> maximum (map snd (sumaDivisoresHasta2 5000))
 --    11700
---    (0.09 secs, 101,568,864 bytes)
+--    (0.09 secs, 95,278,976 bytes)
 --    λ> maximum (map snd (sumaDivisoresHasta3 5000))
 --    11700
---    (0.02 secs, 16,444,288 bytes)
+--    (0.04 secs, 15,554,784 bytes)
 --    λ> maximum (map snd (sumaDivisoresHasta4 5000))
 --    11700
---    (0.04 secs, 10,616,024 bytes)
+--    (0.04 secs, 11,370,008 bytes)
 --
 --    λ> maximum (map snd (sumaDivisoresHasta2 100000))
 --    304920
---    (2.14 secs, 4,485,878,400 bytes)
+--    (2.12 secs, 4,231,579,264 bytes)
 --    λ> maximum (map snd (sumaDivisoresHasta3 100000))
 --    304920
---    (0.19 secs, 343,279,536 bytes)
+--    (0.19 secs, 323,971,792 bytes)
 --    λ> maximum (map snd (sumaDivisoresHasta4 100000))
 --    304920
---    (0.37 secs, 262,899,320 bytes)
+--    (0.42 secs, 282,767,288 bytes)
+--
+--    λ> maximum (map snd (sumaDivisoresHasta3 1000000))
+--    3392928
+--    (1.75 secs, 3,381,879,504 bytes)
+--    λ> maximum (map snd (sumaDivisoresHasta4 1000000))
+--    3392928
+--    (6.62 secs, 3,337,910,728 bytes)
 --
 -- La comparación de (maximum (map snd (f 5000))) es:
---    | Solución | Tiempo | Memoria   |
---    |----------|--------|-----------|
---    | Def. 1   | 2.41 s | 1256.4 MB |
---    | Def. 2   | 0.09 s |  101.6 MB |
---    | Def. 3   | 0.02 s |   16.4 MB |
---    | Def. 4   | 0.04 s |   10.6 MB |
-
+--    | Solución | Tiempo | Memoria |
+--    |----------|--------|---------|
+--    | Def. 1   | 2.51 s | 1257 MB |
+--    | Def. 2   | 0.09 s |   95 MB |
+--    | Def. 3   | 0.04 s |   15 MB |
+--    | Def. 4   | 0.04 s |   11 MB |
+--
 -- La comparación de (maximum (map snd (f 100000))) es:
 --    | Solución | Tiempo | Memoria |
 --    |----------|--------|---------|
---    | Def. 2   | 2.14 s | 4.48 GB |
---    | Def. 3   | 0.19 s | 0.34 GB |
---    | Def. 4   | 0.37 s | 0.26 GB |
+--    | Def. 2   | 2.12 s | 4.23 GB |
+--    | Def. 3   | 0.19 s | 0.32 GB |
+--    | Def. 4   | 0.42 s | 0.28 GB |
+--
+-- La comparación de (maximum (map snd (f 1000000))) es:
+--    | Solución | Tiempo | Memoria |
+--    |----------|--------|---------|
+--    | Def. 3   | 1.75 s | 3382 GB |
+--    | Def. 4   | 6.62 s | 3338 GB |

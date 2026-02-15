@@ -1,7 +1,7 @@
 -- Densidad_de_numeros_abundantes.hs
 -- Densidades de números abundantes, perfectos y deficientes.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 23-mayo-2022
+-- Sevilla, 19-Febrero-2015 (actualizado 15-Febrero-2026)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -18,7 +18,7 @@
 --   los números [abundantes](http://bit.ly/1BniqiY) (es decir, para los
 --   que la suma de sus divisores propios es mayor que el número), de los
 --   números [perfectos](http://bit.ly/1BniShk) (es decir, para los
---   que la suma de sus divisores propios es mayor que el número) y de los
+--   que la suma de sus divisores propios igual al número) y de los
 --   números deficientes[http://bit.ly/1BniQ9h] (es decir, para los
 --   que la suma de sus divisores propios es menor que el número). Por
 --   ejemplo,
@@ -44,11 +44,13 @@ module Densidad_de_numeros_abundantes where
 import Data.List (genericLength, group, partition)
 import Data.Array (accumArray, assocs)
 import Data.Numbers.Primes (primeFactors)
+import Math.NumberTheory.ArithmeticFunctions (sigma)
 import Graphics.Gnuplot.Simple (plotLists, Attribute (Key))
-import Test.QuickCheck (Positive (Positive), quickCheck)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
+import Test.QuickCheck
 
--- 1ª solución
--- ===========
+-- 1ª solución: Fuerza bruta
+-- =========================
 
 densidades1 :: Int -> (Double,Double,Double)
 densidades1 n = (f a, f p, f d)
@@ -95,8 +97,8 @@ nPerfectos n = length (filter esPerfecto [1..n])
 esPerfecto :: Int -> Bool
 esPerfecto n = sumaDivisores n == n
 
--- 2ª solución
--- ===========
+-- 2ª solución: Uso de partición
+-- =============================
 
 densidades2 :: Int -> (Double,Double,Double)
 densidades2 n = (f as, f ps, f ds)
@@ -104,8 +106,8 @@ densidades2 n = (f as, f ps, f ds)
         (ps,ds)  = partition esPerfecto pds
         f xs     = genericLength xs / fromIntegral n
 
--- 3ª solución
--- ===========
+-- 3ª solución: Modelado con tipos de datos
+-- ========================================
 
 densidades3 :: Int -> (Double,Double,Double)
 densidades3 n = (f as, f ps, f ds)
@@ -128,8 +130,8 @@ clasificacion n
   | otherwise = Perfecto
   where sd = sumaDivisores n
 
--- 4ª solución
--- ===========
+-- 4ª solución: Optimización por factorización prima
+-- =================================================
 
 densidades4 :: Int -> (Double,Double,Double)
 densidades4 n = (f as, f ps, f ds)
@@ -164,11 +166,33 @@ primeroYlongitud :: [a] -> (a,Int)
 primeroYlongitud (x:xs) =
   (x, 1 + length xs)
 
--- 5ª solución
--- ===========
+-- 5ª solución: Uso de librerías especializadas
+-- ============================================
 
 densidades5 :: Int -> (Double,Double,Double)
-densidades5 n = (f a, f p, f d)
+densidades5 n = (f as, f ps, f ds)
+  where cs       = map clasificacion3 [1..n]
+        (as,pds) = partition (== Abundante) cs
+        (ps,ds)  = partition (== Perfecto) pds
+        f xs     = genericLength xs / fromIntegral n
+
+-- 2ª definición de clasificacion
+clasificacion3 :: Int -> Clase
+clasificacion3 n
+  | sd > n    = Abundante
+  | sd < n    = Deficiente
+  | otherwise = Perfecto
+  where sd = sumaDivisores3 n
+
+-- 3ª definición de sumaDivisores
+sumaDivisores3 :: Int -> Int
+sumaDivisores3 x = sigma 1 x - x
+
+-- 6ª solución: Algoritmo de criba
+-- ===============================
+
+densidades6 :: Int -> (Double,Double,Double)
+densidades6 n = (f a, f p, f d)
   where (a,p,d) = distribucion n
         f x = fromIntegral x / fromIntegral n
 
@@ -202,21 +226,48 @@ sumaDivisoresHasta n =
 divisoresHasta :: Int -> [(Int,Int)]
 divisoresHasta n = [(a,b) | b <- [1..n `div` 2], a <- [b*2, b*3..n]]
 
+-- Verificación
+-- ============
+
+verifica :: IO ()
+verifica = hspec spec
+
+specG :: (Int -> (Double,Double,Double)) -> Spec
+specG densidades = do
+  it "e1" $
+    densidades 100 `shouldBe` (0.22,2.0e-2,0.76)
+  it "e2" $
+    densidades 200 `shouldBe` (0.23,1.0e-2,0.76)
+
+spec :: Spec
+spec = do
+  describe "def. 1" $ specG densidades1
+  describe "def. 2" $ specG densidades2
+  describe "def. 3" $ specG densidades3
+  describe "def. 4" $ specG densidades4
+  describe "def. 5" $ specG densidades5
+  describe "def. 6" $ specG densidades6
+
+-- La verificación es
+--    λ> verifica
+--    12 examples, 0 failures
+
 -- Comprobación de equivalencia
 -- ============================
 
 -- La propiedad es
-prop_densidades :: Positive Int -> Bool
-prop_densidades (Positive n) =
+prop_equivalencia :: Positive Int -> Bool
+prop_equivalencia (Positive n) =
   all (== densidades1 n)
       [ densidades2 n
       , densidades3 n
       , densidades4 n
       , densidades5 n
+      , densidades6 n
       ]
 
 -- La comprobación es
---    λ> quickCheck prop_densidades
+--    λ> quickCheck prop_equivalencia
 --    +++ OK, passed 100 tests.
 
 -- Comparación de eficiencia
@@ -237,14 +288,37 @@ prop_densidades (Positive n) =
 --    (0.04 secs, 34,364,960 bytes)
 --    λ> densidades5 2000
 --    (0.2465,1.5e-3,0.752)
---    (0.02 secs, 4,716,720 bytes)
+--    (0.04 secs, 7,554,992 bytes)
+--    λ> densidades6 2000
+--    (0.2465,1.5e-3,0.752)
+--    (0.03 secs, 4,803,560 bytes)
 --
 --    λ> densidades4 100000
 --    (0.24795,4.0e-5,0.75201)
---    (1.61 secs, 4,826,971,624 bytes)
+--    (2.08 secs, 4,545,320,016 bytes)
 --    λ> densidades5 100000
 --    (0.24795,4.0e-5,0.75201)
---    (0.43 secs, 291,989,272 bytes)
+--    (0.28 secs, 384,251,344 bytes)
+--    λ> densidades6 100000
+--    (0.24795,4.0e-5,0.75201)
+--    (0.52 secs, 292,076,344 bytes)
+--
+-- La comparación de (densidades 2000) es:
+--    | Solución | Tiempo | Memoria |
+--    |----------|--------|---------|
+--    | 1ª       | 1.59 s | 804 MB  |
+--    | 2ª       | 1.39 s | 704 MB  |
+--    | 3ª       | 0.81 s | 403 MB  |
+--    | 4ª       | 0.04 s |  34 MB  |
+--    | 5ª       | 0.04 s |   7 MB  |
+--    | 6ª       | 0.03 s |   5 MB  |
+--
+-- La comparación de (densidades 100000) es:
+--    | Solución | Tiempo | Memoria |
+--    |----------|--------|---------|
+--    | 4ª       | 2.08 s | 4545 GB |
+--    | 5ª       | 0.28 s |  384 MB |
+--    | 6ª       | 0.52 s |  292 MB |
 
 -- Gráfica
 -- =======
@@ -255,4 +329,4 @@ graficas n =
             [ [x | (x,_,_) <- ts]
             , [y | (_,y,_) <- ts]
             , [z | (_,_,z) <- ts]]
-  where ts = [densidades5 k | k <- [1..n]]
+  where ts = [densidades6 k | k <- [1..n]]
