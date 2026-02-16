@@ -104,6 +104,7 @@ library
       Descomposiciones_triangulares
       Desemparejamiento_de_listas
       Diagonales_principales
+      Diagonales_secundarias
       Diccionario_de_frecuencias
       Diferencia_conjuntista_de_listas
       Diferencia_simetrica
@@ -658,6 +659,7 @@ test-suite Exercitium-test
       Descomposiciones_triangulares_Spec
       Desemparejamiento_de_listas_Spec
       Diagonales_principales_Spec
+      Diagonales_secundarias_Spec
       Diccionario_de_frecuencias_Spec
       Diferencia_conjuntista_de_listas_Spec
       Diferencia_simetrica_Spec
