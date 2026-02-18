@@ -268,6 +268,7 @@ library
       Metodo_de_Heron_para_calcular_la_raiz_cuadrada
       Metodo_de_Newton_para_calcular_raices
       Mezcla_de_infinitas_listas_infinitas
+      Minimo_numero_de_cambios_para_igualar_una_lista
       Minimo_producto_escalar
       Minimos_locales
       Movimientos_en_el_plano
@@ -814,6 +815,7 @@ test-suite Exercitium-test
       Metodo_de_Heron_para_calcular_la_raiz_cuadrada_Spec
       Metodo_de_Newton_para_calcular_raices_Spec
       Mezcla_de_infinitas_listas_infinitas_Spec
+      Minimo_numero_de_cambios_para_igualar_una_lista_Spec
       Minimo_producto_escalar_Spec
       Minimos_locales_Spec
       N_gramas_Spec
