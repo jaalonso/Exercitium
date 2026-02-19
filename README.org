@@ -192,7 +192,7 @@ Los objetivos de esta recopilación son:
 + 19 [[./src/Densidad_de_numeros_abundantes.hs][Densidades de números abundantes, perfectos y deficientes]].
 + 20 [[./src/Diagonales_secundarias.hs][Diagonales secundarias de una matriz]].
 + 23 [[./src/Minimo_numero_de_cambios_para_igualar_una_lista.hs][Mínimo número de cambios para igualar una lista]].
-+ 24 Matriz zigzagueante
++ 24 [[./src/Matriz_zigzagueante.hs][Matriz zigzagueante]].
 + 25 Suma de conjuntos de polinomios
 + 26 Mayor diferencia progresiva
 + 27 Numeración con múltiples bases

@@ -1,7 +1,7 @@
 -- Minimo_numero_de_cambios_para_igualar_una_lista.hs
 -- Mínimo número de cambios para igualar una lista.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
--- Sevilla, 23-Febrero-2015 (actualizado 18-Febrero-2026)
+-- Sevilla, 24-Febrero-2015 (actualizado 19-Febrero-2026)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
@@ -9,8 +9,8 @@
 --    nMinimoCambios :: Ord a => [a] -> Int
 -- tal que (nMinimoCambios xs) es el menor número de elementos de xs
 -- que hay que cambiar para que todos sean iguales. Por ejemplo,
---    nMinimoCambios [3,5,3,7,9,6]     == 4
---    nMinimoCambios [3,5,3,7,3,3]     == 2
+--    nMinimoCambios [3,5,3,7,9,6]      == 4
+--    nMinimoCambios [3,5,3,7,3,3]      == 2
 --    nMinimoCambios "Salamanca"        == 5
 --    nMinimoCambios (4 : [1..3000000]) == 2999999
 -- En el primer ejemplo, los elementos que hay que cambiar son 5, 7, 9 y
